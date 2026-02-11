@@ -110,49 +110,52 @@ def list_org_repos(org: str, token: Optional[str]) -> List[Dict[str, Any]]:
 
 def classify(org: str, name: str, description: str, homepage: str) -> Tuple[str, int]:
     text = f"{name} {description} {homepage}".strip()
-    score = 0
+    scores = {
+        "docs": 0,
+        "reference": 0,
+        "training": 0,
+        "samples": 0,
+    }
 
     # Org-based strong signals
     if org in DOC_ORGS:
-        return "docs", 100
+        scores["docs"] += 100
     if org in TRAINING_ORGS:
-        return "training", 100
+        scores["training"] += 100
     if org in SAMPLES_ORGS:
-        return "samples", 100
+        scores["samples"] += 100
 
-    # Keyword scoring
+    # Keyword scoring by category bucket
     if DOC_KEYWORDS.search(text):
-        score += 40
+        scores["docs"] += 40
     if REFERENCE_KEYWORDS.search(text):
-        score += 35
+        scores["reference"] += 35
     if TRAINING_KEYWORDS.search(text):
-        score += 30
+        scores["training"] += 30
     if SAMPLES_KEYWORDS.search(text):
-        score += 25
+        scores["samples"] += 25
 
-    # Lightweight name heuristics
+    # Lightweight name heuristics by category bucket
     lname = name.lower()
     if "docs" in lname or lname.endswith("-docs") or lname.startswith("docs-"):
-        score += 20
-    if "reference" in lname or "api" in lname and "docs" in lname:
-        score += 15
+        scores["docs"] += 20
+    if "reference" in lname or ("api" in lname and "docs" in lname):
+        scores["reference"] += 15
     if "sample" in lname or "quickstart" in lname:
-        score += 15
+        scores["samples"] += 15
     if lname.startswith("mslearn-"):
-        score += 20
+        scores["training"] += 20
 
-    # Choose category by strongest match (ties resolved by score)
-    if score == 0:
+    # Choose category by strongest score. Tie-breaker order is deterministic:
+    # docs > reference > training > samples.
+    tie_breaker = ["docs", "reference", "training", "samples"]
+    winner = max(tie_breaker, key=lambda category: (scores[category], -tie_breaker.index(category)))
+    winning_score = scores[winner]
+
+    if winning_score == 0:
         return "other", 0
 
-    # If reference keywords hit strongly, prefer reference
-    if REFERENCE_KEYWORDS.search(text):
-        return "reference", score
-    if TRAINING_KEYWORDS.search(text) or lname.startswith("mslearn-"):
-        return "training", score
-    if SAMPLES_KEYWORDS.search(text) or "sample" in lname or "quickstart" in lname:
-        return "samples", score
-    return "docs", score
+    return winner, winning_score
 
 
 def make_row(org: str, repo: Dict[str, Any]) -> RepoRow:
