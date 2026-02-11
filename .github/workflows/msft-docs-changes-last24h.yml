@@ -31,8 +31,7 @@ jobs:
   digest:
     runs-on: ubuntu-latest
 
-    # Artifact-only mode (recommended): read-only permissions are enough.
-    # If you later decide to commit results back into the repo, change to `contents: write`.
+    # Commit mode: workflow writes generated digest files back to the repository root.
     permissions:
       contents: write
 
@@ -102,19 +101,19 @@ jobs:
           test -f changes_last24h.csv
           test -f changes_last24h.md
 
-      - name: Upload digest artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: msft-changes-digest
-          path: |
-            changes_last24h.csv
-            changes_last24h.md
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add changes_last24h.csv changes_last24h.md
+          git commit -m "Update Microsoft docs/samples change digest" || echo "No changes"
+          git push
 
       - name: Add digest preview to workflow summary
         run: |
           echo "## Microsoft repo change digest preview" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Artifact:** msft-changes-digest (CSV + MD)" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Saved to repository root:** changes_last24h.csv, changes_last24h.md" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "### Top of changes_last24h.md" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
