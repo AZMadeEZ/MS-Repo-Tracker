@@ -19,9 +19,8 @@ on:
         description: "Regenerate msft_repo_inventory.csv before building the digest"
         required: true
         default: "true"
-  # Optional scheduled run (UTC). Uncomment if you want it automated.
-  # schedule:
-  #   - cron: "20 13 * * *"  # daily at 13:20 UTC
+  schedule:
+    - cron: "20 13 * * *"  # daily at 13:20 UTC
 
 concurrency:
   group: msft-docs-change-digest
