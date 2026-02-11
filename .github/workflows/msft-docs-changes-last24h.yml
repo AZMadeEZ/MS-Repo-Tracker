@@ -16,9 +16,9 @@ on:
         required: false
         default: ""
       refresh_inventory:
-        description: "Regenerate msft_repo_inventory.csv before building the digest"
+        description: "Regenerate msft_repo_inventory.csv before building the digest (enable when orgs.txt changed or inventory is stale)"
         required: true
-        default: "true"
+        default: "false"
   schedule:
     - cron: "20 13 * * *"  # daily at 13:20 UTC
 

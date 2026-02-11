@@ -84,11 +84,11 @@ Outputs:
 
 ## Typical workflow
 
-1. Update `orgs.txt`.
-2. Run inventory script.
-3. Run changes script.
-4. Review `changes_last24h.md` for a quick daily summary.
-5. Use CSV outputs for automation/reporting.
+1. Update `orgs.txt` when the tracked organizations change.
+2. Refresh inventory periodically (for example, weekly via `ms-docs-inventory.yml`) or run manually with `workflow_dispatch` when needed.
+3. Generate the changes digest daily (for example, via `msft-docs-changes-last24h.yml`).
+4. For manual digest runs, keep `refresh_inventory=false` unless `orgs.txt` changed or the inventory needs an urgent refresh.
+5. Review `changes_last24h.md` for a quick daily summary and use CSV outputs for automation/reporting.
 
 ## Notes
 
