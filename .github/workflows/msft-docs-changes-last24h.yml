@@ -1,0 +1,122 @@
+name: Microsoft Docs/Samples Change Digest (Last 24h)
+
+on:
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Lookback window in hours"
+        required: true
+        default: "24"
+      max_commits:
+        description: "Max commit headlines per repo"
+        required: true
+        default: "5"
+      categories:
+        description: "Optional: comma-separated categories (docs,reference,training,samples). Leave blank for all."
+        required: false
+        default: ""
+      refresh_inventory:
+        description: "Regenerate msft_repo_inventory.csv before building the digest"
+        required: true
+        default: "false"
+  # Optional scheduled run (UTC). Uncomment if you want it automated.
+  # schedule:
+  #   - cron: "20 13 * * *"  # daily at 13:20 UTC
+
+concurrency:
+  group: msft-docs-change-digest
+  cancel-in-progress: true
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+
+    # Artifact-only mode (recommended): read-only permissions are enough.
+    # If you later decide to commit results back into the repo, change to `contents: write`.
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # If you have requirements.txt, install it; otherwise just install what the scripts need.
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install requests
+          fi
+
+      # Optional: refresh the big inventory (can be expensive for huge org lists)
+      - name: Refresh inventory (optional)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.refresh_inventory == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -f msft_docs_inventory.py ]; then
+            echo "msft_docs_inventory.py not found. Commit msft_repo_inventory.csv or add the inventory script."
+            exit 1
+          fi
+          if [ ! -f orgs.txt ]; then
+            echo "orgs.txt not found. Add orgs.txt (one org per line) or skip refresh_inventory."
+            exit 1
+          fi
+          python msft_docs_inventory.py
+          test -f msft_repo_inventory.csv
+
+      - name: Ensure inventory exists
+        run: |
+          if [ ! -f msft_repo_inventory.csv ]; then
+            echo "msft_repo_inventory.csv not found."
+            echo "Either commit it to the repo OR run workflow_dispatch with refresh_inventory=true."
+            exit 1
+          fi
+
+      - name: Build last-N-hours change digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          HOURS="${{ github.event.inputs.hours }}"
+          MAX_COMMITS="${{ github.event.inputs.max_commits }}"
+          CATEGORIES="${{ github.event.inputs.categories }}"
+
+          # When triggered by schedule, github.event.inputs.* is empty. Provide sane defaults.
+          if [ -z "$HOURS" ]; then HOURS="24"; fi
+          if [ -z "$MAX_COMMITS" ]; then MAX_COMMITS="5"; fi
+
+          python msft_changes_last24h.py \
+            --input msft_repo_inventory.csv \
+            --hours "$HOURS" \
+            --max-commits "$MAX_COMMITS" \
+            --categories "$CATEGORIES"
+
+          test -f changes_last24h.csv
+          test -f changes_last24h.md
+
+      - name: Upload digest artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: msft-changes-digest
+          path: |
+            changes_last24h.csv
+            changes_last24h.md
+
+      - name: Add digest preview to workflow summary
+        run: |
+          echo "## Microsoft repo change digest preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Artifact:** msft-changes-digest (CSV + MD)" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Top of changes_last24h.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          # Prevent the summary from getting too large:
+          head -n 200 changes_last24h.md >> "$GITHUB_STEP_SUMMARY"
