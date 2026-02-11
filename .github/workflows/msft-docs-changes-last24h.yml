@@ -34,7 +34,7 @@ jobs:
     # Artifact-only mode (recommended): read-only permissions are enough.
     # If you later decide to commit results back into the repo, change to `contents: write`.
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout
