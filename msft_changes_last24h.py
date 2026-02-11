@@ -240,6 +240,8 @@ def fetch_activity(
     since_iso: str,
     max_commits: int,
     token: Optional[str],
+    include_archived: bool,
+    include_forks: bool,
 ) -> List[RepoActivity]:
     activities: List[RepoActivity] = []
     for batch in chunked(repos, 35):  # 35 keeps queries comfortably sized
@@ -251,8 +253,10 @@ def fetch_activity(
             if not node:
                 continue
 
-            # Skip archived/forks (server truth)
-            if node.get("isArchived") is True or node.get("isFork") is True:
+            # Reconcile server-truth flags with CLI include options in one place.
+            if (not include_archived and node.get("isArchived") is True) or (
+                not include_forks and node.get("isFork") is True
+            ):
                 continue
 
             dbr = node.get("defaultBranchRef") or {}
@@ -453,6 +457,8 @@ def main() -> int:
         since_iso=since_iso,
         max_commits=args.max_commits,
         token=token,
+        include_archived=args.include_archived,
+        include_forks=args.include_forks,
     )
 
     write_csv("changes_last24h.csv", activities, args.max_commits)
