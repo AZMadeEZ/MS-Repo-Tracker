@@ -105,7 +105,12 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add changes_last24h.csv changes_last24h.md
-          git commit -m "Update Microsoft docs/samples change digest" || echo "No changes"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update Microsoft docs/samples change digest"
           git push
 
       - name: Add digest preview to workflow summary
