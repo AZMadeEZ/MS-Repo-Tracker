@@ -10,7 +10,7 @@ on:
       max_commits:
         description: "Max commit headlines per repo"
         required: true
-        default: "20"
+        default: "5"
       categories:
         description: "Optional: comma-separated categories (docs,reference,training,samples). Leave blank for all."
         required: false
