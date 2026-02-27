@@ -3,7 +3,7 @@ name: MS Docs Repo Inventory
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * 1"  # 9:00 UTC every Monday
+    - cron: "20 1 * * *"  # daily at 01:20 UTC (12 hours offset from 13:20 UTC job)
 
 jobs:
   run:
