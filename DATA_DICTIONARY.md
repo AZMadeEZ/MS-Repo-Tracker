@@ -46,6 +46,9 @@ All machine-readable JSON report artifacts include:
 | `org` | GitHub organization owner from the inventory. |
 | `name` | Repository short name. |
 | `category` | Local classification: `docs`, `reference`, `training`, `samples`, or `other`. |
+| `repo_type` | Explainable taxonomy type such as `docs`, `reference`, `training`, `samples`, `sdk`, `tool`, `service`, `infra`, or `other`. |
+| `product_area` | Best-effort product area such as `Azure`, `.NET`, `Microsoft Graph`, `PowerShell`, or `Unknown`. |
+| `audience` | Best-effort intended audience such as `developer`, `admin`, `architect`, `learner`, `operator`, or `unknown`. |
 | `default_branch` | Branch used for commit movement checks. |
 | `commit_count_window` | Canonical commit count for the actual report window. |
 | `commit_count_24h` | Deprecated compatibility alias for `commit_count_window`. Do not use for new ingestion. |
@@ -86,6 +89,17 @@ All machine-readable JSON report artifacts include:
 
 `msft_repo_inventory.csv` is the durable repository baseline. It intentionally includes `other` repositories so the tracker can preserve Microsoft ecosystem coverage even when reports default to focused categories.
 
+Inventory taxonomy fields:
+
+| Field | Meaning |
+| --- | --- |
+| `repo_type` | Config-driven repository type used for explainable grouping. |
+| `product_area` | Config-driven product area. |
+| `audience` | Config-driven intended audience. |
+| `classification_confidence` | 0-1 heuristic confidence score. |
+| `classification_reason` | Semicolon-separated reasons such as org, keyword, category, or override matches. |
+| `classification_version` | Version string for the classification rules used. |
+
 `msft_repo_inventory_watchfeeds.csv` exposes commit and release Atom feed URLs for each inventory repo.
 
 `msft_repo_tracker_state.json` stores per-org scan metadata, conditional request cache data, digest continuity metadata, and lifecycle summaries. It is committed so GitHub Actions and local runs share the same baseline.
@@ -101,7 +115,7 @@ All machine-readable JSON report artifacts include:
 | `dedupe_key` | Stable key for overlap-safe deduplication. Commit events use `commit:<oid>`. |
 | `repo`, `org`, `repo_name` | Repository identifiers. |
 | `category` | Local inventory category. |
-| `product_area` | Best-effort product area inferred from watchlist product signal tags. |
+| `repo_type`, `product_area`, `audience` | Inventory taxonomy fields copied onto the event when available. |
 | `default_branch` | Branch used for movement checks. |
 | `committed_at` | Commit timestamp from GitHub GraphQL. |
 | `headline` | Commit headline. |

@@ -39,6 +39,11 @@ from github_api import (
 
 STATE_SCHEMA_VERSION = 1
 DEFAULT_STATE_PATH = "msft_repo_tracker_state.json"
+DEFAULT_CLASSIFICATION_RULES_PATH = "config/classification_rules.json"
+DEFAULT_REPO_OVERRIDES_PATH = "config/repo_overrides.json"
+DEFAULT_CLASSIFICATION_VERSION = "2026-06-08"
+_DEFAULT_CLASSIFICATION_RULES: Optional[Dict[str, Any]] = None
+_DEFAULT_REPO_OVERRIDES: Optional[Dict[str, Any]] = None
 
 
 # --- Classification rules (tune freely) ---
@@ -84,6 +89,12 @@ CSV_FIELDS = [
     "open_issues",
     "category",
     "score",
+    "repo_type",
+    "product_area",
+    "audience",
+    "classification_confidence",
+    "classification_reason",
+    "classification_version",
 ]
 
 
@@ -108,6 +119,12 @@ class RepoRow:
     open_issues: int
     category: str
     score: int
+    repo_type: str = "other"
+    product_area: str = "Unknown"
+    audience: str = "unknown"
+    classification_confidence: float = 0.0
+    classification_reason: str = ""
+    classification_version: str = DEFAULT_CLASSIFICATION_VERSION
 
 
 def parse_bool(value: Any) -> bool:
@@ -119,6 +136,13 @@ def parse_int(value: Any) -> int:
         return int(value or 0)
     except (TypeError, ValueError):
         return 0
+
+
+def parse_float(value: Any) -> float:
+    try:
+        return float(value or 0)
+    except (TypeError, ValueError):
+        return 0.0
 
 
 def parse_iso(value: str) -> Optional[dt.datetime]:
@@ -137,7 +161,55 @@ def max_timestamp(values: Iterable[str]) -> str:
     return max(timestamps) if timestamps else ""
 
 
-def classify(org: str, name: str, description: str, homepage: str) -> Tuple[str, int]:
+def load_json_object(path: str, default: Dict[str, Any]) -> Dict[str, Any]:
+    if not path or not os.path.exists(path):
+        return default
+    with open(path, "r", encoding="utf-8") as f:
+        value = json.load(f)
+    return value if isinstance(value, dict) else default
+
+
+def default_classification_rules() -> Dict[str, Any]:
+    global _DEFAULT_CLASSIFICATION_RULES
+    if _DEFAULT_CLASSIFICATION_RULES is None:
+        _DEFAULT_CLASSIFICATION_RULES = load_json_object(DEFAULT_CLASSIFICATION_RULES_PATH, {})
+    return _DEFAULT_CLASSIFICATION_RULES
+
+
+def default_repo_overrides() -> Dict[str, Any]:
+    global _DEFAULT_REPO_OVERRIDES
+    if _DEFAULT_REPO_OVERRIDES is None:
+        _DEFAULT_REPO_OVERRIDES = load_json_object(DEFAULT_REPO_OVERRIDES_PATH, {})
+    return _DEFAULT_REPO_OVERRIDES
+
+
+def normalize_reason_values(values: List[str]) -> str:
+    return ";".join(value for value in values if value)
+
+
+def keyword_hit(text: str, keywords: Iterable[str]) -> Optional[str]:
+    lowered = text.lower()
+    for keyword in keywords:
+        value = str(keyword).strip().lower()
+        if value and value in lowered:
+            return value
+    return None
+
+
+def rule_matches(rule: Dict[str, Any], *, org: str, full_name: str, text: str) -> Optional[str]:
+    orgs = {str(value).lower() for value in rule.get("orgs") or []}
+    if org.lower() in orgs:
+        return f"org:{org}"
+    repos = {str(value).lower() for value in rule.get("repos") or []}
+    if full_name.lower() in repos:
+        return f"repo:{full_name}"
+    keyword = keyword_hit(text, rule.get("keywords") or [])
+    if keyword:
+        return f"keyword:{keyword}"
+    return None
+
+
+def classify_with_reasons(org: str, name: str, description: str, homepage: str) -> Tuple[str, int, List[str]]:
     text = f"{name} {description} {homepage}".strip()
     scores = {
         "docs": 0,
@@ -145,50 +217,156 @@ def classify(org: str, name: str, description: str, homepage: str) -> Tuple[str,
         "training": 0,
         "samples": 0,
     }
+    reasons: Dict[str, List[str]] = {category: [] for category in scores}
+
+    def add(category: str, points: int, reason: str) -> None:
+        scores[category] += points
+        reasons[category].append(reason)
 
     if org in DOC_ORGS:
-        scores["docs"] += 100
+        add("docs", 100, f"org:{org}")
     if org in TRAINING_ORGS:
-        scores["training"] += 100
+        add("training", 100, f"org:{org}")
     if org in SAMPLES_ORGS:
-        scores["samples"] += 100
+        add("samples", 100, f"org:{org}")
 
     if DOC_KEYWORDS.search(text):
-        scores["docs"] += 40
+        add("docs", 40, "keyword:docs")
     if REFERENCE_KEYWORDS.search(text):
-        scores["reference"] += 35
+        add("reference", 35, "keyword:reference")
     if TRAINING_KEYWORDS.search(text):
-        scores["training"] += 30
+        add("training", 30, "keyword:training")
     if SAMPLES_KEYWORDS.search(text):
-        scores["samples"] += 25
+        add("samples", 25, "keyword:samples")
 
     lname = name.lower()
     if "docs" in lname or lname.endswith("-docs") or lname.startswith("docs-"):
-        scores["docs"] += 20
+        add("docs", 20, "name:docs")
     if "reference" in lname or ("api" in lname and "docs" in lname):
-        scores["reference"] += 15
+        add("reference", 15, "name:reference")
     if "sample" in lname or "quickstart" in lname:
-        scores["samples"] += 15
+        add("samples", 15, "name:samples")
     if lname.startswith("mslearn-"):
-        scores["training"] += 20
+        add("training", 20, "name:mslearn")
 
     tie_breaker = ["docs", "reference", "training", "samples"]
     winner = max(tie_breaker, key=lambda category: (scores[category], -tie_breaker.index(category)))
     winning_score = scores[winner]
 
     if winning_score == 0:
-        return "other", 0
+        return "other", 0, ["fallback:other"]
 
-    return winner, winning_score
+    return winner, winning_score, reasons[winner]
 
 
-def make_row(org: str, repo: Dict[str, Any]) -> RepoRow:
+def classify(org: str, name: str, description: str, homepage: str) -> Tuple[str, int]:
+    category, score, _reasons = classify_with_reasons(org, name, description, homepage)
+    return category, score
+
+
+def taxonomy_for_repo(
+    *,
+    org: str,
+    name: str,
+    full_name: str,
+    description: str,
+    homepage: str,
+    language: str,
+    category: str,
+    score: int,
+    rules: Dict[str, Any],
+    overrides: Dict[str, Any],
+) -> Dict[str, Any]:
+    full_name_key = full_name.lower()
+    override = overrides.get(full_name) or overrides.get(full_name_key) or {}
+    if isinstance(override, dict) and override:
+        reason = override.get("reason") or "manual override"
+        return {
+            "repo_type": str(override.get("repo_type") or override.get("category") or category or "other"),
+            "product_area": str(override.get("product_area") or "Unknown"),
+            "audience": str(override.get("audience") or "unknown"),
+            "classification_confidence": float(override.get("classification_confidence") or 1.0),
+            "classification_reason": normalize_reason_values([f"override:{reason}"]),
+            "classification_version": str(override.get("classification_version") or rules.get("classification_version") or DEFAULT_CLASSIFICATION_VERSION),
+        }
+
+    text = f"{org} {name} {full_name} {description} {homepage} {language}".strip()
+    category_map = rules.get("repo_type_by_category") or {}
+    repo_type = str(category_map.get(category) or category or "other")
+    repo_type_reason = f"category:{category}"
+    for rule in rules.get("repo_type_rules") or []:
+        if not isinstance(rule, dict):
+            continue
+        match_reason = rule_matches(rule, org=org, full_name=full_name, text=text)
+        if match_reason:
+            repo_type = str(rule.get("repo_type") or repo_type)
+            repo_type_reason = match_reason
+            break
+
+    product_area = "Unknown"
+    product_reason = "fallback:Unknown"
+    for rule in rules.get("product_area_rules") or []:
+        if not isinstance(rule, dict):
+            continue
+        match_reason = rule_matches(rule, org=org, full_name=full_name, text=text)
+        if match_reason:
+            product_area = str(rule.get("product_area") or product_area)
+            product_reason = match_reason
+            break
+
+    audience = "unknown"
+    audience_reason = "fallback:unknown"
+    for rule in rules.get("audience_rules") or []:
+        if not isinstance(rule, dict):
+            continue
+        match_reason = rule_matches(rule, org=org, full_name=full_name, text=text)
+        if match_reason:
+            audience = str(rule.get("audience") or audience)
+            audience_reason = match_reason
+            break
+
+    confidence = max(0.0, min(1.0, round(score / 150, 2))) if score else 0.25
+    reasons = [repo_type_reason, product_reason, audience_reason]
+
+    return {
+        "repo_type": repo_type,
+        "product_area": product_area,
+        "audience": audience,
+        "classification_confidence": confidence,
+        "classification_reason": normalize_reason_values(reasons),
+        "classification_version": str(rules.get("classification_version") or DEFAULT_CLASSIFICATION_VERSION),
+    }
+
+
+def make_row(
+    org: str,
+    repo: Dict[str, Any],
+    rules: Optional[Dict[str, Any]] = None,
+    overrides: Optional[Dict[str, Any]] = None,
+) -> RepoRow:
     license_info = repo.get("license") or {}
-    category, score = classify(
+    rules = rules or {}
+    overrides = overrides or {}
+    category, score, category_reasons = classify_with_reasons(
         org=org,
         name=repo.get("name") or "",
         description=repo.get("description") or "",
         homepage=repo.get("homepage") or "",
+    )
+    taxonomy = taxonomy_for_repo(
+        org=org,
+        name=repo.get("name") or "",
+        full_name=repo.get("full_name") or "",
+        description=repo.get("description") or "",
+        homepage=repo.get("homepage") or "",
+        language=repo.get("language") or "",
+        category=category,
+        score=score,
+        rules=rules,
+        overrides=overrides,
+    )
+    taxonomy["classification_reason"] = normalize_reason_values(
+        category_reasons + [str(taxonomy.get("classification_reason") or "")]
     )
     return RepoRow(
         org=org,
@@ -210,6 +388,12 @@ def make_row(org: str, repo: Dict[str, Any]) -> RepoRow:
         open_issues=parse_int(repo.get("open_issues_count")),
         category=category,
         score=score,
+        repo_type=str(taxonomy.get("repo_type") or "other"),
+        product_area=str(taxonomy.get("product_area") or "Unknown"),
+        audience=str(taxonomy.get("audience") or "unknown"),
+        classification_confidence=float(taxonomy.get("classification_confidence") or 0.0),
+        classification_reason=str(taxonomy.get("classification_reason") or ""),
+        classification_version=str(taxonomy.get("classification_version") or DEFAULT_CLASSIFICATION_VERSION),
     )
 
 
@@ -218,26 +402,54 @@ def row_to_dict(row: RepoRow) -> Dict[str, Any]:
 
 
 def row_from_csv(row: Dict[str, str]) -> RepoRow:
+    org = (row.get("org") or "").strip()
+    name = (row.get("name") or "").strip()
+    full_name = (row.get("full_name") or "").strip()
+    description = (row.get("description") or "").strip()
+    homepage = (row.get("homepage") or "").strip()
+    language = (row.get("language") or "").strip()
+    category = (row.get("category") or "other").strip() or "other"
+    score = parse_int(row.get("score"))
+    rules = default_classification_rules()
+    overrides = default_repo_overrides()
+    taxonomy = taxonomy_for_repo(
+        org=org,
+        name=name,
+        full_name=full_name,
+        description=description,
+        homepage=homepage,
+        language=language,
+        category=category,
+        score=score,
+        rules=rules,
+        overrides=overrides,
+    )
     return RepoRow(
-        org=(row.get("org") or "").strip(),
-        name=(row.get("name") or "").strip(),
-        full_name=(row.get("full_name") or "").strip(),
+        org=org,
+        name=name,
+        full_name=full_name,
         html_url=(row.get("html_url") or "").strip(),
-        description=(row.get("description") or "").strip(),
-        homepage=(row.get("homepage") or "").strip(),
+        description=description,
+        homepage=homepage,
         archived=parse_bool(row.get("archived")),
         fork=parse_bool(row.get("fork")),
         created_at=(row.get("created_at") or "").strip(),
         updated_at=(row.get("updated_at") or "").strip(),
         pushed_at=(row.get("pushed_at") or "").strip(),
         default_branch=(row.get("default_branch") or "").strip(),
-        language=(row.get("language") or "").strip(),
+        language=language,
         license_spdx=(row.get("license_spdx") or "").strip(),
         stars=parse_int(row.get("stars")),
         forks=parse_int(row.get("forks")),
         open_issues=parse_int(row.get("open_issues")),
-        category=(row.get("category") or "other").strip() or "other",
-        score=parse_int(row.get("score")),
+        category=category,
+        score=score,
+        repo_type=(row.get("repo_type") or str(taxonomy.get("repo_type") or "other")).strip(),
+        product_area=(row.get("product_area") or str(taxonomy.get("product_area") or "Unknown")).strip(),
+        audience=(row.get("audience") or str(taxonomy.get("audience") or "unknown")).strip(),
+        classification_confidence=parse_float(row.get("classification_confidence") or taxonomy.get("classification_confidence")),
+        classification_reason=(row.get("classification_reason") or str(taxonomy.get("classification_reason") or "")).strip(),
+        classification_version=(row.get("classification_version") or str(taxonomy.get("classification_version") or DEFAULT_CLASSIFICATION_VERSION)).strip(),
     )
 
 
@@ -428,6 +640,8 @@ def list_org_repos(
     mode: str,
     cutoff_dt: dt.datetime,
     ignore_cache: bool,
+    classification_rules: Dict[str, Any],
+    repo_overrides: Dict[str, Any],
 ) -> Tuple[List[RepoRow], Set[str], int]:
     cache = state.setdefault("request_cache", {})
     sort = "pushed" if mode == "incremental" else "full_name"
@@ -471,7 +685,10 @@ def list_org_repos(
         if not isinstance(batch, list):
             raise RuntimeError(f"Unexpected repository list response for {org} page {page}.")
 
-        page_rows = [make_row(org, repo) for repo in batch]
+        page_rows = [
+            make_row(org, repo, rules=classification_rules, overrides=repo_overrides)
+            for repo in batch
+        ]
         page_names = [row.full_name for row in page_rows if row.full_name]
         rows.extend(page_rows)
         seen.update(page_names)
@@ -655,6 +872,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--no-budget-check", action="store_true")
     parser.add_argument("--budget-buffer", type=float, default=0.25)
     parser.add_argument("--min-rest-remaining", type=int, default=None)
+    parser.add_argument("--classification-rules", default=DEFAULT_CLASSIFICATION_RULES_PATH)
+    parser.add_argument("--repo-overrides", default=DEFAULT_REPO_OVERRIDES_PATH)
     return parser
 
 
@@ -672,6 +891,8 @@ def main() -> int:
 
     existing_rows = read_inventory(args.output)
     inventory_by_full_name = {row.full_name: row for row in existing_rows if row.full_name}
+    classification_rules = load_json_object(args.classification_rules, default_classification_rules())
+    repo_overrides = load_json_object(args.repo_overrides, default_repo_overrides())
     state = load_state(args.state)
     client = GitHubClient(token=token, user_agent="msft-docs-inventory")
     now = utc_now()
@@ -702,6 +923,8 @@ def main() -> int:
                     mode=args.mode,
                     cutoff_dt=cutoff_dt,
                     ignore_cache=args.ignore_cache,
+                    classification_rules=classification_rules,
+                    repo_overrides=repo_overrides,
                 )
             except RateLimitDeferred:
                 raise

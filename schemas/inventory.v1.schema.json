@@ -12,7 +12,13 @@
     "pushed_at",
     "default_branch",
     "category",
-    "score"
+    "score",
+    "repo_type",
+    "product_area",
+    "audience",
+    "classification_confidence",
+    "classification_reason",
+    "classification_version"
   ],
   "properties": {
     "org": {
@@ -43,6 +49,24 @@
       "type": "string"
     },
     "score": {
+      "type": "string"
+    },
+    "repo_type": {
+      "type": "string"
+    },
+    "product_area": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "classification_confidence": {
+      "type": "string"
+    },
+    "classification_reason": {
+      "type": "string"
+    },
+    "classification_version": {
       "type": "string"
     }
   },

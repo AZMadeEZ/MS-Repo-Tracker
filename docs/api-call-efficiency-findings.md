@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 This note captures the current rate-limit findings for MS-Repo-Tracker and records the starting point for remediation planning.
 
-Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, data contracts under `schemas/`, `reports/manifest.json`, `reports/status.json`, accurate digest window metadata, AI-ready event streams, and updated GitHub Actions workflows.
+Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, data contracts under `schemas/`, `reports/manifest.json`, `reports/status.json`, accurate digest window metadata, AI-ready event streams, explainable inventory taxonomy fields, and updated GitHub Actions workflows.
 
 ## Current Hot Spots
 
@@ -212,6 +212,11 @@ This is not the same as a perfect webhook guarantee. A strict "never miss anythi
    - Event-level `notability_score`, `change_type`, `actor_type`, `noise_level`, and `customer_visible` are generated from existing local signal heuristics.
    - `reports/latest.json` includes `notable_changes` selected from the event stream.
    - `reports/latest.md` shows Notable Changes before raw activity tables so human readers see signal before volume.
+
+23. Explainable taxonomy: make inventory classification easier to tune and inspect.
+   - `config/classification_rules.json` and `config/repo_overrides.json` provide local taxonomy controls.
+   - Inventory rows include `repo_type`, `product_area`, `audience`, `classification_confidence`, `classification_reason`, and `classification_version`.
+   - Digest CSV, report activities, and event records carry taxonomy fields forward for downstream grouping.
 
 ## Open Planning Question
 

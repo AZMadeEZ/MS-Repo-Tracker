@@ -1,0 +1,90 @@
+{
+  "classification_version": "2026-06-08",
+  "repo_type_by_category": {
+    "docs": "docs",
+    "reference": "reference",
+    "training": "training",
+    "samples": "samples",
+    "other": "other"
+  },
+  "repo_type_rules": [
+    {
+      "repo_type": "sdk",
+      "keywords": ["sdk", "client library", "autorest", "kiota"]
+    },
+    {
+      "repo_type": "tool",
+      "keywords": ["cli", "tool", "extension", "vscode", "powershell module"]
+    },
+    {
+      "repo_type": "service",
+      "keywords": ["service", "api", "platform"]
+    },
+    {
+      "repo_type": "infra",
+      "keywords": ["terraform", "bicep", "deployment", "infrastructure"]
+    }
+  ],
+  "product_area_rules": [
+    {
+      "product_area": "Azure",
+      "orgs": ["Azure", "Azure-Samples"],
+      "keywords": ["azure", "azd"]
+    },
+    {
+      "product_area": "Microsoft Graph",
+      "orgs": ["microsoftgraph"],
+      "keywords": ["graph", "kiota"]
+    },
+    {
+      "product_area": ".NET",
+      "orgs": ["dotnet", "aspnet"],
+      "keywords": [".net", "dotnet", "aspnet", "csharp"]
+    },
+    {
+      "product_area": "PowerShell",
+      "orgs": ["PowerShell"],
+      "keywords": ["powershell", "cmdlet"]
+    },
+    {
+      "product_area": "Microsoft 365",
+      "orgs": ["OfficeDev", "SharePoint"],
+      "keywords": ["office", "microsoft 365", "m365", "sharepoint", "teams"]
+    },
+    {
+      "product_area": "Windows",
+      "keywords": ["windows", "win32", "wsl"]
+    },
+    {
+      "product_area": "Identity",
+      "keywords": ["identity", "entra", "active directory", "authentication", "authorization"]
+    },
+    {
+      "product_area": "Developer Tools",
+      "keywords": ["vscode", "visual studio", "developer tools"]
+    }
+  ],
+  "audience_rules": [
+    {
+      "audience": "learner",
+      "orgs": ["MicrosoftLearning"],
+      "keywords": ["learn", "training", "lab", "workshop", "course"]
+    },
+    {
+      "audience": "admin",
+      "keywords": ["admin", "administrator", "powershell", "security operations"]
+    },
+    {
+      "audience": "architect",
+      "keywords": ["architecture", "reference architecture", "landing zone"]
+    },
+    {
+      "audience": "operator",
+      "keywords": ["operations", "monitor", "governance", "policy"]
+    },
+    {
+      "audience": "developer",
+      "keywords": ["sdk", "api", "sample", "quickstart", "developer", "code"]
+    }
+  ]
+}

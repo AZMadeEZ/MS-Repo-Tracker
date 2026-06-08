@@ -7,6 +7,9 @@
     "org",
     "name",
     "category",
+    "repo_type",
+    "product_area",
+    "audience",
     "default_branch",
     "commit_count_window",
     "window_since",
@@ -26,6 +29,15 @@
       "type": "string"
     },
     "category": {
+      "type": "string"
+    },
+    "repo_type": {
+      "type": "string"
+    },
+    "product_area": {
+      "type": "string"
+    },
+    "audience": {
       "type": "string"
     },
     "default_branch": {

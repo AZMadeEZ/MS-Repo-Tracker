@@ -14,6 +14,9 @@
     "org",
     "repo_name",
     "category",
+    "repo_type",
+    "product_area",
+    "audience",
     "default_branch",
     "committed_at",
     "headline",
@@ -66,7 +69,13 @@
     "category": {
       "type": "string"
     },
+    "repo_type": {
+      "type": "string"
+    },
     "product_area": {
+      "type": "string"
+    },
+    "audience": {
       "type": "string"
     },
     "default_branch": {

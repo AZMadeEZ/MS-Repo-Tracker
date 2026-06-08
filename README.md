@@ -66,6 +66,8 @@ Azure-Samples
 
 `watchlist.yml` controls which repos, orgs, keywords, and products are elevated in the daily signal report. Watchlist matches do not add GitHub API calls; they only affect report scoring and grouping.
 
+`config/classification_rules.json` and `config/repo_overrides.json` control explainable inventory taxonomy fields such as `repo_type`, `product_area`, `audience`, `classification_confidence`, and `classification_reason`.
+
 ## Usage
 
 ### 1. Build Inventory

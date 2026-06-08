@@ -1,0 +1,16 @@
+{
+  "microsoft/kiota-samples": {
+    "repo_type": "samples",
+    "product_area": "Microsoft Graph",
+    "audience": "developer",
+    "classification_confidence": 1.0,
+    "reason": "Manual override: sample repository for Kiota usage"
+  },
+  "microsoftgraph/msgraph-sdk-powershell": {
+    "repo_type": "sdk",
+    "product_area": "Microsoft Graph",
+    "audience": "admin",
+    "classification_confidence": 1.0,
+    "reason": "Manual override: Microsoft Graph PowerShell SDK"
+  }
+}

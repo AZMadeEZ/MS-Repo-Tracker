@@ -72,6 +72,12 @@ class RepoInput:
     stars: int = 0
     archived: Optional[bool] = None
     fork: Optional[bool] = None
+    repo_type: str = ""
+    product_area: str = ""
+    audience: str = ""
+    classification_confidence: str = ""
+    classification_reason: str = ""
+    classification_version: str = ""
 
 
 @dataclass
@@ -114,6 +120,12 @@ class RepoActivity:
     commit_count: int
     newest_commit_date: str
     commits: List[CommitInfo]
+    repo_type: str = ""
+    product_area: str = ""
+    audience: str = ""
+    classification_confidence: str = ""
+    classification_reason: str = ""
+    classification_version: str = ""
 
 
 def parse_bool(val: Any) -> Optional[bool]:
@@ -169,6 +181,12 @@ def read_inventory(path: str) -> List[RepoInput]:
                     stars=parse_int(row.get("stars")),
                     archived=parse_bool(row.get("archived")),
                     fork=parse_bool(row.get("fork")),
+                    repo_type=(row.get("repo_type") or "").strip(),
+                    product_area=(row.get("product_area") or "").strip(),
+                    audience=(row.get("audience") or "").strip(),
+                    classification_confidence=(row.get("classification_confidence") or "").strip(),
+                    classification_reason=(row.get("classification_reason") or "").strip(),
+                    classification_version=(row.get("classification_version") or "").strip(),
                 )
             )
         return repos
@@ -415,7 +433,7 @@ def load_watchlist(path: str) -> Dict[str, Any]:
 
 
 def activity_text(activity: RepoActivity) -> str:
-    parts = [activity.full_name, activity.name, activity.category]
+    parts = [activity.full_name, activity.name, activity.category, activity.repo_type, activity.product_area, activity.audience]
     for commit in activity.commits:
         parts.extend([commit.headline, commit.pr_title or "", commit.author])
     return " ".join(part for part in parts if part).lower()
@@ -1179,6 +1197,12 @@ def fetch_activity(
                     commit_count=total,
                     newest_commit_date=newest_date,
                     commits=commits,
+                    repo_type=repo.repo_type,
+                    product_area=repo.product_area,
+                    audience=repo.audience,
+                    classification_confidence=repo.classification_confidence,
+                    classification_reason=repo.classification_reason,
+                    classification_version=repo.classification_version,
                 )
             )
 
@@ -1208,6 +1232,9 @@ def write_csv(
         "org",
         "name",
         "category",
+        "repo_type",
+        "product_area",
+        "audience",
         "default_branch",
         "commit_count_24h",
         "commit_count_window",
@@ -1240,6 +1267,9 @@ def write_csv(
                 "org": activity.org,
                 "name": activity.name,
                 "category": activity.category,
+                "repo_type": activity.repo_type,
+                "product_area": activity.product_area,
+                "audience": activity.audience,
                 "default_branch": activity.default_branch,
                 "commit_count_24h": activity.commit_count,
                 "commit_count_window": activity.commit_count,
@@ -1344,6 +1374,12 @@ def activity_to_dict(
         "org": activity.org,
         "name": activity.name,
         "category": activity.category,
+        "repo_type": activity.repo_type,
+        "product_area": activity.product_area,
+        "audience": activity.audience,
+        "classification_confidence": activity.classification_confidence,
+        "classification_reason": activity.classification_reason,
+        "classification_version": activity.classification_version,
         "default_branch": activity.default_branch,
         "commit_count": activity.commit_count,
         "newest_commit_date": activity.newest_commit_date,
@@ -1366,6 +1402,9 @@ def recent_repo_creations(repos: List[RepoInput], since_dt: dt.datetime, limit: 
             "org": repo.org,
             "name": repo.name,
             "category": repo.category,
+            "repo_type": repo.repo_type,
+            "product_area": repo.product_area,
+            "audience": repo.audience,
             "created_at": repo.created_at,
             "html_url": repo.html_url or f"https://github.com/{repo.full_name}",
         }
@@ -2059,9 +2098,11 @@ def build_event_stream_records(payload: Mapping[str, Any]) -> List[Dict[str, Any
         org = str(activity.get("org") or (repo.split("/")[0] if "/" in repo else ""))
         repo_name = str(activity.get("name") or (repo.split("/", 1)[1] if "/" in repo else repo))
         category = str(activity.get("category") or "")
+        repo_type = str(activity.get("repo_type") or "")
+        audience = str(activity.get("audience") or "")
         default_branch = str(activity.get("default_branch") or "")
         signal = activity.get("signal") if isinstance(activity.get("signal"), dict) else {}
-        product_area = product_area_from_signal(signal)
+        product_area = str(activity.get("product_area") or product_area_from_signal(signal))
 
         for commit in activity.get("commits") or []:
             if not isinstance(commit, dict):
@@ -2097,7 +2138,9 @@ def build_event_stream_records(payload: Mapping[str, Any]) -> List[Dict[str, Any
                     "org": org,
                     "repo_name": repo_name,
                     "category": category,
+                    "repo_type": repo_type,
                     "product_area": product_area,
+                    "audience": audience,
                     "default_branch": default_branch,
                     "committed_at": str(commit.get("committed_date") or ""),
                     "headline": headline,

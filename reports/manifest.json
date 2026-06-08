@@ -114,7 +114,7 @@
   "schema_url": "schemas/manifest.v1.schema.json",
   "schema_version": 1,
   "source": {
-    "commit": "99b8278ecd25df35e81f29c2b38f66a22d6214c6",
+    "commit": "7aad0f4b349c2afb0448738198b79929eba80263",
     "repository": "",
     "workflow": "",
     "workflow_run_id": "",

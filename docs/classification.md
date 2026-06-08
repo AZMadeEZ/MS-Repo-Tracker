@@ -1,6 +1,6 @@
 # Classification And Signal
 
-The tracker currently uses lightweight local heuristics for repository category, activity signal, and event-level signal/noise fields.
+The tracker uses lightweight local heuristics for repository category, taxonomy fields, activity signal, and event-level signal/noise fields.
 
 ## Repository Category
 
@@ -13,6 +13,26 @@ Inventory rows include `category`:
 - `other`
 
 The durable inventory keeps `other` repositories so ecosystem coverage is preserved even when default reports focus on docs/reference/training/samples.
+
+## Activity Signal
+
+## Taxonomy Config
+
+Classification rules live in:
+
+- `config/classification_rules.json`
+- `config/repo_overrides.json`
+
+Inventory rows include:
+
+- `repo_type`
+- `product_area`
+- `audience`
+- `classification_confidence`
+- `classification_reason`
+- `classification_version`
+
+These fields are derived locally and do not add GitHub API calls. Older inventory CSVs without these fields are upgraded in memory when loaded by the inventory script.
 
 ## Activity Signal
 
@@ -47,11 +67,4 @@ These fields are heuristic. They are intended to improve sorting and summarizati
 
 ## Future Improvement
 
-The next classification improvement should move category and product rules into explicit config files and emit explainable fields such as:
-
-- `repo_type`
-- `product_area`
-- `audience`
-- `classification_confidence`
-- `classification_reason`
-- `classification_version`
+The next classification improvement should tune the rules with real report review feedback and add targeted repo overrides for high-value Microsoft ecosystem repositories.

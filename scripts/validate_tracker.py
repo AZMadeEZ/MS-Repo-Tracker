@@ -21,6 +21,12 @@ REQUIRED_INVENTORY_COLUMNS = {
     "default_branch",
     "category",
     "score",
+    "repo_type",
+    "product_area",
+    "audience",
+    "classification_confidence",
+    "classification_reason",
+    "classification_version",
 }
 
 REQUIRED_WATCHFEED_COLUMNS = {
@@ -36,6 +42,9 @@ REQUIRED_DIGEST_COLUMNS = {
     "org",
     "name",
     "category",
+    "repo_type",
+    "product_area",
+    "audience",
     "default_branch",
     "commit_count_24h",
     "commit_count_window",
@@ -63,6 +72,9 @@ REQUIRED_EVENT_FIELDS = {
     "org",
     "repo_name",
     "category",
+    "repo_type",
+    "product_area",
+    "audience",
     "default_branch",
     "committed_at",
     "headline",
@@ -110,6 +122,17 @@ def validate_inventory(path: Path) -> list[dict[str, str]]:
     categories = {row.get("category", "").strip() for row in rows}
     if "other" not in categories:
         raise RuntimeError("Inventory baseline should include other-category repositories.")
+
+    for row in rows:
+        full_name = row.get("full_name", "").strip()
+        for field in ("repo_type", "product_area", "audience", "classification_version"):
+            if not row.get(field, "").strip():
+                raise RuntimeError(f"Inventory row {full_name} is missing {field}.")
+        confidence = float(row.get("classification_confidence") or 0)
+        if confidence < 0 or confidence > 1:
+            raise RuntimeError(f"Inventory row {full_name} has invalid classification_confidence.")
+        if not row.get("classification_reason", "").strip():
+            raise RuntimeError(f"Inventory row {full_name} is missing classification_reason.")
 
     return rows
 
