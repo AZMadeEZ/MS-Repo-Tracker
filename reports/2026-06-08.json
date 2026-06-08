@@ -1149,6 +1149,130 @@
       }
     },
     {
+      "category": "samples",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Dmitri Smirnov (@yuslepukhin)",
+          "committed_date": "2026-06-08T20:29:36Z",
+          "headline": "Clarify and improve ownership semantics Model Editor C/C++ API (#28800)",
+          "oid": "dadd2d031b103c6d51831509ab7c228c543a5525",
+          "pr_number": 28800,
+          "pr_title": "Clarify and improve ownership semantics Model Editor C/C++ API",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28800",
+          "url": "https://github.com/microsoft/onnxruntime/commit/dadd2d031b103c6d51831509ab7c228c543a5525"
+        },
+        {
+          "author": "Selena Yang (@selenayang888)",
+          "committed_date": "2026-06-08T19:23:53Z",
+          "headline": "Fix Type-confusion: raw-pointer bind_input causing OOB write (#28839)",
+          "oid": "7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036",
+          "pr_number": 28839,
+          "pr_title": "Fix Type-confusion: raw-pointer bind_input causing OOB write",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28839",
+          "url": "https://github.com/microsoft/onnxruntime/commit/7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036"
+        },
+        {
+          "author": "Max Buckley (@maxwbuckley)",
+          "committed_date": "2026-06-08T17:08:22Z",
+          "headline": "[CoreML EP] Add Where and And builders (#28597)",
+          "oid": "073e49ffe1b70e61ea5e5cf4dec17ea9879914f8",
+          "pr_number": 28597,
+          "pr_title": "[CoreML EP] Add Where and And builders",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28597",
+          "url": "https://github.com/microsoft/onnxruntime/commit/073e49ffe1b70e61ea5e5cf4dec17ea9879914f8"
+        },
+        {
+          "author": "Sanaa Hamel (@sanaa-hamel-microsoft)",
+          "committed_date": "2026-06-08T14:29:05Z",
+          "headline": "fix(ci): nodejs on nuget cuda 13 hangs (#28816)",
+          "oid": "8f6e944b8658ef146593e7852d984536dee37d3e",
+          "pr_number": 28816,
+          "pr_title": "fix(ci): nodejs on nuget cuda 13 hangs",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28816",
+          "url": "https://github.com/microsoft/onnxruntime/commit/8f6e944b8658ef146593e7852d984536dee37d3e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-06-08T20:29:36Z",
+      "org": "microsoft",
+      "releases": [],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 44,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "category": "docs",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T20:05:09Z",
+          "headline": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)",
+          "oid": "b413d0ef63b5a568fbcb136923be086def6c61f2",
+          "pr_number": 10183,
+          "pr_title": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10183",
+          "url": "https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2"
+        },
+        {
+          "author": "Reuben Bond (@ReubenBond)",
+          "committed_date": "2026-06-08T19:16:28Z",
+          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
+          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
+          "pr_number": 10182,
+          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
+          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T19:03:23Z",
+          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
+          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
+          "pr_number": 10184,
+          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
+          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
+        },
+        {
+          "author": "Cluster7ck (@Cluster7ck)",
+          "committed_date": "2026-06-08T19:02:39Z",
+          "headline": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up\u2026",
+          "oid": "70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3",
+          "pr_number": 10176,
+          "pr_title": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10176",
+          "url": "https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/orleans",
+      "name": "orleans",
+      "newest_commit_date": "2026-06-08T20:05:09Z",
+      "org": "dotnet",
+      "releases": [],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 44,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
       "category": "docs",
       "commit_count": 4,
       "commits": [
@@ -1280,58 +1404,6 @@
       }
     },
     {
-      "category": "samples",
-      "commit_count": 3,
-      "commits": [
-        {
-          "author": "Selena Yang (@selenayang888)",
-          "committed_date": "2026-06-08T19:23:53Z",
-          "headline": "Fix Type-confusion: raw-pointer bind_input causing OOB write (#28839)",
-          "oid": "7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036",
-          "pr_number": 28839,
-          "pr_title": "Fix Type-confusion: raw-pointer bind_input causing OOB write",
-          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28839",
-          "url": "https://github.com/microsoft/onnxruntime/commit/7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036"
-        },
-        {
-          "author": "Max Buckley (@maxwbuckley)",
-          "committed_date": "2026-06-08T17:08:22Z",
-          "headline": "[CoreML EP] Add Where and And builders (#28597)",
-          "oid": "073e49ffe1b70e61ea5e5cf4dec17ea9879914f8",
-          "pr_number": 28597,
-          "pr_title": "[CoreML EP] Add Where and And builders",
-          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28597",
-          "url": "https://github.com/microsoft/onnxruntime/commit/073e49ffe1b70e61ea5e5cf4dec17ea9879914f8"
-        },
-        {
-          "author": "Sanaa Hamel (@sanaa-hamel-microsoft)",
-          "committed_date": "2026-06-08T14:29:05Z",
-          "headline": "fix(ci): nodejs on nuget cuda 13 hangs (#28816)",
-          "oid": "8f6e944b8658ef146593e7852d984536dee37d3e",
-          "pr_number": 28816,
-          "pr_title": "fix(ci): nodejs on nuget cuda 13 hangs",
-          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28816",
-          "url": "https://github.com/microsoft/onnxruntime/commit/8f6e944b8658ef146593e7852d984536dee37d3e"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "microsoft/onnxruntime",
-      "name": "onnxruntime",
-      "newest_commit_date": "2026-06-08T19:23:53Z",
-      "org": "microsoft",
-      "releases": [],
-      "signal": {
-        "bot_commit_count": 0,
-        "human_commit_count": 3,
-        "score": 43,
-        "tags": [
-          "human-authored",
-          "samples"
-        ],
-        "watchlist_matches": {}
-      }
-    },
-    {
       "category": "docs",
       "commit_count": 3,
       "commits": [
@@ -1446,58 +1518,6 @@
             "Azure/azure-sdk-for-python"
           ]
         }
-      }
-    },
-    {
-      "category": "docs",
-      "commit_count": 3,
-      "commits": [
-        {
-          "author": "Reuben Bond (@ReubenBond)",
-          "committed_date": "2026-06-08T19:16:28Z",
-          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
-          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
-          "pr_number": 10182,
-          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
-          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
-        },
-        {
-          "author": "Meir Blachman (@Meir017)",
-          "committed_date": "2026-06-08T19:03:23Z",
-          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
-          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
-          "pr_number": 10184,
-          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
-          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
-        },
-        {
-          "author": "Cluster7ck (@Cluster7ck)",
-          "committed_date": "2026-06-08T19:02:39Z",
-          "headline": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up\u2026",
-          "oid": "70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3",
-          "pr_number": 10176,
-          "pr_title": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10176",
-          "url": "https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "dotnet/orleans",
-      "name": "orleans",
-      "newest_commit_date": "2026-06-08T19:16:28Z",
-      "org": "dotnet",
-      "releases": [],
-      "signal": {
-        "bot_commit_count": 0,
-        "human_commit_count": 3,
-        "score": 43,
-        "tags": [
-          "docs",
-          "human-authored"
-        ],
-        "watchlist_matches": {}
       }
     },
     {
@@ -3678,7 +3698,7 @@
     "include_forks": false,
     "include_other": false
   },
-  "generated_at": "2026-06-08T20:24:17.879173Z",
+  "generated_at": "2026-06-08T20:32:50.261786Z",
   "graphql": {
     "batch_size": 35,
     "candidate_repos": 134,
@@ -3686,13 +3706,13 @@
     "detail_batches": 2,
     "max_commits": 5,
     "mode": "two-stage",
-    "remaining_at_start": 4966,
+    "remaining_at_start": 5000,
     "repos_counted": 134,
     "repos_enriched": 67,
     "repos_with_count": 67,
     "repos_with_movement": 67,
     "requested_batch_size": 0,
-    "stage_one_total_commits": 271,
+    "stage_one_total_commits": 273,
     "strategy": "balanced"
   },
   "lifecycle": {
@@ -3954,9 +3974,9 @@
       "mode": "candidates-and-watched",
       "repos_checked": 150,
       "repos_with_releases": 9,
-      "requests_changed": 8,
+      "requests_changed": 150,
       "requests_checked": 150,
-      "requests_not_modified": 142
+      "requests_not_modified": 0
     }
   },
   "schema_version": 1,
@@ -6709,7 +6729,7 @@
   ],
   "totals": {
     "candidate_repos": 134,
-    "default_branch_commits": 271,
+    "default_branch_commits": 273,
     "filtered_repos": 4639,
     "inventory_repos": 16416,
     "pushed_at_candidate_repos": 134,
@@ -6730,7 +6750,7 @@
   },
   "window": {
     "hours_requested": 24,
-    "since": "2026-06-07T20:24:17.879173Z",
+    "since": "2026-06-07T20:32:50.261786Z",
     "state_window_enabled": true
   }
 }

@@ -1,6 +1,6 @@
 # Microsoft Repo Tracker Report Index
 
-Generated: `2026-06-08T20:26:50.869940Z`
+Generated: `2026-06-08T20:33:58.932046Z`
 
 ## Last 7 Days
 
@@ -8,7 +8,7 @@ Generated: `2026-06-08T20:26:50.869940Z`
 | --- | ---: |
 | Reports | 1 |
 | Repositories with movement | 67 |
-| Default-branch commits | 271 |
+| Default-branch commits | 273 |
 | Releases | 20 |
 
 ## Last 30 Days
@@ -17,14 +17,14 @@ Generated: `2026-06-08T20:26:50.869940Z`
 | --- | ---: |
 | Reports | 1 |
 | Repositories with movement | 67 |
-| Default-branch commits | 271 |
+| Default-branch commits | 273 |
 | Releases | 20 |
 
 ## Daily Reports
 
 | Date | Repositories | Commits | Releases | High-signal | Links |
 | --- | ---: | ---: | ---: | ---: | --- |
-| 2026-06-08 | 67 | 271 | 20 | 25 | [md](2026-06-08.md) / [json](2026-06-08.json) |
+| 2026-06-08 | 67 | 273 | 20 | 25 | [md](2026-06-08.md) / [json](2026-06-08.json) |
 
 ## Recurring Repositories
 
@@ -43,11 +43,11 @@ Generated: `2026-06-08T20:26:50.869940Z`
 | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 1 |
 | [microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools) | 1 |
 | [dotnet/roslyn](https://github.com/dotnet/roslyn) | 1 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 1 |
+| [dotnet/orleans](https://github.com/dotnet/orleans) | 1 |
 | [microsoft/entrabot](https://github.com/microsoft/entrabot) | 1 |
 | [dotnet/efcore](https://github.com/dotnet/efcore) | 1 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 1 |
 | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 1 |
-| [dotnet/orleans](https://github.com/dotnet/orleans) | 1 |
 | [MicrosoftDocs/PowerShell-Docs-Modules](https://github.com/MicrosoftDocs/PowerShell-Docs-Modules) | 1 |
 | [microsoft/kiota](https://github.com/microsoft/kiota) | 1 |
 | [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 1 |

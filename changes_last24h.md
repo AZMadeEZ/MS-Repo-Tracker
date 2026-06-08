@@ -1,4 +1,4 @@
-# Changes on default branch since 2026-06-07T20:24:17.879173Z
+# Changes on default branch since 2026-06-07T20:32:50.261786Z
 
 Repos with movement: **67**
 
@@ -96,16 +96,17 @@ Repos with movement: **67**
   - [Unsafe evolution: propagate unsafe context to constructor initializer…](https://github.com/dotnet/roslyn/commit/d48095f632dad4d30b44d2b4d6a84163e3101024) - 2026-06-08T13:02:14Z - Jan Jones (@jjonescz) - PR: [Unsafe evolution: propagate unsafe context to constructor initializer #83969](https://github.com/dotnet/roslyn/pull/83969)
   - [Parameterize DartLab templates repository alias (#84037)](https://github.com/dotnet/roslyn/commit/8f825c9697554bd194c542154a6026b842068dde) - 2026-06-08T08:14:51Z - Brad White (@bradselw) - PR: [Parameterize DartLab templates repository alias #84037](https://github.com/dotnet/roslyn/pull/84037)
 
+- **dotnet/orleans** (`main`) - **4** commit(s)
+  - [chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)](https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2) - 2026-06-08T20:05:09Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for AzureBlobJournalStorageInstruments #10183](https://github.com/dotnet/orleans/pull/10183)
+  - [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - 2026-06-08T19:16:28Z - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests #10182](https://github.com/dotnet/orleans/pull/10182)
+  - [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - 2026-06-08T19:03:23Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments #10184](https://github.com/dotnet/orleans/pull/10184)
+  - [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up…](https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3) - 2026-06-08T19:02:39Z - Cluster7ck (@Cluster7ck) - PR: [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028) #10176](https://github.com/dotnet/orleans/pull/10176)
+
 - **dotnet/efcore** (`main`) - **4** commit(s)
   - [EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs (…](https://github.com/dotnet/efcore/commit/04b37f3ed41fd685a68c9402fe19871d2e20037a) - 2026-06-08T16:58:41Z - Maxwell (@m-x-shokhzod) - PR: [EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs #38208](https://github.com/dotnet/efcore/pull/38208)
   - [Translate List<T>.Exists to Queryable.Any (#38226)](https://github.com/dotnet/efcore/commit/1c5cd69729c8ac7f5a3df766286db99f49dc6031) - 2026-06-08T16:53:58Z - Maxwell (@m-x-shokhzod) - PR: [Translate List<T>.Exists to Queryable.Any #38226](https://github.com/dotnet/efcore/pull/38226)
   - [Make DateTime.Parse translation tests culture-invariant (#38384)](https://github.com/dotnet/efcore/commit/e4afabf3d42d601fe72cf307f177592adbefb998) - 2026-06-08T16:36:55Z - Arthur Vickers (@ajcvickers) - PR: [Make DateTime.Parse translation tests culture-invariant #38384](https://github.com/dotnet/efcore/pull/38384)
   - [Update dependencies from build 317483 (#38380)](https://github.com/dotnet/efcore/commit/7201613c0031141cebdc196a9d9df402667f3e9d) - 2026-06-08T15:58:29Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Source code updates from dotnet/dotnet #38380](https://github.com/dotnet/efcore/pull/38380)
-
-- **dotnet/orleans** (`main`) - **3** commit(s)
-  - [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - 2026-06-08T19:16:28Z - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests #10182](https://github.com/dotnet/orleans/pull/10182)
-  - [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - 2026-06-08T19:03:23Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments #10184](https://github.com/dotnet/orleans/pull/10184)
-  - [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up…](https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3) - 2026-06-08T19:02:39Z - Cluster7ck (@Cluster7ck) - PR: [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028) #10176](https://github.com/dotnet/orleans/pull/10176)
 
 - **dotnet/ef6** (`main`) - **1** commit(s)
   - [Update dependencies from https://github.com/dotnet/arcade build 20260…](https://github.com/dotnet/ef6/commit/60ef713579fe6ab7629f1e5d19791a3f2d7a9c2e) - 2026-06-08T06:55:16Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Update dependencies from dotnet/arcade #2410](https://github.com/dotnet/ef6/pull/2410)
@@ -221,7 +222,8 @@ Repos with movement: **67**
   - [fix: refactor MCP and auth](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/0c276a29a0aaf9191ed6ed7883cb046f00a7f578) - 2026-06-08T00:29:20Z - santiagxf (@santiagxf) - PR: [fix: refactor MCP and auth #15](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15)
   - [Merge pull request #13 from microsoft/santiagxf/refactor](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/e532fac56baff32098d978de85a31d73e1681803) - 2026-06-07T21:54:42Z - Facundo Santiago (@santiagxf) - PR: [Refactor agent and MCP server integration #13](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/13)
 
-- **microsoft/onnxruntime** (`main`) - **3** commit(s)
+- **microsoft/onnxruntime** (`main`) - **4** commit(s)
+  - [Clarify and improve ownership semantics Model Editor C/C++ API (#28800)](https://github.com/microsoft/onnxruntime/commit/dadd2d031b103c6d51831509ab7c228c543a5525) - 2026-06-08T20:29:36Z - Dmitri Smirnov (@yuslepukhin) - PR: [Clarify and improve ownership semantics Model Editor C/C++ API #28800](https://github.com/microsoft/onnxruntime/pull/28800)
   - [Fix Type-confusion: raw-pointer bind_input causing OOB write (#28839)](https://github.com/microsoft/onnxruntime/commit/7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036) - 2026-06-08T19:23:53Z - Selena Yang (@selenayang888) - PR: [Fix Type-confusion: raw-pointer bind_input causing OOB write #28839](https://github.com/microsoft/onnxruntime/pull/28839)
   - [[CoreML EP] Add Where and And builders (#28597)](https://github.com/microsoft/onnxruntime/commit/073e49ffe1b70e61ea5e5cf4dec17ea9879914f8) - 2026-06-08T17:08:22Z - Max Buckley (@maxwbuckley) - PR: [[CoreML EP] Add Where and And builders #28597](https://github.com/microsoft/onnxruntime/pull/28597)
   - [fix(ci): nodejs on nuget cuda 13 hangs (#28816)](https://github.com/microsoft/onnxruntime/commit/8f6e944b8658ef146593e7852d984536dee37d3e) - 2026-06-08T14:29:05Z - Sanaa Hamel (@sanaa-hamel-microsoft) - PR: [fix(ci): nodejs on nuget cuda 13 hangs #28816](https://github.com/microsoft/onnxruntime/pull/28816)

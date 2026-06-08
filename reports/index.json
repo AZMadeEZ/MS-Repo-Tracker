@@ -2,8 +2,8 @@
   "daily": [
     {
       "date": "2026-06-08",
-      "default_branch_commits": 271,
-      "generated_at": "2026-06-08T20:24:17.879173Z",
+      "default_branch_commits": 273,
+      "generated_at": "2026-06-08T20:32:50.261786Z",
       "high_signal_count": 25,
       "release_count": 20,
       "report_json": "2026-06-08.json",
@@ -11,7 +11,7 @@
       "repos_with_movement": 67
     }
   ],
-  "generated_at": "2026-06-08T20:26:50.869940Z",
+  "generated_at": "2026-06-08T20:33:58.932046Z",
   "report_count": 1,
   "schema_version": 1,
   "top_products": [
@@ -86,6 +86,14 @@
       "report_count": 1
     },
     {
+      "full_name": "microsoft/onnxruntime",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/orleans",
+      "report_count": 1
+    },
+    {
       "full_name": "microsoft/entrabot",
       "report_count": 1
     },
@@ -94,15 +102,7 @@
       "report_count": 1
     },
     {
-      "full_name": "microsoft/onnxruntime",
-      "report_count": 1
-    },
-    {
       "full_name": "Azure/azure-sdk-for-python",
-      "report_count": 1
-    },
-    {
-      "full_name": "dotnet/orleans",
       "report_count": 1
     },
     {
@@ -136,13 +136,13 @@
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 271,
+      "default_branch_commits": 273,
       "release_count": 20,
       "report_count": 1,
       "repos_with_movement": 67
     },
     "last_7_days": {
-      "default_branch_commits": 271,
+      "default_branch_commits": 273,
       "release_count": 20,
       "report_count": 1,
       "repos_with_movement": 67
