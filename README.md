@@ -27,6 +27,7 @@ Running the scripts creates these output files:
 - `reports/events-calibration/latest.md` and `.json` - Events API calibration report.
 - `schemas/*.schema.json` - lightweight data contracts for generated machine-readable artifacts.
 - `DATA_DICTIONARY.md` - field-level notes for report, manifest, status, inventory, and CSV outputs.
+- `AI_CONTEXT.md` and `llms.txt` - AI/agent ingestion guidance.
 
 ## Requirements
 
@@ -193,6 +194,20 @@ python -m unittest discover -s tests
 ```
 
 GitHub Actions also runs these checks through `validate.yml` on push, pull request, and manual dispatch.
+
+## Consumption Guidance
+
+- Start with `reports/manifest.json` for artifact discovery.
+- Check `reports/status.json` for freshness, deferrals, and latest successful report time.
+- Use `reports/latest.events.ndjson` for AI, search, BI, or database ingestion.
+- Use `reports/latest.md` for the human daily brief.
+- Read `AI_CONTEXT.md`, `llms.txt`, `DATA_DICTIONARY.md`, and `docs/data-contract.md` before building downstream consumers.
+
+Additional docs:
+
+- `docs/architecture.md`
+- `docs/operations.md`
+- `docs/classification.md`
 
 ## Notes
 

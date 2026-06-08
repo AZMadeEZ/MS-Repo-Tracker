@@ -1,0 +1,31 @@
+# MS-Repo-Tracker
+
+This repository tracks public GitHub repository activity across selected Microsoft-related organizations.
+
+Start with:
+
+- `reports/manifest.json`
+- `reports/status.json`
+- `reports/latest.events.ndjson`
+- `reports/latest.json`
+
+For human summaries, read:
+
+- `reports/latest.md`
+
+Generated files include:
+
+- `msft_repo_inventory.csv`
+- `msft_repo_inventory_watchfeeds.csv`
+- `msft_repo_tracker_state.json`
+- `changes_last24h.csv`
+- `changes_last24h.md`
+- `reports/*`
+
+Important guidance:
+
+- Do not assume commit volume means importance.
+- Use event `dedupe_key` to deduplicate overlapping state-window runs.
+- Use event `notability_score`, `change_type`, `actor_type`, and `noise_level` for summaries.
+- Use `reports/status.json` for freshness and deferred-run state.
+- Use `DATA_DICTIONARY.md` and `schemas/*.schema.json` for field contracts.
