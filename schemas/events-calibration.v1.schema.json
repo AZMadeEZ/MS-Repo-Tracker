@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Events Calibration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "calibration"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "calibration": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

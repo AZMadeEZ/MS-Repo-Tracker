@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Inventory CSV Rows",
+  "type": "object",
+  "required": [
+    "org",
+    "name",
+    "full_name",
+    "html_url",
+    "archived",
+    "fork",
+    "pushed_at",
+    "default_branch",
+    "category",
+    "score"
+  ],
+  "properties": {
+    "org": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "html_url": {
+      "type": "string"
+    },
+    "archived": {
+      "type": "string"
+    },
+    "fork": {
+      "type": "string"
+    },
+    "pushed_at": {
+      "type": "string"
+    },
+    "default_branch": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

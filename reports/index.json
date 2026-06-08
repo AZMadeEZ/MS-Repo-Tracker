@@ -1,9 +1,11 @@
 {
+  "artifact_type": "tracker-report-index",
+  "artifact_version": "1.0.0",
   "daily": [
     {
       "date": "2026-06-08",
-      "default_branch_commits": 273,
-      "generated_at": "2026-06-08T20:32:50.261786Z",
+      "default_branch_commits": 283,
+      "generated_at": "2026-06-08T21:11:10.933557Z",
       "high_signal_count": 25,
       "release_count": 20,
       "report_json": "2026-06-08.json",
@@ -11,8 +13,9 @@
       "repos_with_movement": 67
     }
   ],
-  "generated_at": "2026-06-08T20:33:58.932046Z",
+  "generated_at": "2026-06-08T21:13:46.227931Z",
   "report_count": 1,
+  "schema_url": "schemas/report-index.v1.schema.json",
   "schema_version": 1,
   "top_products": [
     {
@@ -42,11 +45,11 @@
       "report_count": 1
     },
     {
-      "full_name": "microsoft/kiota-samples",
+      "full_name": "dotnet/runtime",
       "report_count": 1
     },
     {
-      "full_name": "dotnet/runtime",
+      "full_name": "microsoft/kiota-samples",
       "report_count": 1
     },
     {
@@ -58,19 +61,15 @@
       "report_count": 1
     },
     {
+      "full_name": "Azure/azure-sdk-for-java",
+      "report_count": 1
+    },
+    {
       "full_name": "microsoft/teams-agent-accelerator-templates",
       "report_count": 1
     },
     {
       "full_name": "microsoft/vscode-docs",
-      "report_count": 1
-    },
-    {
-      "full_name": "MicrosoftLearning/ai-apps",
-      "report_count": 1
-    },
-    {
-      "full_name": "Azure/azure-sdk-for-java",
       "report_count": 1
     },
     {
@@ -86,15 +85,7 @@
       "report_count": 1
     },
     {
-      "full_name": "microsoft/onnxruntime",
-      "report_count": 1
-    },
-    {
-      "full_name": "dotnet/orleans",
-      "report_count": 1
-    },
-    {
-      "full_name": "microsoft/entrabot",
+      "full_name": "MicrosoftLearning/ai-apps",
       "report_count": 1
     },
     {
@@ -102,7 +93,19 @@
       "report_count": 1
     },
     {
+      "full_name": "microsoft/entrabot",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/orleans",
+      "report_count": 1
+    },
+    {
       "full_name": "Azure/azure-sdk-for-python",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/onnxruntime",
       "report_count": 1
     },
     {
@@ -118,31 +121,31 @@
       "report_count": 1
     },
     {
+      "full_name": "Azure/azure-sdk-for-rust",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-go",
+      "report_count": 1
+    },
+    {
       "full_name": "microsoft/WindowsAppSDK",
       "report_count": 1
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-cli",
       "report_count": 1
-    },
-    {
-      "full_name": "Azure/aks-rdma-infiniband",
-      "report_count": 1
-    },
-    {
-      "full_name": "microsoftgraph/msgraph-snippets-go",
-      "report_count": 1
     }
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 273,
+      "default_branch_commits": 283,
       "release_count": 20,
       "report_count": 1,
       "repos_with_movement": 67
     },
     "last_7_days": {
-      "default_branch_commits": 273,
+      "default_branch_commits": 283,
       "release_count": 20,
       "report_count": 1,
       "repos_with_movement": 67

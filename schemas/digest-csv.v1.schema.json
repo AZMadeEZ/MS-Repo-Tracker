@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Digest CSV Rows",
+  "type": "object",
+  "required": [
+    "full_name",
+    "org",
+    "name",
+    "category",
+    "default_branch",
+    "commit_count_window",
+    "window_since",
+    "window_until",
+    "hours_requested",
+    "state_window_enabled",
+    "newest_commit_date"
+  ],
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "org": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "default_branch": {
+      "type": "string"
+    },
+    "commit_count_24h": {
+      "description": "Deprecated compatibility field. Use commit_count_window.",
+      "type": "string"
+    },
+    "commit_count_window": {
+      "type": "string"
+    },
+    "window_since": {
+      "type": "string"
+    },
+    "window_until": {
+      "type": "string"
+    },
+    "hours_requested": {
+      "type": "string"
+    },
+    "state_window_enabled": {
+      "type": "string"
+    },
+    "newest_commit_date": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

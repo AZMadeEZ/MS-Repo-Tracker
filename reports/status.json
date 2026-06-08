@@ -1,0 +1,26 @@
+{
+  "artifact_type": "tracker-status",
+  "artifact_version": "1.0.0",
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-06-08T21:11:10.933557Z",
+  "last_attempt_at": "2026-06-08T21:11:10.933557Z",
+  "last_success_at": "2026-06-08T21:11:10.933557Z",
+  "latest_report_generated_at": "2026-06-08T21:11:10.933557Z",
+  "latest_report_stale": false,
+  "reason": "success",
+  "schema_url": "schemas/status.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "c96ca8d7fd9dc6e1f3e39aded7921a0826419caa",
+    "repository": "",
+    "workflow": "",
+    "workflow_run_id": "",
+    "workflow_run_url": ""
+  },
+  "status": "complete"
+}

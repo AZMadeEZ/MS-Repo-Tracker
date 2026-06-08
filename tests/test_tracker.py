@@ -98,6 +98,7 @@ class DigestFilterTests(unittest.TestCase):
             since_iso="2026-01-01T00:00:00Z",
             since_dt=dt.datetime(2026, 1, 1, tzinfo=dt.timezone.utc),
             generated_at=dt.datetime(2026, 1, 2, 3, 4, tzinfo=dt.timezone.utc),
+            until_iso="2026-01-02T03:04:00Z",
             hours_requested=24,
             selected_categories={"docs"},
             include_other=False,
@@ -116,10 +117,12 @@ class DigestFilterTests(unittest.TestCase):
         )
         with tempfile.TemporaryDirectory() as tmp:
             paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
-            self.assertEqual(len(paths), 6)
+            self.assertEqual(len(paths), 8)
             self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
             self.assertTrue((Path(tmp) / "reports" / "index.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "manifest.json").exists())
+            self.assertTrue((Path(tmp) / "reports" / "status.json").exists())
 
     def test_watchlist_scores_human_watched_repo_above_bot_noise(self) -> None:
         watched = changes.RepoActivity(
@@ -396,6 +399,11 @@ class ValidationScriptTests(unittest.TestCase):
                         "category",
                         "default_branch",
                         "commit_count_24h",
+                        "commit_count_window",
+                        "window_since",
+                        "window_until",
+                        "hours_requested",
+                        "state_window_enabled",
                         "newest_commit_date",
                     ],
                     lineterminator="\n",
@@ -409,6 +417,11 @@ class ValidationScriptTests(unittest.TestCase):
                         "category": "other",
                         "default_branch": "main",
                         "commit_count_24h": "1",
+                        "commit_count_window": "1",
+                        "window_since": "2026-01-01T00:00:00Z",
+                        "window_until": "2026-01-02T00:00:00Z",
+                        "hours_requested": "24",
+                        "state_window_enabled": "True",
                         "newest_commit_date": "2026-01-01T00:00:00Z",
                     }
                 )
@@ -420,7 +433,16 @@ class ValidationScriptTests(unittest.TestCase):
             report_dir.mkdir()
             report_payload = {
                 "schema_version": 1,
+                "artifact_type": "tracker-report",
+                "artifact_version": changes.ARTIFACT_VERSION,
+                "schema_url": changes.REPORT_SCHEMA_URL,
                 "generated_at": "2026-01-01T00:00:00Z",
+                "window": {
+                    "since": "2026-01-01T00:00:00Z",
+                    "until": "2026-01-02T00:00:00Z",
+                    "hours_requested": 24,
+                    "state_window_enabled": True,
+                },
                 "totals": {"repos_with_movement": 1},
                 "summaries": {"signals": {"high_signal": []}},
                 "top_repos": [],
@@ -436,19 +458,68 @@ class ValidationScriptTests(unittest.TestCase):
                     encoding="utf-8",
                 )
             (report_dir / "index.json").write_text(
-                json.dumps({"schema_version": 1, "daily": []}),
+                json.dumps(
+                    {
+                        "schema_version": 1,
+                        "artifact_type": "tracker-report-index",
+                        "artifact_version": changes.ARTIFACT_VERSION,
+                        "schema_url": changes.REPORT_INDEX_SCHEMA_URL,
+                        "daily": [],
+                    }
+                ),
                 encoding="utf-8",
             )
             (report_dir / "index.md").write_text(
                 "# Microsoft Repo Tracker Report Index\n\n",
                 encoding="utf-8",
             )
+            status_payload = {
+                "schema_version": 1,
+                "artifact_type": "tracker-status",
+                "artifact_version": changes.ARTIFACT_VERSION,
+                "schema_url": changes.STATUS_SCHEMA_URL,
+                "generated_at": "2026-01-01T00:00:00Z",
+                "last_attempt_at": "2026-01-01T00:00:00Z",
+                "last_success_at": "2026-01-01T00:00:00Z",
+                "status": "complete",
+                "reason": "success",
+                "latest_report_generated_at": "2026-01-01T00:00:00Z",
+                "latest_report_stale": False,
+                "freshness": {
+                    "max_age_hours": 30,
+                    "age_hours": 0,
+                    "latest_report_stale": False,
+                    "state": "fresh",
+                },
+            }
+            (report_dir / "status.json").write_text(json.dumps(status_payload), encoding="utf-8")
+            manifest_payload = {
+                "schema_version": 1,
+                "artifact_type": "tracker-manifest",
+                "artifact_version": changes.ARTIFACT_VERSION,
+                "schema_url": changes.MANIFEST_SCHEMA_URL,
+                "generated_at": "2026-01-01T00:00:00Z",
+                "status": {
+                    "status": "complete",
+                    "reason": "success",
+                    "latest_report_generated_at": "2026-01-01T00:00:00Z",
+                    "latest_report_stale": False,
+                },
+                "freshness": status_payload["freshness"],
+                "artifacts": [
+                    {"name": "latest_human_report", "artifact_type": "markdown", "path": str(report_dir / "latest.md"), "required": True},
+                    {"name": "latest_machine_report", "artifact_type": "json", "path": str(report_dir / "latest.json"), "required": True, "schema_url": changes.REPORT_SCHEMA_URL},
+                    {"name": "tracker_status", "artifact_type": "json", "path": str(report_dir / "status.json"), "required": True, "schema_url": changes.STATUS_SCHEMA_URL},
+                ],
+            }
+            (report_dir / "manifest.json").write_text(json.dumps(manifest_payload), encoding="utf-8")
 
             rows = validate_tracker.validate_inventory(inventory_path)
             validate_tracker.validate_watchfeeds(watchfeeds_path, rows)
             validate_tracker.validate_state(state_path, rows)
             digest_rows = validate_tracker.validate_digest(digest_csv_path, digest_md_path)
             validate_tracker.validate_reports(report_dir, digest_rows)
+            validate_tracker.validate_manifest_status(report_dir)
 
     def test_validate_tracker_rejects_duplicate_full_names(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

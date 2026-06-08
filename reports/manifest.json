@@ -1,0 +1,115 @@
+{
+  "artifact_type": "tracker-manifest",
+  "artifact_version": "1.0.0",
+  "artifacts": [
+    {
+      "artifact_type": "markdown",
+      "name": "latest_human_report",
+      "path": "reports/latest.md",
+      "required": true
+    },
+    {
+      "artifact_type": "json",
+      "name": "latest_machine_report",
+      "path": "reports/latest.json",
+      "required": true,
+      "schema_url": "schemas/report.v1.schema.json"
+    },
+    {
+      "artifact_type": "markdown",
+      "name": "report_index_human",
+      "path": "reports/index.md",
+      "required": true
+    },
+    {
+      "artifact_type": "json",
+      "name": "report_index_machine",
+      "path": "reports/index.json",
+      "required": true,
+      "schema_url": "schemas/report-index.v1.schema.json"
+    },
+    {
+      "artifact_type": "json",
+      "name": "tracker_status",
+      "path": "reports/status.json",
+      "required": true,
+      "schema_url": "schemas/status.v1.schema.json"
+    },
+    {
+      "artifact_type": "csv",
+      "name": "digest_csv",
+      "path": "changes_last24h.csv",
+      "required": true,
+      "schema_url": "schemas/digest-csv.v1.schema.json"
+    },
+    {
+      "artifact_type": "csv",
+      "name": "inventory",
+      "path": "msft_repo_inventory.csv",
+      "required": true,
+      "schema_url": "schemas/inventory.v1.schema.json"
+    },
+    {
+      "artifact_type": "csv",
+      "name": "watchfeeds",
+      "path": "msft_repo_inventory_watchfeeds.csv",
+      "required": true,
+      "schema_url": "schemas/watchfeeds.v1.schema.json"
+    },
+    {
+      "artifact_type": "json",
+      "name": "tracker_state",
+      "path": "msft_repo_tracker_state.json",
+      "required": true,
+      "schema_url": "schemas/state.v1.schema.json"
+    },
+    {
+      "artifact_type": "markdown",
+      "name": "dated_human_report",
+      "path": "reports/2026-06-08.md",
+      "required": true
+    },
+    {
+      "artifact_type": "json",
+      "name": "dated_machine_report",
+      "path": "reports/2026-06-08.json",
+      "required": true,
+      "schema_url": "schemas/report.v1.schema.json"
+    },
+    {
+      "artifact_type": "json",
+      "name": "events_calibration_machine",
+      "path": "reports/events-calibration/latest.json",
+      "required": false,
+      "schema_url": "schemas/events-calibration.v1.schema.json"
+    },
+    {
+      "artifact_type": "markdown",
+      "name": "events_calibration_human",
+      "path": "reports/events-calibration/latest.md",
+      "required": false
+    }
+  ],
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-06-08T21:11:10.933557Z",
+  "schema_url": "schemas/manifest.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "c96ca8d7fd9dc6e1f3e39aded7921a0826419caa",
+    "repository": "",
+    "workflow": "",
+    "workflow_run_id": "",
+    "workflow_run_url": ""
+  },
+  "status": {
+    "latest_report_generated_at": "2026-06-08T21:11:10.933557Z",
+    "latest_report_stale": false,
+    "reason": "success",
+    "status": "complete"
+  }
+}

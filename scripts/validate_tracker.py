@@ -38,8 +38,15 @@ REQUIRED_DIGEST_COLUMNS = {
     "category",
     "default_branch",
     "commit_count_24h",
+    "commit_count_window",
+    "window_since",
+    "window_until",
+    "hours_requested",
+    "state_window_enabled",
     "newest_commit_date",
 }
+
+VALID_STATUS_VALUES = {"complete", "deferred", "failed"}
 
 
 def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -146,8 +153,32 @@ def validate_digest(csv_path: Path, md_path: Path) -> list[dict[str, str]]:
         count = row.get("commit_count_24h", "").strip()
         if count:
             int(count)
+        window_count = row.get("commit_count_window", "").strip()
+        if window_count:
+            int(window_count)
+        if count and window_count and int(count) != int(window_count):
+            raise RuntimeError("Digest commit_count_24h and commit_count_window differ.")
+        if not row.get("window_since", "").strip():
+            raise RuntimeError("Digest row is missing window_since.")
+        if not row.get("window_until", "").strip():
+            raise RuntimeError("Digest row is missing window_until.")
+        int(row.get("hours_requested", "0") or 0)
+        if row.get("state_window_enabled", "").strip() not in {"True", "False", "true", "false"}:
+            raise RuntimeError("Digest row has invalid state_window_enabled value.")
 
     return rows
+
+
+def validate_artifact_identity(payload: Dict[str, Any], expected_type: str) -> None:
+    if payload.get("schema_version") != 1:
+        raise RuntimeError(f"Unexpected {expected_type} schema_version.")
+    if payload.get("artifact_type") != expected_type:
+        raise RuntimeError(f"Unexpected artifact_type for {expected_type}.")
+    if not payload.get("artifact_version"):
+        raise RuntimeError(f"{expected_type} is missing artifact_version.")
+    schema_url = str(payload.get("schema_url") or "")
+    if schema_url and not Path(schema_url).exists():
+        raise RuntimeError(f"{expected_type} schema_url does not exist: {schema_url}")
 
 
 def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dict[str, Any]:
@@ -161,13 +192,16 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     with latest_json.open("r", encoding="utf-8") as f:
         payload = json.load(f)
 
-    if payload.get("schema_version") != 1:
-        raise RuntimeError("Unexpected report schema_version.")
+    validate_artifact_identity(payload, "tracker-report")
     if not payload.get("generated_at"):
         raise RuntimeError("Report is missing generated_at.")
     for key in ("summaries", "top_repos", "activities", "graphql", "releases"):
         if key not in payload:
             raise RuntimeError(f"Report is missing required key: {key}")
+    window = payload.get("window") or {}
+    for key in ("since", "until", "hours_requested", "state_window_enabled"):
+        if key not in window:
+            raise RuntimeError(f"Report window is missing required key: {key}")
 
     totals = payload.get("totals") or {}
     repos_with_movement = int(totals.get("repos_with_movement") or 0)
@@ -203,12 +237,59 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
         raise RuntimeError("Report index files are missing.")
     with index_json.open("r", encoding="utf-8") as f:
         index_payload = json.load(f)
-    if index_payload.get("schema_version") != 1:
-        raise RuntimeError("Unexpected report index schema_version.")
+    validate_artifact_identity(index_payload, "tracker-report-index")
     if not isinstance(index_payload.get("daily"), list):
         raise RuntimeError("Report index is missing daily report entries.")
 
     return payload
+
+
+def resolve_manifest_path(path_value: str) -> Path:
+    path = Path(path_value)
+    return path if path.is_absolute() else Path.cwd() / path
+
+
+def validate_manifest_status(report_dir: Path) -> None:
+    manifest_path = report_dir / "manifest.json"
+    status_path = report_dir / "status.json"
+    if not manifest_path.exists():
+        raise RuntimeError(f"Missing required report file: {manifest_path}")
+    if not status_path.exists():
+        raise RuntimeError(f"Missing required report file: {status_path}")
+
+    with status_path.open("r", encoding="utf-8") as f:
+        status = json.load(f)
+    validate_artifact_identity(status, "tracker-status")
+    if status.get("status") not in VALID_STATUS_VALUES:
+        raise RuntimeError("Tracker status has an unexpected status value.")
+    if not status.get("last_attempt_at"):
+        raise RuntimeError("Tracker status is missing last_attempt_at.")
+    freshness = status.get("freshness")
+    if not isinstance(freshness, dict) or "latest_report_stale" not in freshness:
+        raise RuntimeError("Tracker status is missing freshness metadata.")
+
+    with manifest_path.open("r", encoding="utf-8") as f:
+        manifest = json.load(f)
+    validate_artifact_identity(manifest, "tracker-manifest")
+    artifacts = manifest.get("artifacts")
+    if not isinstance(artifacts, list) or not artifacts:
+        raise RuntimeError("Tracker manifest is missing artifacts.")
+    artifact_names = {str(item.get("name") or "") for item in artifacts if isinstance(item, dict)}
+    for required_name in {"latest_machine_report", "latest_human_report", "tracker_status"}:
+        if required_name not in artifact_names:
+            raise RuntimeError(f"Tracker manifest is missing artifact: {required_name}")
+
+    for item in artifacts:
+        if not isinstance(item, dict):
+            raise RuntimeError("Tracker manifest artifact entries must be objects.")
+        path_value = str(item.get("path") or "")
+        if not path_value:
+            raise RuntimeError("Tracker manifest artifact is missing path.")
+        if item.get("required", True) and not resolve_manifest_path(path_value).exists():
+            raise RuntimeError(f"Tracker manifest references missing artifact: {path_value}")
+        schema_url = str(item.get("schema_url") or "")
+        if schema_url and not Path(schema_url).exists():
+            raise RuntimeError(f"Tracker manifest references missing schema: {schema_url}")
 
 
 def validate_events_calibration(report_dir: Path) -> None:
@@ -251,6 +332,7 @@ def main() -> int:
     if not args.skip_reports:
         reports_dir = Path(args.reports_dir)
         validate_reports(reports_dir, digest_rows)
+        validate_manifest_status(reports_dir)
         validate_events_calibration(reports_dir / "events-calibration")
 
     print(

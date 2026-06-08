@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Watchfeed CSV Rows",
+  "type": "object",
+  "required": [
+    "full_name",
+    "category",
+    "default_branch",
+    "commits_atom",
+    "releases_atom"
+  ],
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "default_branch": {
+      "type": "string"
+    },
+    "commits_atom": {
+      "type": "string"
+    },
+    "releases_atom": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

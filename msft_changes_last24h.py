@@ -16,6 +16,7 @@ import datetime as dt
 import json
 import os
 import re
+import subprocess
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -35,6 +36,17 @@ from github_api import (
 DEFAULT_DIGEST_CATEGORIES = {"docs", "reference", "training", "samples"}
 DEFAULT_STATE_PATH = "msft_repo_tracker_state.json"
 DEFAULT_WATCHLIST_PATH = "watchlist.yml"
+ARTIFACT_VERSION = "1.0.0"
+REPORT_SCHEMA_URL = "schemas/report.v1.schema.json"
+REPORT_INDEX_SCHEMA_URL = "schemas/report-index.v1.schema.json"
+MANIFEST_SCHEMA_URL = "schemas/manifest.v1.schema.json"
+STATUS_SCHEMA_URL = "schemas/status.v1.schema.json"
+DIGEST_CSV_SCHEMA_URL = "schemas/digest-csv.v1.schema.json"
+INVENTORY_SCHEMA_URL = "schemas/inventory.v1.schema.json"
+WATCHFEEDS_SCHEMA_URL = "schemas/watchfeeds.v1.schema.json"
+STATE_SCHEMA_URL = "schemas/state.v1.schema.json"
+EVENTS_CALIBRATION_SCHEMA_URL = "schemas/events-calibration.v1.schema.json"
+REPORT_FRESHNESS_HOURS = 30
 BOT_MARKERS = ("[bot]", "dependabot", "renovate", "github-actions", "learn-build-service")
 DEPENDENCY_MARKERS = ("bump ", "dependabot", "renovate", "dependency", "dependencies")
 RELEASE_MARKERS = ("release", "version", "ga ", "generally available", "preview")
@@ -196,6 +208,90 @@ def save_state(path: str, state: Dict[str, Any]) -> None:
         json.dump(state, f, indent=2, sort_keys=True)
         f.write("\n")
     os.replace(tmp_path, path)
+
+
+def source_commit() -> str:
+    value = os.environ.get("GITHUB_SHA", "").strip()
+    if value:
+        return value
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        return result.stdout.strip()
+    except Exception:
+        return ""
+
+
+def workflow_run_url() -> str:
+    repository = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    run_id = os.environ.get("GITHUB_RUN_ID", "").strip()
+    if not repository or not run_id:
+        return ""
+    server_url = os.environ.get("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
+    return f"{server_url}/{repository}/actions/runs/{run_id}"
+
+
+def source_metadata() -> Dict[str, str]:
+    return {
+        "repository": os.environ.get("GITHUB_REPOSITORY", "").strip(),
+        "commit": source_commit(),
+        "workflow": os.environ.get("GITHUB_WORKFLOW", "").strip(),
+        "workflow_run_id": os.environ.get("GITHUB_RUN_ID", "").strip(),
+        "workflow_run_url": workflow_run_url(),
+    }
+
+
+def normalize_artifact_path(path: str) -> str:
+    return os.path.normpath(path).replace("\\", "/")
+
+
+def latest_report_generated_at(report_dir: str) -> str:
+    path = os.path.join(report_dir, "latest.json")
+    if not os.path.exists(path):
+        return ""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        return str((payload or {}).get("generated_at") or "")
+    except Exception:
+        return ""
+
+
+def freshness_payload(latest_generated_at: str, now_utc: dt.datetime) -> Dict[str, Any]:
+    latest_dt = parse_iso(latest_generated_at)
+    if latest_dt is None:
+        return {
+            "max_age_hours": REPORT_FRESHNESS_HOURS,
+            "age_hours": None,
+            "latest_report_stale": True,
+            "state": "unknown",
+        }
+
+    age = now_utc - latest_dt.astimezone(dt.timezone.utc)
+    age_hours = max(0.0, round(age.total_seconds() / 3600, 2))
+    stale = age > dt.timedelta(hours=REPORT_FRESHNESS_HOURS)
+    return {
+        "max_age_hours": REPORT_FRESHNESS_HOURS,
+        "age_hours": age_hours,
+        "latest_report_stale": stale,
+        "state": "stale" if stale else "fresh",
+    }
+
+
+def infer_deferred_reason(message: str) -> str:
+    lowered = message.lower()
+    if "graphql" in lowered:
+        return "graphql_budget_too_low"
+    if "core" in lowered or "rest" in lowered:
+        return "rest_budget_too_low"
+    if "rate limit" in lowered or "budget exhausted" in lowered or "secondary rate" in lowered:
+        return "github_rate_limit"
+    return "deferred"
 
 
 def compute_since_dt(
@@ -1094,6 +1190,10 @@ def write_csv(
     path: str,
     activities: List[RepoActivity],
     max_commits: int,
+    since_iso: str,
+    until_iso: str,
+    hours_requested: int,
+    state_window_enabled: bool,
     signals_by_repo: Optional[Dict[str, Dict[str, Any]]] = None,
     releases_by_repo: Optional[Dict[str, List[ReleaseInfo]]] = None,
 ) -> None:
@@ -1106,6 +1206,11 @@ def write_csv(
         "category",
         "default_branch",
         "commit_count_24h",
+        "commit_count_window",
+        "window_since",
+        "window_until",
+        "hours_requested",
+        "state_window_enabled",
         "newest_commit_date",
         "signal_score",
         "signal_tags",
@@ -1133,6 +1238,11 @@ def write_csv(
                 "category": activity.category,
                 "default_branch": activity.default_branch,
                 "commit_count_24h": activity.commit_count,
+                "commit_count_window": activity.commit_count,
+                "window_since": since_iso,
+                "window_until": until_iso,
+                "hours_requested": hours_requested,
+                "state_window_enabled": state_window_enabled,
                 "newest_commit_date": activity.newest_commit_date,
                 "signal_score": (signals_by_repo.get(activity.full_name) or {}).get("score", ""),
                 "signal_tags": ";".join((signals_by_repo.get(activity.full_name) or {}).get("tags", [])),
@@ -1324,6 +1434,7 @@ def build_report_payload(
     since_iso: str,
     since_dt: dt.datetime,
     generated_at: dt.datetime,
+    until_iso: str,
     hours_requested: int,
     selected_categories: Optional[Set[str]],
     include_other: bool,
@@ -1349,9 +1460,14 @@ def build_report_payload(
 
     return {
         "schema_version": 1,
+        "artifact_type": "tracker-report",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": REPORT_SCHEMA_URL,
         "generated_at": iso_utc(generated_at),
+        "source": source_metadata(),
         "window": {
             "since": since_iso,
+            "until": until_iso,
             "hours_requested": hours_requested,
             "state_window_enabled": use_state_window,
         },
@@ -1452,6 +1568,7 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
         f.write(f"# Microsoft Repo Change Brief - {title_date}\n\n")
         f.write(f"Generated: `{generated_at}`\n\n")
         f.write(f"Window since: `{window.get('since', '')}`\n\n")
+        f.write(f"Window until: `{window.get('until', '')}`\n\n")
 
         f.write("## Summary\n\n")
         f.write("| Metric | Value |\n")
@@ -1709,6 +1826,9 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
     last_30 = daily[-30:]
     return {
         "schema_version": 1,
+        "artifact_type": "tracker-report-index",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": REPORT_INDEX_SCHEMA_URL,
         "generated_at": iso_utc(),
         "report_count": len(daily),
         "daily": daily,
@@ -1786,6 +1906,153 @@ def write_report_index(report_dir: str) -> List[str]:
     return [json_path, md_path]
 
 
+def manifest_artifact(
+    name: str,
+    artifact_type: str,
+    path: str,
+    *,
+    schema_url: str = "",
+    required: bool = True,
+) -> Dict[str, Any]:
+    item = {
+        "name": name,
+        "artifact_type": artifact_type,
+        "path": normalize_artifact_path(path),
+        "required": required,
+    }
+    if schema_url:
+        item["schema_url"] = schema_url
+    return item
+
+
+def build_status_payload(
+    report_dir: str,
+    *,
+    status: str,
+    reason: str,
+    now_utc: dt.datetime,
+    latest_generated_at: Optional[str] = None,
+) -> Dict[str, Any]:
+    latest_generated_at = latest_generated_at if latest_generated_at is not None else latest_report_generated_at(report_dir)
+    freshness = freshness_payload(latest_generated_at, now_utc)
+    return {
+        "schema_version": 1,
+        "artifact_type": "tracker-status",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": STATUS_SCHEMA_URL,
+        "generated_at": iso_utc(now_utc),
+        "last_attempt_at": iso_utc(now_utc),
+        "last_success_at": latest_generated_at if status == "complete" else latest_generated_at,
+        "status": status,
+        "reason": reason,
+        "latest_report_generated_at": latest_generated_at,
+        "latest_report_stale": freshness["latest_report_stale"],
+        "freshness": freshness,
+        "source": source_metadata(),
+    }
+
+
+def build_manifest_payload(
+    report_dir: str,
+    *,
+    status_payload: Dict[str, Any],
+    generated_at: dt.datetime,
+) -> Dict[str, Any]:
+    latest_generated_at = str(status_payload.get("latest_report_generated_at") or "")
+    date_slug = latest_generated_at[:10] if latest_generated_at else ""
+    artifacts = [
+        manifest_artifact("latest_human_report", "markdown", os.path.join(report_dir, "latest.md")),
+        manifest_artifact("latest_machine_report", "json", os.path.join(report_dir, "latest.json"), schema_url=REPORT_SCHEMA_URL),
+        manifest_artifact("report_index_human", "markdown", os.path.join(report_dir, "index.md")),
+        manifest_artifact("report_index_machine", "json", os.path.join(report_dir, "index.json"), schema_url=REPORT_INDEX_SCHEMA_URL),
+        manifest_artifact("tracker_status", "json", os.path.join(report_dir, "status.json"), schema_url=STATUS_SCHEMA_URL),
+        manifest_artifact("digest_csv", "csv", "changes_last24h.csv", schema_url=DIGEST_CSV_SCHEMA_URL),
+        manifest_artifact("inventory", "csv", "msft_repo_inventory.csv", schema_url=INVENTORY_SCHEMA_URL),
+        manifest_artifact("watchfeeds", "csv", "msft_repo_inventory_watchfeeds.csv", schema_url=WATCHFEEDS_SCHEMA_URL),
+        manifest_artifact("tracker_state", "json", "msft_repo_tracker_state.json", schema_url=STATE_SCHEMA_URL),
+    ]
+    if date_slug:
+        artifacts.extend(
+            [
+                manifest_artifact("dated_human_report", "markdown", os.path.join(report_dir, f"{date_slug}.md")),
+                manifest_artifact("dated_machine_report", "json", os.path.join(report_dir, f"{date_slug}.json"), schema_url=REPORT_SCHEMA_URL),
+            ]
+        )
+
+    calibration_json = os.path.join(report_dir, "events-calibration", "latest.json")
+    calibration_md = os.path.join(report_dir, "events-calibration", "latest.md")
+    if os.path.exists(calibration_json):
+        artifacts.append(
+            manifest_artifact(
+                "events_calibration_machine",
+                "json",
+                calibration_json,
+                schema_url=EVENTS_CALIBRATION_SCHEMA_URL,
+                required=False,
+            )
+        )
+    if os.path.exists(calibration_md):
+        artifacts.append(
+            manifest_artifact(
+                "events_calibration_human",
+                "markdown",
+                calibration_md,
+                required=False,
+            )
+        )
+
+    return {
+        "schema_version": 1,
+        "artifact_type": "tracker-manifest",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": MANIFEST_SCHEMA_URL,
+        "generated_at": iso_utc(generated_at),
+        "source": source_metadata(),
+        "status": {
+            "status": status_payload.get("status", ""),
+            "reason": status_payload.get("reason", ""),
+            "latest_report_generated_at": latest_generated_at,
+            "latest_report_stale": status_payload.get("latest_report_stale", True),
+        },
+        "freshness": status_payload.get("freshness") or {},
+        "artifacts": artifacts,
+    }
+
+
+def write_status_and_manifest(
+    report_dir: str,
+    *,
+    status: str,
+    reason: str,
+    now_utc: dt.datetime,
+    latest_generated_at: Optional[str] = None,
+) -> List[str]:
+    os.makedirs(report_dir, exist_ok=True)
+    status_payload = build_status_payload(
+        report_dir,
+        status=status,
+        reason=reason,
+        now_utc=now_utc,
+        latest_generated_at=latest_generated_at,
+    )
+    status_path = os.path.join(report_dir, "status.json")
+    manifest_path = os.path.join(report_dir, "manifest.json")
+    with open(status_path, "w", encoding="utf-8") as f:
+        json.dump(status_payload, f, indent=2, sort_keys=True)
+        f.write("\n")
+
+    manifest_payload = build_manifest_payload(
+        report_dir,
+        status_payload=status_payload,
+        generated_at=now_utc,
+    )
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest_payload, f, indent=2, sort_keys=True)
+        f.write("\n")
+
+    return [status_path, manifest_path]
+
+
 def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
     os.makedirs(report_dir, exist_ok=True)
     date_slug = str(payload.get("generated_at") or "latest")[:10]
@@ -1803,7 +2070,15 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
     for path in paths[2:]:
         write_report_markdown(path, payload)
 
-    return paths + write_report_index(report_dir)
+    index_paths = write_report_index(report_dir)
+    status_paths = write_status_and_manifest(
+        report_dir,
+        status="complete",
+        reason="success",
+        now_utc=parse_iso(str(payload.get("generated_at") or "")) or dt.datetime.now(dt.timezone.utc),
+        latest_generated_at=str(payload.get("generated_at") or ""),
+    )
+    return paths + index_paths + status_paths
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -1904,6 +2179,7 @@ def main() -> int:
             max_lookback_hours=args.max_lookback_hours,
         )
         since_iso = iso_utc(since_dt)
+        until_iso = iso_utc(now_utc)
 
         maybe_changed: List[RepoInput] = []
         if any(repo.pushed_at for repo in filtered):
@@ -2029,6 +2305,10 @@ def main() -> int:
             "changes_last24h.csv",
             activities,
             args.max_commits,
+            since_iso,
+            until_iso,
+            args.hours,
+            args.use_state_window,
             signals_by_repo=signals_by_repo,
             releases_by_repo=releases_by_repo,
         )
@@ -2045,6 +2325,7 @@ def main() -> int:
                 since_iso=since_iso,
                 since_dt=since_dt,
                 generated_at=now_utc,
+                until_iso=until_iso,
                 hours_requested=args.hours,
                 selected_categories=selected_categories,
                 include_other=args.include_other,
@@ -2067,6 +2348,7 @@ def main() -> int:
             state["last_digest"] = {
                 "completed_at": iso_utc(now_utc),
                 "since": since_iso,
+                "until": until_iso,
                 "hours_requested": args.hours,
                 "state_window_enabled": args.use_state_window,
                 "digest_overlap_hours": args.digest_overlap_hours,
@@ -2088,6 +2370,13 @@ def main() -> int:
             save_state(args.state, state)
 
     except RateLimitDeferred as exc:
+        if not args.no_reports:
+            write_status_and_manifest(
+                args.reports_dir,
+                status="deferred",
+                reason=infer_deferred_reason(str(exc)),
+                now_utc=dt.datetime.now(dt.timezone.utc),
+            )
         print(f"[DEFERRED] {exc}", file=sys.stderr)
         return DEFERRED_EXIT_CODE
 

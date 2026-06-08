@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 This note captures the current rate-limit findings for MS-Repo-Tracker and records the starting point for remediation planning.
 
-Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, and updated GitHub Actions workflows.
+Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, data contracts under `schemas/`, `reports/manifest.json`, `reports/status.json`, accurate digest window metadata, and updated GitHub Actions workflows.
 
 ## Current Hot Spots
 
@@ -190,6 +190,17 @@ This is not the same as a perfect webhook guarantee. A strict "never miss anythi
    - Release detection uses capped conditional REST calls over candidate and watched repos.
    - Per-repo release failures are recorded and skipped so one restricted endpoint does not fail the digest.
    - Inventory refresh records new repos, removed repos, archived-state changes, default-branch changes, category changes, and fork-state changes in state for the next report.
+
+19. Data contracts and report freshness: make generated artifacts easier to ingest safely.
+   - Machine-readable report artifacts include `artifact_type`, `artifact_version`, and `schema_url`.
+   - `reports/manifest.json` catalogs committed artifacts and their schemas.
+   - `reports/status.json` records the latest digest attempt, clean rate-limit deferrals, and stale/fresh state for `reports/latest.json`.
+   - `DATA_DICTIONARY.md` describes fields for human readers and BI/reporting consumers.
+
+20. Accurate digest window metadata: avoid fixed 24-hour assumptions.
+   - `changes_last24h.csv` keeps `commit_count_24h` as a deprecated compatibility alias.
+   - New ingestion should use `commit_count_window`, `window_since`, `window_until`, `hours_requested`, and `state_window_enabled`.
+   - `reports/latest.json` records both `window.since` and `window.until` so state-extended catch-up runs are unambiguous.
 
 ## Open Planning Question
 

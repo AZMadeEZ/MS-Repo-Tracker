@@ -20,7 +20,11 @@ Running the scripts creates these output files:
 - `reports/latest.md` and `reports/latest.json` - current daily brief for human review and downstream ingestion.
 - `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json` - dated report history.
 - `reports/index.md` and `reports/index.json` - rolling report index with 7/30-day trend totals.
+- `reports/manifest.json` - artifact catalog for downstream ingestion.
+- `reports/status.json` - latest digest attempt status and report freshness metadata.
 - `reports/events-calibration/latest.md` and `.json` - Events API calibration report.
+- `schemas/*.schema.json` - lightweight data contracts for generated machine-readable artifacts.
+- `DATA_DICTIONARY.md` - field-level notes for report, manifest, status, inventory, and CSV outputs.
 
 ## Requirements
 
@@ -127,6 +131,10 @@ Outputs:
 - `reports/YYYY-MM-DD.json`
 - `reports/index.md`
 - `reports/index.json`
+- `reports/manifest.json`
+- `reports/status.json`
+
+`changes_last24h.csv` keeps the legacy `commit_count_24h` column for compatibility. New ingestion should use `commit_count_window` with `window_since`, `window_until`, `hours_requested`, and `state_window_enabled` so state-extended runs are interpreted correctly.
 
 Events prefilter modes:
 
@@ -142,6 +150,7 @@ Signal reporting:
 - Bot-only dependency churn is tagged separately so it can be scanned or filtered without hiding it.
 - Recent releases are fetched through capped, conditional REST calls and recorded under `releases` in the JSON report.
 - Repository lifecycle changes are recorded during inventory refresh and surfaced in the next digest report.
+- `reports/status.json` is updated on successful runs and clean API-budget deferrals so reviewers can distinguish a stale report from a failed collection.
 
 ### 3. Calibrate Events API Candidate Coverage
 
@@ -186,3 +195,4 @@ GitHub Actions also runs these checks through `validate.yml` on push, pull reque
 - Release detection is capped and conditional so it improves reporting without taking over the REST budget.
 - Inventory refreshes defer cleanly when GitHub API budget is too low instead of exhausting the rate limit.
 - The daily digest workflow uses the tracker state to avoid fixed 24-hour gaps after missed or failed runs.
+- Data contracts live under `schemas/`, with field guidance in `DATA_DICTIONARY.md`.

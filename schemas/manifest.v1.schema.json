@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Artifact Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_type",
+    "artifact_version",
+    "schema_url",
+    "generated_at",
+    "status",
+    "freshness",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "artifact_type": {
+      "const": "tracker-manifest"
+    },
+    "artifact_version": {
+      "type": "string"
+    },
+    "schema_url": {
+      "const": "schemas/manifest.v1.schema.json"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "status": {
+      "type": "object"
+    },
+    "freshness": {
+      "type": "object"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "artifact_type",
+          "path",
+          "required"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "artifact_type": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "schema_url": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

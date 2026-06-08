@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "orgs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "orgs": {
+      "type": "object"
+    },
+    "last_run": {
+      "type": "object"
+    },
+    "last_digest": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
