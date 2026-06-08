@@ -1,8 +1,8 @@
 # Events API Calibration - 2026-06-08
 
-Generated: `2026-06-08T20:27:49.435594Z`
+Generated: `2026-06-08T20:35:02.322698Z`
 
-Window since: `2026-06-07T20:27:49.435594Z`
+Window since: `2026-06-07T20:35:02.322698Z`
 
 ## Summary
 
@@ -12,11 +12,11 @@ Window since: `2026-06-07T20:27:49.435594Z`
 | Filtered repositories | 4639 |
 | `pushed_at` candidates | 134 |
 | Events candidates in report scope | 135 |
-| Events candidates outside report scope | 156 |
-| Intersection candidates | 61 |
-| Union candidates | 208 |
-| Intersect candidate savings | 73 |
-| Intersect potential misses | 73 |
+| Events candidates outside report scope | 154 |
+| Intersection candidates | 62 |
+| Union candidates | 207 |
+| Intersect candidate savings | 72 |
+| Intersect potential misses | 72 |
 
 ## Pushed-Only Sample
 
@@ -31,7 +31,6 @@ Window since: `2026-06-07T20:27:49.435594Z`
 - [Azure/ALZ-Bicep](https://github.com/Azure/ALZ-Bicep)
 - [Azure/aks-rdma-infiniband](https://github.com/Azure/aks-rdma-infiniband)
 - [Azure/alz-bicep-accelerator](https://github.com/Azure/alz-bicep-accelerator)
-- [Azure/azure-dev](https://github.com/Azure/azure-dev)
 - [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go)
 - [Azure/data-api-builder](https://github.com/Azure/data-api-builder)
 - [Azure/sap-edge-integration-cell-on-azure-accelerator](https://github.com/Azure/sap-edge-integration-cell-on-azure-accelerator)
@@ -45,6 +44,7 @@ Window since: `2026-06-07T20:27:49.435594Z`
 - [MicrosoftDocs/m365copilot-docs](https://github.com/MicrosoftDocs/m365copilot-docs)
 - [MicrosoftDocs/quantum-docs](https://github.com/MicrosoftDocs/quantum-docs)
 - [MicrosoftDocs/webview2-win32-reference](https://github.com/MicrosoftDocs/webview2-win32-reference)
+- [MicrosoftDocs/webview2-winrt-reference](https://github.com/MicrosoftDocs/webview2-winrt-reference)
 
 ## Events-Only Sample
 
@@ -80,25 +80,25 @@ Window since: `2026-06-07T20:27:49.435594Z`
 - [Azure/ARO-HCP](https://github.com/Azure/ARO-HCP)
 - [Azure/AgentBaker](https://github.com/Azure/AgentBaker)
 - [Azure/AppService](https://github.com/Azure/AppService)
+- [Azure/Azure-Sentinel](https://github.com/Azure/Azure-Sentinel)
 - [Azure/Connectors](https://github.com/Azure/Connectors)
+- [Azure/LinuxPatchExtension](https://github.com/Azure/LinuxPatchExtension)
 - [Azure/WALinuxAgent](https://github.com/Azure/WALinuxAgent)
 - [Azure/autorest.go](https://github.com/Azure/autorest.go)
 - [Azure/azihsm-sdk](https://github.com/Azure/azihsm-sdk)
 - [Azure/azure-cli](https://github.com/Azure/azure-cli)
 - [Azure/azure-container-networking](https://github.com/Azure/azure-container-networking)
-- [Azure/azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3)
-- [Azure/azure-functions-dotnet-extensions](https://github.com/Azure/azure-functions-dotnet-extensions)
-- [Azure/azure-functions-dotnet-worker](https://github.com/Azure/azure-functions-dotnet-worker)
-- [Azure/azure-iot-cli-extension](https://github.com/Azure/azure-iot-cli-extension)
 - [Azure/azure-iot-ops-cli-extension](https://github.com/Azure/azure-iot-ops-cli-extension)
 - [Azure/azure-powershell](https://github.com/Azure/azure-powershell)
 - [Azure/azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs)
 - [Azure/azure-sdk-tools](https://github.com/Azure/azure-sdk-tools)
 - [Azure/azure-service-operator](https://github.com/Azure/azure-service-operator)
-- [Azure/azure-storage-azcopy](https://github.com/Azure/azure-storage-azcopy)
 - [Azure/c-build-tools](https://github.com/Azure/c-build-tools)
-- [Azure/c-logging](https://github.com/Azure/c-logging)
 - [Azure/c-pal](https://github.com/Azure/c-pal)
 - [Azure/c-testrunnerswitcher](https://github.com/Azure/c-testrunnerswitcher)
 - [Azure/c-util](https://github.com/Azure/c-util)
+- [Azure/clds](https://github.com/Azure/clds)
+- [Azure/com-wrapper](https://github.com/Azure/com-wrapper)
+- [Azure/containerization-assist](https://github.com/Azure/containerization-assist)
+- [Azure/cosmos-explorer](https://github.com/Azure/cosmos-explorer)
 

@@ -3,16 +3,16 @@
     "enabled": true,
     "event_candidates_in_inventory": 135,
     "event_candidates_in_scope": 135,
-    "event_candidates_not_in_inventory": 156,
-    "event_candidates_outside_scope": 156,
-    "events_only_candidates": 74,
+    "event_candidates_not_in_inventory": 154,
+    "event_candidates_outside_scope": 154,
+    "events_only_candidates": 73,
     "events_summary": {
-      "candidate_repos": 291,
+      "candidate_repos": 289,
       "enabled": true,
       "max_pages_per_org": 2,
       "orgs": [
         {
-          "candidate_repos": 23,
+          "candidate_repos": 24,
           "org": "MicrosoftDocs",
           "pages_changed": 2,
           "pages_checked": 2,
@@ -36,7 +36,7 @@
           "poll_interval_seconds": "60"
         },
         {
-          "candidate_repos": 25,
+          "candidate_repos": 22,
           "org": "dotnet",
           "pages_changed": 2,
           "pages_checked": 2,
@@ -60,19 +60,19 @@
           "poll_interval_seconds": "60"
         },
         {
-          "candidate_repos": 4,
+          "candidate_repos": 5,
           "org": "SharePoint",
-          "pages_changed": 0,
-          "pages_checked": 1,
-          "pages_not_modified": 1,
-          "poll_interval_seconds": ""
+          "pages_changed": 2,
+          "pages_checked": 2,
+          "pages_not_modified": 0,
+          "poll_interval_seconds": "60"
         },
         {
           "candidate_repos": 39,
           "org": "Azure-Samples",
-          "pages_changed": 2,
+          "pages_changed": 1,
           "pages_checked": 2,
-          "pages_not_modified": 0,
+          "pages_not_modified": 1,
           "poll_interval_seconds": "60"
         },
         {
@@ -84,7 +84,7 @@
           "poll_interval_seconds": "60"
         },
         {
-          "candidate_repos": 49,
+          "candidate_repos": 48,
           "org": "microsoft",
           "pages_changed": 2,
           "pages_checked": 2,
@@ -101,43 +101,43 @@
         }
       ],
       "orgs_checked": 11,
-      "pages_changed": 13,
-      "pages_checked": 18,
+      "pages_changed": 14,
+      "pages_checked": 19,
       "pages_not_modified": 5
     },
-    "intersect_candidate_savings": 73,
-    "intersect_potential_miss_count": 73,
-    "intersect_potential_miss_ratio": 0.5448,
-    "intersection_candidates": 61,
+    "intersect_candidate_savings": 72,
+    "intersect_potential_miss_count": 72,
+    "intersect_potential_miss_ratio": 0.5373,
+    "intersection_candidates": 62,
     "pushed_at_candidates": 134,
-    "pushed_only_candidates": 73,
+    "pushed_only_candidates": 72,
     "samples": {
       "events_not_in_inventory": [
         "Azure/AI-benchmarking-guide",
         "Azure/ARO-HCP",
         "Azure/AgentBaker",
         "Azure/AppService",
+        "Azure/Azure-Sentinel",
         "Azure/Connectors",
+        "Azure/LinuxPatchExtension",
         "Azure/WALinuxAgent",
         "Azure/autorest.go",
         "Azure/azihsm-sdk",
         "Azure/azure-cli",
         "Azure/azure-container-networking",
-        "Azure/azure-cosmos-dotnet-v3",
-        "Azure/azure-functions-dotnet-extensions",
-        "Azure/azure-functions-dotnet-worker",
-        "Azure/azure-iot-cli-extension",
         "Azure/azure-iot-ops-cli-extension",
         "Azure/azure-powershell",
         "Azure/azure-rest-api-specs",
         "Azure/azure-sdk-tools",
         "Azure/azure-service-operator",
-        "Azure/azure-storage-azcopy",
         "Azure/c-build-tools",
-        "Azure/c-logging",
         "Azure/c-pal",
         "Azure/c-testrunnerswitcher",
-        "Azure/c-util"
+        "Azure/c-util",
+        "Azure/clds",
+        "Azure/com-wrapper",
+        "Azure/containerization-assist",
+        "Azure/cosmos-explorer"
       ],
       "events_only": [
         "Azure-Samples/ARGUS",
@@ -171,27 +171,27 @@
         "Azure/ARO-HCP",
         "Azure/AgentBaker",
         "Azure/AppService",
+        "Azure/Azure-Sentinel",
         "Azure/Connectors",
+        "Azure/LinuxPatchExtension",
         "Azure/WALinuxAgent",
         "Azure/autorest.go",
         "Azure/azihsm-sdk",
         "Azure/azure-cli",
         "Azure/azure-container-networking",
-        "Azure/azure-cosmos-dotnet-v3",
-        "Azure/azure-functions-dotnet-extensions",
-        "Azure/azure-functions-dotnet-worker",
-        "Azure/azure-iot-cli-extension",
         "Azure/azure-iot-ops-cli-extension",
         "Azure/azure-powershell",
         "Azure/azure-rest-api-specs",
         "Azure/azure-sdk-tools",
         "Azure/azure-service-operator",
-        "Azure/azure-storage-azcopy",
         "Azure/c-build-tools",
-        "Azure/c-logging",
         "Azure/c-pal",
         "Azure/c-testrunnerswitcher",
-        "Azure/c-util"
+        "Azure/c-util",
+        "Azure/clds",
+        "Azure/com-wrapper",
+        "Azure/containerization-assist",
+        "Azure/cosmos-explorer"
       ],
       "pushed_only": [
         "Azure-Samples/DevOpsEngineerPersona",
@@ -205,7 +205,6 @@
         "Azure/ALZ-Bicep",
         "Azure/aks-rdma-infiniband",
         "Azure/alz-bicep-accelerator",
-        "Azure/azure-dev",
         "Azure/azure-sdk-for-go",
         "Azure/data-api-builder",
         "Azure/sap-edge-integration-cell-on-azure-accelerator",
@@ -218,15 +217,16 @@
         "MicrosoftDocs/azure-docs-sdk-node",
         "MicrosoftDocs/m365copilot-docs",
         "MicrosoftDocs/quantum-docs",
-        "MicrosoftDocs/webview2-win32-reference"
+        "MicrosoftDocs/webview2-win32-reference",
+        "MicrosoftDocs/webview2-winrt-reference"
       ]
     },
-    "union_candidates": 208
+    "union_candidates": 207
   },
   "filtered_repos": 4639,
-  "generated_at": "2026-06-08T20:27:49.435594Z",
+  "generated_at": "2026-06-08T20:35:02.322698Z",
   "hours_requested": 24,
   "inventory_repos": 16416,
   "schema_version": 1,
-  "since": "2026-06-07T20:27:49.435594Z"
+  "since": "2026-06-07T20:35:02.322698Z"
 }
