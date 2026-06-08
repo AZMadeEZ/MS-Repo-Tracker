@@ -39,7 +39,7 @@ Current schemas include:
 
 `reports/latest.events.ndjson` is the preferred machine-ingestion artifact for individual changes. Each line is a JSON object. Use `dedupe_key` to deduplicate across overlapping windows.
 
-The event stream is generated from `reports/latest.json` activity commit records and validated offline by `scripts/validate_tracker.py`.
+The event stream is generated from already-collected `reports/latest.json` commit and release data and validated offline by `scripts/validate_tracker.py`. Consumers should branch on `event_type`; release records carry `event_type=release`, `published_at`, `release_tag`, `release_name`, and `release_url`.
 
 ## Backward Compatibility
 

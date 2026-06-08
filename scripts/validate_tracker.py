@@ -347,6 +347,32 @@ def expected_commit_event_count(report_payload: Dict[str, Any]) -> int:
     return count
 
 
+def release_event_key(release: Dict[str, Any]) -> str:
+    repo = str(release.get("repo_full_name") or release.get("repo") or "").strip()
+    token = str(release.get("tag_name") or release.get("html_url") or release.get("published_at") or "").strip()
+    return f"release:{repo}:{token}" if repo and token else ""
+
+
+def expected_release_event_count(report_payload: Dict[str, Any]) -> int:
+    release_items = [
+        item
+        for item in ((report_payload.get("releases") or {}).get("items") or [])
+        if isinstance(item, dict)
+    ]
+    if not release_items:
+        for activity in report_payload.get("activities") or []:
+            if isinstance(activity, dict):
+                release_items.extend(item for item in activity.get("releases") or [] if isinstance(item, dict))
+    return len({key for key in (release_event_key(item) for item in release_items) if key})
+
+
+def int_metadata_value(mapping: Dict[str, Any], key: str) -> int:
+    value = mapping.get(key)
+    if value is None or value == "":
+        return -1
+    return int(value)
+
+
 def validate_event_record(path: Path, record: dict[str, Any]) -> None:
     missing = sorted(REQUIRED_EVENT_FIELDS - set(record))
     if missing:
@@ -384,16 +410,20 @@ def validate_event_stream(report_dir: Path, report_payload: Dict[str, Any]) -> l
     if latest_path.read_text(encoding="utf-8") != dated_path.read_text(encoding="utf-8"):
         raise RuntimeError("Latest and dated event streams differ.")
 
-    expected_count = expected_commit_event_count(report_payload)
+    expected_commit_count = expected_commit_event_count(report_payload)
+    expected_release_count = expected_release_event_count(report_payload)
+    expected_count = expected_commit_count + expected_release_count
     if len(latest_records) != expected_count:
         raise RuntimeError(
-            f"Event stream has {len(latest_records)} events, expected {expected_count} commit events."
+            f"Event stream has {len(latest_records)} events, expected {expected_count} total events."
         )
 
     event_stream = report_payload.get("event_stream") or {}
-    if int(event_stream.get("commit_event_count") or -1) != expected_count:
+    if int_metadata_value(event_stream, "commit_event_count") != expected_commit_count:
         raise RuntimeError("Report event_stream.commit_event_count does not match activities.")
-    if int(event_stream.get("event_count") or -1) != len(latest_records):
+    if int_metadata_value(event_stream, "release_event_count") != expected_release_count:
+        raise RuntimeError("Report event_stream.release_event_count does not match releases.")
+    if int_metadata_value(event_stream, "event_count") != len(latest_records):
         raise RuntimeError("Report event_stream.event_count does not match latest event stream.")
 
     event_ids = set()

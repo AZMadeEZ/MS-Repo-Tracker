@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-06-08T22:24:25.002290Z`
+Generated: `2026-06-08T22:36:22.251825Z`
 
 ## Latest Brief
 
@@ -30,30 +30,30 @@ Generated: `2026-06-08T22:24:25.002290Z`
 
 | Product area | Signal | Repos | Events | Releases | Security |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Azure | 40 | 25 | 54 | 13 | 1 |
-| Unmapped Activity | 22 | 18 | 32 | 1 | 0 |
+| Azure | 53 | 25 | 67 | 13 | 1 |
+| Unmapped Activity | 23 | 18 | 33 | 1 | 0 |
 | .NET | 10 | 6 | 26 | 0 | 0 |
+| Microsoft Graph | 6 | 6 | 20 | 5 | 0 |
 | Identity | 6 | 2 | 6 | 0 | 1 |
+| Microsoft 365 | 5 | 5 | 11 | 1 | 0 |
 | Developer Tools | 5 | 1 | 5 | 0 | 0 |
-| Microsoft 365 | 4 | 5 | 10 | 1 | 0 |
 | PowerShell | 4 | 2 | 4 | 0 | 1 |
-| Windows | 4 | 3 | 5 | 0 | 0 |
 
 ## Most Active Product Areas
 
 | Product area | Activity score |
 | --- | ---: |
-| Azure | 65 |
-| Unmapped Activity | 22 |
+| Azure | 78 |
+| Unmapped Activity | 23 |
+| Microsoft Graph | 21 |
 | .NET | 16 |
-| Microsoft Graph | 15 |
 | Azure SDK | 12 |
 | Azure AI | 11 |
-| Microsoft 365 | 9 |
+| Microsoft 365 | 10 |
 | Identity | 8 |
 | PowerShell | 8 |
-| Windows | 7 |
 | Developer Tools | 6 |
+| Windows | 3 |
 
 ## Daily Reports
 

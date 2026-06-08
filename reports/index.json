@@ -13,7 +13,7 @@
       "repos_with_movement": 68
     }
   ],
-  "generated_at": "2026-06-08T22:24:25.002290Z",
+  "generated_at": "2026-06-08T22:36:22.251825Z",
   "latest": {
     "date": "2026-06-08",
     "default_branch_commits": 287,
@@ -22,14 +22,22 @@
     "high_signal_count": 25,
     "product_area_summary": [
       {
-        "event_count": 54,
+        "event_count": 67,
         "noisy_event_count": 20,
-        "notable_event_count": 40,
+        "notable_event_count": 53,
         "product_area": "Azure",
         "release_count": 13,
         "repo_count": 25,
         "security_event_count": 1,
         "top_events": [
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T20:17:09Z",
+            "headline": "v0.3.11",
+            "notability_score": 100,
+            "repo": "Azure/agentops",
+            "url": "https://github.com/Azure/agentops/releases/tag/v0.3.11"
+          },
           {
             "change_type": "release",
             "committed_at": "2026-06-08T20:12:12Z",
@@ -45,48 +53,48 @@
             "notability_score": 100,
             "repo": "Azure/azure-sdk-for-java",
             "url": "https://github.com/Azure/azure-sdk-for-java/pull/49407"
-          },
-          {
-            "change_type": "release",
-            "committed_at": "2026-06-08T16:42:10Z",
-            "headline": "Increment version for monitor releases",
-            "notability_score": 100,
-            "repo": "Azure/azure-sdk-for-python",
-            "url": "https://github.com/Azure/azure-sdk-for-python/pull/47394"
           }
         ],
         "top_repos": [
           {
-            "event_count": 5,
-            "repo": "Azure/azure-sdk-for-js"
-          },
-          {
-            "event_count": 5,
+            "event_count": 10,
             "repo": "Azure/azure-sdk-for-python"
           },
           {
-            "event_count": 5,
-            "repo": "Azure/azure-sdk-for-java"
+            "event_count": 8,
+            "repo": "Azure/azure-sdk-for-js"
           },
           {
-            "event_count": 5,
+            "event_count": 7,
+            "repo": "Azure/azure-sdk-for-net"
+          },
+          {
+            "event_count": 6,
             "repo": "Azure/agentops"
           },
           {
             "event_count": 5,
-            "repo": "Azure/azure-sdk-for-net"
+            "repo": "Azure/azure-sdk-for-java"
           }
         ]
       },
       {
-        "event_count": 32,
+        "event_count": 33,
         "noisy_event_count": 4,
-        "notable_event_count": 22,
+        "notable_event_count": 23,
         "product_area": "Unmapped Activity",
         "release_count": 1,
         "repo_count": 18,
         "security_event_count": 0,
         "top_events": [
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T05:45:12Z",
+            "headline": "v2.7.0",
+            "notability_score": 90,
+            "repo": "microsoft/content-generation-solution-accelerator",
+            "url": "https://github.com/microsoft/content-generation-solution-accelerator/releases/tag/v2.7.0"
+          },
           {
             "change_type": "feature",
             "committed_at": "2026-06-08T20:16:41Z",
@@ -102,14 +110,6 @@
             "notability_score": 90,
             "repo": "MicrosoftLearning/scenario-sims",
             "url": "https://github.com/MicrosoftLearning/scenario-sims/commit/e3a80414cfb421313ccf5da02dd3142c1a95dc66"
-          },
-          {
-            "change_type": "training_update",
-            "committed_at": "2026-06-08T17:11:43Z",
-            "headline": "Force wllama to CPU",
-            "notability_score": 90,
-            "repo": "MicrosoftLearning/ai-apps",
-            "url": "https://github.com/MicrosoftLearning/ai-apps/commit/ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b"
           }
         ],
         "top_repos": [
@@ -193,6 +193,63 @@
         ]
       },
       {
+        "event_count": 20,
+        "noisy_event_count": 14,
+        "notable_event_count": 6,
+        "product_area": "Microsoft Graph",
+        "release_count": 5,
+        "repo_count": 6,
+        "security_event_count": 0,
+        "top_events": [
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T16:36:29Z",
+            "headline": "microsoft-kiota-serialization-multipart: v1.10.3",
+            "notability_score": 100,
+            "repo": "microsoft/kiota-python",
+            "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.10.3"
+          },
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T16:36:28Z",
+            "headline": "microsoft-kiota-serialization-text: v1.10.3",
+            "notability_score": 100,
+            "repo": "microsoft/kiota-python",
+            "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.10.3"
+          },
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T16:36:27Z",
+            "headline": "microsoft-kiota-serialization-form: v1.10.3",
+            "notability_score": 100,
+            "repo": "microsoft/kiota-python",
+            "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.10.3"
+          }
+        ],
+        "top_repos": [
+          {
+            "event_count": 6,
+            "repo": "microsoft/kiota-python"
+          },
+          {
+            "event_count": 5,
+            "repo": "microsoft/kiota-samples"
+          },
+          {
+            "event_count": 3,
+            "repo": "microsoft/kiota"
+          },
+          {
+            "event_count": 2,
+            "repo": "microsoftgraph/msgraph-snippets-go"
+          },
+          {
+            "event_count": 2,
+            "repo": "microsoft/kiota-typescript"
+          }
+        ]
+      },
+      {
         "event_count": 6,
         "noisy_event_count": 0,
         "notable_event_count": 6,
@@ -218,12 +275,12 @@
             "url": "https://github.com/microsoft/entrabot/pull/14"
           },
           {
-            "change_type": "bug_fix",
-            "committed_at": "2026-06-08T19:36:42Z",
-            "headline": "docs: fix stale Bot Gateway code citations (follow-up to #12)",
+            "change_type": "feature",
+            "committed_at": "2026-06-08T01:14:13Z",
+            "headline": "Add 'Building Agents in Business Central' workshop",
             "notability_score": 90,
-            "repo": "microsoft/entrabot",
-            "url": "https://github.com/microsoft/entrabot/pull/13"
+            "repo": "microsoft/BCTech",
+            "url": "https://github.com/microsoft/BCTech/pull/355"
           }
         ],
         "top_repos": [
@@ -238,55 +295,22 @@
         ]
       },
       {
-        "event_count": 5,
-        "noisy_event_count": 0,
-        "notable_event_count": 5,
-        "product_area": "Developer Tools",
-        "release_count": 0,
-        "repo_count": 1,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "bug_fix",
-            "committed_at": "2026-06-08T20:25:42Z",
-            "headline": "Update screenshot of model picker",
-            "notability_score": 90,
-            "repo": "microsoft/vscode-docs",
-            "url": "https://github.com/microsoft/vscode-docs/pull/9903"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-06-08T17:30:28Z",
-            "headline": "Little grammar and clarity tweaks",
-            "notability_score": 90,
-            "repo": "microsoft/vscode-docs",
-            "url": "https://github.com/microsoft/vscode-docs/pull/9902"
-          },
-          {
-            "change_type": "feature",
-            "committed_at": "2026-06-08T08:58:29Z",
-            "headline": "Add cross-link to editor tutorial",
-            "notability_score": 90,
-            "repo": "microsoft/vscode-docs",
-            "url": "https://github.com/microsoft/vscode-docs/pull/9901"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "microsoft/vscode-docs"
-          }
-        ]
-      },
-      {
-        "event_count": 10,
+        "event_count": 11,
         "noisy_event_count": 5,
-        "notable_event_count": 4,
+        "notable_event_count": 5,
         "product_area": "Microsoft 365",
         "release_count": 1,
         "repo_count": 5,
         "security_event_count": 0,
         "top_events": [
+          {
+            "change_type": "release",
+            "committed_at": "2026-06-08T05:48:04Z",
+            "headline": "v1.25.4",
+            "notability_score": 100,
+            "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+            "url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/releases/tag/v1.25.4"
+          },
           {
             "change_type": "sample_update",
             "committed_at": "2026-06-08T08:54:01Z",
@@ -302,14 +326,6 @@
             "notability_score": 90,
             "repo": "MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp",
             "url": "https://github.com/MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp/commit/ab433959df05bd9ddd5cc00e0a7c8da5dedd0db5"
-          },
-          {
-            "change_type": "sample_update",
-            "committed_at": "2026-06-08T05:47:17Z",
-            "headline": "chore: dev to main merge",
-            "notability_score": 90,
-            "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
-            "url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/pull/386"
           }
         ],
         "top_repos": [
@@ -322,16 +338,57 @@
             "repo": "OfficeDev/Microsoft-Teams-Samples"
           },
           {
+            "event_count": 2,
+            "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator"
+          },
+          {
             "event_count": 1,
             "repo": "OfficeDev/office-js-snippets"
           },
           {
             "event_count": 1,
             "repo": "MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp"
+          }
+        ]
+      },
+      {
+        "event_count": 5,
+        "noisy_event_count": 0,
+        "notable_event_count": 5,
+        "product_area": "Developer Tools",
+        "release_count": 0,
+        "repo_count": 1,
+        "security_event_count": 0,
+        "top_events": [
+          {
+            "change_type": "feature",
+            "committed_at": "2026-06-08T08:58:29Z",
+            "headline": "Add cross-link to editor tutorial",
+            "notability_score": 90,
+            "repo": "microsoft/vscode-docs",
+            "url": "https://github.com/microsoft/vscode-docs/pull/9901"
           },
           {
-            "event_count": 1,
-            "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator"
+            "change_type": "bug_fix",
+            "committed_at": "2026-06-08T20:25:42Z",
+            "headline": "Update screenshot of model picker",
+            "notability_score": 90,
+            "repo": "microsoft/vscode-docs",
+            "url": "https://github.com/microsoft/vscode-docs/pull/9903"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-06-08T17:30:28Z",
+            "headline": "Little grammar and clarity tweaks",
+            "notability_score": 90,
+            "repo": "microsoft/vscode-docs",
+            "url": "https://github.com/microsoft/vscode-docs/pull/9902"
+          }
+        ],
+        "top_repos": [
+          {
+            "event_count": 5,
+            "repo": "microsoft/vscode-docs"
           }
         ]
       },
@@ -379,55 +436,6 @@
             "repo": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp"
           }
         ]
-      },
-      {
-        "event_count": 5,
-        "noisy_event_count": 2,
-        "notable_event_count": 4,
-        "product_area": "Windows",
-        "release_count": 0,
-        "repo_count": 3,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-06-08T16:38:03Z",
-            "headline": "[WinAppSDK CMake Support]: Implicitly choose deployment mode based on WindowsAppSDKSelfContained",
-            "notability_score": 90,
-            "repo": "microsoft/WindowsAppSDK",
-            "url": "https://github.com/microsoft/WindowsAppSDK/pull/6490"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-06-08T14:18:43Z",
-            "headline": "WebView2: Update documentation for 150.0.4071.0",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/webview2-win32-reference",
-            "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/144"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-06-08T09:38:55Z",
-            "headline": "WebView2: Update documentation for 149.0.4022.49",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/webview2-win32-reference",
-            "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/143"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 2,
-            "repo": "microsoft/WindowsAppSDK"
-          },
-          {
-            "event_count": 2,
-            "repo": "MicrosoftDocs/webview2-win32-reference"
-          },
-          {
-            "event_count": 1,
-            "repo": "microsoft/DirectX-SDK-Samples"
-          }
-        ]
       }
     ],
     "release_count": 20,
@@ -441,19 +449,19 @@
   "top_products": [
     {
       "product": "Azure",
-      "report_count": 65
+      "report_count": 78
     },
     {
       "product": "Unmapped Activity",
-      "report_count": 22
+      "report_count": 23
+    },
+    {
+      "product": "Microsoft Graph",
+      "report_count": 21
     },
     {
       "product": ".NET",
       "report_count": 16
-    },
-    {
-      "product": "Microsoft Graph",
-      "report_count": 15
     },
     {
       "product": "Azure SDK",
@@ -465,7 +473,7 @@
     },
     {
       "product": "Microsoft 365",
-      "report_count": 9
+      "report_count": 10
     },
     {
       "product": "Identity",
@@ -476,12 +484,12 @@
       "report_count": 8
     },
     {
-      "product": "Windows",
-      "report_count": 7
-    },
-    {
       "product": "Developer Tools",
       "report_count": 6
+    },
+    {
+      "product": "Windows",
+      "report_count": 3
     }
   ],
   "top_recurring_repos": [

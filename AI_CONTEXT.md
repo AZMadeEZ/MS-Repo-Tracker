@@ -37,14 +37,14 @@ Treat generated files as committed data products. Do not infer freshness from co
 
 ## Event Stream Guidance
 
-`reports/latest.events.ndjson` contains one JSON object per emitted commit event. It is intended for AI, search, BI, and database ingestion.
+`reports/latest.events.ndjson` contains one JSON object per emitted commit or release event. It is intended for AI, search, BI, and database ingestion.
 
 Events include:
 
 - stable `event_id`
 - stable `dedupe_key`
 - repository and category metadata
-- commit and PR links
+- commit, release, and PR links
 - report window metadata
 - first-pass `actor_type`, `change_type`, `noise_level`, `customer_visible`, and `notability_score`
 
@@ -77,4 +77,4 @@ A deferred run does not mean the latest report is invalid. It means no newer suc
 - This is a polling system, not a webhook guarantee.
 - Incremental inventory refresh catches normal pushed updates quickly, while weekly full reconciliation catches drift.
 - `actor_type`, `change_type`, and `noise_level` are heuristic fields.
-- Release events are not yet emitted as separate NDJSON records; release information is still present in `reports/latest.json`.
+- Release events come from the already-collected report release data; no extra API calls are made when generating the NDJSON stream.

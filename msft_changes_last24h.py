@@ -1622,6 +1622,24 @@ def friendly_change_type(value: Any) -> str:
     return labels.get(str(value or "unknown"), str(value or "Other").replace("_", " ").title())
 
 
+def change_type_priority(value: Any) -> int:
+    priorities = {
+        "security_fix": 50,
+        "release": 40,
+        "feature": 30,
+        "bug_fix": 25,
+        "docs_update": 20,
+        "reference_update": 20,
+        "training_update": 20,
+        "sample_update": 20,
+        "ci_infra": 10,
+        "sdk_generation": 5,
+        "dependency_update": 0,
+        "bulk_automation": 0,
+    }
+    return priorities.get(str(value or "unknown"), 10)
+
+
 def event_repo(event: Mapping[str, Any]) -> str:
     return str(event.get("repo") or event.get("full_name") or "")
 
@@ -1662,18 +1680,22 @@ def why_event_matters(event: Mapping[str, Any]) -> str:
     return headline
 
 
+def event_change_key(event: Mapping[str, Any]) -> str:
+    return str(
+        event.get("url")
+        or event.get("pr_url")
+        or event.get("commit_url")
+        or event.get("dedupe_key")
+        or event.get("event_id")
+        or ""
+    )
+
+
 def unique_by_change(events: List[Dict[str, Any]], limit: int) -> List[Dict[str, Any]]:
     seen: Set[str] = set()
     results: List[Dict[str, Any]] = []
     for event in events:
-        key = str(
-            event.get("url")
-            or event.get("pr_url")
-            or event.get("commit_url")
-            or event.get("dedupe_key")
-            or event.get("event_id")
-            or ""
-        )
+        key = event_change_key(event)
         if not key or key in seen:
             continue
         seen.add(key)
@@ -1742,7 +1764,11 @@ def build_product_area_summary(records: List[Dict[str, Any]], payload: Mapping[s
         ]
         top_events = sorted(
             item["top_events"],
-            key=lambda event: (int(event.get("notability_score") or 0), str(event.get("committed_at") or "")),
+            key=lambda event: (
+                int(event.get("notability_score") or 0),
+                change_type_priority(event.get("change_type")),
+                str(event.get("committed_at") or ""),
+            ),
             reverse=True,
         )
         item["top_events"] = [compact_event_link(event) for event in unique_by_change(top_events, 3)]
@@ -1761,9 +1787,30 @@ def build_product_area_summary(records: List[Dict[str, Any]], payload: Mapping[s
     return summaries[:limit]
 
 
-def build_top_links(notable_changes: List[Dict[str, Any]], limit: int = 8) -> List[Dict[str, Any]]:
+def build_top_links(notable_changes: List[Dict[str, Any]], limit: int = 8, per_repo_limit: int = 1) -> List[Dict[str, Any]]:
+    selected: List[Dict[str, Any]] = []
+    repo_counts: Counter[str] = Counter()
+    for event in unique_by_change(notable_changes, len(notable_changes)):
+        repo = event_repo(event)
+        if repo_counts[repo] >= per_repo_limit:
+            continue
+        selected.append(event)
+        repo_counts[repo] += 1
+        if len(selected) >= limit:
+            break
+    if len(selected) < limit:
+        selected_keys = {event_change_key(event) for event in selected}
+        for event in unique_by_change(notable_changes, len(notable_changes)):
+            key = event_change_key(event)
+            if key in selected_keys:
+                continue
+            selected.append(event)
+            selected_keys.add(key)
+            if len(selected) >= limit:
+                break
+
     links = []
-    for idx, event in enumerate(unique_by_change(notable_changes, limit), start=1):
+    for idx, event in enumerate(selected[:limit], start=1):
         links.append(
             {
                 "priority": idx,
@@ -2482,10 +2529,111 @@ def event_notability(
     return max(0, min(100, score)), reasons
 
 
+def report_activity_lookup(payload: Mapping[str, Any]) -> Dict[str, Dict[str, Any]]:
+    by_repo: Dict[str, Dict[str, Any]] = {}
+    for section in ("activities", "top_repos"):
+        for activity in payload.get(section) or []:
+            if not isinstance(activity, dict):
+                continue
+            repo = str(activity.get("full_name") or "").strip()
+            if repo and repo not in by_repo:
+                by_repo[repo] = activity
+    return by_repo
+
+
+def release_event_record(
+    release: Mapping[str, Any],
+    activity_by_repo: Mapping[str, Mapping[str, Any]],
+    window: Mapping[str, Any],
+    retrieved_at: str,
+    source_base: Mapping[str, Any],
+) -> Optional[Dict[str, Any]]:
+    repo = str(release.get("repo_full_name") or release.get("repo") or "").strip()
+    if not repo:
+        return None
+    activity = activity_by_repo.get(repo) or {}
+    org = str(activity.get("org") or (repo.split("/")[0] if "/" in repo else ""))
+    repo_name = str(activity.get("name") or (repo.split("/", 1)[1] if "/" in repo else repo))
+    category = str(activity.get("category") or "")
+    repo_type = str(activity.get("repo_type") or "")
+    audience = str(activity.get("audience") or "")
+    default_branch = str(activity.get("default_branch") or "")
+    signal = activity.get("signal") if isinstance(activity.get("signal"), dict) else {}
+    product_area = str(activity.get("product_area") or product_area_from_signal(signal))
+    tag_name = str(release.get("tag_name") or "")
+    title = str(release.get("name") or tag_name or "Release")
+    published_at = str(release.get("published_at") or "")
+    if tag_name:
+        fallback_release_url = f"https://github.com/{repo}/releases/tag/{tag_name}"
+    else:
+        fallback_release_url = f"https://github.com/{repo}/releases"
+    release_url = str(release.get("html_url") or fallback_release_url)
+    release_token = tag_name or release_url or published_at
+    if not release_token:
+        return None
+    text = " ".join([repo, category, title, tag_name])
+    notability_score, notability_reason = event_notability(
+        signal=signal,
+        actor_type="unknown",
+        change_type="release",
+        noise_level="low",
+        text=text,
+    )
+    return {
+        "schema_version": 1,
+        "artifact_type": "tracker-event",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": EVENT_SCHEMA_URL,
+        "event_id": f"github_release:{repo}:{release_token}",
+        "event_type": "release",
+        "dedupe_key": f"release:{repo}:{release_token}",
+        "repo": repo,
+        "org": org,
+        "repo_name": repo_name,
+        "category": category,
+        "repo_type": repo_type,
+        "product_area": product_area,
+        "audience": audience,
+        "default_branch": default_branch,
+        "committed_at": published_at,
+        "published_at": published_at,
+        "headline": title,
+        "author": "",
+        "actor_type": "unknown",
+        "commit_oid": tag_name or release_token,
+        "commit_url": release_url,
+        "release_tag": tag_name,
+        "release_name": title,
+        "release_url": release_url,
+        "prerelease": bool(release.get("prerelease")),
+        "draft": bool(release.get("draft")),
+        "pr_number": None,
+        "pr_title": None,
+        "pr_url": None,
+        "change_type": "release",
+        "noise_level": "low",
+        "customer_visible": "true",
+        "notability_score": notability_score,
+        "notability_reason": notability_reason,
+        "labels": signal.get("tags") or [],
+        "window_since": str(window.get("since") or ""),
+        "window_until": str(window.get("until") or ""),
+        "retrieved_at": retrieved_at,
+        "source": {
+            "provider": "github",
+            "api": "rest",
+            "repo_url": f"https://github.com/{repo}",
+            "source_commit": source_base.get("commit", ""),
+            "workflow_run_url": source_base.get("workflow_run_url", ""),
+        },
+    }
+
+
 def build_event_stream_records(payload: Mapping[str, Any]) -> List[Dict[str, Any]]:
     window = payload.get("window") or {}
     retrieved_at = str(payload.get("generated_at") or "")
     source_base = payload.get("source") if isinstance(payload.get("source"), dict) else {}
+    activity_by_repo = report_activity_lookup(payload)
     records: List[Dict[str, Any]] = []
 
     for activity in payload.get("activities") or []:
@@ -2567,6 +2715,28 @@ def build_event_stream_records(payload: Mapping[str, Any]) -> List[Dict[str, Any
                 }
             )
 
+    release_items = [
+        item
+        for item in ((payload.get("releases") or {}).get("items") or [])
+        if isinstance(item, dict)
+    ]
+    if not release_items:
+        for activity in payload.get("activities") or []:
+            if not isinstance(activity, dict):
+                continue
+            release_items.extend(item for item in activity.get("releases") or [] if isinstance(item, dict))
+
+    seen_release_keys: Set[str] = set()
+    for release in release_items:
+        record = release_event_record(release, activity_by_repo, window, retrieved_at, source_base)
+        if not record:
+            continue
+        dedupe_key = str(record.get("dedupe_key") or "")
+        if dedupe_key in seen_release_keys:
+            continue
+        seen_release_keys.add(dedupe_key)
+        records.append(record)
+
     records.sort(key=lambda item: (str(item.get("committed_at") or ""), str(item.get("event_id") or "")), reverse=True)
     return records
 
@@ -2589,6 +2759,7 @@ def notable_changes_from_events(records: List[Dict[str, Any]], limit: int = 25) 
     candidates.sort(
         key=lambda item: (
             int(item.get("notability_score") or 0),
+            change_type_priority(item.get("change_type")),
             str(item.get("committed_at") or ""),
             str(item.get("event_id") or ""),
         ),
@@ -2596,11 +2767,21 @@ def notable_changes_from_events(records: List[Dict[str, Any]], limit: int = 25) 
     )
     notable: List[Dict[str, Any]] = []
     seen_changes: Set[str] = set()
+    repo_counts: Counter[str] = Counter()
+    repo_change_counts: Counter[Tuple[str, str]] = Counter()
     for record in candidates:
         change_key = str(record.get("pr_url") or record.get("dedupe_key") or record.get("event_id") or "")
         if change_key in seen_changes:
             continue
+        repo = str(record.get("repo") or "")
+        change_type = str(record.get("change_type") or "unknown")
+        if repo_counts[repo] >= 4:
+            continue
+        if change_type == "release" and repo_change_counts[(repo, change_type)] >= 2:
+            continue
         seen_changes.add(change_key)
+        repo_counts[repo] += 1
+        repo_change_counts[(repo, change_type)] += 1
         notable.append(
             {
                 "event_id": record.get("event_id", ""),
@@ -2801,13 +2982,15 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
     payload["product_area_summary"] = build_product_area_summary(event_records, payload)
     payload["top_links"] = build_top_links(payload["notable_changes"])
     payload["noise_summary"] = build_noise_summary(event_records)
+    commit_event_count = sum(1 for record in event_records if record.get("event_type") == "commit")
+    release_event_count = sum(1 for record in event_records if record.get("event_type") == "release")
     payload["event_stream"] = {
         "schema_url": EVENT_SCHEMA_URL,
         "latest_path": normalize_artifact_path(latest_event_path),
         "dated_path": normalize_artifact_path(dated_event_path),
         "event_count": len(event_records),
-        "commit_event_count": len(event_records),
-        "release_event_count": 0,
+        "commit_event_count": commit_event_count,
+        "release_event_count": release_event_count,
     }
     paths = [
         os.path.join(report_dir, "latest.json"),

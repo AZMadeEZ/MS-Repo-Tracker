@@ -151,7 +151,7 @@ Outputs:
 
 `changes_last24h.csv` keeps the legacy `commit_count_24h` column for compatibility. New ingestion should use `commit_count_window` with `window_since`, `window_until`, `hours_requested`, and `state_window_enabled` so state-extended runs are interpreted correctly.
 
-For AI/search/BI ingestion, prefer `reports/latest.events.ndjson` over parsing nested report JSON. Each line is one deduplicable commit event with stable `event_id`, `dedupe_key`, window metadata, source links, and first-pass signal/noise fields.
+For AI/search/BI ingestion, prefer `reports/latest.events.ndjson` over parsing nested report JSON. Each line is one deduplicable commit or release event with stable `event_id`, `dedupe_key`, window metadata, source links, and first-pass signal/noise fields.
 
 Events prefilter modes:
 
@@ -168,7 +168,7 @@ Signal reporting:
 - Recent releases are fetched through capped, conditional REST calls and recorded under `releases` in the JSON report.
 - Repository lifecycle changes are recorded during inventory refresh and surfaced in the next digest report.
 - `reports/status.json` is updated on successful runs and clean API-budget deferrals so reviewers can distinguish a stale report from a failed collection.
-- The event stream adds `actor_type`, `change_type`, `noise_level`, `customer_visible`, and `notability_score` without adding GitHub API calls.
+- The event stream adds commit and release records with `actor_type`, `change_type`, `noise_level`, `customer_visible`, and `notability_score` without adding GitHub API calls.
 - `reports/latest.md` surfaces Notable Changes before raw activity sections so commit volume is not treated as importance by default.
 
 ### 3. Calibrate Events API Candidate Coverage

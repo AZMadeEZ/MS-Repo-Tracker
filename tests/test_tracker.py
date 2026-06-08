@@ -150,6 +150,114 @@ class DigestFilterTests(unittest.TestCase):
         self.assertNotIn("labels", summary[0]["top_events"][0])
         self.assertNotIn("event_id", summary[0]["top_events"][0])
 
+    def test_build_event_stream_records_emits_release_events(self) -> None:
+        payload = {
+            "generated_at": "2026-01-02T00:00:00Z",
+            "window": {"since": "2026-01-01T00:00:00Z", "until": "2026-01-02T00:00:00Z"},
+            "activities": [
+                {
+                    "full_name": "Azure/repo",
+                    "org": "Azure",
+                    "name": "repo",
+                    "category": "samples",
+                    "repo_type": "samples",
+                    "product_area": "Azure",
+                    "audience": "developer",
+                    "default_branch": "main",
+                    "signal": {"score": 80, "tags": ["watchlist"]},
+                    "commits": [],
+                    "releases": [],
+                }
+            ],
+            "releases": {
+                "items": [
+                    {
+                        "repo_full_name": "Azure/repo",
+                        "tag_name": "v1.2.3",
+                        "name": "Release v1.2.3",
+                        "published_at": "2026-01-01T12:00:00Z",
+                        "html_url": "https://github.com/Azure/repo/releases/tag/v1.2.3",
+                        "prerelease": False,
+                        "draft": False,
+                    }
+                ]
+            },
+        }
+
+        records = changes.build_event_stream_records(payload)
+
+        self.assertEqual(len(records), 1)
+        release = records[0]
+        self.assertEqual(release["event_type"], "release")
+        self.assertEqual(release["dedupe_key"], "release:Azure/repo:v1.2.3")
+        self.assertEqual(release["release_tag"], "v1.2.3")
+        self.assertEqual(release["release_url"], "https://github.com/Azure/repo/releases/tag/v1.2.3")
+        self.assertEqual(release["source"]["api"], "rest")
+        self.assertEqual(release["customer_visible"], "true")
+
+    def test_notable_changes_prioritize_security_and_cap_release_bursts(self) -> None:
+        records = [
+            {
+                "event_id": "release-1",
+                "dedupe_key": "release:Azure/repo:v1",
+                "repo": "Azure/repo",
+                "change_type": "release",
+                "notability_score": 100,
+                "noise_level": "low",
+                "committed_at": "2026-01-02T12:00:00Z",
+                "headline": "Release v1",
+            },
+            {
+                "event_id": "release-2",
+                "dedupe_key": "release:Azure/repo:v2",
+                "repo": "Azure/repo",
+                "change_type": "release",
+                "notability_score": 100,
+                "noise_level": "low",
+                "committed_at": "2026-01-02T11:00:00Z",
+                "headline": "Release v2",
+            },
+            {
+                "event_id": "release-3",
+                "dedupe_key": "release:Azure/repo:v3",
+                "repo": "Azure/repo",
+                "change_type": "release",
+                "notability_score": 100,
+                "noise_level": "low",
+                "committed_at": "2026-01-02T10:00:00Z",
+                "headline": "Release v3",
+            },
+            {
+                "event_id": "security-1",
+                "dedupe_key": "commit:security",
+                "repo": "Azure/security",
+                "change_type": "security_fix",
+                "notability_score": 100,
+                "noise_level": "low",
+                "committed_at": "2026-01-01T00:00:00Z",
+                "headline": "Fix security issue",
+            },
+        ]
+
+        notable = changes.notable_changes_from_events(records)
+
+        self.assertEqual(notable[0]["event_id"], "security-1")
+        self.assertEqual(
+            [item["event_id"] for item in notable if item["repo"] == "Azure/repo"],
+            ["release-1", "release-2"],
+        )
+
+    def test_build_top_links_prefers_repo_diversity(self) -> None:
+        notable = [
+            {"event_id": "one", "repo": "Org/a", "commit_url": "https://example.test/a1", "headline": "A1"},
+            {"event_id": "two", "repo": "Org/a", "commit_url": "https://example.test/a2", "headline": "A2"},
+            {"event_id": "three", "repo": "Org/b", "commit_url": "https://example.test/b1", "headline": "B1"},
+        ]
+
+        links = changes.build_top_links(notable, limit=2)
+
+        self.assertEqual([link["repo"] for link in links], ["Org/a", "Org/b"])
+
     def test_watchlist_scores_human_watched_repo_above_bot_noise(self) -> None:
         watched = changes.RepoActivity(
             full_name="Org/repo",

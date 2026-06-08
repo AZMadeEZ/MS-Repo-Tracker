@@ -122,22 +122,23 @@ Inventory taxonomy fields:
 
 ## Event Stream
 
-`reports/latest.events.ndjson` and `reports/YYYY-MM-DD.events.ndjson` are line-delimited JSON files for AI, search, and BI ingestion. Each line is one commit event generated from `reports/latest.json` activity commit records. Repeated state-window runs can overlap; consumers should deduplicate with `dedupe_key`.
+`reports/latest.events.ndjson` and `reports/YYYY-MM-DD.events.ndjson` are line-delimited JSON files for AI, search, and BI ingestion. Each line is one commit or release event generated from already-collected report data. Repeated state-window runs can overlap; consumers should deduplicate with `dedupe_key`.
 
 | Field | Meaning |
 | --- | --- |
 | `event_id` | Stable event ID in provider/type/repo/object form. |
-| `event_type` | Currently `commit`; the schema reserves `release` for future release events. |
-| `dedupe_key` | Stable key for overlap-safe deduplication. Commit events use `commit:<oid>`. |
+| `event_type` | `commit` or `release`. |
+| `dedupe_key` | Stable key for overlap-safe deduplication. Commit events use `commit:<oid>`; release events use `release:<repo>:<tag-or-url>`. |
 | `repo`, `org`, `repo_name` | Repository identifiers. |
 | `category` | Local inventory category. |
 | `repo_type`, `product_area`, `audience` | Inventory taxonomy fields copied onto the event when available. |
 | `default_branch` | Branch used for movement checks. |
-| `committed_at` | Commit timestamp from GitHub GraphQL. |
+| `committed_at` | Commit timestamp from GitHub GraphQL, or release publish timestamp for release events. |
 | `headline` | Commit headline. |
 | `author` | Commit author display string. |
 | `actor_type` | `human`, `bot`, `automation`, or `unknown`. |
-| `commit_oid`, `commit_url` | Commit identity and source URL. |
+| `commit_oid`, `commit_url` | Commit identity and source URL. For release events, these carry the release tag/identity and release URL for backward-compatible consumers. |
+| `published_at`, `release_tag`, `release_name`, `release_url`, `prerelease`, `draft` | Release-specific fields present on `event_type=release` records. |
 | `pr_number`, `pr_title`, `pr_url` | Associated pull request metadata when GraphQL returns it. |
 | `change_type` | First-pass change classification such as `docs_update`, `dependency_update`, `security_fix`, `bulk_automation`, `ci_infra`, or `feature`. |
 | `noise_level` | `low`, `medium`, `high`, or `unknown`, intended to keep bot/bulk activity visible without over-ranking it. |
