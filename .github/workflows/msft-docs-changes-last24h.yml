@@ -64,9 +64,9 @@ on:
         default: "off"
         type: choice
         options:
-          - off
-          - union
-          - intersect
+          - "off"
+          - "union"
+          - "intersect"
       events_max_pages:
         description: "Max org event pages per org when Events API prefilter is enabled"
         required: true
