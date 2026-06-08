@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_type",
+    "artifact_version",
+    "schema_url",
+    "event_id",
+    "event_type",
+    "dedupe_key",
+    "repo",
+    "org",
+    "repo_name",
+    "category",
+    "default_branch",
+    "committed_at",
+    "headline",
+    "actor_type",
+    "commit_oid",
+    "commit_url",
+    "change_type",
+    "noise_level",
+    "customer_visible",
+    "notability_score",
+    "window_since",
+    "window_until",
+    "retrieved_at",
+    "source"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "artifact_type": {
+      "const": "tracker-event"
+    },
+    "artifact_version": {
+      "type": "string"
+    },
+    "schema_url": {
+      "const": "schemas/event.v1.schema.json"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "enum": [
+        "commit",
+        "release"
+      ]
+    },
+    "dedupe_key": {
+      "type": "string"
+    },
+    "repo": {
+      "type": "string"
+    },
+    "org": {
+      "type": "string"
+    },
+    "repo_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "product_area": {
+      "type": "string"
+    },
+    "default_branch": {
+      "type": "string"
+    },
+    "committed_at": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "actor_type": {
+      "enum": [
+        "human",
+        "bot",
+        "automation",
+        "unknown"
+      ]
+    },
+    "commit_oid": {
+      "type": "string"
+    },
+    "commit_url": {
+      "type": "string"
+    },
+    "pr_number": {},
+    "pr_title": {},
+    "pr_url": {},
+    "change_type": {
+      "type": "string"
+    },
+    "noise_level": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ]
+    },
+    "customer_visible": {
+      "enum": [
+        "true",
+        "false",
+        "unknown"
+      ]
+    },
+    "notability_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "notability_reason": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "labels": {
+      "type": "array"
+    },
+    "window_since": {
+      "type": "string"
+    },
+    "window_until": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

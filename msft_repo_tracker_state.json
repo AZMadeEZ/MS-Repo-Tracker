@@ -593,7 +593,7 @@
   },
   "last_digest": {
     "candidate_repos": 133,
-    "completed_at": "2026-06-08T21:11:10.933557Z",
+    "completed_at": "2026-06-08T21:38:00.975882Z",
     "digest_overlap_hours": 2,
     "events_calibration_enabled": false,
     "events_prefilter_mode": "off",
@@ -607,11 +607,11 @@
     "pushed_at_candidate_repos": 133,
     "release_mode": "candidates-and-watched",
     "repos_checked_for_releases": 150,
-    "repos_with_movement": 67,
+    "repos_with_movement": 68,
     "repos_with_releases": 9,
-    "since": "2026-06-07T21:11:10.933557Z",
+    "since": "2026-06-07T21:38:00.975882Z",
     "state_window_enabled": true,
-    "until": "2026-06-08T21:11:10.933557Z"
+    "until": "2026-06-08T21:38:00.975882Z"
   },
   "last_events_calibration": {
     "completed_at": "2026-06-08T20:35:02.322698Z",
@@ -1002,16 +1002,21 @@
     "removed_repos": []
   },
   "last_release_scan": {
-    "completed_at": "2026-06-08T21:13:18.052449Z",
+    "completed_at": "2026-06-08T21:40:30.531002Z",
     "enabled": true,
-    "error_count": 0,
-    "errors": [],
+    "error_count": 1,
+    "errors": [
+      {
+        "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+        "repo": "MicrosoftDocs/azure-monitor-docs"
+      }
+    ],
     "max_releases_per_repo": 5,
     "repos_checked": 150,
     "repos_with_releases": 9,
-    "requests_changed": 149,
-    "requests_checked": 150,
-    "requests_not_modified": 1
+    "requests_changed": 4,
+    "requests_checked": 149,
+    "requests_not_modified": 145
   },
   "last_run": {
     "completed_at": "2026-06-08T20:23:14.520805Z",
@@ -1753,8 +1758,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-dev/releases?per_page=5": {
-      "cached_at": "2026-06-08T21:12:05.179009Z",
-      "etag": "W/\"11b3340e0fe64098e76b3f9a5424574dd8d4c3164bebd0216a9af2b35e9b5bf0\"",
+      "cached_at": "2026-06-08T21:34:09.413782Z",
+      "etag": "W/\"89cb8421c0d78f74b0a380e311afb97e14ee7dc30433d20fc703a7d56dcbb84a\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -2897,8 +2902,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/cli-lab/releases?per_page=5": {
-      "cached_at": "2026-06-08T21:12:47.472695Z",
-      "etag": "W/\"f405c90ac1c35f47409532a7cac086524fa2e4883f871ded7c9c34ccb5484140\"",
+      "cached_at": "2026-06-08T21:39:40.691278Z",
+      "etag": "W/\"a25f4db8666c68765574519f4f3978388fa54ad2845d6340f9c32c2bd78810a2\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -4136,8 +4141,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/go-sqlcmd/releases?per_page=5": {
-      "cached_at": "2026-06-08T21:11:50.989237Z",
-      "etag": "W/\"6a472a89208825fdc0c7ddb0b57cc4e3967ccdb478cc09ade1cff9227428b391\"",
+      "cached_at": "2026-06-08T21:38:44.170012Z",
+      "etag": "W/\"c7c0efcdded3c1b63329b069226baee61e67bc7c35f59b37de0796212218893c\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -4355,8 +4360,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota/releases?per_page=5": {
-      "cached_at": "2026-06-08T21:12:18.588440Z",
-      "etag": "W/\"b760661814fd12b5e2edd604c8f2b8d0d42483ff789308d9e3165dfd7c3d9cb2\"",
+      "cached_at": "2026-06-08T21:39:11.660764Z",
+      "etag": "W/\"8b57f7951769f90a6c3682f00860611538cbecb1da7805f14ca7675aafc5cf3b\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -4408,8 +4413,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/onnxruntime/releases?per_page=5": {
-      "cached_at": "2026-06-08T21:11:32.195134Z",
-      "etag": "W/\"b9d50c8525e7e219bffebd72d60e61089405354127ad492a58a47a29e5b6544c\"",
+      "cached_at": "2026-06-08T21:38:23.961788Z",
+      "etag": "W/\"8c3ea63065daff0caa0be1148765620569f355196be21dd083b238cc0f98a5cd\"",
       "has_next": true,
       "item_count": 5,
       "releases": [

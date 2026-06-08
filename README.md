@@ -18,7 +18,9 @@ Running the scripts creates these output files:
 - `changes_last24h.csv` - machine-friendly snapshot of recent repo activity.
 - `changes_last24h.md` - human-readable activity digest.
 - `reports/latest.md` and `reports/latest.json` - current daily brief for human review and downstream ingestion.
+- `reports/latest.events.ndjson` - flat event-level stream for AI, search, and BI ingestion.
 - `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json` - dated report history.
+- `reports/YYYY-MM-DD.events.ndjson` - dated event stream history.
 - `reports/index.md` and `reports/index.json` - rolling report index with 7/30-day trend totals.
 - `reports/manifest.json` - artifact catalog for downstream ingestion.
 - `reports/status.json` - latest digest attempt status and report freshness metadata.
@@ -127,14 +129,18 @@ Outputs:
 - `changes_last24h.md`
 - `reports/latest.md`
 - `reports/latest.json`
+- `reports/latest.events.ndjson`
 - `reports/YYYY-MM-DD.md`
 - `reports/YYYY-MM-DD.json`
+- `reports/YYYY-MM-DD.events.ndjson`
 - `reports/index.md`
 - `reports/index.json`
 - `reports/manifest.json`
 - `reports/status.json`
 
 `changes_last24h.csv` keeps the legacy `commit_count_24h` column for compatibility. New ingestion should use `commit_count_window` with `window_since`, `window_until`, `hours_requested`, and `state_window_enabled` so state-extended runs are interpreted correctly.
+
+For AI/search/BI ingestion, prefer `reports/latest.events.ndjson` over parsing nested report JSON. Each line is one deduplicable commit event with stable `event_id`, `dedupe_key`, window metadata, source links, and first-pass signal/noise fields.
 
 Events prefilter modes:
 
@@ -151,6 +157,8 @@ Signal reporting:
 - Recent releases are fetched through capped, conditional REST calls and recorded under `releases` in the JSON report.
 - Repository lifecycle changes are recorded during inventory refresh and surfaced in the next digest report.
 - `reports/status.json` is updated on successful runs and clean API-budget deferrals so reviewers can distinguish a stale report from a failed collection.
+- The event stream adds `actor_type`, `change_type`, `noise_level`, `customer_visible`, and `notability_score` without adding GitHub API calls.
+- `reports/latest.md` surfaces Notable Changes before raw activity sections so commit volume is not treated as importance by default.
 
 ### 3. Calibrate Events API Candidate Coverage
 

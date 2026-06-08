@@ -47,6 +47,37 @@ REQUIRED_DIGEST_COLUMNS = {
 }
 
 VALID_STATUS_VALUES = {"complete", "deferred", "failed"}
+VALID_EVENT_TYPES = {"commit", "release"}
+VALID_ACTOR_TYPES = {"human", "bot", "automation", "unknown"}
+VALID_NOISE_LEVELS = {"low", "medium", "high", "unknown"}
+VALID_CUSTOMER_VISIBLE = {"true", "false", "unknown"}
+REQUIRED_EVENT_FIELDS = {
+    "schema_version",
+    "artifact_type",
+    "artifact_version",
+    "schema_url",
+    "event_id",
+    "event_type",
+    "dedupe_key",
+    "repo",
+    "org",
+    "repo_name",
+    "category",
+    "default_branch",
+    "committed_at",
+    "headline",
+    "actor_type",
+    "commit_oid",
+    "commit_url",
+    "change_type",
+    "noise_level",
+    "customer_visible",
+    "notability_score",
+    "window_since",
+    "window_until",
+    "retrieved_at",
+    "source",
+}
 
 
 def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -198,6 +229,9 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     for key in ("summaries", "top_repos", "activities", "graphql", "releases"):
         if key not in payload:
             raise RuntimeError(f"Report is missing required key: {key}")
+    event_stream = payload.get("event_stream")
+    if not isinstance(event_stream, dict):
+        raise RuntimeError("Report is missing event_stream metadata.")
     window = payload.get("window") or {}
     for key in ("since", "until", "hours_requested", "state_window_enabled"):
         if key not in window:
@@ -244,6 +278,100 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     return payload
 
 
+def read_ndjson(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        raise RuntimeError(f"Missing required event stream file: {path}")
+    records: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as f:
+        for line_number, line in enumerate(f, start=1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise RuntimeError(f"{path}:{line_number} is not valid JSON: {exc}") from exc
+            if not isinstance(record, dict):
+                raise RuntimeError(f"{path}:{line_number} must be a JSON object.")
+            records.append(record)
+    return records
+
+
+def expected_commit_event_count(report_payload: Dict[str, Any]) -> int:
+    count = 0
+    for activity in report_payload.get("activities") or []:
+        if isinstance(activity, dict):
+            commits = activity.get("commits") or []
+            if isinstance(commits, list):
+                count += len(commits)
+    return count
+
+
+def validate_event_record(path: Path, record: dict[str, Any]) -> None:
+    missing = sorted(REQUIRED_EVENT_FIELDS - set(record))
+    if missing:
+        raise RuntimeError(f"{path} event is missing required field(s): {', '.join(missing)}")
+    if record.get("schema_version") != 1:
+        raise RuntimeError(f"{path} event has unexpected schema_version.")
+    if record.get("artifact_type") != "tracker-event":
+        raise RuntimeError(f"{path} event has unexpected artifact_type.")
+    if record.get("schema_url") != "schemas/event.v1.schema.json":
+        raise RuntimeError(f"{path} event has unexpected schema_url.")
+    if record.get("event_type") not in VALID_EVENT_TYPES:
+        raise RuntimeError(f"{path} event has unexpected event_type.")
+    if record.get("actor_type") not in VALID_ACTOR_TYPES:
+        raise RuntimeError(f"{path} event has unexpected actor_type.")
+    if record.get("noise_level") not in VALID_NOISE_LEVELS:
+        raise RuntimeError(f"{path} event has unexpected noise_level.")
+    if record.get("customer_visible") not in VALID_CUSTOMER_VISIBLE:
+        raise RuntimeError(f"{path} event has unexpected customer_visible value.")
+    for key in ("event_id", "dedupe_key", "repo", "commit_oid", "commit_url", "window_since", "window_until"):
+        if not str(record.get(key) or "").strip():
+            raise RuntimeError(f"{path} event has empty {key}.")
+    score = int(record.get("notability_score"))
+    if score < 0 or score > 100:
+        raise RuntimeError(f"{path} event notability_score is out of range.")
+    if not isinstance(record.get("source"), dict):
+        raise RuntimeError(f"{path} event source must be an object.")
+
+
+def validate_event_stream(report_dir: Path, report_payload: Dict[str, Any]) -> list[dict[str, Any]]:
+    latest_path = report_dir / "latest.events.ndjson"
+    generated_date = str(report_payload.get("generated_at") or "")[:10]
+    dated_path = report_dir / f"{generated_date}.events.ndjson"
+    latest_records = read_ndjson(latest_path)
+    dated_records = read_ndjson(dated_path)
+    if latest_path.read_text(encoding="utf-8") != dated_path.read_text(encoding="utf-8"):
+        raise RuntimeError("Latest and dated event streams differ.")
+
+    expected_count = expected_commit_event_count(report_payload)
+    if len(latest_records) != expected_count:
+        raise RuntimeError(
+            f"Event stream has {len(latest_records)} events, expected {expected_count} commit events."
+        )
+
+    event_stream = report_payload.get("event_stream") or {}
+    if int(event_stream.get("commit_event_count") or -1) != expected_count:
+        raise RuntimeError("Report event_stream.commit_event_count does not match activities.")
+    if int(event_stream.get("event_count") or -1) != len(latest_records):
+        raise RuntimeError("Report event_stream.event_count does not match latest event stream.")
+
+    event_ids = set()
+    dedupe_keys = set()
+    for record in latest_records:
+        validate_event_record(latest_path, record)
+        event_id = str(record.get("event_id") or "")
+        dedupe_key = str(record.get("dedupe_key") or "")
+        if event_id in event_ids:
+            raise RuntimeError(f"Duplicate event_id in event stream: {event_id}")
+        if dedupe_key in dedupe_keys:
+            raise RuntimeError(f"Duplicate dedupe_key in event stream: {dedupe_key}")
+        event_ids.add(event_id)
+        dedupe_keys.add(dedupe_key)
+
+    return latest_records
+
+
 def resolve_manifest_path(path_value: str) -> Path:
     path = Path(path_value)
     return path if path.is_absolute() else Path.cwd() / path
@@ -275,7 +403,7 @@ def validate_manifest_status(report_dir: Path) -> None:
     if not isinstance(artifacts, list) or not artifacts:
         raise RuntimeError("Tracker manifest is missing artifacts.")
     artifact_names = {str(item.get("name") or "") for item in artifacts if isinstance(item, dict)}
-    for required_name in {"latest_machine_report", "latest_human_report", "tracker_status"}:
+    for required_name in {"latest_machine_report", "latest_human_report", "latest_event_stream", "tracker_status"}:
         if required_name not in artifact_names:
             raise RuntimeError(f"Tracker manifest is missing artifact: {required_name}")
 
@@ -331,7 +459,8 @@ def main() -> int:
     digest_rows = validate_digest(Path(args.digest_csv), Path(args.digest_md))
     if not args.skip_reports:
         reports_dir = Path(args.reports_dir)
-        validate_reports(reports_dir, digest_rows)
+        report_payload = validate_reports(reports_dir, digest_rows)
+        validate_event_stream(reports_dir, report_payload)
         validate_manifest_status(reports_dir)
         validate_events_calibration(reports_dir / "events-calibration")
 

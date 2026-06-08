@@ -1,10 +1,10 @@
 # Microsoft Repo Change Brief - 2026-06-08
 
-Generated: `2026-06-08T21:11:10.933557Z`
+Generated: `2026-06-08T21:38:00.975882Z`
 
-Window since: `2026-06-07T21:11:10.933557Z`
+Window since: `2026-06-07T21:38:00.975882Z`
 
-Window until: `2026-06-08T21:11:10.933557Z`
+Window until: `2026-06-08T21:38:00.975882Z`
 
 ## Summary
 
@@ -14,8 +14,28 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | Repositories after filters | 4639 |
 | `pushed_at` candidates | 133 |
 | Enrichment candidates | 133 |
-| Repositories with movement | 67 |
-| Default-branch commits | 283 |
+| Repositories with movement | 68 |
+| Default-branch commits | 287 |
+
+## Notable Changes
+
+| Repository | Score | Change | Actor | Noise | Headline | Time |
+| --- | ---: | --- | --- | --- | --- | --- |
+| [Azure/agentops](https://github.com/Azure/agentops) | 100 | release | human | low | [Release v0.3.11](https://github.com/Azure/agentops/pull/265) | `2026-06-08T20:12:12Z` |
+| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 100 | release | human | low | [Cosmos Release 2026-06-08](https://github.com/Azure/azure-sdk-for-java/pull/49407) | `2026-06-08T19:21:17Z` |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 100 | release | human | low | [Increment version for monitor releases](https://github.com/Azure/azure-sdk-for-python/pull/47394) | `2026-06-08T16:42:10Z` |
+| [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | 100 | release | human | low | [chore: release main](https://github.com/microsoft/kiota-python/pull/566) | `2026-06-08T16:35:22Z` |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 100 | release | human | low | [Exporter release 1.0.0b53](https://github.com/Azure/azure-sdk-for-python/pull/47296) | `2026-06-08T14:24:26Z` |
+| [MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp) | 100 | security_fix | human | low | [Copy Files From Source Repo (2026-06-08 00:43)](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72) | `2026-06-08T07:43:52Z` |
+| [microsoft/entrabot](https://github.com/microsoft/entrabot) | 100 | security_fix | human | low | [fix(security): require active-sponsor-channel binding for add_teams_member and share_file](https://github.com/microsoft/entrabot/pull/10) | `2026-06-07T22:10:05Z` |
+| [Azure-Samples/postgres-sa-byoac](https://github.com/Azure-Samples/postgres-sa-byoac) | 91 | security_fix | human | low | [fixed 12 vulnerabilities across aml model, backend, and frontend](https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe) | `2026-06-08T17:09:28Z` |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 90 | feature | human | low | [[VoiceLive] Add live telemetry test for realtime session](https://github.com/Azure/azure-sdk-for-js/pull/38868) | `2026-06-08T21:28:47Z` |
+| [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks) | 90 | docs_update | human | low | [[ADR] mRPC Back Pressure flag](https://github.com/Azure/iot-operations-sdks/pull/1332) | `2026-06-08T21:27:12Z` |
+| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 90 | docs_update | human | low | [Preserve cached routing map on transient pkrange fetch failure](https://github.com/Azure/azure-sdk-for-rust/pull/4549) | `2026-06-08T21:08:45Z` |
+| [microsoft/entrabot](https://github.com/microsoft/entrabot) | 90 | feature | human | low | [docs: MXC (Microsoft Execution Containers) platform research](https://github.com/microsoft/entrabot/pull/14) | `2026-06-08T20:52:01Z` |
+| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 90 | bug_fix | human | low | [Update screenshot of model picker](https://github.com/microsoft/vscode-docs/pull/9903) | `2026-06-08T20:25:42Z` |
+| [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs) | 90 | feature | human | low | [Update target-platform.md - add Sql170DatabaseSchemaProvider](https://github.com/MicrosoftDocs/sql-docs/pull/10346) | `2026-06-08T20:16:41Z` |
+| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 90 | docs_update | human | low | [Hand off @ronniegeraghty CODEOWNERS to new owners](https://github.com/Azure/azure-sdk-for-rust/pull/4499) | `2026-06-08T20:14:28Z` |
 
 ## Collection Settings
 
@@ -34,7 +54,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | Count batches | 4 |
 | Detail batches | 2 |
 | Repos counted | 133 |
-| Repos enriched | 67 |
+| Repos enriched | 68 |
 
 ## High-Signal Items
 
@@ -42,8 +62,8 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | --- | ---: | --- |
 | [Azure/agentops](https://github.com/Azure/agentops) | 150 | human-authored, product:Azure AI, release, release-language, samples, watchlist |
 | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 138 | docs, human-authored, product:Azure AI, product:Azure SDK, release, release-language, watchlist |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 132 | docs, human-authored, product:Azure AI, product:Azure SDK, release, release-language, watchlist |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 129 | docs, human-authored, product:Azure SDK, release, release-language, watchlist |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 133 | docs, human-authored, product:Azure AI, product:Azure SDK, release, release-language, watchlist |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 130 | docs, human-authored, product:Azure SDK, release, release-language, watchlist |
 | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | 126 | docs, human-authored, product:Microsoft Graph, release, release-language, watchlist |
 | [microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator) | 116 | human-authored, product:Azure AI, release, samples, watchlist |
 | [microsoft/entrabot](https://github.com/microsoft/entrabot) | 105 | docs, human-authored, security, watchlist |
@@ -51,7 +71,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) | 97 | docs, human-authored, product:Azure SDK, product:Microsoft Graph, watchlist |
 | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 94 | docs, human-authored, product:Azure SDK, release-language, watchlist |
 | [dotnet/msbuild](https://github.com/dotnet/msbuild) | 89 | docs, human-authored, watchlist |
-| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 88 | human-authored, release-language, training, watchlist |
+| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 86 | human-authored, release-language, training, watchlist |
 | [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 83 | docs, human-authored, watchlist |
 | [microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools) | 82 | human-authored, product:Azure AI, samples, watchlist |
 | [microsoft/content-generation-solution-accelerator](https://github.com/microsoft/content-generation-solution-accelerator) | 81 | human-authored, release, samples |
@@ -62,8 +82,8 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | --- | ---: | --- |
 | [Azure/agentops](https://github.com/Azure/agentops) | 150 | products: Azure AI; repos: Azure/agentops; orgs: Azure; keywords: agent, release |
 | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 138 | products: Azure AI, Azure SDK; repos: Azure/azure-sdk-for-net; orgs: Azure; keywords: agent, release, sdk |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 132 | products: Azure AI, Azure SDK; repos: Azure/azure-sdk-for-js; orgs: Azure; keywords: azure sdk, copilot, openai, sdk |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 129 | products: Azure SDK; repos: Azure/azure-sdk-for-python; orgs: Azure; keywords: azure sdk, release, sdk |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 133 | products: Azure AI, Azure SDK; repos: Azure/azure-sdk-for-js; orgs: Azure; keywords: azure sdk, copilot, openai, sdk |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 130 | products: Azure SDK; repos: Azure/azure-sdk-for-python; orgs: Azure; keywords: azure sdk, release, sdk |
 | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | 126 | products: Microsoft Graph; keywords: kiota, release |
 | [microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator) | 116 | products: Azure AI; keywords: agent |
 | [microsoft/entrabot](https://github.com/microsoft/entrabot) | 105 | keywords: entra, security |
@@ -71,7 +91,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) | 97 | products: Microsoft Graph, Azure SDK; repos: microsoft/kiota-samples; keywords: kiota, sdk |
 | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 94 | products: Azure SDK; repos: Azure/azure-sdk-for-java; orgs: Azure; keywords: azure sdk, release, sdk |
 | [dotnet/msbuild](https://github.com/dotnet/msbuild) | 89 | keywords: copilot |
-| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 88 | orgs: MicrosoftLearning |
+| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 86 | orgs: MicrosoftLearning |
 | [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 83 | repos: microsoft/vscode-docs |
 | [microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools) | 82 | products: Azure AI; keywords: agent, foundry |
 | [MicrosoftLearning/ai-apps](https://github.com/MicrosoftLearning/ai-apps) | 81 | products: Azure AI; repos: MicrosoftLearning/ai-apps; orgs: MicrosoftLearning |
@@ -122,7 +142,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 
 | Category | Repositories |
 | --- | ---: |
-| docs | 33 |
+| docs | 34 |
 | samples | 19 |
 | training | 15 |
 
@@ -132,7 +152,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | --- | ---: |
 | microsoft | 24 |
 | MicrosoftLearning | 14 |
-| Azure | 9 |
+| Azure | 10 |
 | MicrosoftDocs | 7 |
 | dotnet | 6 |
 | Azure-Samples | 4 |
@@ -145,8 +165,8 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | --- | ---: | --- | ---: | ---: | --- |
 | [Azure/agentops](https://github.com/Azure/agentops) | 150 | samples | 27 | 1 | `2026-06-08T20:12:12Z` |
 | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 138 | docs | 13 | 2 | `2026-06-08T20:01:39Z` |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 132 | docs | 7 | 3 | `2026-06-08T18:13:24Z` |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 129 | docs | 4 | 5 | `2026-06-08T20:50:14Z` |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 133 | docs | 8 | 3 | `2026-06-08T21:28:47Z` |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 130 | docs | 5 | 5 | `2026-06-08T21:23:38Z` |
 | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | 126 | docs | 1 | 5 | `2026-06-08T16:35:22Z` |
 | [microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator) | 116 | samples | 1 | 1 | `2026-06-08T05:47:17Z` |
 | [microsoft/entrabot](https://github.com/microsoft/entrabot) | 105 | docs | 5 | 0 | `2026-06-08T20:52:01Z` |
@@ -154,7 +174,7 @@ Window until: `2026-06-08T21:11:10.933557Z`
 | [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) | 97 | docs | 22 | 0 | `2026-06-08T16:21:56Z` |
 | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 94 | docs | 9 | 0 | `2026-06-08T20:55:02Z` |
 | [dotnet/msbuild](https://github.com/dotnet/msbuild) | 89 | docs | 14 | 0 | `2026-06-08T18:27:09Z` |
-| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 88 | training | 3 | 0 | `2026-06-08T00:27:10Z` |
+| [MicrosoftLearning/mslearn-ai-concepts](https://github.com/MicrosoftLearning/mslearn-ai-concepts) | 86 | training | 1 | 0 | `2026-06-08T00:27:10Z` |
 | [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 83 | docs | 8 | 0 | `2026-06-08T20:25:42Z` |
 | [microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools) | 82 | samples | 7 | 0 | `2026-06-08T00:35:21Z` |
 | [MicrosoftLearning/ai-apps](https://github.com/MicrosoftLearning/ai-apps) | 81 | training | 6 | 0 | `2026-06-08T17:11:43Z` |
@@ -187,15 +207,15 @@ Tags: `human-authored, product:Azure AI, release, release-language, samples, wat
 - [fix: recommend eval init before azd eval run](https://github.com/Azure/agentops/commit/9381b5362aa9e7a7a7551503af2bbb6fafbe5284) - `2026-06-08T17:49:38Z` - Paulo Lacerda (@placerda) - PR: [fix: recommend eval init before azd eval run](https://github.com/Azure/agentops/pull/263)
 - [fix: bootstrap azd eval init context](https://github.com/Azure/agentops/commit/9180b7921fff2c0da7fc77ef10eb569c74a2f627) - `2026-06-08T17:40:13Z` - Paulo Lacerda (@placerda) - PR: [fix: bootstrap azd eval init context](https://github.com/Azure/agentops/pull/262)
 
-### dotnet/runtime (23 commit(s), signal 63)
+### dotnet/runtime (25 commit(s), signal 65)
 
 Tags: `docs, human-authored`
 
+- [Implement Environment.WorkingSet on OpenBSD (#129078)](https://github.com/dotnet/runtime/commit/5416bfe7ce1291da637aa119738a300f013569db) - `2026-06-08T21:34:04Z` - Adeel Mujahid (@am11) - PR: [Implement Environment.WorkingSet on OpenBSD](https://github.com/dotnet/runtime/pull/129078)
+- [Add OpenBSD support for ICU library loading (#129124)](https://github.com/dotnet/runtime/commit/fdec0235c30ece9bd88b221522ac2aa0131d8418) - `2026-06-08T21:20:58Z` - Adeel Mujahid (@am11) - PR: [Add OpenBSD support for ICU library loading](https://github.com/dotnet/runtime/pull/129124)
 - [Implement getexepath for OpenBSD (#129103)](https://github.com/dotnet/runtime/commit/e3d5aac6afa2f26837e4cfcb0647fed3e8e0f82b) - `2026-06-08T21:11:57Z` - Adeel Mujahid (@am11) - PR: [Implement getexepath for OpenBSD](https://github.com/dotnet/runtime/pull/129103)
 - [[Wasm R2R] Allow LDVIRTFTN call sigs to carry a type arg (MD array me…](https://github.com/dotnet/runtime/commit/826a0c6a8502849b1290a4865535eef35962b3a1) - `2026-06-08T21:05:15Z` - Andy Ayers (@AndyAyersMS) - PR: [[Wasm R2R] Allow LDVIRTFTN call sigs to carry a type arg (MD array methods)](https://github.com/dotnet/runtime/pull/129064)
 - [Arm64:[PAC-RET] Use hint-space instruction for stripping return addre…](https://github.com/dotnet/runtime/commit/dcabbab1b8ffeb455ee31fd47eea822040be0960) - `2026-06-08T20:38:22Z` - SwapnilGaikwad (@SwapnilGaikwad) - PR: [Arm64:[PAC-RET] Use hint-space instruction for stripping return address](https://github.com/dotnet/runtime/pull/129130)
-- [[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iO…](https://github.com/dotnet/runtime/commit/fc3e8ea786bcf1ffbaea56f7a5a8b941fbb66904) - `2026-06-08T20:34:12Z` - Milos Kotlar (@kotlarmilos) - PR: [[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iOS/tvOS simulators](https://github.com/dotnet/runtime/pull/129012)
-- [[r2r] Enable generic cycles detection by default (#128957)](https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee) - `2026-06-08T19:47:32Z` - Vlad Brezae (@BrzVlad) - PR: [[r2r] Enable generic cycles detection by default](https://github.com/dotnet/runtime/pull/128957)
 
 ### microsoft/kiota-samples (22 commit(s), signal 97)
 
@@ -249,6 +269,19 @@ Tags: `bot-only, dependency-noise, product:Azure AI, product:Microsoft Graph, sa
 - [Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent…](https://github.com/microsoft/teams-agent-accelerator-templates/commit/7cfd3b8a1ca683ea390afcad5bf1e25e419b2379) - `2026-06-08T17:21:01Z` - dependabot[bot] (@dependabot[bot]) - PR: [Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent](https://github.com/microsoft/teams-agent-accelerator-templates/pull/96)
 - [Bump next from 15.5.7 to 15.5.18 in /docs (#83)](https://github.com/microsoft/teams-agent-accelerator-templates/commit/5075185f975100e0410b2ceb6b0d5ba9cb78abeb) - `2026-06-08T17:18:21Z` - dependabot[bot] (@dependabot[bot]) - PR: [Bump next from 15.5.7 to 15.5.18 in /docs](https://github.com/microsoft/teams-agent-accelerator-templates/pull/83)
 
+### Azure/azure-sdk-for-js (8 commit(s), signal 133)
+
+Tags: `docs, human-authored, product:Azure AI, product:Azure SDK, release, release-language, watchlist`
+
+- Release: [@azure/arm-monitorworkspaces_1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-monitorworkspaces_1.0.0-beta.1) - `2026-06-08T18:04:15Z`
+- Release: [@azure/identity_4.14.0-beta.4](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/identity_4.14.0-beta.4) - `2026-06-08T17:14:51Z`
+- Release: [@azure/arm-resources_8.0.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-resources_8.0.0-beta.1) - `2026-06-08T03:38:08Z`
+- [[VoiceLive] Add live telemetry test for realtime session (#38868)](https://github.com/Azure/azure-sdk-for-js/commit/5b682289a6c409fbf94905e87dbe0159dcaf604a) - `2026-06-08T21:28:47Z` - xitzhang (@xitzhang) - PR: [[VoiceLive] Add live telemetry test for realtime session](https://github.com/Azure/azure-sdk-for-js/pull/38868)
+- [[VoiceLive] Add live test coverage and parametrize over API versions …](https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c) - `2026-06-08T18:13:24Z` - xitzhang (@xitzhang) - PR: [[VoiceLive] Add live test coverage and parametrize over API versions](https://github.com/Azure/azure-sdk-for-js/pull/38790)
+- [Update `@azure/openai` README links for Build Analyze link-check fail…](https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3) - `2026-06-08T18:11:03Z` - Copilot (@Copilot) - PR: [Update `@azure/openai` README links for Build Analyze link-check failures](https://github.com/Azure/azure-sdk-for-js/pull/38809)
+- [[EngSys] automatic pnpm update (#38861)](https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d) - `2026-06-08T16:02:58Z` - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[EngSys] automatic pnpm update](https://github.com/Azure/azure-sdk-for-js/pull/38861)
+- [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation…](https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884) - `2026-06-08T15:31:04Z` - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188](https://github.com/Azure/azure-sdk-for-js/pull/38808)
+
 ### microsoft/vscode-docs (8 commit(s), signal 83)
 
 Tags: `docs, human-authored, watchlist`
@@ -259,19 +292,6 @@ Tags: `docs, human-authored, watchlist`
 - [Merge pull request #9901 from microsoft/ntrogh/getstarted-editing-tut…](https://github.com/microsoft/vscode-docs/commit/04cbc2581e238550f3f29df508bdd5ba8cff1d99) - `2026-06-08T08:58:29Z` - Nick Trogh (@ntrogh) - PR: [Add cross-link to editor tutorial](https://github.com/microsoft/vscode-docs/pull/9901)
 - [Add cross-link to editor tutorial](https://github.com/microsoft/vscode-docs/commit/affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07) - `2026-06-08T08:44:20Z` - Nick Trogh (@ntrogh) - PR: [Add cross-link to editor tutorial](https://github.com/microsoft/vscode-docs/pull/9901)
 
-### Azure/azure-sdk-for-js (7 commit(s), signal 132)
-
-Tags: `docs, human-authored, product:Azure AI, product:Azure SDK, release, release-language, watchlist`
-
-- Release: [@azure/arm-monitorworkspaces_1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-monitorworkspaces_1.0.0-beta.1) - `2026-06-08T18:04:15Z`
-- Release: [@azure/identity_4.14.0-beta.4](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/identity_4.14.0-beta.4) - `2026-06-08T17:14:51Z`
-- Release: [@azure/arm-resources_8.0.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-resources_8.0.0-beta.1) - `2026-06-08T03:38:08Z`
-- [[VoiceLive] Add live test coverage and parametrize over API versions …](https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c) - `2026-06-08T18:13:24Z` - xitzhang (@xitzhang) - PR: [[VoiceLive] Add live test coverage and parametrize over API versions](https://github.com/Azure/azure-sdk-for-js/pull/38790)
-- [Update `@azure/openai` README links for Build Analyze link-check fail…](https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3) - `2026-06-08T18:11:03Z` - Copilot (@Copilot) - PR: [Update `@azure/openai` README links for Build Analyze link-check failures](https://github.com/Azure/azure-sdk-for-js/pull/38809)
-- [[EngSys] automatic pnpm update (#38861)](https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d) - `2026-06-08T16:02:58Z` - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[EngSys] automatic pnpm update](https://github.com/Azure/azure-sdk-for-js/pull/38861)
-- [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation…](https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884) - `2026-06-08T15:31:04Z` - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188](https://github.com/Azure/azure-sdk-for-js/pull/38808)
-- [[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787…](https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530) - `2026-06-08T14:52:10Z` - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787](https://github.com/Azure/azure-sdk-for-js/pull/38811)
-
 ### microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools (7 commit(s), signal 82)
 
 Tags: `human-authored, product:Azure AI, samples, watchlist`
@@ -281,6 +301,16 @@ Tags: `human-authored, product:Azure AI, samples, watchlist`
 - [Merge pull request #15 from microsoft/santiagxf/refactor](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/352afc259f43eeb54d0f095559a294068e87938d) - `2026-06-08T00:33:15Z` - Facundo Santiago (@santiagxf) - PR: [fix: refactor MCP and auth](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15)
 - [fix: refactor MCP and auth](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/0c276a29a0aaf9191ed6ed7883cb046f00a7f578) - `2026-06-08T00:29:20Z` - santiagxf (@santiagxf) - PR: [fix: refactor MCP and auth](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15)
 - [Merge pull request #13 from microsoft/santiagxf/refactor](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/e532fac56baff32098d978de85a31d73e1681803) - `2026-06-07T21:54:42Z` - Facundo Santiago (@santiagxf) - PR: [Refactor agent and MCP server integration](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/13)
+
+### dotnet/orleans (6 commit(s), signal 46)
+
+Tags: `docs, human-authored`
+
+- [fix: make bank transfer fault test deterministic (#10185)](https://github.com/dotnet/orleans/commit/6a98474dda3b7548af4f93c041f4dad1e7097147) - `2026-06-08T21:01:24Z` - Reuben Bond (@ReubenBond) - PR: [fix: make bank transfer fault test deterministic](https://github.com/dotnet/orleans/pull/10185)
+- [chore: use IMeterFactory for MessagingProcessingInstruments (#10180)](https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84) - `2026-06-08T20:07:53Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for MessagingProcessingInstruments](https://github.com/dotnet/orleans/pull/10180)
+- [chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)](https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2) - `2026-06-08T20:05:09Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for AzureBlobJournalStorageInstruments](https://github.com/dotnet/orleans/pull/10183)
+- [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - `2026-06-08T19:16:28Z` - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests](https://github.com/dotnet/orleans/pull/10182)
+- [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - `2026-06-08T19:03:23Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments](https://github.com/dotnet/orleans/pull/10184)
 
 ### dotnet/roslyn (6 commit(s), signal 46)
 
@@ -302,6 +332,21 @@ Tags: `human-authored, product:Azure AI, training, watchlist`
 - [Reduced WebLLM context window](https://github.com/MicrosoftLearning/ai-apps/commit/5a440bd9dc931145fd6cefe99cc6e311ea1f485d) - `2026-06-08T16:31:25Z` - Graeme Malcolm (@GraemeMalcolm)
 - [Optimization](https://github.com/MicrosoftLearning/ai-apps/commit/54dfb8427601626ed5bc59cd330c46641352980a) - `2026-06-08T00:24:52Z` - Graeme Malcolm (@GraemeMalcolm)
 
+### Azure/azure-sdk-for-python (5 commit(s), signal 130)
+
+Tags: `docs, human-authored, product:Azure SDK, release, release-language, watchlist`
+
+- Release: [azure-storage-queue_12.17.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-queue_12.17.0) - `2026-06-08T17:53:21Z`
+- Release: [azure-storage-file-datalake_12.25.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-datalake_12.25.0) - `2026-06-08T17:19:54Z`
+- Release: [azure-monitor-opentelemetry-exporter_1.0.0b53](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-monitor-opentelemetry-exporter_1.0.0b53) - `2026-06-08T15:46:00Z`
+- Release: [azure-storage-file-share_12.26.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-share_12.26.0) - `2026-06-08T12:36:24Z`
+- Release: [azure-storage-blob_12.30.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-blob_12.30.0) - `2026-06-08T11:39:40Z`
+- [Bump changelogs after release (#47398)](https://github.com/Azure/azure-sdk-for-python/commit/c093c23f3ae6976810c53cc41b073705ecf4aceb) - `2026-06-08T21:23:38Z` - Peter Wu (@weirongw23-msft) - PR: [[Storage] Bump Changelogs after STG 102 Release](https://github.com/Azure/azure-sdk-for-python/pull/47398)
+- [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Gene…](https://github.com/Azure/azure-sdk-for-python/commit/e942181cdfa23157033fa18d76d659ba7c8ce55e) - `2026-06-08T20:50:14Z` - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Generation - Python-6390684](https://github.com/Azure/azure-sdk-for-python/pull/47321)
+- [[confidentialledger] Enforce stricter redirect destination policy (#4…](https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906) - `2026-06-08T19:23:44Z` - Ryan Zhang (@ryazhang-microsoft) - PR: [[confidentialledger] Enforce stricter redirect destination policy](https://github.com/Azure/azure-sdk-for-python/pull/47368)
+- [Increment package version after release of azure-monitor-opentelemetr…](https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8) - `2026-06-08T16:42:10Z` - Azure SDK Bot (@azure-sdk) - PR: [Increment version for monitor releases](https://github.com/Azure/azure-sdk-for-python/pull/47394)
+- [Exporter release 1.0.0b53 (#47296)](https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479) - `2026-06-08T14:24:26Z` - Radhika Gupta (@rads-1996) - PR: [Exporter release 1.0.0b53](https://github.com/Azure/azure-sdk-for-python/pull/47296)
+
 ### dotnet/efcore (5 commit(s), signal 80)
 
 Tags: `docs, human-authored, watchlist`
@@ -321,30 +366,6 @@ Tags: `docs, human-authored, security, watchlist`
 - [refactor: remove Teams Bot Gateway auth mode (ADR-006) (#12)](https://github.com/microsoft/entrabot/commit/68a1a4e4c0891eeeb738e42f0963bb8e51daddef) - `2026-06-08T17:29:32Z` - Brandon Werner (@brandwe) - PR: [refactor: remove Teams Bot Gateway auth mode (ADR-006)](https://github.com/microsoft/entrabot/pull/12)
 - [chore(claude): allowlist persona-sati MCP tools to prevent non-intera…](https://github.com/microsoft/entrabot/commit/bdb28bcd3e2e0810a07223b52e97babb5a26b009) - `2026-06-08T00:32:27Z` - Brandon Werner (@brandwe) - PR: [chore(claude): allowlist persona-sati MCP tools to prevent non-interactive REJECT](https://github.com/microsoft/entrabot/pull/11)
 - [Merge pull request #10 from microsoft/fix/active-sponsor-channel-binding](https://github.com/microsoft/entrabot/commit/4d5af66155b93ba8697bd250222d4e3521a20d38) - `2026-06-07T22:10:05Z` - Brandon Werner (@brandwe) - PR: [fix(security): require active-sponsor-channel binding for add_teams_member and share_file](https://github.com/microsoft/entrabot/pull/10)
-
-### dotnet/orleans (5 commit(s), signal 45)
-
-Tags: `docs, human-authored`
-
-- [chore: use IMeterFactory for MessagingProcessingInstruments (#10180)](https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84) - `2026-06-08T20:07:53Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for MessagingProcessingInstruments](https://github.com/dotnet/orleans/pull/10180)
-- [chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)](https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2) - `2026-06-08T20:05:09Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for AzureBlobJournalStorageInstruments](https://github.com/dotnet/orleans/pull/10183)
-- [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - `2026-06-08T19:16:28Z` - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests](https://github.com/dotnet/orleans/pull/10182)
-- [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - `2026-06-08T19:03:23Z` - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments](https://github.com/dotnet/orleans/pull/10184)
-- [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up…](https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3) - `2026-06-08T19:02:39Z` - Cluster7ck (@Cluster7ck) - PR: [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)](https://github.com/dotnet/orleans/pull/10176)
-
-### Azure/azure-sdk-for-python (4 commit(s), signal 129)
-
-Tags: `docs, human-authored, product:Azure SDK, release, release-language, watchlist`
-
-- Release: [azure-storage-queue_12.17.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-queue_12.17.0) - `2026-06-08T17:53:21Z`
-- Release: [azure-storage-file-datalake_12.25.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-datalake_12.25.0) - `2026-06-08T17:19:54Z`
-- Release: [azure-monitor-opentelemetry-exporter_1.0.0b53](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-monitor-opentelemetry-exporter_1.0.0b53) - `2026-06-08T15:46:00Z`
-- Release: [azure-storage-file-share_12.26.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-share_12.26.0) - `2026-06-08T12:36:24Z`
-- Release: [azure-storage-blob_12.30.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-blob_12.30.0) - `2026-06-08T11:39:40Z`
-- [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Gene…](https://github.com/Azure/azure-sdk-for-python/commit/e942181cdfa23157033fa18d76d659ba7c8ce55e) - `2026-06-08T20:50:14Z` - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Generation - Python-6390684](https://github.com/Azure/azure-sdk-for-python/pull/47321)
-- [[confidentialledger] Enforce stricter redirect destination policy (#4…](https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906) - `2026-06-08T19:23:44Z` - Ryan Zhang (@ryazhang-microsoft) - PR: [[confidentialledger] Enforce stricter redirect destination policy](https://github.com/Azure/azure-sdk-for-python/pull/47368)
-- [Increment package version after release of azure-monitor-opentelemetr…](https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8) - `2026-06-08T16:42:10Z` - Azure SDK Bot (@azure-sdk) - PR: [Increment version for monitor releases](https://github.com/Azure/azure-sdk-for-python/pull/47394)
-- [Exporter release 1.0.0b53 (#47296)](https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479) - `2026-06-08T14:24:26Z` - Radhika Gupta (@rads-1996) - PR: [Exporter release 1.0.0b53](https://github.com/Azure/azure-sdk-for-python/pull/47296)
 
 ### microsoft/onnxruntime (4 commit(s), signal 44)
 
@@ -370,14 +391,6 @@ Tags: `bot-only, dependency-noise, docs, product:Microsoft Graph, watchlist`
 - [Bump Spectre.Console from 0.55.2 to 0.56.0 (#7770)](https://github.com/microsoft/kiota/commit/369efd30c140db0e91d372d7504182c7d778c85e) - `2026-06-08T11:19:19Z` - dependabot[bot] (@dependabot[bot]) - PR: [Bump Spectre.Console from 0.55.2 to 0.56.0](https://github.com/microsoft/kiota/pull/7770)
 - [build(deps-dev): bump @types/node in /it/typescript (#7768)](https://github.com/microsoft/kiota/commit/f873a879e79802b58ed1fb93f3f332c3b7cac357) - `2026-06-08T10:23:42Z` - dependabot[bot] (@dependabot[bot]) - PR: [build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /it/typescript](https://github.com/microsoft/kiota/pull/7768)
 - [build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode (#…](https://github.com/microsoft/kiota/commit/39939a54052a8d555607609dd98b11e8e4c7d8de) - `2026-06-08T10:00:49Z` - dependabot[bot] (@dependabot[bot]) - PR: [build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode](https://github.com/microsoft/kiota/pull/7769)
-
-### MicrosoftLearning/mslearn-ai-concepts (3 commit(s), signal 88)
-
-Tags: `human-authored, release-language, training, watchlist`
-
-- [Updated model versions](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f) - `2026-06-08T00:27:10Z` - Graeme Malcolm (@GraemeMalcolm)
-- [Correct model name](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/094362458804b180843fdd64a3e4e4bd81684a97) - `2026-06-07T21:22:45Z` - Graeme Malcolm (@GraemeMalcolm)
-- [Updated NLP tasks](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/5184291d3f281798a7736d5fb46fc95a8fb11fb0) - `2026-06-07T21:18:03Z` - Graeme Malcolm (@GraemeMalcolm)
 
 ### Azure/azure-sdk-for-rust (2 commit(s), signal 77)
 
@@ -476,6 +489,12 @@ Tags: `human-authored, training, watchlist`
 
 - [Copy Files From Source Repo (2026-06-08 00:46)](https://github.com/MicrosoftLearning/mslearn-sql-developer.ja-jp/commit/fefbe1243e8e1ef43e045d5231cb5060e113c2a0) - `2026-06-08T07:46:40Z` - olprod (@olprod)
 - [Initial commit](https://github.com/MicrosoftLearning/mslearn-sql-developer.ja-jp/commit/4900f8bdf8f03fa260499d48468ef467c04b6e6e) - `2026-06-08T02:51:46Z` - stonezy123 (@stonezy123)
+
+### Azure/iot-operations-sdks (1 commit(s), signal 76)
+
+Tags: `docs, human-authored, product:Azure SDK, watchlist`
+
+- [[ADR] mRPC Back Pressure flag (#1332)](https://github.com/Azure/iot-operations-sdks/commit/597532eac5a081a76b04772efb9922ff5301fa43) - `2026-06-08T21:27:12Z` - Maxim Semenov (@maximsemenov80) - PR: [[ADR] mRPC Back Pressure flag](https://github.com/Azure/iot-operations-sdks/pull/1332)
 
 ### MicrosoftDocs/sql-docs (1 commit(s), signal 76)
 
@@ -671,6 +690,12 @@ Tags: `human-authored, release-language, samples`
 Tags: `human-authored, product:Azure AI, samples, watchlist`
 
 - [Merge pull request #355 from microsoft/workshops/agent-building](https://github.com/microsoft/BCTech/commit/448d5e660d9559b3df40fc075253536aa751b9f4) - `2026-06-08T01:14:13Z` - Thaddeus Loke (@thloke) - PR: [Add 'Building Agents in Business Central' workshop](https://github.com/microsoft/BCTech/pull/355)
+
+### MicrosoftLearning/mslearn-ai-concepts (1 commit(s), signal 86)
+
+Tags: `human-authored, release-language, training, watchlist`
+
+- [Updated model versions](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f) - `2026-06-08T00:27:10Z` - Graeme Malcolm (@GraemeMalcolm)
 
 ### Azure-Samples/azure-sdk-for-js-docs (1 commit(s), signal 41)
 

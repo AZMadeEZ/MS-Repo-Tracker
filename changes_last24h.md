@@ -1,6 +1,6 @@
-# Changes on default branch since 2026-06-07T21:11:10.933557Z
+# Changes on default branch since 2026-06-07T21:38:00.975882Z
 
-Repos with movement: **67**
+Repos with movement: **68**
 
 ## docs
 
@@ -20,14 +20,15 @@ Repos with movement: **67**
   - [Updating Missing Telemetry (#48978)](https://github.com/Azure/azure-sdk-for-java/commit/f8877c0abd43da6e2e769c8e77e7d6a51a7e6774) - 2026-06-08T18:25:13Z - Matthew Metcalf (@mrm9084) - PR: [Updating Missing Telemetry #48978](https://github.com/Azure/azure-sdk-for-java/pull/48978)
   - [[confidentialledger] Enforce stricter redirect destination policy (#4…](https://github.com/Azure/azure-sdk-for-java/commit/387345eef6d7fbbc6bef0c8fe2affff566dc9aea) - 2026-06-08T17:08:19Z - Ryan Zhang (@ryazhang-microsoft) - PR: [[confidentialledger] Enforce stricter redirect destination policy #49391](https://github.com/Azure/azure-sdk-for-java/pull/49391)
 
-- **Azure/azure-sdk-for-js** (`main`) - **7** commit(s)
+- **Azure/azure-sdk-for-js** (`main`) - **8** commit(s)
+  - [[VoiceLive] Add live telemetry test for realtime session (#38868)](https://github.com/Azure/azure-sdk-for-js/commit/5b682289a6c409fbf94905e87dbe0159dcaf604a) - 2026-06-08T21:28:47Z - xitzhang (@xitzhang) - PR: [[VoiceLive] Add live telemetry test for realtime session #38868](https://github.com/Azure/azure-sdk-for-js/pull/38868)
   - [[VoiceLive] Add live test coverage and parametrize over API versions …](https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c) - 2026-06-08T18:13:24Z - xitzhang (@xitzhang) - PR: [[VoiceLive] Add live test coverage and parametrize over API versions #38790](https://github.com/Azure/azure-sdk-for-js/pull/38790)
   - [Update `@azure/openai` README links for Build Analyze link-check fail…](https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3) - 2026-06-08T18:11:03Z - Copilot (@Copilot) - PR: [Update `@azure/openai` README links for Build Analyze link-check failures #38809](https://github.com/Azure/azure-sdk-for-js/pull/38809)
   - [[EngSys] automatic pnpm update (#38861)](https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d) - 2026-06-08T16:02:58Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[EngSys] automatic pnpm update #38861](https://github.com/Azure/azure-sdk-for-js/pull/38861)
   - [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation…](https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884) - 2026-06-08T15:31:04Z - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188 #38808](https://github.com/Azure/azure-sdk-for-js/pull/38808)
-  - [[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787…](https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530) - 2026-06-08T14:52:10Z - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787 #38811](https://github.com/Azure/azure-sdk-for-js/pull/38811)
 
-- **Azure/azure-sdk-for-python** (`main`) - **4** commit(s)
+- **Azure/azure-sdk-for-python** (`main`) - **5** commit(s)
+  - [Bump changelogs after release (#47398)](https://github.com/Azure/azure-sdk-for-python/commit/c093c23f3ae6976810c53cc41b073705ecf4aceb) - 2026-06-08T21:23:38Z - Peter Wu (@weirongw23-msft) - PR: [[Storage] Bump Changelogs after STG 102 Release #47398](https://github.com/Azure/azure-sdk-for-python/pull/47398)
   - [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Gene…](https://github.com/Azure/azure-sdk-for-python/commit/e942181cdfa23157033fa18d76d659ba7c8ce55e) - 2026-06-08T20:50:14Z - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Generation - Python-6390684 #47321](https://github.com/Azure/azure-sdk-for-python/pull/47321)
   - [[confidentialledger] Enforce stricter redirect destination policy (#4…](https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906) - 2026-06-08T19:23:44Z - Ryan Zhang (@ryazhang-microsoft) - PR: [[confidentialledger] Enforce stricter redirect destination policy #47368](https://github.com/Azure/azure-sdk-for-python/pull/47368)
   - [Increment package version after release of azure-monitor-opentelemetr…](https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8) - 2026-06-08T16:42:10Z - Azure SDK Bot (@azure-sdk) - PR: [Increment version for monitor releases #47394](https://github.com/Azure/azure-sdk-for-python/pull/47394)
@@ -40,6 +41,9 @@ Repos with movement: **67**
 - **Azure/azure-sdk-for-go** (`main`) - **2** commit(s)
   - [Configurations:  'specification/postgresql/DBforPostgreSQL.Management…](https://github.com/Azure/azure-sdk-for-go/commit/410af737d35baadce77aa822f2f16b54ca7f271c) - 2026-06-08T20:50:25Z - Azure SDK Bot (@azure-sdk) - PR: [[AutoPR sdk-resourcemanager/postgresql/armpostgresqlflexibleservers]-generated-from-SDK Generation - Go-6390685 #26936](https://github.com/Azure/azure-sdk-for-go/pull/26936)
   - [[Automation] Regenerate SDK based on typespec-go branch main 【batch 8…](https://github.com/Azure/azure-sdk-for-go/commit/71c05849d5e04e52315982dce30abe2f19226316) - 2026-06-08T07:25:49Z - Azure SDK Bot (@azure-sdk) - PR: [[Automation] Regenerate SDK based on typespec-go branch main 【batch 8】 #26955](https://github.com/Azure/azure-sdk-for-go/pull/26955)
+
+- **Azure/iot-operations-sdks** (`main`) - **1** commit(s)
+  - [[ADR] mRPC Back Pressure flag (#1332)](https://github.com/Azure/iot-operations-sdks/commit/597532eac5a081a76b04772efb9922ff5301fa43) - 2026-06-08T21:27:12Z - Maxim Semenov (@maximsemenov80) - PR: [[ADR] mRPC Back Pressure flag #1332](https://github.com/Azure/iot-operations-sdks/pull/1332)
 
 - **Azure/data-api-builder** (`main`) - **1** commit(s)
   - [Mark required stored-procedure parameters as NON_NULL in GraphQL (#3646)](https://github.com/Azure/data-api-builder/commit/5b538c610c5cf80d239f5d53d0239a5996e20895) - 2026-06-08T01:42:49Z - Anusha Kolan (@anushakolan) - PR: [Mark required stored-procedure parameters as NON_NULL in GraphQL #3646](https://github.com/Azure/data-api-builder/pull/3646)
@@ -78,12 +82,12 @@ Repos with movement: **67**
 
 ### dotnet
 
-- **dotnet/runtime** (`main`) - **23** commit(s)
+- **dotnet/runtime** (`main`) - **25** commit(s)
+  - [Implement Environment.WorkingSet on OpenBSD (#129078)](https://github.com/dotnet/runtime/commit/5416bfe7ce1291da637aa119738a300f013569db) - 2026-06-08T21:34:04Z - Adeel Mujahid (@am11) - PR: [Implement Environment.WorkingSet on OpenBSD #129078](https://github.com/dotnet/runtime/pull/129078)
+  - [Add OpenBSD support for ICU library loading (#129124)](https://github.com/dotnet/runtime/commit/fdec0235c30ece9bd88b221522ac2aa0131d8418) - 2026-06-08T21:20:58Z - Adeel Mujahid (@am11) - PR: [Add OpenBSD support for ICU library loading #129124](https://github.com/dotnet/runtime/pull/129124)
   - [Implement getexepath for OpenBSD (#129103)](https://github.com/dotnet/runtime/commit/e3d5aac6afa2f26837e4cfcb0647fed3e8e0f82b) - 2026-06-08T21:11:57Z - Adeel Mujahid (@am11) - PR: [Implement getexepath for OpenBSD #129103](https://github.com/dotnet/runtime/pull/129103)
   - [[Wasm R2R] Allow LDVIRTFTN call sigs to carry a type arg (MD array me…](https://github.com/dotnet/runtime/commit/826a0c6a8502849b1290a4865535eef35962b3a1) - 2026-06-08T21:05:15Z - Andy Ayers (@AndyAyersMS) - PR: [[Wasm R2R] Allow LDVIRTFTN call sigs to carry a type arg (MD array methods) #129064](https://github.com/dotnet/runtime/pull/129064)
   - [Arm64:[PAC-RET] Use hint-space instruction for stripping return addre…](https://github.com/dotnet/runtime/commit/dcabbab1b8ffeb455ee31fd47eea822040be0960) - 2026-06-08T20:38:22Z - SwapnilGaikwad (@SwapnilGaikwad) - PR: [Arm64:[PAC-RET] Use hint-space instruction for stripping return address #129130](https://github.com/dotnet/runtime/pull/129130)
-  - [[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iO…](https://github.com/dotnet/runtime/commit/fc3e8ea786bcf1ffbaea56f7a5a8b941fbb66904) - 2026-06-08T20:34:12Z - Milos Kotlar (@kotlarmilos) - PR: [[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iOS/tvOS simulators #129012](https://github.com/dotnet/runtime/pull/129012)
-  - [[r2r] Enable generic cycles detection by default (#128957)](https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee) - 2026-06-08T19:47:32Z - Vlad Brezae (@BrzVlad) - PR: [[r2r] Enable generic cycles detection by default #128957](https://github.com/dotnet/runtime/pull/128957)
 
 - **dotnet/msbuild** (`main`) - **14** commit(s)
   - [Bump actions/github-script from 7 to 9 (#14004)](https://github.com/dotnet/msbuild/commit/362fdf7843d03e8f40053b3378495a88ffb1916d) - 2026-06-08T18:27:09Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump actions/github-script from 7 to 9 #14004](https://github.com/dotnet/msbuild/pull/14004)
@@ -91,6 +95,13 @@ Repos with movement: **67**
   - [Bump actions/download-artifact from 4 to 8 (#14000)](https://github.com/dotnet/msbuild/commit/ead9a1f0e2c43c9902d7a693fbef3d142454d500) - 2026-06-08T17:23:57Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump actions/download-artifact from 4 to 8 #14000](https://github.com/dotnet/msbuild/pull/14000)
   - [Enabling weekly Dependabot updates for GitHub Actions (#13999)](https://github.com/dotnet/msbuild/commit/3398824f5962a82d96381aa6cc2c00d2a9ef9a4e) - 2026-06-08T15:43:29Z - Copilot (@Copilot) - PR: [Enabling weekly Dependabot updates for GitHub Actions #13999](https://github.com/dotnet/msbuild/pull/13999)
   - [chore: Pin GitHub Actions to commit SHAs (#13269)](https://github.com/dotnet/msbuild/commit/4dbca8e0a67bc7b84329f9b6bc54d5264714af56) - 2026-06-08T14:20:15Z - Pádraic Slattery (@pgoslatara) - PR: [chore: Pin GitHub Actions to commit SHAs #13269](https://github.com/dotnet/msbuild/pull/13269)
+
+- **dotnet/orleans** (`main`) - **6** commit(s)
+  - [fix: make bank transfer fault test deterministic (#10185)](https://github.com/dotnet/orleans/commit/6a98474dda3b7548af4f93c041f4dad1e7097147) - 2026-06-08T21:01:24Z - Reuben Bond (@ReubenBond) - PR: [fix: make bank transfer fault test deterministic #10185](https://github.com/dotnet/orleans/pull/10185)
+  - [chore: use IMeterFactory for MessagingProcessingInstruments (#10180)](https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84) - 2026-06-08T20:07:53Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for MessagingProcessingInstruments #10180](https://github.com/dotnet/orleans/pull/10180)
+  - [chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)](https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2) - 2026-06-08T20:05:09Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for AzureBlobJournalStorageInstruments #10183](https://github.com/dotnet/orleans/pull/10183)
+  - [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - 2026-06-08T19:16:28Z - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests #10182](https://github.com/dotnet/orleans/pull/10182)
+  - [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - 2026-06-08T19:03:23Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments #10184](https://github.com/dotnet/orleans/pull/10184)
 
 - **dotnet/roslyn** (`main`) - **6** commit(s)
   - [Increase timeout for Correctness_Analyzers job (#84064)](https://github.com/dotnet/roslyn/commit/576f18b3e54f0511c2fc93a2b20d2762148b688b) - 2026-06-08T20:04:06Z - Jared Parsons (@jaredpar) - PR: [Increase timeout for Correctness_Analyzers job #84064](https://github.com/dotnet/roslyn/pull/84064)
@@ -105,13 +116,6 @@ Repos with movement: **67**
   - [Translate List<T>.Exists to Queryable.Any (#38226)](https://github.com/dotnet/efcore/commit/1c5cd69729c8ac7f5a3df766286db99f49dc6031) - 2026-06-08T16:53:58Z - Maxwell (@m-x-shokhzod) - PR: [Translate List<T>.Exists to Queryable.Any #38226](https://github.com/dotnet/efcore/pull/38226)
   - [Make DateTime.Parse translation tests culture-invariant (#38384)](https://github.com/dotnet/efcore/commit/e4afabf3d42d601fe72cf307f177592adbefb998) - 2026-06-08T16:36:55Z - Arthur Vickers (@ajcvickers) - PR: [Make DateTime.Parse translation tests culture-invariant #38384](https://github.com/dotnet/efcore/pull/38384)
   - [Update dependencies from build 317483 (#38380)](https://github.com/dotnet/efcore/commit/7201613c0031141cebdc196a9d9df402667f3e9d) - 2026-06-08T15:58:29Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Source code updates from dotnet/dotnet #38380](https://github.com/dotnet/efcore/pull/38380)
-
-- **dotnet/orleans** (`main`) - **5** commit(s)
-  - [chore: use IMeterFactory for MessagingProcessingInstruments (#10180)](https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84) - 2026-06-08T20:07:53Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for MessagingProcessingInstruments #10180](https://github.com/dotnet/orleans/pull/10180)
-  - [chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)](https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2) - 2026-06-08T20:05:09Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for AzureBlobJournalStorageInstruments #10183](https://github.com/dotnet/orleans/pull/10183)
-  - [fix(redis): consistent grain directory disposal + multiplexer ownersh…](https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a) - 2026-06-08T19:16:28Z - Reuben Bond (@ReubenBond) - PR: [fix(redis): consistent grain directory disposal + multiplexer ownership tests #10182](https://github.com/dotnet/orleans/pull/10182)
-  - [chore: use IMeterFactory for JournalingInstruments (#10184)](https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92) - 2026-06-08T19:03:23Z - Meir Blachman (@Meir017) - PR: [chore: use IMeterFactory for JournalingInstruments #10184](https://github.com/dotnet/orleans/pull/10184)
-  - [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up…](https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3) - 2026-06-08T19:02:39Z - Cluster7ck (@Cluster7ck) - PR: [fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028) #10176](https://github.com/dotnet/orleans/pull/10176)
 
 - **dotnet/ef6** (`main`) - **1** commit(s)
   - [Update dependencies from https://github.com/dotnet/arcade build 20260…](https://github.com/dotnet/ef6/commit/60ef713579fe6ab7629f1e5d19791a3f2d7a9c2e) - 2026-06-08T06:55:16Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Update dependencies from dotnet/arcade #2410](https://github.com/dotnet/ef6/pull/2410)
@@ -273,11 +277,6 @@ Repos with movement: **67**
   - [Reduced WebLLM context window](https://github.com/MicrosoftLearning/ai-apps/commit/5a440bd9dc931145fd6cefe99cc6e311ea1f485d) - 2026-06-08T16:31:25Z - Graeme Malcolm (@GraemeMalcolm)
   - [Optimization](https://github.com/MicrosoftLearning/ai-apps/commit/54dfb8427601626ed5bc59cd330c46641352980a) - 2026-06-08T00:24:52Z - Graeme Malcolm (@GraemeMalcolm)
 
-- **MicrosoftLearning/mslearn-ai-concepts** (`main`) - **3** commit(s)
-  - [Updated model versions](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f) - 2026-06-08T00:27:10Z - Graeme Malcolm (@GraemeMalcolm)
-  - [Correct model name](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/094362458804b180843fdd64a3e4e4bd81684a97) - 2026-06-07T21:22:45Z - Graeme Malcolm (@GraemeMalcolm)
-  - [Updated NLP tasks](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/5184291d3f281798a7736d5fb46fc95a8fb11fb0) - 2026-06-07T21:18:03Z - Graeme Malcolm (@GraemeMalcolm)
-
 - **MicrosoftLearning/mslearn-azure-ai.ja-jp** (`main`) - **2** commit(s)
   - [Auto-generated zip files [skip ci]](https://github.com/MicrosoftLearning/mslearn-azure-ai.ja-jp/commit/77e78b6612efa171ac6d23f515d47a3493a3f585) - 2026-06-08T07:46:48Z - GitHub Action (@actions-user)
   - [Copy Files From Source Repo (2026-06-08 00:46)](https://github.com/MicrosoftLearning/mslearn-azure-ai.ja-jp/commit/3c587da3a6310015ccfb321cbdf30ae896747060) - 2026-06-08T07:46:32Z - olprod (@olprod)
@@ -315,6 +314,9 @@ Repos with movement: **67**
 
 - **MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp** (`main`) - **1** commit(s)
   - [Copy Files From Source Repo (2026-06-08 00:29)](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/commit/ec431a1621e5005536ea2dbf07226ef67cdef708) - 2026-06-08T07:29:30Z - olprod (@olprod)
+
+- **MicrosoftLearning/mslearn-ai-concepts** (`main`) - **1** commit(s)
+  - [Updated model versions](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f) - 2026-06-08T00:27:10Z - Graeme Malcolm (@GraemeMalcolm)
 
 ### OfficeDev
 

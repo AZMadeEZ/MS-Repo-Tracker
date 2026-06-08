@@ -117,9 +117,11 @@ class DigestFilterTests(unittest.TestCase):
         )
         with tempfile.TemporaryDirectory() as tmp:
             paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
-            self.assertEqual(len(paths), 8)
+            self.assertEqual(len(paths), 10)
             self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "latest.events.ndjson").exists())
+            self.assertTrue((Path(tmp) / "reports" / "2026-01-02.events.ndjson").exists())
             self.assertTrue((Path(tmp) / "reports" / "index.md").exists())
             self.assertTrue((Path(tmp) / "reports" / "manifest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "status.json").exists())
@@ -448,7 +450,37 @@ class ValidationScriptTests(unittest.TestCase):
                 "top_repos": [],
                 "graphql": {"mode": "two-stage"},
                 "releases": {"summary": {"enabled": False}, "items": []},
-                "activities": [{"full_name": "TestOrg/repo", "signal": {}, "releases": []}],
+                "event_stream": {
+                    "schema_url": changes.EVENT_SCHEMA_URL,
+                    "latest_path": str(report_dir / "latest.events.ndjson"),
+                    "dated_path": str(report_dir / "2026-01-01.events.ndjson"),
+                    "event_count": 1,
+                    "commit_event_count": 1,
+                    "release_event_count": 0,
+                },
+                "activities": [
+                    {
+                        "full_name": "TestOrg/repo",
+                        "org": "TestOrg",
+                        "name": "repo",
+                        "category": "other",
+                        "default_branch": "main",
+                        "signal": {},
+                        "releases": [],
+                        "commits": [
+                            {
+                                "oid": "abc123",
+                                "committed_date": "2026-01-01T00:00:00Z",
+                                "headline": "Add docs",
+                                "url": "https://github.com/TestOrg/repo/commit/abc123",
+                                "author": "Ada",
+                                "pr_number": 1,
+                                "pr_title": "Add docs",
+                                "pr_url": "https://github.com/TestOrg/repo/pull/1",
+                            }
+                        ],
+                    }
+                ],
             }
             for name in ("latest.json", "2026-01-01.json"):
                 (report_dir / name).write_text(json.dumps(report_payload), encoding="utf-8")
@@ -473,6 +505,45 @@ class ValidationScriptTests(unittest.TestCase):
                 "# Microsoft Repo Tracker Report Index\n\n",
                 encoding="utf-8",
             )
+            event_record = {
+                "schema_version": 1,
+                "artifact_type": "tracker-event",
+                "artifact_version": changes.ARTIFACT_VERSION,
+                "schema_url": changes.EVENT_SCHEMA_URL,
+                "event_id": "github_commit:TestOrg/repo:abc123",
+                "event_type": "commit",
+                "dedupe_key": "commit:abc123",
+                "repo": "TestOrg/repo",
+                "org": "TestOrg",
+                "repo_name": "repo",
+                "category": "other",
+                "default_branch": "main",
+                "committed_at": "2026-01-01T00:00:00Z",
+                "headline": "Add docs",
+                "author": "Ada",
+                "actor_type": "human",
+                "commit_oid": "abc123",
+                "commit_url": "https://github.com/TestOrg/repo/commit/abc123",
+                "pr_number": 1,
+                "pr_title": "Add docs",
+                "pr_url": "https://github.com/TestOrg/repo/pull/1",
+                "change_type": "feature",
+                "noise_level": "low",
+                "customer_visible": "unknown",
+                "notability_score": 10,
+                "notability_reason": ["human_authored"],
+                "window_since": "2026-01-01T00:00:00Z",
+                "window_until": "2026-01-02T00:00:00Z",
+                "retrieved_at": "2026-01-01T00:00:00Z",
+                "source": {
+                    "provider": "github",
+                    "api": "graphql",
+                    "repo_url": "https://github.com/TestOrg/repo",
+                },
+            }
+            event_text = json.dumps(event_record, sort_keys=True, separators=(",", ":")) + "\n"
+            for name in ("latest.events.ndjson", "2026-01-01.events.ndjson"):
+                (report_dir / name).write_text(event_text, encoding="utf-8")
             status_payload = {
                 "schema_version": 1,
                 "artifact_type": "tracker-status",
@@ -509,6 +580,7 @@ class ValidationScriptTests(unittest.TestCase):
                 "artifacts": [
                     {"name": "latest_human_report", "artifact_type": "markdown", "path": str(report_dir / "latest.md"), "required": True},
                     {"name": "latest_machine_report", "artifact_type": "json", "path": str(report_dir / "latest.json"), "required": True, "schema_url": changes.REPORT_SCHEMA_URL},
+                    {"name": "latest_event_stream", "artifact_type": "ndjson", "path": str(report_dir / "latest.events.ndjson"), "required": True, "schema_url": changes.EVENT_SCHEMA_URL},
                     {"name": "tracker_status", "artifact_type": "json", "path": str(report_dir / "status.json"), "required": True, "schema_url": changes.STATUS_SCHEMA_URL},
                 ],
             }
@@ -518,7 +590,8 @@ class ValidationScriptTests(unittest.TestCase):
             validate_tracker.validate_watchfeeds(watchfeeds_path, rows)
             validate_tracker.validate_state(state_path, rows)
             digest_rows = validate_tracker.validate_digest(digest_csv_path, digest_md_path)
-            validate_tracker.validate_reports(report_dir, digest_rows)
+            report_payload = validate_tracker.validate_reports(report_dir, digest_rows)
+            validate_tracker.validate_event_stream(report_dir, report_payload)
             validate_tracker.validate_manifest_status(report_dir)
 
     def test_validate_tracker_rejects_duplicate_full_names(self) -> None:

@@ -191,8 +191,28 @@
     },
     {
       "category": "docs",
-      "commit_count": 23,
+      "commit_count": 25,
       "commits": [
+        {
+          "author": "Adeel Mujahid (@am11)",
+          "committed_date": "2026-06-08T21:34:04Z",
+          "headline": "Implement Environment.WorkingSet on OpenBSD (#129078)",
+          "oid": "5416bfe7ce1291da637aa119738a300f013569db",
+          "pr_number": 129078,
+          "pr_title": "Implement Environment.WorkingSet on OpenBSD",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129078",
+          "url": "https://github.com/dotnet/runtime/commit/5416bfe7ce1291da637aa119738a300f013569db"
+        },
+        {
+          "author": "Adeel Mujahid (@am11)",
+          "committed_date": "2026-06-08T21:20:58Z",
+          "headline": "Add OpenBSD support for ICU library loading (#129124)",
+          "oid": "fdec0235c30ece9bd88b221522ac2aa0131d8418",
+          "pr_number": 129124,
+          "pr_title": "Add OpenBSD support for ICU library loading",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129124",
+          "url": "https://github.com/dotnet/runtime/commit/fdec0235c30ece9bd88b221522ac2aa0131d8418"
+        },
         {
           "author": "Adeel Mujahid (@am11)",
           "committed_date": "2026-06-08T21:11:57Z",
@@ -222,38 +242,18 @@
           "pr_title": "Arm64:[PAC-RET] Use hint-space instruction for stripping return address",
           "pr_url": "https://github.com/dotnet/runtime/pull/129130",
           "url": "https://github.com/dotnet/runtime/commit/dcabbab1b8ffeb455ee31fd47eea822040be0960"
-        },
-        {
-          "author": "Milos Kotlar (@kotlarmilos)",
-          "committed_date": "2026-06-08T20:34:12Z",
-          "headline": "[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iO\u2026",
-          "oid": "fc3e8ea786bcf1ffbaea56f7a5a8b941fbb66904",
-          "pr_number": 129012,
-          "pr_title": "[clr-ios] Fix Vector<T> width and R2R AVX baseline mismatch on x64 iOS/tvOS simulators",
-          "pr_url": "https://github.com/dotnet/runtime/pull/129012",
-          "url": "https://github.com/dotnet/runtime/commit/fc3e8ea786bcf1ffbaea56f7a5a8b941fbb66904"
-        },
-        {
-          "author": "Vlad Brezae (@BrzVlad)",
-          "committed_date": "2026-06-08T19:47:32Z",
-          "headline": "[r2r] Enable generic cycles detection by default (#128957)",
-          "oid": "e099ef56d8b487971e4cdc8e8c85c7145905faee",
-          "pr_number": 128957,
-          "pr_title": "[r2r] Enable generic cycles detection by default",
-          "pr_url": "https://github.com/dotnet/runtime/pull/128957",
-          "url": "https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee"
         }
       ],
       "default_branch": "main",
       "full_name": "dotnet/runtime",
       "name": "runtime",
-      "newest_commit_date": "2026-06-08T21:11:57Z",
+      "newest_commit_date": "2026-06-08T21:34:04Z",
       "org": "dotnet",
       "releases": [],
       "signal": {
         "bot_commit_count": 0,
         "human_commit_count": 5,
-        "score": 63,
+        "score": 65,
         "tags": [
           "docs",
           "human-authored"
@@ -717,6 +717,128 @@
       "commit_count": 8,
       "commits": [
         {
+          "author": "xitzhang (@xitzhang)",
+          "committed_date": "2026-06-08T21:28:47Z",
+          "headline": "[VoiceLive] Add live telemetry test for realtime session (#38868)",
+          "oid": "5b682289a6c409fbf94905e87dbe0159dcaf604a",
+          "pr_number": 38868,
+          "pr_title": "[VoiceLive] Add live telemetry test for realtime session",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38868",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/5b682289a6c409fbf94905e87dbe0159dcaf604a"
+        },
+        {
+          "author": "xitzhang (@xitzhang)",
+          "committed_date": "2026-06-08T18:13:24Z",
+          "headline": "[VoiceLive] Add live test coverage and parametrize over API versions \u2026",
+          "oid": "dc5f9743b05ea78f938eba31cbe704150889490c",
+          "pr_number": 38790,
+          "pr_title": "[VoiceLive] Add live test coverage and parametrize over API versions",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38790",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c"
+        },
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-06-08T18:11:03Z",
+          "headline": "Update `@azure/openai` README links for Build Analyze link-check fail\u2026",
+          "oid": "bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
+          "pr_number": 38809,
+          "pr_title": "Update `@azure/openai` README links for Build Analyze link-check failures",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38809",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T16:02:58Z",
+          "headline": "[EngSys] automatic pnpm update (#38861)",
+          "oid": "09add7996feef1215e7a5f99d883fed8c39a3c6d",
+          "pr_number": 38861,
+          "pr_title": "[EngSys] automatic pnpm update",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38861",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T15:31:04Z",
+          "headline": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation\u2026",
+          "oid": "9637114573de5b7bc402209b444cb8e2bf035884",
+          "pr_number": 38808,
+          "pr_title": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38808",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-js",
+      "name": "azure-sdk-for-js",
+      "newest_commit_date": "2026-06-08T21:28:47Z",
+      "org": "Azure",
+      "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-monitorworkspaces_1.0.0-beta.1",
+          "name": "@azure/arm-monitorworkspaces_1.0.0-beta.1",
+          "prerelease": true,
+          "published_at": "2026-06-08T18:04:15Z",
+          "repo_full_name": "Azure/azure-sdk-for-js",
+          "tag_name": "@azure/arm-monitorworkspaces_1.0.0-beta.1"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/identity_4.14.0-beta.4",
+          "name": "@azure/identity_4.14.0-beta.4",
+          "prerelease": true,
+          "published_at": "2026-06-08T17:14:51Z",
+          "repo_full_name": "Azure/azure-sdk-for-js",
+          "tag_name": "@azure/identity_4.14.0-beta.4"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-resources_8.0.0-beta.1",
+          "name": "@azure/arm-resources_8.0.0-beta.1",
+          "prerelease": true,
+          "published_at": "2026-06-08T03:38:08Z",
+          "repo_full_name": "Azure/azure-sdk-for-js",
+          "tag_name": "@azure/arm-resources_8.0.0-beta.1"
+        }
+      ],
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 4,
+        "score": 133,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "product:Azure SDK",
+          "release",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "azure sdk",
+            "copilot",
+            "openai",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure AI",
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-js"
+          ]
+        }
+      }
+    },
+    {
+      "category": "docs",
+      "commit_count": 8,
+      "commits": [
+        {
           "author": "Nick Trogh (@ntrogh)",
           "committed_date": "2026-06-08T20:25:42Z",
           "headline": "Merge pull request #9903 from microsoft/ntrogh/fix-context-window-122",
@@ -785,128 +907,6 @@
         "watchlist_matches": {
           "repos": [
             "microsoft/vscode-docs"
-          ]
-        }
-      }
-    },
-    {
-      "category": "docs",
-      "commit_count": 7,
-      "commits": [
-        {
-          "author": "xitzhang (@xitzhang)",
-          "committed_date": "2026-06-08T18:13:24Z",
-          "headline": "[VoiceLive] Add live test coverage and parametrize over API versions \u2026",
-          "oid": "dc5f9743b05ea78f938eba31cbe704150889490c",
-          "pr_number": 38790,
-          "pr_title": "[VoiceLive] Add live test coverage and parametrize over API versions",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38790",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c"
-        },
-        {
-          "author": "Copilot (@Copilot)",
-          "committed_date": "2026-06-08T18:11:03Z",
-          "headline": "Update `@azure/openai` README links for Build Analyze link-check fail\u2026",
-          "oid": "bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
-          "pr_number": 38809,
-          "pr_title": "Update `@azure/openai` README links for Build Analyze link-check failures",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38809",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3"
-        },
-        {
-          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
-          "committed_date": "2026-06-08T16:02:58Z",
-          "headline": "[EngSys] automatic pnpm update (#38861)",
-          "oid": "09add7996feef1215e7a5f99d883fed8c39a3c6d",
-          "pr_number": 38861,
-          "pr_title": "[EngSys] automatic pnpm update",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38861",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d"
-        },
-        {
-          "author": "Azure SDK Bot (@azure-sdk)",
-          "committed_date": "2026-06-08T15:31:04Z",
-          "headline": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation\u2026",
-          "oid": "9637114573de5b7bc402209b444cb8e2bf035884",
-          "pr_number": 38808,
-          "pr_title": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38808",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884"
-        },
-        {
-          "author": "Azure SDK Bot (@azure-sdk)",
-          "committed_date": "2026-06-08T14:52:10Z",
-          "headline": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787\u2026",
-          "oid": "19f9ac5ba235b524ea925da6a46c5cc9c149c530",
-          "pr_number": 38811,
-          "pr_title": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38811",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "Azure/azure-sdk-for-js",
-      "name": "azure-sdk-for-js",
-      "newest_commit_date": "2026-06-08T18:13:24Z",
-      "org": "Azure",
-      "releases": [
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-monitorworkspaces_1.0.0-beta.1",
-          "name": "@azure/arm-monitorworkspaces_1.0.0-beta.1",
-          "prerelease": true,
-          "published_at": "2026-06-08T18:04:15Z",
-          "repo_full_name": "Azure/azure-sdk-for-js",
-          "tag_name": "@azure/arm-monitorworkspaces_1.0.0-beta.1"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/identity_4.14.0-beta.4",
-          "name": "@azure/identity_4.14.0-beta.4",
-          "prerelease": true,
-          "published_at": "2026-06-08T17:14:51Z",
-          "repo_full_name": "Azure/azure-sdk-for-js",
-          "tag_name": "@azure/identity_4.14.0-beta.4"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-resources_8.0.0-beta.1",
-          "name": "@azure/arm-resources_8.0.0-beta.1",
-          "prerelease": true,
-          "published_at": "2026-06-08T03:38:08Z",
-          "repo_full_name": "Azure/azure-sdk-for-js",
-          "tag_name": "@azure/arm-resources_8.0.0-beta.1"
-        }
-      ],
-      "signal": {
-        "bot_commit_count": 1,
-        "human_commit_count": 4,
-        "score": 132,
-        "tags": [
-          "docs",
-          "human-authored",
-          "product:Azure AI",
-          "product:Azure SDK",
-          "release",
-          "release-language",
-          "watchlist"
-        ],
-        "watchlist_matches": {
-          "keywords": [
-            "azure sdk",
-            "copilot",
-            "openai",
-            "sdk"
-          ],
-          "orgs": [
-            "Azure"
-          ],
-          "products": [
-            "Azure AI",
-            "Azure SDK"
-          ],
-          "repos": [
-            "Azure/azure-sdk-for-js"
           ]
         }
       }
@@ -991,6 +991,78 @@
             "Azure AI"
           ]
         }
+      }
+    },
+    {
+      "category": "docs",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "Reuben Bond (@ReubenBond)",
+          "committed_date": "2026-06-08T21:01:24Z",
+          "headline": "fix: make bank transfer fault test deterministic (#10185)",
+          "oid": "6a98474dda3b7548af4f93c041f4dad1e7097147",
+          "pr_number": 10185,
+          "pr_title": "fix: make bank transfer fault test deterministic",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10185",
+          "url": "https://github.com/dotnet/orleans/commit/6a98474dda3b7548af4f93c041f4dad1e7097147"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T20:07:53Z",
+          "headline": "chore: use IMeterFactory for MessagingProcessingInstruments (#10180)",
+          "oid": "a1c304923c4a05c7b9374a23d993186f2226ab84",
+          "pr_number": 10180,
+          "pr_title": "chore: use IMeterFactory for MessagingProcessingInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10180",
+          "url": "https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T20:05:09Z",
+          "headline": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)",
+          "oid": "b413d0ef63b5a568fbcb136923be086def6c61f2",
+          "pr_number": 10183,
+          "pr_title": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10183",
+          "url": "https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2"
+        },
+        {
+          "author": "Reuben Bond (@ReubenBond)",
+          "committed_date": "2026-06-08T19:16:28Z",
+          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
+          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
+          "pr_number": 10182,
+          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
+          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T19:03:23Z",
+          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
+          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
+          "pr_number": 10184,
+          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
+          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/orleans",
+      "name": "orleans",
+      "newest_commit_date": "2026-06-08T21:01:24Z",
+      "org": "dotnet",
+      "releases": [],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 46,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
       }
     },
     {
@@ -1154,6 +1226,143 @@
       "commit_count": 5,
       "commits": [
         {
+          "author": "Peter Wu (@weirongw23-msft)",
+          "committed_date": "2026-06-08T21:23:38Z",
+          "headline": "Bump changelogs after release (#47398)",
+          "oid": "c093c23f3ae6976810c53cc41b073705ecf4aceb",
+          "pr_number": 47398,
+          "pr_title": "[Storage] Bump Changelogs after STG 102 Release",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47398",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/c093c23f3ae6976810c53cc41b073705ecf4aceb"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T20:50:14Z",
+          "headline": "[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Gene\u2026",
+          "oid": "e942181cdfa23157033fa18d76d659ba7c8ce55e",
+          "pr_number": 47321,
+          "pr_title": "[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Generation - Python-6390684",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47321",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/e942181cdfa23157033fa18d76d659ba7c8ce55e"
+        },
+        {
+          "author": "Ryan Zhang (@ryazhang-microsoft)",
+          "committed_date": "2026-06-08T19:23:44Z",
+          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+          "oid": "2fb56bf4f962171f7eb7efc6daad23bf610ae906",
+          "pr_number": 47368,
+          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47368",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T16:42:10Z",
+          "headline": "Increment package version after release of azure-monitor-opentelemetr\u2026",
+          "oid": "321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
+          "pr_number": 47394,
+          "pr_title": "Increment version for monitor releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8"
+        },
+        {
+          "author": "Radhika Gupta (@rads-1996)",
+          "committed_date": "2026-06-08T14:24:26Z",
+          "headline": "Exporter release 1.0.0b53 (#47296)",
+          "oid": "6f3980e81598b271c5a3ac3912e9da67e2d1b479",
+          "pr_number": 47296,
+          "pr_title": "Exporter release 1.0.0b53",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-python",
+      "name": "azure-sdk-for-python",
+      "newest_commit_date": "2026-06-08T21:23:38Z",
+      "org": "Azure",
+      "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-queue_12.17.0",
+          "name": "azure-storage-queue_12.17.0",
+          "prerelease": false,
+          "published_at": "2026-06-08T17:53:21Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-storage-queue_12.17.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-datalake_12.25.0",
+          "name": "azure-storage-file-datalake_12.25.0",
+          "prerelease": false,
+          "published_at": "2026-06-08T17:19:54Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-storage-file-datalake_12.25.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-monitor-opentelemetry-exporter_1.0.0b53",
+          "name": "azure-monitor-opentelemetry-exporter_1.0.0b53",
+          "prerelease": true,
+          "published_at": "2026-06-08T15:46:00Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-monitor-opentelemetry-exporter_1.0.0b53"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-share_12.26.0",
+          "name": "azure-storage-file-share_12.26.0",
+          "prerelease": false,
+          "published_at": "2026-06-08T12:36:24Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-storage-file-share_12.26.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-blob_12.30.0",
+          "name": "azure-storage-blob_12.30.0",
+          "prerelease": false,
+          "published_at": "2026-06-08T11:39:40Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-storage-blob_12.30.0"
+        }
+      ],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 130,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "release",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "azure sdk",
+            "release",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-python"
+          ]
+        }
+      }
+    },
+    {
+      "category": "docs",
+      "commit_count": 5,
+      "commits": [
+        {
           "author": "Copilot (@Copilot)",
           "committed_date": "2026-06-08T20:59:27Z",
           "headline": "Pin GitHub workflow actions to immutable commit SHAs (#38385)",
@@ -1301,205 +1510,6 @@
           "keywords": [
             "entra",
             "security"
-          ]
-        }
-      }
-    },
-    {
-      "category": "docs",
-      "commit_count": 5,
-      "commits": [
-        {
-          "author": "Meir Blachman (@Meir017)",
-          "committed_date": "2026-06-08T20:07:53Z",
-          "headline": "chore: use IMeterFactory for MessagingProcessingInstruments (#10180)",
-          "oid": "a1c304923c4a05c7b9374a23d993186f2226ab84",
-          "pr_number": 10180,
-          "pr_title": "chore: use IMeterFactory for MessagingProcessingInstruments",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10180",
-          "url": "https://github.com/dotnet/orleans/commit/a1c304923c4a05c7b9374a23d993186f2226ab84"
-        },
-        {
-          "author": "Meir Blachman (@Meir017)",
-          "committed_date": "2026-06-08T20:05:09Z",
-          "headline": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments (#10183)",
-          "oid": "b413d0ef63b5a568fbcb136923be086def6c61f2",
-          "pr_number": 10183,
-          "pr_title": "chore: use IMeterFactory for AzureBlobJournalStorageInstruments",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10183",
-          "url": "https://github.com/dotnet/orleans/commit/b413d0ef63b5a568fbcb136923be086def6c61f2"
-        },
-        {
-          "author": "Reuben Bond (@ReubenBond)",
-          "committed_date": "2026-06-08T19:16:28Z",
-          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
-          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
-          "pr_number": 10182,
-          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
-          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
-        },
-        {
-          "author": "Meir Blachman (@Meir017)",
-          "committed_date": "2026-06-08T19:03:23Z",
-          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
-          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
-          "pr_number": 10184,
-          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
-          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
-        },
-        {
-          "author": "Cluster7ck (@Cluster7ck)",
-          "committed_date": "2026-06-08T19:02:39Z",
-          "headline": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up\u2026",
-          "oid": "70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3",
-          "pr_number": 10176,
-          "pr_title": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)",
-          "pr_url": "https://github.com/dotnet/orleans/pull/10176",
-          "url": "https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "dotnet/orleans",
-      "name": "orleans",
-      "newest_commit_date": "2026-06-08T20:07:53Z",
-      "org": "dotnet",
-      "releases": [],
-      "signal": {
-        "bot_commit_count": 0,
-        "human_commit_count": 5,
-        "score": 45,
-        "tags": [
-          "docs",
-          "human-authored"
-        ],
-        "watchlist_matches": {}
-      }
-    },
-    {
-      "category": "docs",
-      "commit_count": 4,
-      "commits": [
-        {
-          "author": "Azure SDK Bot (@azure-sdk)",
-          "committed_date": "2026-06-08T20:50:14Z",
-          "headline": "[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Gene\u2026",
-          "oid": "e942181cdfa23157033fa18d76d659ba7c8ce55e",
-          "pr_number": 47321,
-          "pr_title": "[AutoPR azure-mgmt-postgresqlflexibleservers]-generated-from-SDK Generation - Python-6390684",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47321",
-          "url": "https://github.com/Azure/azure-sdk-for-python/commit/e942181cdfa23157033fa18d76d659ba7c8ce55e"
-        },
-        {
-          "author": "Ryan Zhang (@ryazhang-microsoft)",
-          "committed_date": "2026-06-08T19:23:44Z",
-          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
-          "oid": "2fb56bf4f962171f7eb7efc6daad23bf610ae906",
-          "pr_number": 47368,
-          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47368",
-          "url": "https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906"
-        },
-        {
-          "author": "Azure SDK Bot (@azure-sdk)",
-          "committed_date": "2026-06-08T16:42:10Z",
-          "headline": "Increment package version after release of azure-monitor-opentelemetr\u2026",
-          "oid": "321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
-          "pr_number": 47394,
-          "pr_title": "Increment version for monitor releases",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
-          "url": "https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8"
-        },
-        {
-          "author": "Radhika Gupta (@rads-1996)",
-          "committed_date": "2026-06-08T14:24:26Z",
-          "headline": "Exporter release 1.0.0b53 (#47296)",
-          "oid": "6f3980e81598b271c5a3ac3912e9da67e2d1b479",
-          "pr_number": 47296,
-          "pr_title": "Exporter release 1.0.0b53",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
-          "url": "https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "Azure/azure-sdk-for-python",
-      "name": "azure-sdk-for-python",
-      "newest_commit_date": "2026-06-08T20:50:14Z",
-      "org": "Azure",
-      "releases": [
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-queue_12.17.0",
-          "name": "azure-storage-queue_12.17.0",
-          "prerelease": false,
-          "published_at": "2026-06-08T17:53:21Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-storage-queue_12.17.0"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-datalake_12.25.0",
-          "name": "azure-storage-file-datalake_12.25.0",
-          "prerelease": false,
-          "published_at": "2026-06-08T17:19:54Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-storage-file-datalake_12.25.0"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-monitor-opentelemetry-exporter_1.0.0b53",
-          "name": "azure-monitor-opentelemetry-exporter_1.0.0b53",
-          "prerelease": true,
-          "published_at": "2026-06-08T15:46:00Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-monitor-opentelemetry-exporter_1.0.0b53"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-share_12.26.0",
-          "name": "azure-storage-file-share_12.26.0",
-          "prerelease": false,
-          "published_at": "2026-06-08T12:36:24Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-storage-file-share_12.26.0"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-blob_12.30.0",
-          "name": "azure-storage-blob_12.30.0",
-          "prerelease": false,
-          "published_at": "2026-06-08T11:39:40Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-storage-blob_12.30.0"
-        }
-      ],
-      "signal": {
-        "bot_commit_count": 0,
-        "human_commit_count": 4,
-        "score": 129,
-        "tags": [
-          "docs",
-          "human-authored",
-          "product:Azure SDK",
-          "release",
-          "release-language",
-          "watchlist"
-        ],
-        "watchlist_matches": {
-          "keywords": [
-            "azure sdk",
-            "release",
-            "sdk"
-          ],
-          "orgs": [
-            "Azure"
-          ],
-          "products": [
-            "Azure SDK"
-          ],
-          "repos": [
-            "Azure/azure-sdk-for-python"
           ]
         }
       }
@@ -1691,64 +1701,6 @@
           ],
           "repos": [
             "microsoft/kiota"
-          ]
-        }
-      }
-    },
-    {
-      "category": "training",
-      "commit_count": 3,
-      "commits": [
-        {
-          "author": "Graeme Malcolm (@GraemeMalcolm)",
-          "committed_date": "2026-06-08T00:27:10Z",
-          "headline": "Updated model versions",
-          "oid": "0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
-          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f"
-        },
-        {
-          "author": "Graeme Malcolm (@GraemeMalcolm)",
-          "committed_date": "2026-06-07T21:22:45Z",
-          "headline": "Correct model name",
-          "oid": "094362458804b180843fdd64a3e4e4bd81684a97",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
-          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/094362458804b180843fdd64a3e4e4bd81684a97"
-        },
-        {
-          "author": "Graeme Malcolm (@GraemeMalcolm)",
-          "committed_date": "2026-06-07T21:18:03Z",
-          "headline": "Updated NLP tasks",
-          "oid": "5184291d3f281798a7736d5fb46fc95a8fb11fb0",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
-          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/5184291d3f281798a7736d5fb46fc95a8fb11fb0"
-        }
-      ],
-      "default_branch": "main",
-      "full_name": "MicrosoftLearning/mslearn-ai-concepts",
-      "name": "mslearn-ai-concepts",
-      "newest_commit_date": "2026-06-08T00:27:10Z",
-      "org": "MicrosoftLearning",
-      "releases": [],
-      "signal": {
-        "bot_commit_count": 0,
-        "human_commit_count": 3,
-        "score": 88,
-        "tags": [
-          "human-authored",
-          "release-language",
-          "training",
-          "watchlist"
-        ],
-        "watchlist_matches": {
-          "orgs": [
-            "MicrosoftLearning"
           ]
         }
       }
@@ -2461,6 +2413,50 @@
         "watchlist_matches": {
           "orgs": [
             "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Maxim Semenov (@maximsemenov80)",
+          "committed_date": "2026-06-08T21:27:12Z",
+          "headline": "[ADR] mRPC Back Pressure flag (#1332)",
+          "oid": "597532eac5a081a76b04772efb9922ff5301fa43",
+          "pr_number": 1332,
+          "pr_title": "[ADR] mRPC Back Pressure flag",
+          "pr_url": "https://github.com/Azure/iot-operations-sdks/pull/1332",
+          "url": "https://github.com/Azure/iot-operations-sdks/commit/597532eac5a081a76b04772efb9922ff5301fa43"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/iot-operations-sdks",
+      "name": "iot-operations-sdks",
+      "newest_commit_date": "2026-06-08T21:27:12Z",
+      "org": "Azure",
+      "releases": [],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
           ]
         }
       }
@@ -3704,6 +3700,44 @@
       }
     },
     {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T00:27:10Z",
+          "headline": "Updated model versions",
+          "oid": "0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-ai-concepts",
+      "name": "mslearn-ai-concepts",
+      "newest_commit_date": "2026-06-08T00:27:10Z",
+      "org": "MicrosoftLearning",
+      "releases": [],
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 86,
+        "tags": [
+          "human-authored",
+          "release-language",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
       "category": "samples",
       "commit_count": 1,
       "commits": [
@@ -3749,6 +3783,14 @@
   ],
   "artifact_type": "tracker-report",
   "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 157,
+    "dated_path": "reports/2026-06-08.events.ndjson",
+    "event_count": 157,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 0,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
   "events_calibration": {},
   "events_prefilter": {
     "enabled": false,
@@ -3766,7 +3808,7 @@
     "include_forks": false,
     "include_other": false
   },
-  "generated_at": "2026-06-08T21:11:10.933557Z",
+  "generated_at": "2026-06-08T21:38:00.975882Z",
   "graphql": {
     "batch_size": 35,
     "candidate_repos": 133,
@@ -3774,13 +3816,13 @@
     "detail_batches": 2,
     "max_commits": 5,
     "mode": "two-stage",
-    "remaining_at_start": 5000,
+    "remaining_at_start": 4970,
     "repos_counted": 133,
-    "repos_enriched": 67,
-    "repos_with_count": 67,
-    "repos_with_movement": 67,
+    "repos_enriched": 68,
+    "repos_with_count": 68,
+    "repos_with_movement": 68,
     "requested_batch_size": 0,
-    "stage_one_total_commits": 283,
+    "stage_one_total_commits": 287,
     "strategy": "balanced"
   },
   "lifecycle": {
@@ -3840,6 +3882,565 @@
     ],
     "removed_repos": []
   },
+  "notable_changes": [
+    {
+      "actor_type": "human",
+      "author": "Paulo Lacerda (@placerda)",
+      "category": "samples",
+      "change_type": "release",
+      "commit_url": "https://github.com/Azure/agentops/commit/2b46ef990dacfbf685de40136deb9cae6ae76fe2",
+      "committed_at": "2026-06-08T20:12:12Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:Azure/agentops:2b46ef990dacfbf685de40136deb9cae6ae76fe2",
+      "headline": "Merge pull request #265 from Azure/release/v0.3.11",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 265,
+      "pr_title": "Release v0.3.11",
+      "pr_url": "https://github.com/Azure/agentops/pull/265",
+      "product_area": "Azure AI",
+      "repo": "Azure/agentops"
+    },
+    {
+      "actor_type": "human",
+      "author": "Fabian Meiswinkel (@FabianMeiswinkel)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-java/commit/a18aefd1f3a7392a166274092db4cc15986a2eca",
+      "committed_at": "2026-06-08T19:21:17Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:Azure/azure-sdk-for-java:a18aefd1f3a7392a166274092db4cc15986a2eca",
+      "headline": "Cosmos Release 2026-06-08 (#49407)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 49407,
+      "pr_title": "Cosmos Release 2026-06-08",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49407",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-java"
+    },
+    {
+      "actor_type": "human",
+      "author": "Azure SDK Bot (@azure-sdk)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
+      "committed_at": "2026-06-08T16:42:10Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:Azure/azure-sdk-for-python:321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
+      "headline": "Increment package version after release of azure-monitor-opentelemetr\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 47394,
+      "pr_title": "Increment version for monitor releases",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-python"
+    },
+    {
+      "actor_type": "human",
+      "author": "Vincent Biret (@baywet)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/microsoft/kiota-python/commit/f04d4f8773e3ccade924fec2da05ef0756ba082c",
+      "committed_at": "2026-06-08T16:35:22Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:microsoft/kiota-python:f04d4f8773e3ccade924fec2da05ef0756ba082c",
+      "headline": "Merge pull request #566 from microsoft/release-please--branches--main",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 566,
+      "pr_title": "chore: release main",
+      "pr_url": "https://github.com/microsoft/kiota-python/pull/566",
+      "product_area": "Microsoft Graph",
+      "repo": "microsoft/kiota-python"
+    },
+    {
+      "actor_type": "human",
+      "author": "Radhika Gupta (@rads-1996)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479",
+      "committed_at": "2026-06-08T14:24:26Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:Azure/azure-sdk-for-python:6f3980e81598b271c5a3ac3912e9da67e2d1b479",
+      "headline": "Exporter release 1.0.0b53 (#47296)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 47296,
+      "pr_title": "Exporter release 1.0.0b53",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-python"
+    },
+    {
+      "actor_type": "human",
+      "author": "olprod (@olprod)",
+      "category": "training",
+      "change_type": "security_fix",
+      "commit_url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72",
+      "committed_at": "2026-06-08T07:43:52Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp:92286e96b9913afb992bc2af5fa3ff043ba97d72",
+      "headline": "Copy Files From Source Repo (2026-06-08 00:43)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "security_language",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "",
+      "repo": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp"
+    },
+    {
+      "actor_type": "human",
+      "author": "Brandon Werner (@brandwe)",
+      "category": "docs",
+      "change_type": "security_fix",
+      "commit_url": "https://github.com/microsoft/entrabot/commit/4d5af66155b93ba8697bd250222d4e3521a20d38",
+      "committed_at": "2026-06-07T22:10:05Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/entrabot:4d5af66155b93ba8697bd250222d4e3521a20d38",
+      "headline": "Merge pull request #10 from microsoft/fix/active-sponsor-channel-binding",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "security_language",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 10,
+      "pr_title": "fix(security): require active-sponsor-channel binding for add_teams_member and share_file",
+      "pr_url": "https://github.com/microsoft/entrabot/pull/10",
+      "product_area": "",
+      "repo": "microsoft/entrabot"
+    },
+    {
+      "actor_type": "human",
+      "author": "jjfrost (@jjfrost)",
+      "category": "samples",
+      "change_type": "security_fix",
+      "commit_url": "https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe",
+      "committed_at": "2026-06-08T17:09:28Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/postgres-sa-byoac:7f2635de3a9f0b36fca2116cc46177096336a0fe",
+      "headline": "fixed 12 vulnerabilities across aml model, backend, and frontend",
+      "noise_level": "low",
+      "notability_reason": [
+        "security_language",
+        "human_authored"
+      ],
+      "notability_score": 91,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "",
+      "repo": "Azure-Samples/postgres-sa-byoac"
+    },
+    {
+      "actor_type": "human",
+      "author": "xitzhang (@xitzhang)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-js/commit/5b682289a6c409fbf94905e87dbe0159dcaf604a",
+      "committed_at": "2026-06-08T21:28:47Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-js:5b682289a6c409fbf94905e87dbe0159dcaf604a",
+      "headline": "[VoiceLive] Add live telemetry test for realtime session (#38868)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 38868,
+      "pr_title": "[VoiceLive] Add live telemetry test for realtime session",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38868",
+      "product_area": "Azure AI",
+      "repo": "Azure/azure-sdk-for-js"
+    },
+    {
+      "actor_type": "human",
+      "author": "Maxim Semenov (@maximsemenov80)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/iot-operations-sdks/commit/597532eac5a081a76b04772efb9922ff5301fa43",
+      "committed_at": "2026-06-08T21:27:12Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/iot-operations-sdks:597532eac5a081a76b04772efb9922ff5301fa43",
+      "headline": "[ADR] mRPC Back Pressure flag (#1332)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 1332,
+      "pr_title": "[ADR] mRPC Back Pressure flag",
+      "pr_url": "https://github.com/Azure/iot-operations-sdks/pull/1332",
+      "product_area": "Azure SDK",
+      "repo": "Azure/iot-operations-sdks"
+    },
+    {
+      "actor_type": "human",
+      "author": "Tomas Varon (@tvaron3)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-rust/commit/e08f9f5933a9a3a9ddf9ece3c3e1cd6b3c68b40e",
+      "committed_at": "2026-06-08T21:08:45Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-rust:e08f9f5933a9a3a9ddf9ece3c3e1cd6b3c68b40e",
+      "headline": "Preserve cached routing map on transient pkrange fetch failure (#4549)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 4549,
+      "pr_title": "Preserve cached routing map on transient pkrange fetch failure",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-rust/pull/4549",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-rust"
+    },
+    {
+      "actor_type": "human",
+      "author": "Brandon Werner (@brandwe)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/entrabot/commit/0f8be9abdabf26388f1ee38861c10329f68bf402",
+      "committed_at": "2026-06-08T20:52:01Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/entrabot:0f8be9abdabf26388f1ee38861c10329f68bf402",
+      "headline": "docs: add MXC (Microsoft Execution Containers) platform-learnings res\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 14,
+      "pr_title": "docs: MXC (Microsoft Execution Containers) platform research",
+      "pr_url": "https://github.com/microsoft/entrabot/pull/14",
+      "product_area": "",
+      "repo": "microsoft/entrabot"
+    },
+    {
+      "actor_type": "human",
+      "author": "Nick Trogh (@ntrogh)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/vscode-docs/commit/46d3e221a6abc4c9df8662a5aa19fcd3c549430d",
+      "committed_at": "2026-06-08T20:25:42Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/vscode-docs:46d3e221a6abc4c9df8662a5aa19fcd3c549430d",
+      "headline": "Merge pull request #9903 from microsoft/ntrogh/fix-context-window-122",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 9903,
+      "pr_title": "Update screenshot of model picker",
+      "pr_url": "https://github.com/microsoft/vscode-docs/pull/9903",
+      "product_area": "",
+      "repo": "microsoft/vscode-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ohad Tsamir @ Independer (@otsamir)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/MicrosoftDocs/sql-docs/commit/b3f5d4dec3aa52912e8bad7abfdc6e00893bcf68",
+      "committed_at": "2026-06-08T20:16:41Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/sql-docs:b3f5d4dec3aa52912e8bad7abfdc6e00893bcf68",
+      "headline": "Update target-platform.md - add Sql170DatabaseSchemaProvider (#10346)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 10346,
+      "pr_title": "Update target-platform.md - add Sql170DatabaseSchemaProvider",
+      "pr_url": "https://github.com/MicrosoftDocs/sql-docs/pull/10346",
+      "product_area": "",
+      "repo": "MicrosoftDocs/sql-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ronnie Geraghty (@ronniegeraghty)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-rust/commit/b080e84933f54501751f5416de23a7ce7e717201",
+      "committed_at": "2026-06-08T20:14:28Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-rust:b080e84933f54501751f5416de23a7ce7e717201",
+      "headline": "Hand off @ronniegeraghty CODEOWNERS to new owners (#4499)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 4499,
+      "pr_title": "Hand off @ronniegeraghty CODEOWNERS to new owners",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-rust/pull/4499",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-rust"
+    },
+    {
+      "actor_type": "human",
+      "author": "Brandon Werner (@brandwe)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/entrabot/commit/9e590fe203234d640ce1944ac5e8452c41da38bf",
+      "committed_at": "2026-06-08T19:36:42Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/entrabot:9e590fe203234d640ce1944ac5e8452c41da38bf",
+      "headline": "docs: fix stale Bot Gateway code citations in CLI-port notes (#13)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 13,
+      "pr_title": "docs: fix stale Bot Gateway code citations (follow-up to #12)",
+      "pr_url": "https://github.com/microsoft/entrabot/pull/13",
+      "product_area": "",
+      "repo": "microsoft/entrabot"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ryan Zhang (@ryazhang-microsoft)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906",
+      "committed_at": "2026-06-08T19:23:44Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-python:2fb56bf4f962171f7eb7efc6daad23bf610ae906",
+      "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 47368,
+      "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47368",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-python"
+    },
+    {
+      "actor_type": "human",
+      "author": "Matthew Metcalf (@mrm9084)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-java/commit/f8877c0abd43da6e2e769c8e77e7d6a51a7e6774",
+      "committed_at": "2026-06-08T18:25:13Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-java:f8877c0abd43da6e2e769c8e77e7d6a51a7e6774",
+      "headline": "Updating Missing Telemetry (#48978)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 48978,
+      "pr_title": "Updating Missing Telemetry",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/48978",
+      "product_area": "Azure SDK",
+      "repo": "Azure/azure-sdk-for-java"
+    },
+    {
+      "actor_type": "human",
+      "author": "Xelu86 (@Xelu86)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/79305774e2bc60fbb8a9bb831bf4fdaefaeafeea",
+      "committed_at": "2026-06-08T18:16:00Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/PowerShell-Docs-Modules:79305774e2bc60fbb8a9bb831bf4fdaefaeafeea",
+      "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9 (#411)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 411,
+      "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9",
+      "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/411",
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/PowerShell-Docs-Modules"
+    },
+    {
+      "actor_type": "human",
+      "author": "xitzhang (@xitzhang)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c",
+      "committed_at": "2026-06-08T18:13:24Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-js:dc5f9743b05ea78f938eba31cbe704150889490c",
+      "headline": "[VoiceLive] Add live test coverage and parametrize over API versions \u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 38790,
+      "pr_title": "[VoiceLive] Add live test coverage and parametrize over API versions",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38790",
+      "product_area": "Azure AI",
+      "repo": "Azure/azure-sdk-for-js"
+    },
+    {
+      "actor_type": "human",
+      "author": "Xelu86 (@Xelu86)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/b471075ef349b3efd2f724cb816eb4805258dd7f",
+      "committed_at": "2026-06-08T18:11:39Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/PowerShell-Docs-Modules:b471075ef349b3efd2f724cb816eb4805258dd7f",
+      "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8 (#409)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 409,
+      "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8",
+      "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/409",
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/PowerShell-Docs-Modules"
+    },
+    {
+      "actor_type": "human",
+      "author": "Copilot (@Copilot)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
+      "committed_at": "2026-06-08T18:11:03Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-js:bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
+      "headline": "Update `@azure/openai` README links for Build Analyze link-check fail\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 38809,
+      "pr_title": "Update `@azure/openai` README links for Build Analyze link-check failures",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38809",
+      "product_area": "Azure AI",
+      "repo": "Azure/azure-sdk-for-js"
+    },
+    {
+      "actor_type": "human",
+      "author": "Xelu86 (@Xelu86)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/67ac3e9d59a5d10be15d3a412b3c3795d5a401d4",
+      "committed_at": "2026-06-08T18:09:56Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/PowerShell-Docs-Modules:67ac3e9d59a5d10be15d3a412b3c3795d5a401d4",
+      "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7 (#408)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 408,
+      "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7",
+      "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/408",
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/PowerShell-Docs-Modules"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paulo Lacerda (@placerda)",
+      "category": "samples",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/Azure/agentops/commit/f8c0dd6ab4296183d044485855143abcc9200030",
+      "committed_at": "2026-06-08T18:00:57Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/agentops:f8c0dd6ab4296183d044485855143abcc9200030",
+      "headline": "fix: show heartbeat during azd eval runs",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 264,
+      "pr_title": "fix: show heartbeat during azd eval runs",
+      "pr_url": "https://github.com/Azure/agentops/pull/264",
+      "product_area": "Azure AI",
+      "repo": "Azure/agentops"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paulo Lacerda (@placerda)",
+      "category": "samples",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/Azure/agentops/commit/9381b5362aa9e7a7a7551503af2bbb6fafbe5284",
+      "committed_at": "2026-06-08T17:49:38Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/agentops:9381b5362aa9e7a7a7551503af2bbb6fafbe5284",
+      "headline": "fix: recommend eval init before azd eval run",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 263,
+      "pr_title": "fix: recommend eval init before azd eval run",
+      "pr_url": "https://github.com/Azure/agentops/pull/263",
+      "product_area": "Azure AI",
+      "repo": "Azure/agentops"
+    }
+  ],
   "recent_repo_creations": [
     {
       "category": "training",
@@ -4036,21 +4637,26 @@
     "summary": {
       "candidate_repo_cap": 150,
       "enabled": true,
-      "error_count": 0,
-      "errors": [],
+      "error_count": 1,
+      "errors": [
+        {
+          "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+          "repo": "MicrosoftDocs/azure-monitor-docs"
+        }
+      ],
       "max_releases_per_repo": 5,
       "mode": "candidates-and-watched",
       "repos_checked": 150,
       "repos_with_releases": 9,
-      "requests_changed": 149,
-      "requests_checked": 150,
-      "requests_not_modified": 1
+      "requests_changed": 4,
+      "requests_checked": 149,
+      "requests_not_modified": 145
     }
   },
   "schema_url": "schemas/report.v1.schema.json",
   "schema_version": 1,
   "source": {
-    "commit": "c96ca8d7fd9dc6e1f3e39aded7921a0826419caa",
+    "commit": "99b8278ecd25df35e81f29c2b38f66a22d6214c6",
     "repository": "",
     "workflow": "",
     "workflow_run_id": "",
@@ -4058,12 +4664,12 @@
   },
   "summaries": {
     "by_category": {
-      "docs": 33,
+      "docs": 34,
       "samples": 19,
       "training": 15
     },
     "by_org": {
-      "Azure": 9,
+      "Azure": 10,
       "Azure-Samples": 4,
       "MicrosoftDocs": 7,
       "MicrosoftLearning": 14,
@@ -4389,7 +4995,7 @@
         },
         {
           "full_name": "Azure/azure-sdk-for-js",
-          "score": 132,
+          "score": 133,
           "tags": [
             "docs",
             "human-authored",
@@ -4420,7 +5026,7 @@
         },
         {
           "full_name": "Azure/azure-sdk-for-python",
-          "score": 129,
+          "score": 130,
           "tags": [
             "docs",
             "human-authored",
@@ -4587,7 +5193,7 @@
         },
         {
           "full_name": "MicrosoftLearning/mslearn-ai-concepts",
-          "score": 88,
+          "score": 86,
           "tags": [
             "human-authored",
             "release-language",
@@ -4801,10 +5407,10 @@
       "tag_counts": {
         "bot-only": 14,
         "dependency-noise": 12,
-        "docs": 33,
-        "human-authored": 53,
+        "docs": 34,
+        "human-authored": 54,
         "product:Azure AI": 11,
-        "product:Azure SDK": 11,
+        "product:Azure SDK": 12,
         "product:Microsoft Graph": 9,
         "product:PowerShell": 2,
         "release": 9,
@@ -4812,7 +5418,7 @@
         "samples": 19,
         "security": 5,
         "training": 15,
-        "watchlist": 51
+        "watchlist": 52
       },
       "watched": [
         {
@@ -4874,7 +5480,7 @@
         },
         {
           "full_name": "Azure/azure-sdk-for-js",
-          "score": 132,
+          "score": 133,
           "tags": [
             "docs",
             "human-authored",
@@ -4905,7 +5511,7 @@
         },
         {
           "full_name": "Azure/azure-sdk-for-python",
-          "score": 129,
+          "score": 130,
           "tags": [
             "docs",
             "human-authored",
@@ -5072,7 +5678,7 @@
         },
         {
           "full_name": "MicrosoftLearning/mslearn-ai-concepts",
-          "score": 88,
+          "score": 86,
           "tags": [
             "human-authored",
             "release-language",
@@ -5519,8 +6125,18 @@
     },
     {
       "category": "docs",
-      "commit_count": 7,
+      "commit_count": 8,
       "commits": [
+        {
+          "author": "xitzhang (@xitzhang)",
+          "committed_date": "2026-06-08T21:28:47Z",
+          "headline": "[VoiceLive] Add live telemetry test for realtime session (#38868)",
+          "oid": "5b682289a6c409fbf94905e87dbe0159dcaf604a",
+          "pr_number": 38868,
+          "pr_title": "[VoiceLive] Add live telemetry test for realtime session",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38868",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/5b682289a6c409fbf94905e87dbe0159dcaf604a"
+        },
         {
           "author": "xitzhang (@xitzhang)",
           "committed_date": "2026-06-08T18:13:24Z",
@@ -5560,22 +6176,12 @@
           "pr_title": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188",
           "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38808",
           "url": "https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884"
-        },
-        {
-          "author": "Azure SDK Bot (@azure-sdk)",
-          "committed_date": "2026-06-08T14:52:10Z",
-          "headline": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787\u2026",
-          "oid": "19f9ac5ba235b524ea925da6a46c5cc9c149c530",
-          "pr_number": 38811,
-          "pr_title": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787",
-          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38811",
-          "url": "https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530"
         }
       ],
       "default_branch": "main",
       "full_name": "Azure/azure-sdk-for-js",
       "name": "azure-sdk-for-js",
-      "newest_commit_date": "2026-06-08T18:13:24Z",
+      "newest_commit_date": "2026-06-08T21:28:47Z",
       "org": "Azure",
       "releases": [
         {
@@ -5609,7 +6215,7 @@
       "signal": {
         "bot_commit_count": 1,
         "human_commit_count": 4,
-        "score": 132,
+        "score": 133,
         "tags": [
           "docs",
           "human-authored",
@@ -5641,8 +6247,18 @@
     },
     {
       "category": "docs",
-      "commit_count": 4,
+      "commit_count": 5,
       "commits": [
+        {
+          "author": "Peter Wu (@weirongw23-msft)",
+          "committed_date": "2026-06-08T21:23:38Z",
+          "headline": "Bump changelogs after release (#47398)",
+          "oid": "c093c23f3ae6976810c53cc41b073705ecf4aceb",
+          "pr_number": 47398,
+          "pr_title": "[Storage] Bump Changelogs after STG 102 Release",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47398",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/c093c23f3ae6976810c53cc41b073705ecf4aceb"
+        },
         {
           "author": "Azure SDK Bot (@azure-sdk)",
           "committed_date": "2026-06-08T20:50:14Z",
@@ -5687,7 +6303,7 @@
       "default_branch": "main",
       "full_name": "Azure/azure-sdk-for-python",
       "name": "azure-sdk-for-python",
-      "newest_commit_date": "2026-06-08T20:50:14Z",
+      "newest_commit_date": "2026-06-08T21:23:38Z",
       "org": "Azure",
       "releases": [
         {
@@ -5738,8 +6354,8 @@
       ],
       "signal": {
         "bot_commit_count": 0,
-        "human_commit_count": 4,
-        "score": 129,
+        "human_commit_count": 5,
+        "score": 130,
         "tags": [
           "docs",
           "human-authored",
@@ -6284,7 +6900,7 @@
     },
     {
       "category": "training",
-      "commit_count": 3,
+      "commit_count": 1,
       "commits": [
         {
           "author": "Graeme Malcolm (@GraemeMalcolm)",
@@ -6295,26 +6911,6 @@
           "pr_title": null,
           "pr_url": null,
           "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f"
-        },
-        {
-          "author": "Graeme Malcolm (@GraemeMalcolm)",
-          "committed_date": "2026-06-07T21:22:45Z",
-          "headline": "Correct model name",
-          "oid": "094362458804b180843fdd64a3e4e4bd81684a97",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
-          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/094362458804b180843fdd64a3e4e4bd81684a97"
-        },
-        {
-          "author": "Graeme Malcolm (@GraemeMalcolm)",
-          "committed_date": "2026-06-07T21:18:03Z",
-          "headline": "Updated NLP tasks",
-          "oid": "5184291d3f281798a7736d5fb46fc95a8fb11fb0",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
-          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/5184291d3f281798a7736d5fb46fc95a8fb11fb0"
         }
       ],
       "default_branch": "main",
@@ -6325,8 +6921,8 @@
       "releases": [],
       "signal": {
         "bot_commit_count": 0,
-        "human_commit_count": 3,
-        "score": 88,
+        "human_commit_count": 1,
+        "score": 86,
         "tags": [
           "human-authored",
           "release-language",
@@ -6856,12 +7452,12 @@
   ],
   "totals": {
     "candidate_repos": 133,
-    "default_branch_commits": 283,
+    "default_branch_commits": 287,
     "filtered_repos": 4639,
     "inventory_repos": 16416,
     "pushed_at_candidate_repos": 133,
     "release_count": 20,
-    "repos_with_movement": 67,
+    "repos_with_movement": 68,
     "repos_with_releases": 9
   },
   "watchlist": {
@@ -6877,8 +7473,8 @@
   },
   "window": {
     "hours_requested": 24,
-    "since": "2026-06-07T21:11:10.933557Z",
+    "since": "2026-06-07T21:38:00.975882Z",
     "state_window_enabled": true,
-    "until": "2026-06-08T21:11:10.933557Z"
+    "until": "2026-06-08T21:38:00.975882Z"
   }
 }

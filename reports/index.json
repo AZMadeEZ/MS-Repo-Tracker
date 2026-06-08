@@ -4,26 +4,26 @@
   "daily": [
     {
       "date": "2026-06-08",
-      "default_branch_commits": 283,
-      "generated_at": "2026-06-08T21:11:10.933557Z",
+      "default_branch_commits": 287,
+      "generated_at": "2026-06-08T21:38:00.975882Z",
       "high_signal_count": 25,
       "release_count": 20,
       "report_json": "2026-06-08.json",
       "report_md": "2026-06-08.md",
-      "repos_with_movement": 67
+      "repos_with_movement": 68
     }
   ],
-  "generated_at": "2026-06-08T21:13:46.227931Z",
+  "generated_at": "2026-06-08T21:43:10.932628Z",
   "report_count": 1,
   "schema_url": "schemas/report-index.v1.schema.json",
   "schema_version": 1,
   "top_products": [
     {
-      "product": "Azure AI",
-      "report_count": 11
+      "product": "Azure SDK",
+      "report_count": 12
     },
     {
-      "product": "Azure SDK",
+      "product": "Azure AI",
       "report_count": 11
     },
     {
@@ -69,15 +69,19 @@
       "report_count": 1
     },
     {
-      "full_name": "microsoft/vscode-docs",
-      "report_count": 1
-    },
-    {
       "full_name": "Azure/azure-sdk-for-js",
       "report_count": 1
     },
     {
+      "full_name": "microsoft/vscode-docs",
+      "report_count": 1
+    },
+    {
       "full_name": "microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/orleans",
       "report_count": 1
     },
     {
@@ -89,19 +93,15 @@
       "report_count": 1
     },
     {
+      "full_name": "Azure/azure-sdk-for-python",
+      "report_count": 1
+    },
+    {
       "full_name": "dotnet/efcore",
       "report_count": 1
     },
     {
       "full_name": "microsoft/entrabot",
-      "report_count": 1
-    },
-    {
-      "full_name": "dotnet/orleans",
-      "report_count": 1
-    },
-    {
-      "full_name": "Azure/azure-sdk-for-python",
       "report_count": 1
     },
     {
@@ -114,10 +114,6 @@
     },
     {
       "full_name": "microsoft/kiota",
-      "report_count": 1
-    },
-    {
-      "full_name": "MicrosoftLearning/mslearn-ai-concepts",
       "report_count": 1
     },
     {
@@ -135,20 +131,24 @@
     {
       "full_name": "MicrosoftDocs/azure-docs-cli",
       "report_count": 1
+    },
+    {
+      "full_name": "Azure/aks-rdma-infiniband",
+      "report_count": 1
     }
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 283,
+      "default_branch_commits": 287,
       "release_count": 20,
       "report_count": 1,
-      "repos_with_movement": 67
+      "repos_with_movement": 68
     },
     "last_7_days": {
-      "default_branch_commits": 283,
+      "default_branch_commits": 287,
       "release_count": 20,
       "report_count": 1,
-      "repos_with_movement": 67
+      "repos_with_movement": 68
     }
   }
 }

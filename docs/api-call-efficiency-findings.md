@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 This note captures the current rate-limit findings for MS-Repo-Tracker and records the starting point for remediation planning.
 
-Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, data contracts under `schemas/`, `reports/manifest.json`, `reports/status.json`, accurate digest window metadata, and updated GitHub Actions workflows.
+Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, data contracts under `schemas/`, `reports/manifest.json`, `reports/status.json`, accurate digest window metadata, AI-ready event streams, and updated GitHub Actions workflows.
 
 ## Current Hot Spots
 
@@ -201,6 +201,17 @@ This is not the same as a perfect webhook guarantee. A strict "never miss anythi
    - `changes_last24h.csv` keeps `commit_count_24h` as a deprecated compatibility alias.
    - New ingestion should use `commit_count_window`, `window_since`, `window_until`, `hours_requested`, and `state_window_enabled`.
    - `reports/latest.json` records both `window.since` and `window.until` so state-extended catch-up runs are unambiguous.
+
+21. AI-ready event stream: publish flat deduplicable commit events.
+   - `reports/latest.events.ndjson` and dated `reports/YYYY-MM-DD.events.ndjson` are generated from report activity commits.
+   - Event records include stable `event_id`, `dedupe_key`, source URLs, report window metadata, and first-pass signal/noise fields.
+   - `scripts/validate_tracker.py` validates NDJSON syntax, event uniqueness, required fields, and event counts without network calls.
+   - This improves downstream ingestion without adding GitHub API calls.
+
+22. Notable change surfacing: reduce commit-volume bias in human reports.
+   - Event-level `notability_score`, `change_type`, `actor_type`, `noise_level`, and `customer_visible` are generated from existing local signal heuristics.
+   - `reports/latest.json` includes `notable_changes` selected from the event stream.
+   - `reports/latest.md` shows Notable Changes before raw activity tables so human readers see signal before volume.
 
 ## Open Planning Question
 

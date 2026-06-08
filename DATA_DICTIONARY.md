@@ -74,6 +74,8 @@ All machine-readable JSON report artifacts include:
 | `summaries` | Rollups by category, org, and signal grouping. |
 | `top_repos` | Highest-scoring movement items for the daily brief. |
 | `activities` | Row-level repository movement details. |
+| `event_stream` | Paths and counts for the flat NDJSON event stream generated from `activities[].commits`. |
+| `notable_changes` | Top event-level changes selected from the event stream by notability score while filtering high-noise events. |
 | `releases` | Release scan summary and recent release items. |
 | `lifecycle` | Latest inventory lifecycle summary when it overlaps the digest window. |
 | `graphql` | GraphQL enrichment strategy and batch telemetry. |
@@ -87,3 +89,32 @@ All machine-readable JSON report artifacts include:
 `msft_repo_inventory_watchfeeds.csv` exposes commit and release Atom feed URLs for each inventory repo.
 
 `msft_repo_tracker_state.json` stores per-org scan metadata, conditional request cache data, digest continuity metadata, and lifecycle summaries. It is committed so GitHub Actions and local runs share the same baseline.
+
+## Event Stream
+
+`reports/latest.events.ndjson` and `reports/YYYY-MM-DD.events.ndjson` are line-delimited JSON files for AI, search, and BI ingestion. Each line is one commit event generated from `reports/latest.json` activity commit records. Repeated state-window runs can overlap; consumers should deduplicate with `dedupe_key`.
+
+| Field | Meaning |
+| --- | --- |
+| `event_id` | Stable event ID in provider/type/repo/object form. |
+| `event_type` | Currently `commit`; the schema reserves `release` for future release events. |
+| `dedupe_key` | Stable key for overlap-safe deduplication. Commit events use `commit:<oid>`. |
+| `repo`, `org`, `repo_name` | Repository identifiers. |
+| `category` | Local inventory category. |
+| `product_area` | Best-effort product area inferred from watchlist product signal tags. |
+| `default_branch` | Branch used for movement checks. |
+| `committed_at` | Commit timestamp from GitHub GraphQL. |
+| `headline` | Commit headline. |
+| `author` | Commit author display string. |
+| `actor_type` | `human`, `bot`, `automation`, or `unknown`. |
+| `commit_oid`, `commit_url` | Commit identity and source URL. |
+| `pr_number`, `pr_title`, `pr_url` | Associated pull request metadata when GraphQL returns it. |
+| `change_type` | First-pass change classification such as `docs_update`, `dependency_update`, `security_fix`, `bulk_automation`, `ci_infra`, or `feature`. |
+| `noise_level` | `low`, `medium`, `high`, or `unknown`, intended to keep bot/bulk activity visible without over-ranking it. |
+| `customer_visible` | `true`, `false`, or `unknown`; conservative until deeper enrichment is added. |
+| `notability_score` | 0-100 first-pass event score derived from repo signal, actor type, change type, and noise level. |
+| `notability_reason` | Machine-friendly explanation tags for the score. |
+| `labels` | Current signal tags from the repo activity. |
+| `window_since`, `window_until` | Effective report window for the event. |
+| `retrieved_at` | Report generation timestamp. |
+| `source` | Provider/API and source URL metadata. |

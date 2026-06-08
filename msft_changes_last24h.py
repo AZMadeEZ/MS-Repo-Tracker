@@ -46,11 +46,15 @@ INVENTORY_SCHEMA_URL = "schemas/inventory.v1.schema.json"
 WATCHFEEDS_SCHEMA_URL = "schemas/watchfeeds.v1.schema.json"
 STATE_SCHEMA_URL = "schemas/state.v1.schema.json"
 EVENTS_CALIBRATION_SCHEMA_URL = "schemas/events-calibration.v1.schema.json"
+EVENT_SCHEMA_URL = "schemas/event.v1.schema.json"
 REPORT_FRESHNESS_HOURS = 30
 BOT_MARKERS = ("[bot]", "dependabot", "renovate", "github-actions", "learn-build-service")
 DEPENDENCY_MARKERS = ("bump ", "dependabot", "renovate", "dependency", "dependencies")
 RELEASE_MARKERS = ("release", "version", "ga ", "generally available", "preview")
 SECURITY_MARKERS = ("security", "cve-", "vulnerab", "credential", "secret")
+BULK_MARKERS = ("[bulk]", "bulk ", "scheduled execution", "mass update")
+CI_MARKERS = ("workflow", "pipeline", "test automation", "github action")
+SDK_MARKERS = ("sdk generation", "generated-from-sdk", "generated from sdk", "autorest", "kiota", "unbrandedgenerator", "autopr")
 
 
 @dataclass
@@ -1558,6 +1562,7 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
     lifecycle = payload.get("lifecycle") or {}
     recent_creations = payload.get("recent_repo_creations") or []
     graphql = payload.get("graphql") or {}
+    notable_changes = payload.get("notable_changes") or []
     top_repos = payload.get("top_repos") or []
     activities = payload.get("activities") or []
 
@@ -1580,6 +1585,26 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
         f.write(f"| Repositories with movement | {totals.get('repos_with_movement', 0)} |\n")
         f.write(f"| Default-branch commits | {totals.get('default_branch_commits', 0)} |\n")
         f.write("\n")
+
+        if notable_changes:
+            f.write("## Notable Changes\n\n")
+            f.write("| Repository | Score | Change | Actor | Noise | Headline | Time |\n")
+            f.write("| --- | ---: | --- | --- | --- | --- | --- |\n")
+            for event in notable_changes[:15]:
+                repo = md_escape(event.get("repo", ""))
+                repo_url = f"https://github.com/{event.get('repo', '')}"
+                url = event.get("pr_url") or event.get("commit_url") or repo_url
+                headline = md_escape(event.get("pr_title") or event.get("headline") or "Change")
+                f.write(
+                    f"| [{repo}]({repo_url}) | "
+                    f"{event.get('notability_score', 0)} | "
+                    f"{md_escape(event.get('change_type', 'unknown'))} | "
+                    f"{md_escape(event.get('actor_type', 'unknown'))} | "
+                    f"{md_escape(event.get('noise_level', 'unknown'))} | "
+                    f"[{headline}]({url}) | "
+                    f"`{event.get('committed_at', '')}` |\n"
+                )
+            f.write("\n")
 
         f.write("## Collection Settings\n\n")
         categories = filters.get("categories")
@@ -1906,6 +1931,262 @@ def write_report_index(report_dir: str) -> List[str]:
     return [json_path, md_path]
 
 
+def product_area_from_signal(signal: Mapping[str, Any]) -> str:
+    tags = signal.get("tags") or []
+    for tag in tags:
+        value = str(tag)
+        if value.startswith("product:"):
+            return value.split(":", 1)[1]
+    matches = signal.get("watchlist_matches") or {}
+    products = matches.get("products") or []
+    return str(products[0]) if products else ""
+
+
+def actor_type_for_author(author: str) -> str:
+    lowered = (author or "").lower()
+    if not lowered:
+        return "unknown"
+    if "learn-build-service" in lowered or "github-actions" in lowered:
+        return "automation"
+    if "[bot]" in lowered or "dependabot" in lowered or "renovate" in lowered:
+        return "bot"
+    return "human"
+
+
+def change_type_for_event(event_type: str, category: str, text: str) -> str:
+    lowered = text.lower()
+    if event_type == "release":
+        return "release"
+    if any(marker in lowered for marker in BULK_MARKERS):
+        return "bulk_automation"
+    if is_dependency_text(lowered):
+        return "dependency_update"
+    if re.search(r"\brelease\b", lowered):
+        return "release"
+    if is_security_text(lowered):
+        return "security_fix"
+    if any(marker in lowered for marker in SDK_MARKERS):
+        return "sdk_generation"
+    if any(marker in lowered for marker in CI_MARKERS):
+        return "ci_infra"
+    if "bug" in lowered or "fix" in lowered:
+        return "bug_fix"
+    if "feature" in lowered or "add " in lowered or "enable " in lowered:
+        return "feature"
+    category_map = {
+        "docs": "docs_update",
+        "reference": "reference_update",
+        "training": "training_update",
+        "samples": "sample_update",
+    }
+    return category_map.get(category, "unknown")
+
+
+def noise_level_for_event(actor_type: str, change_type: str) -> str:
+    if change_type in {"bulk_automation", "dependency_update"}:
+        return "high"
+    if change_type == "sdk_generation":
+        return "medium"
+    if actor_type in {"bot", "automation"}:
+        return "medium"
+    if change_type == "ci_infra":
+        return "medium"
+    if actor_type == "human":
+        return "low"
+    return "unknown"
+
+
+def customer_visible_for_event(change_type: str, category: str) -> str:
+    if change_type == "release":
+        return "true"
+    if change_type in {"dependency_update", "ci_infra"}:
+        return "false"
+    if category in {"docs", "reference", "training", "samples"}:
+        return "unknown"
+    return "unknown"
+
+
+def event_notability(
+    *,
+    signal: Mapping[str, Any],
+    actor_type: str,
+    change_type: str,
+    noise_level: str,
+    text: str,
+) -> Tuple[int, List[str]]:
+    score = min(int(signal.get("score") or 0), 70)
+    reasons: List[str] = []
+    tags = set(str(tag) for tag in (signal.get("tags") or []))
+
+    if "watchlist" in tags:
+        score += 10
+        reasons.append("watchlist")
+    if is_security_text(text):
+        score += 15
+        reasons.append("security_language")
+    if change_type == "release":
+        score += 20
+        reasons.append("release")
+    if actor_type == "human":
+        score += 10
+        reasons.append("human_authored")
+    if noise_level == "high":
+        score -= 30
+        reasons.append("high_noise")
+    elif noise_level == "medium":
+        score -= 10
+        reasons.append("automation_or_bot")
+    if change_type in {"bulk_automation", "dependency_update"}:
+        score -= 10
+        reasons.append(change_type)
+    if change_type == "sdk_generation":
+        score -= 5
+        reasons.append("sdk_generation")
+
+    return max(0, min(100, score)), reasons
+
+
+def build_event_stream_records(payload: Mapping[str, Any]) -> List[Dict[str, Any]]:
+    window = payload.get("window") or {}
+    retrieved_at = str(payload.get("generated_at") or "")
+    source_base = payload.get("source") if isinstance(payload.get("source"), dict) else {}
+    records: List[Dict[str, Any]] = []
+
+    for activity in payload.get("activities") or []:
+        if not isinstance(activity, dict):
+            continue
+        repo = str(activity.get("full_name") or "")
+        org = str(activity.get("org") or (repo.split("/")[0] if "/" in repo else ""))
+        repo_name = str(activity.get("name") or (repo.split("/", 1)[1] if "/" in repo else repo))
+        category = str(activity.get("category") or "")
+        default_branch = str(activity.get("default_branch") or "")
+        signal = activity.get("signal") if isinstance(activity.get("signal"), dict) else {}
+        product_area = product_area_from_signal(signal)
+
+        for commit in activity.get("commits") or []:
+            if not isinstance(commit, dict):
+                continue
+            oid = str(commit.get("oid") or "").strip()
+            if not oid:
+                continue
+            headline = str(commit.get("headline") or "")
+            author = str(commit.get("author") or "")
+            pr_title = str(commit.get("pr_title") or "")
+            text = " ".join([repo, category, headline, pr_title, author])
+            actor_type = actor_type_for_author(author)
+            change_type = change_type_for_event("commit", category, text)
+            noise_level = noise_level_for_event(actor_type, change_type)
+            customer_visible = customer_visible_for_event(change_type, category)
+            notability_score, notability_reason = event_notability(
+                signal=signal,
+                actor_type=actor_type,
+                change_type=change_type,
+                noise_level=noise_level,
+                text=text,
+            )
+            records.append(
+                {
+                    "schema_version": 1,
+                    "artifact_type": "tracker-event",
+                    "artifact_version": ARTIFACT_VERSION,
+                    "schema_url": EVENT_SCHEMA_URL,
+                    "event_id": f"github_commit:{repo}:{oid}",
+                    "event_type": "commit",
+                    "dedupe_key": f"commit:{oid}",
+                    "repo": repo,
+                    "org": org,
+                    "repo_name": repo_name,
+                    "category": category,
+                    "product_area": product_area,
+                    "default_branch": default_branch,
+                    "committed_at": str(commit.get("committed_date") or ""),
+                    "headline": headline,
+                    "author": author,
+                    "actor_type": actor_type,
+                    "commit_oid": oid,
+                    "commit_url": str(commit.get("url") or ""),
+                    "pr_number": commit.get("pr_number"),
+                    "pr_title": commit.get("pr_title"),
+                    "pr_url": commit.get("pr_url"),
+                    "change_type": change_type,
+                    "noise_level": noise_level,
+                    "customer_visible": customer_visible,
+                    "notability_score": notability_score,
+                    "notability_reason": notability_reason,
+                    "labels": signal.get("tags") or [],
+                    "window_since": str(window.get("since") or ""),
+                    "window_until": str(window.get("until") or ""),
+                    "retrieved_at": retrieved_at,
+                    "source": {
+                        "provider": "github",
+                        "api": "graphql",
+                        "repo_url": f"https://github.com/{repo}" if repo else "",
+                        "source_commit": source_base.get("commit", ""),
+                        "workflow_run_url": source_base.get("workflow_run_url", ""),
+                    },
+                }
+            )
+
+    records.sort(key=lambda item: (str(item.get("committed_at") or ""), str(item.get("event_id") or "")), reverse=True)
+    return records
+
+
+def write_ndjson(path: str, records: List[Dict[str, Any]]) -> None:
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        for record in records:
+            f.write(json.dumps(record, sort_keys=True, separators=(",", ":")))
+            f.write("\n")
+
+
+def notable_changes_from_events(records: List[Dict[str, Any]], limit: int = 25) -> List[Dict[str, Any]]:
+    candidates = [
+        record
+        for record in records
+        if str(record.get("noise_level") or "") != "high" and int(record.get("notability_score") or 0) >= 50
+    ]
+    if not candidates:
+        candidates = records[:]
+    candidates.sort(
+        key=lambda item: (
+            int(item.get("notability_score") or 0),
+            str(item.get("committed_at") or ""),
+            str(item.get("event_id") or ""),
+        ),
+        reverse=True,
+    )
+    notable: List[Dict[str, Any]] = []
+    seen_changes: Set[str] = set()
+    for record in candidates:
+        change_key = str(record.get("pr_url") or record.get("dedupe_key") or record.get("event_id") or "")
+        if change_key in seen_changes:
+            continue
+        seen_changes.add(change_key)
+        notable.append(
+            {
+                "event_id": record.get("event_id", ""),
+                "repo": record.get("repo", ""),
+                "category": record.get("category", ""),
+                "product_area": record.get("product_area", ""),
+                "committed_at": record.get("committed_at", ""),
+                "headline": record.get("headline", ""),
+                "author": record.get("author", ""),
+                "actor_type": record.get("actor_type", "unknown"),
+                "change_type": record.get("change_type", "unknown"),
+                "noise_level": record.get("noise_level", "unknown"),
+                "customer_visible": record.get("customer_visible", "unknown"),
+                "notability_score": record.get("notability_score", 0),
+                "notability_reason": record.get("notability_reason", []),
+                "commit_url": record.get("commit_url", ""),
+                "pr_number": record.get("pr_number"),
+                "pr_title": record.get("pr_title"),
+                "pr_url": record.get("pr_url"),
+            }
+        )
+        if len(notable) >= limit:
+            break
+    return notable
+
+
 def manifest_artifact(
     name: str,
     artifact_type: str,
@@ -1960,9 +2241,17 @@ def build_manifest_payload(
 ) -> Dict[str, Any]:
     latest_generated_at = str(status_payload.get("latest_report_generated_at") or "")
     date_slug = latest_generated_at[:10] if latest_generated_at else ""
+    latest_event_stream = os.path.join(report_dir, "latest.events.ndjson")
     artifacts = [
         manifest_artifact("latest_human_report", "markdown", os.path.join(report_dir, "latest.md")),
         manifest_artifact("latest_machine_report", "json", os.path.join(report_dir, "latest.json"), schema_url=REPORT_SCHEMA_URL),
+        manifest_artifact(
+            "latest_event_stream",
+            "ndjson",
+            latest_event_stream,
+            schema_url=EVENT_SCHEMA_URL,
+            required=os.path.exists(latest_event_stream),
+        ),
         manifest_artifact("report_index_human", "markdown", os.path.join(report_dir, "index.md")),
         manifest_artifact("report_index_machine", "json", os.path.join(report_dir, "index.json"), schema_url=REPORT_INDEX_SCHEMA_URL),
         manifest_artifact("tracker_status", "json", os.path.join(report_dir, "status.json"), schema_url=STATUS_SCHEMA_URL),
@@ -1972,10 +2261,18 @@ def build_manifest_payload(
         manifest_artifact("tracker_state", "json", "msft_repo_tracker_state.json", schema_url=STATE_SCHEMA_URL),
     ]
     if date_slug:
+        dated_event_stream = os.path.join(report_dir, f"{date_slug}.events.ndjson")
         artifacts.extend(
             [
                 manifest_artifact("dated_human_report", "markdown", os.path.join(report_dir, f"{date_slug}.md")),
                 manifest_artifact("dated_machine_report", "json", os.path.join(report_dir, f"{date_slug}.json"), schema_url=REPORT_SCHEMA_URL),
+                manifest_artifact(
+                    "dated_event_stream",
+                    "ndjson",
+                    dated_event_stream,
+                    schema_url=EVENT_SCHEMA_URL,
+                    required=os.path.exists(dated_event_stream),
+                ),
             ]
         )
 
@@ -2056,19 +2353,36 @@ def write_status_and_manifest(
 def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
     os.makedirs(report_dir, exist_ok=True)
     date_slug = str(payload.get("generated_at") or "latest")[:10]
+    latest_event_path = os.path.join(report_dir, "latest.events.ndjson")
+    dated_event_path = os.path.join(report_dir, f"{date_slug}.events.ndjson")
+    payload = dict(payload)
+    event_records = build_event_stream_records(payload)
+    payload["notable_changes"] = notable_changes_from_events(event_records)
+    payload["event_stream"] = {
+        "schema_url": EVENT_SCHEMA_URL,
+        "latest_path": normalize_artifact_path(latest_event_path),
+        "dated_path": normalize_artifact_path(dated_event_path),
+        "event_count": len(event_records),
+        "commit_event_count": len(event_records),
+        "release_event_count": 0,
+    }
     paths = [
         os.path.join(report_dir, "latest.json"),
         os.path.join(report_dir, f"{date_slug}.json"),
         os.path.join(report_dir, "latest.md"),
         os.path.join(report_dir, f"{date_slug}.md"),
+        latest_event_path,
+        dated_event_path,
     ]
 
     for path in paths[:2]:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, sort_keys=True)
             f.write("\n")
-    for path in paths[2:]:
+    for path in paths[2:4]:
         write_report_markdown(path, payload)
+    for path in paths[4:]:
+        write_ndjson(path, event_records)
 
     index_paths = write_report_index(report_dir)
     status_paths = write_status_and_manifest(
