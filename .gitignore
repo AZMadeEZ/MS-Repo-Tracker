@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Local verification output
+*-Verify/
+impl-smoke/
+full-reconcile/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

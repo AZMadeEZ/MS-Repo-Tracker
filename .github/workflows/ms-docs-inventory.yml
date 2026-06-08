@@ -1,15 +1,42 @@
-name: MS Docs Repo Inventory
+name: MS Repo Inventory Reconciliation
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Inventory mode"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - full
+          - incremental
+      overlap_hours:
+        description: "Incremental overlap window in hours"
+        required: true
+        default: "48"
+      ignore_cache:
+        description: "Ignore REST conditional request cache"
+        required: true
+        default: "false"
+        type: boolean
   schedule:
-    - cron: "20 1 * * *"  # daily at 01:20 UTC (12 hours offset from 13:20 UTC job)
+    - cron: "20 1 * * 0"  # weekly Sunday at 01:20 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: msft-repo-tracker-writers
+  cancel-in-progress: false
 
 jobs:
-  run:
+  reconcile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -25,20 +52,51 @@ jobs:
             pip install requests
           fi
 
-      - name: Generate inventories
+      - name: Reconcile inventory
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # or a PAT secret you create
-        run: python msft_docs_inventory.py
+          GITHUB_TOKEN: ${{ secrets.MS_REPO_TRACKER_GITHUB_TOKEN || github.token }}
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          OVERLAP_HOURS="${{ github.event.inputs.overlap_hours }}"
+          IGNORE_CACHE="${{ github.event.inputs.ignore_cache }}"
+
+          if [ -z "$MODE" ]; then MODE="full"; fi
+          if [ -z "$OVERLAP_HOURS" ]; then OVERLAP_HOURS="48"; fi
+
+          EXTRA_ARGS=""
+          if [ "$IGNORE_CACHE" = "true" ]; then
+            EXTRA_ARGS="--ignore-cache"
+          fi
+
+          set +e
+          python msft_docs_inventory.py \
+            --mode "$MODE" \
+            --overlap-hours "$OVERLAP_HOURS" \
+            --state msft_repo_tracker_state.json \
+            --include-other-baseline \
+            $EXTRA_ARGS
+          STATUS=$?
+          set -e
+
+          if [ "$STATUS" -eq 75 ]; then
+            echo "## Inventory reconciliation deferred" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The job stopped before exhausting GitHub API budget. Existing inventory/state were preserved." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          exit "$STATUS"
 
       - name: Commit outputs
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add msft_repo_inventory.csv msft_repo_inventory_watchfeeds.csv
+          git add msft_repo_inventory.csv msft_repo_inventory_watchfeeds.csv msft_repo_tracker_state.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
 
-          git commit -m "Update MS docs repo inventories"
+          git commit -m "Update MS repo inventory"
+          git pull --rebase
           git push

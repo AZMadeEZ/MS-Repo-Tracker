@@ -1,4 +1,4 @@
-name: Microsoft Docs/Samples Change Digest (Last 24h)
+name: Microsoft Repo Change Digest
 
 on:
   workflow_dispatch:
@@ -12,108 +12,186 @@ on:
         required: true
         default: "3"
       categories:
-        description: "Optional: comma-separated categories (docs,reference,training,samples). Leave blank for all."
+        description: "Comma-separated categories, or all. Blank defaults to docs/reference/training/samples."
         required: false
         default: ""
-      refresh_inventory:
-        description: "Regenerate msft_repo_inventory.csv before building the digest (enable when orgs.txt changed or inventory is stale)"
+      include_other:
+        description: "Include other-category repositories in digest output"
         required: true
         default: "false"
+        type: boolean
+      refresh_inventory:
+        description: "Refresh inventory before building the digest"
+        required: true
+        default: "true"
+        type: boolean
+      inventory_mode:
+        description: "Inventory refresh mode"
+        required: true
+        default: "incremental"
+        type: choice
+        options:
+          - incremental
+          - full
+      overlap_hours:
+        description: "Incremental overlap window in hours"
+        required: true
+        default: "48"
+      min_graphql_remaining:
+        description: "Minimum GraphQL points required before digest enrichment"
+        required: true
+        default: "100"
+      use_state_window:
+        description: "Extend digest lookback to last successful digest with overlap"
+        required: true
+        default: "true"
+        type: boolean
+      digest_overlap_hours:
+        description: "Overlap added before the last successful digest timestamp"
+        required: true
+        default: "2"
+      max_lookback_hours:
+        description: "Maximum state-extended digest lookback"
+        required: true
+        default: "168"
   schedule:
     - cron: "20 13 * * *"  # daily at 13:20 UTC
 
+permissions:
+  contents: write
+
 concurrency:
-  group: msft-docs-change-digest
-  cancel-in-progress: true
+  group: msft-repo-tracker-writers
+  cancel-in-progress: false
 
 jobs:
   digest:
     runs-on: ubuntu-latest
-
-    # Commit mode: workflow writes generated digest files back to the repository root.
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # If you have requirements.txt, install it; otherwise just install what the scripts need.
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           else
             pip install requests
           fi
 
-      # Optional: refresh the big inventory (can be expensive for huge org lists)
-      - name: Refresh inventory (optional)
-        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.refresh_inventory == 'true' }}
+      - name: Refresh inventory
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.refresh_inventory == 'true' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MS_REPO_TRACKER_GITHUB_TOKEN || github.token }}
         run: |
-          if [ ! -f msft_docs_inventory.py ]; then
-            echo "msft_docs_inventory.py not found. Commit msft_repo_inventory.csv or add the inventory script."
-            exit 1
+          MODE="${{ github.event.inputs.inventory_mode }}"
+          OVERLAP_HOURS="${{ github.event.inputs.overlap_hours }}"
+
+          if [ -z "$MODE" ]; then MODE="incremental"; fi
+          if [ -z "$OVERLAP_HOURS" ]; then OVERLAP_HOURS="48"; fi
+
+          set +e
+          python msft_docs_inventory.py \
+            --mode "$MODE" \
+            --overlap-hours "$OVERLAP_HOURS" \
+            --state msft_repo_tracker_state.json \
+            --include-other-baseline
+          STATUS=$?
+          set -e
+
+          if [ "$STATUS" -eq 75 ]; then
+            echo "## Inventory refresh deferred" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The digest will continue with the last committed inventory/state." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
           fi
-          if [ ! -f orgs.txt ]; then
-            echo "orgs.txt not found. Add orgs.txt (one org per line) or skip refresh_inventory."
-            exit 1
-          fi
-          python msft_docs_inventory.py
-          test -f msft_repo_inventory.csv
+
+          exit "$STATUS"
 
       - name: Ensure inventory exists
         run: |
           if [ ! -f msft_repo_inventory.csv ]; then
             echo "msft_repo_inventory.csv not found."
-            echo "Either commit it to the repo OR run workflow_dispatch with refresh_inventory=true."
+            echo "Run the inventory workflow or dispatch this workflow with refresh_inventory=true."
             exit 1
           fi
 
-      - name: Build last-N-hours change digest
+      - name: Build change digest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MS_REPO_TRACKER_GITHUB_TOKEN || github.token }}
         run: |
           HOURS="${{ github.event.inputs.hours }}"
           MAX_COMMITS="${{ github.event.inputs.max_commits }}"
           CATEGORIES="${{ github.event.inputs.categories }}"
+          INCLUDE_OTHER="${{ github.event.inputs.include_other }}"
+          MIN_GRAPHQL_REMAINING="${{ github.event.inputs.min_graphql_remaining }}"
+          USE_STATE_WINDOW="${{ github.event.inputs.use_state_window }}"
+          DIGEST_OVERLAP_HOURS="${{ github.event.inputs.digest_overlap_hours }}"
+          MAX_LOOKBACK_HOURS="${{ github.event.inputs.max_lookback_hours }}"
 
-          # When triggered by schedule, github.event.inputs.* is empty. Provide sane defaults.
           if [ -z "$HOURS" ]; then HOURS="24"; fi
           if [ -z "$MAX_COMMITS" ]; then MAX_COMMITS="5"; fi
+          if [ -z "$MIN_GRAPHQL_REMAINING" ]; then MIN_GRAPHQL_REMAINING="100"; fi
+          if [ -z "$USE_STATE_WINDOW" ]; then USE_STATE_WINDOW="true"; fi
+          if [ -z "$DIGEST_OVERLAP_HOURS" ]; then DIGEST_OVERLAP_HOURS="2"; fi
+          if [ -z "$MAX_LOOKBACK_HOURS" ]; then MAX_LOOKBACK_HOURS="168"; fi
 
+          EXTRA_ARGS=""
+          if [ "$INCLUDE_OTHER" = "true" ]; then
+            EXTRA_ARGS="--include-other"
+          fi
+          if [ "$USE_STATE_WINDOW" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --use-state-window"
+          fi
+
+          set +e
           python msft_changes_last24h.py \
             --input msft_repo_inventory.csv \
             --hours "$HOURS" \
             --max-commits "$MAX_COMMITS" \
-            --categories "$CATEGORIES"
+            --categories "$CATEGORIES" \
+            --min-graphql-remaining "$MIN_GRAPHQL_REMAINING" \
+            --state msft_repo_tracker_state.json \
+            --digest-overlap-hours "$DIGEST_OVERLAP_HOURS" \
+            --max-lookback-hours "$MAX_LOOKBACK_HOURS" \
+            $EXTRA_ARGS
+          STATUS=$?
+          set -e
 
-          test -f changes_last24h.csv
-          test -f changes_last24h.md
+          if [ "$STATUS" -eq 75 ]; then
+            echo "## Digest deferred" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The job stopped before exhausting GitHub GraphQL budget. Existing digest files were preserved." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          exit "$STATUS"
 
       - name: Commit outputs
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add changes_last24h.csv changes_last24h.md
+          git add msft_repo_inventory.csv msft_repo_inventory_watchfeeds.csv msft_repo_tracker_state.json changes_last24h.csv changes_last24h.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
 
-          git commit -m "Update Microsoft docs/samples change digest"
+          git commit -m "Update Microsoft repo change digest"
+          git pull --rebase
           git push
 
       - name: Add digest preview to workflow summary
+        if: ${{ hashFiles('changes_last24h.md') != '' }}
         run: |
           echo "## Microsoft repo change digest preview" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
@@ -121,5 +199,4 @@ jobs:
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "### Top of changes_last24h.md" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          # Prevent the summary from getting too large:
           head -n 200 changes_last24h.md >> "$GITHUB_STEP_SUMMARY"
