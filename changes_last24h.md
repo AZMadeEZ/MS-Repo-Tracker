@@ -1,4 +1,4 @@
-# Changes on default branch since 2026-06-07T19:47:34.674969Z
+# Changes on default branch since 2026-06-07T19:52:23.285832Z
 
 Repos with movement: **64**
 
@@ -70,7 +70,7 @@ Repos with movement: **64**
 ### dotnet
 
 - **dotnet/runtime** (`main`) - **19** commit(s)
-  - [[r2r] Enable generic cycles detection by default (#128957)](https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee) - 2026-06-08T19:47:32Z - Vlad Brezae (@BrzVlad)
+  - [[r2r] Enable generic cycles detection by default (#128957)](https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee) - 2026-06-08T19:47:32Z - Vlad Brezae (@BrzVlad) - PR: [[r2r] Enable generic cycles detection by default #128957](https://github.com/dotnet/runtime/pull/128957)
   - [Change jit fuzzer build to pull Antigen from jitutils (#129018)](https://github.com/dotnet/runtime/commit/2f1131bcfaeed5a8aed20739f4b50b7ff11381ae) - 2026-06-08T19:24:36Z - dhartglassMSFT (@dhartglassMSFT) - PR: [Change jit fuzzer build to pull Antigen from jitutils #129018](https://github.com/dotnet/runtime/pull/129018)
   - [[cDAC] Fix stale Continuation MT bug (#129109)](https://github.com/dotnet/runtime/commit/1818a74f437228b2f1b5fa6dba2f22c2de049a74) - 2026-06-08T17:34:25Z - Rachel Jarvi (@rcj1) - PR: [[cDAC] Fix stale Continuation MT bug #129109](https://github.com/dotnet/runtime/pull/129109)
   - [[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs t…](https://github.com/dotnet/runtime/commit/9350750112513bb3d09635f39f71cdb45e420ea5) - 2026-06-08T16:23:08Z - Radek Doulik (@radekdoulik) - PR: [[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs test #128318](https://github.com/dotnet/runtime/pull/128318)

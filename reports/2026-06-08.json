@@ -192,9 +192,9 @@
           "committed_date": "2026-06-08T19:47:32Z",
           "headline": "[r2r] Enable generic cycles detection by default (#128957)",
           "oid": "e099ef56d8b487971e4cdc8e8c85c7145905faee",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
+          "pr_number": 128957,
+          "pr_title": "[r2r] Enable generic cycles detection by default",
+          "pr_url": "https://github.com/dotnet/runtime/pull/128957",
           "url": "https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee"
         },
         {
@@ -2191,7 +2191,7 @@
     "include_forks": false,
     "include_other": false
   },
-  "generated_at": "2026-06-08T19:47:34.674969Z",
+  "generated_at": "2026-06-08T19:52:23.285832Z",
   "schema_version": 1,
   "summaries": {
     "by_category": {
@@ -2403,9 +2403,9 @@
           "committed_date": "2026-06-08T19:47:32Z",
           "headline": "[r2r] Enable generic cycles detection by default (#128957)",
           "oid": "e099ef56d8b487971e4cdc8e8c85c7145905faee",
-          "pr_number": null,
-          "pr_title": null,
-          "pr_url": null,
+          "pr_number": 128957,
+          "pr_title": "[r2r] Enable generic cycles detection by default",
+          "pr_url": "https://github.com/dotnet/runtime/pull/128957",
           "url": "https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee"
         },
         {
@@ -3322,7 +3322,7 @@
   },
   "window": {
     "hours_requested": 24,
-    "since": "2026-06-07T19:47:34.674969Z",
+    "since": "2026-06-07T19:52:23.285832Z",
     "state_window_enabled": true
   }
 }
