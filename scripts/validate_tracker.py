@@ -283,6 +283,23 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     dated_md = report_dir / f"{generated_date}.md"
     if generated_date and (not dated_json.exists() or not dated_md.exists()):
         raise RuntimeError("Report history is missing the generated-date files.")
+    latest_summary = report_dir / "latest.summary.json"
+    dated_summary = report_dir / f"{generated_date}.summary.json"
+    if not latest_summary.exists() or (generated_date and not dated_summary.exists()):
+        raise RuntimeError("Report summary files are missing.")
+    with latest_summary.open("r", encoding="utf-8") as f:
+        summary_payload = json.load(f)
+    validate_artifact_identity(summary_payload, "tracker-summary")
+    if summary_payload.get("generated_at") != payload.get("generated_at"):
+        raise RuntimeError("Report summary generated_at does not match latest report.")
+    if summary_payload.get("totals") != totals:
+        raise RuntimeError("Report summary totals do not match latest report.")
+    if summary_payload.get("event_stream") != event_stream:
+        raise RuntimeError("Report summary event_stream does not match latest report.")
+    if not isinstance(summary_payload.get("top_links"), list):
+        raise RuntimeError("Report summary is missing top_links.")
+    if latest_summary.read_text(encoding="utf-8") != dated_summary.read_text(encoding="utf-8"):
+        raise RuntimeError("Latest and dated report summaries differ.")
 
     md_text = latest_md.read_text(encoding="utf-8")
     if not (
@@ -473,7 +490,7 @@ def validate_manifest_status(report_dir: Path) -> None:
     if not isinstance(artifacts, list) or not artifacts:
         raise RuntimeError("Tracker manifest is missing artifacts.")
     artifact_names = {str(item.get("name") or "") for item in artifacts if isinstance(item, dict)}
-    for required_name in {"latest_machine_report", "latest_human_report", "latest_event_stream", "tracker_status"}:
+    for required_name in {"latest_machine_report", "latest_human_report", "latest_summary", "latest_event_stream", "tracker_status"}:
         if required_name not in artifact_names:
             raise RuntimeError(f"Tracker manifest is missing artifact: {required_name}")
 

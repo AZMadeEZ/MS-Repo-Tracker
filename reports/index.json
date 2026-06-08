@@ -13,7 +13,7 @@
       "repos_with_movement": 68
     }
   ],
-  "generated_at": "2026-06-08T22:36:22.251825Z",
+  "generated_at": "2026-06-08T22:43:23.903468Z",
   "latest": {
     "date": "2026-06-08",
     "default_branch_commits": 287,
@@ -441,7 +441,8 @@
     "release_count": 20,
     "report_json": "latest.json",
     "report_md": "latest.md",
-    "repos_with_movement": 68
+    "repos_with_movement": 68,
+    "summary_json": "latest.summary.json"
   },
   "report_count": 1,
   "schema_url": "schemas/report-index.v1.schema.json",

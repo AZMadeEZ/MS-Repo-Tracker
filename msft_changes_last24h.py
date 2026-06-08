@@ -39,6 +39,7 @@ DEFAULT_WATCHLIST_PATH = "watchlist.yml"
 ARTIFACT_VERSION = "1.0.0"
 REPORT_SCHEMA_URL = "schemas/report.v1.schema.json"
 REPORT_INDEX_SCHEMA_URL = "schemas/report-index.v1.schema.json"
+SUMMARY_SCHEMA_URL = "schemas/summary.v1.schema.json"
 MANIFEST_SCHEMA_URL = "schemas/manifest.v1.schema.json"
 STATUS_SCHEMA_URL = "schemas/status.v1.schema.json"
 DIGEST_CSV_SCHEMA_URL = "schemas/digest-csv.v1.schema.json"
@@ -2297,6 +2298,7 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
             "generated_at": latest.get("generated_at", ""),
             "report_md": "latest.md",
             "report_json": "latest.json",
+            "summary_json": "latest.summary.json",
             "event_stream": "latest.events.ndjson",
             "repos_with_movement": latest.get("repos_with_movement", 0),
             "default_branch_commits": latest.get("default_branch_commits", 0),
@@ -2352,7 +2354,10 @@ def write_report_index(report_dir: str) -> List[str]:
             status_label = "Fresh" if not freshness.get("latest_report_stale") else "Stale"
             f.write(f"- Status: {status_label} at latest report generation. Current status lives in `status.json`.\n")
             f.write(f"- Last generated: `{human_utc(generated)}`\n")
-            f.write(f"- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Events](latest.events.ndjson)\n\n")
+            f.write(
+                "- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), "
+                "[Summary](latest.summary.json), [Events](latest.events.ndjson)\n\n"
+            )
 
         trends = payload.get("trends") or {}
         for label, trend in (("7-Day Snapshot", trends.get("last_7_days") or {}), ("30-Day Snapshot", trends.get("last_30_days") or {})):
@@ -2808,6 +2813,39 @@ def notable_changes_from_events(records: List[Dict[str, Any]], limit: int = 25) 
     return notable
 
 
+def build_summary_payload(payload: Mapping[str, Any]) -> Dict[str, Any]:
+    generated_at = str(payload.get("generated_at") or "")
+    date_slug = generated_at[:10] if generated_at else ""
+    return {
+        "schema_version": 1,
+        "artifact_type": "tracker-summary",
+        "artifact_version": ARTIFACT_VERSION,
+        "schema_url": SUMMARY_SCHEMA_URL,
+        "generated_at": generated_at,
+        "source": payload.get("source") if isinstance(payload.get("source"), dict) else source_metadata(),
+        "freshness": freshness_payload(generated_at, parse_iso(generated_at) or dt.datetime.now(dt.timezone.utc)),
+        "window": payload.get("window") or {},
+        "filters": payload.get("filters") or {},
+        "totals": payload.get("totals") or {},
+        "event_stream": payload.get("event_stream") or {},
+        "plain_english_summary": build_plain_english_summary(payload),
+        "top_links": payload.get("top_links") or [],
+        "product_area_summary": payload.get("product_area_summary") or [],
+        "noise_summary": payload.get("noise_summary") or {},
+        "artifact_links": {
+            "latest_markdown": "reports/latest.md",
+            "latest_report_json": "reports/latest.json",
+            "latest_summary_json": "reports/latest.summary.json",
+            "latest_event_stream": "reports/latest.events.ndjson",
+            "report_index": "reports/index.md",
+            "dated_markdown": f"reports/{date_slug}.md" if date_slug else "",
+            "dated_report_json": f"reports/{date_slug}.json" if date_slug else "",
+            "dated_summary_json": f"reports/{date_slug}.summary.json" if date_slug else "",
+            "dated_event_stream": f"reports/{date_slug}.events.ndjson" if date_slug else "",
+        },
+    }
+
+
 def manifest_artifact(
     name: str,
     artifact_type: str,
@@ -2867,6 +2905,13 @@ def build_manifest_payload(
         manifest_artifact("latest_human_report", "markdown", os.path.join(report_dir, "latest.md")),
         manifest_artifact("latest_machine_report", "json", os.path.join(report_dir, "latest.json"), schema_url=REPORT_SCHEMA_URL),
         manifest_artifact(
+            "latest_summary",
+            "json",
+            os.path.join(report_dir, "latest.summary.json"),
+            schema_url=SUMMARY_SCHEMA_URL,
+            required=os.path.exists(os.path.join(report_dir, "latest.summary.json")),
+        ),
+        manifest_artifact(
             "latest_event_stream",
             "ndjson",
             latest_event_stream,
@@ -2887,6 +2932,13 @@ def build_manifest_payload(
             [
                 manifest_artifact("dated_human_report", "markdown", os.path.join(report_dir, f"{date_slug}.md")),
                 manifest_artifact("dated_machine_report", "json", os.path.join(report_dir, f"{date_slug}.json"), schema_url=REPORT_SCHEMA_URL),
+                manifest_artifact(
+                    "dated_summary",
+                    "json",
+                    os.path.join(report_dir, f"{date_slug}.summary.json"),
+                    schema_url=SUMMARY_SCHEMA_URL,
+                    required=os.path.exists(os.path.join(report_dir, f"{date_slug}.summary.json")),
+                ),
                 manifest_artifact(
                     "dated_event_stream",
                     "ndjson",
@@ -2992,22 +3044,33 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
         "commit_event_count": commit_event_count,
         "release_event_count": release_event_count,
     }
-    paths = [
+    report_json_paths = [
         os.path.join(report_dir, "latest.json"),
         os.path.join(report_dir, f"{date_slug}.json"),
+    ]
+    summary_paths = [
+        os.path.join(report_dir, "latest.summary.json"),
+        os.path.join(report_dir, f"{date_slug}.summary.json"),
+    ]
+    markdown_paths = [
         os.path.join(report_dir, "latest.md"),
         os.path.join(report_dir, f"{date_slug}.md"),
-        latest_event_path,
-        dated_event_path,
     ]
+    event_paths = [latest_event_path, dated_event_path]
+    paths = report_json_paths + summary_paths + markdown_paths + event_paths
 
-    for path in paths[:2]:
+    for path in report_json_paths:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, sort_keys=True)
             f.write("\n")
-    for path in paths[2:4]:
+    summary_payload = build_summary_payload(payload)
+    for path in summary_paths:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(summary_payload, f, indent=2, sort_keys=True)
+            f.write("\n")
+    for path in markdown_paths:
         write_report_markdown(path, payload)
-    for path in paths[4:]:
+    for path in event_paths:
         write_ndjson(path, event_records)
 
     index_paths = write_report_index(report_dir)

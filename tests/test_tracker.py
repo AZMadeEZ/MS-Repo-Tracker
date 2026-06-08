@@ -117,9 +117,11 @@ class DigestFilterTests(unittest.TestCase):
         )
         with tempfile.TemporaryDirectory() as tmp:
             paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
-            self.assertEqual(len(paths), 10)
+            self.assertEqual(len(paths), 12)
             self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
+            self.assertTrue((Path(tmp) / "reports" / "latest.summary.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "2026-01-02.summary.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "latest.events.ndjson").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.events.ndjson").exists())
             self.assertTrue((Path(tmp) / "reports" / "index.md").exists())
@@ -631,6 +633,24 @@ class ValidationScriptTests(unittest.TestCase):
             }
             for name in ("latest.json", "2026-01-01.json"):
                 (report_dir / name).write_text(json.dumps(report_payload), encoding="utf-8")
+            summary_payload = {
+                "schema_version": 1,
+                "artifact_type": "tracker-summary",
+                "artifact_version": changes.ARTIFACT_VERSION,
+                "schema_url": changes.SUMMARY_SCHEMA_URL,
+                "generated_at": "2026-01-01T00:00:00Z",
+                "freshness": {"latest_report_stale": False},
+                "window": report_payload["window"],
+                "totals": report_payload["totals"],
+                "event_stream": report_payload["event_stream"],
+                "plain_english_summary": ["One useful change landed."],
+                "top_links": [],
+                "product_area_summary": [],
+                "noise_summary": {},
+                "artifact_links": {},
+            }
+            for name in ("latest.summary.json", "2026-01-01.summary.json"):
+                (report_dir / name).write_text(json.dumps(summary_payload), encoding="utf-8")
             for name in ("latest.md", "2026-01-01.md"):
                 (report_dir / name).write_text(
                     (
@@ -749,6 +769,7 @@ class ValidationScriptTests(unittest.TestCase):
                 "artifacts": [
                     {"name": "latest_human_report", "artifact_type": "markdown", "path": str(report_dir / "latest.md"), "required": True},
                     {"name": "latest_machine_report", "artifact_type": "json", "path": str(report_dir / "latest.json"), "required": True, "schema_url": changes.REPORT_SCHEMA_URL},
+                    {"name": "latest_summary", "artifact_type": "json", "path": str(report_dir / "latest.summary.json"), "required": True, "schema_url": changes.SUMMARY_SCHEMA_URL},
                     {"name": "latest_event_stream", "artifact_type": "ndjson", "path": str(report_dir / "latest.events.ndjson"), "required": True, "schema_url": changes.EVENT_SCHEMA_URL},
                     {"name": "tracker_status", "artifact_type": "json", "path": str(report_dir / "status.json"), "required": True, "schema_url": changes.STATUS_SCHEMA_URL},
                 ],

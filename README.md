@@ -13,7 +13,7 @@ This repo includes two scripts:
 - Want today's human-readable brief? Read `reports/latest.md`.
 - Want the trend view? Read `reports/index.md`.
 - Want to know whether the data is fresh? Check `reports/status.json`.
-- Want machine-readable data? Use `reports/latest.json` or `reports/latest.events.ndjson`.
+- Want machine-readable data? Use `reports/latest.summary.json`, `reports/latest.json`, or `reports/latest.events.ndjson`.
 - Want to tune what matters? Edit `watchlist.yml` and `config/classification_rules.json`.
 
 ## What gets generated
@@ -26,8 +26,10 @@ Running the scripts creates these output files:
 - `changes_last24h.csv` - machine-friendly snapshot of recent repo activity.
 - `changes_last24h.md` - human-readable activity digest.
 - `reports/latest.md` and `reports/latest.json` - current daily brief for human review and downstream ingestion.
+- `reports/latest.summary.json` - compact broker summary for dashboards, notifications, and AI context.
 - `reports/latest.events.ndjson` - flat event-level stream for AI, search, and BI ingestion.
 - `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json` - dated report history.
+- `reports/YYYY-MM-DD.summary.json` - dated compact summary history.
 - `reports/YYYY-MM-DD.events.ndjson` - dated event stream history.
 - `reports/index.md` and `reports/index.json` - rolling report index with 7/30-day trend totals.
 - `reports/manifest.json` - artifact catalog for downstream ingestion.
@@ -140,9 +142,11 @@ Outputs:
 - `changes_last24h.md`
 - `reports/latest.md`
 - `reports/latest.json`
+- `reports/latest.summary.json`
 - `reports/latest.events.ndjson`
 - `reports/YYYY-MM-DD.md`
 - `reports/YYYY-MM-DD.json`
+- `reports/YYYY-MM-DD.summary.json`
 - `reports/YYYY-MM-DD.events.ndjson`
 - `reports/index.md`
 - `reports/index.json`
@@ -209,6 +213,7 @@ GitHub Actions also runs these checks through `validate.yml` on push, pull reque
 
 - Start with `reports/manifest.json` for artifact discovery.
 - Check `reports/status.json` for freshness, deferrals, and latest successful report time.
+- Use `reports/latest.summary.json` for compact dashboard, notification, or AI prompt context.
 - Use `reports/latest.events.ndjson` for AI, search, BI, or database ingestion.
 - Use `reports/latest.md` for the human daily brief.
 - Read `AI_CONTEXT.md`, `llms.txt`, `DATA_DICTIONARY.md`, and `docs/data-contract.md` before building downstream consumers.

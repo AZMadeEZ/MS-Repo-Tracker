@@ -16,6 +16,13 @@
       "schema_url": "schemas/report.v1.schema.json"
     },
     {
+      "artifact_type": "json",
+      "name": "latest_summary",
+      "path": "reports/latest.summary.json",
+      "required": true,
+      "schema_url": "schemas/summary.v1.schema.json"
+    },
+    {
       "artifact_type": "ndjson",
       "name": "latest_event_stream",
       "path": "reports/latest.events.ndjson",
@@ -84,6 +91,13 @@
       "schema_url": "schemas/report.v1.schema.json"
     },
     {
+      "artifact_type": "json",
+      "name": "dated_summary",
+      "path": "reports/2026-06-08.summary.json",
+      "required": true,
+      "schema_url": "schemas/summary.v1.schema.json"
+    },
+    {
       "artifact_type": "ndjson",
       "name": "dated_event_stream",
       "path": "reports/2026-06-08.events.ndjson",
@@ -114,7 +128,7 @@
   "schema_url": "schemas/manifest.v1.schema.json",
   "schema_version": 1,
   "source": {
-    "commit": "3ea00c3145993be00c6faa8cc4e2b0fa714f4f16",
+    "commit": "022ac0c7e1dd6392de105a1fb8e8b7b491fc1704",
     "repository": "",
     "workflow": "",
     "workflow_run_id": "",

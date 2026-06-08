@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-06-08T22:36:22.251825Z`
+Generated: `2026-06-08T22:43:23.903468Z`
 
 ## Latest Brief
 
@@ -10,7 +10,7 @@ Generated: `2026-06-08T22:36:22.251825Z`
 
 - Status: Fresh at latest report generation. Current status lives in `status.json`.
 - Last generated: `2026-06-08 21:38 UTC`
-- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Events](latest.events.ndjson)
+- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Summary](latest.summary.json), [Events](latest.events.ndjson)
 
 ## 7-Day Snapshot
 

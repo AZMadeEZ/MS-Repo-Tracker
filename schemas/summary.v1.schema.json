@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MS Repo Tracker Summary",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_type",
+    "artifact_version",
+    "schema_url",
+    "generated_at",
+    "freshness",
+    "window",
+    "totals",
+    "event_stream",
+    "plain_english_summary",
+    "top_links",
+    "product_area_summary",
+    "noise_summary",
+    "artifact_links"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "artifact_type": {
+      "const": "tracker-summary"
+    },
+    "artifact_version": {
+      "type": "string"
+    },
+    "schema_url": {
+      "const": "schemas/summary.v1.schema.json"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "freshness": {
+      "type": "object"
+    },
+    "window": {
+      "type": "object"
+    },
+    "filters": {
+      "type": "object"
+    },
+    "totals": {
+      "type": "object"
+    },
+    "event_stream": {
+      "type": "object"
+    },
+    "plain_english_summary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "product_area_summary": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "noise_summary": {
+      "type": "object"
+    },
+    "artifact_links": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

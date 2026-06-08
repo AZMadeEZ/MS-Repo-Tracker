@@ -8,9 +8,10 @@ Start here:
 
 1. `reports/manifest.json`
 2. `reports/status.json`
-3. `reports/latest.events.ndjson`
-4. `reports/latest.json`
-5. `reports/latest.md`
+3. `reports/latest.summary.json`
+4. `reports/latest.events.ndjson`
+5. `reports/latest.json`
+6. `reports/latest.md`
 
 Use `reports/manifest.json` to discover artifact paths and schemas. Use `reports/status.json` to decide whether the latest successful report is fresh, stale, or the latest scheduled attempt was deferred.
 
@@ -31,6 +32,7 @@ Treat generated files as committed data products. Do not infer freshness from co
 
 - For CSV commit counts, use `commit_count_window`, not deprecated `commit_count_24h`.
 - For report windows, use `window.since` and `window.until`.
+- For compact dashboard, notification, or prompt context, use `reports/latest.summary.json`.
 - For flat ingestion, use `reports/latest.events.ndjson`.
 - For deduplication, use event `dedupe_key`.
 - For report freshness, use `reports/status.json` fields `status`, `reason`, `latest_report_generated_at`, and `latest_report_stale`.

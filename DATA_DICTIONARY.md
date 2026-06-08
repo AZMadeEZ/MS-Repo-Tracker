@@ -9,7 +9,7 @@ All machine-readable JSON report artifacts include:
 | Field | Meaning |
 | --- | --- |
 | `schema_version` | Integer schema generation for backward-compatible parsing. Current value is `1`. |
-| `artifact_type` | Stable artifact identifier such as `tracker-report`, `tracker-report-index`, `tracker-status`, or `tracker-manifest`. |
+| `artifact_type` | Stable artifact identifier such as `tracker-report`, `tracker-summary`, `tracker-report-index`, `tracker-status`, or `tracker-manifest`. |
 | `artifact_version` | Producer contract version. Current value is `1.0.0`. |
 | `schema_url` | Repository-relative path to the artifact schema under `schemas/`. |
 | `generated_at` | UTC timestamp when the artifact was generated. |
@@ -77,7 +77,7 @@ All machine-readable JSON report artifacts include:
 | `summaries` | Rollups by category, org, and signal grouping. |
 | `top_repos` | Highest-scoring movement items for the daily brief. |
 | `activities` | Row-level repository movement details. |
-| `event_stream` | Paths and counts for the flat NDJSON event stream generated from `activities[].commits`. |
+| `event_stream` | Paths and counts for the flat NDJSON event stream generated from already-collected commit and release data. |
 | `notable_changes` | Top event-level changes selected from the event stream by notability score while filtering high-noise events. |
 | `product_area_summary` | Human-oriented product-area rollup with event, release, security, repo, noisy-event, and top-link counts. Unknown product areas are grouped as `Unmapped Activity`. |
 | `top_links` | Compact prioritized links to the most important changes in the brief. Intended for quick reading, dashboards, and notification summaries. |
@@ -87,6 +87,23 @@ All machine-readable JSON report artifacts include:
 | `graphql` | GraphQL enrichment strategy and batch telemetry. |
 | `events_prefilter` | Optional Events API candidate telemetry. |
 | `events_calibration` | Optional Events-vs-`pushed_at` calibration snapshot. |
+
+## Compact Summary JSON
+
+`reports/latest.summary.json` and `reports/YYYY-MM-DD.summary.json` are compact broker summaries for dashboards, notifications, and AI prompt context. They intentionally avoid the full nested activity list.
+
+| Field | Meaning |
+| --- | --- |
+| `freshness` | Fresh/stale/unknown state for the latest successful report at generation time. |
+| `window` | Effective report window copied from the full report. |
+| `filters` | Category, archived, fork, and Events API prefilter settings copied from the full report. |
+| `totals` | Inventory, candidate, movement, commit, and release counts copied from the full report. |
+| `event_stream` | Latest event-stream paths and commit/release event counts. |
+| `plain_english_summary` | Short human-readable bullet list used by the Markdown brief. |
+| `top_links` | Diverse prioritized links for quick triage. |
+| `product_area_summary` | Product-area event, repo, release, security, and top-link rollup. |
+| `noise_summary` | Automation/noise rollup. |
+| `artifact_links` | Stable pointers to latest and dated Markdown, JSON, summary, and event stream artifacts. |
 
 ## Report Index
 

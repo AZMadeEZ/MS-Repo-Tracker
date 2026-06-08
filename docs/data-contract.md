@@ -29,6 +29,7 @@ Current schemas include:
 - `schemas/digest-csv.v1.schema.json`
 - `schemas/report.v1.schema.json`
 - `schemas/report-index.v1.schema.json`
+- `schemas/summary.v1.schema.json`
 - `schemas/manifest.v1.schema.json`
 - `schemas/status.v1.schema.json`
 - `schemas/event.v1.schema.json`
@@ -40,6 +41,10 @@ Current schemas include:
 `reports/latest.events.ndjson` is the preferred machine-ingestion artifact for individual changes. Each line is a JSON object. Use `dedupe_key` to deduplicate across overlapping windows.
 
 The event stream is generated from already-collected `reports/latest.json` commit and release data and validated offline by `scripts/validate_tracker.py`. Consumers should branch on `event_type`; release records carry `event_type=release`, `published_at`, `release_tag`, `release_name`, and `release_url`.
+
+## Compact Summary
+
+`reports/latest.summary.json` is the preferred compact artifact for dashboards, notifications, and AI prompt context. It mirrors the latest report identity, freshness, window, totals, event stream counts, plain-English summary, product-area summary, top links, noise summary, and artifact pointers without the full nested activity list.
 
 ## Backward Compatibility
 
