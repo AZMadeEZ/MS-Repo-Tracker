@@ -150,6 +150,46 @@ def validate_digest(csv_path: Path, md_path: Path) -> list[dict[str, str]]:
     return rows
 
 
+def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dict[str, Any]:
+    latest_json = report_dir / "latest.json"
+    latest_md = report_dir / "latest.md"
+    if not latest_json.exists():
+        raise RuntimeError(f"Missing required report file: {latest_json}")
+    if not latest_md.exists():
+        raise RuntimeError(f"Missing required report file: {latest_md}")
+
+    with latest_json.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    if payload.get("schema_version") != 1:
+        raise RuntimeError("Unexpected report schema_version.")
+    if not payload.get("generated_at"):
+        raise RuntimeError("Report is missing generated_at.")
+
+    totals = payload.get("totals") or {}
+    repos_with_movement = int(totals.get("repos_with_movement") or 0)
+    if repos_with_movement != len(digest_rows):
+        raise RuntimeError(
+            "Report totals.repos_with_movement does not match digest CSV rows."
+        )
+
+    activities = payload.get("activities")
+    if not isinstance(activities, list) or len(activities) != len(digest_rows):
+        raise RuntimeError("Report activities do not match digest CSV rows.")
+
+    generated_date = str(payload.get("generated_at"))[:10]
+    dated_json = report_dir / f"{generated_date}.json"
+    dated_md = report_dir / f"{generated_date}.md"
+    if generated_date and (not dated_json.exists() or not dated_md.exists()):
+        raise RuntimeError("Report history is missing the generated-date files.")
+
+    md_text = latest_md.read_text(encoding="utf-8")
+    if not md_text.startswith("# Microsoft Repo Change Brief - "):
+        raise RuntimeError(f"{latest_md} does not look like a tracker report.")
+
+    return payload
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inventory", default="msft_repo_inventory.csv")
@@ -157,6 +197,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--state", default="msft_repo_tracker_state.json")
     parser.add_argument("--digest-csv", default="changes_last24h.csv")
     parser.add_argument("--digest-md", default="changes_last24h.md")
+    parser.add_argument("--reports-dir", default="reports")
+    parser.add_argument("--skip-reports", action="store_true")
     return parser
 
 
@@ -166,6 +208,8 @@ def main() -> int:
     watchfeed_rows = validate_watchfeeds(Path(args.watchfeeds), inventory_rows)
     validate_state(Path(args.state), inventory_rows)
     digest_rows = validate_digest(Path(args.digest_csv), Path(args.digest_md))
+    if not args.skip_reports:
+        validate_reports(Path(args.reports_dir), digest_rows)
 
     print(
         f"Validated {len(inventory_rows)} inventory rows and "

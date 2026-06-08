@@ -16,6 +16,8 @@ Running the scripts creates these output files:
 - `msft_repo_tracker_state.json` - durable scan state, rate-budget metadata, and conditional request cache metadata.
 - `changes_last24h.csv` - machine-friendly snapshot of recent repo activity.
 - `changes_last24h.md` - human-readable activity digest.
+- `reports/latest.md` and `reports/latest.json` - current daily brief for human review and downstream ingestion.
+- `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json` - dated report history.
 
 ## Requirements
 
@@ -100,11 +102,26 @@ Common options:
 - `--state msft_repo_tracker_state.json --use-state-window`: extend the lookback to the last successful digest timestamp, with overlap
 - `--digest-overlap-hours` (default `2`): overlap before the last successful digest timestamp when using state
 - `--max-lookback-hours` (default `168`): cap for state-extended digest windows
+- `--events-prefilter-mode off|union|intersect`: optionally use GitHub organization Events API pages as a candidate hint
+- `--reports-dir reports`: write the current and dated daily brief artifacts
+- `--no-reports`: skip report artifact generation
 
 Outputs:
 
 - `changes_last24h.csv`
 - `changes_last24h.md`
+- `reports/latest.md`
+- `reports/latest.json`
+- `reports/YYYY-MM-DD.md`
+- `reports/YYYY-MM-DD.json`
+
+Events prefilter modes:
+
+- `off`: default. Use inventory `pushed_at` as the digest prefilter.
+- `union`: include repos found by either inventory `pushed_at` or the organization Events API.
+- `intersect`: only enrich repos found by both inventory `pushed_at` and Events API when Events API returns candidates. If Events API returns no candidates, the script keeps the `pushed_at` candidates to avoid an accidental blank run.
+
+GitHub's Events API is optimized for polling with conditional requests and exposes `X-Poll-Interval`, but organization event feeds can have latency. Keep `off` for the safest scheduled default; use `union` or `intersect` when tuning collection efficiency.
 
 ## Typical Workflow
 
@@ -112,7 +129,7 @@ Outputs:
 2. Refresh inventory incrementally each day through `msft-docs-changes-last24h.yml`.
 3. Run full inventory reconciliation weekly through `ms-docs-inventory.yml` or manually with `workflow_dispatch`.
 4. Generate the changes digest daily through `msft-docs-changes-last24h.yml`.
-5. Review `changes_last24h.md` for a quick daily summary and use CSV outputs for automation/reporting.
+5. Review `reports/latest.md` for the daily brief, `changes_last24h.md` for the raw grouped digest, and CSV/JSON outputs for automation/reporting.
 
 ## Validation
 

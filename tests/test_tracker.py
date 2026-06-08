@@ -58,6 +58,59 @@ class DigestFilterTests(unittest.TestCase):
             path.write_text('{"schema_version": 1}', encoding="utf-8-sig")
             self.assertEqual(changes.load_state(str(path))["schema_version"], 1)
 
+    def test_extract_event_repo_names_reads_github_event_payloads(self) -> None:
+        events = [
+            {"type": "PushEvent", "repo": {"name": "MicrosoftDocs/azure-docs"}},
+            {"type": "WatchEvent", "repo": {"name": "not-a-full-name"}},
+            {"type": "ReleaseEvent", "repo": {"name": "Azure-Samples/sample"}},
+        ]
+        self.assertEqual(
+            changes.extract_event_repo_names(events),
+            {"MicrosoftDocs/azure-docs", "Azure-Samples/sample"},
+        )
+
+    def test_events_intersect_keeps_pushed_candidates_when_events_are_empty(self) -> None:
+        repos = [
+            changes.RepoInput(full_name="Org/one"),
+            changes.RepoInput(full_name="Org/two"),
+        ]
+        selected = changes.apply_events_prefilter("intersect", repos, [repos[0]], set())
+        self.assertEqual([repo.full_name for repo in selected], ["Org/one"])
+
+    def test_write_reports_creates_latest_and_dated_files(self) -> None:
+        activity = changes.RepoActivity(
+            full_name="Org/repo",
+            org="Org",
+            name="repo",
+            category="docs",
+            default_branch="main",
+            commit_count=1,
+            newest_commit_date="2026-01-01T00:00:00Z",
+            commits=[],
+        )
+        payload = changes.build_report_payload(
+            activities=[activity],
+            inventory_repo_count=2,
+            filtered_repo_count=1,
+            pushed_candidate_count=1,
+            candidate_repo_count=1,
+            since_iso="2026-01-01T00:00:00Z",
+            generated_at=dt.datetime(2026, 1, 2, 3, 4, tzinfo=dt.timezone.utc),
+            hours_requested=24,
+            selected_categories={"docs"},
+            include_other=False,
+            include_archived=False,
+            include_forks=False,
+            use_state_window=True,
+            events_prefilter_mode="off",
+            events_summary=None,
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
+            self.assertEqual(len(paths), 4)
+            self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
+            self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
+
 
 class InventoryHelperTests(unittest.TestCase):
     def test_read_orgs_strips_utf8_bom(self) -> None:
@@ -201,11 +254,27 @@ class ValidationScriptTests(unittest.TestCase):
                 "# Changes on default branch since 2026-01-01T00:00:00Z\n\n",
                 encoding="utf-8",
             )
+            report_dir = root / "reports"
+            report_dir.mkdir()
+            report_payload = {
+                "schema_version": 1,
+                "generated_at": "2026-01-01T00:00:00Z",
+                "totals": {"repos_with_movement": 1},
+                "activities": [{"full_name": "TestOrg/repo"}],
+            }
+            for name in ("latest.json", "2026-01-01.json"):
+                (report_dir / name).write_text(json.dumps(report_payload), encoding="utf-8")
+            for name in ("latest.md", "2026-01-01.md"):
+                (report_dir / name).write_text(
+                    "# Microsoft Repo Change Brief - 2026-01-01\n\n",
+                    encoding="utf-8",
+                )
 
             rows = validate_tracker.validate_inventory(inventory_path)
             validate_tracker.validate_watchfeeds(watchfeeds_path, rows)
             validate_tracker.validate_state(state_path, rows)
-            validate_tracker.validate_digest(digest_csv_path, digest_md_path)
+            digest_rows = validate_tracker.validate_digest(digest_csv_path, digest_md_path)
+            validate_tracker.validate_reports(report_dir, digest_rows)
 
     def test_validate_tracker_rejects_duplicate_full_names(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

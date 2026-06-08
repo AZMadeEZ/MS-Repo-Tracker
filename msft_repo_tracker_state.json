@@ -1,14 +1,16 @@
 {
   "last_digest": {
     "candidate_repos": 130,
-    "completed_at": "2026-06-08T19:32:59.519077Z",
+    "completed_at": "2026-06-08T19:47:34.674969Z",
     "digest_overlap_hours": 2,
+    "events_prefilter_mode": "off",
     "filtered_repos": 4638,
     "hours_requested": 24,
     "inventory_repos": 16414,
     "max_lookback_hours": 168,
+    "pushed_at_candidate_repos": 130,
     "repos_with_movement": 64,
-    "since": "2026-06-07T19:32:59.519077Z",
+    "since": "2026-06-07T19:47:34.674969Z",
     "state_window_enabled": true
   },
   "last_run": {

@@ -1,0 +1,3328 @@
+{
+  "activities": [
+    {
+      "category": "docs",
+      "commit_count": 40,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:08Z",
+          "headline": "status (#4198)",
+          "oid": "f02f47d25368ce31d85633a464ccd34e15bb4ffe",
+          "pr_number": 4198,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 71)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4198",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/f02f47d25368ce31d85633a464ccd34e15bb4ffe"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:04Z",
+          "headline": "status (#4197)",
+          "oid": "84ff327183f88edf52637219fb3bbecab903dc18",
+          "pr_number": 4197,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 70)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4197",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/84ff327183f88edf52637219fb3bbecab903dc18"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:00Z",
+          "headline": "status (#4196)",
+          "oid": "05e4ea9869085f506861b735630a2bc91b7b2bc9",
+          "pr_number": 4196,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 69)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4196",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/05e4ea9869085f506861b735630a2bc91b7b2bc9"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:39:56Z",
+          "headline": "status (#4195)",
+          "oid": "4bc6f3e196c956b5dde47efcba004aa5c546c6e2",
+          "pr_number": 4195,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 68)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4195",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/4bc6f3e196c956b5dde47efcba004aa5c546c6e2"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:39:52Z",
+          "headline": "status (#4194)",
+          "oid": "e27182e88dd872f07fc88b41605f360f63e76ce2",
+          "pr_number": 4194,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 67)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4194",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/e27182e88dd872f07fc88b41605f360f63e76ce2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs-powershell",
+      "name": "azure-docs-powershell",
+      "newest_commit_date": "2026-06-08T17:40:08Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "samples",
+      "commit_count": 25,
+      "commits": [
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T18:00:57Z",
+          "headline": "fix: show heartbeat during azd eval runs",
+          "oid": "f8c0dd6ab4296183d044485855143abcc9200030",
+          "pr_number": 264,
+          "pr_title": "fix: show heartbeat during azd eval runs",
+          "pr_url": "https://github.com/Azure/agentops/pull/264",
+          "url": "https://github.com/Azure/agentops/commit/f8c0dd6ab4296183d044485855143abcc9200030"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T17:49:38Z",
+          "headline": "fix: recommend eval init before azd eval run",
+          "oid": "9381b5362aa9e7a7a7551503af2bbb6fafbe5284",
+          "pr_number": 263,
+          "pr_title": "fix: recommend eval init before azd eval run",
+          "pr_url": "https://github.com/Azure/agentops/pull/263",
+          "url": "https://github.com/Azure/agentops/commit/9381b5362aa9e7a7a7551503af2bbb6fafbe5284"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T17:40:13Z",
+          "headline": "fix: bootstrap azd eval init context",
+          "oid": "9180b7921fff2c0da7fc77ef10eb569c74a2f627",
+          "pr_number": 262,
+          "pr_title": "fix: bootstrap azd eval init context",
+          "pr_url": "https://github.com/Azure/agentops/pull/262",
+          "url": "https://github.com/Azure/agentops/commit/9180b7921fff2c0da7fc77ef10eb569c74a2f627"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T14:43:51Z",
+          "headline": "fix: make prompt tutorial use azd eval (#261)",
+          "oid": "b129c3497681cd592c0f85afec6d67ee98d11a72",
+          "pr_number": 261,
+          "pr_title": "fix: make prompt tutorial use azd eval",
+          "pr_url": "https://github.com/Azure/agentops/pull/261",
+          "url": "https://github.com/Azure/agentops/commit/b129c3497681cd592c0f85afec6d67ee98d11a72"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T13:44:09Z",
+          "headline": "fix: persist eval recipe paths portably (#260)",
+          "oid": "7a8176c87bec3bbe0a5b33052dbe4a6b758fc1d2",
+          "pr_number": 260,
+          "pr_title": "fix: persist eval recipe paths portably",
+          "pr_url": "https://github.com/Azure/agentops/pull/260",
+          "url": "https://github.com/Azure/agentops/commit/7a8176c87bec3bbe0a5b33052dbe4a6b758fc1d2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/agentops",
+      "name": "agentops",
+      "newest_commit_date": "2026-06-08T18:00:57Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 22,
+      "commits": [
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:21:56Z",
+          "headline": "Merge pull request #8714 from microsoft/dependabot/npm_and_yarn/petst\u2026",
+          "oid": "a69c8da95a0506b32ef3de3bfecaa467b6212cd8",
+          "pr_number": 8714,
+          "pr_title": "build(deps-dev): bump webpack from 5.107.0 to 5.107.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8714",
+          "url": "https://github.com/microsoft/kiota-samples/commit/a69c8da95a0506b32ef3de3bfecaa467b6212cd8"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:21:10Z",
+          "headline": "Merge pull request #8706 from microsoft/dependabot/npm_and_yarn/petst\u2026",
+          "oid": "46e742411789823a0af02b60a888e3866ff3603b",
+          "pr_number": 8706,
+          "pr_title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8706",
+          "url": "https://github.com/microsoft/kiota-samples/commit/46e742411789823a0af02b60a888e3866ff3603b"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T16:20:39Z",
+          "headline": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "oid": "e53398706591f02b7c7cd3483b853f3ee9251695",
+          "pr_number": 8706,
+          "pr_title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8706",
+          "url": "https://github.com/microsoft/kiota-samples/commit/e53398706591f02b7c7cd3483b853f3ee9251695"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:20:18Z",
+          "headline": "Merge pull request #8716 from microsoft/dependabot/nuget/sample-api/a\u2026",
+          "oid": "98c91d3c59ed3f2b08abb7a64d10a845a68526b8",
+          "pr_number": 8716,
+          "pr_title": "Bump Microsoft.NET.Test.Sdk from 18.5.1 to 18.6.0",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8716",
+          "url": "https://github.com/microsoft/kiota-samples/commit/98c91d3c59ed3f2b08abb7a64d10a845a68526b8"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:19:33Z",
+          "headline": "Merge pull request #8727 from microsoft/dependabot/nuget/sample-api/a\u2026",
+          "oid": "9962c6c31bde8792a61fa6a7557255ec014f190f",
+          "pr_number": 8727,
+          "pr_title": "Bump Swashbuckle.AspNetCore from 10.1.7 to 10.2.1",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8727",
+          "url": "https://github.com/microsoft/kiota-samples/commit/9962c6c31bde8792a61fa6a7557255ec014f190f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-samples",
+      "name": "kiota-samples",
+      "newest_commit_date": "2026-06-08T16:21:56Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 19,
+      "commits": [
+        {
+          "author": "Vlad Brezae (@BrzVlad)",
+          "committed_date": "2026-06-08T19:47:32Z",
+          "headline": "[r2r] Enable generic cycles detection by default (#128957)",
+          "oid": "e099ef56d8b487971e4cdc8e8c85c7145905faee",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee"
+        },
+        {
+          "author": "dhartglassMSFT (@dhartglassMSFT)",
+          "committed_date": "2026-06-08T19:24:36Z",
+          "headline": "Change jit fuzzer build to pull Antigen from jitutils (#129018)",
+          "oid": "2f1131bcfaeed5a8aed20739f4b50b7ff11381ae",
+          "pr_number": 129018,
+          "pr_title": "Change jit fuzzer build to pull Antigen from jitutils",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129018",
+          "url": "https://github.com/dotnet/runtime/commit/2f1131bcfaeed5a8aed20739f4b50b7ff11381ae"
+        },
+        {
+          "author": "Rachel Jarvi (@rcj1)",
+          "committed_date": "2026-06-08T17:34:25Z",
+          "headline": "[cDAC] Fix stale Continuation MT bug (#129109)",
+          "oid": "1818a74f437228b2f1b5fa6dba2f22c2de049a74",
+          "pr_number": 129109,
+          "pr_title": "[cDAC] Fix stale Continuation MT bug",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129109",
+          "url": "https://github.com/dotnet/runtime/commit/1818a74f437228b2f1b5fa6dba2f22c2de049a74"
+        },
+        {
+          "author": "Radek Doulik (@radekdoulik)",
+          "committed_date": "2026-06-08T16:23:08Z",
+          "headline": "[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs t\u2026",
+          "oid": "9350750112513bb3d09635f39f71cdb45e420ea5",
+          "pr_number": 128318,
+          "pr_title": "[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs test",
+          "pr_url": "https://github.com/dotnet/runtime/pull/128318",
+          "url": "https://github.com/dotnet/runtime/commit/9350750112513bb3d09635f39f71cdb45e420ea5"
+        },
+        {
+          "author": "Egor Bogatov (@EgorBo)",
+          "committed_date": "2026-06-08T15:10:06Z",
+          "headline": "Remove PHASE_MERGE_THROWS (#129084)",
+          "oid": "ed9aba2aff039bcccfaa9bed980a6eb96bd4aa10",
+          "pr_number": 129084,
+          "pr_title": "Remove PHASE_MERGE_THROWS",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129084",
+          "url": "https://github.com/dotnet/runtime/commit/ed9aba2aff039bcccfaa9bed980a6eb96bd4aa10"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-06-08T19:47:32Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 14,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T18:27:09Z",
+          "headline": "Bump actions/github-script from 7 to 9 (#14004)",
+          "oid": "362fdf7843d03e8f40053b3378495a88ffb1916d",
+          "pr_number": 14004,
+          "pr_title": "Bump actions/github-script from 7 to 9",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14004",
+          "url": "https://github.com/dotnet/msbuild/commit/362fdf7843d03e8f40053b3378495a88ffb1916d"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:36:14Z",
+          "headline": "Bump actions/cache from 4 to 5 (#14001)",
+          "oid": "9df212006bcd5313c19cea541f5a00b58b3237cf",
+          "pr_number": 14001,
+          "pr_title": "Bump actions/cache from 4 to 5",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14001",
+          "url": "https://github.com/dotnet/msbuild/commit/9df212006bcd5313c19cea541f5a00b58b3237cf"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:23:57Z",
+          "headline": "Bump actions/download-artifact from 4 to 8 (#14000)",
+          "oid": "ead9a1f0e2c43c9902d7a693fbef3d142454d500",
+          "pr_number": 14000,
+          "pr_title": "Bump actions/download-artifact from 4 to 8",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14000",
+          "url": "https://github.com/dotnet/msbuild/commit/ead9a1f0e2c43c9902d7a693fbef3d142454d500"
+        },
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-06-08T15:43:29Z",
+          "headline": "Enabling weekly Dependabot updates for GitHub Actions (#13999)",
+          "oid": "3398824f5962a82d96381aa6cc2c00d2a9ef9a4e",
+          "pr_number": 13999,
+          "pr_title": "Enabling weekly Dependabot updates for GitHub Actions",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/13999",
+          "url": "https://github.com/dotnet/msbuild/commit/3398824f5962a82d96381aa6cc2c00d2a9ef9a4e"
+        },
+        {
+          "author": "P\u00e1draic Slattery (@pgoslatara)",
+          "committed_date": "2026-06-08T14:20:15Z",
+          "headline": "chore: Pin GitHub Actions to commit SHAs (#13269)",
+          "oid": "4dbca8e0a67bc7b84329f9b6bc54d5264714af56",
+          "pr_number": 13269,
+          "pr_title": "chore: Pin GitHub Actions to commit SHAs",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/13269",
+          "url": "https://github.com/dotnet/msbuild/commit/4dbca8e0a67bc7b84329f9b6bc54d5264714af56"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/msbuild",
+      "name": "msbuild",
+      "newest_commit_date": "2026-06-08T18:27:09Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 12,
+      "commits": [
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T18:14:20Z",
+          "headline": "Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2 (#59747)",
+          "oid": "709a6aeaad37d9d32808f1a429d070983ad971af",
+          "pr_number": 59747,
+          "pr_title": "Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59747",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/709a6aeaad37d9d32808f1a429d070983ad971af"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T17:29:23Z",
+          "headline": "Update azure-typespec/http-client-csharp version to prerelease 1.0.0-\u2026",
+          "oid": "b3baa956632b6d24b2fb940c4ff0e9bb66681e47",
+          "pr_number": 59744,
+          "pr_title": "Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260608.2",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59744",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/b3baa956632b6d24b2fb940c4ff0e9bb66681e47"
+        },
+        {
+          "author": "Nikolay Rovinskiy (@nick863)",
+          "committed_date": "2026-06-08T15:52:54Z",
+          "headline": "Generate a new code from refactored typespec (#59722)",
+          "oid": "fec47cef4fa13165cdeee669668450f9608ab41e",
+          "pr_number": 59722,
+          "pr_title": "Generate a new code from refactored typespec",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59722",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/fec47cef4fa13165cdeee669668450f9608ab41e"
+        },
+        {
+          "author": "Nikolay Rovinskiy (@nick863)",
+          "committed_date": "2026-06-08T15:52:42Z",
+          "headline": "Add sample, readme and test for External Agent (#59727)",
+          "oid": "2af2c29accbf4a306da98937b2fd513f90d42784",
+          "pr_number": 59727,
+          "pr_title": "Add sample, readme and test for External Agent",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59727",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/2af2c29accbf4a306da98937b2fd513f90d42784"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T15:16:06Z",
+          "headline": "Increment package version after release of Azure.ResourceManager.Cont\u2026",
+          "oid": "26471fae0fa9af2c3693e3491a9f0b35e18ec0b6",
+          "pr_number": 59734,
+          "pr_title": "Increment version for fleet releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59734",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/26471fae0fa9af2c3693e3491a9f0b35e18ec0b6"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-06-08T18:14:20Z",
+      "org": "Azure"
+    },
+    {
+      "category": "samples",
+      "commit_count": 9,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T19:11:13Z",
+          "headline": "Bump orjson from 3.10.15 to 3.11.6 in /python/web-browsing-agent (#99)",
+          "oid": "b8e88a684faa46e20e56ea82fcab7f85df0143cb",
+          "pr_number": 99,
+          "pr_title": "Bump orjson from 3.10.15 to 3.11.6 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/99",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/b8e88a684faa46e20e56ea82fcab7f85df0143cb"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T18:56:07Z",
+          "headline": "Bump pyasn1 from 0.6.1 to 0.6.3 in /python/web-browsing-agent (#98)",
+          "oid": "b3b9e53222f330a10c9de394508ae71a731605fd",
+          "pr_number": 98,
+          "pr_title": "Bump pyasn1 from 0.6.1 to 0.6.3 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/98",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/b3b9e53222f330a10c9de394508ae71a731605fd"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:26:19Z",
+          "headline": "Bump requests from 2.32.3 to 2.33.0 in /python/web-browsing-agent (#97)",
+          "oid": "fe5e8a31025d12691f78870f1f8e08c934d4753f",
+          "pr_number": 97,
+          "pr_title": "Bump requests from 2.32.3 to 2.33.0 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/97",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/fe5e8a31025d12691f78870f1f8e08c934d4753f"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:21:01Z",
+          "headline": "Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent\u2026",
+          "oid": "7cfd3b8a1ca683ea390afcad5bf1e25e419b2379",
+          "pr_number": 96,
+          "pr_title": "Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/96",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/7cfd3b8a1ca683ea390afcad5bf1e25e419b2379"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:18:21Z",
+          "headline": "Bump next from 15.5.7 to 15.5.18 in /docs (#83)",
+          "oid": "5075185f975100e0410b2ceb6b0d5ba9cb78abeb",
+          "pr_number": 83,
+          "pr_title": "Bump next from 15.5.7 to 15.5.18 in /docs",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/83",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/5075185f975100e0410b2ceb6b0d5ba9cb78abeb"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/teams-agent-accelerator-templates",
+      "name": "teams-agent-accelerator-templates",
+      "newest_commit_date": "2026-06-08T19:11:13Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 8,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T17:11:43Z",
+          "headline": "Force wllama to CPU",
+          "oid": "ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:46:55Z",
+          "headline": "Reduce history",
+          "oid": "11ae239b8caab1b0556f4486da025f10909b7b97",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/11ae239b8caab1b0556f4486da025f10909b7b97"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:44:13Z",
+          "headline": "Harden system prompt",
+          "oid": "3357909bea3b8a6d0b49cb7e654edf3640168354",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/3357909bea3b8a6d0b49cb7e654edf3640168354"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:31:25Z",
+          "headline": "Reduced WebLLM context window",
+          "oid": "5a440bd9dc931145fd6cefe99cc6e311ea1f485d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/5a440bd9dc931145fd6cefe99cc6e311ea1f485d"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T00:24:52Z",
+          "headline": "Optimization",
+          "oid": "54dfb8427601626ed5bc59cd330c46641352980a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/54dfb8427601626ed5bc59cd330c46641352980a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/ai-apps",
+      "name": "ai-apps",
+      "newest_commit_date": "2026-06-08T17:11:43Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "docs",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Fabian Meiswinkel (@FabianMeiswinkel)",
+          "committed_date": "2026-06-08T19:21:17Z",
+          "headline": "Cosmos Release 2026-06-08 (#49407)",
+          "oid": "a18aefd1f3a7392a166274092db4cc15986a2eca",
+          "pr_number": 49407,
+          "pr_title": "Cosmos Release 2026-06-08",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49407",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/a18aefd1f3a7392a166274092db4cc15986a2eca"
+        },
+        {
+          "author": "Matthew Metcalf (@mrm9084)",
+          "committed_date": "2026-06-08T18:25:13Z",
+          "headline": "Updating Missing Telemetry (#48978)",
+          "oid": "f8877c0abd43da6e2e769c8e77e7d6a51a7e6774",
+          "pr_number": 48978,
+          "pr_title": "Updating Missing Telemetry",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/48978",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/f8877c0abd43da6e2e769c8e77e7d6a51a7e6774"
+        },
+        {
+          "author": "Ryan Zhang (@ryazhang-microsoft)",
+          "committed_date": "2026-06-08T17:08:19Z",
+          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+          "oid": "387345eef6d7fbbc6bef0c8fe2affff566dc9aea",
+          "pr_number": 49391,
+          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49391",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/387345eef6d7fbbc6bef0c8fe2affff566dc9aea"
+        },
+        {
+          "author": "Jair Myree (@jairmyree)",
+          "committed_date": "2026-06-08T16:33:40Z",
+          "headline": "June 2026 Core Releases (#49394)",
+          "oid": "f94c21130e65f067a0a9d3c97e608482bc602d2a",
+          "pr_number": 49394,
+          "pr_title": "June 2026 Core Releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49394",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/f94c21130e65f067a0a9d3c97e608482bc602d2a"
+        },
+        {
+          "author": "Abhijeet Mohanty (@jeet1995)",
+          "committed_date": "2026-06-08T13:32:12Z",
+          "headline": "Gate HTTP/2 PING failure-based connection close exception rewraps to \u2026",
+          "oid": "c90525114f812380427c627cfc93218262170c19",
+          "pr_number": 49403,
+          "pr_title": "Gate HTTP/2 PING failure-based connection close exception rewraps to PING enablement flag.",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49403",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/c90525114f812380427c627cfc93218262170c19"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-java",
+      "name": "azure-sdk-for-java",
+      "newest_commit_date": "2026-06-08T19:21:17Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "xitzhang (@xitzhang)",
+          "committed_date": "2026-06-08T18:13:24Z",
+          "headline": "[VoiceLive] Add live test coverage and parametrize over API versions \u2026",
+          "oid": "dc5f9743b05ea78f938eba31cbe704150889490c",
+          "pr_number": 38790,
+          "pr_title": "[VoiceLive] Add live test coverage and parametrize over API versions",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38790",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c"
+        },
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-06-08T18:11:03Z",
+          "headline": "Update `@azure/openai` README links for Build Analyze link-check fail\u2026",
+          "oid": "bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
+          "pr_number": 38809,
+          "pr_title": "Update `@azure/openai` README links for Build Analyze link-check failures",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38809",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T16:02:58Z",
+          "headline": "[EngSys] automatic pnpm update (#38861)",
+          "oid": "09add7996feef1215e7a5f99d883fed8c39a3c6d",
+          "pr_number": 38861,
+          "pr_title": "[EngSys] automatic pnpm update",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38861",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T15:31:04Z",
+          "headline": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation\u2026",
+          "oid": "9637114573de5b7bc402209b444cb8e2bf035884",
+          "pr_number": 38808,
+          "pr_title": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38808",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T14:52:10Z",
+          "headline": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787\u2026",
+          "oid": "19f9ac5ba235b524ea925da6a46c5cc9c149c530",
+          "pr_number": 38811,
+          "pr_title": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38811",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-js",
+      "name": "azure-sdk-for-js",
+      "newest_commit_date": "2026-06-08T18:13:24Z",
+      "org": "Azure"
+    },
+    {
+      "category": "samples",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-08T00:35:21Z",
+          "headline": "Merge pull request #16 from microsoft/santiagxf/refactor",
+          "oid": "81c2ccd41c689bf98cc1db317be03d55e01a803d",
+          "pr_number": 16,
+          "pr_title": "fix: server",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/16",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/81c2ccd41c689bf98cc1db317be03d55e01a803d"
+        },
+        {
+          "author": "santiagxf (@santiagxf)",
+          "committed_date": "2026-06-08T00:34:50Z",
+          "headline": "fix: server",
+          "oid": "d915b924123c7026646d15b0d0dbf30ad4c07aa5",
+          "pr_number": 16,
+          "pr_title": "fix: server",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/16",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/d915b924123c7026646d15b0d0dbf30ad4c07aa5"
+        },
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-08T00:33:15Z",
+          "headline": "Merge pull request #15 from microsoft/santiagxf/refactor",
+          "oid": "352afc259f43eeb54d0f095559a294068e87938d",
+          "pr_number": 15,
+          "pr_title": "fix: refactor MCP and auth",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/352afc259f43eeb54d0f095559a294068e87938d"
+        },
+        {
+          "author": "santiagxf (@santiagxf)",
+          "committed_date": "2026-06-08T00:29:20Z",
+          "headline": "fix: refactor MCP and auth",
+          "oid": "0c276a29a0aaf9191ed6ed7883cb046f00a7f578",
+          "pr_number": 15,
+          "pr_title": "fix: refactor MCP and auth",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/0c276a29a0aaf9191ed6ed7883cb046f00a7f578"
+        },
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-07T21:54:42Z",
+          "headline": "Merge pull request #13 from microsoft/santiagxf/refactor",
+          "oid": "e532fac56baff32098d978de85a31d73e1681803",
+          "pr_number": 13,
+          "pr_title": "Refactor agent and MCP server integration",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/13",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/e532fac56baff32098d978de85a31d73e1681803"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "name": "Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "newest_commit_date": "2026-06-08T00:35:21Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "lucd1217 (@lucd1217)",
+          "committed_date": "2026-06-08T17:30:28Z",
+          "headline": "Little grammar and clarity tweaks (#9902)",
+          "oid": "975c3d049f44984430fed7483574bacb408e87ea",
+          "pr_number": 9902,
+          "pr_title": "Little grammar and clarity tweaks",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9902",
+          "url": "https://github.com/microsoft/vscode-docs/commit/975c3d049f44984430fed7483574bacb408e87ea"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:58:29Z",
+          "headline": "Merge pull request #9901 from microsoft/ntrogh/getstarted-editing-tut\u2026",
+          "oid": "04cbc2581e238550f3f29df508bdd5ba8cff1d99",
+          "pr_number": 9901,
+          "pr_title": "Add cross-link to editor tutorial",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9901",
+          "url": "https://github.com/microsoft/vscode-docs/commit/04cbc2581e238550f3f29df508bdd5ba8cff1d99"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:44:20Z",
+          "headline": "Add cross-link to editor tutorial",
+          "oid": "affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07",
+          "pr_number": 9901,
+          "pr_title": "Add cross-link to editor tutorial",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9901",
+          "url": "https://github.com/microsoft/vscode-docs/commit/affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:20:30Z",
+          "headline": "Merge pull request #9900 from microsoft/ntrogh/insiders-relnotes",
+          "oid": "169439320d6f027b1338806c255d6d80cdf9b846",
+          "pr_number": 9900,
+          "pr_title": "Update Insiders release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9900",
+          "url": "https://github.com/microsoft/vscode-docs/commit/169439320d6f027b1338806c255d6d80cdf9b846"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:14:38Z",
+          "headline": "Update Insiders release notes",
+          "oid": "57d20a120658f60072665f0f29982bb1413be955",
+          "pr_number": 9900,
+          "pr_title": "Update Insiders release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9900",
+          "url": "https://github.com/microsoft/vscode-docs/commit/57d20a120658f60072665f0f29982bb1413be955"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/vscode-docs",
+      "name": "vscode-docs",
+      "newest_commit_date": "2026-06-08T17:30:28Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 5,
+      "commits": [
+        {
+          "author": "Jason Malinowski (@jasonmalinowski)",
+          "committed_date": "2026-06-08T17:49:22Z",
+          "headline": "Fix mishandling of large embedded C# literals (#84043)",
+          "oid": "644b5da46ba33d4057d82b7629e8def3b88dae64",
+          "pr_number": 84043,
+          "pr_title": "Fix mishandling of large embedded C# literals",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84043",
+          "url": "https://github.com/dotnet/roslyn/commit/644b5da46ba33d4057d82b7629e8def3b88dae64"
+        },
+        {
+          "author": "dotnet-maestro[bot] (@dotnet-maestro[bot])",
+          "committed_date": "2026-06-08T16:12:49Z",
+          "headline": "[main] Update dependencies from dotnet/roslyn (#84058)",
+          "oid": "82ad1e15e364edbd6ca59d8a8325df2b6488e28e",
+          "pr_number": 84058,
+          "pr_title": "[main] Update dependencies from dotnet/roslyn",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84058",
+          "url": "https://github.com/dotnet/roslyn/commit/82ad1e15e364edbd6ca59d8a8325df2b6488e28e"
+        },
+        {
+          "author": "Jan Jones (@jjonescz)",
+          "committed_date": "2026-06-08T13:02:14Z",
+          "headline": "Unsafe evolution: propagate unsafe context to constructor initializer\u2026",
+          "oid": "d48095f632dad4d30b44d2b4d6a84163e3101024",
+          "pr_number": 83969,
+          "pr_title": "Unsafe evolution: propagate unsafe context to constructor initializer",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/83969",
+          "url": "https://github.com/dotnet/roslyn/commit/d48095f632dad4d30b44d2b4d6a84163e3101024"
+        },
+        {
+          "author": "Brad White (@bradselw)",
+          "committed_date": "2026-06-08T08:14:51Z",
+          "headline": "Parameterize DartLab templates repository alias (#84037)",
+          "oid": "8f825c9697554bd194c542154a6026b842068dde",
+          "pr_number": 84037,
+          "pr_title": "Parameterize DartLab templates repository alias",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84037",
+          "url": "https://github.com/dotnet/roslyn/commit/8f825c9697554bd194c542154a6026b842068dde"
+        },
+        {
+          "author": "Jan Jones (@jjonescz)",
+          "committed_date": "2026-06-08T08:02:09Z",
+          "headline": "Fix frontmatter syntax in Compiler.instructions.md (#84032)",
+          "oid": "a036b051ef24abb6f06e097f0d9948757cee8e6f",
+          "pr_number": 84032,
+          "pr_title": "Fix frontmatter syntax in Compiler.instructions.md",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84032",
+          "url": "https://github.com/dotnet/roslyn/commit/a036b051ef24abb6f06e097f0d9948757cee8e6f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/roslyn",
+      "name": "roslyn",
+      "newest_commit_date": "2026-06-08T17:49:22Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T19:36:42Z",
+          "headline": "docs: fix stale Bot Gateway code citations in CLI-port notes (#13)",
+          "oid": "9e590fe203234d640ce1944ac5e8452c41da38bf",
+          "pr_number": 13,
+          "pr_title": "docs: fix stale Bot Gateway code citations (follow-up to #12)",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/13",
+          "url": "https://github.com/microsoft/entrabot/commit/9e590fe203234d640ce1944ac5e8452c41da38bf"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T17:29:32Z",
+          "headline": "refactor: remove Teams Bot Gateway auth mode (ADR-006) (#12)",
+          "oid": "68a1a4e4c0891eeeb738e42f0963bb8e51daddef",
+          "pr_number": 12,
+          "pr_title": "refactor: remove Teams Bot Gateway auth mode (ADR-006)",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/12",
+          "url": "https://github.com/microsoft/entrabot/commit/68a1a4e4c0891eeeb738e42f0963bb8e51daddef"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T00:32:27Z",
+          "headline": "chore(claude): allowlist persona-sati MCP tools to prevent non-intera\u2026",
+          "oid": "bdb28bcd3e2e0810a07223b52e97babb5a26b009",
+          "pr_number": 11,
+          "pr_title": "chore(claude): allowlist persona-sati MCP tools to prevent non-interactive REJECT",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/11",
+          "url": "https://github.com/microsoft/entrabot/commit/bdb28bcd3e2e0810a07223b52e97babb5a26b009"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-07T22:10:05Z",
+          "headline": "Merge pull request #10 from microsoft/fix/active-sponsor-channel-binding",
+          "oid": "4d5af66155b93ba8697bd250222d4e3521a20d38",
+          "pr_number": 10,
+          "pr_title": "fix(security): require active-sponsor-channel binding for add_teams_member and share_file",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/10",
+          "url": "https://github.com/microsoft/entrabot/commit/4d5af66155b93ba8697bd250222d4e3521a20d38"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/entrabot",
+      "name": "entrabot",
+      "newest_commit_date": "2026-06-08T19:36:42Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Maxwell (@m-x-shokhzod)",
+          "committed_date": "2026-06-08T16:58:41Z",
+          "headline": "EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs (\u2026",
+          "oid": "04b37f3ed41fd685a68c9402fe19871d2e20037a",
+          "pr_number": 38208,
+          "pr_title": "EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38208",
+          "url": "https://github.com/dotnet/efcore/commit/04b37f3ed41fd685a68c9402fe19871d2e20037a"
+        },
+        {
+          "author": "Maxwell (@m-x-shokhzod)",
+          "committed_date": "2026-06-08T16:53:58Z",
+          "headline": "Translate List<T>.Exists to Queryable.Any (#38226)",
+          "oid": "1c5cd69729c8ac7f5a3df766286db99f49dc6031",
+          "pr_number": 38226,
+          "pr_title": "Translate List<T>.Exists to Queryable.Any",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38226",
+          "url": "https://github.com/dotnet/efcore/commit/1c5cd69729c8ac7f5a3df766286db99f49dc6031"
+        },
+        {
+          "author": "Arthur Vickers (@ajcvickers)",
+          "committed_date": "2026-06-08T16:36:55Z",
+          "headline": "Make DateTime.Parse translation tests culture-invariant (#38384)",
+          "oid": "e4afabf3d42d601fe72cf307f177592adbefb998",
+          "pr_number": 38384,
+          "pr_title": "Make DateTime.Parse translation tests culture-invariant",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38384",
+          "url": "https://github.com/dotnet/efcore/commit/e4afabf3d42d601fe72cf307f177592adbefb998"
+        },
+        {
+          "author": "dotnet-maestro[bot] (@dotnet-maestro[bot])",
+          "committed_date": "2026-06-08T15:58:29Z",
+          "headline": "Update dependencies from build 317483 (#38380)",
+          "oid": "7201613c0031141cebdc196a9d9df402667f3e9d",
+          "pr_number": 38380,
+          "pr_title": "[main] Source code updates from dotnet/dotnet",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38380",
+          "url": "https://github.com/dotnet/efcore/commit/7201613c0031141cebdc196a9d9df402667f3e9d"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/efcore",
+      "name": "efcore",
+      "newest_commit_date": "2026-06-08T16:58:41Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "samples",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Selena Yang (@selenayang888)",
+          "committed_date": "2026-06-08T19:23:53Z",
+          "headline": "Fix Type-confusion: raw-pointer bind_input causing OOB write (#28839)",
+          "oid": "7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036",
+          "pr_number": 28839,
+          "pr_title": "Fix Type-confusion: raw-pointer bind_input causing OOB write",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28839",
+          "url": "https://github.com/microsoft/onnxruntime/commit/7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036"
+        },
+        {
+          "author": "Max Buckley (@maxwbuckley)",
+          "committed_date": "2026-06-08T17:08:22Z",
+          "headline": "[CoreML EP] Add Where and And builders (#28597)",
+          "oid": "073e49ffe1b70e61ea5e5cf4dec17ea9879914f8",
+          "pr_number": 28597,
+          "pr_title": "[CoreML EP] Add Where and And builders",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28597",
+          "url": "https://github.com/microsoft/onnxruntime/commit/073e49ffe1b70e61ea5e5cf4dec17ea9879914f8"
+        },
+        {
+          "author": "Sanaa Hamel (@sanaa-hamel-microsoft)",
+          "committed_date": "2026-06-08T14:29:05Z",
+          "headline": "fix(ci): nodejs on nuget cuda 13 hangs (#28816)",
+          "oid": "8f6e944b8658ef146593e7852d984536dee37d3e",
+          "pr_number": 28816,
+          "pr_title": "fix(ci): nodejs on nuget cuda 13 hangs",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28816",
+          "url": "https://github.com/microsoft/onnxruntime/commit/8f6e944b8658ef146593e7852d984536dee37d3e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-06-08T19:23:53Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Ryan Zhang (@ryazhang-microsoft)",
+          "committed_date": "2026-06-08T19:23:44Z",
+          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+          "oid": "2fb56bf4f962171f7eb7efc6daad23bf610ae906",
+          "pr_number": 47368,
+          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47368",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T16:42:10Z",
+          "headline": "Increment package version after release of azure-monitor-opentelemetr\u2026",
+          "oid": "321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
+          "pr_number": 47394,
+          "pr_title": "Increment version for monitor releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8"
+        },
+        {
+          "author": "Radhika Gupta (@rads-1996)",
+          "committed_date": "2026-06-08T14:24:26Z",
+          "headline": "Exporter release 1.0.0b53 (#47296)",
+          "oid": "6f3980e81598b271c5a3ac3912e9da67e2d1b479",
+          "pr_number": 47296,
+          "pr_title": "Exporter release 1.0.0b53",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-python",
+      "name": "azure-sdk-for-python",
+      "newest_commit_date": "2026-06-08T19:23:44Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Reuben Bond (@ReubenBond)",
+          "committed_date": "2026-06-08T19:16:28Z",
+          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
+          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
+          "pr_number": 10182,
+          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
+          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T19:03:23Z",
+          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
+          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
+          "pr_number": 10184,
+          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
+          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
+        },
+        {
+          "author": "Cluster7ck (@Cluster7ck)",
+          "committed_date": "2026-06-08T19:02:39Z",
+          "headline": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up\u2026",
+          "oid": "70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3",
+          "pr_number": 10176,
+          "pr_title": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10176",
+          "url": "https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/orleans",
+      "name": "orleans",
+      "newest_commit_date": "2026-06-08T19:16:28Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:16:00Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9 (#411)",
+          "oid": "79305774e2bc60fbb8a9bb831bf4fdaefaeafeea",
+          "pr_number": 411,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/411",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/79305774e2bc60fbb8a9bb831bf4fdaefaeafeea"
+        },
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:11:39Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8 (#409)",
+          "oid": "b471075ef349b3efd2f724cb816eb4805258dd7f",
+          "pr_number": 409,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/409",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/b471075ef349b3efd2f724cb816eb4805258dd7f"
+        },
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:09:56Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7 (#408)",
+          "oid": "67ac3e9d59a5d10be15d3a412b3c3795d5a401d4",
+          "pr_number": 408,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/408",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/67ac3e9d59a5d10be15d3a412b3c3795d5a401d4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/PowerShell-Docs-Modules",
+      "name": "PowerShell-Docs-Modules",
+      "newest_commit_date": "2026-06-08T18:16:00Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T11:19:19Z",
+          "headline": "Bump Spectre.Console from 0.55.2 to 0.56.0 (#7770)",
+          "oid": "369efd30c140db0e91d372d7504182c7d778c85e",
+          "pr_number": 7770,
+          "pr_title": "Bump Spectre.Console from 0.55.2 to 0.56.0",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7770",
+          "url": "https://github.com/microsoft/kiota/commit/369efd30c140db0e91d372d7504182c7d778c85e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T10:23:42Z",
+          "headline": "build(deps-dev): bump @types/node in /it/typescript (#7768)",
+          "oid": "f873a879e79802b58ed1fb93f3f332c3b7cac357",
+          "pr_number": 7768,
+          "pr_title": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /it/typescript",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7768",
+          "url": "https://github.com/microsoft/kiota/commit/f873a879e79802b58ed1fb93f3f332c3b7cac357"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T10:00:49Z",
+          "headline": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode (#\u2026",
+          "oid": "39939a54052a8d555607609dd98b11e8e4c7d8de",
+          "pr_number": 7769,
+          "pr_title": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7769",
+          "url": "https://github.com/microsoft/kiota/commit/39939a54052a8d555607609dd98b11e8e4c7d8de"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota",
+      "name": "kiota",
+      "newest_commit_date": "2026-06-08T11:19:19Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T00:27:10Z",
+          "headline": "Updated model versions",
+          "oid": "0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/0ca891eb637e3f5e782fce09c5a67c1eed9a7b3f"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-07T21:22:45Z",
+          "headline": "Correct model name",
+          "oid": "094362458804b180843fdd64a3e4e4bd81684a97",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/094362458804b180843fdd64a3e4e4bd81684a97"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-07T21:18:03Z",
+          "headline": "Updated NLP tasks",
+          "oid": "5184291d3f281798a7736d5fb46fc95a8fb11fb0",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/5184291d3f281798a7736d5fb46fc95a8fb11fb0"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-ai-concepts",
+      "name": "mslearn-ai-concepts",
+      "newest_commit_date": "2026-06-08T00:27:10Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Dinah Xiaoman G (@DinahK-2SO)",
+          "committed_date": "2026-06-08T18:43:48Z",
+          "headline": "Add Templates PR validation pipeline (dotnet new + VSIX) (#6526)",
+          "oid": "9bde0388e0177b11a012d8b475eb1edeabebcccc",
+          "pr_number": 6526,
+          "pr_title": "Add Templates PR validation pipeline (dotnet new + VSIX)",
+          "pr_url": "https://github.com/microsoft/WindowsAppSDK/pull/6526",
+          "url": "https://github.com/microsoft/WindowsAppSDK/commit/9bde0388e0177b11a012d8b475eb1edeabebcccc"
+        },
+        {
+          "author": "ssparach (@ssparach)",
+          "committed_date": "2026-06-08T16:38:03Z",
+          "headline": "[WinAppSDK CMake Support]: Implicitly choose deployment mode based on\u2026",
+          "oid": "f9f3c39dfd64d66dc1fbe2baecda5288c705e2b4",
+          "pr_number": 6490,
+          "pr_title": "[WinAppSDK CMake Support]: Implicitly choose deployment mode based on WindowsAppSDKSelfContained",
+          "pr_url": "https://github.com/microsoft/WindowsAppSDK/pull/6490",
+          "url": "https://github.com/microsoft/WindowsAppSDK/commit/f9f3c39dfd64d66dc1fbe2baecda5288c705e2b4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/WindowsAppSDK",
+      "name": "WindowsAppSDK",
+      "newest_commit_date": "2026-06-08T18:43:48Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "titanniya542-spec (@titanniya542-spec)",
+          "committed_date": "2026-06-08T17:13:55Z",
+          "headline": "docs: fix bicep publish force example (#6015)",
+          "oid": "36ffb1d285ffacf59ccc9244415f903dce6eab4b",
+          "pr_number": 6015,
+          "pr_title": "docs: fix bicep publish force example",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-cli/pull/6015",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-cli/commit/36ffb1d285ffacf59ccc9244415f903dce6eab4b"
+        },
+        {
+          "author": "Azure CLI Bot (@azclibot)",
+          "committed_date": "2026-06-08T17:06:48Z",
+          "headline": "Update CLI extensions available doc. (#6014)",
+          "oid": "319807ffb1f715ddc51ed48d1c6b218c1eedb405",
+          "pr_number": 6014,
+          "pr_title": "Update CLI extensions available doc",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-cli/pull/6014",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-cli/commit/319807ffb1f715ddc51ed48d1c6b218c1eedb405"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs-cli",
+      "name": "azure-docs-cli",
+      "newest_commit_date": "2026-06-08T17:13:55Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "samples",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "renovate[bot] (@renovate[bot])",
+          "committed_date": "2026-06-08T16:30:57Z",
+          "headline": "chore(deps): update vllm/vllm-openai docker tag to v0.22.1",
+          "oid": "832342cc64f01d3563972acfbd25c18a7753dfe8",
+          "pr_number": 160,
+          "pr_title": "chore(deps): update Docker base images (nvidia/cuda, vllm-openai)",
+          "pr_url": "https://github.com/Azure/aks-rdma-infiniband/pull/160",
+          "url": "https://github.com/Azure/aks-rdma-infiniband/commit/832342cc64f01d3563972acfbd25c18a7753dfe8"
+        },
+        {
+          "author": "renovate[bot] (@renovate[bot])",
+          "committed_date": "2026-06-08T16:30:57Z",
+          "headline": "chore(deps): update nvidia/cuda docker tag to v13.3.0",
+          "oid": "950ac7e0d5ba76cf0e7c42d9c9239084ad686897",
+          "pr_number": 160,
+          "pr_title": "chore(deps): update Docker base images (nvidia/cuda, vllm-openai)",
+          "pr_url": "https://github.com/Azure/aks-rdma-infiniband/pull/160",
+          "url": "https://github.com/Azure/aks-rdma-infiniband/commit/950ac7e0d5ba76cf0e7c42d9c9239084ad686897"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/aks-rdma-infiniband",
+      "name": "aks-rdma-infiniband",
+      "newest_commit_date": "2026-06-08T16:30:57Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-06-08T16:26:10Z",
+          "headline": "Merge pull request #214 from microsoftgraph/dependabot/go_modules/src\u2026",
+          "oid": "56fbf186b82e698360a52e80a0d2ed43d6c80244",
+          "pr_number": 214,
+          "pr_title": "Bump github.com/Azure/azure-sdk-for-go/sdk/azcore from 1.21.1 to 1.22.0 in /src",
+          "pr_url": "https://github.com/microsoftgraph/msgraph-snippets-go/pull/214",
+          "url": "https://github.com/microsoftgraph/msgraph-snippets-go/commit/56fbf186b82e698360a52e80a0d2ed43d6c80244"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T16:23:05Z",
+          "headline": "Bump github.com/Azure/azure-sdk-for-go/sdk/azcore in /src",
+          "oid": "d5dad26e59d368e9415084676daccb045b6389ea",
+          "pr_number": 214,
+          "pr_title": "Bump github.com/Azure/azure-sdk-for-go/sdk/azcore from 1.21.1 to 1.22.0 in /src",
+          "pr_url": "https://github.com/microsoftgraph/msgraph-snippets-go/pull/214",
+          "url": "https://github.com/microsoftgraph/msgraph-snippets-go/commit/d5dad26e59d368e9415084676daccb045b6389ea"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoftgraph/msgraph-snippets-go",
+      "name": "msgraph-snippets-go",
+      "newest_commit_date": "2026-06-08T16:26:10Z",
+      "org": "microsoftgraph"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-06-08T15:07:55Z",
+          "headline": "Merge pull request #2040 from microsoft/dependabot/npm_and_yarn/micro\u2026",
+          "oid": "cf22bfccfd28f500e777ffb762be5554a04ce1ac",
+          "pr_number": 2040,
+          "pr_title": "auto dependabot: bump @microsoft/sp-http from 1.23.0 to 1.23.1",
+          "pr_url": "https://github.com/microsoft/kiota-typescript/pull/2040",
+          "url": "https://github.com/microsoft/kiota-typescript/commit/cf22bfccfd28f500e777ffb762be5554a04ce1ac"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T14:33:34Z",
+          "headline": "auto dependabot: bump @microsoft/sp-http from 1.23.0 to 1.23.1",
+          "oid": "e0c8a76a4a00b1d2869316500d5773d656d63c6a",
+          "pr_number": 2040,
+          "pr_title": "auto dependabot: bump @microsoft/sp-http from 1.23.0 to 1.23.1",
+          "pr_url": "https://github.com/microsoft/kiota-typescript/pull/2040",
+          "url": "https://github.com/microsoft/kiota-typescript/commit/e0c8a76a4a00b1d2869316500d5773d656d63c6a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-typescript",
+      "name": "kiota-typescript",
+      "newest_commit_date": "2026-06-08T15:07:55Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T14:38:14Z",
+          "headline": "deps(deps-dev): bump @types/node in /tools/dragon-copilot-cli (#244)",
+          "oid": "c72bd288b8facac7c67ed153c9c0a01c1115980e",
+          "pr_number": 244,
+          "pr_title": "deps(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /tools/dragon-copilot-cli",
+          "pr_url": "https://github.com/microsoft/dragon-copilot-extension-samples/pull/244",
+          "url": "https://github.com/microsoft/dragon-copilot-extension-samples/commit/c72bd288b8facac7c67ed153c9c0a01c1115980e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T14:37:15Z",
+          "headline": "deps: Bump Swashbuckle.AspNetCore from 10.2.0 to 10.2.1 (#245)",
+          "oid": "3e97c65609698f6ed901c85da8fd5427991d6f06",
+          "pr_number": 245,
+          "pr_title": "deps: Bump Swashbuckle.AspNetCore from 10.2.0 to 10.2.1",
+          "pr_url": "https://github.com/microsoft/dragon-copilot-extension-samples/pull/245",
+          "url": "https://github.com/microsoft/dragon-copilot-extension-samples/commit/3e97c65609698f6ed901c85da8fd5427991d6f06"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/dragon-copilot-extension-samples",
+      "name": "dragon-copilot-extension-samples",
+      "newest_commit_date": "2026-06-08T14:38:14Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Ojasvi Das (@ojasvi1450)",
+          "committed_date": "2026-06-08T14:21:34Z",
+          "headline": "WebView2: Update documentation for 150.0.4071.0 (#121)",
+          "oid": "64296c177d21b165fd0c2d6f25185a6aacf30836",
+          "pr_number": 121,
+          "pr_title": "WebView2: Update documentation for 150.0.4071.0",
+          "pr_url": "https://github.com/MicrosoftDocs/webview2-winrt-reference/pull/121",
+          "url": "https://github.com/MicrosoftDocs/webview2-winrt-reference/commit/64296c177d21b165fd0c2d6f25185a6aacf30836"
+        },
+        {
+          "author": "Ojasvi Das (@ojasvi1450)",
+          "committed_date": "2026-06-08T09:39:54Z",
+          "headline": "WebView2: Update documentation for 149.0.4022.49 (#120)",
+          "oid": "21bd9a632f178762c44de35711f8e167720248c1",
+          "pr_number": 120,
+          "pr_title": "WebView2: Update documentation for 149.0.4022.49",
+          "pr_url": "https://github.com/MicrosoftDocs/webview2-winrt-reference/pull/120",
+          "url": "https://github.com/MicrosoftDocs/webview2-winrt-reference/commit/21bd9a632f178762c44de35711f8e167720248c1"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/webview2-winrt-reference",
+      "name": "webview2-winrt-reference",
+      "newest_commit_date": "2026-06-08T14:21:34Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Ojasvi Das (@ojasvi1450)",
+          "committed_date": "2026-06-08T14:18:43Z",
+          "headline": "WebView2: Update documentation for 150.0.4071.0 (#144)",
+          "oid": "a1aa09b6dfbe49cdc84ac125d7f4c78b1c1a5d9d",
+          "pr_number": 144,
+          "pr_title": "WebView2: Update documentation for 150.0.4071.0",
+          "pr_url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/144",
+          "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/commit/a1aa09b6dfbe49cdc84ac125d7f4c78b1c1a5d9d"
+        },
+        {
+          "author": "Ojasvi Das (@ojasvi1450)",
+          "committed_date": "2026-06-08T09:38:55Z",
+          "headline": "WebView2: Update documentation for 149.0.4022.49 (#143)",
+          "oid": "50a0c03a3c3014793f9f0f5cd975eafb319c9c4c",
+          "pr_number": 143,
+          "pr_title": "WebView2: Update documentation for 149.0.4022.49",
+          "pr_url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/143",
+          "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/commit/50a0c03a3c3014793f9f0f5cd975eafb319c9c4c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/webview2-win32-reference",
+      "name": "webview2-win32-reference",
+      "newest_commit_date": "2026-06-08T14:18:43Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "docs",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-06-08T10:00:25Z",
+          "headline": "Merge pull request #2122 from microsoft/dependabot/gradle/open-teleme\u2026",
+          "oid": "4ae738c1b853e1bc0ea51befbacd7e0aee17f355",
+          "pr_number": 2122,
+          "pr_title": "chore(deps): bump the open-telemetry group across 1 directory with 2 updates",
+          "pr_url": "https://github.com/microsoft/kiota-java/pull/2122",
+          "url": "https://github.com/microsoft/kiota-java/commit/4ae738c1b853e1bc0ea51befbacd7e0aee17f355"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T09:05:13Z",
+          "headline": "chore(deps): bump the open-telemetry group across 1 directory with 2 \u2026",
+          "oid": "bcdd25c6177b24d0d2b38bd52831a48801bb0024",
+          "pr_number": 2122,
+          "pr_title": "chore(deps): bump the open-telemetry group across 1 directory with 2 updates",
+          "pr_url": "https://github.com/microsoft/kiota-java/pull/2122",
+          "url": "https://github.com/microsoft/kiota-java/commit/bcdd25c6177b24d0d2b38bd52831a48801bb0024"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-java",
+      "name": "kiota-java",
+      "newest_commit_date": "2026-06-08T10:00:25Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Harikrishnan-MSFT (@Harikrishnan-MSFT)",
+          "committed_date": "2026-06-08T08:54:01Z",
+          "headline": "Merge pull request #2364 from OfficeDev/v-ajayjadhav/readmerename",
+          "oid": "987bab8e71aa790a59dfb98666bffd2ce83b8a76",
+          "pr_number": 2364,
+          "pr_title": "Rename Readme.md to README.md for graph-rsc-helper sample",
+          "pr_url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2364",
+          "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/commit/987bab8e71aa790a59dfb98666bffd2ce83b8a76"
+        },
+        {
+          "author": "AjayJ12-MSFT (@AjayJ12-MSFT)",
+          "committed_date": "2026-06-08T08:48:31Z",
+          "headline": "Rename Readme.md to README.md",
+          "oid": "35c999afd06949e515a3d835f896ab709ee0f370",
+          "pr_number": 2364,
+          "pr_title": "Rename Readme.md to README.md for graph-rsc-helper sample",
+          "pr_url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2364",
+          "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/commit/35c999afd06949e515a3d835f896ab709ee0f370"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "OfficeDev/Microsoft-Teams-Samples",
+      "name": "Microsoft-Teams-Samples",
+      "newest_commit_date": "2026-06-08T08:54:01Z",
+      "org": "OfficeDev"
+    },
+    {
+      "category": "training",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "GitHub Action (@actions-user)",
+          "committed_date": "2026-06-08T07:46:48Z",
+          "headline": "Auto-generated zip files [skip ci]",
+          "oid": "77e78b6612efa171ac6d23f515d47a3493a3f585",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-azure-ai.ja-jp/commit/77e78b6612efa171ac6d23f515d47a3493a3f585"
+        },
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:46:32Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:46)",
+          "oid": "3c587da3a6310015ccfb321cbdf30ae896747060",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-azure-ai.ja-jp/commit/3c587da3a6310015ccfb321cbdf30ae896747060"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-azure-ai.ja-jp",
+      "name": "mslearn-azure-ai.ja-jp",
+      "newest_commit_date": "2026-06-08T07:46:48Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:46:40Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:46)",
+          "oid": "fefbe1243e8e1ef43e045d5231cb5060e113c2a0",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-sql-developer.ja-jp/commit/fefbe1243e8e1ef43e045d5231cb5060e113c2a0"
+        },
+        {
+          "author": "stonezy123 (@stonezy123)",
+          "committed_date": "2026-06-08T02:51:46Z",
+          "headline": "Initial commit",
+          "oid": "4900f8bdf8f03fa260499d48468ef467c04b6e6e",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-sql-developer.ja-jp/commit/4900f8bdf8f03fa260499d48468ef467c04b6e6e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-sql-developer.ja-jp",
+      "name": "mslearn-sql-developer.ja-jp",
+      "newest_commit_date": "2026-06-08T07:46:40Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "samples",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Paul Yu (@pauldotyu)",
+          "committed_date": "2026-06-08T01:22:50Z",
+          "headline": "chore: update actions/checkout and Trivy action versions in audit-ter\u2026",
+          "oid": "43f7206d7299945575920bc91159e2f37242f0d0",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/aks-store-demo/commit/43f7206d7299945575920bc91159e2f37242f0d0"
+        },
+        {
+          "author": "Paul Yu (@pauldotyu)",
+          "committed_date": "2026-06-07T19:57:17Z",
+          "headline": "Merge pull request #359 from Azure-Samples/dependabot/npm_and_yarn/sr\u2026",
+          "oid": "2c8e5172c5812237ec52c6d48b4ae925b845d70c",
+          "pr_number": 359,
+          "pr_title": "build(deps): bump uuid, @azure/identity and @tapjs/processinfo in /src/order-service",
+          "pr_url": "https://github.com/Azure-Samples/aks-store-demo/pull/359",
+          "url": "https://github.com/Azure-Samples/aks-store-demo/commit/2c8e5172c5812237ec52c6d48b4ae925b845d70c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/aks-store-demo",
+      "name": "aks-store-demo",
+      "newest_commit_date": "2026-06-08T01:22:50Z",
+      "org": "Azure-Samples"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "asofio (@asofio)",
+          "committed_date": "2026-06-08T19:01:36Z",
+          "headline": "Surprise Me UX: visible spinner, no-shift status slot, a11y",
+          "oid": "44d5235de5562c5f6bf21ab2940bbb75a3b224a7",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/AIEngineerPersona/commit/44d5235de5562c5f6bf21ab2940bbb75a3b224a7"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/AIEngineerPersona",
+      "name": "AIEngineerPersona",
+      "newest_commit_date": "2026-06-08T19:01:36Z",
+      "org": "Azure-Samples"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T18:35:15Z",
+          "headline": "Bump actions/checkout from 6.0.2 to 6.0.3 (#14)",
+          "oid": "b9656e7e13efc531bfb6dacb18f4032f4c125bda",
+          "pr_number": 14,
+          "pr_title": "Bump actions/checkout from 6.0.2 to 6.0.3",
+          "pr_url": "https://github.com/microsoft/DirectX-SDK-Samples/pull/14",
+          "url": "https://github.com/microsoft/DirectX-SDK-Samples/commit/b9656e7e13efc531bfb6dacb18f4032f4c125bda"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/DirectX-SDK-Samples",
+      "name": "DirectX-SDK-Samples",
+      "newest_commit_date": "2026-06-08T18:35:15Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "David Pine (@IEvangelist)",
+          "committed_date": "2026-06-08T17:56:14Z",
+          "headline": "UX revamp: bespoke, accessible identities for every Aspire sample (#1\u2026",
+          "oid": "563499a1ce016d0c352bf20f9491ab3af05c9e6f",
+          "pr_number": 1682,
+          "pr_title": "UX revamp: bespoke, accessible identities for every Aspire sample",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/1682",
+          "url": "https://github.com/microsoft/aspire-samples/commit/563499a1ce016d0c352bf20f9491ab3af05c9e6f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/aspire-samples",
+      "name": "aspire-samples",
+      "newest_commit_date": "2026-06-08T17:56:14Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "madiepev (@madiepev)",
+          "committed_date": "2026-06-08T17:27:46Z",
+          "headline": "add model select sim",
+          "oid": "e3a80414cfb421313ccf5da02dd3142c1a95dc66",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/scenario-sims/commit/e3a80414cfb421313ccf5da02dd3142c1a95dc66"
+        }
+      ],
+      "default_branch": "master",
+      "full_name": "MicrosoftLearning/scenario-sims",
+      "name": "scenario-sims",
+      "newest_commit_date": "2026-06-08T17:27:46Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Ivor Berry (@ivorb)",
+          "committed_date": "2026-06-08T17:17:27Z",
+          "headline": "Revise integration steps for Foundry IQ",
+          "oid": "dadd2a794f9284f6fbfbc93be02a46f9a1779aa1",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-agents/commit/dadd2a794f9284f6fbfbc93be02a46f9a1779aa1"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-ai-agents",
+      "name": "mslearn-ai-agents",
+      "newest_commit_date": "2026-06-08T17:17:27Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "jjfrost (@jjfrost)",
+          "committed_date": "2026-06-08T17:09:28Z",
+          "headline": "fixed 12 vulnerabilities across aml model, backend, and frontend",
+          "oid": "7f2635de3a9f0b36fca2116cc46177096336a0fe",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/postgres-sa-byoac",
+      "name": "postgres-sa-byoac",
+      "newest_commit_date": "2026-06-08T17:09:28Z",
+      "org": "Azure-Samples"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:08:18Z",
+          "headline": "Update deprecated requirement in /azure-quantum (#746)",
+          "oid": "5766d606913fec8cf7075ffab444fd8004559f94",
+          "pr_number": 746,
+          "pr_title": "Update deprecated requirement from <2.0,>=1.2.12 to >=1.3.1,<2.0 in /azure-quantum",
+          "pr_url": "https://github.com/microsoft/azure-quantum-python/pull/746",
+          "url": "https://github.com/microsoft/azure-quantum-python/commit/5766d606913fec8cf7075ffab444fd8004559f94"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/azure-quantum-python",
+      "name": "azure-quantum-python",
+      "newest_commit_date": "2026-06-08T17:08:18Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Alex Jerabek (@AlexJerabek)",
+          "committed_date": "2026-06-08T16:40:24Z",
+          "headline": "[Word] (Content Control) Add a sample for the date picker content con\u2026",
+          "oid": "94ef35521aa46e88412148c66ae376112b930b33",
+          "pr_number": 1095,
+          "pr_title": "[Word] (Content Control) Add a sample for the date picker content control",
+          "pr_url": "https://github.com/OfficeDev/office-js-snippets/pull/1095",
+          "url": "https://github.com/OfficeDev/office-js-snippets/commit/94ef35521aa46e88412148c66ae376112b930b33"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "OfficeDev/office-js-snippets",
+      "name": "office-js-snippets",
+      "newest_commit_date": "2026-06-08T16:40:24Z",
+      "org": "OfficeDev"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:35:22Z",
+          "headline": "Merge pull request #566 from microsoft/release-please--branches--main",
+          "oid": "f04d4f8773e3ccade924fec2da05ef0756ba082c",
+          "pr_number": 566,
+          "pr_title": "chore: release main",
+          "pr_url": "https://github.com/microsoft/kiota-python/pull/566",
+          "url": "https://github.com/microsoft/kiota-python/commit/f04d4f8773e3ccade924fec2da05ef0756ba082c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-python",
+      "name": "kiota-python",
+      "newest_commit_date": "2026-06-08T16:35:22Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Pradeep Agarwal (@pradeepjsr05)",
+          "committed_date": "2026-06-08T14:09:59Z",
+          "headline": "cluster extensions - updates for core extensions (#432)",
+          "oid": "70aae02f8eee515aae2af2a6b1e8b875b51c5c31",
+          "pr_number": 432,
+          "pr_title": "cluster extensions - updates for core extensions",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-aks-docs/pull/432",
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/70aae02f8eee515aae2af2a6b1e8b875b51c5c31"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-aks-docs",
+      "name": "azure-aks-docs",
+      "newest_commit_date": "2026-06-08T14:09:59Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-06-08T11:58:17Z",
+          "headline": "Merge pull request #98 from microsoft/copilot/fix-japanese-translation",
+          "oid": "10a2706ae895399ce58be8e972d23caa0943d3d2",
+          "pr_number": 98,
+          "pr_title": "Translate untranslated English headings in Japanese changelog",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/98",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/10a2706ae895399ce58be8e972d23caa0943d3d2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/AZD-for-beginners",
+      "name": "AZD-for-beginners",
+      "newest_commit_date": "2026-06-08T11:58:17Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Chris Kunze (MSFT) (@CKunze-MSFT)",
+          "committed_date": "2026-06-08T10:51:33Z",
+          "headline": "Merge pull request #279 from microsoft/neils-updates",
+          "oid": "d8be42cd646f2c61cfab58ad35ce980faba11d68",
+          "pr_number": 279,
+          "pr_title": "Pin Microsoft Edge repo to legacy microsoft.gpg key (fix 26.04 signature failure)",
+          "pr_url": "https://github.com/microsoft/shell-intune-samples/pull/279",
+          "url": "https://github.com/microsoft/shell-intune-samples/commit/d8be42cd646f2c61cfab58ad35ce980faba11d68"
+        }
+      ],
+      "default_branch": "master",
+      "full_name": "microsoft/shell-intune-samples",
+      "name": "shell-intune-samples",
+      "newest_commit_date": "2026-06-08T10:51:33Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-06-08T08:11:50Z",
+          "headline": "docs: Regenerate redaction.md with evidence validation",
+          "oid": "00a617ade362fee179de0525c1daea82b5667598",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/amplifier-docs/commit/00a617ade362fee179de0525c1daea82b5667598"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/amplifier-docs",
+      "name": "amplifier-docs",
+      "newest_commit_date": "2026-06-08T08:11:50Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:43:52Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:43)",
+          "oid": "92286e96b9913afb992bc2af5fa3ff043ba97d72",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp",
+      "name": "SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp",
+      "newest_commit_date": "2026-06-08T07:43:52Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:39:29Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:39)",
+          "oid": "a6c404c56ab81e668c83ca28d70f10e1081c6deb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-fundamentals.ja-jp/commit/a6c404c56ab81e668c83ca28d70f10e1081c6deb"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-ai-fundamentals.ja-jp",
+      "name": "mslearn-ai-fundamentals.ja-jp",
+      "newest_commit_date": "2026-06-08T07:39:29Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:39:04Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:39)",
+          "oid": "fb0d96793e08e5ec165a7d09344370f0e3d4c7b8",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-ai-agents.ja-jp/commit/fb0d96793e08e5ec165a7d09344370f0e3d4c7b8"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-ai-agents.ja-jp",
+      "name": "mslearn-ai-agents.ja-jp",
+      "newest_commit_date": "2026-06-08T07:39:04Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:38:50Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:38)",
+          "oid": "3fa79d63cd79bfadb963169aa2a1459a9a5adcf3",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio.ja-jp/commit/3fa79d63cd79bfadb963169aa2a1459a9a5adcf3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio.ja-jp",
+      "name": "MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio.ja-jp",
+      "newest_commit_date": "2026-06-08T07:38:50Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:38:41Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:38)",
+          "oid": "2a145b1ed1699db8f71a10b1b2acca9b1c377191",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/MS-4021-Copilot-Immersion-Experience.ja-jp/commit/2a145b1ed1699db8f71a10b1b2acca9b1c377191"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/MS-4021-Copilot-Immersion-Experience.ja-jp",
+      "name": "MS-4021-Copilot-Immersion-Experience.ja-jp",
+      "newest_commit_date": "2026-06-08T07:38:41Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:37:42Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:37)",
+          "oid": "ab433959df05bd9ddd5cc00e0a7c8da5dedd0db5",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp/commit/ab433959df05bd9ddd5cc00e0a7c8da5dedd0db5"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp",
+      "name": "MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp",
+      "newest_commit_date": "2026-06-08T07:37:42Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:34:30Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:34)",
+          "oid": "3f6b020bf10efa93fd5254e005823ee09bdd60a6",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp/commit/3f6b020bf10efa93fd5254e005823ee09bdd60a6"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp",
+      "name": "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions.ja-jp",
+      "newest_commit_date": "2026-06-08T07:34:30Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "training",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "olprod (@olprod)",
+          "committed_date": "2026-06-08T07:29:30Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:29)",
+          "oid": "ec431a1621e5005536ea2dbf07226ef67cdef708",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp/commit/ec431a1621e5005536ea2dbf07226ef67cdef708"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator.ja-jp",
+      "name": "AZ-104-MicrosoftAzureAdministrator.ja-jp",
+      "newest_commit_date": "2026-06-08T07:29:30Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T07:25:49Z",
+          "headline": "[Automation] Regenerate SDK based on typespec-go branch main \u3010batch 8\u2026",
+          "oid": "71c05849d5e04e52315982dce30abe2f19226316",
+          "pr_number": 26955,
+          "pr_title": "[Automation] Regenerate SDK based on typespec-go branch main \u3010batch 8\u3011",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-go/pull/26955",
+          "url": "https://github.com/Azure/azure-sdk-for-go/commit/71c05849d5e04e52315982dce30abe2f19226316"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-go",
+      "name": "azure-sdk-for-go",
+      "newest_commit_date": "2026-06-08T07:25:49Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dotnet-maestro[bot] (@dotnet-maestro[bot])",
+          "committed_date": "2026-06-08T06:55:16Z",
+          "headline": "Update dependencies from https://github.com/dotnet/arcade build 20260\u2026",
+          "oid": "60ef713579fe6ab7629f1e5d19791a3f2d7a9c2e",
+          "pr_number": 2410,
+          "pr_title": "[main] Update dependencies from dotnet/arcade",
+          "pr_url": "https://github.com/dotnet/ef6/pull/2410",
+          "url": "https://github.com/dotnet/ef6/commit/60ef713579fe6ab7629f1e5d19791a3f2d7a9c2e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/ef6",
+      "name": "ef6",
+      "newest_commit_date": "2026-06-08T06:55:16Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roopan-Microsoft (@Roopan-Microsoft)",
+          "committed_date": "2026-06-08T05:47:24Z",
+          "headline": "Merge pull request #656 from microsoft/dev",
+          "oid": "a87c02473d01cc9809d8bc9898c09c2faa858890",
+          "pr_number": 656,
+          "pr_title": "feat: merging dev to main",
+          "pr_url": "https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator/pull/656",
+          "url": "https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator/commit/a87c02473d01cc9809d8bc9898c09c2faa858890"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/Document-Knowledge-Mining-Solution-Accelerator",
+      "name": "Document-Knowledge-Mining-Solution-Accelerator",
+      "newest_commit_date": "2026-06-08T05:47:24Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roopan-Microsoft (@Roopan-Microsoft)",
+          "committed_date": "2026-06-08T05:47:17Z",
+          "headline": "Merge pull request #386 from microsoft/dev",
+          "oid": "a6f6d1ccccead20c4a4a415ede13b5a3f1398b2a",
+          "pr_number": 386,
+          "pr_title": "chore: dev to main merge",
+          "pr_url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/pull/386",
+          "url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/commit/a6f6d1ccccead20c4a4a415ede13b5a3f1398b2a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+      "name": "agentic-applications-for-unified-data-foundation-solution-accelerator",
+      "newest_commit_date": "2026-06-08T05:47:17Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roopan-Microsoft (@Roopan-Microsoft)",
+          "committed_date": "2026-06-08T05:46:58Z",
+          "headline": "Merge pull request #953 from microsoft/dev",
+          "oid": "f4cb41c836c243c1ede9505fcc43599737f7335a",
+          "pr_number": 953,
+          "pr_title": "chore: dev to main merge",
+          "pr_url": "https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/pull/953",
+          "url": "https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/commit/f4cb41c836c243c1ede9505fcc43599737f7335a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/Conversation-Knowledge-Mining-Solution-Accelerator",
+      "name": "Conversation-Knowledge-Mining-Solution-Accelerator",
+      "newest_commit_date": "2026-06-08T05:46:58Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roopan-Microsoft (@Roopan-Microsoft)",
+          "committed_date": "2026-06-08T05:44:37Z",
+          "headline": "Merge pull request #866 from microsoft/dev",
+          "oid": "bcdb2807f2c5cb9b028cbd99f97cfba53994e2ac",
+          "pr_number": 866,
+          "pr_title": "chore: dev to main merge",
+          "pr_url": "https://github.com/microsoft/content-generation-solution-accelerator/pull/866",
+          "url": "https://github.com/microsoft/content-generation-solution-accelerator/commit/bcdb2807f2c5cb9b028cbd99f97cfba53994e2ac"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/content-generation-solution-accelerator",
+      "name": "content-generation-solution-accelerator",
+      "newest_commit_date": "2026-06-08T05:44:37Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Anusha Kolan (@anushakolan)",
+          "committed_date": "2026-06-08T01:42:49Z",
+          "headline": "Mark required stored-procedure parameters as NON_NULL in GraphQL (#3646)",
+          "oid": "5b538c610c5cf80d239f5d53d0239a5996e20895",
+          "pr_number": 3646,
+          "pr_title": "Mark required stored-procedure parameters as NON_NULL in GraphQL",
+          "pr_url": "https://github.com/Azure/data-api-builder/pull/3646",
+          "url": "https://github.com/Azure/data-api-builder/commit/5b538c610c5cf80d239f5d53d0239a5996e20895"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/data-api-builder",
+      "name": "data-api-builder",
+      "newest_commit_date": "2026-06-08T01:42:49Z",
+      "org": "Azure"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Thaddeus Loke (@thloke)",
+          "committed_date": "2026-06-08T01:14:13Z",
+          "headline": "Merge pull request #355 from microsoft/workshops/agent-building",
+          "oid": "448d5e660d9559b3df40fc075253536aa751b9f4",
+          "pr_number": 355,
+          "pr_title": "Add 'Building Agents in Business Central' workshop",
+          "pr_url": "https://github.com/microsoft/BCTech/pull/355",
+          "url": "https://github.com/microsoft/BCTech/commit/448d5e660d9559b3df40fc075253536aa751b9f4"
+        }
+      ],
+      "default_branch": "master",
+      "full_name": "microsoft/BCTech",
+      "name": "BCTech",
+      "newest_commit_date": "2026-06-08T01:14:13Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "samples",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T00:24:43Z",
+          "headline": "Bump @azure/storage-blob (#89)",
+          "oid": "8e30023bdef6ac9732660943ecc8aff1dee08d2f",
+          "pr_number": 89,
+          "pr_title": "Bump @azure/storage-blob from 12.31.0 to 12.32.0 in /samples/identity/credentials in the azure-sdk group",
+          "pr_url": "https://github.com/Azure-Samples/azure-sdk-for-js-docs/pull/89",
+          "url": "https://github.com/Azure-Samples/azure-sdk-for-js-docs/commit/8e30023bdef6ac9732660943ecc8aff1dee08d2f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azure-sdk-for-js-docs",
+      "name": "azure-sdk-for-js-docs",
+      "newest_commit_date": "2026-06-08T00:24:43Z",
+      "org": "Azure-Samples"
+    }
+  ],
+  "events_prefilter": {
+    "enabled": false,
+    "mode": "off"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "generated_at": "2026-06-08T19:47:34.674969Z",
+  "schema_version": 1,
+  "summaries": {
+    "by_category": {
+      "docs": 30,
+      "samples": 19,
+      "training": 15
+    },
+    "by_org": {
+      "Azure": 8,
+      "Azure-Samples": 4,
+      "MicrosoftDocs": 6,
+      "MicrosoftLearning": 14,
+      "OfficeDev": 2,
+      "dotnet": 6,
+      "microsoft": 23,
+      "microsoftgraph": 1
+    }
+  },
+  "top_repos": [
+    {
+      "category": "docs",
+      "commit_count": 40,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:08Z",
+          "headline": "status (#4198)",
+          "oid": "f02f47d25368ce31d85633a464ccd34e15bb4ffe",
+          "pr_number": 4198,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 71)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4198",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/f02f47d25368ce31d85633a464ccd34e15bb4ffe"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:04Z",
+          "headline": "status (#4197)",
+          "oid": "84ff327183f88edf52637219fb3bbecab903dc18",
+          "pr_number": 4197,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 70)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4197",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/84ff327183f88edf52637219fb3bbecab903dc18"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:40:00Z",
+          "headline": "status (#4196)",
+          "oid": "05e4ea9869085f506861b735630a2bc91b7b2bc9",
+          "pr_number": 4196,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 69)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4196",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/05e4ea9869085f506861b735630a2bc91b7b2bc9"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:39:56Z",
+          "headline": "status (#4195)",
+          "oid": "4bc6f3e196c956b5dde47efcba004aa5c546c6e2",
+          "pr_number": 4195,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 68)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4195",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/4bc6f3e196c956b5dde47efcba004aa5c546c6e2"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-06-08T17:39:52Z",
+          "headline": "status (#4194)",
+          "oid": "e27182e88dd872f07fc88b41605f360f63e76ce2",
+          "pr_number": 4194,
+          "pr_title": "[BULK] [Bundle-Security] - Scheduled execution to fix known issues (part 67)",
+          "pr_url": "https://github.com/MicrosoftDocs/azure-docs-powershell/pull/4194",
+          "url": "https://github.com/MicrosoftDocs/azure-docs-powershell/commit/e27182e88dd872f07fc88b41605f360f63e76ce2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs-powershell",
+      "name": "azure-docs-powershell",
+      "newest_commit_date": "2026-06-08T17:40:08Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "samples",
+      "commit_count": 25,
+      "commits": [
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T18:00:57Z",
+          "headline": "fix: show heartbeat during azd eval runs",
+          "oid": "f8c0dd6ab4296183d044485855143abcc9200030",
+          "pr_number": 264,
+          "pr_title": "fix: show heartbeat during azd eval runs",
+          "pr_url": "https://github.com/Azure/agentops/pull/264",
+          "url": "https://github.com/Azure/agentops/commit/f8c0dd6ab4296183d044485855143abcc9200030"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T17:49:38Z",
+          "headline": "fix: recommend eval init before azd eval run",
+          "oid": "9381b5362aa9e7a7a7551503af2bbb6fafbe5284",
+          "pr_number": 263,
+          "pr_title": "fix: recommend eval init before azd eval run",
+          "pr_url": "https://github.com/Azure/agentops/pull/263",
+          "url": "https://github.com/Azure/agentops/commit/9381b5362aa9e7a7a7551503af2bbb6fafbe5284"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T17:40:13Z",
+          "headline": "fix: bootstrap azd eval init context",
+          "oid": "9180b7921fff2c0da7fc77ef10eb569c74a2f627",
+          "pr_number": 262,
+          "pr_title": "fix: bootstrap azd eval init context",
+          "pr_url": "https://github.com/Azure/agentops/pull/262",
+          "url": "https://github.com/Azure/agentops/commit/9180b7921fff2c0da7fc77ef10eb569c74a2f627"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T14:43:51Z",
+          "headline": "fix: make prompt tutorial use azd eval (#261)",
+          "oid": "b129c3497681cd592c0f85afec6d67ee98d11a72",
+          "pr_number": 261,
+          "pr_title": "fix: make prompt tutorial use azd eval",
+          "pr_url": "https://github.com/Azure/agentops/pull/261",
+          "url": "https://github.com/Azure/agentops/commit/b129c3497681cd592c0f85afec6d67ee98d11a72"
+        },
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-06-08T13:44:09Z",
+          "headline": "fix: persist eval recipe paths portably (#260)",
+          "oid": "7a8176c87bec3bbe0a5b33052dbe4a6b758fc1d2",
+          "pr_number": 260,
+          "pr_title": "fix: persist eval recipe paths portably",
+          "pr_url": "https://github.com/Azure/agentops/pull/260",
+          "url": "https://github.com/Azure/agentops/commit/7a8176c87bec3bbe0a5b33052dbe4a6b758fc1d2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/agentops",
+      "name": "agentops",
+      "newest_commit_date": "2026-06-08T18:00:57Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 22,
+      "commits": [
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:21:56Z",
+          "headline": "Merge pull request #8714 from microsoft/dependabot/npm_and_yarn/petst\u2026",
+          "oid": "a69c8da95a0506b32ef3de3bfecaa467b6212cd8",
+          "pr_number": 8714,
+          "pr_title": "build(deps-dev): bump webpack from 5.107.0 to 5.107.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8714",
+          "url": "https://github.com/microsoft/kiota-samples/commit/a69c8da95a0506b32ef3de3bfecaa467b6212cd8"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:21:10Z",
+          "headline": "Merge pull request #8706 from microsoft/dependabot/npm_and_yarn/petst\u2026",
+          "oid": "46e742411789823a0af02b60a888e3866ff3603b",
+          "pr_number": 8706,
+          "pr_title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8706",
+          "url": "https://github.com/microsoft/kiota-samples/commit/46e742411789823a0af02b60a888e3866ff3603b"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T16:20:39Z",
+          "headline": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "oid": "e53398706591f02b7c7cd3483b853f3ee9251695",
+          "pr_number": 8706,
+          "pr_title": "build(deps): bump qs from 6.14.2 to 6.15.2 in /petstore/typescript",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8706",
+          "url": "https://github.com/microsoft/kiota-samples/commit/e53398706591f02b7c7cd3483b853f3ee9251695"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:20:18Z",
+          "headline": "Merge pull request #8716 from microsoft/dependabot/nuget/sample-api/a\u2026",
+          "oid": "98c91d3c59ed3f2b08abb7a64d10a845a68526b8",
+          "pr_number": 8716,
+          "pr_title": "Bump Microsoft.NET.Test.Sdk from 18.5.1 to 18.6.0",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8716",
+          "url": "https://github.com/microsoft/kiota-samples/commit/98c91d3c59ed3f2b08abb7a64d10a845a68526b8"
+        },
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-06-08T16:19:33Z",
+          "headline": "Merge pull request #8727 from microsoft/dependabot/nuget/sample-api/a\u2026",
+          "oid": "9962c6c31bde8792a61fa6a7557255ec014f190f",
+          "pr_number": 8727,
+          "pr_title": "Bump Swashbuckle.AspNetCore from 10.1.7 to 10.2.1",
+          "pr_url": "https://github.com/microsoft/kiota-samples/pull/8727",
+          "url": "https://github.com/microsoft/kiota-samples/commit/9962c6c31bde8792a61fa6a7557255ec014f190f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-samples",
+      "name": "kiota-samples",
+      "newest_commit_date": "2026-06-08T16:21:56Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 19,
+      "commits": [
+        {
+          "author": "Vlad Brezae (@BrzVlad)",
+          "committed_date": "2026-06-08T19:47:32Z",
+          "headline": "[r2r] Enable generic cycles detection by default (#128957)",
+          "oid": "e099ef56d8b487971e4cdc8e8c85c7145905faee",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/dotnet/runtime/commit/e099ef56d8b487971e4cdc8e8c85c7145905faee"
+        },
+        {
+          "author": "dhartglassMSFT (@dhartglassMSFT)",
+          "committed_date": "2026-06-08T19:24:36Z",
+          "headline": "Change jit fuzzer build to pull Antigen from jitutils (#129018)",
+          "oid": "2f1131bcfaeed5a8aed20739f4b50b7ff11381ae",
+          "pr_number": 129018,
+          "pr_title": "Change jit fuzzer build to pull Antigen from jitutils",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129018",
+          "url": "https://github.com/dotnet/runtime/commit/2f1131bcfaeed5a8aed20739f4b50b7ff11381ae"
+        },
+        {
+          "author": "Rachel Jarvi (@rcj1)",
+          "committed_date": "2026-06-08T17:34:25Z",
+          "headline": "[cDAC] Fix stale Continuation MT bug (#129109)",
+          "oid": "1818a74f437228b2f1b5fa6dba2f22c2de049a74",
+          "pr_number": 129109,
+          "pr_title": "[cDAC] Fix stale Continuation MT bug",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129109",
+          "url": "https://github.com/dotnet/runtime/commit/1818a74f437228b2f1b5fa6dba2f22c2de049a74"
+        },
+        {
+          "author": "Radek Doulik (@radekdoulik)",
+          "committed_date": "2026-06-08T16:23:08Z",
+          "headline": "[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs t\u2026",
+          "oid": "9350750112513bb3d09635f39f71cdb45e420ea5",
+          "pr_number": 128318,
+          "pr_title": "[wasm][coreclr] Re-enable JIT/Directed/tailcall/mutual_recursion.fs test",
+          "pr_url": "https://github.com/dotnet/runtime/pull/128318",
+          "url": "https://github.com/dotnet/runtime/commit/9350750112513bb3d09635f39f71cdb45e420ea5"
+        },
+        {
+          "author": "Egor Bogatov (@EgorBo)",
+          "committed_date": "2026-06-08T15:10:06Z",
+          "headline": "Remove PHASE_MERGE_THROWS (#129084)",
+          "oid": "ed9aba2aff039bcccfaa9bed980a6eb96bd4aa10",
+          "pr_number": 129084,
+          "pr_title": "Remove PHASE_MERGE_THROWS",
+          "pr_url": "https://github.com/dotnet/runtime/pull/129084",
+          "url": "https://github.com/dotnet/runtime/commit/ed9aba2aff039bcccfaa9bed980a6eb96bd4aa10"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-06-08T19:47:32Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 14,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T18:27:09Z",
+          "headline": "Bump actions/github-script from 7 to 9 (#14004)",
+          "oid": "362fdf7843d03e8f40053b3378495a88ffb1916d",
+          "pr_number": 14004,
+          "pr_title": "Bump actions/github-script from 7 to 9",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14004",
+          "url": "https://github.com/dotnet/msbuild/commit/362fdf7843d03e8f40053b3378495a88ffb1916d"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:36:14Z",
+          "headline": "Bump actions/cache from 4 to 5 (#14001)",
+          "oid": "9df212006bcd5313c19cea541f5a00b58b3237cf",
+          "pr_number": 14001,
+          "pr_title": "Bump actions/cache from 4 to 5",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14001",
+          "url": "https://github.com/dotnet/msbuild/commit/9df212006bcd5313c19cea541f5a00b58b3237cf"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:23:57Z",
+          "headline": "Bump actions/download-artifact from 4 to 8 (#14000)",
+          "oid": "ead9a1f0e2c43c9902d7a693fbef3d142454d500",
+          "pr_number": 14000,
+          "pr_title": "Bump actions/download-artifact from 4 to 8",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/14000",
+          "url": "https://github.com/dotnet/msbuild/commit/ead9a1f0e2c43c9902d7a693fbef3d142454d500"
+        },
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-06-08T15:43:29Z",
+          "headline": "Enabling weekly Dependabot updates for GitHub Actions (#13999)",
+          "oid": "3398824f5962a82d96381aa6cc2c00d2a9ef9a4e",
+          "pr_number": 13999,
+          "pr_title": "Enabling weekly Dependabot updates for GitHub Actions",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/13999",
+          "url": "https://github.com/dotnet/msbuild/commit/3398824f5962a82d96381aa6cc2c00d2a9ef9a4e"
+        },
+        {
+          "author": "P\u00e1draic Slattery (@pgoslatara)",
+          "committed_date": "2026-06-08T14:20:15Z",
+          "headline": "chore: Pin GitHub Actions to commit SHAs (#13269)",
+          "oid": "4dbca8e0a67bc7b84329f9b6bc54d5264714af56",
+          "pr_number": 13269,
+          "pr_title": "chore: Pin GitHub Actions to commit SHAs",
+          "pr_url": "https://github.com/dotnet/msbuild/pull/13269",
+          "url": "https://github.com/dotnet/msbuild/commit/4dbca8e0a67bc7b84329f9b6bc54d5264714af56"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/msbuild",
+      "name": "msbuild",
+      "newest_commit_date": "2026-06-08T18:27:09Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 12,
+      "commits": [
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T18:14:20Z",
+          "headline": "Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2 (#59747)",
+          "oid": "709a6aeaad37d9d32808f1a429d070983ad971af",
+          "pr_number": 59747,
+          "pr_title": "Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59747",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/709a6aeaad37d9d32808f1a429d070983ad971af"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T17:29:23Z",
+          "headline": "Update azure-typespec/http-client-csharp version to prerelease 1.0.0-\u2026",
+          "oid": "b3baa956632b6d24b2fb940c4ff0e9bb66681e47",
+          "pr_number": 59744,
+          "pr_title": "Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260608.2",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59744",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/b3baa956632b6d24b2fb940c4ff0e9bb66681e47"
+        },
+        {
+          "author": "Nikolay Rovinskiy (@nick863)",
+          "committed_date": "2026-06-08T15:52:54Z",
+          "headline": "Generate a new code from refactored typespec (#59722)",
+          "oid": "fec47cef4fa13165cdeee669668450f9608ab41e",
+          "pr_number": 59722,
+          "pr_title": "Generate a new code from refactored typespec",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59722",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/fec47cef4fa13165cdeee669668450f9608ab41e"
+        },
+        {
+          "author": "Nikolay Rovinskiy (@nick863)",
+          "committed_date": "2026-06-08T15:52:42Z",
+          "headline": "Add sample, readme and test for External Agent (#59727)",
+          "oid": "2af2c29accbf4a306da98937b2fd513f90d42784",
+          "pr_number": 59727,
+          "pr_title": "Add sample, readme and test for External Agent",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59727",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/2af2c29accbf4a306da98937b2fd513f90d42784"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T15:16:06Z",
+          "headline": "Increment package version after release of Azure.ResourceManager.Cont\u2026",
+          "oid": "26471fae0fa9af2c3693e3491a9f0b35e18ec0b6",
+          "pr_number": 59734,
+          "pr_title": "Increment version for fleet releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/59734",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/26471fae0fa9af2c3693e3491a9f0b35e18ec0b6"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-06-08T18:14:20Z",
+      "org": "Azure"
+    },
+    {
+      "category": "samples",
+      "commit_count": 9,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T19:11:13Z",
+          "headline": "Bump orjson from 3.10.15 to 3.11.6 in /python/web-browsing-agent (#99)",
+          "oid": "b8e88a684faa46e20e56ea82fcab7f85df0143cb",
+          "pr_number": 99,
+          "pr_title": "Bump orjson from 3.10.15 to 3.11.6 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/99",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/b8e88a684faa46e20e56ea82fcab7f85df0143cb"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T18:56:07Z",
+          "headline": "Bump pyasn1 from 0.6.1 to 0.6.3 in /python/web-browsing-agent (#98)",
+          "oid": "b3b9e53222f330a10c9de394508ae71a731605fd",
+          "pr_number": 98,
+          "pr_title": "Bump pyasn1 from 0.6.1 to 0.6.3 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/98",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/b3b9e53222f330a10c9de394508ae71a731605fd"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:26:19Z",
+          "headline": "Bump requests from 2.32.3 to 2.33.0 in /python/web-browsing-agent (#97)",
+          "oid": "fe5e8a31025d12691f78870f1f8e08c934d4753f",
+          "pr_number": 97,
+          "pr_title": "Bump requests from 2.32.3 to 2.33.0 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/97",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/fe5e8a31025d12691f78870f1f8e08c934d4753f"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:21:01Z",
+          "headline": "Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent\u2026",
+          "oid": "7cfd3b8a1ca683ea390afcad5bf1e25e419b2379",
+          "pr_number": 96,
+          "pr_title": "Bump cryptography from 44.0.0 to 46.0.7 in /python/web-browsing-agent",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/96",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/7cfd3b8a1ca683ea390afcad5bf1e25e419b2379"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T17:18:21Z",
+          "headline": "Bump next from 15.5.7 to 15.5.18 in /docs (#83)",
+          "oid": "5075185f975100e0410b2ceb6b0d5ba9cb78abeb",
+          "pr_number": 83,
+          "pr_title": "Bump next from 15.5.7 to 15.5.18 in /docs",
+          "pr_url": "https://github.com/microsoft/teams-agent-accelerator-templates/pull/83",
+          "url": "https://github.com/microsoft/teams-agent-accelerator-templates/commit/5075185f975100e0410b2ceb6b0d5ba9cb78abeb"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/teams-agent-accelerator-templates",
+      "name": "teams-agent-accelerator-templates",
+      "newest_commit_date": "2026-06-08T19:11:13Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "training",
+      "commit_count": 8,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T17:11:43Z",
+          "headline": "Force wllama to CPU",
+          "oid": "ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:46:55Z",
+          "headline": "Reduce history",
+          "oid": "11ae239b8caab1b0556f4486da025f10909b7b97",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/11ae239b8caab1b0556f4486da025f10909b7b97"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:44:13Z",
+          "headline": "Harden system prompt",
+          "oid": "3357909bea3b8a6d0b49cb7e654edf3640168354",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/3357909bea3b8a6d0b49cb7e654edf3640168354"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T16:31:25Z",
+          "headline": "Reduced WebLLM context window",
+          "oid": "5a440bd9dc931145fd6cefe99cc6e311ea1f485d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/5a440bd9dc931145fd6cefe99cc6e311ea1f485d"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-06-08T00:24:52Z",
+          "headline": "Optimization",
+          "oid": "54dfb8427601626ed5bc59cd330c46641352980a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/54dfb8427601626ed5bc59cd330c46641352980a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/ai-apps",
+      "name": "ai-apps",
+      "newest_commit_date": "2026-06-08T17:11:43Z",
+      "org": "MicrosoftLearning"
+    },
+    {
+      "category": "docs",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Fabian Meiswinkel (@FabianMeiswinkel)",
+          "committed_date": "2026-06-08T19:21:17Z",
+          "headline": "Cosmos Release 2026-06-08 (#49407)",
+          "oid": "a18aefd1f3a7392a166274092db4cc15986a2eca",
+          "pr_number": 49407,
+          "pr_title": "Cosmos Release 2026-06-08",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49407",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/a18aefd1f3a7392a166274092db4cc15986a2eca"
+        },
+        {
+          "author": "Matthew Metcalf (@mrm9084)",
+          "committed_date": "2026-06-08T18:25:13Z",
+          "headline": "Updating Missing Telemetry (#48978)",
+          "oid": "f8877c0abd43da6e2e769c8e77e7d6a51a7e6774",
+          "pr_number": 48978,
+          "pr_title": "Updating Missing Telemetry",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/48978",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/f8877c0abd43da6e2e769c8e77e7d6a51a7e6774"
+        },
+        {
+          "author": "Ryan Zhang (@ryazhang-microsoft)",
+          "committed_date": "2026-06-08T17:08:19Z",
+          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+          "oid": "387345eef6d7fbbc6bef0c8fe2affff566dc9aea",
+          "pr_number": 49391,
+          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49391",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/387345eef6d7fbbc6bef0c8fe2affff566dc9aea"
+        },
+        {
+          "author": "Jair Myree (@jairmyree)",
+          "committed_date": "2026-06-08T16:33:40Z",
+          "headline": "June 2026 Core Releases (#49394)",
+          "oid": "f94c21130e65f067a0a9d3c97e608482bc602d2a",
+          "pr_number": 49394,
+          "pr_title": "June 2026 Core Releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49394",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/f94c21130e65f067a0a9d3c97e608482bc602d2a"
+        },
+        {
+          "author": "Abhijeet Mohanty (@jeet1995)",
+          "committed_date": "2026-06-08T13:32:12Z",
+          "headline": "Gate HTTP/2 PING failure-based connection close exception rewraps to \u2026",
+          "oid": "c90525114f812380427c627cfc93218262170c19",
+          "pr_number": 49403,
+          "pr_title": "Gate HTTP/2 PING failure-based connection close exception rewraps to PING enablement flag.",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-java/pull/49403",
+          "url": "https://github.com/Azure/azure-sdk-for-java/commit/c90525114f812380427c627cfc93218262170c19"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-java",
+      "name": "azure-sdk-for-java",
+      "newest_commit_date": "2026-06-08T19:21:17Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "xitzhang (@xitzhang)",
+          "committed_date": "2026-06-08T18:13:24Z",
+          "headline": "[VoiceLive] Add live test coverage and parametrize over API versions \u2026",
+          "oid": "dc5f9743b05ea78f938eba31cbe704150889490c",
+          "pr_number": 38790,
+          "pr_title": "[VoiceLive] Add live test coverage and parametrize over API versions",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38790",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/dc5f9743b05ea78f938eba31cbe704150889490c"
+        },
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-06-08T18:11:03Z",
+          "headline": "Update `@azure/openai` README links for Build Analyze link-check fail\u2026",
+          "oid": "bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3",
+          "pr_number": 38809,
+          "pr_title": "Update `@azure/openai` README links for Build Analyze link-check failures",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38809",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/bc6fb64cb063a84a87d4d0a29e9b63433e9c58d3"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-06-08T16:02:58Z",
+          "headline": "[EngSys] automatic pnpm update (#38861)",
+          "oid": "09add7996feef1215e7a5f99d883fed8c39a3c6d",
+          "pr_number": 38861,
+          "pr_title": "[EngSys] automatic pnpm update",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38861",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/09add7996feef1215e7a5f99d883fed8c39a3c6d"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T15:31:04Z",
+          "headline": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation\u2026",
+          "oid": "9637114573de5b7bc402209b444cb8e2bf035884",
+          "pr_number": 38808,
+          "pr_title": "[AutoPR @azure-arm-postgresql-flexible]-generated-from-SDK Generation - JS-6405188",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38808",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/9637114573de5b7bc402209b444cb8e2bf035884"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T14:52:10Z",
+          "headline": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787\u2026",
+          "oid": "19f9ac5ba235b524ea925da6a46c5cc9c149c530",
+          "pr_number": 38811,
+          "pr_title": "[AutoPR @azure-arm-devhub]-generated-from-SDK Generation - JS-6392787",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/38811",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/19f9ac5ba235b524ea925da6a46c5cc9c149c530"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-js",
+      "name": "azure-sdk-for-js",
+      "newest_commit_date": "2026-06-08T18:13:24Z",
+      "org": "Azure"
+    },
+    {
+      "category": "samples",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-08T00:35:21Z",
+          "headline": "Merge pull request #16 from microsoft/santiagxf/refactor",
+          "oid": "81c2ccd41c689bf98cc1db317be03d55e01a803d",
+          "pr_number": 16,
+          "pr_title": "fix: server",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/16",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/81c2ccd41c689bf98cc1db317be03d55e01a803d"
+        },
+        {
+          "author": "santiagxf (@santiagxf)",
+          "committed_date": "2026-06-08T00:34:50Z",
+          "headline": "fix: server",
+          "oid": "d915b924123c7026646d15b0d0dbf30ad4c07aa5",
+          "pr_number": 16,
+          "pr_title": "fix: server",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/16",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/d915b924123c7026646d15b0d0dbf30ad4c07aa5"
+        },
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-08T00:33:15Z",
+          "headline": "Merge pull request #15 from microsoft/santiagxf/refactor",
+          "oid": "352afc259f43eeb54d0f095559a294068e87938d",
+          "pr_number": 15,
+          "pr_title": "fix: refactor MCP and auth",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/352afc259f43eeb54d0f095559a294068e87938d"
+        },
+        {
+          "author": "santiagxf (@santiagxf)",
+          "committed_date": "2026-06-08T00:29:20Z",
+          "headline": "fix: refactor MCP and auth",
+          "oid": "0c276a29a0aaf9191ed6ed7883cb046f00a7f578",
+          "pr_number": 15,
+          "pr_title": "fix: refactor MCP and auth",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/15",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/0c276a29a0aaf9191ed6ed7883cb046f00a7f578"
+        },
+        {
+          "author": "Facundo Santiago (@santiagxf)",
+          "committed_date": "2026-06-07T21:54:42Z",
+          "headline": "Merge pull request #13 from microsoft/santiagxf/refactor",
+          "oid": "e532fac56baff32098d978de85a31d73e1681803",
+          "pr_number": 13,
+          "pr_title": "Refactor agent and MCP server integration",
+          "pr_url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/pull/13",
+          "url": "https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools/commit/e532fac56baff32098d978de85a31d73e1681803"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "name": "Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "newest_commit_date": "2026-06-08T00:35:21Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "lucd1217 (@lucd1217)",
+          "committed_date": "2026-06-08T17:30:28Z",
+          "headline": "Little grammar and clarity tweaks (#9902)",
+          "oid": "975c3d049f44984430fed7483574bacb408e87ea",
+          "pr_number": 9902,
+          "pr_title": "Little grammar and clarity tweaks",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9902",
+          "url": "https://github.com/microsoft/vscode-docs/commit/975c3d049f44984430fed7483574bacb408e87ea"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:58:29Z",
+          "headline": "Merge pull request #9901 from microsoft/ntrogh/getstarted-editing-tut\u2026",
+          "oid": "04cbc2581e238550f3f29df508bdd5ba8cff1d99",
+          "pr_number": 9901,
+          "pr_title": "Add cross-link to editor tutorial",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9901",
+          "url": "https://github.com/microsoft/vscode-docs/commit/04cbc2581e238550f3f29df508bdd5ba8cff1d99"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:44:20Z",
+          "headline": "Add cross-link to editor tutorial",
+          "oid": "affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07",
+          "pr_number": 9901,
+          "pr_title": "Add cross-link to editor tutorial",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9901",
+          "url": "https://github.com/microsoft/vscode-docs/commit/affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:20:30Z",
+          "headline": "Merge pull request #9900 from microsoft/ntrogh/insiders-relnotes",
+          "oid": "169439320d6f027b1338806c255d6d80cdf9b846",
+          "pr_number": 9900,
+          "pr_title": "Update Insiders release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9900",
+          "url": "https://github.com/microsoft/vscode-docs/commit/169439320d6f027b1338806c255d6d80cdf9b846"
+        },
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-06-08T08:14:38Z",
+          "headline": "Update Insiders release notes",
+          "oid": "57d20a120658f60072665f0f29982bb1413be955",
+          "pr_number": 9900,
+          "pr_title": "Update Insiders release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/9900",
+          "url": "https://github.com/microsoft/vscode-docs/commit/57d20a120658f60072665f0f29982bb1413be955"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/vscode-docs",
+      "name": "vscode-docs",
+      "newest_commit_date": "2026-06-08T17:30:28Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 5,
+      "commits": [
+        {
+          "author": "Jason Malinowski (@jasonmalinowski)",
+          "committed_date": "2026-06-08T17:49:22Z",
+          "headline": "Fix mishandling of large embedded C# literals (#84043)",
+          "oid": "644b5da46ba33d4057d82b7629e8def3b88dae64",
+          "pr_number": 84043,
+          "pr_title": "Fix mishandling of large embedded C# literals",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84043",
+          "url": "https://github.com/dotnet/roslyn/commit/644b5da46ba33d4057d82b7629e8def3b88dae64"
+        },
+        {
+          "author": "dotnet-maestro[bot] (@dotnet-maestro[bot])",
+          "committed_date": "2026-06-08T16:12:49Z",
+          "headline": "[main] Update dependencies from dotnet/roslyn (#84058)",
+          "oid": "82ad1e15e364edbd6ca59d8a8325df2b6488e28e",
+          "pr_number": 84058,
+          "pr_title": "[main] Update dependencies from dotnet/roslyn",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84058",
+          "url": "https://github.com/dotnet/roslyn/commit/82ad1e15e364edbd6ca59d8a8325df2b6488e28e"
+        },
+        {
+          "author": "Jan Jones (@jjonescz)",
+          "committed_date": "2026-06-08T13:02:14Z",
+          "headline": "Unsafe evolution: propagate unsafe context to constructor initializer\u2026",
+          "oid": "d48095f632dad4d30b44d2b4d6a84163e3101024",
+          "pr_number": 83969,
+          "pr_title": "Unsafe evolution: propagate unsafe context to constructor initializer",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/83969",
+          "url": "https://github.com/dotnet/roslyn/commit/d48095f632dad4d30b44d2b4d6a84163e3101024"
+        },
+        {
+          "author": "Brad White (@bradselw)",
+          "committed_date": "2026-06-08T08:14:51Z",
+          "headline": "Parameterize DartLab templates repository alias (#84037)",
+          "oid": "8f825c9697554bd194c542154a6026b842068dde",
+          "pr_number": 84037,
+          "pr_title": "Parameterize DartLab templates repository alias",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84037",
+          "url": "https://github.com/dotnet/roslyn/commit/8f825c9697554bd194c542154a6026b842068dde"
+        },
+        {
+          "author": "Jan Jones (@jjonescz)",
+          "committed_date": "2026-06-08T08:02:09Z",
+          "headline": "Fix frontmatter syntax in Compiler.instructions.md (#84032)",
+          "oid": "a036b051ef24abb6f06e097f0d9948757cee8e6f",
+          "pr_number": 84032,
+          "pr_title": "Fix frontmatter syntax in Compiler.instructions.md",
+          "pr_url": "https://github.com/dotnet/roslyn/pull/84032",
+          "url": "https://github.com/dotnet/roslyn/commit/a036b051ef24abb6f06e097f0d9948757cee8e6f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/roslyn",
+      "name": "roslyn",
+      "newest_commit_date": "2026-06-08T17:49:22Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T19:36:42Z",
+          "headline": "docs: fix stale Bot Gateway code citations in CLI-port notes (#13)",
+          "oid": "9e590fe203234d640ce1944ac5e8452c41da38bf",
+          "pr_number": 13,
+          "pr_title": "docs: fix stale Bot Gateway code citations (follow-up to #12)",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/13",
+          "url": "https://github.com/microsoft/entrabot/commit/9e590fe203234d640ce1944ac5e8452c41da38bf"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T17:29:32Z",
+          "headline": "refactor: remove Teams Bot Gateway auth mode (ADR-006) (#12)",
+          "oid": "68a1a4e4c0891eeeb738e42f0963bb8e51daddef",
+          "pr_number": 12,
+          "pr_title": "refactor: remove Teams Bot Gateway auth mode (ADR-006)",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/12",
+          "url": "https://github.com/microsoft/entrabot/commit/68a1a4e4c0891eeeb738e42f0963bb8e51daddef"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-08T00:32:27Z",
+          "headline": "chore(claude): allowlist persona-sati MCP tools to prevent non-intera\u2026",
+          "oid": "bdb28bcd3e2e0810a07223b52e97babb5a26b009",
+          "pr_number": 11,
+          "pr_title": "chore(claude): allowlist persona-sati MCP tools to prevent non-interactive REJECT",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/11",
+          "url": "https://github.com/microsoft/entrabot/commit/bdb28bcd3e2e0810a07223b52e97babb5a26b009"
+        },
+        {
+          "author": "Brandon Werner (@brandwe)",
+          "committed_date": "2026-06-07T22:10:05Z",
+          "headline": "Merge pull request #10 from microsoft/fix/active-sponsor-channel-binding",
+          "oid": "4d5af66155b93ba8697bd250222d4e3521a20d38",
+          "pr_number": 10,
+          "pr_title": "fix(security): require active-sponsor-channel binding for add_teams_member and share_file",
+          "pr_url": "https://github.com/microsoft/entrabot/pull/10",
+          "url": "https://github.com/microsoft/entrabot/commit/4d5af66155b93ba8697bd250222d4e3521a20d38"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/entrabot",
+      "name": "entrabot",
+      "newest_commit_date": "2026-06-08T19:36:42Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Maxwell (@m-x-shokhzod)",
+          "committed_date": "2026-06-08T16:58:41Z",
+          "headline": "EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs (\u2026",
+          "oid": "04b37f3ed41fd685a68c9402fe19871d2e20037a",
+          "pr_number": 38208,
+          "pr_title": "EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38208",
+          "url": "https://github.com/dotnet/efcore/commit/04b37f3ed41fd685a68c9402fe19871d2e20037a"
+        },
+        {
+          "author": "Maxwell (@m-x-shokhzod)",
+          "committed_date": "2026-06-08T16:53:58Z",
+          "headline": "Translate List<T>.Exists to Queryable.Any (#38226)",
+          "oid": "1c5cd69729c8ac7f5a3df766286db99f49dc6031",
+          "pr_number": 38226,
+          "pr_title": "Translate List<T>.Exists to Queryable.Any",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38226",
+          "url": "https://github.com/dotnet/efcore/commit/1c5cd69729c8ac7f5a3df766286db99f49dc6031"
+        },
+        {
+          "author": "Arthur Vickers (@ajcvickers)",
+          "committed_date": "2026-06-08T16:36:55Z",
+          "headline": "Make DateTime.Parse translation tests culture-invariant (#38384)",
+          "oid": "e4afabf3d42d601fe72cf307f177592adbefb998",
+          "pr_number": 38384,
+          "pr_title": "Make DateTime.Parse translation tests culture-invariant",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38384",
+          "url": "https://github.com/dotnet/efcore/commit/e4afabf3d42d601fe72cf307f177592adbefb998"
+        },
+        {
+          "author": "dotnet-maestro[bot] (@dotnet-maestro[bot])",
+          "committed_date": "2026-06-08T15:58:29Z",
+          "headline": "Update dependencies from build 317483 (#38380)",
+          "oid": "7201613c0031141cebdc196a9d9df402667f3e9d",
+          "pr_number": 38380,
+          "pr_title": "[main] Source code updates from dotnet/dotnet",
+          "pr_url": "https://github.com/dotnet/efcore/pull/38380",
+          "url": "https://github.com/dotnet/efcore/commit/7201613c0031141cebdc196a9d9df402667f3e9d"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/efcore",
+      "name": "efcore",
+      "newest_commit_date": "2026-06-08T16:58:41Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "samples",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Selena Yang (@selenayang888)",
+          "committed_date": "2026-06-08T19:23:53Z",
+          "headline": "Fix Type-confusion: raw-pointer bind_input causing OOB write (#28839)",
+          "oid": "7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036",
+          "pr_number": 28839,
+          "pr_title": "Fix Type-confusion: raw-pointer bind_input causing OOB write",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28839",
+          "url": "https://github.com/microsoft/onnxruntime/commit/7bf3032bc0f5c79680e9f5a1fa6c9bca590a9036"
+        },
+        {
+          "author": "Max Buckley (@maxwbuckley)",
+          "committed_date": "2026-06-08T17:08:22Z",
+          "headline": "[CoreML EP] Add Where and And builders (#28597)",
+          "oid": "073e49ffe1b70e61ea5e5cf4dec17ea9879914f8",
+          "pr_number": 28597,
+          "pr_title": "[CoreML EP] Add Where and And builders",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28597",
+          "url": "https://github.com/microsoft/onnxruntime/commit/073e49ffe1b70e61ea5e5cf4dec17ea9879914f8"
+        },
+        {
+          "author": "Sanaa Hamel (@sanaa-hamel-microsoft)",
+          "committed_date": "2026-06-08T14:29:05Z",
+          "headline": "fix(ci): nodejs on nuget cuda 13 hangs (#28816)",
+          "oid": "8f6e944b8658ef146593e7852d984536dee37d3e",
+          "pr_number": 28816,
+          "pr_title": "fix(ci): nodejs on nuget cuda 13 hangs",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/28816",
+          "url": "https://github.com/microsoft/onnxruntime/commit/8f6e944b8658ef146593e7852d984536dee37d3e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-06-08T19:23:53Z",
+      "org": "microsoft"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Ryan Zhang (@ryazhang-microsoft)",
+          "committed_date": "2026-06-08T19:23:44Z",
+          "headline": "[confidentialledger] Enforce stricter redirect destination policy (#4\u2026",
+          "oid": "2fb56bf4f962171f7eb7efc6daad23bf610ae906",
+          "pr_number": 47368,
+          "pr_title": "[confidentialledger] Enforce stricter redirect destination policy",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47368",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906"
+        },
+        {
+          "author": "Azure SDK Bot (@azure-sdk)",
+          "committed_date": "2026-06-08T16:42:10Z",
+          "headline": "Increment package version after release of azure-monitor-opentelemetr\u2026",
+          "oid": "321370a7c625eb3c61d0ae849cea1ad5e836c1a8",
+          "pr_number": 47394,
+          "pr_title": "Increment version for monitor releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8"
+        },
+        {
+          "author": "Radhika Gupta (@rads-1996)",
+          "committed_date": "2026-06-08T14:24:26Z",
+          "headline": "Exporter release 1.0.0b53 (#47296)",
+          "oid": "6f3980e81598b271c5a3ac3912e9da67e2d1b479",
+          "pr_number": 47296,
+          "pr_title": "Exporter release 1.0.0b53",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
+          "url": "https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-python",
+      "name": "azure-sdk-for-python",
+      "newest_commit_date": "2026-06-08T19:23:44Z",
+      "org": "Azure"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Reuben Bond (@ReubenBond)",
+          "committed_date": "2026-06-08T19:16:28Z",
+          "headline": "fix(redis): consistent grain directory disposal + multiplexer ownersh\u2026",
+          "oid": "99d24556ce11459168e6d557e828eba0e0ca081a",
+          "pr_number": 10182,
+          "pr_title": "fix(redis): consistent grain directory disposal + multiplexer ownership tests",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10182",
+          "url": "https://github.com/dotnet/orleans/commit/99d24556ce11459168e6d557e828eba0e0ca081a"
+        },
+        {
+          "author": "Meir Blachman (@Meir017)",
+          "committed_date": "2026-06-08T19:03:23Z",
+          "headline": "chore: use IMeterFactory for JournalingInstruments (#10184)",
+          "oid": "78809153c0ad4665520475356dc90e3b4398ba92",
+          "pr_number": 10184,
+          "pr_title": "chore: use IMeterFactory for JournalingInstruments",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10184",
+          "url": "https://github.com/dotnet/orleans/commit/78809153c0ad4665520475356dc90e3b4398ba92"
+        },
+        {
+          "author": "Cluster7ck (@Cluster7ck)",
+          "committed_date": "2026-06-08T19:02:39Z",
+          "headline": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up\u2026",
+          "oid": "70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3",
+          "pr_number": 10176,
+          "pr_title": "fix(nats): Validate StorageType and pin NATS test endpoint (follow-up to #10028)",
+          "pr_url": "https://github.com/dotnet/orleans/pull/10176",
+          "url": "https://github.com/dotnet/orleans/commit/70ffd6e368fdf31bf0a3f2f65dd65033fcc408e3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/orleans",
+      "name": "orleans",
+      "newest_commit_date": "2026-06-08T19:16:28Z",
+      "org": "dotnet"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:16:00Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9 (#411)",
+          "oid": "79305774e2bc60fbb8a9bb831bf4fdaefaeafeea",
+          "pr_number": 411,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/411",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/79305774e2bc60fbb8a9bb831bf4fdaefaeafeea"
+        },
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:11:39Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8 (#409)",
+          "oid": "b471075ef349b3efd2f724cb816eb4805258dd7f",
+          "pr_number": 409,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/409",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/b471075ef349b3efd2f724cb816eb4805258dd7f"
+        },
+        {
+          "author": "Xelu86 (@Xelu86)",
+          "committed_date": "2026-06-08T18:09:56Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7 (#408)",
+          "oid": "67ac3e9d59a5d10be15d3a412b3c3795d5a401d4",
+          "pr_number": 408,
+          "pr_title": "[Freshness] PSScriptAnalyzer Article Updates - Batch 7",
+          "pr_url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/408",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/commit/67ac3e9d59a5d10be15d3a412b3c3795d5a401d4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/PowerShell-Docs-Modules",
+      "name": "PowerShell-Docs-Modules",
+      "newest_commit_date": "2026-06-08T18:16:00Z",
+      "org": "MicrosoftDocs"
+    },
+    {
+      "category": "docs",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T11:19:19Z",
+          "headline": "Bump Spectre.Console from 0.55.2 to 0.56.0 (#7770)",
+          "oid": "369efd30c140db0e91d372d7504182c7d778c85e",
+          "pr_number": 7770,
+          "pr_title": "Bump Spectre.Console from 0.55.2 to 0.56.0",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7770",
+          "url": "https://github.com/microsoft/kiota/commit/369efd30c140db0e91d372d7504182c7d778c85e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T10:23:42Z",
+          "headline": "build(deps-dev): bump @types/node in /it/typescript (#7768)",
+          "oid": "f873a879e79802b58ed1fb93f3f332c3b7cac357",
+          "pr_number": 7768,
+          "pr_title": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /it/typescript",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7768",
+          "url": "https://github.com/microsoft/kiota/commit/f873a879e79802b58ed1fb93f3f332c3b7cac357"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-06-08T10:00:49Z",
+          "headline": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode (#\u2026",
+          "oid": "39939a54052a8d555607609dd98b11e8e4c7d8de",
+          "pr_number": 7769,
+          "pr_title": "build(deps-dev): bump @types/node from 25.9.1 to 25.9.2 in /vscode",
+          "pr_url": "https://github.com/microsoft/kiota/pull/7769",
+          "url": "https://github.com/microsoft/kiota/commit/39939a54052a8d555607609dd98b11e8e4c7d8de"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota",
+      "name": "kiota",
+      "newest_commit_date": "2026-06-08T11:19:19Z",
+      "org": "microsoft"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 130,
+    "default_branch_commits": 263,
+    "filtered_repos": 4638,
+    "inventory_repos": 16414,
+    "pushed_at_candidate_repos": 130,
+    "repos_with_movement": 64
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-06-07T19:47:34.674969Z",
+    "state_window_enabled": true
+  }
+}

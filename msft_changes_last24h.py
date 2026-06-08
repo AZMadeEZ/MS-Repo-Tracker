@@ -16,10 +16,17 @@ import datetime as dt
 import json
 import os
 import sys
+from collections import Counter
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Mapping, Optional, Set, Tuple
 
-from github_api import DEFERRED_EXIT_CODE, GitHubClient, RateLimitDeferred, iso_utc
+from github_api import (
+    DEFERRED_EXIT_CODE,
+    GitHubClient,
+    RateLimitDeferred,
+    iso_utc,
+    update_conditional_cache,
+)
 
 
 DEFAULT_DIGEST_CATEGORIES = {"docs", "reference", "training", "samples"}
@@ -106,6 +113,17 @@ def read_inventory(path: str) -> List[RepoInput]:
         return repos
 
 
+def read_orgs(path: str) -> List[str]:
+    with open(path, "r", encoding="utf-8-sig") as f:
+        orgs: List[str] = []
+        for line in f:
+            value = line.strip()
+            if not value or value.startswith("#"):
+                continue
+            orgs.append(value)
+        return orgs
+
+
 def parse_iso(value: str) -> Optional[dt.datetime]:
     if not value:
         return None
@@ -182,6 +200,154 @@ def category_filter(categories_arg: str, include_other: bool) -> Optional[Set[st
         selected.add("other")
 
     return selected
+
+
+def response_has_next(headers: Mapping[str, str]) -> bool:
+    return 'rel="next"' in (headers.get("Link") or headers.get("link") or "")
+
+
+def extract_event_repo_names(events: Any) -> Set[str]:
+    names: Set[str] = set()
+    if not isinstance(events, list):
+        return names
+
+    for event in events:
+        if not isinstance(event, dict):
+            continue
+        repo = event.get("repo") or {}
+        full_name = str(repo.get("name") or "").strip()
+        if "/" in full_name:
+            names.add(full_name)
+
+    return names
+
+
+def fetch_event_candidates(
+    client: GitHubClient,
+    orgs: List[str],
+    state: Dict[str, Any],
+    max_pages_per_org: int,
+) -> Tuple[Set[str], Dict[str, Any]]:
+    cache = state.get("events_request_cache")
+    if not isinstance(cache, dict):
+        cache = {}
+        state["events_request_cache"] = cache
+
+    candidates: Set[str] = set()
+    org_summaries: List[Dict[str, Any]] = []
+    pages_checked = 0
+    pages_changed = 0
+    pages_not_modified = 0
+
+    for org in orgs:
+        org_candidates: Set[str] = set()
+        org_pages_checked = 0
+        org_pages_changed = 0
+        org_pages_not_modified = 0
+        poll_interval = ""
+
+        for page in range(1, max(1, max_pages_per_org) + 1):
+            response = client.get_json(
+                f"/orgs/{org}/events",
+                params={"per_page": 100, "page": page},
+                cache=cache,
+                use_conditional=True,
+            )
+            pages_checked += 1
+            org_pages_checked += 1
+
+            poll_interval = (
+                response.headers.get("x-poll-interval")
+                or response.headers.get("X-Poll-Interval")
+                or poll_interval
+            )
+
+            if response.not_modified:
+                pages_not_modified += 1
+                org_pages_not_modified += 1
+                entry = cache.get(response.url, {}) or {}
+                cached_names = {
+                    str(name)
+                    for name in (entry.get("repo_full_names") or [])
+                    if isinstance(name, str)
+                }
+                org_candidates.update(cached_names)
+                break
+
+            events = response.data if isinstance(response.data, list) else []
+            page_candidates = extract_event_repo_names(events)
+            org_candidates.update(page_candidates)
+            pages_changed += 1
+            org_pages_changed += 1
+            has_next = response_has_next(response.headers)
+            update_conditional_cache(
+                cache,
+                response,
+                item_count=len(events),
+                repo_full_names=sorted(page_candidates),
+                has_next=has_next,
+            )
+
+            if not has_next or not events:
+                break
+
+        candidates.update(org_candidates)
+        org_summaries.append(
+            {
+                "org": org,
+                "candidate_repos": len(org_candidates),
+                "pages_checked": org_pages_checked,
+                "pages_changed": org_pages_changed,
+                "pages_not_modified": org_pages_not_modified,
+                "poll_interval_seconds": poll_interval,
+            }
+        )
+
+    summary = {
+        "enabled": True,
+        "orgs_checked": len(orgs),
+        "candidate_repos": len(candidates),
+        "max_pages_per_org": max_pages_per_org,
+        "pages_checked": pages_checked,
+        "pages_changed": pages_changed,
+        "pages_not_modified": pages_not_modified,
+        "orgs": org_summaries,
+    }
+    state["last_events_prefilter"] = {
+        **summary,
+        "completed_at": iso_utc(),
+    }
+    return candidates, summary
+
+
+def apply_events_prefilter(
+    mode: str,
+    filtered: List[RepoInput],
+    pushed_candidates: List[RepoInput],
+    event_candidate_names: Set[str],
+) -> List[RepoInput]:
+    if mode == "off":
+        return pushed_candidates
+
+    filtered_by_name = {repo.full_name: repo for repo in filtered}
+    pushed_names = {repo.full_name for repo in pushed_candidates}
+    event_names = event_candidate_names & set(filtered_by_name)
+
+    if mode == "union":
+        selected_names = pushed_names | event_names
+    elif mode == "intersect":
+        if not event_names:
+            sys.stderr.write(
+                "[WARN] Events prefilter produced no repository candidates; "
+                "keeping pushed_at candidates.\n"
+            )
+            selected_names = pushed_names
+        else:
+            selected_names = pushed_names & event_names
+    else:
+        raise RuntimeError(f"Unsupported events prefilter mode: {mode}")
+
+    return [repo for repo in filtered if repo.full_name in selected_names]
 
 
 def build_query(repos: List[RepoInput]) -> str:
@@ -429,6 +595,227 @@ def write_md(path: str, activities: List[RepoActivity], since_iso: str) -> None:
                     f.write("\n")
 
 
+def commit_to_dict(commit: CommitInfo) -> Dict[str, Any]:
+    return {
+        "oid": commit.oid,
+        "committed_date": commit.committed_date,
+        "headline": commit.headline,
+        "url": commit.url,
+        "author": commit.author,
+        "pr_number": commit.pr_number,
+        "pr_title": commit.pr_title,
+        "pr_url": commit.pr_url,
+    }
+
+
+def activity_to_dict(activity: RepoActivity) -> Dict[str, Any]:
+    return {
+        "full_name": activity.full_name,
+        "org": activity.org,
+        "name": activity.name,
+        "category": activity.category,
+        "default_branch": activity.default_branch,
+        "commit_count": activity.commit_count,
+        "newest_commit_date": activity.newest_commit_date,
+        "commits": [commit_to_dict(commit) for commit in activity.commits],
+    }
+
+
+def build_report_payload(
+    *,
+    activities: List[RepoActivity],
+    inventory_repo_count: int,
+    filtered_repo_count: int,
+    pushed_candidate_count: int,
+    candidate_repo_count: int,
+    since_iso: str,
+    generated_at: dt.datetime,
+    hours_requested: int,
+    selected_categories: Optional[Set[str]],
+    include_other: bool,
+    include_archived: bool,
+    include_forks: bool,
+    use_state_window: bool,
+    events_prefilter_mode: str,
+    events_summary: Optional[Dict[str, Any]],
+) -> Dict[str, Any]:
+    category_counts = Counter(activity.category or "uncategorized" for activity in activities)
+    org_counts = Counter(activity.org or activity.full_name.split("/")[0] for activity in activities)
+    total_commits = sum(activity.commit_count for activity in activities)
+
+    return {
+        "schema_version": 1,
+        "generated_at": iso_utc(generated_at),
+        "window": {
+            "since": since_iso,
+            "hours_requested": hours_requested,
+            "state_window_enabled": use_state_window,
+        },
+        "filters": {
+            "categories": "all" if selected_categories is None else sorted(selected_categories),
+            "include_other": include_other,
+            "include_archived": include_archived,
+            "include_forks": include_forks,
+            "events_prefilter_mode": events_prefilter_mode,
+        },
+        "totals": {
+            "inventory_repos": inventory_repo_count,
+            "filtered_repos": filtered_repo_count,
+            "pushed_at_candidate_repos": pushed_candidate_count,
+            "candidate_repos": candidate_repo_count,
+            "repos_with_movement": len(activities),
+            "default_branch_commits": total_commits,
+        },
+        "summaries": {
+            "by_category": dict(sorted(category_counts.items())),
+            "by_org": dict(sorted(org_counts.items())),
+        },
+        "top_repos": [activity_to_dict(activity) for activity in activities[:20]],
+        "activities": [activity_to_dict(activity) for activity in activities],
+        "events_prefilter": events_summary
+        or {
+            "enabled": False,
+            "mode": events_prefilter_mode,
+        },
+    }
+
+
+def md_escape(value: Any) -> str:
+    return str(value if value is not None else "").replace("|", "\\|").replace("\n", " ")
+
+
+def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
+    totals = payload.get("totals") or {}
+    summaries = payload.get("summaries") or {}
+    window = payload.get("window") or {}
+    filters = payload.get("filters") or {}
+    events = payload.get("events_prefilter") or {}
+    top_repos = payload.get("top_repos") or []
+    activities = payload.get("activities") or []
+
+    generated_at = str(payload.get("generated_at") or "")
+    title_date = generated_at[:10] if len(generated_at) >= 10 else generated_at
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"# Microsoft Repo Change Brief - {title_date}\n\n")
+        f.write(f"Generated: `{generated_at}`\n\n")
+        f.write(f"Window since: `{window.get('since', '')}`\n\n")
+
+        f.write("## Summary\n\n")
+        f.write("| Metric | Value |\n")
+        f.write("| --- | ---: |\n")
+        f.write(f"| Inventory repositories | {totals.get('inventory_repos', 0)} |\n")
+        f.write(f"| Repositories after filters | {totals.get('filtered_repos', 0)} |\n")
+        f.write(f"| `pushed_at` candidates | {totals.get('pushed_at_candidate_repos', 0)} |\n")
+        f.write(f"| Enrichment candidates | {totals.get('candidate_repos', 0)} |\n")
+        f.write(f"| Repositories with movement | {totals.get('repos_with_movement', 0)} |\n")
+        f.write(f"| Default-branch commits | {totals.get('default_branch_commits', 0)} |\n")
+        f.write("\n")
+
+        f.write("## Collection Settings\n\n")
+        categories = filters.get("categories")
+        if isinstance(categories, list):
+            categories_text = ", ".join(categories)
+        else:
+            categories_text = str(categories or "")
+        f.write(f"- Categories: `{categories_text}`\n")
+        f.write(f"- Include archived: `{filters.get('include_archived', False)}`\n")
+        f.write(f"- Include forks: `{filters.get('include_forks', False)}`\n")
+        f.write(f"- State window: `{window.get('state_window_enabled', False)}`\n")
+        f.write(f"- Events prefilter: `{filters.get('events_prefilter_mode', 'off')}`\n\n")
+
+        if events.get("enabled"):
+            f.write("## Events API Prefilter\n\n")
+            f.write("| Metric | Value |\n")
+            f.write("| --- | ---: |\n")
+            f.write(f"| Orgs checked | {events.get('orgs_checked', 0)} |\n")
+            f.write(f"| Candidate repositories | {events.get('candidate_repos', 0)} |\n")
+            f.write(f"| Pages checked | {events.get('pages_checked', 0)} |\n")
+            f.write(f"| Pages changed | {events.get('pages_changed', 0)} |\n")
+            f.write(f"| Pages not modified | {events.get('pages_not_modified', 0)} |\n")
+            f.write("\n")
+
+        by_category = summaries.get("by_category") or {}
+        if by_category:
+            f.write("## Category Summary\n\n")
+            f.write("| Category | Repositories |\n")
+            f.write("| --- | ---: |\n")
+            for category, count in sorted(by_category.items()):
+                f.write(f"| {md_escape(category)} | {count} |\n")
+            f.write("\n")
+
+        by_org = summaries.get("by_org") or {}
+        if by_org:
+            f.write("## Organization Summary\n\n")
+            f.write("| Org | Repositories |\n")
+            f.write("| --- | ---: |\n")
+            for org, count in sorted(by_org.items(), key=lambda item: item[1], reverse=True):
+                f.write(f"| {md_escape(org)} | {count} |\n")
+            f.write("\n")
+
+        if top_repos:
+            f.write("## Top Repositories\n\n")
+            f.write("| Repository | Category | Commits | Newest commit |\n")
+            f.write("| --- | --- | ---: | --- |\n")
+            for activity in top_repos:
+                full_name = md_escape(activity.get("full_name", ""))
+                repo_url = f"https://github.com/{activity.get('full_name', '')}"
+                f.write(
+                    f"| [{full_name}]({repo_url}) | "
+                    f"{md_escape(activity.get('category', ''))} | "
+                    f"{activity.get('commit_count', 0)} | "
+                    f"`{activity.get('newest_commit_date', '')}` |\n"
+                )
+            f.write("\n")
+
+        f.write("## Repository Details\n\n")
+        if not activities:
+            f.write("No default-branch movement matched the current filters.\n")
+            return
+
+        for activity in activities:
+            f.write(
+                f"### {md_escape(activity.get('full_name', ''))} "
+                f"({activity.get('commit_count', 0)} commit(s))\n\n"
+            )
+            commits = activity.get("commits") or []
+            if not commits:
+                f.write("- No commit headlines returned.\n\n")
+                continue
+            for commit in commits:
+                headline = md_escape(commit.get("headline") or commit.get("oid") or "Commit")
+                url = commit.get("url") or ""
+                date = commit.get("committed_date") or ""
+                author = commit.get("author") or ""
+                pr_title = commit.get("pr_title") or ""
+                pr_url = commit.get("pr_url") or ""
+                suffix = f" - {md_escape(author)}" if author else ""
+                if pr_title and pr_url:
+                    suffix += f" - PR: [{md_escape(pr_title)}]({pr_url})"
+                f.write(f"- [{headline}]({url}) - `{date}`{suffix}\n")
+            f.write("\n")
+
+
+def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
+    os.makedirs(report_dir, exist_ok=True)
+    date_slug = str(payload.get("generated_at") or "latest")[:10]
+    paths = [
+        os.path.join(report_dir, "latest.json"),
+        os.path.join(report_dir, f"{date_slug}.json"),
+        os.path.join(report_dir, "latest.md"),
+        os.path.join(report_dir, f"{date_slug}.md"),
+    ]
+
+    for path in paths[:2]:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, sort_keys=True)
+            f.write("\n")
+    for path in paths[2:]:
+        write_report_markdown(path, payload)
+
+    return paths
+
+
 def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="Inventory CSV path.")
@@ -442,6 +829,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Comma-separated categories, or 'all'. Blank defaults to docs/reference/training/samples.",
     )
     parser.add_argument("--include-other", action="store_true")
+    parser.add_argument("--min-rest-remaining", type=int, default=100)
     parser.add_argument("--min-graphql-remaining", type=int, default=100)
     parser.add_argument("--no-budget-check", action="store_true")
     parser.add_argument("--state", default="", help="Tracker state JSON path.")
@@ -452,6 +840,20 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--digest-overlap-hours", type=int, default=2)
     parser.add_argument("--max-lookback-hours", type=int, default=168)
+    parser.add_argument(
+        "--events-prefilter-mode",
+        choices=["off", "union", "intersect"],
+        default="off",
+        help=(
+            "Optionally use organization Events API pages as an enrichment candidate hint. "
+            "'union' adds event candidates; 'intersect' keeps only repos found by both "
+            "pushed_at and events when events return candidates."
+        ),
+    )
+    parser.add_argument("--events-orgs", default="orgs.txt", help="Org list for Events API prefilter.")
+    parser.add_argument("--events-max-pages", type=int, default=2)
+    parser.add_argument("--reports-dir", default="reports")
+    parser.add_argument("--no-reports", action="store_true")
     return parser
 
 
@@ -496,11 +898,39 @@ def main() -> int:
         else:
             maybe_changed = filtered
 
+        pushed_candidate_count = len(maybe_changed)
+        events_summary: Optional[Dict[str, Any]] = None
+        client = GitHubClient(token=token, user_agent="msft-changes-digest")
+
+        if args.events_prefilter_mode != "off":
+            if not args.no_budget_check:
+                client.ensure_budget("core", args.min_rest_remaining)
+            event_orgs = read_orgs(args.events_orgs)
+            event_candidate_names, events_summary = fetch_event_candidates(
+                client=client,
+                orgs=event_orgs,
+                state=state,
+                max_pages_per_org=args.events_max_pages,
+            )
+            events_summary["mode"] = args.events_prefilter_mode
+            if isinstance(state.get("last_events_prefilter"), dict):
+                state["last_events_prefilter"]["mode"] = args.events_prefilter_mode
+            maybe_changed = apply_events_prefilter(
+                args.events_prefilter_mode,
+                filtered,
+                maybe_changed,
+                event_candidate_names,
+            )
+
         sys.stderr.write(f"[INFO] Inventory repos: {len(repos)}\n")
         sys.stderr.write(f"[INFO] After filters: {len(filtered)}\n")
-        sys.stderr.write(f"[INFO] After pushed_at prefilter: {len(maybe_changed)}\n")
+        sys.stderr.write(f"[INFO] After pushed_at prefilter: {pushed_candidate_count}\n")
+        if args.events_prefilter_mode != "off":
+            sys.stderr.write(
+                f"[INFO] After events prefilter ({args.events_prefilter_mode}): "
+                f"{len(maybe_changed)}\n"
+            )
 
-        client = GitHubClient(token=token, user_agent="msft-changes-digest")
         if maybe_changed and not args.no_budget_check:
             client.ensure_budget("graphql", args.min_graphql_remaining)
 
@@ -515,6 +945,26 @@ def main() -> int:
 
         write_csv("changes_last24h.csv", activities, args.max_commits)
         write_md("changes_last24h.md", activities, since_iso)
+        report_paths: List[str] = []
+        if not args.no_reports:
+            payload = build_report_payload(
+                activities=activities,
+                inventory_repo_count=len(repos),
+                filtered_repo_count=len(filtered),
+                pushed_candidate_count=pushed_candidate_count,
+                candidate_repo_count=len(maybe_changed),
+                since_iso=since_iso,
+                generated_at=now_utc,
+                hours_requested=args.hours,
+                selected_categories=selected_categories,
+                include_other=args.include_other,
+                include_archived=args.include_archived,
+                include_forks=args.include_forks,
+                use_state_window=args.use_state_window,
+                events_prefilter_mode=args.events_prefilter_mode,
+                events_summary=events_summary,
+            )
+            report_paths = write_reports(args.reports_dir, payload)
 
         if args.state:
             state["last_digest"] = {
@@ -526,8 +976,10 @@ def main() -> int:
                 "max_lookback_hours": args.max_lookback_hours,
                 "inventory_repos": len(repos),
                 "filtered_repos": len(filtered),
+                "pushed_at_candidate_repos": pushed_candidate_count,
                 "candidate_repos": len(maybe_changed),
                 "repos_with_movement": len(activities),
+                "events_prefilter_mode": args.events_prefilter_mode,
             }
             save_state(args.state, state)
 
@@ -537,6 +989,8 @@ def main() -> int:
 
     print("Wrote changes_last24h.csv")
     print("Wrote changes_last24h.md")
+    if not args.no_reports:
+        print(f"Wrote {len(report_paths)} report file(s) to {args.reports_dir}")
     print(f"Repos with movement: {len(activities)}")
     return 0
 

@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 This note captures the current rate-limit findings for MS-Repo-Tracker and records the starting point for remediation planning.
 
-Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, and updated GitHub Actions workflows.
+Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, and updated GitHub Actions workflows.
 
 ## Current Hot Spots
 
@@ -27,6 +27,7 @@ Implementation status: the first remediation pass has been implemented with `git
 4. The digest GraphQL query fetches rich commit and PR metadata in one pass.
    - Each candidate repo query includes commit history and associated pull request metadata.
    - This is convenient for output quality, but GraphQL cost and node count grow with candidate count and `--max-commits`.
+   - The digest now has an optional Events API prefilter mode that can be tested manually. It is not the scheduled default because organization events can be delayed.
 
 5. Scheduled workflows use `GITHUB_TOKEN`.
    - GitHub Actions `GITHUB_TOKEN` has a smaller per-repository automation budget than a normal authenticated user/PAT budget.
@@ -152,6 +153,19 @@ This is not the same as a perfect webhook guarantee. A strict "never miss anythi
    - Validation workflow runs no-network compile, CLI, artifact, and unit-test checks on push, pull request, and manual dispatch.
    - Writer workflows share one concurrency group and rebase before pushing generated commits.
 
+12. Human-ingestion reporting: publish concise daily brief artifacts alongside raw outputs.
+   - `reports/latest.md` is the easiest daily read for a human reviewer.
+   - `reports/latest.json` exposes the same metrics and activity list for downstream ingestion.
+   - Dated `reports/YYYY-MM-DD.*` files preserve a lightweight report history in the repository.
+   - The daily digest workflow stages `reports/` so successful scheduled runs keep these artifacts current.
+
+13. Events API candidate prefilter: keep it optional and budget-aware.
+   - `--events-prefilter-mode off` is the safest default and uses inventory `pushed_at`.
+   - `--events-prefilter-mode union` adds repos seen in organization events to the enrichment candidate list.
+   - `--events-prefilter-mode intersect` reduces GraphQL enrichment to repos seen by both `pushed_at` and organization events when event candidates are available.
+   - The script checks REST budget before optional Events API work and uses conditional request cache metadata for event pages.
+   - This mode should be tuned through manual workflow dispatch before becoming a scheduled default.
+
 ## Open Planning Question
 
 The key design decision is how strong the completeness guarantee needs to be:
@@ -166,3 +180,4 @@ The key design decision is how strong the completeness guarantee needs to be:
 - GitHub REST conditional requests can use `ETag` / `Last-Modified`; authenticated `304 Not Modified` responses do not count against primary REST rate limits: https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api#use-conditional-requests-if-appropriate
 - GitHub REST rate limits differ by authentication method, and `GITHUB_TOKEN` in Actions has its own per-repository limit: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api
 - GitHub GraphQL has separate point, node, timeout, and secondary-limit constraints: https://docs.github.com/en/graphql/overview/rate-limits-and-query-limits-for-the-graphql-api
+- GitHub REST Events endpoints are poll-oriented, support conditional requests, and expose `X-Poll-Interval`; organization events can be delayed: https://docs.github.com/en/rest/activity/events
