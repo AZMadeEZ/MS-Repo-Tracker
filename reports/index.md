@@ -1,24 +1,59 @@
-# Microsoft Repo Tracker Report Index
+# Microsoft Ecosystem Change Reports
 
-Generated: `2026-06-08T21:56:50.597828Z`
+Generated: `2026-06-08T22:24:25.002290Z`
 
-## Last 7 Days
+## Latest Brief
 
-| Metric | Value |
+[Read today's brief ->](latest.md)
+
+## Current Status
+
+- Status: Fresh at latest report generation. Current status lives in `status.json`.
+- Last generated: `2026-06-08 21:38 UTC`
+- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Events](latest.events.ndjson)
+
+## 7-Day Snapshot
+
+- Reports: 1
+- Repositories with movement: 68
+- Default-branch commits: 287
+- Releases: 20
+
+## 30-Day Snapshot
+
+- Reports: 1
+- Repositories with movement: 68
+- Default-branch commits: 287
+- Releases: 20
+
+## Latest Product Areas
+
+| Product area | Signal | Repos | Events | Releases | Security |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Azure | 40 | 25 | 54 | 13 | 1 |
+| Unmapped Activity | 22 | 18 | 32 | 1 | 0 |
+| .NET | 10 | 6 | 26 | 0 | 0 |
+| Identity | 6 | 2 | 6 | 0 | 1 |
+| Developer Tools | 5 | 1 | 5 | 0 | 0 |
+| Microsoft 365 | 4 | 5 | 10 | 1 | 0 |
+| PowerShell | 4 | 2 | 4 | 0 | 1 |
+| Windows | 4 | 3 | 5 | 0 | 0 |
+
+## Most Active Product Areas
+
+| Product area | Activity score |
 | --- | ---: |
-| Reports | 1 |
-| Repositories with movement | 68 |
-| Default-branch commits | 287 |
-| Releases | 20 |
-
-## Last 30 Days
-
-| Metric | Value |
-| --- | ---: |
-| Reports | 1 |
-| Repositories with movement | 68 |
-| Default-branch commits | 287 |
-| Releases | 20 |
+| Azure | 65 |
+| Unmapped Activity | 22 |
+| .NET | 16 |
+| Microsoft Graph | 15 |
+| Azure SDK | 12 |
+| Azure AI | 11 |
+| Microsoft 365 | 9 |
+| Identity | 8 |
+| PowerShell | 8 |
+| Windows | 7 |
+| Developer Tools | 6 |
 
 ## Daily Reports
 

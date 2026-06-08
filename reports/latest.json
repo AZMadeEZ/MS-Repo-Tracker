@@ -4290,6 +4290,43 @@
     ],
     "removed_repos": []
   },
+  "noise_summary": {
+    "actor_types": {
+      "automation": 9,
+      "bot": 30,
+      "human": 15
+    },
+    "change_types": {
+      "bulk_automation": 5,
+      "ci_infra": 4,
+      "dependency_update": 36,
+      "docs_update": 4,
+      "sdk_generation": 5
+    },
+    "event_count": 54,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/teams-agent-accelerator-templates"
+      },
+      {
+        "event_count": 5,
+        "repo": "dotnet/msbuild"
+      },
+      {
+        "event_count": 5,
+        "repo": "MicrosoftDocs/azure-docs-powershell"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure/azure-sdk-for-net"
+      }
+    ]
+  },
   "notable_changes": [
     {
       "actor_type": "human",
@@ -4847,6 +4884,416 @@
       "pr_url": "https://github.com/Azure/agentops/pull/263",
       "product_area": "Azure",
       "repo": "Azure/agentops"
+    }
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 54,
+      "noisy_event_count": 20,
+      "notable_event_count": 40,
+      "product_area": "Azure",
+      "release_count": 13,
+      "repo_count": 25,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-06-08T20:12:12Z",
+          "headline": "Release v0.3.11",
+          "notability_score": 100,
+          "repo": "Azure/agentops",
+          "url": "https://github.com/Azure/agentops/pull/265"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-06-08T19:21:17Z",
+          "headline": "Cosmos Release 2026-06-08",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/pull/49407"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-06-08T16:42:10Z",
+          "headline": "Increment version for monitor releases",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/pull/47394"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/agentops"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-net"
+        }
+      ]
+    },
+    {
+      "event_count": 32,
+      "noisy_event_count": 4,
+      "notable_event_count": 22,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 18,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-06-08T20:16:41Z",
+          "headline": "Update target-platform.md - add Sql170DatabaseSchemaProvider",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/sql-docs",
+          "url": "https://github.com/MicrosoftDocs/sql-docs/pull/10346"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-06-08T17:27:46Z",
+          "headline": "add model select sim",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/scenario-sims",
+          "url": "https://github.com/MicrosoftLearning/scenario-sims/commit/e3a80414cfb421313ccf5da02dd3142c1a95dc66"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-06-08T17:11:43Z",
+          "headline": "Force wllama to CPU",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/ai-apps",
+          "url": "https://github.com/MicrosoftLearning/ai-apps/commit/ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftLearning/ai-apps"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/dragon-copilot-extension-samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/webview2-winrt-reference"
+        }
+      ]
+    },
+    {
+      "event_count": 26,
+      "noisy_event_count": 9,
+      "notable_event_count": 10,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T16:58:41Z",
+          "headline": "EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs",
+          "notability_score": 90,
+          "repo": "dotnet/efcore",
+          "url": "https://github.com/dotnet/efcore/pull/38208"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T16:53:58Z",
+          "headline": "Translate List<T>.Exists to Queryable.Any",
+          "notability_score": 90,
+          "repo": "dotnet/efcore",
+          "url": "https://github.com/dotnet/efcore/pull/38226"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T16:36:55Z",
+          "headline": "Make DateTime.Parse translation tests culture-invariant",
+          "notability_score": 90,
+          "repo": "dotnet/efcore",
+          "url": "https://github.com/dotnet/efcore/pull/38384"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/orleans"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/efcore"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/msbuild"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-06-07T22:10:05Z",
+          "headline": "fix(security): require active-sponsor-channel binding for add_teams_member and share_file",
+          "notability_score": 100,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/10"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-06-08T20:52:01Z",
+          "headline": "docs: MXC (Microsoft Execution Containers) platform research",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/14"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-06-08T19:36:42Z",
+          "headline": "docs: fix stale Bot Gateway code citations (follow-up to #12)",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/13"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/entrabot"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/BCTech"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-06-08T20:25:42Z",
+          "headline": "Update screenshot of model picker",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/9903"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T17:30:28Z",
+          "headline": "Little grammar and clarity tweaks",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/9902"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-06-08T08:58:29Z",
+          "headline": "Add cross-link to editor tutorial",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/9901"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 10,
+      "noisy_event_count": 5,
+      "notable_event_count": 4,
+      "product_area": "Microsoft 365",
+      "release_count": 1,
+      "repo_count": 5,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-06-08T08:54:01Z",
+          "headline": "Rename Readme.md to README.md for graph-rsc-helper sample",
+          "notability_score": 90,
+          "repo": "OfficeDev/Microsoft-Teams-Samples",
+          "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2364"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-06-08T07:37:42Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:37)",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp",
+          "url": "https://github.com/MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp/commit/ab433959df05bd9ddd5cc00e0a7c8da5dedd0db5"
+        },
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-06-08T05:47:17Z",
+          "headline": "chore: dev to main merge",
+          "notability_score": 90,
+          "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+          "url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/pull/386"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/teams-agent-accelerator-templates"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-snippets"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator"
+        }
+      ]
+    },
+    {
+      "event_count": 4,
+      "noisy_event_count": 0,
+      "notable_event_count": 4,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-06-08T07:43:52Z",
+          "headline": "Copy Files From Source Repo (2026-06-08 00:43)",
+          "notability_score": 100,
+          "repo": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp",
+          "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T18:16:00Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 9",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/PowerShell-Docs-Modules",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/411"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T18:11:39Z",
+          "headline": "[Freshness] PSScriptAnalyzer Article Updates - Batch 8",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/PowerShell-Docs-Modules",
+          "url": "https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/409"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/PowerShell-Docs-Modules"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 2,
+      "notable_event_count": 4,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T16:38:03Z",
+          "headline": "[WinAppSDK CMake Support]: Implicitly choose deployment mode based on WindowsAppSDKSelfContained",
+          "notability_score": 90,
+          "repo": "microsoft/WindowsAppSDK",
+          "url": "https://github.com/microsoft/WindowsAppSDK/pull/6490"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T14:18:43Z",
+          "headline": "WebView2: Update documentation for 150.0.4071.0",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/webview2-win32-reference",
+          "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/144"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-06-08T09:38:55Z",
+          "headline": "WebView2: Update documentation for 149.0.4022.49",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/webview2-win32-reference",
+          "url": "https://github.com/MicrosoftDocs/webview2-win32-reference/pull/143"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "microsoft/WindowsAppSDK"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/webview2-win32-reference"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/DirectX-SDK-Samples"
+        }
+      ]
     }
   ],
   "recent_repo_creations": [
@@ -6324,6 +6771,56 @@
       ]
     }
   },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/agentops",
+      "url": "https://github.com/Azure/agentops/pull/265",
+      "why": "Release activity: Release v0.3.11"
+    },
+    {
+      "priority": 2,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/pull/49407",
+      "why": "Release activity: Cosmos Release 2026-06-08"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/pull/47394",
+      "why": "Release activity: Increment version for monitor releases"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/kiota-python",
+      "url": "https://github.com/microsoft/kiota-python/pull/566",
+      "why": "Release activity: chore: release main"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/pull/47296",
+      "why": "Release activity: Exporter release 1.0.0b53"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp",
+      "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72",
+      "why": "Security-related change: Copy Files From Source Repo (2026-06-08 00:43)"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/entrabot",
+      "url": "https://github.com/microsoft/entrabot/pull/10",
+      "why": "Security-related change: fix(security): require active-sponsor-channel binding for add_teams_member and share_file"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure-Samples/postgres-sa-byoac",
+      "url": "https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe",
+      "why": "Security-related change: fixed 12 vulnerabilities across aml model, backend, and frontend"
+    }
+  ],
   "top_repos": [
     {
       "audience": "operator",

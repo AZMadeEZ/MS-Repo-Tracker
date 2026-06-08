@@ -1588,6 +1588,275 @@ def md_escape(value: Any) -> str:
     return str(value if value is not None else "").replace("|", "\\|").replace("\n", " ")
 
 
+def human_utc(value: Any) -> str:
+    parsed = parse_iso(str(value or ""))
+    if parsed is None:
+        return str(value or "")
+    return parsed.astimezone(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def effective_window_hours(window: Mapping[str, Any]) -> float:
+    since = parse_iso(str(window.get("since") or ""))
+    until = parse_iso(str(window.get("until") or ""))
+    if since is None or until is None:
+        return 0.0
+    return max(0.0, round((until - since).total_seconds() / 3600, 1))
+
+
+def friendly_change_type(value: Any) -> str:
+    labels = {
+        "security_fix": "Security",
+        "release": "Release",
+        "feature": "Feature",
+        "bug_fix": "Fix",
+        "docs_update": "Docs",
+        "reference_update": "Reference",
+        "training_update": "Training",
+        "sample_update": "Sample",
+        "dependency_update": "Dependency",
+        "bulk_automation": "Automation",
+        "sdk_generation": "SDK",
+        "ci_infra": "CI/Infra",
+        "unknown": "Other",
+    }
+    return labels.get(str(value or "unknown"), str(value or "Other").replace("_", " ").title())
+
+
+def event_repo(event: Mapping[str, Any]) -> str:
+    return str(event.get("repo") or event.get("full_name") or "")
+
+
+def event_url(event: Mapping[str, Any]) -> str:
+    repo = event_repo(event)
+    return str(
+        event.get("url")
+        or event.get("pr_url")
+        or event.get("commit_url")
+        or (f"https://github.com/{repo}" if repo else "")
+    )
+
+
+def event_headline(event: Mapping[str, Any]) -> str:
+    return str(event.get("pr_title") or event.get("headline") or "Change")
+
+
+def why_event_matters(event: Mapping[str, Any]) -> str:
+    change_type = str(event.get("change_type") or "unknown")
+    headline = event_headline(event)
+    if change_type == "security_fix":
+        return f"Security-related change: {headline}"
+    if change_type == "release":
+        return f"Release activity: {headline}"
+    if change_type == "dependency_update":
+        return f"Dependency maintenance: {headline}"
+    if change_type == "bulk_automation":
+        return f"Bulk automation: {headline}"
+    if change_type == "sdk_generation":
+        return f"SDK-generation signal: {headline}"
+    if change_type == "feature":
+        return f"Feature or capability signal: {headline}"
+    if change_type == "bug_fix":
+        return f"Fix signal: {headline}"
+    if change_type.endswith("_update"):
+        return f"{friendly_change_type(change_type)} update: {headline}"
+    return headline
+
+
+def unique_by_change(events: List[Dict[str, Any]], limit: int) -> List[Dict[str, Any]]:
+    seen: Set[str] = set()
+    results: List[Dict[str, Any]] = []
+    for event in events:
+        key = str(
+            event.get("url")
+            or event.get("pr_url")
+            or event.get("commit_url")
+            or event.get("dedupe_key")
+            or event.get("event_id")
+            or ""
+        )
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        results.append(event)
+        if len(results) >= limit:
+            break
+    return results
+
+
+def compact_event_link(event: Mapping[str, Any]) -> Dict[str, Any]:
+    return {
+        "repo": event_repo(event),
+        "headline": event_headline(event),
+        "url": event_url(event),
+        "change_type": str(event.get("change_type") or "unknown"),
+        "notability_score": int(event.get("notability_score") or 0),
+        "committed_at": str(event.get("committed_at") or ""),
+    }
+
+
+def product_area_for_event(event: Mapping[str, Any]) -> str:
+    value = str(event.get("product_area") or "").strip()
+    return value if value and value.lower() != "unknown" else "Unmapped Activity"
+
+
+def build_product_area_summary(records: List[Dict[str, Any]], payload: Mapping[str, Any], limit: int = 8) -> List[Dict[str, Any]]:
+    release_repos = Counter(
+        str(item.get("repo_full_name") or "")
+        for item in ((payload.get("releases") or {}).get("items") or [])
+        if isinstance(item, dict)
+    )
+    by_area: Dict[str, Dict[str, Any]] = {}
+    for event in records:
+        area = product_area_for_event(event)
+        item = by_area.setdefault(
+            area,
+            {
+                "product_area": area,
+                "event_count": 0,
+                "notable_event_count": 0,
+                "release_count": 0,
+                "security_event_count": 0,
+                "noisy_event_count": 0,
+                "repos": Counter(),
+                "top_events": [],
+            },
+        )
+        repo = event_repo(event)
+        item["event_count"] += 1
+        item["repos"][repo] += 1
+        if int(event.get("notability_score") or 0) >= 70 and event.get("noise_level") != "high":
+            item["notable_event_count"] += 1
+            item["top_events"].append(event)
+        if event.get("change_type") == "security_fix":
+            item["security_event_count"] += 1
+        if event.get("noise_level") in {"medium", "high"}:
+            item["noisy_event_count"] += 1
+
+    for item in by_area.values():
+        item["release_count"] = sum(release_repos.get(repo, 0) for repo in item["repos"])
+        item["repo_count"] = len([repo for repo in item["repos"] if repo])
+        item["top_repos"] = [
+            {"repo": repo, "event_count": count}
+            for repo, count in item["repos"].most_common(5)
+            if repo
+        ]
+        top_events = sorted(
+            item["top_events"],
+            key=lambda event: (int(event.get("notability_score") or 0), str(event.get("committed_at") or "")),
+            reverse=True,
+        )
+        item["top_events"] = [compact_event_link(event) for event in unique_by_change(top_events, 3)]
+        del item["repos"]
+
+    summaries = list(by_area.values())
+    summaries.sort(
+        key=lambda item: (
+            int(item.get("notable_event_count") or 0),
+            int(item.get("release_count") or 0),
+            int(item.get("security_event_count") or 0),
+            int(item.get("event_count") or 0),
+        ),
+        reverse=True,
+    )
+    return summaries[:limit]
+
+
+def build_top_links(notable_changes: List[Dict[str, Any]], limit: int = 8) -> List[Dict[str, Any]]:
+    links = []
+    for idx, event in enumerate(unique_by_change(notable_changes, limit), start=1):
+        links.append(
+            {
+                "priority": idx,
+                "repo": event_repo(event),
+                "url": event_url(event),
+                "why": why_event_matters(event),
+            }
+        )
+    return links
+
+
+def build_noise_summary(records: List[Dict[str, Any]]) -> Dict[str, Any]:
+    noisy = [
+        event
+        for event in records
+        if event.get("noise_level") in {"medium", "high"}
+        or event.get("actor_type") in {"bot", "automation"}
+        or event.get("change_type") in {"bulk_automation", "dependency_update"}
+    ]
+    repo_counter = Counter(event_repo(event) for event in noisy if event_repo(event))
+    type_counter = Counter(str(event.get("change_type") or "unknown") for event in noisy)
+    actor_counter = Counter(str(event.get("actor_type") or "unknown") for event in noisy)
+    return {
+        "event_count": len(noisy),
+        "top_repos": [{"repo": repo, "event_count": count} for repo, count in repo_counter.most_common(5)],
+        "change_types": dict(type_counter.most_common(8)),
+        "actor_types": dict(actor_counter.most_common(5)),
+    }
+
+
+def build_plain_english_summary(payload: Mapping[str, Any]) -> List[str]:
+    totals = payload.get("totals") or {}
+    notable = payload.get("notable_changes") or []
+    product_areas = payload.get("product_area_summary") or []
+    noise = payload.get("noise_summary") or {}
+    release_count = int(totals.get("release_count") or 0)
+    repos_with_movement = int(totals.get("repos_with_movement") or 0)
+    commit_count = int(totals.get("default_branch_commits") or 0)
+
+    bullets: List[str] = []
+    if product_areas:
+        top = [
+            item.get("product_area", "")
+            for item in product_areas[:3]
+            if item.get("product_area") and item.get("product_area") != "Unmapped Activity"
+        ]
+        if top:
+            bullets.append(f"{', '.join(top)} led the visible product-area activity in this window.")
+    if release_count:
+        bullets.append(f"{release_count} release item(s) were detected during the window.")
+    security_repos = []
+    for event in notable:
+        if event.get("change_type") == "security_fix":
+            repo = event_repo(event)
+            if repo and repo not in security_repos:
+                security_repos.append(repo)
+    if security_repos:
+        bullets.append(f"Security-related changes appeared in {', '.join(security_repos[:3])}.")
+    human_repos = []
+    for event in notable:
+        if event.get("actor_type") == "human":
+            repo = event_repo(event)
+            if repo and repo not in human_repos:
+                human_repos.append(repo)
+    if human_repos:
+        bullets.append(f"Start with human-authored changes in {', '.join(human_repos[:4])}.")
+    noisy_count = int(noise.get("event_count") or 0)
+    if noisy_count:
+        bullets.append(f"{noisy_count} event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume.")
+    if not bullets:
+        bullets.append(f"{repos_with_movement} repo(s) moved with {commit_count} default-branch commit(s).")
+    return bullets[:6]
+
+
+def brief_status_block(payload: Mapping[str, Any]) -> List[str]:
+    generated_at = str(payload.get("generated_at") or "")
+    window = payload.get("window") or {}
+    totals = payload.get("totals") or {}
+    freshness = freshness_payload(generated_at, parse_iso(generated_at) or dt.datetime.now(dt.timezone.utc))
+    status_label = "Fresh" if not freshness.get("latest_report_stale") else "Stale"
+    hours = effective_window_hours(window)
+    return [
+        f"> Status: {status_label} at generation. Current freshness is tracked in `reports/status.json`.",
+        f"> Generated: {human_utc(generated_at)} - Window: {hours:g}h from {human_utc(window.get('since'))} to {human_utc(window.get('until'))}.",
+        (
+            f"> {totals.get('repos_with_movement', 0)} repo(s) moved - "
+            f"{totals.get('default_branch_commits', 0)} commit(s) - "
+            f"{totals.get('release_count', 0)} release item(s) - "
+            f"{len((payload.get('summaries') or {}).get('signals', {}).get('high_signal') or [])} high-signal repo(s)."
+        ),
+    ]
+
+
 def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
     totals = payload.get("totals") or {}
     summaries = payload.get("summaries") or {}
@@ -1602,6 +1871,9 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
     recent_creations = payload.get("recent_repo_creations") or []
     graphql = payload.get("graphql") or {}
     notable_changes = payload.get("notable_changes") or []
+    product_area_summary = payload.get("product_area_summary") or []
+    top_links = payload.get("top_links") or []
+    noise_summary = payload.get("noise_summary") or {}
     top_repos = payload.get("top_repos") or []
     activities = payload.get("activities") or []
 
@@ -1609,12 +1881,17 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
     title_date = generated_at[:10] if len(generated_at) >= 10 else generated_at
 
     with open(path, "w", encoding="utf-8") as f:
-        f.write(f"# Microsoft Repo Change Brief - {title_date}\n\n")
-        f.write(f"Generated: `{generated_at}`\n\n")
-        f.write(f"Window since: `{window.get('since', '')}`\n\n")
-        f.write(f"Window until: `{window.get('until', '')}`\n\n")
+        f.write(f"# Microsoft Ecosystem Daily Brief - {title_date}\n\n")
+        for line in brief_status_block(payload):
+            f.write(f"{line}\n")
+        f.write("\n")
 
-        f.write("## Summary\n\n")
+        f.write("## Plain-English Summary\n\n")
+        for bullet in build_plain_english_summary(payload):
+            f.write(f"- {md_escape(bullet)}\n")
+        f.write("\n")
+
+        f.write("## Headline Metrics\n\n")
         f.write("| Metric | Value |\n")
         f.write("| --- | ---: |\n")
         f.write(f"| Inventory repositories | {totals.get('inventory_repos', 0)} |\n")
@@ -1626,7 +1903,7 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
         f.write("\n")
 
         if notable_changes:
-            f.write("## Notable Changes\n\n")
+            f.write("## What Changed That Matters\n\n")
             f.write("| Repository | Score | Change | Actor | Noise | Headline | Time |\n")
             f.write("| --- | ---: | --- | --- | --- | --- | --- |\n")
             for event in notable_changes[:15]:
@@ -1644,6 +1921,61 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
                     f"`{event.get('committed_at', '')}` |\n"
                 )
             f.write("\n")
+
+        if product_area_summary:
+            f.write("## Product Areas\n\n")
+            f.write("| Product area | Signal | Repos | Events | Releases | Security | Top links |\n")
+            f.write("| --- | ---: | ---: | ---: | ---: | ---: | --- |\n")
+            for area in product_area_summary[:8]:
+                top_event_links = []
+                for event in area.get("top_events") or []:
+                    headline = md_escape(event_headline(event))
+                    url = event_url(event)
+                    if headline and url:
+                        top_event_links.append(f"[{headline}]({url})")
+                f.write(
+                    f"| {md_escape(area.get('product_area', ''))} | "
+                    f"{area.get('notable_event_count', 0)} | "
+                    f"{area.get('repo_count', 0)} | "
+                    f"{area.get('event_count', 0)} | "
+                    f"{area.get('release_count', 0)} | "
+                    f"{area.get('security_event_count', 0)} | "
+                    f"{md_escape('; '.join(top_event_links))} |\n"
+                )
+            f.write("\n")
+
+        if top_links:
+            f.write("## Today's Top Links\n\n")
+            f.write("| Priority | Repository | Why read it |\n")
+            f.write("| ---: | --- | --- |\n")
+            for link in top_links[:8]:
+                repo = md_escape(link.get("repo", ""))
+                url = link.get("url") or f"https://github.com/{link.get('repo', '')}"
+                f.write(
+                    f"| {link.get('priority', '')} | "
+                    f"[{repo}](https://github.com/{link.get('repo', '')}) | "
+                    f"[{md_escape(link.get('why', ''))}]({url}) |\n"
+                )
+            f.write("\n")
+
+        if noise_summary:
+            f.write("## Noise and Automation\n\n")
+            noisy_count = int(noise_summary.get("event_count") or 0)
+            if noisy_count:
+                f.write(f"- {noisy_count} event(s) look automated, bot-heavy, dependency, generated, or medium/high noise.\n")
+                top_noise = noise_summary.get("top_repos") or []
+                if top_noise:
+                    repos = ", ".join(item.get("repo", "") for item in top_noise[:5] if item.get("repo"))
+                    f.write(f"- Top noisy repositories: {md_escape(repos)}.\n")
+                change_types = noise_summary.get("change_types") or {}
+                if change_types:
+                    labels = ", ".join(f"{friendly_change_type(key)}: {value}" for key, value in change_types.items())
+                    f.write(f"- Noise mix: {md_escape(labels)}.\n")
+            else:
+                f.write("- No medium/high-noise automation cluster was detected in the emitted events.\n")
+            f.write("\n")
+
+        f.write("<details>\n<summary>Show collection settings and diagnostics</summary>\n\n")
 
         f.write("## Collection Settings\n\n")
         categories = filters.get("categories")
@@ -1692,6 +2024,9 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
             f.write(f"| Intersect candidate savings | {events_calibration.get('intersect_candidate_savings', 0)} |\n")
             f.write(f"| Intersect potential misses | {events_calibration.get('intersect_potential_miss_count', 0)} |\n")
             f.write("\n")
+
+        f.write("</details>\n\n")
+        f.write("<details>\n<summary>Show supporting signal, release, and lifecycle tables</summary>\n\n")
 
         high_signal = signal_summary.get("high_signal") or []
         if high_signal:
@@ -1779,8 +2114,11 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
                 f.write(f"| {md_escape(org)} | {count} |\n")
             f.write("\n")
 
+        f.write("</details>\n\n")
+        f.write("<details>\n<summary>Show raw repository activity</summary>\n\n")
+
         if top_repos:
-            f.write("## Top Repositories\n\n")
+            f.write("## Busiest Repositories\n\n")
             f.write("| Repository | Signal | Category | Commits | Releases | Newest commit |\n")
             f.write("| --- | ---: | --- | ---: | ---: | --- |\n")
             for activity in top_repos:
@@ -1800,6 +2138,7 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
         f.write("## Repository Details\n\n")
         if not activities:
             f.write("No default-branch movement matched the current filters.\n")
+            f.write("\n</details>\n")
             return
 
         for activity in activities:
@@ -1835,6 +2174,8 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
                 f.write(f"- [{headline}]({url}) - `{date}`{suffix}\n")
             f.write("\n")
 
+        f.write("</details>\n")
+
 
 def load_dated_report_payloads(report_dir: str) -> List[Dict[str, Any]]:
     if not os.path.isdir(report_dir):
@@ -1864,10 +2205,17 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
     for payload in reports:
         totals = payload.get("totals") or {}
         signals = ((payload.get("summaries") or {}).get("signals") or {})
+        for product_area in payload.get("product_area_summary") or []:
+            product = product_area.get("product_area")
+            if product:
+                product_counter[str(product)] += int(product_area.get("notable_event_count") or product_area.get("event_count") or 1)
         for activity in payload.get("activities") or []:
             full_name = activity.get("full_name")
             if full_name:
                 repo_counter[str(full_name)] += 1
+            product_area = activity.get("product_area")
+            if product_area and product_area != "Unknown":
+                product_counter[str(product_area)] += 1
             signal = activity.get("signal") or {}
             matches = signal.get("watchlist_matches") or {}
             for product in matches.get("products") or []:
@@ -1888,6 +2236,8 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
 
     last_7 = daily[-7:]
     last_30 = daily[-30:]
+    latest = daily[-1] if daily else {}
+    latest_payload = reports[-1] if reports else {}
     return {
         "schema_version": 1,
         "artifact_type": "tracker-report-index",
@@ -1895,6 +2245,18 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
         "schema_url": REPORT_INDEX_SCHEMA_URL,
         "generated_at": iso_utc(),
         "report_count": len(daily),
+        "latest": {
+            "date": latest.get("date", ""),
+            "generated_at": latest.get("generated_at", ""),
+            "report_md": "latest.md",
+            "report_json": "latest.json",
+            "event_stream": "latest.events.ndjson",
+            "repos_with_movement": latest.get("repos_with_movement", 0),
+            "default_branch_commits": latest.get("default_branch_commits", 0),
+            "release_count": latest.get("release_count", 0),
+            "high_signal_count": latest.get("high_signal_count", 0),
+            "product_area_summary": latest_payload.get("product_area_summary") or [],
+        },
         "daily": daily,
         "trends": {
             "last_7_days": {
@@ -1931,17 +2293,52 @@ def write_report_index(report_dir: str) -> List[str]:
         f.write("\n")
 
     with open(md_path, "w", encoding="utf-8") as f:
-        f.write("# Microsoft Repo Tracker Report Index\n\n")
+        f.write("# Microsoft Ecosystem Change Reports\n\n")
         f.write(f"Generated: `{payload.get('generated_at', '')}`\n\n")
+        latest = payload.get("latest") or {}
+        if latest:
+            f.write("## Latest Brief\n\n")
+            f.write("[Read today's brief ->](latest.md)\n\n")
+            f.write("## Current Status\n\n")
+            generated = latest.get("generated_at", "")
+            freshness = freshness_payload(str(generated or ""), parse_iso(str(generated or "")) or dt.datetime.now(dt.timezone.utc))
+            status_label = "Fresh" if not freshness.get("latest_report_stale") else "Stale"
+            f.write(f"- Status: {status_label} at latest report generation. Current status lives in `status.json`.\n")
+            f.write(f"- Last generated: `{human_utc(generated)}`\n")
+            f.write(f"- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Events](latest.events.ndjson)\n\n")
+
         trends = payload.get("trends") or {}
-        for label, trend in (("Last 7 Days", trends.get("last_7_days") or {}), ("Last 30 Days", trends.get("last_30_days") or {})):
+        for label, trend in (("7-Day Snapshot", trends.get("last_7_days") or {}), ("30-Day Snapshot", trends.get("last_30_days") or {})):
             f.write(f"## {label}\n\n")
-            f.write("| Metric | Value |\n")
+            f.write(f"- Reports: {trend.get('report_count', 0)}\n")
+            f.write(f"- Repositories with movement: {trend.get('repos_with_movement', 0)}\n")
+            f.write(f"- Default-branch commits: {trend.get('default_branch_commits', 0)}\n")
+            f.write(f"- Releases: {trend.get('release_count', 0)}\n\n")
+
+        latest_products = latest.get("product_area_summary") or []
+        if latest_products:
+            f.write("## Latest Product Areas\n\n")
+            f.write("| Product area | Signal | Repos | Events | Releases | Security |\n")
+            f.write("| --- | ---: | ---: | ---: | ---: | ---: |\n")
+            for item in latest_products[:8]:
+                f.write(
+                    f"| {md_escape(item.get('product_area', ''))} | "
+                    f"{item.get('notable_event_count', 0)} | "
+                    f"{item.get('repo_count', 0)} | "
+                    f"{item.get('event_count', 0)} | "
+                    f"{item.get('release_count', 0)} | "
+                    f"{item.get('security_event_count', 0)} |\n"
+                )
+            f.write("\n")
+
+        top_products = payload.get("top_products") or []
+        if top_products:
+            f.write("## Most Active Product Areas\n\n")
+            f.write("| Product area | Activity score |\n")
             f.write("| --- | ---: |\n")
-            f.write(f"| Reports | {trend.get('report_count', 0)} |\n")
-            f.write(f"| Repositories with movement | {trend.get('repos_with_movement', 0)} |\n")
-            f.write(f"| Default-branch commits | {trend.get('default_branch_commits', 0)} |\n")
-            f.write(f"| Releases | {trend.get('release_count', 0)} |\n\n")
+            for item in top_products[:15]:
+                f.write(f"| {md_escape(item.get('product', ''))} | {item.get('report_count', 0)} |\n")
+            f.write("\n")
 
         f.write("## Daily Reports\n\n")
         f.write("| Date | Repositories | Commits | Releases | High-signal | Links |\n")
@@ -2401,6 +2798,9 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
     payload = dict(payload)
     event_records = build_event_stream_records(payload)
     payload["notable_changes"] = notable_changes_from_events(event_records)
+    payload["product_area_summary"] = build_product_area_summary(event_records, payload)
+    payload["top_links"] = build_top_links(payload["notable_changes"])
+    payload["noise_summary"] = build_noise_summary(event_records)
     payload["event_stream"] = {
         "schema_url": EVENT_SCHEMA_URL,
         "latest_path": normalize_artifact_path(latest_event_path),

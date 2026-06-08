@@ -26,6 +26,9 @@
     "generated_at": {
       "type": "string"
     },
+    "latest": {
+      "type": "object"
+    },
     "daily": {
       "type": "array",
       "items": {

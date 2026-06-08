@@ -1,12 +1,18 @@
-# Microsoft Repo Change Brief - 2026-06-08
+# Microsoft Ecosystem Daily Brief - 2026-06-08
 
-Generated: `2026-06-08T21:38:00.975882Z`
+> Status: Fresh at generation. Current freshness is tracked in `reports/status.json`.
+> Generated: 2026-06-08 21:38 UTC - Window: 24h from 2026-06-07 21:38 UTC to 2026-06-08 21:38 UTC.
+> 68 repo(s) moved - 287 commit(s) - 20 release item(s) - 25 high-signal repo(s).
 
-Window since: `2026-06-07T21:38:00.975882Z`
+## Plain-English Summary
 
-Window until: `2026-06-08T21:38:00.975882Z`
+- Azure, .NET led the visible product-area activity in this window.
+- 20 release item(s) were detected during the window.
+- Security-related changes appeared in MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp, microsoft/entrabot, Azure-Samples/postgres-sa-byoac.
+- Start with human-authored changes in Azure/agentops, Azure/azure-sdk-for-java, Azure/azure-sdk-for-python, microsoft/kiota-python.
+- 54 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume.
 
-## Summary
+## Headline Metrics
 
 | Metric | Value |
 | --- | ---: |
@@ -17,7 +23,7 @@ Window until: `2026-06-08T21:38:00.975882Z`
 | Repositories with movement | 68 |
 | Default-branch commits | 287 |
 
-## Notable Changes
+## What Changed That Matters
 
 | Repository | Score | Change | Actor | Noise | Headline | Time |
 | --- | ---: | --- | --- | --- | --- | --- |
@@ -37,6 +43,41 @@ Window until: `2026-06-08T21:38:00.975882Z`
 | [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs) | 90 | feature | human | low | [Update target-platform.md - add Sql170DatabaseSchemaProvider](https://github.com/MicrosoftDocs/sql-docs/pull/10346) | `2026-06-08T20:16:41Z` |
 | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 90 | docs_update | human | low | [Hand off @ronniegeraghty CODEOWNERS to new owners](https://github.com/Azure/azure-sdk-for-rust/pull/4499) | `2026-06-08T20:14:28Z` |
 
+## Product Areas
+
+| Product area | Signal | Repos | Events | Releases | Security | Top links |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Azure | 40 | 25 | 54 | 13 | 1 | [Release v0.3.11](https://github.com/Azure/agentops/pull/265); [Cosmos Release 2026-06-08](https://github.com/Azure/azure-sdk-for-java/pull/49407); [Increment version for monitor releases](https://github.com/Azure/azure-sdk-for-python/pull/47394) |
+| Unmapped Activity | 22 | 18 | 32 | 1 | 0 | [Update target-platform.md - add Sql170DatabaseSchemaProvider](https://github.com/MicrosoftDocs/sql-docs/pull/10346); [add model select sim](https://github.com/MicrosoftLearning/scenario-sims/commit/e3a80414cfb421313ccf5da02dd3142c1a95dc66); [Force wllama to CPU](https://github.com/MicrosoftLearning/ai-apps/commit/ee318cfe6c687ee8ef1a39ecc75c91a67f33f12b) |
+| .NET | 10 | 6 | 26 | 0 | 0 | [EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs](https://github.com/dotnet/efcore/pull/38208); [Translate List<T>.Exists to Queryable.Any](https://github.com/dotnet/efcore/pull/38226); [Make DateTime.Parse translation tests culture-invariant](https://github.com/dotnet/efcore/pull/38384) |
+| Identity | 6 | 2 | 6 | 0 | 1 | [fix(security): require active-sponsor-channel binding for add_teams_member and share_file](https://github.com/microsoft/entrabot/pull/10); [docs: MXC (Microsoft Execution Containers) platform research](https://github.com/microsoft/entrabot/pull/14); [docs: fix stale Bot Gateway code citations (follow-up to #12)](https://github.com/microsoft/entrabot/pull/13) |
+| Developer Tools | 5 | 1 | 5 | 0 | 0 | [Update screenshot of model picker](https://github.com/microsoft/vscode-docs/pull/9903); [Little grammar and clarity tweaks](https://github.com/microsoft/vscode-docs/pull/9902); [Add cross-link to editor tutorial](https://github.com/microsoft/vscode-docs/pull/9901) |
+| Microsoft 365 | 4 | 5 | 10 | 1 | 0 | [Rename Readme.md to README.md for graph-rsc-helper sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2364); [Copy Files From Source Repo (2026-06-08 00:37)](https://github.com/MicrosoftLearning/MS-4010-Build-Plugins-Connectors-Microsoft-Copilot-M365.ja-jp/commit/ab433959df05bd9ddd5cc00e0a7c8da5dedd0db5); [chore: dev to main merge](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/pull/386) |
+| PowerShell | 4 | 2 | 4 | 0 | 1 | [Copy Files From Source Repo (2026-06-08 00:43)](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72); [[Freshness] PSScriptAnalyzer Article Updates - Batch 9](https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/411); [[Freshness] PSScriptAnalyzer Article Updates - Batch 8](https://github.com/MicrosoftDocs/PowerShell-Docs-Modules/pull/409) |
+| Windows | 4 | 3 | 5 | 0 | 0 | [[WinAppSDK CMake Support]: Implicitly choose deployment mode based on WindowsAppSDKSelfContained](https://github.com/microsoft/WindowsAppSDK/pull/6490); [WebView2: Update documentation for 150.0.4071.0](https://github.com/MicrosoftDocs/webview2-win32-reference/pull/144); [WebView2: Update documentation for 149.0.4022.49](https://github.com/MicrosoftDocs/webview2-win32-reference/pull/143) |
+
+## Today's Top Links
+
+| Priority | Repository | Why read it |
+| ---: | --- | --- |
+| 1 | [Azure/agentops](https://github.com/Azure/agentops) | [Release activity: Release v0.3.11](https://github.com/Azure/agentops/pull/265) |
+| 2 | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [Release activity: Cosmos Release 2026-06-08](https://github.com/Azure/azure-sdk-for-java/pull/49407) |
+| 3 | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [Release activity: Increment version for monitor releases](https://github.com/Azure/azure-sdk-for-python/pull/47394) |
+| 4 | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [Release activity: chore: release main](https://github.com/microsoft/kiota-python/pull/566) |
+| 5 | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [Release activity: Exporter release 1.0.0b53](https://github.com/Azure/azure-sdk-for-python/pull/47296) |
+| 6 | [MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp) | [Security-related change: Copy Files From Source Repo (2026-06-08 00:43)](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst.ja-jp/commit/92286e96b9913afb992bc2af5fa3ff043ba97d72) |
+| 7 | [microsoft/entrabot](https://github.com/microsoft/entrabot) | [Security-related change: fix(security): require active-sponsor-channel binding for add_teams_member and share_file](https://github.com/microsoft/entrabot/pull/10) |
+| 8 | [Azure-Samples/postgres-sa-byoac](https://github.com/Azure-Samples/postgres-sa-byoac) | [Security-related change: fixed 12 vulnerabilities across aml model, backend, and frontend](https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe) |
+
+## Noise and Automation
+
+- 54 event(s) look automated, bot-heavy, dependency, generated, or medium/high noise.
+- Top noisy repositories: microsoft/teams-agent-accelerator-templates, dotnet/msbuild, MicrosoftDocs/azure-docs-powershell, microsoft/kiota-samples, Azure/azure-sdk-for-net.
+- Noise mix: Dependency: 36, SDK: 5, Automation: 5, CI/Infra: 4, Docs: 4.
+
+<details>
+<summary>Show collection settings and diagnostics</summary>
+
 ## Collection Settings
 
 - Categories: `docs, reference, samples, training`
@@ -55,6 +96,11 @@ Window until: `2026-06-08T21:38:00.975882Z`
 | Detail batches | 2 |
 | Repos counted | 133 |
 | Repos enriched | 68 |
+
+</details>
+
+<details>
+<summary>Show supporting signal, release, and lifecycle tables</summary>
 
 ## High-Signal Items
 
@@ -159,7 +205,12 @@ Window until: `2026-06-08T21:38:00.975882Z`
 | OfficeDev | 2 |
 | microsoftgraph | 1 |
 
-## Top Repositories
+</details>
+
+<details>
+<summary>Show raw repository activity</summary>
+
+## Busiest Repositories
 
 | Repository | Signal | Category | Commits | Releases | Newest commit |
 | --- | ---: | --- | ---: | ---: | --- |
@@ -703,3 +754,4 @@ Tags: `bot-only, dependency-noise, product:Azure SDK, samples, security, watchli
 
 - [Bump @azure/storage-blob (#89)](https://github.com/Azure-Samples/azure-sdk-for-js-docs/commit/8e30023bdef6ac9732660943ecc8aff1dee08d2f) - `2026-06-08T00:24:43Z` - dependabot[bot] (@dependabot[bot]) - PR: [Bump @azure/storage-blob from 12.31.0 to 12.32.0 in /samples/identity/credentials in the azure-sdk group](https://github.com/Azure-Samples/azure-sdk-for-js-docs/pull/89)
 
+</details>

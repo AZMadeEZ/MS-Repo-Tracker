@@ -285,8 +285,22 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
         raise RuntimeError("Report history is missing the generated-date files.")
 
     md_text = latest_md.read_text(encoding="utf-8")
-    if not md_text.startswith("# Microsoft Repo Change Brief - "):
+    if not (
+        md_text.startswith("# Microsoft Repo Change Brief - ")
+        or md_text.startswith("# Microsoft Ecosystem Daily Brief - ")
+    ):
         raise RuntimeError(f"{latest_md} does not look like a tracker report.")
+    for section in (
+        "Status:",
+        "## Plain-English Summary",
+        "## What Changed That Matters",
+        "## Today's Top Links",
+        "## Noise and Automation",
+        "<summary>Show collection settings and diagnostics</summary>",
+        "<summary>Show raw repository activity</summary>",
+    ):
+        if section not in md_text:
+            raise RuntimeError(f"{latest_md} is missing human-report section: {section}")
 
     index_json = report_dir / "index.json"
     index_md = report_dir / "index.md"
@@ -297,6 +311,9 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     validate_artifact_identity(index_payload, "tracker-report-index")
     if not isinstance(index_payload.get("daily"), list):
         raise RuntimeError("Report index is missing daily report entries.")
+    index_text = index_md.read_text(encoding="utf-8")
+    if "[Read today's brief ->](latest.md)" not in index_text:
+        raise RuntimeError("Report index does not link to the latest brief.")
 
     return payload
 

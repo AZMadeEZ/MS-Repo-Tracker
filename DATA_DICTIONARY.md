@@ -79,11 +79,27 @@ All machine-readable JSON report artifacts include:
 | `activities` | Row-level repository movement details. |
 | `event_stream` | Paths and counts for the flat NDJSON event stream generated from `activities[].commits`. |
 | `notable_changes` | Top event-level changes selected from the event stream by notability score while filtering high-noise events. |
+| `product_area_summary` | Human-oriented product-area rollup with event, release, security, repo, noisy-event, and top-link counts. Unknown product areas are grouped as `Unmapped Activity`. |
+| `top_links` | Compact prioritized links to the most important changes in the brief. Intended for quick reading, dashboards, and notification summaries. |
+| `noise_summary` | Automation/noise rollup covering medium/high-noise events, bot or automation actors, bulk automation, and dependency maintenance clusters. |
 | `releases` | Release scan summary and recent release items. |
 | `lifecycle` | Latest inventory lifecycle summary when it overlaps the digest window. |
 | `graphql` | GraphQL enrichment strategy and batch telemetry. |
 | `events_prefilter` | Optional Events API candidate telemetry. |
 | `events_calibration` | Optional Events-vs-`pushed_at` calibration snapshot. |
+
+## Report Index
+
+`reports/index.md` is the human landing page for daily briefs. `reports/index.json` is the machine-readable index for dashboards and recurring trend views.
+
+| Field | Meaning |
+| --- | --- |
+| `latest` | Pointer block for the current brief, including latest Markdown, JSON, event stream paths, headline counts, and latest product-area summary. |
+| `daily` | Dated report history with per-day movement, commit, release, and high-signal counts. |
+| `trends.last_7_days` | Seven-report rollup. When fewer than seven reports exist, this covers all available reports. |
+| `trends.last_30_days` | Thirty-report rollup. When fewer than thirty reports exist, this covers all available reports. |
+| `top_repositories` | Repositories recurring most often across available report history. |
+| `top_products` | Product areas recurring most often across available report history, including watchlist product matches and report product-area summaries. |
 
 ## Inventory And State
 

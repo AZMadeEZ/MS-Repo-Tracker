@@ -126,6 +126,30 @@ class DigestFilterTests(unittest.TestCase):
             self.assertTrue((Path(tmp) / "reports" / "manifest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "status.json").exists())
 
+    def test_product_area_summary_keeps_compact_top_links(self) -> None:
+        records = [
+            {
+                "repo": "Azure/repo",
+                "product_area": "Azure",
+                "change_type": "release",
+                "notability_score": 100,
+                "noise_level": "low",
+                "headline": "Release one",
+                "commit_url": "https://github.com/Azure/repo/commit/1",
+                "committed_at": "2026-01-01T00:00:00Z",
+                "event_id": "commit:provider:Azure/repo:1",
+                "labels": ["watchlist"],
+            }
+        ]
+        payload = {"releases": {"items": [{"repo_full_name": "Azure/repo"}]}}
+        summary = changes.build_product_area_summary(records, payload)
+
+        self.assertEqual(summary[0]["product_area"], "Azure")
+        self.assertEqual(summary[0]["release_count"], 1)
+        self.assertEqual(summary[0]["top_events"][0]["headline"], "Release one")
+        self.assertNotIn("labels", summary[0]["top_events"][0])
+        self.assertNotIn("event_id", summary[0]["top_events"][0])
+
     def test_watchlist_scores_human_watched_repo_above_bot_noise(self) -> None:
         watched = changes.RepoActivity(
             full_name="Org/repo",
@@ -501,7 +525,26 @@ class ValidationScriptTests(unittest.TestCase):
                 (report_dir / name).write_text(json.dumps(report_payload), encoding="utf-8")
             for name in ("latest.md", "2026-01-01.md"):
                 (report_dir / name).write_text(
-                    "# Microsoft Repo Change Brief - 2026-01-01\n\n",
+                    (
+                        "# Microsoft Ecosystem Daily Brief - 2026-01-01\n\n"
+                        "> Status: Fresh at generation.\n\n"
+                        "## Plain-English Summary\n\n"
+                        "- One useful change landed.\n\n"
+                        "## What Changed That Matters\n\n"
+                        "| Repository | Score | Change | Actor | Noise | Headline | Time |\n"
+                        "| --- | ---: | --- | --- | --- | --- | --- |\n"
+                        "| [TestOrg/repo](https://github.com/TestOrg/repo) | 10 | Feature | human | low | [Add docs](https://github.com/TestOrg/repo/pull/1) | `2026-01-01T00:00:00Z` |\n\n"
+                        "## Today's Top Links\n\n"
+                        "| Priority | Repository | Why read it |\n"
+                        "| ---: | --- | --- |\n"
+                        "| 1 | [TestOrg/repo](https://github.com/TestOrg/repo) | [Feature signal](https://github.com/TestOrg/repo/pull/1) |\n\n"
+                        "## Noise and Automation\n\n"
+                        "- No medium/high-noise automation cluster was detected.\n\n"
+                        "<details>\n<summary>Show collection settings and diagnostics</summary>\n\n"
+                        "</details>\n\n"
+                        "<details>\n<summary>Show raw repository activity</summary>\n\n"
+                        "</details>\n"
+                    ),
                     encoding="utf-8",
                 )
             (report_dir / "index.json").write_text(
@@ -517,7 +560,7 @@ class ValidationScriptTests(unittest.TestCase):
                 encoding="utf-8",
             )
             (report_dir / "index.md").write_text(
-                "# Microsoft Repo Tracker Report Index\n\n",
+                "# Microsoft Ecosystem Change Reports\n\n[Read today's brief ->](latest.md)\n\n",
                 encoding="utf-8",
             )
             event_record = {

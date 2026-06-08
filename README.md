@@ -8,6 +8,14 @@ This repo includes two scripts:
 - `msft_changes_last24h.py` - summarizes recent default-branch commits for repos in the inventory and outputs both CSV and Markdown digests.
 - `msft_events_calibration.py` - compares GitHub Events API candidates with inventory `pushed_at` candidates without spending GraphQL enrichment budget.
 
+## Start Here
+
+- Want today's human-readable brief? Read `reports/latest.md`.
+- Want the trend view? Read `reports/index.md`.
+- Want to know whether the data is fresh? Check `reports/status.json`.
+- Want machine-readable data? Use `reports/latest.json` or `reports/latest.events.ndjson`.
+- Want to tune what matters? Edit `watchlist.yml` and `config/classification_rules.json`.
+
 ## What gets generated
 
 Running the scripts creates these output files:

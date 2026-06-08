@@ -100,6 +100,21 @@
         "type": "object"
       }
     },
+    "product_area_summary": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "top_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "noise_summary": {
+      "type": "object"
+    },
     "activities": {
       "type": "array",
       "items": {
