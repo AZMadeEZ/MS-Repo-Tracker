@@ -90,11 +90,13 @@ class DigestFilterTests(unittest.TestCase):
         )
         payload = changes.build_report_payload(
             activities=[activity],
+            filtered_repos=[changes.RepoInput(full_name="Org/repo", org="Org", name="repo")],
             inventory_repo_count=2,
             filtered_repo_count=1,
             pushed_candidate_count=1,
             candidate_repo_count=1,
             since_iso="2026-01-01T00:00:00Z",
+            since_dt=dt.datetime(2026, 1, 1, tzinfo=dt.timezone.utc),
             generated_at=dt.datetime(2026, 1, 2, 3, 4, tzinfo=dt.timezone.utc),
             hours_requested=24,
             selected_categories={"docs"},
@@ -104,12 +106,94 @@ class DigestFilterTests(unittest.TestCase):
             use_state_window=True,
             events_prefilter_mode="off",
             events_summary=None,
+            events_calibration=None,
+            releases_by_repo={},
+            release_summary={"enabled": False},
+            signals_by_repo={"Org/repo": {"score": 50, "tags": ["human-authored"]}},
+            watchlist_summary={"repo_count": 1},
+            lifecycle_summary={},
+            graphql_telemetry={"mode": "two-stage", "batch_size": 35},
         )
         with tempfile.TemporaryDirectory() as tmp:
             paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
-            self.assertEqual(len(paths), 4)
+            self.assertEqual(len(paths), 6)
             self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "index.md").exists())
+
+    def test_watchlist_scores_human_watched_repo_above_bot_noise(self) -> None:
+        watched = changes.RepoActivity(
+            full_name="Org/repo",
+            org="Org",
+            name="repo",
+            category="docs",
+            default_branch="main",
+            commit_count=2,
+            newest_commit_date="2026-01-01T00:00:00Z",
+            commits=[
+                changes.CommitInfo(
+                    oid="1",
+                    committed_date="2026-01-01T00:00:00Z",
+                    headline="Add migration guide",
+                    url="https://example.test/1",
+                    author="Ada",
+                )
+            ],
+        )
+        noise = changes.RepoActivity(
+            full_name="Org/noise",
+            org="Org",
+            name="noise",
+            category="docs",
+            default_branch="main",
+            commit_count=2,
+            newest_commit_date="2026-01-01T00:00:00Z",
+            commits=[
+                changes.CommitInfo(
+                    oid="2",
+                    committed_date="2026-01-01T00:00:00Z",
+                    headline="Bump requests from 1 to 2",
+                    url="https://example.test/2",
+                    author="dependabot[bot] (@dependabot[bot])",
+                )
+            ],
+        )
+        watchlist = {
+            "repos": {"org/repo"},
+            "orgs": set(),
+            "keywords": {"migration"},
+            "products": [],
+        }
+        self.assertGreater(
+            changes.score_activity(watched, [], watchlist)["score"],
+            changes.score_activity(noise, [], watchlist)["score"],
+        )
+
+    def test_events_calibration_counts_intersect_risk(self) -> None:
+        filtered = [
+            changes.RepoInput(full_name="Org/a"),
+            changes.RepoInput(full_name="Org/b"),
+            changes.RepoInput(full_name="Org/c"),
+        ]
+        calibration = changes.build_events_calibration(
+            filtered=filtered,
+            pushed_candidates=[filtered[0], filtered[1]],
+            event_candidate_names={"Org/a", "Org/c", "Org/not-in-inventory"},
+            events_summary={"enabled": True},
+        )
+        self.assertEqual(calibration["intersection_candidates"], 1)
+        self.assertEqual(calibration["union_candidates"], 3)
+        self.assertEqual(calibration["intersect_potential_miss_count"], 1)
+
+    def test_adaptive_batch_size_shrinks_on_low_budget(self) -> None:
+        batch_size, meta = changes.resolve_graphql_batch_size(
+            requested=0,
+            repo_count=600,
+            max_commits=8,
+            remaining=150,
+        )
+        self.assertLessEqual(batch_size, 8)
+        self.assertEqual(meta["strategy"], "very-low-budget")
 
 
 class InventoryHelperTests(unittest.TestCase):
@@ -151,6 +235,84 @@ class InventoryHelperTests(unittest.TestCase):
     def test_response_has_next_parses_link_header(self) -> None:
         self.assertTrue(inventory.response_has_next({"Link": '<x>; rel="next"'}))
         self.assertFalse(inventory.response_has_next({"Link": '<x>; rel="last"'}))
+
+    def test_lifecycle_summary_detects_new_and_changed_repos(self) -> None:
+        before = [
+            inventory.RepoRow(
+                org="Org",
+                name="repo",
+                full_name="Org/repo",
+                html_url="https://github.com/Org/repo",
+                description="",
+                homepage="",
+                archived=False,
+                fork=False,
+                created_at="2026-01-01T00:00:00Z",
+                updated_at="2026-01-01T00:00:00Z",
+                pushed_at="2026-01-01T00:00:00Z",
+                default_branch="main",
+                language="Python",
+                license_spdx="MIT",
+                stars=1,
+                forks=2,
+                open_issues=3,
+                category="docs",
+                score=40,
+            )
+        ]
+        after = [
+            inventory.RepoRow(
+                org="Org",
+                name="repo",
+                full_name="Org/repo",
+                html_url="https://github.com/Org/repo",
+                description="",
+                homepage="",
+                archived=True,
+                fork=False,
+                created_at="2026-01-01T00:00:00Z",
+                updated_at="2026-01-02T00:00:00Z",
+                pushed_at="2026-01-02T00:00:00Z",
+                default_branch="main",
+                language="Python",
+                license_spdx="MIT",
+                stars=1,
+                forks=2,
+                open_issues=3,
+                category="docs",
+                score=40,
+            ),
+            inventory.RepoRow(
+                org="Org",
+                name="new",
+                full_name="Org/new",
+                html_url="https://github.com/Org/new",
+                description="",
+                homepage="",
+                archived=False,
+                fork=False,
+                created_at="2026-01-02T00:00:00Z",
+                updated_at="2026-01-02T00:00:00Z",
+                pushed_at="2026-01-02T00:00:00Z",
+                default_branch="main",
+                language="Python",
+                license_spdx="MIT",
+                stars=1,
+                forks=2,
+                open_issues=3,
+                category="docs",
+                score=40,
+            ),
+        ]
+        summary = inventory.build_lifecycle_summary(
+            before,
+            after,
+            completed_orgs={"Org"},
+            mode="incremental",
+            completed_at="2026-01-02T00:00:00Z",
+        )
+        self.assertEqual(summary["counts"]["new_repos"], 1)
+        self.assertEqual(summary["counts"]["archived_changed"], 1)
 
 
 class ValidationScriptTests(unittest.TestCase):
@@ -260,7 +422,11 @@ class ValidationScriptTests(unittest.TestCase):
                 "schema_version": 1,
                 "generated_at": "2026-01-01T00:00:00Z",
                 "totals": {"repos_with_movement": 1},
-                "activities": [{"full_name": "TestOrg/repo"}],
+                "summaries": {"signals": {"high_signal": []}},
+                "top_repos": [],
+                "graphql": {"mode": "two-stage"},
+                "releases": {"summary": {"enabled": False}, "items": []},
+                "activities": [{"full_name": "TestOrg/repo", "signal": {}, "releases": []}],
             }
             for name in ("latest.json", "2026-01-01.json"):
                 (report_dir / name).write_text(json.dumps(report_payload), encoding="utf-8")
@@ -269,6 +435,14 @@ class ValidationScriptTests(unittest.TestCase):
                     "# Microsoft Repo Change Brief - 2026-01-01\n\n",
                     encoding="utf-8",
                 )
+            (report_dir / "index.json").write_text(
+                json.dumps({"schema_version": 1, "daily": []}),
+                encoding="utf-8",
+            )
+            (report_dir / "index.md").write_text(
+                "# Microsoft Repo Tracker Report Index\n\n",
+                encoding="utf-8",
+            )
 
             rows = validate_tracker.validate_inventory(inventory_path)
             validate_tracker.validate_watchfeeds(watchfeeds_path, rows)

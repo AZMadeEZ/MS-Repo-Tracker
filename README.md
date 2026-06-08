@@ -6,6 +6,7 @@ This repo includes two scripts:
 
 - `msft_docs_inventory.py` - builds an inventory of public repos across one or more orgs, classifies them as docs/reference/training/samples/other, and generates watch-feed URLs.
 - `msft_changes_last24h.py` - summarizes recent default-branch commits for repos in the inventory and outputs both CSV and Markdown digests.
+- `msft_events_calibration.py` - compares GitHub Events API candidates with inventory `pushed_at` candidates without spending GraphQL enrichment budget.
 
 ## What gets generated
 
@@ -18,6 +19,8 @@ Running the scripts creates these output files:
 - `changes_last24h.md` - human-readable activity digest.
 - `reports/latest.md` and `reports/latest.json` - current daily brief for human review and downstream ingestion.
 - `reports/YYYY-MM-DD.md` and `reports/YYYY-MM-DD.json` - dated report history.
+- `reports/index.md` and `reports/index.json` - rolling report index with 7/30-day trend totals.
+- `reports/events-calibration/latest.md` and `.json` - Events API calibration report.
 
 ## Requirements
 
@@ -53,6 +56,8 @@ MicrosoftDocs
 MicrosoftLearning
 Azure-Samples
 ```
+
+`watchlist.yml` controls which repos, orgs, keywords, and products are elevated in the daily signal report. Watchlist matches do not add GitHub API calls; they only affect report scoring and grouping.
 
 ## Usage
 
@@ -103,6 +108,12 @@ Common options:
 - `--digest-overlap-hours` (default `2`): overlap before the last successful digest timestamp when using state
 - `--max-lookback-hours` (default `168`): cap for state-extended digest windows
 - `--events-prefilter-mode off|union|intersect`: optionally use GitHub organization Events API pages as a candidate hint
+- `--events-calibration`: include Events-vs-`pushed_at` comparison metadata in the report
+- `--enrichment-mode one-stage|two-stage`: choose GraphQL enrichment strategy; `two-stage` is the default
+- `--graphql-batch-size 0`: use adaptive GraphQL batch sizing; pass a positive number to force a batch size
+- `--release-mode off|candidates|watched|candidates-and-watched`: control release detection scope
+- `--max-release-repos` (default `150`): cap release endpoint checks
+- `--watchlist watchlist.yml`: load signal-scoring watchlist configuration
 - `--reports-dir reports`: write the current and dated daily brief artifacts
 - `--no-reports`: skip report artifact generation
 
@@ -114,6 +125,8 @@ Outputs:
 - `reports/latest.json`
 - `reports/YYYY-MM-DD.md`
 - `reports/YYYY-MM-DD.json`
+- `reports/index.md`
+- `reports/index.json`
 
 Events prefilter modes:
 
@@ -123,13 +136,35 @@ Events prefilter modes:
 
 GitHub's Events API is optimized for polling with conditional requests and exposes `X-Poll-Interval`, but organization event feeds can have latency. Keep `off` for the safest scheduled default; use `union` or `intersect` when tuning collection efficiency.
 
+Signal reporting:
+
+- High-signal items are scored from human-authored commits, watchlist hits, release activity, security language, and category.
+- Bot-only dependency churn is tagged separately so it can be scanned or filtered without hiding it.
+- Recent releases are fetched through capped, conditional REST calls and recorded under `releases` in the JSON report.
+- Repository lifecycle changes are recorded during inventory refresh and surfaced in the next digest report.
+
+### 3. Calibrate Events API Candidate Coverage
+
+```bash
+python msft_events_calibration.py --input msft_repo_inventory.csv --state msft_repo_tracker_state.json --orgs orgs.txt
+```
+
+This writes:
+
+- `reports/events-calibration/latest.md`
+- `reports/events-calibration/latest.json`
+- dated calibration history files
+
+Use this report to decide whether `--events-prefilter-mode intersect` is safe enough to enable for a particular workflow. If the potential miss count is high, keep the default `off`.
+
 ## Typical Workflow
 
 1. Update `orgs.txt` when the tracked organizations change.
 2. Refresh inventory incrementally each day through `msft-docs-changes-last24h.yml`.
 3. Run full inventory reconciliation weekly through `ms-docs-inventory.yml` or manually with `workflow_dispatch`.
 4. Generate the changes digest daily through `msft-docs-changes-last24h.yml`.
-5. Review `reports/latest.md` for the daily brief, `changes_last24h.md` for the raw grouped digest, and CSV/JSON outputs for automation/reporting.
+5. Run weekly Events calibration through `msft-events-calibration.yml`.
+6. Review `reports/latest.md` for the daily brief, `reports/index.md` for trends, `changes_last24h.md` for the raw grouped digest, and CSV/JSON outputs for automation/reporting.
 
 ## Validation
 
@@ -147,5 +182,7 @@ GitHub Actions also runs these checks through `validate.yml` on push, pull reque
 - Inventory classification uses org + keyword heuristics and intentionally avoids expensive per-repo deep scans.
 - Changes are measured on each repository's default branch.
 - `pushed_at` from the inventory is used as a prefilter to reduce API calls.
+- GraphQL enrichment defaults to a two-stage flow that counts changed repos first, then fetches commit/PR details only for repos with movement.
+- Release detection is capped and conditional so it improves reporting without taking over the REST budget.
 - Inventory refreshes defer cleanly when GitHub API budget is too low instead of exhausting the rate limit.
 - The daily digest workflow uses the tracker state to avoid fixed 24-hour gaps after missed or failed runs.

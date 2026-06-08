@@ -11,6 +11,18 @@ on:
         description: "Max commit headlines per repo"
         required: true
         default: "3"
+      enrichment_mode:
+        description: "GraphQL enrichment mode"
+        required: true
+        default: "two-stage"
+        type: choice
+        options:
+          - "two-stage"
+          - "one-stage"
+      graphql_batch_size:
+        description: "GraphQL repos per batch; 0 means adaptive"
+        required: true
+        default: "0"
       categories:
         description: "Comma-separated categories, or all. Blank defaults to docs/reference/training/samples."
         required: false
@@ -71,6 +83,29 @@ on:
         description: "Max org event pages per org when Events API prefilter is enabled"
         required: true
         default: "2"
+      events_calibration:
+        description: "Include Events-vs-pushed_at calibration in the report"
+        required: true
+        default: "false"
+        type: boolean
+      release_mode:
+        description: "Release scan scope"
+        required: true
+        default: "candidates-and-watched"
+        type: choice
+        options:
+          - "off"
+          - "candidates"
+          - "watched"
+          - "candidates-and-watched"
+      max_release_repos:
+        description: "Maximum repositories checked for recent releases"
+        required: true
+        default: "150"
+      max_releases_per_repo:
+        description: "Maximum release records fetched per checked repository"
+        required: true
+        default: "5"
   schedule:
     - cron: "20 13 * * *"  # daily at 13:20 UTC
 
@@ -148,6 +183,8 @@ jobs:
         run: |
           HOURS="${{ github.event.inputs.hours }}"
           MAX_COMMITS="${{ github.event.inputs.max_commits }}"
+          ENRICHMENT_MODE="${{ github.event.inputs.enrichment_mode }}"
+          GRAPHQL_BATCH_SIZE="${{ github.event.inputs.graphql_batch_size }}"
           CATEGORIES="${{ github.event.inputs.categories }}"
           INCLUDE_OTHER="${{ github.event.inputs.include_other }}"
           MIN_GRAPHQL_REMAINING="${{ github.event.inputs.min_graphql_remaining }}"
@@ -157,9 +194,15 @@ jobs:
           MAX_LOOKBACK_HOURS="${{ github.event.inputs.max_lookback_hours }}"
           EVENTS_PREFILTER_MODE="${{ github.event.inputs.events_prefilter_mode }}"
           EVENTS_MAX_PAGES="${{ github.event.inputs.events_max_pages }}"
+          EVENTS_CALIBRATION="${{ github.event.inputs.events_calibration }}"
+          RELEASE_MODE="${{ github.event.inputs.release_mode }}"
+          MAX_RELEASE_REPOS="${{ github.event.inputs.max_release_repos }}"
+          MAX_RELEASES_PER_REPO="${{ github.event.inputs.max_releases_per_repo }}"
 
           if [ -z "$HOURS" ]; then HOURS="24"; fi
           if [ -z "$MAX_COMMITS" ]; then MAX_COMMITS="5"; fi
+          if [ -z "$ENRICHMENT_MODE" ]; then ENRICHMENT_MODE="two-stage"; fi
+          if [ -z "$GRAPHQL_BATCH_SIZE" ]; then GRAPHQL_BATCH_SIZE="0"; fi
           if [ -z "$MIN_GRAPHQL_REMAINING" ]; then MIN_GRAPHQL_REMAINING="100"; fi
           if [ -z "$MIN_REST_REMAINING" ]; then MIN_REST_REMAINING="100"; fi
           if [ -z "$USE_STATE_WINDOW" ]; then USE_STATE_WINDOW="true"; fi
@@ -167,6 +210,10 @@ jobs:
           if [ -z "$MAX_LOOKBACK_HOURS" ]; then MAX_LOOKBACK_HOURS="168"; fi
           if [ -z "$EVENTS_PREFILTER_MODE" ]; then EVENTS_PREFILTER_MODE="off"; fi
           if [ -z "$EVENTS_MAX_PAGES" ]; then EVENTS_MAX_PAGES="2"; fi
+          if [ -z "$EVENTS_CALIBRATION" ]; then EVENTS_CALIBRATION="false"; fi
+          if [ -z "$RELEASE_MODE" ]; then RELEASE_MODE="candidates-and-watched"; fi
+          if [ -z "$MAX_RELEASE_REPOS" ]; then MAX_RELEASE_REPOS="150"; fi
+          if [ -z "$MAX_RELEASES_PER_REPO" ]; then MAX_RELEASES_PER_REPO="5"; fi
 
           EXTRA_ARGS=""
           if [ "$INCLUDE_OTHER" = "true" ]; then
@@ -175,12 +222,17 @@ jobs:
           if [ "$USE_STATE_WINDOW" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --use-state-window"
           fi
+          if [ "$EVENTS_CALIBRATION" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --events-calibration"
+          fi
 
           set +e
           python msft_changes_last24h.py \
             --input msft_repo_inventory.csv \
             --hours "$HOURS" \
             --max-commits "$MAX_COMMITS" \
+            --enrichment-mode "$ENRICHMENT_MODE" \
+            --graphql-batch-size "$GRAPHQL_BATCH_SIZE" \
             --categories "$CATEGORIES" \
             --min-rest-remaining "$MIN_REST_REMAINING" \
             --min-graphql-remaining "$MIN_GRAPHQL_REMAINING" \
@@ -189,6 +241,10 @@ jobs:
             --max-lookback-hours "$MAX_LOOKBACK_HOURS" \
             --events-prefilter-mode "$EVENTS_PREFILTER_MODE" \
             --events-max-pages "$EVENTS_MAX_PAGES" \
+            --release-mode "$RELEASE_MODE" \
+            --max-release-repos "$MAX_RELEASE_REPOS" \
+            --max-releases-per-repo "$MAX_RELEASES_PER_REPO" \
+            --watchlist watchlist.yml \
             --reports-dir reports \
             $EXTRA_ARGS
           STATUS=$?

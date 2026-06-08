@@ -525,6 +525,111 @@ def update_org_state(
         org_state["last_incremental_scan_at"] = completed_at
 
 
+def lifecycle_row(row: RepoRow) -> Dict[str, Any]:
+    return {
+        "full_name": row.full_name,
+        "org": row.org,
+        "name": row.name,
+        "html_url": row.html_url,
+        "category": row.category,
+        "created_at": row.created_at,
+        "pushed_at": row.pushed_at,
+        "archived": row.archived,
+        "fork": row.fork,
+        "default_branch": row.default_branch,
+    }
+
+
+def limited_lifecycle_items(items: List[Dict[str, Any]], limit: int = 100) -> List[Dict[str, Any]]:
+    return items[:limit]
+
+
+def build_lifecycle_summary(
+    before_rows: List[RepoRow],
+    after_rows: List[RepoRow],
+    completed_orgs: Set[str],
+    mode: str,
+    completed_at: str,
+) -> Dict[str, Any]:
+    before = {
+        row.full_name: row
+        for row in before_rows
+        if row.full_name and row.org in completed_orgs
+    }
+    after = {
+        row.full_name: row
+        for row in after_rows
+        if row.full_name and row.org in completed_orgs
+    }
+
+    new_repos = [lifecycle_row(after[name]) for name in sorted(set(after) - set(before))]
+    removed_repos = []
+    if mode == "full":
+        removed_repos = [lifecycle_row(before[name]) for name in sorted(set(before) - set(after))]
+
+    archived_changed: List[Dict[str, Any]] = []
+    default_branch_changed: List[Dict[str, Any]] = []
+    category_changed: List[Dict[str, Any]] = []
+    fork_changed: List[Dict[str, Any]] = []
+
+    for name in sorted(set(before) & set(after)):
+        old = before[name]
+        new = after[name]
+        if old.archived != new.archived:
+            archived_changed.append(
+                {
+                    **lifecycle_row(new),
+                    "previous_archived": old.archived,
+                    "current_archived": new.archived,
+                }
+            )
+        if old.default_branch != new.default_branch:
+            default_branch_changed.append(
+                {
+                    **lifecycle_row(new),
+                    "previous_default_branch": old.default_branch,
+                    "current_default_branch": new.default_branch,
+                }
+            )
+        if old.category != new.category:
+            category_changed.append(
+                {
+                    **lifecycle_row(new),
+                    "previous_category": old.category,
+                    "current_category": new.category,
+                }
+            )
+        if old.fork != new.fork:
+            fork_changed.append(
+                {
+                    **lifecycle_row(new),
+                    "previous_fork": old.fork,
+                    "current_fork": new.fork,
+                }
+            )
+
+    return {
+        "available": True,
+        "completed_at": completed_at,
+        "mode": mode,
+        "orgs_completed": sorted(completed_orgs),
+        "counts": {
+            "new_repos": len(new_repos),
+            "removed_repos": len(removed_repos),
+            "archived_changed": len(archived_changed),
+            "default_branch_changed": len(default_branch_changed),
+            "category_changed": len(category_changed),
+            "fork_changed": len(fork_changed),
+        },
+        "new_repos": limited_lifecycle_items(new_repos),
+        "removed_repos": limited_lifecycle_items(removed_repos),
+        "archived_changed": limited_lifecycle_items(archived_changed),
+        "default_branch_changed": limited_lifecycle_items(default_branch_changed),
+        "category_changed": limited_lifecycle_items(category_changed),
+        "fork_changed": limited_lifecycle_items(fork_changed),
+    }
+
+
 def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=("incremental", "full"), default="full")
@@ -642,6 +747,13 @@ def main() -> int:
             output_rows = [row for row in output_rows if row.category != "other"]
 
         output_rows.sort(key=lambda row: (row.pushed_at or "", row.full_name), reverse=True)
+        lifecycle_summary = build_lifecycle_summary(
+            before_rows=existing_rows,
+            after_rows=output_rows,
+            completed_orgs=completed_orgs,
+            mode=args.mode,
+            completed_at=completed_at,
+        )
         write_csv(args.output, output_rows)
         write_watchfeeds(args.watchfeeds, output_rows)
 
@@ -655,6 +767,7 @@ def main() -> int:
             "repos_written": len(output_rows),
             "include_other_baseline": args.include_other_baseline,
         }
+        state["last_inventory_lifecycle"] = lifecycle_summary
         save_state(args.state, state)
 
     except RateLimitDeferred as exc:

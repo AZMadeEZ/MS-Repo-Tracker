@@ -1,0 +1,151 @@
+{
+  "daily": [
+    {
+      "date": "2026-06-08",
+      "default_branch_commits": 271,
+      "generated_at": "2026-06-08T20:24:17.879173Z",
+      "high_signal_count": 25,
+      "release_count": 20,
+      "report_json": "2026-06-08.json",
+      "report_md": "2026-06-08.md",
+      "repos_with_movement": 67
+    }
+  ],
+  "generated_at": "2026-06-08T20:26:50.869940Z",
+  "report_count": 1,
+  "schema_version": 1,
+  "top_products": [
+    {
+      "product": "Azure AI",
+      "report_count": 11
+    },
+    {
+      "product": "Azure SDK",
+      "report_count": 11
+    },
+    {
+      "product": "Microsoft Graph",
+      "report_count": 9
+    },
+    {
+      "product": "PowerShell",
+      "report_count": 2
+    }
+  ],
+  "top_recurring_repos": [
+    {
+      "full_name": "MicrosoftDocs/azure-docs-powershell",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/agentops",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/kiota-samples",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/runtime",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/msbuild",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-net",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/teams-agent-accelerator-templates",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/vscode-docs",
+      "report_count": 1
+    },
+    {
+      "full_name": "MicrosoftLearning/ai-apps",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-java",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-js",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/roslyn",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/entrabot",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/efcore",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/onnxruntime",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-python",
+      "report_count": 1
+    },
+    {
+      "full_name": "dotnet/orleans",
+      "report_count": 1
+    },
+    {
+      "full_name": "MicrosoftDocs/PowerShell-Docs-Modules",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/kiota",
+      "report_count": 1
+    },
+    {
+      "full_name": "MicrosoftLearning/mslearn-ai-concepts",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoft/WindowsAppSDK",
+      "report_count": 1
+    },
+    {
+      "full_name": "MicrosoftDocs/azure-docs-cli",
+      "report_count": 1
+    },
+    {
+      "full_name": "Azure/aks-rdma-infiniband",
+      "report_count": 1
+    },
+    {
+      "full_name": "microsoftgraph/msgraph-snippets-go",
+      "report_count": 1
+    }
+  ],
+  "trends": {
+    "last_30_days": {
+      "default_branch_commits": 271,
+      "release_count": 20,
+      "report_count": 1,
+      "repos_with_movement": 67
+    },
+    "last_7_days": {
+      "default_branch_commits": 271,
+      "release_count": 20,
+      "report_count": 1,
+      "repos_with_movement": 67
+    }
+  }
+}

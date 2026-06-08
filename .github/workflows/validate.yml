@@ -35,12 +35,13 @@ jobs:
 
       - name: Compile scripts
         run: |
-          python -m py_compile github_api.py msft_docs_inventory.py msft_changes_last24h.py scripts/validate_tracker.py
+          python -m py_compile github_api.py msft_docs_inventory.py msft_changes_last24h.py msft_events_calibration.py scripts/validate_tracker.py
 
       - name: Check CLI entry points
         run: |
           python msft_docs_inventory.py --help >/dev/null
           python msft_changes_last24h.py --help >/dev/null
+          python msft_events_calibration.py --help >/dev/null
 
       - name: Validate committed inventory and state
         run: |

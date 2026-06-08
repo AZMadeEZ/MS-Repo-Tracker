@@ -1,17 +1,17 @@
-# Changes on default branch since 2026-06-07T19:52:23.285832Z
+# Changes on default branch since 2026-06-07T20:24:17.879173Z
 
-Repos with movement: **64**
+Repos with movement: **67**
 
 ## docs
 
 ### Azure
 
-- **Azure/azure-sdk-for-net** (`main`) - **12** commit(s)
+- **Azure/azure-sdk-for-net** (`main`) - **13** commit(s)
+  - [Regenerate repository SDK with TypeSpec build 20260608.3 (#59750)](https://github.com/Azure/azure-sdk-for-net/commit/1c920c91680d27e712ffa2e3cb6b7a33a79fbe73) - 2026-06-08T20:01:39Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260608.3 #59750](https://github.com/Azure/azure-sdk-for-net/pull/59750)
   - [Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2 (#59747)](https://github.com/Azure/azure-sdk-for-net/commit/709a6aeaad37d9d32808f1a429d070983ad971af) - 2026-06-08T18:14:20Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260608.2 #59747](https://github.com/Azure/azure-sdk-for-net/pull/59747)
   - [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-…](https://github.com/Azure/azure-sdk-for-net/commit/b3baa956632b6d24b2fb940c4ff0e9bb66681e47) - 2026-06-08T17:29:23Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260608.2 #59744](https://github.com/Azure/azure-sdk-for-net/pull/59744)
   - [Generate a new code from refactored typespec (#59722)](https://github.com/Azure/azure-sdk-for-net/commit/fec47cef4fa13165cdeee669668450f9608ab41e) - 2026-06-08T15:52:54Z - Nikolay Rovinskiy (@nick863) - PR: [Generate a new code from refactored typespec #59722](https://github.com/Azure/azure-sdk-for-net/pull/59722)
   - [Add sample, readme and test for External Agent (#59727)](https://github.com/Azure/azure-sdk-for-net/commit/2af2c29accbf4a306da98937b2fd513f90d42784) - 2026-06-08T15:52:42Z - Nikolay Rovinskiy (@nick863) - PR: [Add sample, readme and test for External Agent #59727](https://github.com/Azure/azure-sdk-for-net/pull/59727)
-  - [Increment package version after release of Azure.ResourceManager.Cont…](https://github.com/Azure/azure-sdk-for-net/commit/26471fae0fa9af2c3693e3491a9f0b35e18ec0b6) - 2026-06-08T15:16:06Z - Azure SDK Bot (@azure-sdk) - PR: [Increment version for fleet releases #59734](https://github.com/Azure/azure-sdk-for-net/pull/59734)
 
 - **Azure/azure-sdk-for-java** (`main`) - **7** commit(s)
   - [Cosmos Release 2026-06-08 (#49407)](https://github.com/Azure/azure-sdk-for-java/commit/a18aefd1f3a7392a166274092db4cc15986a2eca) - 2026-06-08T19:21:17Z - Fabian Meiswinkel (@FabianMeiswinkel) - PR: [Cosmos Release 2026-06-08 #49407](https://github.com/Azure/azure-sdk-for-java/pull/49407)
@@ -31,6 +31,9 @@ Repos with movement: **64**
   - [[confidentialledger] Enforce stricter redirect destination policy (#4…](https://github.com/Azure/azure-sdk-for-python/commit/2fb56bf4f962171f7eb7efc6daad23bf610ae906) - 2026-06-08T19:23:44Z - Ryan Zhang (@ryazhang-microsoft) - PR: [[confidentialledger] Enforce stricter redirect destination policy #47368](https://github.com/Azure/azure-sdk-for-python/pull/47368)
   - [Increment package version after release of azure-monitor-opentelemetr…](https://github.com/Azure/azure-sdk-for-python/commit/321370a7c625eb3c61d0ae849cea1ad5e836c1a8) - 2026-06-08T16:42:10Z - Azure SDK Bot (@azure-sdk) - PR: [Increment version for monitor releases #47394](https://github.com/Azure/azure-sdk-for-python/pull/47394)
   - [Exporter release 1.0.0b53 (#47296)](https://github.com/Azure/azure-sdk-for-python/commit/6f3980e81598b271c5a3ac3912e9da67e2d1b479) - 2026-06-08T14:24:26Z - Radhika Gupta (@rads-1996) - PR: [Exporter release 1.0.0b53 #47296](https://github.com/Azure/azure-sdk-for-python/pull/47296)
+
+- **Azure/azure-sdk-for-rust** (`main`) - **1** commit(s)
+  - [Hand off @ronniegeraghty CODEOWNERS to new owners (#4499)](https://github.com/Azure/azure-sdk-for-rust/commit/b080e84933f54501751f5416de23a7ce7e717201) - 2026-06-08T20:14:28Z - Ronnie Geraghty (@ronniegeraghty) - PR: [Hand off @ronniegeraghty CODEOWNERS to new owners #4499](https://github.com/Azure/azure-sdk-for-rust/pull/4499)
 
 - **Azure/azure-sdk-for-go** (`main`) - **1** commit(s)
   - [[Automation] Regenerate SDK based on typespec-go branch main 【batch 8…](https://github.com/Azure/azure-sdk-for-go/commit/71c05849d5e04e52315982dce30abe2f19226316) - 2026-06-08T07:25:49Z - Azure SDK Bot (@azure-sdk) - PR: [[Automation] Regenerate SDK based on typespec-go branch main 【batch 8】 #26955](https://github.com/Azure/azure-sdk-for-go/pull/26955)
@@ -64,6 +67,9 @@ Repos with movement: **64**
   - [WebView2: Update documentation for 150.0.4071.0 (#144)](https://github.com/MicrosoftDocs/webview2-win32-reference/commit/a1aa09b6dfbe49cdc84ac125d7f4c78b1c1a5d9d) - 2026-06-08T14:18:43Z - Ojasvi Das (@ojasvi1450) - PR: [WebView2: Update documentation for 150.0.4071.0 #144](https://github.com/MicrosoftDocs/webview2-win32-reference/pull/144)
   - [WebView2: Update documentation for 149.0.4022.49 (#143)](https://github.com/MicrosoftDocs/webview2-win32-reference/commit/50a0c03a3c3014793f9f0f5cd975eafb319c9c4c) - 2026-06-08T09:38:55Z - Ojasvi Das (@ojasvi1450) - PR: [WebView2: Update documentation for 149.0.4022.49 #143](https://github.com/MicrosoftDocs/webview2-win32-reference/pull/143)
 
+- **MicrosoftDocs/sql-docs** (`live`) - **1** commit(s)
+  - [Update target-platform.md - add Sql170DatabaseSchemaProvider (#10346)](https://github.com/MicrosoftDocs/sql-docs/commit/b3f5d4dec3aa52912e8bad7abfdc6e00893bcf68) - 2026-06-08T20:16:41Z - Ohad Tsamir @ Independer (@otsamir) - PR: [Update target-platform.md - add Sql170DatabaseSchemaProvider #10346](https://github.com/MicrosoftDocs/sql-docs/pull/10346)
+
 - **MicrosoftDocs/azure-aks-docs** (`main`) - **1** commit(s)
   - [cluster extensions - updates for core extensions (#432)](https://github.com/MicrosoftDocs/azure-aks-docs/commit/70aae02f8eee515aae2af2a6b1e8b875b51c5c31) - 2026-06-08T14:09:59Z - Pradeep Agarwal (@pradeepjsr05) - PR: [cluster extensions - updates for core extensions #432](https://github.com/MicrosoftDocs/azure-aks-docs/pull/432)
 
@@ -83,12 +89,12 @@ Repos with movement: **64**
   - [Enabling weekly Dependabot updates for GitHub Actions (#13999)](https://github.com/dotnet/msbuild/commit/3398824f5962a82d96381aa6cc2c00d2a9ef9a4e) - 2026-06-08T15:43:29Z - Copilot (@Copilot) - PR: [Enabling weekly Dependabot updates for GitHub Actions #13999](https://github.com/dotnet/msbuild/pull/13999)
   - [chore: Pin GitHub Actions to commit SHAs (#13269)](https://github.com/dotnet/msbuild/commit/4dbca8e0a67bc7b84329f9b6bc54d5264714af56) - 2026-06-08T14:20:15Z - Pádraic Slattery (@pgoslatara) - PR: [chore: Pin GitHub Actions to commit SHAs #13269](https://github.com/dotnet/msbuild/pull/13269)
 
-- **dotnet/roslyn** (`main`) - **5** commit(s)
+- **dotnet/roslyn** (`main`) - **6** commit(s)
+  - [Increase timeout for Correctness_Analyzers job (#84064)](https://github.com/dotnet/roslyn/commit/576f18b3e54f0511c2fc93a2b20d2762148b688b) - 2026-06-08T20:04:06Z - Jared Parsons (@jaredpar) - PR: [Increase timeout for Correctness_Analyzers job #84064](https://github.com/dotnet/roslyn/pull/84064)
   - [Fix mishandling of large embedded C# literals (#84043)](https://github.com/dotnet/roslyn/commit/644b5da46ba33d4057d82b7629e8def3b88dae64) - 2026-06-08T17:49:22Z - Jason Malinowski (@jasonmalinowski) - PR: [Fix mishandling of large embedded C# literals #84043](https://github.com/dotnet/roslyn/pull/84043)
   - [[main] Update dependencies from dotnet/roslyn (#84058)](https://github.com/dotnet/roslyn/commit/82ad1e15e364edbd6ca59d8a8325df2b6488e28e) - 2026-06-08T16:12:49Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Update dependencies from dotnet/roslyn #84058](https://github.com/dotnet/roslyn/pull/84058)
   - [Unsafe evolution: propagate unsafe context to constructor initializer…](https://github.com/dotnet/roslyn/commit/d48095f632dad4d30b44d2b4d6a84163e3101024) - 2026-06-08T13:02:14Z - Jan Jones (@jjonescz) - PR: [Unsafe evolution: propagate unsafe context to constructor initializer #83969](https://github.com/dotnet/roslyn/pull/83969)
   - [Parameterize DartLab templates repository alias (#84037)](https://github.com/dotnet/roslyn/commit/8f825c9697554bd194c542154a6026b842068dde) - 2026-06-08T08:14:51Z - Brad White (@bradselw) - PR: [Parameterize DartLab templates repository alias #84037](https://github.com/dotnet/roslyn/pull/84037)
-  - [Fix frontmatter syntax in Compiler.instructions.md (#84032)](https://github.com/dotnet/roslyn/commit/a036b051ef24abb6f06e097f0d9948757cee8e6f) - 2026-06-08T08:02:09Z - Jan Jones (@jjonescz) - PR: [Fix frontmatter syntax in Compiler.instructions.md #84032](https://github.com/dotnet/roslyn/pull/84032)
 
 - **dotnet/efcore** (`main`) - **4** commit(s)
   - [EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs (…](https://github.com/dotnet/efcore/commit/04b37f3ed41fd685a68c9402fe19871d2e20037a) - 2026-06-08T16:58:41Z - Maxwell (@m-x-shokhzod) - PR: [EF1003: Detect explicit string.Format/string.Concat in raw SQL APIs #38208](https://github.com/dotnet/efcore/pull/38208)
@@ -113,12 +119,12 @@ Repos with movement: **64**
   - [Merge pull request #8716 from microsoft/dependabot/nuget/sample-api/a…](https://github.com/microsoft/kiota-samples/commit/98c91d3c59ed3f2b08abb7a64d10a845a68526b8) - 2026-06-08T16:20:18Z - Vincent Biret (@baywet) - PR: [Bump Microsoft.NET.Test.Sdk from 18.5.1 to 18.6.0 #8716](https://github.com/microsoft/kiota-samples/pull/8716)
   - [Merge pull request #8727 from microsoft/dependabot/nuget/sample-api/a…](https://github.com/microsoft/kiota-samples/commit/9962c6c31bde8792a61fa6a7557255ec014f190f) - 2026-06-08T16:19:33Z - Vincent Biret (@baywet) - PR: [Bump Swashbuckle.AspNetCore from 10.1.7 to 10.2.1 #8727](https://github.com/microsoft/kiota-samples/pull/8727)
 
-- **microsoft/vscode-docs** (`main`) - **6** commit(s)
+- **microsoft/vscode-docs** (`main`) - **8** commit(s)
+  - [Merge pull request #9903 from microsoft/ntrogh/fix-context-window-122](https://github.com/microsoft/vscode-docs/commit/46d3e221a6abc4c9df8662a5aa19fcd3c549430d) - 2026-06-08T20:25:42Z - Nick Trogh (@ntrogh) - PR: [Update screenshot of model picker #9903](https://github.com/microsoft/vscode-docs/pull/9903)
+  - [Update screenshot of model picker](https://github.com/microsoft/vscode-docs/commit/fd7eb2980f26a90ad80710693bb402434c96213a) - 2026-06-08T19:37:13Z - Nick Trogh (@ntrogh) - PR: [Update screenshot of model picker #9903](https://github.com/microsoft/vscode-docs/pull/9903)
   - [Little grammar and clarity tweaks (#9902)](https://github.com/microsoft/vscode-docs/commit/975c3d049f44984430fed7483574bacb408e87ea) - 2026-06-08T17:30:28Z - lucd1217 (@lucd1217) - PR: [Little grammar and clarity tweaks #9902](https://github.com/microsoft/vscode-docs/pull/9902)
   - [Merge pull request #9901 from microsoft/ntrogh/getstarted-editing-tut…](https://github.com/microsoft/vscode-docs/commit/04cbc2581e238550f3f29df508bdd5ba8cff1d99) - 2026-06-08T08:58:29Z - Nick Trogh (@ntrogh) - PR: [Add cross-link to editor tutorial #9901](https://github.com/microsoft/vscode-docs/pull/9901)
   - [Add cross-link to editor tutorial](https://github.com/microsoft/vscode-docs/commit/affb3e40172cbc9d5a5043a9e0ed4fb8af96cb07) - 2026-06-08T08:44:20Z - Nick Trogh (@ntrogh) - PR: [Add cross-link to editor tutorial #9901](https://github.com/microsoft/vscode-docs/pull/9901)
-  - [Merge pull request #9900 from microsoft/ntrogh/insiders-relnotes](https://github.com/microsoft/vscode-docs/commit/169439320d6f027b1338806c255d6d80cdf9b846) - 2026-06-08T08:20:30Z - Nick Trogh (@ntrogh) - PR: [Update Insiders release notes #9900](https://github.com/microsoft/vscode-docs/pull/9900)
-  - [Update Insiders release notes](https://github.com/microsoft/vscode-docs/commit/57d20a120658f60072665f0f29982bb1413be955) - 2026-06-08T08:14:38Z - Nick Trogh (@ntrogh) - PR: [Update Insiders release notes #9900](https://github.com/microsoft/vscode-docs/pull/9900)
 
 - **microsoft/entrabot** (`main`) - **4** commit(s)
   - [docs: fix stale Bot Gateway code citations in CLI-port notes (#13)](https://github.com/microsoft/entrabot/commit/9e590fe203234d640ce1944ac5e8452c41da38bf) - 2026-06-08T19:36:42Z - Brandon Werner (@brandwe) - PR: [docs: fix stale Bot Gateway code citations (follow-up to #12) #13](https://github.com/microsoft/entrabot/pull/13)
@@ -143,6 +149,9 @@ Repos with movement: **64**
   - [Merge pull request #2122 from microsoft/dependabot/gradle/open-teleme…](https://github.com/microsoft/kiota-java/commit/4ae738c1b853e1bc0ea51befbacd7e0aee17f355) - 2026-06-08T10:00:25Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump the open-telemetry group across 1 directory with 2 updates #2122](https://github.com/microsoft/kiota-java/pull/2122)
   - [chore(deps): bump the open-telemetry group across 1 directory with 2 …](https://github.com/microsoft/kiota-java/commit/bcdd25c6177b24d0d2b38bd52831a48801bb0024) - 2026-06-08T09:05:13Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump the open-telemetry group across 1 directory with 2 updates #2122](https://github.com/microsoft/kiota-java/pull/2122)
 
+- **microsoft/playwright.dev** (`main`) - **1** commit(s)
+  - [chore(deps): bump glob from 11.0.0 to 11.1.0 (#2050)](https://github.com/microsoft/playwright.dev/commit/d6064db2f5bf6b5f4d2b7dd0ab9bf81b0a46e20b) - 2026-06-08T19:58:35Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump glob from 11.0.0 to 11.1.0 #2050](https://github.com/microsoft/playwright.dev/pull/2050)
+
 - **microsoft/aspire-samples** (`main`) - **1** commit(s)
   - [UX revamp: bespoke, accessible identities for every Aspire sample (#1…](https://github.com/microsoft/aspire-samples/commit/563499a1ce016d0c352bf20f9491ab3af05c9e6f) - 2026-06-08T17:56:14Z - David Pine (@IEvangelist) - PR: [UX revamp: bespoke, accessible identities for every Aspire sample #1682](https://github.com/microsoft/aspire-samples/pull/1682)
 
@@ -165,12 +174,12 @@ Repos with movement: **64**
 
 ### Azure
 
-- **Azure/agentops** (`main`) - **25** commit(s)
+- **Azure/agentops** (`main`) - **27** commit(s)
+  - [Merge pull request #265 from Azure/release/v0.3.11](https://github.com/Azure/agentops/commit/2b46ef990dacfbf685de40136deb9cae6ae76fe2) - 2026-06-08T20:12:12Z - Paulo Lacerda (@placerda) - PR: [Release v0.3.11 #265](https://github.com/Azure/agentops/pull/265)
+  - [fix: support reasoning grader eval runs](https://github.com/Azure/agentops/commit/dc910e428f799e77c4fe414b6dbf6828e3c6510d) - 2026-06-08T19:39:48Z - Paulo Lacerda (@placerda) - PR: [Release v0.3.11 #265](https://github.com/Azure/agentops/pull/265)
   - [fix: show heartbeat during azd eval runs](https://github.com/Azure/agentops/commit/f8c0dd6ab4296183d044485855143abcc9200030) - 2026-06-08T18:00:57Z - Paulo Lacerda (@placerda) - PR: [fix: show heartbeat during azd eval runs #264](https://github.com/Azure/agentops/pull/264)
   - [fix: recommend eval init before azd eval run](https://github.com/Azure/agentops/commit/9381b5362aa9e7a7a7551503af2bbb6fafbe5284) - 2026-06-08T17:49:38Z - Paulo Lacerda (@placerda) - PR: [fix: recommend eval init before azd eval run #263](https://github.com/Azure/agentops/pull/263)
   - [fix: bootstrap azd eval init context](https://github.com/Azure/agentops/commit/9180b7921fff2c0da7fc77ef10eb569c74a2f627) - 2026-06-08T17:40:13Z - Paulo Lacerda (@placerda) - PR: [fix: bootstrap azd eval init context #262](https://github.com/Azure/agentops/pull/262)
-  - [fix: make prompt tutorial use azd eval (#261)](https://github.com/Azure/agentops/commit/b129c3497681cd592c0f85afec6d67ee98d11a72) - 2026-06-08T14:43:51Z - Paulo Lacerda (@placerda) - PR: [fix: make prompt tutorial use azd eval #261](https://github.com/Azure/agentops/pull/261)
-  - [fix: persist eval recipe paths portably (#260)](https://github.com/Azure/agentops/commit/7a8176c87bec3bbe0a5b33052dbe4a6b758fc1d2) - 2026-06-08T13:44:09Z - Paulo Lacerda (@placerda) - PR: [fix: persist eval recipe paths portably #260](https://github.com/Azure/agentops/pull/260)
 
 - **Azure/aks-rdma-infiniband** (`main`) - **2** commit(s)
   - [chore(deps): update vllm/vllm-openai docker tag to v0.22.1](https://github.com/Azure/aks-rdma-infiniband/commit/832342cc64f01d3563972acfbd25c18a7753dfe8) - 2026-06-08T16:30:57Z - renovate[bot] (@renovate[bot]) - PR: [chore(deps): update Docker base images (nvidia/cuda, vllm-openai) #160](https://github.com/Azure/aks-rdma-infiniband/pull/160)
@@ -178,15 +187,14 @@ Repos with movement: **64**
 
 ### Azure-Samples
 
-- **Azure-Samples/aks-store-demo** (`main`) - **2** commit(s)
-  - [chore: update actions/checkout and Trivy action versions in audit-ter…](https://github.com/Azure-Samples/aks-store-demo/commit/43f7206d7299945575920bc91159e2f37242f0d0) - 2026-06-08T01:22:50Z - Paul Yu (@pauldotyu)
-  - [Merge pull request #359 from Azure-Samples/dependabot/npm_and_yarn/sr…](https://github.com/Azure-Samples/aks-store-demo/commit/2c8e5172c5812237ec52c6d48b4ae925b845d70c) - 2026-06-07T19:57:17Z - Paul Yu (@pauldotyu) - PR: [build(deps): bump uuid, @azure/identity and @tapjs/processinfo in /src/order-service #359](https://github.com/Azure-Samples/aks-store-demo/pull/359)
-
 - **Azure-Samples/AIEngineerPersona** (`main`) - **1** commit(s)
   - [Surprise Me UX: visible spinner, no-shift status slot, a11y](https://github.com/Azure-Samples/AIEngineerPersona/commit/44d5235de5562c5f6bf21ab2940bbb75a3b224a7) - 2026-06-08T19:01:36Z - asofio (@asofio)
 
 - **Azure-Samples/postgres-sa-byoac** (`main`) - **1** commit(s)
   - [fixed 12 vulnerabilities across aml model, backend, and frontend](https://github.com/Azure-Samples/postgres-sa-byoac/commit/7f2635de3a9f0b36fca2116cc46177096336a0fe) - 2026-06-08T17:09:28Z - jjfrost (@jjfrost)
+
+- **Azure-Samples/aks-store-demo** (`main`) - **1** commit(s)
+  - [chore: update actions/checkout and Trivy action versions in audit-ter…](https://github.com/Azure-Samples/aks-store-demo/commit/43f7206d7299945575920bc91159e2f37242f0d0) - 2026-06-08T01:22:50Z - Paul Yu (@pauldotyu)
 
 - **Azure-Samples/azure-sdk-for-js-docs** (`main`) - **1** commit(s)
   - [Bump @azure/storage-blob (#89)](https://github.com/Azure-Samples/azure-sdk-for-js-docs/commit/8e30023bdef6ac9732660943ecc8aff1dee08d2f) - 2026-06-08T00:24:43Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump @azure/storage-blob from 12.31.0 to 12.32.0 in /samples/identity/credentials in the azure-sdk group #89](https://github.com/Azure-Samples/azure-sdk-for-js-docs/pull/89)

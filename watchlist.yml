@@ -1,0 +1,83 @@
+repos:
+  - Azure/agentops
+  - Azure/azure-sdk-for-java
+  - Azure/azure-sdk-for-js
+  - Azure/azure-sdk-for-net
+  - Azure/azure-sdk-for-python
+  - MicrosoftDocs/azure-docs
+  - MicrosoftDocs/azure-docs-powershell
+  - MicrosoftDocs/PowerShell-Docs
+  - MicrosoftLearning/ai-apps
+  - microsoft/kiota
+  - microsoft/kiota-samples
+  - microsoft/semantic-kernel
+  - microsoft/vscode-docs
+  - microsoftgraph/msgraph-sdk-dotnet
+  - microsoftgraph/msgraph-sdk-java
+  - microsoftgraph/msgraph-sdk-javascript
+  - PowerShell/PowerShell
+
+orgs:
+  - Azure
+  - MicrosoftDocs
+  - MicrosoftLearning
+  - microsoftgraph
+  - PowerShell
+
+keywords:
+  - agent
+  - azure ai
+  - breaking change
+  - copilot
+  - deprecat
+  - entra
+  - foundry
+  - graph
+  - kiota
+  - migration
+  - powershell
+  - release
+  - retiring
+  - security
+
+products:
+  - name: Azure AI
+    repos:
+      - Azure/agentops
+      - MicrosoftLearning/ai-apps
+      - microsoft/semantic-kernel
+    keywords:
+      - agent
+      - azure ai
+      - foundry
+      - openai
+      - semantic kernel
+  - name: Microsoft Graph
+    repos:
+      - microsoft/kiota
+      - microsoft/kiota-samples
+      - microsoftgraph/msgraph-sdk-dotnet
+      - microsoftgraph/msgraph-sdk-java
+      - microsoftgraph/msgraph-sdk-javascript
+    keywords:
+      - graph
+      - kiota
+      - msgraph
+  - name: PowerShell
+    repos:
+      - MicrosoftDocs/azure-docs-powershell
+      - MicrosoftDocs/PowerShell-Docs
+      - PowerShell/PowerShell
+    keywords:
+      - cmdlet
+      - powershell
+  - name: Azure SDK
+    repos:
+      - Azure/azure-sdk-for-java
+      - Azure/azure-sdk-for-js
+      - Azure/azure-sdk-for-net
+      - Azure/azure-sdk-for-python
+    keywords:
+      - azure sdk
+      - client library
+      - sdk

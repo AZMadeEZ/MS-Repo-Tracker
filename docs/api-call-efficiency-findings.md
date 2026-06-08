@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 This note captures the current rate-limit findings for MS-Repo-Tracker and records the starting point for remediation planning.
 
-Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, and updated GitHub Actions workflows.
+Implementation status: the first remediation pass has been implemented with `github_api.py`, `msft_repo_tracker_state.json`, `msft_docs_inventory.py --mode incremental|full`, digest `--include-other` / `--categories all`, state-aware digest windows, seeded all-repo inventory, report artifacts under `reports/`, optional Events API candidate modes, release detection, watchlist-based signal reporting, report indexing, lifecycle reporting, Events calibration, adaptive two-stage GraphQL enrichment, and updated GitHub Actions workflows.
 
 ## Current Hot Spots
 
@@ -165,6 +165,31 @@ This is not the same as a perfect webhook guarantee. A strict "never miss anythi
    - `--events-prefilter-mode intersect` reduces GraphQL enrichment to repos seen by both `pushed_at` and organization events when event candidates are available.
    - The script checks REST budget before optional Events API work and uses conditional request cache metadata for event pages.
    - This mode should be tuned through manual workflow dispatch before becoming a scheduled default.
+
+14. Signal reporting: make the human report less noisy without hiding data.
+   - `watchlist.yml` defines elevated repos, orgs, keywords, and product groupings.
+   - The daily report separates high-signal items, watchlist hits, releases, bot/dependency noise, and raw repo details.
+   - Signal scoring is local report logic and does not add API calls.
+
+15. Report index: publish trend surfaces for human review and ingestion.
+   - `reports/index.md` and `reports/index.json` summarize dated daily reports.
+   - The index includes 7-day and 30-day totals, daily links, recurring repositories, and product hits.
+   - This is computed from committed report JSON and requires no network calls.
+
+16. Events calibration: measure before using Events API as a hard prefilter.
+   - `msft_events_calibration.py` compares Events API candidates with inventory `pushed_at` candidates without GraphQL enrichment.
+   - `.github/workflows/msft-events-calibration.yml` runs weekly and supports manual dispatch.
+   - Current calibration should be reviewed before enabling `intersect`; high pushed-only counts mean `intersect` can save GraphQL candidates but may miss updates.
+
+17. Adaptive two-stage GraphQL enrichment: reduce rich-detail queries.
+   - Stage 1 counts default-branch movement for candidate repos.
+   - Stage 2 fetches commit/PR details only for repos with movement.
+   - Batch size is adaptive by candidate count, `--max-commits`, and available GraphQL budget, with a manual override available.
+
+18. Release and lifecycle reporting: track ecosystem updates beyond commits.
+   - Release detection uses capped conditional REST calls over candidate and watched repos.
+   - Per-repo release failures are recorded and skipped so one restricted endpoint does not fail the digest.
+   - Inventory refresh records new repos, removed repos, archived-state changes, default-branch changes, category changes, and fork-state changes in state for the next report.
 
 ## Open Planning Question
 

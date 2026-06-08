@@ -165,6 +165,9 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
         raise RuntimeError("Unexpected report schema_version.")
     if not payload.get("generated_at"):
         raise RuntimeError("Report is missing generated_at.")
+    for key in ("summaries", "top_repos", "activities", "graphql", "releases"):
+        if key not in payload:
+            raise RuntimeError(f"Report is missing required key: {key}")
 
     totals = payload.get("totals") or {}
     repos_with_movement = int(totals.get("repos_with_movement") or 0)
@@ -176,6 +179,13 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     activities = payload.get("activities")
     if not isinstance(activities, list) or len(activities) != len(digest_rows):
         raise RuntimeError("Report activities do not match digest CSV rows.")
+    for activity in activities:
+        if not isinstance(activity, dict):
+            raise RuntimeError("Report activity entries must be objects.")
+        if "signal" not in activity:
+            raise RuntimeError("Report activity is missing signal metadata.")
+        if "releases" not in activity:
+            raise RuntimeError("Report activity is missing release metadata.")
 
     generated_date = str(payload.get("generated_at"))[:10]
     dated_json = report_dir / f"{generated_date}.json"
@@ -187,7 +197,37 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     if not md_text.startswith("# Microsoft Repo Change Brief - "):
         raise RuntimeError(f"{latest_md} does not look like a tracker report.")
 
+    index_json = report_dir / "index.json"
+    index_md = report_dir / "index.md"
+    if not index_json.exists() or not index_md.exists():
+        raise RuntimeError("Report index files are missing.")
+    with index_json.open("r", encoding="utf-8") as f:
+        index_payload = json.load(f)
+    if index_payload.get("schema_version") != 1:
+        raise RuntimeError("Unexpected report index schema_version.")
+    if not isinstance(index_payload.get("daily"), list):
+        raise RuntimeError("Report index is missing daily report entries.")
+
     return payload
+
+
+def validate_events_calibration(report_dir: Path) -> None:
+    latest_json = report_dir / "latest.json"
+    latest_md = report_dir / "latest.md"
+    if not latest_json.exists() and not latest_md.exists():
+        return
+    if not latest_json.exists() or not latest_md.exists():
+        raise RuntimeError("Events calibration latest files are incomplete.")
+    with latest_json.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+    if payload.get("schema_version") != 1:
+        raise RuntimeError("Unexpected Events calibration schema_version.")
+    calibration = payload.get("calibration")
+    if not isinstance(calibration, dict) or not calibration.get("enabled"):
+        raise RuntimeError("Events calibration payload is missing calibration data.")
+    md_text = latest_md.read_text(encoding="utf-8")
+    if not md_text.startswith("# Events API Calibration - "):
+        raise RuntimeError(f"{latest_md} does not look like an Events calibration report.")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -209,7 +249,9 @@ def main() -> int:
     validate_state(Path(args.state), inventory_rows)
     digest_rows = validate_digest(Path(args.digest_csv), Path(args.digest_md))
     if not args.skip_reports:
-        validate_reports(Path(args.reports_dir), digest_rows)
+        reports_dir = Path(args.reports_dir)
+        validate_reports(reports_dir, digest_rows)
+        validate_events_calibration(reports_dir / "events-calibration")
 
     print(
         f"Validated {len(inventory_rows)} inventory rows and "

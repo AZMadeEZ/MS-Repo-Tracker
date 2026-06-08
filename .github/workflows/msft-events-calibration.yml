@@ -1,0 +1,118 @@
+name: Microsoft Repo Events Calibration
+
+on:
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Lookback window in hours"
+        required: true
+        default: "24"
+      categories:
+        description: "Comma-separated categories, or all. Blank defaults to docs/reference/training/samples."
+        required: false
+        default: ""
+      include_other:
+        description: "Include other-category repositories"
+        required: true
+        default: "false"
+        type: boolean
+      events_max_pages:
+        description: "Max org event pages per org"
+        required: true
+        default: "2"
+      min_rest_remaining:
+        description: "Minimum REST requests required before calibration"
+        required: true
+        default: "100"
+  schedule:
+    - cron: "50 14 * * 1"  # weekly Monday at 14:50 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: msft-repo-tracker-writers
+  cancel-in-progress: false
+
+jobs:
+  calibrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Events calibration
+        env:
+          GITHUB_TOKEN: ${{ secrets.MS_REPO_TRACKER_GITHUB_TOKEN || github.token }}
+        run: |
+          HOURS="${{ github.event.inputs.hours }}"
+          CATEGORIES="${{ github.event.inputs.categories }}"
+          INCLUDE_OTHER="${{ github.event.inputs.include_other }}"
+          EVENTS_MAX_PAGES="${{ github.event.inputs.events_max_pages }}"
+          MIN_REST_REMAINING="${{ github.event.inputs.min_rest_remaining }}"
+
+          if [ -z "$HOURS" ]; then HOURS="24"; fi
+          if [ -z "$EVENTS_MAX_PAGES" ]; then EVENTS_MAX_PAGES="2"; fi
+          if [ -z "$MIN_REST_REMAINING" ]; then MIN_REST_REMAINING="100"; fi
+
+          EXTRA_ARGS=""
+          if [ "$INCLUDE_OTHER" = "true" ]; then
+            EXTRA_ARGS="--include-other"
+          fi
+
+          set +e
+          python msft_events_calibration.py \
+            --input msft_repo_inventory.csv \
+            --state msft_repo_tracker_state.json \
+            --orgs orgs.txt \
+            --hours "$HOURS" \
+            --categories "$CATEGORIES" \
+            --events-max-pages "$EVENTS_MAX_PAGES" \
+            --min-rest-remaining "$MIN_REST_REMAINING" \
+            --reports-dir reports/events-calibration \
+            $EXTRA_ARGS
+          STATUS=$?
+          set -e
+
+          if [ "$STATUS" -eq 75 ]; then
+            echo "## Events calibration deferred" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "The job stopped before exhausting GitHub REST budget." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          exit "$STATUS"
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add msft_repo_tracker_state.json reports/events-calibration
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update Microsoft repo events calibration"
+          git pull --rebase
+          git push
+
+      - name: Add calibration preview to workflow summary
+        if: ${{ hashFiles('reports/events-calibration/latest.md') != '' }}
+        run: |
+          echo "## Microsoft repo Events calibration preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          head -n 200 reports/events-calibration/latest.md >> "$GITHUB_STEP_SUMMARY"
