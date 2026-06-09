@@ -1589,6 +1589,12 @@ def md_escape(value: Any) -> str:
     return str(value if value is not None else "").replace("|", "\\|").replace("\n", " ")
 
 
+def count_phrase(count: Any, singular: str, plural: Optional[str] = None) -> str:
+    value = int(count or 0)
+    label = singular if value == 1 else (plural or f"{singular}s")
+    return f"{value} {label}"
+
+
 def human_utc(value: Any) -> str:
     parsed = parse_iso(str(value or ""))
     if parsed is None:
@@ -1884,6 +1890,70 @@ def build_plain_english_summary(payload: Mapping[str, Any]) -> List[str]:
     if not bullets:
         bullets.append(f"{repos_with_movement} repo(s) moved with {commit_count} default-branch commit(s).")
     return bullets[:6]
+
+
+def repo_markdown_link(repo: str) -> str:
+    repo = str(repo or "")
+    return f"[{md_escape(repo)}](https://github.com/{repo})" if repo else ""
+
+
+def consumer_why(change_type: Any) -> str:
+    change_type = str(change_type or "unknown")
+    if change_type == "security_fix":
+        return "Review for security, admin, or training impact; this may affect guidance consumers rely on."
+    if change_type == "release":
+        return "Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool."
+    if change_type == "feature":
+        return "Scan for new capability or sample behavior that may be useful to builders."
+    if change_type == "bug_fix":
+        return "Review if you depend on this area; it may remove a known rough edge."
+    if change_type in {"docs_update", "reference_update", "training_update", "sample_update"}:
+        return "Review for guidance, learning, reference, or sample changes that may affect downstream readers."
+    if change_type in {"dependency_update", "bulk_automation", "sdk_generation", "ci_infra"}:
+        return "Likely operational or generated activity; keep visible but do not over-rank without context."
+    return "Worth a quick scan because it ranked highly in the current signal model."
+
+
+def audience_label(value: Any) -> str:
+    labels = {
+        "developer": "Developers",
+        "admin": "Admins",
+        "architect": "Architects",
+        "learner": "Learners",
+        "operator": "Operators",
+        "unknown": "General MS consumers",
+    }
+    return labels.get(str(value or "unknown"), str(value or "General MS consumers").title())
+
+
+def likely_audiences_for_area(area_name: str, payload: Mapping[str, Any], limit: int = 3) -> str:
+    audiences: Counter[str] = Counter()
+    normalized_area = str(area_name or "")
+    for activity in payload.get("activities") or []:
+        if not isinstance(activity, dict):
+            continue
+        activity_area = str(activity.get("product_area") or "")
+        if normalized_area == "Unmapped Activity":
+            if activity_area and activity_area.lower() != "unknown":
+                continue
+        elif activity_area != normalized_area:
+            continue
+        audiences[str(activity.get("audience") or "unknown")] += 1
+    selected = [audience_label(name) for name, _ in audiences.most_common(limit) if name]
+    return ", ".join(selected) if selected else "General MS consumers"
+
+
+def area_reader_takeaway(area: Mapping[str, Any]) -> str:
+    release_count = int(area.get("release_count") or 0)
+    security_count = int(area.get("security_event_count") or 0)
+    noisy_count = int(area.get("noisy_event_count") or 0)
+    if security_count:
+        return "Start with the security/admin-sensitive links, then scan releases."
+    if release_count:
+        return "Start with releases; consumers may need version or sample awareness."
+    if noisy_count:
+        return "Use the top links first; some of the movement is likely generated or operational."
+    return "Scan top links for meaningful guidance or sample movement."
 
 
 def brief_status_block(payload: Mapping[str, Any]) -> List[str]:
@@ -2225,6 +2295,143 @@ def write_report_markdown(path: str, payload: Dict[str, Any]) -> None:
         f.write("</details>\n")
 
 
+def write_consumer_markdown(path: str, payload: Dict[str, Any]) -> None:
+    totals = payload.get("totals") or {}
+    window = payload.get("window") or {}
+    event_stream = payload.get("event_stream") or {}
+    generated_at = str(payload.get("generated_at") or "")
+    title_date = generated_at[:10] if len(generated_at) >= 10 else generated_at
+    top_links = payload.get("top_links") or []
+    product_areas = payload.get("product_area_summary") or []
+    notable_changes = payload.get("notable_changes") or []
+    releases = (payload.get("releases") or {}).get("items") or []
+    noise = payload.get("noise_summary") or {}
+    activity_by_repo = report_activity_lookup(payload)
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"# Microsoft Ecosystem Brief - {title_date}\n\n")
+        f.write(
+            f"> Fresh as of {human_utc(generated_at)}. "
+            f"{count_phrase(totals.get('repos_with_movement', 0), 'repo')} moved, "
+            f"{count_phrase(totals.get('default_branch_commits', 0), 'commit')}, "
+            f"{count_phrase(totals.get('release_count', 0), 'release')}, "
+            f"{count_phrase(event_stream.get('event_count', 0), 'tracked event')}.\n\n"
+        )
+
+        f.write("## What To Look At First\n\n")
+        if top_links:
+            for idx, link in enumerate(top_links[:8], start=1):
+                repo = str(link.get("repo") or "")
+                why = str(link.get("why") or "High-signal change")
+                change_type = "unknown"
+                for change in notable_changes:
+                    if event_repo(change) == repo and event_url(change) == str(link.get("url") or ""):
+                        change_type = str(change.get("change_type") or "unknown")
+                        break
+                f.write(f"### {idx}. [{md_escape(why)}]({link.get('url', '')})\n\n")
+                if repo:
+                    f.write(f"- Repository: {repo_markdown_link(repo)}\n")
+                f.write(f"- Why it matters: {md_escape(consumer_why(change_type))}\n\n")
+        else:
+            f.write("No high-signal links were selected for this window.\n\n")
+
+        f.write("## Product Area Briefings\n\n")
+        if product_areas:
+            for area in product_areas[:8]:
+                area_name = str(area.get("product_area") or "Unmapped Activity")
+                f.write(f"### {md_escape(area_name)}\n\n")
+                f.write(
+                    f"{count_phrase(area.get('repo_count', 0), 'repo')}, "
+                    f"{count_phrase(area.get('event_count', 0), 'tracked event')}, "
+                    f"{count_phrase(area.get('release_count', 0), 'release')}, "
+                    f"{count_phrase(area.get('security_event_count', 0), 'security/admin signal')}.\n\n"
+                )
+                f.write(f"- Likely audience: {md_escape(likely_audiences_for_area(area_name, payload))}.\n")
+                f.write(f"- Reader takeaway: {md_escape(area_reader_takeaway(area))}\n")
+                top_events = area.get("top_events") or []
+                if top_events:
+                    f.write("- Most useful links:\n")
+                    for event in top_events[:3]:
+                        headline = md_escape(event_headline(event))
+                        url = event_url(event)
+                        repo = event_repo(event)
+                        repo_part = f" ({repo})" if repo else ""
+                        f.write(f"  - [{headline}]({url}){md_escape(repo_part)}\n")
+                f.write("\n")
+        else:
+            f.write("No product-area rollup was generated for this window.\n\n")
+
+        f.write("## Release Radar\n\n")
+        release_rows = [
+            item for item in releases if isinstance(item, dict) and not item.get("draft")
+        ]
+        if release_rows:
+            f.write("| Product area | Repository | Release | Why it matters |\n")
+            f.write("| --- | --- | --- | --- |\n")
+            for release in sorted(release_rows, key=lambda item: item.get("published_at", ""), reverse=True)[:12]:
+                repo = str(release.get("repo_full_name") or "")
+                activity = activity_by_repo.get(repo) or {}
+                area = activity.get("product_area") or "Unmapped Activity"
+                title = release.get("name") or release.get("tag_name") or "Release"
+                why = "Pre-release; inspect before adopting broadly." if release.get("prerelease") else "New release available for consumers of this repo."
+                f.write(
+                    f"| {md_escape(area)} | {repo_markdown_link(repo)} | "
+                    f"[{md_escape(title)}]({release.get('html_url', '')}) | {md_escape(why)} |\n"
+                )
+            f.write("\n")
+        else:
+            f.write("No release items were detected in this window.\n\n")
+
+        f.write("## Security And Admin Attention\n\n")
+        security_changes = [
+            change for change in notable_changes if str(change.get("change_type") or "") == "security_fix"
+        ]
+        f.write("These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.\n\n")
+        if security_changes:
+            for change in security_changes[:10]:
+                f.write(
+                    f"- {repo_markdown_link(event_repo(change))}: "
+                    f"[{md_escape(event_headline(change))}]({event_url(change)})\n"
+                )
+            f.write("\n")
+        else:
+            f.write("- No security/admin-sensitive notable changes were selected.\n\n")
+
+        f.write("## What Was Mostly Noise\n\n")
+        noisy_count = int(noise.get("event_count") or 0)
+        f.write(
+            f"{count_phrase(noisy_count, 'event')} looked automated, bot-heavy, dependency-related, generated, "
+            "or medium/high-noise.\n\n"
+        )
+        top_noise = noise.get("top_repos") or []
+        if top_noise:
+            f.write("Top noisy clusters:\n\n")
+            for item in top_noise[:6]:
+                repo = str(item.get("repo") or "")
+                f.write(f"- {repo_markdown_link(repo)} - {count_phrase(item.get('event_count', 0), 'event')}\n")
+            f.write("\n")
+        change_types = noise.get("change_types") or {}
+        if change_types:
+            labels = ", ".join(f"{friendly_change_type(key)}: {value}" for key, value in change_types.items())
+            f.write(f"Noise mix: {md_escape(labels)}.\n\n")
+
+        f.write("## Data Confidence\n\n")
+        f.write(f"- Source: GitHub scheduled/manual digest artifacts in this repository.\n")
+        f.write(
+            f"- Window: {effective_window_hours(window):g} hours "
+            f"from `{window.get('since', '')}` to `{window.get('until', '')}`.\n"
+        )
+        f.write(
+            f"- Event stream: {event_stream.get('commit_event_count', 0)} commits, "
+            f"{event_stream.get('release_event_count', 0)} releases.\n"
+        )
+        f.write("- Freshness: tracked in [`reports/status.json`](status.json).\n")
+        f.write(
+            "- Full data: [`latest.summary.json`](latest.summary.json), "
+            "[`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).\n"
+        )
+
+
 def load_dated_report_payloads(report_dir: str) -> List[Dict[str, Any]]:
     if not os.path.isdir(report_dir):
         return []
@@ -2297,6 +2504,7 @@ def build_report_index_payload(report_dir: str) -> Dict[str, Any]:
             "date": latest.get("date", ""),
             "generated_at": latest.get("generated_at", ""),
             "report_md": "latest.md",
+            "consumer_md": "latest.consumer.md",
             "report_json": "latest.json",
             "summary_json": "latest.summary.json",
             "event_stream": "latest.events.ndjson",
@@ -2355,7 +2563,7 @@ def write_report_index(report_dir: str) -> List[str]:
             f.write(f"- Status: {status_label} at latest report generation. Current status lives in `status.json`.\n")
             f.write(f"- Last generated: `{human_utc(generated)}`\n")
             f.write(
-                "- Latest artifacts: [Markdown](latest.md), [JSON](latest.json), "
+                "- Latest artifacts: [Daily brief](latest.md), [Consumer brief](latest.consumer.md), [JSON](latest.json), "
                 "[Summary](latest.summary.json), [Events](latest.events.ndjson)\n\n"
             )
 
@@ -2834,11 +3042,13 @@ def build_summary_payload(payload: Mapping[str, Any]) -> Dict[str, Any]:
         "noise_summary": payload.get("noise_summary") or {},
         "artifact_links": {
             "latest_markdown": "reports/latest.md",
+            "latest_consumer_markdown": "reports/latest.consumer.md",
             "latest_report_json": "reports/latest.json",
             "latest_summary_json": "reports/latest.summary.json",
             "latest_event_stream": "reports/latest.events.ndjson",
             "report_index": "reports/index.md",
             "dated_markdown": f"reports/{date_slug}.md" if date_slug else "",
+            "dated_consumer_markdown": f"reports/{date_slug}.consumer.md" if date_slug else "",
             "dated_report_json": f"reports/{date_slug}.json" if date_slug else "",
             "dated_summary_json": f"reports/{date_slug}.summary.json" if date_slug else "",
             "dated_event_stream": f"reports/{date_slug}.events.ndjson" if date_slug else "",
@@ -2872,6 +3082,7 @@ def build_status_payload(
     reason: str,
     now_utc: dt.datetime,
     latest_generated_at: Optional[str] = None,
+    source: Optional[Mapping[str, Any]] = None,
 ) -> Dict[str, Any]:
     latest_generated_at = latest_generated_at if latest_generated_at is not None else latest_report_generated_at(report_dir)
     freshness = freshness_payload(latest_generated_at, now_utc)
@@ -2888,7 +3099,7 @@ def build_status_payload(
         "latest_report_generated_at": latest_generated_at,
         "latest_report_stale": freshness["latest_report_stale"],
         "freshness": freshness,
-        "source": source_metadata(),
+        "source": dict(source) if source else source_metadata(),
     }
 
 
@@ -2897,12 +3108,14 @@ def build_manifest_payload(
     *,
     status_payload: Dict[str, Any],
     generated_at: dt.datetime,
+    source: Optional[Mapping[str, Any]] = None,
 ) -> Dict[str, Any]:
     latest_generated_at = str(status_payload.get("latest_report_generated_at") or "")
     date_slug = latest_generated_at[:10] if latest_generated_at else ""
     latest_event_stream = os.path.join(report_dir, "latest.events.ndjson")
     artifacts = [
         manifest_artifact("latest_human_report", "markdown", os.path.join(report_dir, "latest.md")),
+        manifest_artifact("latest_consumer_report", "markdown", os.path.join(report_dir, "latest.consumer.md")),
         manifest_artifact("latest_machine_report", "json", os.path.join(report_dir, "latest.json"), schema_url=REPORT_SCHEMA_URL),
         manifest_artifact(
             "latest_summary",
@@ -2931,6 +3144,7 @@ def build_manifest_payload(
         artifacts.extend(
             [
                 manifest_artifact("dated_human_report", "markdown", os.path.join(report_dir, f"{date_slug}.md")),
+                manifest_artifact("dated_consumer_report", "markdown", os.path.join(report_dir, f"{date_slug}.consumer.md")),
                 manifest_artifact("dated_machine_report", "json", os.path.join(report_dir, f"{date_slug}.json"), schema_url=REPORT_SCHEMA_URL),
                 manifest_artifact(
                     "dated_summary",
@@ -2977,7 +3191,7 @@ def build_manifest_payload(
         "artifact_version": ARTIFACT_VERSION,
         "schema_url": MANIFEST_SCHEMA_URL,
         "generated_at": iso_utc(generated_at),
-        "source": source_metadata(),
+        "source": dict(source) if source else source_metadata(),
         "status": {
             "status": status_payload.get("status", ""),
             "reason": status_payload.get("reason", ""),
@@ -2996,6 +3210,7 @@ def write_status_and_manifest(
     reason: str,
     now_utc: dt.datetime,
     latest_generated_at: Optional[str] = None,
+    source: Optional[Mapping[str, Any]] = None,
 ) -> List[str]:
     os.makedirs(report_dir, exist_ok=True)
     status_payload = build_status_payload(
@@ -3004,6 +3219,7 @@ def write_status_and_manifest(
         reason=reason,
         now_utc=now_utc,
         latest_generated_at=latest_generated_at,
+        source=source,
     )
     status_path = os.path.join(report_dir, "status.json")
     manifest_path = os.path.join(report_dir, "manifest.json")
@@ -3015,6 +3231,7 @@ def write_status_and_manifest(
         report_dir,
         status_payload=status_payload,
         generated_at=now_utc,
+        source=source,
     )
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest_payload, f, indent=2, sort_keys=True)
@@ -3056,8 +3273,12 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
         os.path.join(report_dir, "latest.md"),
         os.path.join(report_dir, f"{date_slug}.md"),
     ]
+    consumer_paths = [
+        os.path.join(report_dir, "latest.consumer.md"),
+        os.path.join(report_dir, f"{date_slug}.consumer.md"),
+    ]
     event_paths = [latest_event_path, dated_event_path]
-    paths = report_json_paths + summary_paths + markdown_paths + event_paths
+    paths = report_json_paths + summary_paths + markdown_paths + consumer_paths + event_paths
 
     for path in report_json_paths:
         with open(path, "w", encoding="utf-8") as f:
@@ -3070,6 +3291,8 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
             f.write("\n")
     for path in markdown_paths:
         write_report_markdown(path, payload)
+    for path in consumer_paths:
+        write_consumer_markdown(path, payload)
     for path in event_paths:
         write_ndjson(path, event_records)
 
@@ -3080,6 +3303,7 @@ def write_reports(report_dir: str, payload: Dict[str, Any]) -> List[str]:
         reason="success",
         now_utc=parse_iso(str(payload.get("generated_at") or "")) or dt.datetime.now(dt.timezone.utc),
         latest_generated_at=str(payload.get("generated_at") or ""),
+        source=payload.get("source") if isinstance(payload.get("source"), dict) else None,
     )
     return paths + index_paths + status_paths
 

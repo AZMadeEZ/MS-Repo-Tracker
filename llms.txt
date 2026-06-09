@@ -7,6 +7,7 @@ Start with:
 - `reports/manifest.json`
 - `reports/status.json`
 - `reports/latest.summary.json`
+- `reports/latest.consumer.md`
 - `reports/latest.events.ndjson`
 - `reports/latest.json`
 
@@ -27,6 +28,7 @@ Important guidance:
 
 - Do not assume commit volume means importance.
 - Use `reports/latest.summary.json` for compact dashboard, notification, or prompt context.
+- Use `reports/latest.consumer.md` for human-readable briefing before the detailed report.
 - `reports/latest.events.ndjson` contains commit and release records; use `event_type` to distinguish them.
 - Use event `dedupe_key` to deduplicate overlapping state-window runs.
 - Use event `notability_score`, `change_type`, `actor_type`, and `noise_level` for summaries.

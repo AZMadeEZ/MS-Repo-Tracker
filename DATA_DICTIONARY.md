@@ -103,7 +103,20 @@ All machine-readable JSON report artifacts include:
 | `top_links` | Diverse prioritized links for quick triage. |
 | `product_area_summary` | Product-area event, repo, release, security, and top-link rollup. |
 | `noise_summary` | Automation/noise rollup. |
-| `artifact_links` | Stable pointers to latest and dated Markdown, JSON, summary, and event stream artifacts. |
+| `artifact_links` | Stable pointers to latest and dated consumer Markdown, detailed Markdown, JSON, summary, and event stream artifacts. |
+
+## Consumer Markdown
+
+`reports/latest.consumer.md` and `reports/YYYY-MM-DD.consumer.md` are reader-first briefings for human consumers who need a fast answer to what changed, why it matters, and where to click first.
+
+| Section | Meaning |
+| --- | --- |
+| `What To Look At First` | Diverse high-signal links with a plain-English reason to care. |
+| `Product Area Briefings` | Product-area summaries with likely audience, reader takeaway, and top links. |
+| `Release Radar` | Release-focused table for consumers of packages, samples, SDKs, and tools. |
+| `Security And Admin Attention` | Security/admin-sensitive notable changes; these are not automatically vulnerabilities. |
+| `What Was Mostly Noise` | Automation, dependency, generated, bot-heavy, or medium/high-noise clusters. |
+| `Data Confidence` | Window, freshness, event stream counts, and links to machine-readable artifacts. |
 
 ## Report Index
 

@@ -23,8 +23,9 @@
       "repos_with_movement": 75
     }
   ],
-  "generated_at": "2026-06-09T16:16:25.594654Z",
+  "generated_at": "2026-06-09T18:49:57.777054Z",
   "latest": {
+    "consumer_md": "latest.consumer.md",
     "date": "2026-06-09",
     "default_branch_commits": 338,
     "event_stream": "latest.events.ndjson",

@@ -1,9 +1,11 @@
 {
   "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-06-09.consumer.md",
     "dated_event_stream": "reports/2026-06-09.events.ndjson",
     "dated_markdown": "reports/2026-06-09.md",
     "dated_report_json": "reports/2026-06-09.json",
     "dated_summary_json": "reports/2026-06-09.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
     "latest_event_stream": "reports/latest.events.ndjson",
     "latest_markdown": "reports/latest.md",
     "latest_report_json": "reports/latest.json",

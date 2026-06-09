@@ -9,6 +9,12 @@
       "required": true
     },
     {
+      "artifact_type": "markdown",
+      "name": "latest_consumer_report",
+      "path": "reports/latest.consumer.md",
+      "required": true
+    },
+    {
       "artifact_type": "json",
       "name": "latest_machine_report",
       "path": "reports/latest.json",
@@ -81,6 +87,12 @@
       "artifact_type": "markdown",
       "name": "dated_human_report",
       "path": "reports/2026-06-09.md",
+      "required": true
+    },
+    {
+      "artifact_type": "markdown",
+      "name": "dated_consumer_report",
+      "path": "reports/2026-06-09.consumer.md",
       "required": true
     },
     {

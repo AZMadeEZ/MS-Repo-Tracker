@@ -9,9 +9,10 @@ Start here:
 1. `reports/manifest.json`
 2. `reports/status.json`
 3. `reports/latest.summary.json`
-4. `reports/latest.events.ndjson`
-5. `reports/latest.json`
-6. `reports/latest.md`
+4. `reports/latest.consumer.md`
+5. `reports/latest.events.ndjson`
+6. `reports/latest.json`
+7. `reports/latest.md`
 
 Use `reports/manifest.json` to discover artifact paths and schemas. Use `reports/status.json` to decide whether the latest successful report is fresh, stale, or the latest scheduled attempt was deferred.
 
@@ -32,6 +33,7 @@ Treat generated files as committed data products. Do not infer freshness from co
 
 - For CSV commit counts, use `commit_count_window`, not deprecated `commit_count_24h`.
 - For report windows, use `window.since` and `window.until`.
+- For human-readable briefing, use `reports/latest.consumer.md` first.
 - For compact dashboard, notification, or prompt context, use `reports/latest.summary.json`.
 - For flat ingestion, use `reports/latest.events.ndjson`.
 - For deduplication, use event `dedupe_key`.
@@ -56,11 +58,12 @@ State-window runs can overlap. Deduplicate by `dedupe_key` across runs.
 
 Do not treat commit volume as importance. Prefer:
 
-1. `reports/latest.md` Notable Changes
-2. event `notability_score`
-3. event `change_type`
-4. event `noise_level`
-5. watchlist and product tags in `labels`
+1. `reports/latest.consumer.md` What To Look At First
+2. `reports/latest.md` Notable Changes
+3. event `notability_score`
+4. event `change_type`
+5. event `noise_level`
+6. watchlist and product tags in `labels`
 
 Keep high-noise events visible, but do not lead a human summary with bot floods, bulk automation, or dependency churn unless that is the explicit topic.
 

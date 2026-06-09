@@ -46,6 +46,10 @@ The event stream is generated from already-collected `reports/latest.json` commi
 
 `reports/latest.summary.json` is the preferred compact artifact for dashboards, notifications, and AI prompt context. It mirrors the latest report identity, freshness, window, totals, event stream counts, plain-English summary, product-area summary, top links, noise summary, and artifact pointers without the full nested activity list.
 
+## Consumer Markdown
+
+`reports/latest.consumer.md` is the preferred human-consumption artifact. It is generated from already-collected report data and organizes the day by attention priority, product areas, release radar, security/admin attention, noisy clusters, and data confidence. Use `reports/latest.md` when a reviewer needs the fuller diagnostic and raw activity sections.
+
 ## Backward Compatibility
 
 `changes_last24h.csv` keeps `commit_count_24h` as a deprecated compatibility alias. New consumers should use:

@@ -238,10 +238,13 @@ def validate_artifact_identity(payload: Dict[str, Any], expected_type: str) -> N
 def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dict[str, Any]:
     latest_json = report_dir / "latest.json"
     latest_md = report_dir / "latest.md"
+    latest_consumer_md = report_dir / "latest.consumer.md"
     if not latest_json.exists():
         raise RuntimeError(f"Missing required report file: {latest_json}")
     if not latest_md.exists():
         raise RuntimeError(f"Missing required report file: {latest_md}")
+    if not latest_consumer_md.exists():
+        raise RuntimeError(f"Missing required consumer report file: {latest_consumer_md}")
 
     with latest_json.open("r", encoding="utf-8") as f:
         payload = json.load(f)
@@ -281,7 +284,8 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     generated_date = str(payload.get("generated_at"))[:10]
     dated_json = report_dir / f"{generated_date}.json"
     dated_md = report_dir / f"{generated_date}.md"
-    if generated_date and (not dated_json.exists() or not dated_md.exists()):
+    dated_consumer_md = report_dir / f"{generated_date}.consumer.md"
+    if generated_date and (not dated_json.exists() or not dated_md.exists() or not dated_consumer_md.exists()):
         raise RuntimeError("Report history is missing the generated-date files.")
     latest_summary = report_dir / "latest.summary.json"
     dated_summary = report_dir / f"{generated_date}.summary.json"
@@ -318,6 +322,20 @@ def validate_reports(report_dir: Path, digest_rows: list[dict[str, str]]) -> Dic
     ):
         if section not in md_text:
             raise RuntimeError(f"{latest_md} is missing human-report section: {section}")
+
+    consumer_text = latest_consumer_md.read_text(encoding="utf-8")
+    if not consumer_text.startswith("# Microsoft Ecosystem Brief - "):
+        raise RuntimeError(f"{latest_consumer_md} does not look like a consumer report.")
+    for section in (
+        "## What To Look At First",
+        "## Product Area Briefings",
+        "## Release Radar",
+        "## Security And Admin Attention",
+        "## What Was Mostly Noise",
+        "## Data Confidence",
+    ):
+        if section not in consumer_text:
+            raise RuntimeError(f"{latest_consumer_md} is missing consumer-report section: {section}")
 
     index_json = report_dir / "index.json"
     index_md = report_dir / "index.md"
@@ -490,7 +508,14 @@ def validate_manifest_status(report_dir: Path) -> None:
     if not isinstance(artifacts, list) or not artifacts:
         raise RuntimeError("Tracker manifest is missing artifacts.")
     artifact_names = {str(item.get("name") or "") for item in artifacts if isinstance(item, dict)}
-    for required_name in {"latest_machine_report", "latest_human_report", "latest_summary", "latest_event_stream", "tracker_status"}:
+    for required_name in {
+        "latest_machine_report",
+        "latest_human_report",
+        "latest_consumer_report",
+        "latest_summary",
+        "latest_event_stream",
+        "tracker_status",
+    }:
         if required_name not in artifact_names:
             raise RuntimeError(f"Tracker manifest is missing artifact: {required_name}")
 

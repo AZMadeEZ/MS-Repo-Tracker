@@ -117,10 +117,12 @@ class DigestFilterTests(unittest.TestCase):
         )
         with tempfile.TemporaryDirectory() as tmp:
             paths = changes.write_reports(str(Path(tmp) / "reports"), payload)
-            self.assertEqual(len(paths), 12)
+            self.assertEqual(len(paths), 14)
             self.assertTrue((Path(tmp) / "reports" / "latest.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "latest.summary.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "latest.consumer.md").exists())
+            self.assertTrue((Path(tmp) / "reports" / "2026-01-02.consumer.md").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.summary.json").exists())
             self.assertTrue((Path(tmp) / "reports" / "latest.events.ndjson").exists())
             self.assertTrue((Path(tmp) / "reports" / "2026-01-02.events.ndjson").exists())
@@ -675,6 +677,24 @@ class ValidationScriptTests(unittest.TestCase):
                     ),
                     encoding="utf-8",
                 )
+            consumer_text = (
+                "# Microsoft Ecosystem Brief - 2026-01-01\n\n"
+                "> Fresh as of 2026-01-01 00:00 UTC.\n\n"
+                "## What To Look At First\n\n"
+                "No high-signal links were selected for this window.\n\n"
+                "## Product Area Briefings\n\n"
+                "No product-area rollup was generated for this window.\n\n"
+                "## Release Radar\n\n"
+                "No release items were detected in this window.\n\n"
+                "## Security And Admin Attention\n\n"
+                "These are not automatically vulnerabilities.\n\n"
+                "## What Was Mostly Noise\n\n"
+                "0 event(s) looked automated.\n\n"
+                "## Data Confidence\n\n"
+                "- Source: test fixture.\n"
+            )
+            for name in ("latest.consumer.md", "2026-01-01.consumer.md"):
+                (report_dir / name).write_text(consumer_text, encoding="utf-8")
             (report_dir / "index.json").write_text(
                 json.dumps(
                     {
@@ -768,6 +788,7 @@ class ValidationScriptTests(unittest.TestCase):
                 "freshness": status_payload["freshness"],
                 "artifacts": [
                     {"name": "latest_human_report", "artifact_type": "markdown", "path": str(report_dir / "latest.md"), "required": True},
+                    {"name": "latest_consumer_report", "artifact_type": "markdown", "path": str(report_dir / "latest.consumer.md"), "required": True},
                     {"name": "latest_machine_report", "artifact_type": "json", "path": str(report_dir / "latest.json"), "required": True, "schema_url": changes.REPORT_SCHEMA_URL},
                     {"name": "latest_summary", "artifact_type": "json", "path": str(report_dir / "latest.summary.json"), "required": True, "schema_url": changes.SUMMARY_SCHEMA_URL},
                     {"name": "latest_event_stream", "artifact_type": "ndjson", "path": str(report_dir / "latest.events.ndjson"), "required": True, "schema_url": changes.EVENT_SCHEMA_URL},
