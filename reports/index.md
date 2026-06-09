@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-06-08T22:43:23.903468Z`
+Generated: `2026-06-09T16:16:25.594654Z`
 
 ## Latest Brief
 
@@ -9,85 +9,86 @@ Generated: `2026-06-08T22:43:23.903468Z`
 ## Current Status
 
 - Status: Fresh at latest report generation. Current status lives in `status.json`.
-- Last generated: `2026-06-08 21:38 UTC`
+- Last generated: `2026-06-09 16:14 UTC`
 - Latest artifacts: [Markdown](latest.md), [JSON](latest.json), [Summary](latest.summary.json), [Events](latest.events.ndjson)
 
 ## 7-Day Snapshot
 
-- Reports: 1
-- Repositories with movement: 68
-- Default-branch commits: 287
-- Releases: 20
+- Reports: 2
+- Repositories with movement: 143
+- Default-branch commits: 625
+- Releases: 50
 
 ## 30-Day Snapshot
 
-- Reports: 1
-- Repositories with movement: 68
-- Default-branch commits: 287
-- Releases: 20
+- Reports: 2
+- Repositories with movement: 143
+- Default-branch commits: 625
+- Releases: 50
 
 ## Latest Product Areas
 
 | Product area | Signal | Repos | Events | Releases | Security |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Azure | 53 | 25 | 67 | 13 | 1 |
-| Unmapped Activity | 23 | 18 | 33 | 1 | 0 |
-| .NET | 10 | 6 | 26 | 0 | 0 |
-| Microsoft Graph | 6 | 6 | 20 | 5 | 0 |
-| Identity | 6 | 2 | 6 | 0 | 1 |
-| Microsoft 365 | 5 | 5 | 11 | 1 | 0 |
+| Azure | 92 | 34 | 112 | 24 | 2 |
+| Unmapped Activity | 20 | 15 | 35 | 0 | 0 |
+| .NET | 15 | 6 | 25 | 0 | 0 |
+| PowerShell | 9 | 4 | 9 | 0 | 3 |
+| Microsoft Graph | 7 | 4 | 17 | 5 | 0 |
 | Developer Tools | 5 | 1 | 5 | 0 | 0 |
-| PowerShell | 4 | 2 | 4 | 0 | 1 |
+| Identity | 4 | 3 | 6 | 0 | 0 |
+| Microsoft 365 | 2 | 6 | 13 | 1 | 0 |
 
 ## Most Active Product Areas
 
 | Product area | Activity score |
 | --- | ---: |
-| Azure | 78 |
-| Unmapped Activity | 23 |
-| Microsoft Graph | 21 |
-| .NET | 16 |
-| Azure SDK | 12 |
-| Azure AI | 11 |
-| Microsoft 365 | 10 |
-| Identity | 8 |
-| PowerShell | 8 |
-| Developer Tools | 6 |
-| Windows | 3 |
+| Azure | 204 |
+| Unmapped Activity | 43 |
+| .NET | 37 |
+| Microsoft Graph | 37 |
+| Azure SDK | 30 |
+| PowerShell | 26 |
+| Azure AI | 25 |
+| Microsoft 365 | 18 |
+| Identity | 15 |
+| Developer Tools | 12 |
+| Windows | 5 |
 
 ## Daily Reports
 
 | Date | Repositories | Commits | Releases | High-signal | Links |
 | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-06-09 | 75 | 338 | 30 | 25 | [md](2026-06-09.md) / [json](2026-06-09.json) |
 | 2026-06-08 | 68 | 287 | 20 | 25 | [md](2026-06-08.md) / [json](2026-06-08.json) |
 
 ## Recurring Repositories
 
 | Repository | Reports |
 | --- | ---: |
-| [MicrosoftDocs/azure-docs-powershell](https://github.com/MicrosoftDocs/azure-docs-powershell) | 1 |
-| [Azure/agentops](https://github.com/Azure/agentops) | 1 |
-| [dotnet/runtime](https://github.com/dotnet/runtime) | 1 |
-| [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) | 1 |
-| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 1 |
-| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 1 |
-| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 1 |
-| [microsoft/teams-agent-accelerator-templates](https://github.com/microsoft/teams-agent-accelerator-templates) | 1 |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 1 |
-| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 1 |
-| [microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools](https://github.com/microsoft/Build26-DEM333-how-foundry-integrates-with-open-source-frameworks-and-tools) | 1 |
-| [dotnet/orleans](https://github.com/dotnet/orleans) | 1 |
-| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 1 |
-| [MicrosoftLearning/ai-apps](https://github.com/MicrosoftLearning/ai-apps) | 1 |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 1 |
-| [dotnet/efcore](https://github.com/dotnet/efcore) | 1 |
-| [microsoft/entrabot](https://github.com/microsoft/entrabot) | 1 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 1 |
-| [MicrosoftDocs/PowerShell-Docs-Modules](https://github.com/MicrosoftDocs/PowerShell-Docs-Modules) | 1 |
-| [microsoft/kiota](https://github.com/microsoft/kiota) | 1 |
-| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 1 |
-| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 1 |
-| [microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK) | 1 |
-| [MicrosoftDocs/azure-docs-cli](https://github.com/MicrosoftDocs/azure-docs-cli) | 1 |
-| [Azure/aks-rdma-infiniband](https://github.com/Azure/aks-rdma-infiniband) | 1 |
+| [MicrosoftDocs/azure-docs-powershell](https://github.com/MicrosoftDocs/azure-docs-powershell) | 2 |
+| [Azure/agentops](https://github.com/Azure/agentops) | 2 |
+| [dotnet/runtime](https://github.com/dotnet/runtime) | 2 |
+| [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) | 2 |
+| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 2 |
+| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 2 |
+| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 2 |
+| [microsoft/teams-agent-accelerator-templates](https://github.com/microsoft/teams-agent-accelerator-templates) | 2 |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 2 |
+| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 2 |
+| [dotnet/orleans](https://github.com/dotnet/orleans) | 2 |
+| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 2 |
+| [MicrosoftLearning/ai-apps](https://github.com/MicrosoftLearning/ai-apps) | 2 |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 2 |
+| [dotnet/efcore](https://github.com/dotnet/efcore) | 2 |
+| [microsoft/entrabot](https://github.com/microsoft/entrabot) | 2 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 2 |
+| [MicrosoftDocs/PowerShell-Docs-Modules](https://github.com/MicrosoftDocs/PowerShell-Docs-Modules) | 2 |
+| [microsoft/kiota](https://github.com/microsoft/kiota) | 2 |
+| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 2 |
+| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 2 |
+| [microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK) | 2 |
+| [MicrosoftDocs/azure-docs-cli](https://github.com/MicrosoftDocs/azure-docs-cli) | 2 |
+| [Azure/aks-rdma-infiniband](https://github.com/Azure/aks-rdma-infiniband) | 2 |
+| [microsoftgraph/msgraph-snippets-go](https://github.com/microsoftgraph/msgraph-snippets-go) | 2 |
 

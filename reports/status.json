@@ -7,20 +7,20 @@
     "max_age_hours": 30,
     "state": "fresh"
   },
-  "generated_at": "2026-06-08T21:38:00.975882Z",
-  "last_attempt_at": "2026-06-08T21:38:00.975882Z",
-  "last_success_at": "2026-06-08T21:38:00.975882Z",
-  "latest_report_generated_at": "2026-06-08T21:38:00.975882Z",
+  "generated_at": "2026-06-09T16:14:48.029207Z",
+  "last_attempt_at": "2026-06-09T16:14:48.029207Z",
+  "last_success_at": "2026-06-09T16:14:48.029207Z",
+  "latest_report_generated_at": "2026-06-09T16:14:48.029207Z",
   "latest_report_stale": false,
   "reason": "success",
   "schema_url": "schemas/status.v1.schema.json",
   "schema_version": 1,
   "source": {
-    "commit": "022ac0c7e1dd6392de105a1fb8e8b7b491fc1704",
-    "repository": "",
-    "workflow": "",
-    "workflow_run_id": "",
-    "workflow_run_url": ""
+    "commit": "3ff3a6b58f05bb0817a9729cc7552c71cbf66047",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "27219725140",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/27219725140"
   },
   "status": "complete"
 }
