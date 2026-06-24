@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-06-23T16:09:33.265678Z`
+Generated: `2026-06-24T15:41:50.946423Z`
 
 ## Latest Brief
 
@@ -9,56 +9,57 @@ Generated: `2026-06-23T16:09:33.265678Z`
 ## Current Status
 
 - Status: Fresh at latest report generation. Current status lives in `status.json`.
-- Last generated: `2026-06-23 16:07 UTC`
+- Last generated: `2026-06-24 15:39 UTC`
 - Latest artifacts: [Daily brief](latest.md), [Consumer brief](latest.consumer.md), [JSON](latest.json), [Summary](latest.summary.json), [Events](latest.events.ndjson)
 
 ## 7-Day Snapshot
 
 - Reports: 7
-- Repositories with movement: 784
-- Default-branch commits: 4940
-- Releases: 133
+- Repositories with movement: 772
+- Default-branch commits: 4856
+- Releases: 140
 
 ## 30-Day Snapshot
 
-- Reports: 15
-- Repositories with movement: 1506
-- Default-branch commits: 8459
-- Releases: 307
+- Reports: 16
+- Repositories with movement: 1640
+- Default-branch commits: 9306
+- Releases: 339
 
 ## Latest Product Areas
 
 | Product area | Signal | Repos | Events | Releases | Security |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Azure | 173 | 49 | 184 | 20 | 4 |
-| Unmapped Activity | 94 | 34 | 105 | 1 | 1 |
-| .NET | 22 | 9 | 29 | 0 | 0 |
-| PowerShell | 12 | 5 | 12 | 0 | 1 |
-| Identity | 11 | 3 | 11 | 0 | 0 |
-| Windows | 10 | 4 | 10 | 0 | 0 |
-| Developer Tools | 5 | 3 | 6 | 0 | 0 |
-| Microsoft 365 | 3 | 5 | 9 | 0 | 0 |
+| Azure | 167 | 50 | 185 | 32 | 2 |
+| Unmapped Activity | 118 | 45 | 148 | 0 | 0 |
+| .NET | 20 | 12 | 31 | 0 | 0 |
+| Identity | 11 | 5 | 11 | 0 | 0 |
+| Developer Tools | 8 | 3 | 12 | 0 | 0 |
+| PowerShell | 8 | 4 | 11 | 0 | 0 |
+| Microsoft Graph | 5 | 6 | 16 | 0 | 1 |
+| Microsoft 365 | 4 | 6 | 13 | 0 | 0 |
 
 ## Most Active Product Areas
 
 | Product area | Activity score |
 | --- | ---: |
-| Azure | 2379 |
-| Unmapped Activity | 999 |
-| .NET | 389 |
-| Azure SDK | 320 |
-| PowerShell | 315 |
-| Microsoft Graph | 255 |
-| Identity | 183 |
-| Azure AI | 181 |
-| Microsoft 365 | 116 |
-| Developer Tools | 77 |
-| Windows | 63 |
+| Azure | 2596 |
+| Unmapped Activity | 1117 |
+| .NET | 421 |
+| Azure SDK | 344 |
+| PowerShell | 332 |
+| Microsoft Graph | 275 |
+| Identity | 199 |
+| Azure AI | 191 |
+| Microsoft 365 | 126 |
+| Developer Tools | 88 |
+| Windows | 66 |
 
 ## Daily Reports
 
 | Date | Repositories | Commits | Releases | High-signal | Links |
 | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-06-24 | 134 | 847 | 32 | 25 | [md](2026-06-24.md) / [json](2026-06-24.json) |
 | 2026-06-23 | 118 | 723 | 21 | 25 | [md](2026-06-23.md) / [json](2026-06-23.json) |
 | 2026-06-22 | 103 | 459 | 13 | 25 | [md](2026-06-22.md) / [json](2026-06-22.json) |
 | 2026-06-21 | 19 | 67 | 0 | 12 | [md](2026-06-21.md) / [json](2026-06-21.json) |
@@ -79,29 +80,29 @@ Generated: `2026-06-23T16:09:33.265678Z`
 
 | Repository | Reports |
 | --- | ---: |
-| [dotnet/runtime](https://github.com/dotnet/runtime) | 15 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 15 |
-| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 14 |
-| [microsoft/TypeAgent](https://github.com/microsoft/TypeAgent) | 14 |
-| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 13 |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 13 |
-| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 13 |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 13 |
-| [dotnet/efcore](https://github.com/dotnet/efcore) | 13 |
-| [Azure/azure-dev](https://github.com/Azure/azure-dev) | 13 |
+| [dotnet/runtime](https://github.com/dotnet/runtime) | 16 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 16 |
+| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 15 |
+| [microsoft/TypeAgent](https://github.com/microsoft/TypeAgent) | 15 |
+| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 14 |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 14 |
+| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 14 |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 14 |
+| [dotnet/efcore](https://github.com/dotnet/efcore) | 14 |
+| [Azure/azure-dev](https://github.com/Azure/azure-dev) | 14 |
+| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 13 |
+| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 13 |
+| [MicrosoftDocs/azure-docs-cli](https://github.com/MicrosoftDocs/azure-docs-cli) | 13 |
+| [microsoft/aspire-samples](https://github.com/microsoft/aspire-samples) | 13 |
+| [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) | 13 |
+| [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) | 13 |
+| [MicrosoftDocs/defender-docs](https://github.com/MicrosoftDocs/defender-docs) | 13 |
+| [MicrosoftDocs/powerbi-docs](https://github.com/MicrosoftDocs/powerbi-docs) | 13 |
 | [Azure/agentops](https://github.com/Azure/agentops) | 12 |
-| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 12 |
-| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 12 |
+| [microsoft/kiota](https://github.com/microsoft/kiota) | 12 |
 | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 12 |
-| [MicrosoftDocs/azure-docs-cli](https://github.com/MicrosoftDocs/azure-docs-cli) | 12 |
-| [microsoft/aspire-samples](https://github.com/microsoft/aspire-samples) | 12 |
-| [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) | 12 |
-| [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) | 12 |
-| [MicrosoftDocs/defender-docs](https://github.com/MicrosoftDocs/defender-docs) | 12 |
-| [MicrosoftDocs/powerbi-docs](https://github.com/MicrosoftDocs/powerbi-docs) | 12 |
-| [microsoft/kiota](https://github.com/microsoft/kiota) | 11 |
-| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 11 |
-| [microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK) | 11 |
-| [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks) | 11 |
-| [microsoft/amplifier-docs](https://github.com/microsoft/amplifier-docs) | 11 |
+| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 12 |
+| [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks) | 12 |
+| [dotnet/docs](https://github.com/dotnet/docs) | 12 |
+| [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) | 12 |
 
