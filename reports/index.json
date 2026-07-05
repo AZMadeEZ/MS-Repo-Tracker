@@ -261,374 +261,208 @@
       "report_json": "2026-07-04.json",
       "report_md": "2026-07-04.md",
       "repos_with_movement": 40
+    },
+    {
+      "date": "2026-07-05",
+      "default_branch_commits": 65,
+      "generated_at": "2026-07-05T14:54:58.591531Z",
+      "high_signal_count": 10,
+      "release_count": 1,
+      "report_json": "2026-07-05.json",
+      "report_md": "2026-07-05.md",
+      "repos_with_movement": 14
     }
   ],
-  "generated_at": "2026-07-04T14:48:09.065763Z",
+  "generated_at": "2026-07-05T14:55:37.324981Z",
   "latest": {
     "consumer_md": "latest.consumer.md",
-    "date": "2026-07-04",
-    "default_branch_commits": 109,
+    "date": "2026-07-05",
+    "default_branch_commits": 65,
     "event_stream": "latest.events.ndjson",
-    "generated_at": "2026-07-04T14:47:20.313801Z",
-    "high_signal_count": 25,
+    "generated_at": "2026-07-05T14:54:58.591531Z",
+    "high_signal_count": 10,
     "product_area_summary": [
       {
-        "event_count": 37,
-        "noisy_event_count": 10,
-        "notable_event_count": 29,
-        "product_area": "Azure",
-        "release_count": 3,
-        "repo_count": 16,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T18:24:38Z",
-            "headline": "Support both release-bot logins in sdk-build-repair eligibility gate",
-            "notability_score": 100,
-            "repo": "Azure/azure-sdk-for-net",
-            "url": "https://github.com/Azure/azure-sdk-for-net/pull/60613"
-          },
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T17:12:23Z",
-            "headline": "com.azure+azure-security-keyvault-keys_4.12.0-beta.1",
-            "notability_score": 100,
-            "repo": "Azure/azure-sdk-for-java",
-            "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-security-keyvault-keys_4.12.0-beta.1"
-          },
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T17:12:07Z",
-            "headline": "com.azure+azure-security-keyvault-administration_4.9.0-beta.1",
-            "notability_score": 100,
-            "repo": "Azure/azure-sdk-for-java",
-            "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-security-keyvault-administration_4.9.0-beta.1"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "Azure/azure-sdk-for-java"
-          },
-          {
-            "event_count": 5,
-            "repo": "Azure-Samples/app-service-labs"
-          },
-          {
-            "event_count": 4,
-            "repo": "Azure/azure-dev"
-          },
-          {
-            "event_count": 3,
-            "repo": "MicrosoftDocs/azure-docs"
-          },
-          {
-            "event_count": 3,
-            "repo": "MicrosoftDocs/azure-databases-docs"
-          }
-        ]
-      },
-      {
-        "event_count": 30,
+        "event_count": 18,
         "noisy_event_count": 7,
         "notable_event_count": 17,
+        "product_area": "Azure",
+        "release_count": 0,
+        "repo_count": 6,
+        "security_event_count": 0,
+        "top_events": [
+          {
+            "change_type": "feature",
+            "committed_at": "2026-07-04T17:06:23Z",
+            "headline": "Add Azure.AI.AgentServer.Optimization client library",
+            "notability_score": 90,
+            "repo": "Azure/azure-sdk-for-net",
+            "url": "https://github.com/Azure/azure-sdk-for-net/pull/59730"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-07-05T12:39:10Z",
+            "headline": "Publish management review checks for fork PRs",
+            "notability_score": 90,
+            "repo": "Azure/azure-sdk-for-net",
+            "url": "https://github.com/Azure/azure-sdk-for-net/pull/60651"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-07-05T11:02:56Z",
+            "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-ak\u2026",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/azure-aks-docs",
+            "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/70b8858c8149451fbede8b75176b12cb92842d30"
+          }
+        ],
+        "top_repos": [
+          {
+            "event_count": 5,
+            "repo": "MicrosoftDocs/dataexplorer-docs"
+          },
+          {
+            "event_count": 5,
+            "repo": "Azure-Samples/cosmos-db-design-patterns"
+          },
+          {
+            "event_count": 4,
+            "repo": "Azure/azure-sdk-for-net"
+          },
+          {
+            "event_count": 2,
+            "repo": "MicrosoftDocs/azure-aks-docs"
+          },
+          {
+            "event_count": 1,
+            "repo": "Azure-Samples/foundry-local-model-catalog"
+          }
+        ]
+      },
+      {
+        "event_count": 19,
+        "noisy_event_count": 2,
+        "notable_event_count": 10,
         "product_area": "Unmapped Activity",
         "release_count": 1,
-        "repo_count": 13,
+        "repo_count": 6,
         "security_event_count": 0,
         "top_events": [
           {
             "change_type": "release",
-            "committed_at": "2026-07-03T14:48:42Z",
-            "headline": "Adding a link to the SSMS 22 release notes on history page.",
-            "notability_score": 100,
-            "repo": "MicrosoftDocs/data-tools",
-            "url": "https://github.com/MicrosoftDocs/data-tools/pull/48"
-          },
-          {
-            "change_type": "sample_update",
-            "committed_at": "2026-07-04T07:28:01Z",
-            "headline": "Speed up first copilot mode calls by pre-warming session",
+            "committed_at": "2026-07-05T04:29:24Z",
+            "headline": "v1.12.9",
             "notability_score": 90,
-            "repo": "microsoft/TypeAgent",
-            "url": "https://github.com/microsoft/TypeAgent/pull/2598"
+            "repo": "microsoft/dbt-fabricspark",
+            "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.12.9"
           },
           {
             "change_type": "docs_update",
-            "committed_at": "2026-07-04T02:57:35Z",
-            "headline": "Copilot/xbox docs update 20260702",
+            "committed_at": "2026-07-05T12:36:01Z",
+            "headline": "PR-bidders (#1480)",
             "notability_score": 90,
-            "repo": "microsoft/XBOX-Game-Development-Documentation",
-            "url": "https://github.com/microsoft/XBOX-Game-Development-Documentation/pull/5"
+            "repo": "MicrosoftDocs/Xandr-docs",
+            "url": "https://github.com/MicrosoftDocs/Xandr-docs/commit/853015be05b18dc8f2ca75c374788bef1a096f49"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-07-05T12:19:15Z",
+            "headline": "PR-09 (#1478)",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/Xandr-docs",
+            "url": "https://github.com/MicrosoftDocs/Xandr-docs/commit/5cc621cf87c6a1032462a9ae2dac94b0f4bf2267"
           }
         ],
         "top_repos": [
           {
             "event_count": 5,
-            "repo": "MicrosoftDocs/fabric-docs"
+            "repo": "microsoft/sample-webapp"
           },
           {
             "event_count": 5,
-            "repo": "MicrosoftDocs/learn"
+            "repo": "MicrosoftLearning/mslearn-ai-concepts"
           },
           {
-            "event_count": 4,
-            "repo": "microsoft/onnxruntime"
+            "event_count": 3,
+            "repo": "microsoft/amplifier-app-cli"
           },
           {
-            "event_count": 4,
-            "repo": "microsoft/microsoft-iq-solution-accelerator"
+            "event_count": 3,
+            "repo": "MicrosoftDocs/Xandr-docs"
           },
           {
             "event_count": 2,
-            "repo": "MicrosoftDocs/memdocs"
+            "repo": "microsoft/dbt-fabricspark"
           }
         ]
       },
       {
-        "event_count": 11,
-        "noisy_event_count": 6,
-        "notable_event_count": 11,
+        "event_count": 1,
+        "noisy_event_count": 1,
+        "notable_event_count": 1,
         "product_area": "Microsoft Graph",
-        "release_count": 1,
-        "repo_count": 3,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T22:48:00Z",
-            "headline": "ci: make release publish jobs idempotent on re-run",
-            "notability_score": 100,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/pull/7895"
-          },
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T20:04:00Z",
-            "headline": "v1.32.5",
-            "notability_score": 100,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/releases/tag/v1.32.5"
-          },
-          {
-            "change_type": "release",
-            "committed_at": "2026-07-03T18:37:02Z",
-            "headline": "- bumps version for release of 1.32.5",
-            "notability_score": 100,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/pull/7893"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "microsoftgraph/microsoft-graph-docs-contrib"
-          },
-          {
-            "event_count": 5,
-            "repo": "microsoft/kiota"
-          },
-          {
-            "event_count": 1,
-            "repo": "microsoftgraph/msgraph-sdk-java"
-          }
-        ]
-      },
-      {
-        "event_count": 10,
-        "noisy_event_count": 1,
-        "notable_event_count": 7,
-        "product_area": ".NET",
-        "release_count": 0,
-        "repo_count": 5,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "feature",
-            "committed_at": "2026-07-04T00:56:44Z",
-            "headline": "Add MCP introduction to What's New in ASP.NET Core in .NET 11",
-            "notability_score": 90,
-            "repo": "dotnet/AspNetCore.Docs",
-            "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37309"
-          },
-          {
-            "change_type": "feature",
-            "committed_at": "2026-07-03T19:41:13Z",
-            "headline": "Enable ICF on Linux",
-            "notability_score": 90,
-            "repo": "dotnet/runtime",
-            "url": "https://github.com/dotnet/runtime/pull/129762"
-          },
-          {
-            "change_type": "feature",
-            "committed_at": "2026-07-03T19:26:18Z",
-            "headline": "JIT: Enable tail await optimization in async versions in tier 0",
-            "notability_score": 90,
-            "repo": "dotnet/runtime",
-            "url": "https://github.com/dotnet/runtime/pull/130181"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "dotnet/runtime"
-          },
-          {
-            "event_count": 2,
-            "repo": "dotnet/msbuild"
-          },
-          {
-            "event_count": 1,
-            "repo": "dotnet/AspNetCore.Docs"
-          },
-          {
-            "event_count": 1,
-            "repo": "dotnet/docs"
-          },
-          {
-            "event_count": 1,
-            "repo": "dotnet/MQTTnet"
-          }
-        ]
-      },
-      {
-        "event_count": 6,
-        "noisy_event_count": 3,
-        "notable_event_count": 6,
-        "product_area": "Identity",
-        "release_count": 0,
-        "repo_count": 2,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-07-03T17:41:45Z",
-            "headline": "Merging changes synced from https://github.com/MicrosoftDocs/entra-do\u2026",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c5c70a68e9cf5792201c107b6688a8bfea45ac86"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-07-03T13:47:22Z",
-            "headline": "485462 post multiple docs (#4850)",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/dynamics365smb-docs",
-            "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/6a091c05a32a0556b6bb600c526f02a3dbadd571"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-07-03T13:41:15Z",
-            "headline": "Update ID tokens app manifest property",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/8adec170ed0194effd712146bdf4b574866cdeda"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 4,
-            "repo": "MicrosoftDocs/entra-docs"
-          },
-          {
-            "event_count": 2,
-            "repo": "MicrosoftDocs/dynamics365smb-docs"
-          }
-        ]
-      },
-      {
-        "event_count": 4,
-        "noisy_event_count": 1,
-        "notable_event_count": 4,
-        "product_area": "Windows",
         "release_count": 0,
         "repo_count": 1,
         "security_event_count": 0,
         "top_events": [
           {
-            "change_type": "feature",
-            "committed_at": "2026-07-03T16:14:38Z",
-            "headline": "Add ReFS boot volume unattend deployment article (#8084)",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/windowsserverdocs",
-            "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/f31abd19f8d47bb2ec2ef818e7642b40c8a0bd86"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-07-03T17:00:20Z",
-            "headline": "New article: Lower AD DS Domain and Forest Functional Levels (#8116)",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/windowsserverdocs",
-            "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/5ecdc231ad1516bf00393ce889841bb0b6f8f6cf"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-07-03T13:35:21Z",
-            "headline": "New article for NUMA in Hyper-V (#7289)",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/windowsserverdocs",
-            "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/9dca2f8843f08a3199e89b48435a9ac2bf7588c8"
+            "change_type": "sdk_generation",
+            "committed_at": "2026-07-05T10:12:55Z",
+            "headline": "- bumps version for prerelease of 1.32.6",
+            "notability_score": 75,
+            "repo": "microsoft/kiota",
+            "url": "https://github.com/microsoft/kiota/pull/7894"
           }
         ],
         "top_repos": [
           {
-            "event_count": 4,
-            "repo": "MicrosoftDocs/windowsserverdocs"
+            "event_count": 1,
+            "repo": "microsoft/kiota"
           }
         ]
       },
       {
         "event_count": 1,
         "noisy_event_count": 0,
-        "notable_event_count": 1,
-        "product_area": "PowerShell",
+        "notable_event_count": 0,
+        "product_area": ".NET",
         "release_count": 0,
         "repo_count": 1,
         "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "feature",
-            "committed_at": "2026-07-03T19:09:47Z",
-            "headline": "Add cmdlet Remove-SPOFontFile",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/OfficeDocs-SharePoint-PowerShell",
-            "url": "https://github.com/MicrosoftDocs/OfficeDocs-SharePoint-PowerShell/pull/1184"
-          }
-        ],
+        "top_events": [],
         "top_repos": [
           {
             "event_count": 1,
-            "repo": "MicrosoftDocs/OfficeDocs-SharePoint-PowerShell"
+            "repo": "dotnet/runtime"
           }
         ]
       }
     ],
-    "release_count": 5,
+    "release_count": 1,
     "report_json": "latest.json",
     "report_md": "latest.md",
-    "repos_with_movement": 40,
+    "repos_with_movement": 14,
     "summary_json": "latest.summary.json"
   },
-  "report_count": 26,
+  "report_count": 27,
   "schema_url": "schemas/report-index.v1.schema.json",
   "schema_version": 1,
   "top_products": [
     {
       "product": "Azure",
-      "report_count": 4281
+      "report_count": 4304
     },
     {
       "product": "Unmapped Activity",
-      "report_count": 1770
+      "report_count": 1780
     },
     {
       "product": ".NET",
-      "report_count": 635
+      "report_count": 637
     },
     {
       "product": "Azure SDK",
-      "report_count": 538
+      "report_count": 540
     },
     {
       "product": "PowerShell",
@@ -636,11 +470,11 @@
     },
     {
       "product": "Microsoft Graph",
-      "report_count": 434
+      "report_count": 437
     },
     {
       "product": "Azure AI",
-      "report_count": 328
+      "report_count": 330
     },
     {
       "product": "Identity",
@@ -662,15 +496,15 @@
   "top_recurring_repos": [
     {
       "full_name": "dotnet/runtime",
+      "report_count": 27
+    },
+    {
+      "full_name": "Azure/azure-sdk-for-net",
       "report_count": 26
     },
     {
       "full_name": "microsoft/onnxruntime",
       "report_count": 26
-    },
-    {
-      "full_name": "Azure/azure-sdk-for-net",
-      "report_count": 25
     },
     {
       "full_name": "Azure/azure-dev",
@@ -697,6 +531,14 @@
       "report_count": 22
     },
     {
+      "full_name": "microsoft/kiota",
+      "report_count": 22
+    },
+    {
+      "full_name": "MicrosoftDocs/azure-aks-docs",
+      "report_count": 22
+    },
+    {
       "full_name": "dotnet/msbuild",
       "report_count": 21
     },
@@ -710,14 +552,6 @@
     },
     {
       "full_name": "dotnet/efcore",
-      "report_count": 21
-    },
-    {
-      "full_name": "microsoft/kiota",
-      "report_count": 21
-    },
-    {
-      "full_name": "MicrosoftDocs/azure-aks-docs",
       "report_count": 21
     },
     {
@@ -763,16 +597,16 @@
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 14820,
-      "release_count": 522,
-      "report_count": 26,
-      "repos_with_movement": 2651
+      "default_branch_commits": 14885,
+      "release_count": 523,
+      "report_count": 27,
+      "repos_with_movement": 2665
     },
     "last_7_days": {
-      "default_branch_commits": 3422,
-      "release_count": 122,
+      "default_branch_commits": 3413,
+      "release_count": 114,
       "report_count": 7,
-      "repos_with_movement": 643
+      "repos_with_movement": 636
     }
   }
 }
