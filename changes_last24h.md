@@ -1,606 +1,625 @@
-# Changes on default branch since 2026-07-27T13:56:23.392640Z
+# Changes on default branch since 2026-07-28T13:39:26.040402Z
 
-Repos with movement: **123**
+Repos with movement: **120**
 
 ## docs
 
 ### Azure
 
-- **Azure/azure-sdk-for-net** (`main`) - **28** commit(s)
-  - [Increment package version after release of Azure.ResourceManager.Auth…](https://github.com/Azure/azure-sdk-for-net/commit/a5083a93e63b7725f4ea1aec5f7bdfbfdbef0f2f) - 2026-07-28T15:39:47Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment version for authorization releases #61466](https://github.com/Azure/azure-sdk-for-net/pull/61466)
-  - [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-…](https://github.com/Azure/azure-sdk-for-net/commit/e32efbc93c8deb9d23dce76d47a6d77b8fc84f45) - 2026-07-28T15:07:38Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260727.3 #61431](https://github.com/Azure/azure-sdk-for-net/pull/61431)
-  - [[DomainRegistration] Correct property type (#61450)](https://github.com/Azure/azure-sdk-for-net/commit/c97bde6212bedc476d9a8977711310c2c3cc1296) - 2026-07-28T09:19:16Z - Minghao Chen (@HarveyLink) - PR: [[DomainRegistration] Correct property type #61450](https://github.com/Azure/azure-sdk-for-net/pull/61450)
-  - [Document management review resolution process (#61439)](https://github.com/Azure/azure-sdk-for-net/commit/61f610103ad05bc376404f650ce39b03e31a95e0) - 2026-07-28T08:02:22Z - Dapeng Zhang (@ArcturusZhang) - PR: [Document management review resolution process #61439](https://github.com/Azure/azure-sdk-for-net/pull/61439)
-  - [Prepare Event Hubs and Service Bus releases (#61438)](https://github.com/Azure/azure-sdk-for-net/commit/495a998523cd0f50de6e0d7302ad4ebd37174347) - 2026-07-28T06:19:44Z - Dapeng Zhang (@ArcturusZhang) - PR: [Prepare Event Hubs and Service Bus releases #61438](https://github.com/Azure/azure-sdk-for-net/pull/61438)
+- **Azure/azure-sdk-for-python** (`main`) - **30** commit(s)
+  - [Decouple AgentServer responses from generated model internals (#47995)](https://github.com/Azure/azure-sdk-for-python/commit/eb70b1d79e9cb6531744f815bad5e340fc4416e3) - 2026-07-29T14:19:44Z - Shiva S (@Shivakishore14) - PR: [Decouple AgentServer responses from generated model internals #47995](https://github.com/Azure/azure-sdk-for-python/pull/47995)
+  - [[AutoPR azure-mgmt-discovery]-generated-from-SDK Generation - Python-…](https://github.com/Azure/azure-sdk-for-python/commit/995c8e7d69bef9dba6bf2bba1dc5b35942b7e6a9) - 2026-07-29T14:17:15Z - ahall-msft (@ahall-msft) - PR: [[AutoPR azure-mgmt-discovery]-generated-from-SDK Generation - Python-6632123 #48175](https://github.com/Azure/azure-sdk-for-python/pull/48175)
+  - [[agentserver-core] Set 2.0.0b9 release date to 2026-07-28 (#48338)](https://github.com/Azure/azure-sdk-for-python/commit/9f2773330d60a0c1b9eef77dfafb1650231ae2ed) - 2026-07-29T10:23:57Z - Nathandrake229 (@Nathandrake229) - PR: [[agentserver-core] Set 2.0.0b9 release date #48338](https://github.com/Azure/azure-sdk-for-python/pull/48338)
+  - [Add aio namespace for agentserver response event streams (#47785)](https://github.com/Azure/azure-sdk-for-python/commit/11dfc506723588f714127a3340f77328deba78c0) - 2026-07-29T09:46:20Z - Shiva S (@Shivakishore14) - PR: [Add aio namespace for agentserver response event streams #47785](https://github.com/Azure/azure-sdk-for-python/pull/47785)
+  - [Refresh azure-mgmt-prometheusrulegroups after migrate to Typespec (#4…](https://github.com/Azure/azure-sdk-for-python/commit/381315e3183c5033478a2339248e07f6d566df41) - 2026-07-29T08:26:24Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Refresh azure-mgmt-prometheusrulegroups after migrate to Typespec #48327](https://github.com/Azure/azure-sdk-for-python/pull/48327)
+
+- **Azure/azure-sdk-for-net** (`main`) - **25** commit(s)
+  - [Update azure-typespec/http-client-csharp-provisioning version to prer…](https://github.com/Azure/azure-sdk-for-net/commit/10c883aa9599cd5f29b8fbc2c1feeb3bb19a2ab3) - 2026-07-29T15:16:27Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update azure-typespec/http-client-csharp-provisioning version to prerelease 1.0.0-alpha.20260729.2 #61518](https://github.com/Azure/azure-sdk-for-net/pull/61518)
+  - [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-…](https://github.com/Azure/azure-sdk-for-net/commit/d3554946cbcd8e234211c6f4c9131ef28a02a117) - 2026-07-29T15:16:02Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update azure-typespec/http-client-csharp version to prerelease 1.0.0-alpha.20260728.3 #61493](https://github.com/Azure/azure-sdk-for-net/pull/61493)
+  - [Prepare AgentServer Core beta.27 release notes (#61519)](https://github.com/Azure/azure-sdk-for-net/commit/f42a973eed8fd900ec675b8e1d5c931a71537cd6) - 2026-07-29T12:08:02Z - Shiva S (@Shivakishore14) - PR: [Prepare AgentServer Core beta.27 release notes #61519](https://github.com/Azure/azure-sdk-for-net/pull/61519)
+  - [Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260728.6 (#61505)](https://github.com/Azure/azure-sdk-for-net/commit/fef888180824df20cc976bc086008ec109f05844) - 2026-07-29T10:06:05Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update UnbrandedGeneratorVersion to 1.0.0-alpha.20260728.6 #61505](https://github.com/Azure/azure-sdk-for-net/pull/61505)
+  - [update servicebus commit id (#61513)](https://github.com/Azure/azure-sdk-for-net/commit/0afb185fe225fce785ac8e39efaa103646cb3931) - 2026-07-29T09:59:46Z - Dapeng Zhang (@ArcturusZhang) - PR: [update servicebus commit id #61513](https://github.com/Azure/azure-sdk-for-net/pull/61513)
 
 - **Azure/azure-sdk-for-java** (`main`) - **15** commit(s)
-  - [`openai-java` version update to latest (#49703)](https://github.com/Azure/azure-sdk-for-java/commit/319bea6860902c6a9819bdba4a18099c4c72cf1a) - 2026-07-28T12:34:33Z - Jose Alvarez (@jpalvarezl) - PR: [`openai-java` version update to latest #49703](https://github.com/Azure/azure-sdk-for-java/pull/49703)
-  - [Increment package versions for containerservice auto-releases (#49958)](https://github.com/Azure/azure-sdk-for-java/commit/6795def369f36a4322fba5ef2a6c187596aa1650) - 2026-07-28T08:42:05Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment versions for containerservice auto-releases #49958](https://github.com/Azure/azure-sdk-for-java/pull/49958)
-  - [Add @gmoralessanchez to planetarycomputer CODEOWNERS (#49937)](https://github.com/Azure/azure-sdk-for-java/commit/398e28caf3a87a0a9f1a01fddb6cbc3d3b53f5db) - 2026-07-28T04:00:00Z - Karthick Narendran (@karthick-rn) - PR: [Add @gmoralessanchez to planetarycomputer CODEOWNERS #49937](https://github.com/Azure/azure-sdk-for-java/pull/49937)
-  - [[appservice] Add WebApp/FunctionApp/slot managed-identity ACR pull (p…](https://github.com/Azure/azure-sdk-for-java/commit/244db653ad2d7cf9a90c4d9a2ea3e7fe3fe96675) - 2026-07-28T02:59:46Z - Weidong Xu (@weidongxu-microsoft) - PR: [[appservice] Add WebApp/FunctionApp/slot managed-identity ACR pull (passwordless) #49936](https://github.com/Azure/azure-sdk-for-java/pull/49936)
-  - [[AutoPR azure-resourcemanager-compute-bulkactions]-generated-from-SDK…](https://github.com/Azure/azure-sdk-for-java/commit/6a5cb5481bcce1bbb6e8ad8c73115e1db1460142) - 2026-07-28T02:58:39Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[AutoPR azure-resourcemanager-compute-bulkactions]-generated-from-SDK Generation - Java-6601897 #49880](https://github.com/Azure/azure-sdk-for-java/pull/49880)
+  - [Move azure-resourcemanager-containerservicepreparedimgspec to sdk/con…](https://github.com/Azure/azure-sdk-for-java/commit/ea7caca0b3af5313f6cd410efed0654e4dd94a55) - 2026-07-29T11:34:22Z - Weidong Xu (@weidongxu-microsoft) - PR: [Move azure-resourcemanager-containerservicepreparedimgspec to sdk/containerservicepreparedimgspec #49980](https://github.com/Azure/azure-sdk-for-java/pull/49980)
+  - [Change containerserviceaimanager release to Unreleased (#49979)](https://github.com/Azure/azure-sdk-for-java/commit/1ab9cc932006d8c117924cda9cacbc35d1f21934) - 2026-07-29T09:15:31Z - Weidong Xu (@weidongxu-microsoft) - PR: [Change containerserviceaimanager release to Unreleased #49979](https://github.com/Azure/azure-sdk-for-java/pull/49979)
+  - [[Automation] Generate SDK based on TypeSpec 0.45.11 (fix test) (#49978)](https://github.com/Azure/azure-sdk-for-java/commit/93d73b429c4758ab355d3b14ec0fb0ecbbfb11e0) - 2026-07-29T09:13:02Z - Weidong Xu (@weidongxu-microsoft) - PR: [[Automation] Generate SDK based on TypeSpec 0.45.11 (fix test) #49978](https://github.com/Azure/azure-sdk-for-java/pull/49978)
+  - [Increment package versions for compute auto-releases (#49965)](https://github.com/Azure/azure-sdk-for-java/commit/b12743a59bc336e938e78b6b2d19916f6ab86cd4) - 2026-07-29T08:17:19Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment versions for compute auto-releases #49965](https://github.com/Azure/azure-sdk-for-java/pull/49965)
+  - [Increment package versions for planetarycomputer releases (#49975)](https://github.com/Azure/azure-sdk-for-java/commit/1d72684b8667ba8b623ec893b58ad00ca9e8e144) - 2026-07-29T08:10:45Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment versions for planetarycomputer releases #49975](https://github.com/Azure/azure-sdk-for-java/pull/49975)
 
-- **Azure/azure-sdk-for-js** (`main`) - **15** commit(s)
-  - [[mgmt]update commits under tsp-location (#39432)](https://github.com/Azure/azure-sdk-for-js/commit/975b8b06d72914ee917843646dfaed031fed9fb3) - 2026-07-28T07:16:22Z - ZiWei Chen (@kazrael2119) - PR: [[mgmt]update commits under tsp-location #39432](https://github.com/Azure/azure-sdk-for-js/pull/39432)
-  - [Fix release tool dependency refresh after version bump (#39390)](https://github.com/Azure/azure-sdk-for-js/commit/b6ae2933ff2a89a65f4b827462b2d4dd00de6579) - 2026-07-28T03:58:22Z - Abdul Asfari (@aboodasfari) - PR: [Fix release tool dependency refresh after version bump #39390](https://github.com/Azure/azure-sdk-for-js/pull/39390)
-  - [[AutoPR @azure-arm-containerservice]-generated-from-SDK Generation - …](https://github.com/Azure/azure-sdk-for-js/commit/a6d28538a44e44c4f31b2fd8cb450dd47f3f445a) - 2026-07-28T03:14:39Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[AutoPR @azure-arm-containerservice]-generated-from-SDK Generation - JS-6623599 #39405](https://github.com/Azure/azure-sdk-for-js/pull/39405)
-  - [[AutoPR @azure-arm-compute-bulkactions]-generated-from-SDK Generation…](https://github.com/Azure/azure-sdk-for-js/commit/502a01a05746c9fa5e2e812942946ef9887a0387) - 2026-07-28T02:58:22Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[AutoPR @azure-arm-compute-bulkactions]-generated-from-SDK Generation - JS-6605550 #39351](https://github.com/Azure/azure-sdk-for-js/pull/39351)
-  - [[mgmt] GA refreshed packages using stable api versions (#39407)](https://github.com/Azure/azure-sdk-for-js/commit/249d582fe3d4fec3d2dcb59a5461b90a14f02185) - 2026-07-28T01:53:48Z - ZiWei Chen (@kazrael2119) - PR: [[mgmt] GA refreshed packages using stable api versions #39407](https://github.com/Azure/azure-sdk-for-js/pull/39407)
+- **Azure/LogicAppsUX** (`main`) - **10** commit(s)
+  - [chore(standalone): auto-refresh ARM and Foundry tokens while the dev …](https://github.com/Azure/LogicAppsUX/commit/369ba1c219ec97fac845d99ea7fa3648aa1a2dcc) - 2026-07-28T22:43:54Z - Riley Evans (@rllyy97) - PR: [chore(standalone): auto-refresh ARM and Foundry tokens while the dev server runs #9468](https://github.com/Azure/LogicAppsUX/pull/9468)
+  - [fix(designer): skip listKeys for Managed Identity agent connections (…](https://github.com/Azure/LogicAppsUX/commit/ae74edcf0d2f722730712ef876202646e3160f1d) - 2026-07-28T22:24:40Z - Krrish Mittal (@takyyon) - PR: [fix(designer): skip listKeys for Managed Identity agent connections #9471](https://github.com/Azure/LogicAppsUX/pull/9471)
+  - [fix(designer): Updated agent loop role assignments (#9460)](https://github.com/Azure/LogicAppsUX/commit/350c642bf3d5ca94166dd4496363f007b3ca4626) - 2026-07-28T21:29:48Z - Riley Evans (@rllyy97) - PR: [fix(designer): Updated agent loop role assignments #9460](https://github.com/Azure/LogicAppsUX/pull/9460)
+  - [fix(vscode): Use single source of truth for project file consistency …](https://github.com/Azure/LogicAppsUX/commit/f579f8d651a9bf11b956b747d5ac0030d39ee746) - 2026-07-28T21:22:37Z - Andrew Eldridge (@andrew-eldridge) - PR: [fix(vscode): Use single source of truth for project file consistency checks (.vscode, local.settings.json, host.json) #9399](https://github.com/Azure/LogicAppsUX/pull/9399)
+  - [fix(pipeline): route npm/pnpm package restores through CFS for SFI Ne…](https://github.com/Azure/LogicAppsUX/commit/6fcbd144cb23206226d3e56593d17d6f9defde2c) - 2026-07-28T19:04:26Z - Elaina Lee (@Elaina-Lee) - PR: [fix(pipeline): route npm/pnpm package restores through CFS for SFI Network Isolation (SR21) #9453](https://github.com/Azure/LogicAppsUX/pull/9453)
 
-- **Azure/azure-sdk-for-python** (`main`) - **13** commit(s)
-  - [Update Container Service CODEOWNERS (#48294)](https://github.com/Azure/azure-sdk-for-python/commit/844d0be09476a03fe66b382d3046f94759b06d73) - 2026-07-28T14:11:04Z - FumingZhang (@FumingZhang) - PR: [Update Container Service CODEOWNERS #48294](https://github.com/Azure/azure-sdk-for-python/pull/48294)
-  - [Fix Content-MD5 in FIPS environments (#48241)](https://github.com/Azure/azure-sdk-for-python/commit/8dbd2e46db94986b94f501da073e463271b07fcc) - 2026-07-28T12:30:30Z - Jens (@JensWehner) - PR: [Fix Content-MD5 in FIPS environments #48241](https://github.com/Azure/azure-sdk-for-python/pull/48241)
-  - [[agentserver] Use system-assigned managed identity for Entra Azure Mo…](https://github.com/Azure/azure-sdk-for-python/commit/f1d34d792b3bac05db108c3968ad3d0e9fbead43) - 2026-07-28T07:04:36Z - Ankit Singhal (@singankit) - PR: [[agentserver] Use system-assigned managed identity for Entra Azure Monitor auth #48097](https://github.com/Azure/azure-sdk-for-python/pull/48097)
-  - [Fix mltable load of registered data asset: restore DataVersionEntity.…](https://github.com/Azure/azure-sdk-for-python/commit/714185d422c5cdc841045cba881cecc019816766) - 2026-07-28T06:00:41Z - saanikaguptamicrosoft (@saanikaguptamicrosoft) - PR: [Fix mltable load of registered data asset: restore DataVersionEntity.additional_properties #48275](https://github.com/Azure/azure-sdk-for-python/pull/48275)
-  - [[agentserver-activity] Set 1.0.0b2 release date (#48277)](https://github.com/Azure/azure-sdk-for-python/commit/3177726ff9a5ed1f457aa341409aa0bb5f3cba1f) - 2026-07-28T05:25:07Z - Hameed Kunkanoor (@Hameedkunkanoor) - PR: [[agentserver-activity] Set 1.0.0b2 release date #48277](https://github.com/Azure/azure-sdk-for-python/pull/48277)
+- **Azure/azure-sdk-for-js** (`main`) - **9** commit(s)
+  - [[AutoPR @azure-arm-discovery]-generated-from-SDK Generation - JS-6622…](https://github.com/Azure/azure-sdk-for-js/commit/9c052ea28e531ab447f51afaad9103f623fab629) - 2026-07-29T14:19:14Z - ahall-msft (@ahall-msft) - PR: [[AutoPR @azure-arm-discovery]-generated-from-SDK Generation - JS-6622220 #39372](https://github.com/Azure/azure-sdk-for-js/pull/39372)
+  - [Sync eng/common directory with azure-sdk-tools for PR 16501 (#39427)](https://github.com/Azure/azure-sdk-for-js/commit/5b7a3694ebebcce6762014229fccf5b23009d7c2) - 2026-07-29T04:48:58Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16501 #39427](https://github.com/Azure/azure-sdk-for-js/pull/39427)
+  - [[monitor-opentelemetry] Live Metrics honors APPLICATIONINSIGHTS_AUTHE…](https://github.com/Azure/azure-sdk-for-js/commit/cd4f7daafb6cdb356e104a5b1ce37065a7dfacc1) - 2026-07-28T23:18:28Z - Jackson Weber (@JacksonWeber) - PR: [[monitor-opentelemetry] Live Metrics honors APPLICATIONINSIGHTS_AUTHENTICATION_STRING for AAD auth #39445](https://github.com/Azure/azure-sdk-for-js/pull/39445)
+  - [Upgrade ESLint v9 → v10 (+ typescript-eslint 8.65, pnpm catalog clean…](https://github.com/Azure/azure-sdk-for-js/commit/2db78cdcd8a47ebfaefb5406050d872d6fe9a01c) - 2026-07-28T22:30:40Z - Jeremy Meng (@jeremymeng) - PR: [Upgrade ESLint v9 → v10 (+ typescript-eslint 8.65, pnpm catalog cleanup) #39421](https://github.com/Azure/azure-sdk-for-js/pull/39421)
+  - [[agentic-workflows] Upgrade gh-aw from v0.82.13 to v0.83.1 (#39412)](https://github.com/Azure/azure-sdk-for-js/commit/bdf8c8ee161efd023fde100547c1beb04de71ba0) - 2026-07-28T21:28:16Z - Copilot (@Copilot) - PR: [[agentic-workflows] Upgrade gh-aw from v0.82.13 to v0.83.1 #39412](https://github.com/Azure/azure-sdk-for-js/pull/39412)
 
-- **Azure/azure-sdk-for-go** (`main`) - **12** commit(s)
-  - [fix(azservicebus): set minimum 60s server-timeout for management oper…](https://github.com/Azure/azure-sdk-for-go/commit/0fac2ffd30bb83a54e3aadd1da95ef2252c0481f) - 2026-07-28T13:25:29Z - Eldert Grootenboer (@EldertGrootenboer) - PR: [fix(azservicebus): default server-timeout for management operations without a deadline #26499](https://github.com/Azure/azure-sdk-for-go/pull/26499)
-  - [Pin go-git to v5.16.5 to fix SDK generation in sparse-checkout repos …](https://github.com/Azure/azure-sdk-for-go/commit/2283d8dbed76867f5d4ae5bc0e647c04e9bda9e1) - 2026-07-28T08:52:39Z - Chenjie Shi (@tadelesh) - PR: [Pin go-git to v5.16.5 to fix SDK generation in sparse-checkout repos #27275](https://github.com/Azure/azure-sdk-for-go/pull/27275)
-  - [Increment package version after release of storage/azfile (#27274)](https://github.com/Azure/azure-sdk-for-go/commit/7ed6cd9762679a925c532dac5c141ca29d929ec8) - 2026-07-28T08:20:43Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment version for storage/azfile releases #27274](https://github.com/Azure/azure-sdk-for-go/pull/27274)
-  - [Increment package version after release of storage/azqueue (#27268)](https://github.com/Azure/azure-sdk-for-go/commit/07326237f7b01e5f5c98eee64c373b0e33c286b0) - 2026-07-28T08:02:33Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment version for storage/azqueue releases #27268](https://github.com/Azure/azure-sdk-for-go/pull/27268)
-  - [[AutoPR sdk-resourcemanager/compute/armbulkactions]-generated-from-SD…](https://github.com/Azure/azure-sdk-for-go/commit/8456a2c51a1945e3b8e58c57b80d5c91700b822d) - 2026-07-28T02:58:31Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [[AutoPR sdk-resourcemanager/compute/armbulkactions]-generated-from-SDK Generation - Go-6601901 #27227](https://github.com/Azure/azure-sdk-for-go/pull/27227)
+- **Azure/azure-sdk-for-rust** (`main`) - **9** commit(s)
+  - [Sync eng/common directory with azure-sdk-tools for PR 16501 (#4885)](https://github.com/Azure/azure-sdk-for-rust/commit/12c1bdb659370c1422e93e13432ad3ca6edb33ba) - 2026-07-29T04:49:10Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16501 #4885](https://github.com/Azure/azure-sdk-for-rust/pull/4885)
+  - [Add sdk-reviewer custom agent (#4838)](https://github.com/Azure/azure-sdk-for-rust/commit/53684cf29aeeb9d589da43be8988c23dcad5bef2) - 2026-07-28T22:46:27Z - Copilot (@Copilot) - PR: [Add sdk-reviewer custom agent #4838](https://github.com/Azure/azure-sdk-for-rust/pull/4838)
+  - [[Storage] Idempotent tracing init in `azure_core_test` (#4905)](https://github.com/Azure/azure-sdk-for-rust/commit/02b53c63bded9811a5b9d197ef8bf8107736cc40) - 2026-07-28T22:27:29Z - vincenttran-msft (@vincenttran-msft) - PR: [[Storage] Idempotent tracing init in `azure_core_test` #4905](https://github.com/Azure/azure-sdk-for-rust/pull/4905)
+  - [Gate Cosmos control-plane APIs behind control_plane feature (#4854)](https://github.com/Azure/azure-sdk-for-rust/commit/dfac41dfd23b1ca0cfea1344933df18410759971) - 2026-07-28T21:25:53Z - Ashley Stanton-Nurse (@analogrelay) - PR: [Gate Cosmos control-plane APIs behind control_plane feature #4854](https://github.com/Azure/azure-sdk-for-rust/pull/4854)
+  - [[Storage] Fix Blob upload perf test partition size (#4902)](https://github.com/Azure/azure-sdk-for-rust/commit/4b7922f0da51d7b79b5ac26555922adae8c748f5) - 2026-07-28T21:07:42Z - Jacob Lauzon (@jalauzon-msft) - PR: [[Storage] Fix Blob upload perf test partition size #4902](https://github.com/Azure/azure-sdk-for-rust/pull/4902)
 
-- **Azure/azure-sdk-for-rust** (`main`) - **6** commit(s)
-  - [fix(amqp): report the link-state kind on a failed receive (#4815)](https://github.com/Azure/azure-sdk-for-rust/commit/bc8415b1b2c2a7ce8d2207e0311b98fa7e20076a) - 2026-07-28T12:57:26Z - Johnathan W (@j7nw4r) - PR: [fix(amqp): report the link-state kind on a failed receive #4815](https://github.com/Azure/azure-sdk-for-rust/pull/4815)
-  - [Sync eng/common directory with azure-sdk-tools for PR 16529 (#4878)](https://github.com/Azure/azure-sdk-for-rust/commit/42302456a7b63cf132bc646bcf8ad77e5cf48c4f) - 2026-07-27T22:20:41Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16529 #4878](https://github.com/Azure/azure-sdk-for-rust/pull/4878)
-  - [Align sample local deps (#4876)](https://github.com/Azure/azure-sdk-for-rust/commit/8da621e72d1f2fd79742a7b4ce64756c24cb5857) - 2026-07-27T20:41:28Z - Heath Stewart (@heaths) - PR: [Align sample local deps #4876](https://github.com/Azure/azure-sdk-for-rust/pull/4876)
-  - [Sync eng/common directory with azure-sdk-tools for PR 16507 (#4875)](https://github.com/Azure/azure-sdk-for-rust/commit/befc97ff260d72c30c7f5f42822960923239867e) - 2026-07-27T19:40:16Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16507 #4875](https://github.com/Azure/azure-sdk-for-rust/pull/4875)
-  - [Switch pack flow to generate_api (#4787)](https://github.com/Azure/azure-sdk-for-rust/commit/ffb64d4ab13dba6fe535028fa6b5c490703ae26c) - 2026-07-27T18:54:45Z - Heath Stewart (@heaths) - PR: [Switch pack flow to generate_api #4787](https://github.com/Azure/azure-sdk-for-rust/pull/4787)
+- **Azure/azure-sdk-for-go** (`main`) - **4** commit(s)
+  - [Sync eng/common directory with azure-sdk-tools for PR 16501 (#27272)](https://github.com/Azure/azure-sdk-for-go/commit/a13fb7282c405da03e658880dda31bc6d8c37d8f) - 2026-07-29T04:48:50Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16501 #27272](https://github.com/Azure/azure-sdk-for-go/pull/27272)
+  - [Update armbulkactions 0.2.0 release date to 2026-07-30 (#27280)](https://github.com/Azure/azure-sdk-for-go/commit/c7401501d777fda205eac64adfac865a6fcaa06a) - 2026-07-29T03:18:54Z - Yash Khandelwal (@ykh015) - PR: [[compute] Update armbulkactions 0.2.0 release date for release plan 35410 #27280](https://github.com/Azure/azure-sdk-for-go/pull/27280)
+  - [Update Go dependencies (#27277)](https://github.com/Azure/azure-sdk-for-go/commit/b76f3368e719748971671d9fe0b2c7b831b68819) - 2026-07-28T20:40:55Z - Joel Hendrix (@jhendrixMSFT) - PR: [Update Go dependencies #27277](https://github.com/Azure/azure-sdk-for-go/pull/27277)
+  - [test(azservicebus): live coverage for ListSessions SessionStateUpdate…](https://github.com/Azure/azure-sdk-for-go/commit/581669571548a5b71d24174cc03b12eb99de7597) - 2026-07-28T16:04:52Z - Eldert Grootenboer (@EldertGrootenboer) - PR: [test(azservicebus): live coverage for ListSessions SessionStateUpdatedAfter mode #27220](https://github.com/Azure/azure-sdk-for-go/pull/27220)
 
-- **Azure/azure-sdk** (`main`) - **6** commit(s)
-  - [rust release notes for the 2026-08 release (#10156)](https://github.com/Azure/azure-sdk/commit/26bd83427652102e50cc3a7c965e8e545e8cd838) - 2026-07-27T23:03:28Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [rust release notes for the 2026-08 release #10156](https://github.com/Azure/azure-sdk/pull/10156)
-  - [Update package-lock.json files via npm update --min-release-age 7 (#1…](https://github.com/Azure/azure-sdk/commit/78615cb7cb4048e43bd9ce230d410b30a868dfae) - 2026-07-27T22:20:21Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16529 #10185](https://github.com/Azure/azure-sdk/pull/10185)
-  - [Assign per-language architects when a review is ready (#10167)](https://github.com/Azure/azure-sdk/commit/85bb4bb2699be850fa4c115441cb6edbf07970b7) - 2026-07-27T21:42:30Z - Sameeksha Vaity (@samvaity) - PR: [Assign per-language architects when a review is ready #10167](https://github.com/Azure/azure-sdk/pull/10167)
-  - [Update package index with latest published versions (#10164)](https://github.com/Azure/azure-sdk/commit/ffc9c07c218e04f7ebc5d006ab517c8e8b7fb20c) - 2026-07-27T21:41:33Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update package index with latest published versions #10164](https://github.com/Azure/azure-sdk/pull/10164)
-  - [Require language selection in arch-board-review template (#10184)](https://github.com/Azure/azure-sdk/commit/d70c03b6d11d744a7e7283685b5020606044fa5a) - 2026-07-27T21:04:03Z - Sameeksha Vaity (@samvaity) - PR: [Require language selection in arch board review template #10184](https://github.com/Azure/azure-sdk/pull/10184)
+- **Azure/azure-iot-sdk-node** (`main`) - **3** commit(s)
+  - [Merge pull request #1258 from Azure/ewertons/cve-2026-13149-brace-exp…](https://github.com/Azure/azure-iot-sdk-node/commit/293aa6c17787c1c43cb687083cf78398d72e8d12) - 2026-07-28T21:59:40Z - Ewerton Scaboro da Silva (@ewertons) - PR: [fix(deps): address CVE-2026-13149 by forcing brace-expansion >=5.0.7 under nx #1258](https://github.com/Azure/azure-iot-sdk-node/pull/1258)
+  - [Merge remote-tracking branch 'origin/main' into ewertons/cve-2026-131…](https://github.com/Azure/azure-iot-sdk-node/commit/7572cab6c9b9830d81cd559af42726c2ad245948) - 2026-07-28T20:57:21Z - Ewerton Scaboro da Silva (@ewertons) - PR: [fix(deps): address CVE-2026-13149 by forcing brace-expansion >=5.0.7 under nx #1258](https://github.com/Azure/azure-iot-sdk-node/pull/1258)
+  - [Merge pull request #1257 from Azure/ewertons/cve-2026-59869-js-yaml](https://github.com/Azure/azure-iot-sdk-node/commit/1cf11ac191ad2bc00388cb735cbb4575ed5861b6) - 2026-07-28T19:19:32Z - Ewerton Scaboro da Silva (@ewertons) - PR: [fix(deps): address CVE-2026-59869 by forcing js-yaml >=4.3.0 under lerna #1257](https://github.com/Azure/azure-iot-sdk-node/pull/1257)
 
-- **Azure/LogicAppsUX** (`main`) - **3** commit(s)
-  - [chore(deps-dev): bump uuid from 14.0.0 to 14.0.1 (#9459)](https://github.com/Azure/LogicAppsUX/commit/9293a18f1c17374d2ad0ade446bd8f61433087c3) - 2026-07-28T14:36:32Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps-dev): bump uuid from 14.0.0 to 14.0.1 #9459](https://github.com/Azure/LogicAppsUX/pull/9459)
-  - [fix(agent): show all chat-completion deployments instead of a hardcod…](https://github.com/Azure/LogicAppsUX/commit/c170fd4e77b2b0c9ca510ef252127749ab5494c9) - 2026-07-28T14:23:38Z - Krrish Mittal (@takyyon) - PR: [fix(agent): show all chat-completion deployments instead of a hardcoded model list #9464](https://github.com/Azure/LogicAppsUX/pull/9464)
-  - [perf(vs-code-designer): fix extension-host startup — bundle integrity…](https://github.com/Azure/LogicAppsUX/commit/93125a55bc8a248147eb66aff64555e29b077150) - 2026-07-27T23:41:32Z - Brian Lam (@lambrianmsft) - PR: [perf(vs-code-designer): fix extension-host startup — bundle integrity fast-path + telemetry masking freeze #9436](https://github.com/Azure/LogicAppsUX/pull/9436)
+- **Azure/azure-cli-extensions** (`main`) - **2** commit(s)
+  - [Adding arc appliance cli 1.8.0 (#10156)](https://github.com/Azure/azure-cli-extensions/commit/cf552b4fbb5cd5ec2786c7afcfa07a0f87ce36c8) - 2026-07-29T01:04:39Z - Katerina Ng (@katerinang10) - PR: [ArcAppliance CLI 1.8.0 Release #10156](https://github.com/Azure/azure-cli-extensions/pull/10156)
+  - [[AKS] Add allowedSubjects support to identity bindings (#10148)](https://github.com/Azure/azure-cli-extensions/commit/fb45839a696d7c48059c78ba774e2cef5ea4a142) - 2026-07-29T00:33:27Z - Tom Abraham (@toma3233) - PR: [[AKS] Add allowedSubjects support to identity bindings #10148](https://github.com/Azure/azure-cli-extensions/pull/10148)
 
-- **Azure/azure-sdk-for-cpp** (`main`) - **3** commit(s)
-  - [Sync eng/common directory with azure-sdk-tools for PR 16501 (#7248)](https://github.com/Azure/azure-sdk-for-cpp/commit/682099995c27f15e87ebc2728444a85b380c73c1) - 2026-07-28T02:23:34Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16501 #7248](https://github.com/Azure/azure-sdk-for-cpp/pull/7248)
-  - [Update package-lock.json files via npm update --min-release-age 7 (#7…](https://github.com/Azure/azure-sdk-for-cpp/commit/a8cf7f9cde3c5c08572be269c1f587d0881cd014) - 2026-07-27T22:03:21Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16529 #7245](https://github.com/Azure/azure-sdk-for-cpp/pull/7245)
-  - [Sync eng/common directory with azure-sdk-tools for PR 16507 (#7244)](https://github.com/Azure/azure-sdk-for-cpp/commit/509cd1c40e3841674e7c68cb1e85241f4895d3a2) - 2026-07-27T19:23:51Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16507 #7244](https://github.com/Azure/azure-sdk-for-cpp/pull/7244)
+- **Azure/awesome-azd** (`main`) - **2** commit(s)
+  - [chore(deps): resolve Dependabot alerts for sharp, body-parser, and br…](https://github.com/Azure/awesome-azd/commit/c43f6b94179e4e3b089e14bb5f3f04d69df67912) - 2026-07-28T22:42:17Z - Copilot (@Copilot) - PR: [chore(deps): resolve Dependabot alerts for sharp, body-parser, and brace-expansion #937](https://github.com/Azure/awesome-azd/pull/937)
+  - [Automate extension catalog sync using azd as the registry ruleset (#928)](https://github.com/Azure/awesome-azd/commit/16d389e688667f606e89ecf542cfdeb083f16066) - 2026-07-28T22:04:05Z - JeffreyCA (@JeffreyCA) - PR: [Simplify extension catalog synchronization #928](https://github.com/Azure/awesome-azd/pull/928)
 
-- **Azure/azure-cli-extensions** (`main`) - **3** commit(s)
-  - [[Release] Update index.json for extension [ networkcloud-5.0.1 ]](https://github.com/Azure/azure-cli-extensions/commit/28160034929a332551cd3574f92caa462311eb01) - 2026-07-28T00:43:15Z - Azure CLI Team (@azclibot)
-  - [NetworkCloud CLI v5.0.1 (#10147)](https://github.com/Azure/azure-cli-extensions/commit/d688117ad017938eafbd9ada7255ef27ef35e410) - 2026-07-28T00:16:33Z - idanielsteven (@idanielsteven) - PR: [NetworkCloud CLI v5.0.1 #10147](https://github.com/Azure/azure-cli-extensions/pull/10147)
-  - [Sync resourceManagement.yml for squad mapping (#10142)](https://github.com/Azure/azure-cli-extensions/commit/50a9fdab391bea85e3b8e155932dcf19606d1dfc) - 2026-07-27T14:02:30Z - Azure CLI Bot (@azclibot) - PR: [{CI} Sync squad mapping labels from ADO Wiki to resourceManagement.yml #10142](https://github.com/Azure/azure-cli-extensions/pull/10142)
+- **Azure/iot-operations-sdks** (`main`) - **2** commit(s)
+  - [[Rust] Workspace updates (#1443)](https://github.com/Azure/iot-operations-sdks/commit/e8066d2e36d1b7e52ba7e268cdeafaf4d8ea72f1) - 2026-07-28T18:47:05Z - Carter Tinney (@cartertinney) - PR: [[Rust] Workspace updates #1443](https://github.com/Azure/iot-operations-sdks/pull/1443)
+  - [fix: exclude opcfoundation.org from link checker (returns 403 for cra…](https://github.com/Azure/iot-operations-sdks/commit/fa021618ef1f7356b321ccd4b7620e70fa695fcd) - 2026-07-28T17:19:18Z - Copilot (@Copilot) - PR: [fix: exclude opcfoundation.org from link checker (returns 403 for crawlers) #1442](https://github.com/Azure/iot-operations-sdks/pull/1442)
 
-- **Azure/iot-operations-sdks** (`main`) - **3** commit(s)
-  - [Remove GitHub fork contribution instructions (#1439)](https://github.com/Azure/iot-operations-sdks/commit/8b2275853716cf54b33bbcaabb5e879c90231f50) - 2026-07-27T21:32:32Z - Valerie Avva Lim (@vaavva) - PR: [Remove GitHub fork contribution instructions #1439](https://github.com/Azure/iot-operations-sdks/pull/1439)
-  - [[Rust][Scaffolding] Wire scaffolding SDK deps as { version, path } (#…](https://github.com/Azure/iot-operations-sdks/commit/89d9762df9165b5e3418fc1b27be0742e91eac1e) - 2026-07-27T21:12:23Z - yophilav (@yophilav) - PR: [[Rust][Scaffolding] Wire scaffolding SDK deps as { version, path } #1426](https://github.com/Azure/iot-operations-sdks/pull/1426)
-  - [[Rust][Connector] Version bump for 07-24-2026 release (#1436)](https://github.com/Azure/iot-operations-sdks/commit/2df6d19d3992fdbf98fa08b30f066d8b2f8372dd) - 2026-07-27T16:57:41Z - Raul Leclair (@RLeclair) - PR: [[Rust][Connector] Version bump for 07-24-2026 release #1436](https://github.com/Azure/iot-operations-sdks/pull/1436)
-
-- **Azure/data-api-builder** (`main`) - **1** commit(s)
-  - [[Phase 3] MSSQL JSON - test fixture + REST CRUD tests (#3720)](https://github.com/Azure/data-api-builder/commit/b4e06b5f4bdd7e4ab4cf8bfb4991c89de8dd554a) - 2026-07-28T07:32:21Z - Souvik Ghosh (@souvikghosh04) - PR: [[Phase 3] MSSQL JSON - test fixture + REST CRUD tests #3720](https://github.com/Azure/data-api-builder/pull/3720)
+- **Azure/corim** (`main`) - **2** commit(s)
+  - [Merge pull request #58 from Azure/update-azure-templates](https://github.com/Azure/corim/commit/0a86c8d43fea10e8597e716fb27275f8e93bd8f6) - 2026-07-28T18:37:01Z - a-trikalinou (@a-trikalinou) - PR: [Update Azure template files (NDPA and SOCMANA) to add version number #58](https://github.com/Azure/corim/pull/58)
+  - [Update Azure template files (NDPA and SOCMANA)](https://github.com/Azure/corim/commit/258da1dd589981b35131e9b1ca297cad71728b9e) - 2026-07-28T18:30:48Z - Anna Trikalinou (@a-trikalinou) - PR: [Update Azure template files (NDPA and SOCMANA) to add version number #58](https://github.com/Azure/corim/pull/58)
 
 - **Azure/azureml-examples** (`main`) - **1** commit(s)
-  - [Add SDK sample: batch deployment from a registry pipeline component (…](https://github.com/Azure/azureml-examples/commit/ac287c842b3a74eddb2c159feb7499cd50cd8059) - 2026-07-28T05:55:08Z - lavakumarrepala (@lavakumarrepala) - PR: [Add SDK sample: batch deployment from a registry pipeline component #4077](https://github.com/Azure/azureml-examples/pull/4077)
+  - [Add batch endpoint job list workarounds to notebook samples (#4041)](https://github.com/Azure/azureml-examples/commit/9834f0edc885919caa167f18b7214be9a2bec633) - 2026-07-29T14:50:18Z - lavakumarrepala (@lavakumarrepala) - PR: [Add batch endpoint job list workarounds to notebook samples #4041](https://github.com/Azure/azureml-examples/pull/4041)
+
+- **Azure/data-api-builder** (`main`) - **1** commit(s)
+  - [Add support for DateTime filters in PostgreSQL (#3728)](https://github.com/Azure/data-api-builder/commit/eb3a58bfdf5685fd4d91a74b0777962c121658f1) - 2026-07-29T05:53:23Z - Arjun Narendra (@ArjunNarendra) - PR: [Add support for DateTime filters in PostgreSQL #3728](https://github.com/Azure/data-api-builder/pull/3728)
+
+- **Azure/azure-sdk** (`main`) - **1** commit(s)
+  - [Sync eng/common directory with azure-sdk-tools for PR 16501 (#10188)](https://github.com/Azure/azure-sdk/commit/6fff48dcc57930e167006fb325d442dabf7274f5) - 2026-07-29T04:48:47Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Sync eng/common directory with azure-sdk-tools for PR 16501 #10188](https://github.com/Azure/azure-sdk/pull/10188)
+
+- **Azure/azure-sdk-for-cpp** (`main`) - **1** commit(s)
+  - [Increment version for storage releases (#7264)](https://github.com/Azure/azure-sdk-for-cpp/commit/2b5281a5a1cb6247dac18d0719a9a9f1b17565a4) - 2026-07-29T01:11:15Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Increment version for storage releases #7264](https://github.com/Azure/azure-sdk-for-cpp/pull/7264)
+
+- **Azure/aksArc** (`main`) - **1** commit(s)
+  - [Merge pull request #453 from nistopia/nishatislam/fix-notation-untrus…](https://github.com/Azure/aksArc/commit/011b77dee564003fc8bffe3f37d6444403c603fd) - 2026-07-28T18:44:56Z - nistopia (@nistopia) - PR: [Fix untrusted search path in LinuxImageValidate.py (CWE-426) #453](https://github.com/Azure/aksArc/pull/453)
 
 ### MicrosoftDocs
 
-- **MicrosoftDocs/azure-docs** (`main`) - **63** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-do…](https://github.com/MicrosoftDocs/azure-docs/commit/fa4012bd5e1cac5425b23a0ae1e3ec3a6d787961) - 2026-07-28T05:13:33Z - Learn Build Service GitHub App
-  - [Merge pull request #318715 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-docs/commit/4a7b68ee0df86a0e606701e69a44af910437848e) - 2026-07-28T05:13:02Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Add Launch mode prerequisites and rename article to match Managed mod…](https://github.com/MicrosoftDocs/azure-docs/commit/96394ba4fb06a972b72eb10c2a2826540e2e317d) - 2026-07-28T02:20:23Z - Fitzgerald Steele (@fitzgeraldsteele)
-  - [Merge pull request #318712 from duongau/networking-supportfix-er-3826…](https://github.com/MicrosoftDocs/azure-docs/commit/94f41d6971c14e5afc6ab28ebe0582dad4a9b473) - 2026-07-28T02:09:12Z - prmerger-automator[bot] (@prmerger-automator[bot])
-  - [docs: clarify ArpAvailability and BgpAvailability interpretation](https://github.com/MicrosoftDocs/azure-docs/commit/e33b592730187ce539138ac09831d4d236413ac3) - 2026-07-28T01:33:45Z - duongau (@duongau)
+- **MicrosoftDocs/azure-docs** (`main`) - **97** commit(s)
+  - [Fix NVMe boot disk support details in release notes (#128667)](https://github.com/MicrosoftDocs/azure-docs/commit/c4e4e01c68d439cd4fb9acc40fbdd3f644c92d2e) - 2026-07-29T15:07:25Z - Andy Howard (@anhoward) - PR: [Fix NVMe boot disk support details in release notes #128667](https://github.com/MicrosoftDocs/azure-docs/pull/128667)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-do…](https://github.com/MicrosoftDocs/azure-docs/commit/c157eb1c9c77ea294071b8beb41ccb617edaaaf8) - 2026-07-29T11:42:07Z - Learn Build Service GitHub App
+  - [Merge pull request #318774 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-docs/commit/99f0841c6e58afdcbb9754f4e0559bbfc090e9ef) - 2026-07-29T11:37:42Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Merge pull request #318772 from AbhishekMallick-MS/patch-3](https://github.com/MicrosoftDocs/azure-docs/commit/4f81b318f376b4e6b7592f9edd46f302352b2e21) - 2026-07-29T09:48:17Z - prmerger-automator[bot] (@prmerger-automator[bot])
+  - [Add monitoring documentation for Azure Data Manager for Energy (#318683)](https://github.com/MicrosoftDocs/azure-docs/commit/ecd88883f869e5a2dd7fc77674ee596f0ec4f5cc) - 2026-07-29T09:39:55Z - priyabratpadhi (@priyabratpadhi)
 
-- **MicrosoftDocs/entra-docs** (`main`) - **34** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/626575d3cc311fa86adcede7fba9cfa30e446310) - 2026-07-28T07:37:16Z - Learn Build Service GitHub App
-  - [Merge pull request #13949 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/entra-docs/commit/e4b5f06bb5ece78db1e4be12eda8f788bfce9948) - 2026-07-28T07:34:07Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [docs: Add Send email about unsponsored guest removal task to Lifecycl…](https://github.com/MicrosoftDocs/entra-docs/commit/e431fd2b259d11faadeac5c7f11f0ddccf0cf7ef) - 2026-07-28T02:57:10Z - Kristina Smith (@krbain)
-  - [docs: Remove (Preview) labels from Lifecycle Workflows navigation men…](https://github.com/MicrosoftDocs/entra-docs/commit/9007e32ad28eb373a1a6cc59a714a306493b5ba3) - 2026-07-27T23:41:01Z - Kristina Smith (@krbain)
-  - [Remove "preview" tags from Entra Tenant Governance Learn article for …](https://github.com/MicrosoftDocs/entra-docs/commit/bc5f50e905a969a615895eb83d5ed52961d18d58) - 2026-07-27T23:39:27Z - tafra00 (@tafra00)
+- **MicrosoftDocs/fabric-docs** (`main`) - **29** commit(s)
+  - [Merge pull request #3206 from MicrosoftDocs/main639209199720290057syn…](https://github.com/MicrosoftDocs/fabric-docs/commit/4bda659a25b35df8b1881244dd93c3a52c6341c5) - 2026-07-29T11:06:27Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #3206](https://github.com/MicrosoftDocs/fabric-docs/pull/3206)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/fabric-d…](https://github.com/MicrosoftDocs/fabric-docs/commit/947a4962b946647fc0f5b55ac48188de49446aa9) - 2026-07-29T11:06:09Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #3206](https://github.com/MicrosoftDocs/fabric-docs/pull/3206)
+  - [Merge pull request #15665 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/fabric-docs/commit/58abb13156565322f51800588e876655698fd937) - 2026-07-29T11:04:25Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #3206](https://github.com/MicrosoftDocs/fabric-docs/pull/3206)
+  - [Fiscal year in plan (#15632)](https://github.com/MicrosoftDocs/fabric-docs/commit/389e04e8f2db66b0f81f2d9dbe832256306df5d1) - 2026-07-29T10:54:13Z - PreethaS1 (@PreethaS1) - PR: [Repo sync for protected branch #3206](https://github.com/MicrosoftDocs/fabric-docs/pull/3206)
+  - [Merge pull request #15662 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/fabric-docs/commit/6c3ba5e2e980b65b7f07c8fbb7322a82f4478f68) - 2026-07-29T05:02:16Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #3206](https://github.com/MicrosoftDocs/fabric-docs/pull/3206)
 
-- **MicrosoftDocs/fabric-docs** (`main`) - **32** commit(s)
-  - [Update activator-limitations.md (#3203)](https://github.com/MicrosoftDocs/fabric-docs/commit/0ac18ad27260a80f85f17cf90b3671846d43e989) - 2026-07-28T14:14:11Z - Mikolaj Fengler (@mikolajfengler) - PR: [Update activator-limitations.md #3203](https://github.com/MicrosoftDocs/fabric-docs/pull/3203)
-  - [Merge pull request #3204 from MicrosoftDocs/main639208334864649429syn…](https://github.com/MicrosoftDocs/fabric-docs/commit/2a12771b93d03b729e9d7533815885562db82545) - 2026-07-28T11:05:02Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #3204](https://github.com/MicrosoftDocs/fabric-docs/pull/3204)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/fabric-d…](https://github.com/MicrosoftDocs/fabric-docs/commit/33760f47516330c866d40b9b8b81aaa4b405ef2c) - 2026-07-28T11:04:43Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #3204](https://github.com/MicrosoftDocs/fabric-docs/pull/3204)
-  - [Merge pull request #15646 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/fabric-docs/commit/7cb75a50d214eb737c3918f65a80e0fb51026343) - 2026-07-28T11:02:42Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #3204](https://github.com/MicrosoftDocs/fabric-docs/pull/3204)
-  - [How to sql query (#15621)](https://github.com/MicrosoftDocs/fabric-docs/commit/a3a444e31b8f2f10c6e2e98532b6659ca3dfe7d4) - 2026-07-28T08:07:32Z - jagan0506 (@jagan0506) - PR: [Repo sync for protected branch #3204](https://github.com/MicrosoftDocs/fabric-docs/pull/3204)
+- **MicrosoftDocs/learn** (`main`) - **24** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/learn-pr…](https://github.com/MicrosoftDocs/learn/commit/3cdab4a1f4101e965fe431be7b62e6aa34bba64e) - 2026-07-29T11:26:40Z - Learn Build Service GitHub App
+  - [Merge pull request #55781 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/learn/commit/b7605448acf63017ad9a61efacfb9cc12cee382f) - 2026-07-29T11:17:19Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [New module approved in fork of release branch for merge into main fro…](https://github.com/MicrosoftDocs/learn/commit/dd1b261f6aad71f062288398ea9f1a9c62444359) - 2026-07-29T09:52:29Z - Orin Thomas (@Orin-Thomas)
+  - [Merge pull request #55778 from MicrosoftDocs/Saisang-patch-1](https://github.com/MicrosoftDocs/learn/commit/d37ae3becba5236d850b16561b561246a033bfbb) - 2026-07-29T07:41:41Z - prmerger-automator[bot] (@prmerger-automator[bot])
+  - [Module freshness review (#55776)](https://github.com/MicrosoftDocs/learn/commit/11ce4b247e20d7d799e9322ae73a3bf71bacf069) - 2026-07-29T07:26:52Z - Orin Thomas (@Orin-Thomas)
 
-- **MicrosoftDocs/azure-monitor-docs** (`main`) - **15** commit(s)
-  - [Document full-line match requirement for parse kind=regex in transfor…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/56f46381adbbde3ab8e90345b624d4a80be95ed2) - 2026-07-28T14:22:45Z - Ivan Varnitski (@ivkhrul) - PR: [Document full-line match requirement for parse kind=regex in transformations #305](https://github.com/MicrosoftDocs/azure-monitor-docs/pull/305)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-mo…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/5cb11fadfacec4855d12ee99ee716920a5d2d1a2) - 2026-07-28T12:05:02Z - Learn Build Service GitHub App
-  - [Merge pull request #5058 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/2af7d42dcd589d9c817b2e372a4d2ea83c0de65d) - 2026-07-28T12:03:58Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [[AUTOGEN] PR for Advisor recommendations (#5055)](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/d9a7a3f8c8c245e9f09538f6837569d35cf8bcf9) - 2026-07-28T08:45:04Z - Saisang Cai (@Saisang)
-  - [Merge pull request #5056 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/f72196da707bf63dd9afe57f230322134dcd52b8) - 2026-07-28T06:02:45Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+- **MicrosoftDocs/SupportArticles-docs** (`main`) - **19** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/SupportA…](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/c47162d9c22e6a643bedfe6ca47a517c6a52a1aa) - 2026-07-29T10:06:43Z - Learn Build Service GitHub App
+  - [Merge pull request #12064 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/6509ee2cffec1f7558055d59ae89adee55c151f0) - 2026-07-29T10:04:42Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Exchange freshness updates (#12055)](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/ae833e549a642495c9dbddc3dcf4c67b6d1d40db) - 2026-07-29T04:38:31Z - KC Cross (@KCCross)
+  - [Exchange freshness updates (#12056)](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/d613f508ce2139198e434c4f3ae58174a9da92a1) - 2026-07-29T04:37:46Z - KC Cross (@KCCross)
+  - [Merge pull request #12057 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/1a08acb773bc0dc9630c560a6ee575661bfed42e) - 2026-07-29T02:03:07Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
 
-- **MicrosoftDocs/memdocs** (`main`) - **10** commit(s)
-  - [Add RBAC permission for managing ZTE (#5193)](https://github.com/MicrosoftDocs/memdocs/commit/5d85c487f0400aab9390c0aecb8f9706560cd125) - 2026-07-27T22:44:48Z - Gracey Wilson (@grwilso) - PR: [Add RBAC permission for managing ZTE #5193](https://github.com/MicrosoftDocs/memdocs/pull/5193)
-  - [Merge pull request #5192 from MicrosoftDocs/main639207704168007664syn…](https://github.com/MicrosoftDocs/memdocs/commit/3b6a4d5dff6b35e1fd900e2d5acfddac2b936c1c) - 2026-07-27T17:33:53Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5192](https://github.com/MicrosoftDocs/memdocs/pull/5192)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/memdocs-…](https://github.com/MicrosoftDocs/memdocs/commit/539dbb4a4637b17d99e0fdf6a95b4b92493898f6) - 2026-07-27T17:33:34Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #5192](https://github.com/MicrosoftDocs/memdocs/pull/5192)
-  - [Merge pull request #20581 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/memdocs/commit/9d151d6a262ca396bc980386f63776569213f1c1) - 2026-07-27T17:32:22Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5192](https://github.com/MicrosoftDocs/memdocs/pull/5192)
-  - [Merge pull request #20570 from mmacy-msft/mmacy-2607-revive-20513-com…](https://github.com/MicrosoftDocs/memdocs/commit/72de17baa3d9a4f1667dff5931bb3bda10f9f82e) - 2026-07-27T17:27:15Z - prmerger-automator[bot] (@prmerger-automator[bot]) - PR: [Repo sync for protected branch #5192](https://github.com/MicrosoftDocs/memdocs/pull/5192)
+- **MicrosoftDocs/azure-monitor-docs** (`main`) - **18** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-mo…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/2583fd2be614d0ed54274a9de8c0e008057adc76) - 2026-07-29T12:06:52Z - Learn Build Service GitHub App
+  - [Merge pull request #5067 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/1399bb62caed0ee220c49ed5e9a0f3fc1fcf7411) - 2026-07-29T12:05:23Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Code block optimizer phase 3: query-based metric alert code samples (…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/ce3d8354c81bc7f781e671b89b43e92e9565ae87) - 2026-07-29T10:10:47Z - Austin McCollum (@austinmccollum)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-mo…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/5dee6e008e4b80092cd90a76863af9eda775a849) - 2026-07-28T22:10:49Z - Learn Build Service GitHub App
+  - [Merge pull request #5065 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/30a5ec20eb63aced1c900ea06a83c3b273ca2049) - 2026-07-28T22:09:25Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
 
-- **MicrosoftDocs/azure-compute-docs** (`main`) - **9** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-co…](https://github.com/MicrosoftDocs/azure-compute-docs/commit/444e2b3caff34f538dd74ab4308d8cb871b641da) - 2026-07-27T22:03:18Z - Learn Build Service GitHub App
-  - [Merge pull request #3888 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-compute-docs/commit/85c0442c8544769871ae84a8733bfa8228b1f27b) - 2026-07-27T22:02:19Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Storage and compute fixes (#3885)](https://github.com/MicrosoftDocs/azure-compute-docs/commit/0eeb1929a47333ee1f1f0b2707ed3c5fa44bf111) - 2026-07-27T21:24:01Z - Matt McInnes (@mattmcinnes)
-  - [Merge pull request #3880 from MicrosoftDocs/sizes_max-temp-remove](https://github.com/MicrosoftDocs/azure-compute-docs/commit/3e5f886f4323d9adee27a4d2212f742d65531eff) - 2026-07-27T19:11:31Z - prmerger-automator[bot] (@prmerger-automator[bot])
-  - [Removing Max from temp storage and fixing definitions](https://github.com/MicrosoftDocs/azure-compute-docs/commit/f55a4057ab3e28510e63d03d7cc82da63a251e25) - 2026-07-27T19:00:59Z - mattmcinnes (@mattmcinnes)
+- **MicrosoftDocs/dynamics-365-customer-engagement** (`main`) - **14** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/d427baec0a041b85c06610900fc5c0017f9737ca) - 2026-07-29T13:05:49Z - Learn Build Service GitHub App
+  - [Merge pull request #16788 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/ca334581a08f5bbaf74b0a40f0eb6a6cd81773c9) - 2026-07-29T13:03:44Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Updated manage case attributes (#16782)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/8c56011666c5df1cd7f0c4dc9eb75d60ff5dc72e) - 2026-07-29T11:11:41Z - Soumyashree Das (@Soumyasd27)
+  - [changes (#16777)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/1087204bffe3e3c87351608e0e7aacd2374bc511) - 2026-07-29T11:03:27Z - gandhamm (@gandhamm)
+  - [Content freshness_July (#16786)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/f122f6c7220a12d5050bed199d2b0b72aa707d28) - 2026-07-29T11:02:14Z - Soumyashree Das (@Soumyasd27)
 
-- **MicrosoftDocs/azure-dev-docs** (`main`) - **8** commit(s)
-  - [Merge pull request #9519 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-dev-docs/commit/8e79a3a1ebe015de885915a4b5a049f454fbc65d) - 2026-07-27T23:02:35Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [docs(azd): update tool-check and update-notification docs for 1.28.1 …](https://github.com/MicrosoftDocs/azure-dev-docs/commit/7b8c8ef1abc51877e83ef6f7cabbcbf2cf1ad5f7) - 2026-07-27T20:17:59Z - Copilot (@Copilot)
-  - [Revised version of Foundry extension doc (#9497)](https://github.com/MicrosoftDocs/azure-dev-docs/commit/813e9c77c95af1ddc7dbb0e3a60b64dec3a026f5) - 2026-07-27T20:12:18Z - alexwolfmsft (@alexwolfmsft)
-  - [Merge pull request #9515 from bmitchell287/content-mentor-seo-sfi-spr…](https://github.com/MicrosoftDocs/azure-dev-docs/commit/117505f07ec4ebb47e9234dee4d6825fe20b5dc8) - 2026-07-27T17:08:04Z - prmerger-automator[bot] (@prmerger-automator[bot])
-  - [Merge pull request #9514 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-dev-docs/commit/0996f85bf5b8d7afdcbcee3686db8659f6d42dea) - 2026-07-27T17:04:08Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+- **MicrosoftDocs/azure-docs-sdk-python** (`main`) - **14** commit(s)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/00311fceefd7517915ef2e4a1d3f25926df9eb38) - 2026-07-29T13:01:53Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/27428521aa39892bc832afa7ff6ce7c8af409f02) - 2026-07-29T10:44:58Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/c9135d600123e5ff42c3d32ddc94e2aac6adcb86) - 2026-07-29T09:38:43Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/e410b15499f4d6be66ff77bc345c98d64fba5514) - 2026-07-29T09:38:25Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/a19a1b6a38700ad9012acc1a77f69fd83e13e83f) - 2026-07-29T09:35:56Z - azure-sdk (@azure-sdk)
 
-- **MicrosoftDocs/msteams-docs** (`main`) - **7** commit(s)
+- **MicrosoftDocs/azure-docs-sdk-node** (`main`) - **13** commit(s)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/aea3ed4b77f3706240125c3fc21c0f1b2161742a) - 2026-07-29T07:01:21Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/a35d2939d37fd1fbacd96b37d1cae5be257a753a) - 2026-07-29T06:59:52Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/9cdfb63472bc0a6b8385f2965d71dc422b435b6a) - 2026-07-29T06:59:42Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/ef904ad5b19f8e1f06e990f19fbe49f9921b1fdc) - 2026-07-29T06:59:34Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/fa46f291b1576157e93a9560dfe1863d9eefa2de) - 2026-07-29T06:59:14Z - azure-sdk (@azure-sdk)
+
+- **MicrosoftDocs/entra-docs** (`main`) - **10** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/a11455958aeefbe887efd04adeabc9fb35a0e1f3) - 2026-07-29T07:35:29Z - Learn Build Service GitHub App
+  - [Merge pull request #13957 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/entra-docs/commit/0c5fe4972672e19f95f0f3c28d7d071987cb199d) - 2026-07-29T07:32:52Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Merge pull request #13955 from anksridhar/patch-2](https://github.com/MicrosoftDocs/entra-docs/commit/9a03d42201beb1fb7678f7382d32e568d2bcfde9) - 2026-07-29T01:35:41Z - prmerger-automator[bot] (@prmerger-automator[bot])
+  - [Fix formatting issues in managed-policies.md](https://github.com/MicrosoftDocs/entra-docs/commit/98bcdadd5e5f934c281dd601df3f2856c6c3e530) - 2026-07-29T01:30:54Z - anksridhar (@anksridhar)
+  - [Fix link text for high-risk user remediation](https://github.com/MicrosoftDocs/entra-docs/commit/693b76c873a0fe440080b0c747f12d0a366944bd) - 2026-07-29T00:26:25Z - anksridhar (@anksridhar)
+
+- **MicrosoftDocs/architecture-center** (`main`) - **9** commit(s)
+  - [Merge pull request #16225 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/architecture-center/commit/0f26b91205beba357b3498f05151b22a2ec25c4b) - 2026-07-29T05:02:58Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Add learn authoring assistant noise as well. (#16224)](https://github.com/MicrosoftDocs/architecture-center/commit/7d4b8068cdca56ebb7ddce420a158db6e85db78c) - 2026-07-28T22:18:04Z - Chad Kittel (@ckittel)
+  - [Add PRMerger Results to the hide list (#16223)](https://github.com/MicrosoftDocs/architecture-center/commit/63607b298c539571bff32850630f2a4445666d02) - 2026-07-28T22:06:04Z - Chad Kittel (@ckittel)
+  - [Take action out of test mode. (#16222)](https://github.com/MicrosoftDocs/architecture-center/commit/c4566d018c501828a48f102b4f6c0eac28c992a8) - 2026-07-28T21:54:03Z - Chad Kittel (@ckittel)
+  - [Try to clean up old bot messages (#16221)](https://github.com/MicrosoftDocs/architecture-center/commit/4369e1e90c2fea73ff004961f1e4444e64fbbf24) - 2026-07-28T21:34:38Z - Chad Kittel (@ckittel)
+
+- **MicrosoftDocs/dataexplorer-docs** (`main`) - **8** commit(s)
+  - [Merge pull request #2924 from MicrosoftDocs/main639209197798049771syn…](https://github.com/MicrosoftDocs/dataexplorer-docs/commit/e47481b53f9249ee704f4c202b5dcc4abc211088) - 2026-07-29T11:03:16Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #2924](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2924)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dataexpl…](https://github.com/MicrosoftDocs/dataexplorer-docs/commit/617f62c4dae53ff4a8043e85146597347082014c) - 2026-07-29T11:02:57Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #2924](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2924)
+  - [Merge pull request #7566 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dataexplorer-docs/commit/93b828098c7785b09285c6799228f4ba487d2ae9) - 2026-07-29T11:02:09Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #2924](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2924)
+  - [Remove preview labels and refresh metadata for graph docs (#7565)](https://github.com/MicrosoftDocs/dataexplorer-docs/commit/a7b24066d8eedae550b7c462cec55cc32cabff77) - 2026-07-29T10:21:49Z - RoyO (@royoMS) - PR: [Repo sync for protected branch #2924](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2924)
+  - [Merge pull request #7528 from shanisolomon/shanisolomon/auto-update-s…](https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c9d7ea79f53caf496b1c33ef09912a2141162167) - 2026-07-29T09:55:58Z - prmerger-automator[bot] (@prmerger-automator[bot]) - PR: [Repo sync for protected branch #2924](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2924)
+
+- **MicrosoftDocs/powerapps-docs** (`main`) - **7** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/powerapp…](https://github.com/MicrosoftDocs/powerapps-docs/commit/7e94d8a6fb2fa42b39d8e11ddda4155dee830131) - 2026-07-29T01:04:50Z - Learn Build Service GitHub App
+  - [Merge pull request #12431 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/powerapps-docs/commit/1267fb5afdec6b8123507a77547f33e4f4ddec3c) - 2026-07-29T01:03:23Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Add image back in shared location (#12430)](https://github.com/MicrosoftDocs/powerapps-docs/commit/4740e7d54a8e58ef8655bf60a28d0c785a85dff4) - 2026-07-28T20:50:09Z - Nathalie Laroche (@nathlaroche)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/powerapp…](https://github.com/MicrosoftDocs/powerapps-docs/commit/692ac4a4fca740e92ec47f8614ae896587c59481) - 2026-07-28T19:07:31Z - Learn Build Service GitHub App
+  - [Merge pull request #12429 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/powerapps-docs/commit/0e588a8116d64cfc7b062169611126f4c6344c67) - 2026-07-28T19:05:42Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+
+- **MicrosoftDocs/azure-docs-sdk-java** (`main`) - **6** commit(s)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/ebf793c4275a44f169948d83430f67d3361c4e2e) - 2026-07-29T06:17:10Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/57075ac8c0889fa85bfe21d3b79908a390d27111) - 2026-07-29T02:18:08Z - azure-sdk (@azure-sdk)
+  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/f1b92087aaf324af6b2593e4ab71e9888e757d56) - 2026-07-29T01:40:01Z - docsreference@microsoft.com
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/b2d12b8f365b34e6b53d95c6d3b35153c4197fdd) - 2026-07-29T00:16:09Z - azure-sdk (@azure-sdk)
+  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/6fef024d054b93588d68e16eb2c9cba587b0de68) - 2026-07-28T23:35:38Z - azure-sdk (@azure-sdk)
+
+- **MicrosoftDocs/azure-docs-sdk-cpp** (`main`) - **6** commit(s)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/e25f5a7338be64d051960fbbd3ed339c915c29db) - 2026-07-29T00:46:33Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/1757251ac7bd87cf71d922a95a4ef2a59c3d90fb) - 2026-07-29T00:23:49Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/28a42af35386dfcbfa432f7c35747c5d4e2c9687) - 2026-07-28T23:58:31Z - azure-sdk (@azure-sdk)
+  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/02edfe004b7106b0029d309d5150aa8ed66e46ab) - 2026-07-28T23:32:55Z - azure-sdk (@azure-sdk)
+  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/b5998b89a938c8f6ee9c2fe20a3f9dae99a9de61) - 2026-07-28T23:17:19Z - azure-sdk (@azure-sdk)
+
+- **MicrosoftDocs/msteams-docs** (`main`) - **5** commit(s)
+  - [Address doc issue (#14482)](https://github.com/MicrosoftDocs/msteams-docs/commit/83c75ecd142dfa4b536386b662c2b22d480a5ced) - 2026-07-29T14:43:06Z - SukanyaDas-MSFT (@SukanyaDas-MSFT) - PR: [Address doc issue #14482](https://github.com/MicrosoftDocs/msteams-docs/pull/14482)
+  - [[Doc Feature][Targeted messaging Ph 1 - GA][5586586] (#14477)](https://github.com/MicrosoftDocs/msteams-docs/commit/97398484ca2627f4f5b9ce3f58eb72588f381a35) - 2026-07-29T14:40:45Z - v-shalinirob (@v-shalinirob) - PR: [[Doc Feature][Targeted messaging Ph 1 - GA][5586586] #14477](https://github.com/MicrosoftDocs/msteams-docs/pull/14477)
   - [[Doc Improvement][Update @mention retrieve][5586586] (#14499)](https://github.com/MicrosoftDocs/msteams-docs/commit/6ca59e4bb5ded9c9b9eefc9f87727f08430537fc) - 2026-07-28T14:14:33Z - v-shalinirob (@v-shalinirob) - PR: [[Doc Improvement][Update @mention retrieve][5586586] #14499](https://github.com/MicrosoftDocs/msteams-docs/pull/14499)
   - [Update resolve-submission-issues.md (#14514)](https://github.com/MicrosoftDocs/msteams-docs/commit/f6818163b8b6981db11b4dafc4408f827b799bfd) - 2026-07-28T14:12:22Z - Sharan Garcha (@SharanGarcha-MSFT) - PR: [Update resolve-submission-issues.md #14514](https://github.com/MicrosoftDocs/msteams-docs/pull/14514)
   - [Replacing bot/app/agents icon with squircle - 4 (#14502)](https://github.com/MicrosoftDocs/msteams-docs/commit/7c27807d1a1804c64d542df96edb8f5d6019ae7c) - 2026-07-28T14:09:42Z - SukanyaDas-MSFT (@SukanyaDas-MSFT) - PR: [Replacing bot/app/agents icon with squircle - 4 #14502](https://github.com/MicrosoftDocs/msteams-docs/pull/14502)
-  - [Made updates to invoking-task-modules.md (#14271)](https://github.com/MicrosoftDocs/msteams-docs/commit/c742dc31171e407dc7d545c1c3923a51e90eaee1) - 2026-07-28T02:57:43Z - v-nikitach (@v-nikitach) - PR: [Made updates to invoking-task-modules.md #14271](https://github.com/MicrosoftDocs/msteams-docs/pull/14271)
-  - [Reorganize TOC (#14509)](https://github.com/MicrosoftDocs/msteams-docs/commit/dfe87aa1c9f68913f7aa0404b445560b63b0da2f) - 2026-07-27T22:42:41Z - Nick Walker (@nickwalkmsft) - PR: [Reorganize TOC #14509](https://github.com/MicrosoftDocs/msteams-docs/pull/14509)
 
-- **MicrosoftDocs/azure-databases-docs** (`main`) - **6** commit(s)
-  - [Merge pull request #5462 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-databases-docs/commit/383f1508ec37d76418a63f77f254a37b6a3f0198) - 2026-07-28T06:02:12Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [[PostgreSQL] Update VS Code extension docs: Edit Data, parameterized …](https://github.com/MicrosoftDocs/azure-databases-docs/commit/db0e904e5829a79cdd648265f550e2a613e71c01) - 2026-07-27T23:17:19Z - Erdem Tuna (@erdemtuna)
-  - [Merge pull request #5461 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-databases-docs/commit/038ff84454526792f3b9c21774b699ebf179a4a5) - 2026-07-27T22:07:52Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Automatically update pgBouncer (#5445)](https://github.com/MicrosoftDocs/azure-databases-docs/commit/f4cf7916fa7e63769b66c704ce92d9999332c689) - 2026-07-27T19:16:42Z - Nacho Alonso Portillo (@nachoalonsoportillo)
-  - [Merge pull request #5453 from hariramt/task/DocUpdate-July27](https://github.com/MicrosoftDocs/azure-databases-docs/commit/6ef96b8383ad41820e082b9ce7d7f07c5a64b72d) - 2026-07-27T18:39:29Z - prmerger-automator[bot] (@prmerger-automator[bot])
+- **MicrosoftDocs/cpp-docs** (`main`) - **5** commit(s)
+  - [Merge pull request #5947 from MicrosoftDocs/main639208572076314185syn…](https://github.com/MicrosoftDocs/cpp-docs/commit/6e3836a6eb771505ebb73dd0abd30f48cb16feff) - 2026-07-28T17:40:23Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5947](https://github.com/MicrosoftDocs/cpp-docs/pull/5947)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/cpp-docs…](https://github.com/MicrosoftDocs/cpp-docs/commit/6500a60ba5d18f72cc038435f9c2982e68d76dd1) - 2026-07-28T17:40:05Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #5947](https://github.com/MicrosoftDocs/cpp-docs/pull/5947)
+  - [Merge pull request #6779 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/cpp-docs/commit/65ad79f65607d31e65e4c00e1e8211b895153096) - 2026-07-28T17:33:36Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5947](https://github.com/MicrosoftDocs/cpp-docs/pull/5947)
+  - [Confirm merge from FromPublicMasterBranch to main to sync with https:…](https://github.com/MicrosoftDocs/cpp-docs/commit/c10b7933a8babc716a9673d0fb63139f9ef53a3d) - 2026-07-28T17:17:17Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5947](https://github.com/MicrosoftDocs/cpp-docs/pull/5947)
+  - [Clarify version prefix for Visual Studio Command Prompt (#5946)](https://github.com/MicrosoftDocs/cpp-docs/commit/51001e61b1851e888cc4bd28ee593a99bd0d135c) - 2026-07-28T14:11:42Z - Eric Brumer (@ericbrumer) - PR: [Clarify version prefix for Visual Studio Command Prompt #5946](https://github.com/MicrosoftDocs/cpp-docs/pull/5946)
 
-- **MicrosoftDocs/dynamics-365-unified-operations-public** (`main`) - **5** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/Dynamics…](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/0d84ca01be720c8cc7cb07979f1e4d08ee7c2860) - 2026-07-28T13:06:37Z - Learn Build Service GitHub App
-  - [Merge pull request #22260 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/d0ecbc318cee646e8c5f5b67906d8b598a531316) - 2026-07-28T13:05:00Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Release cycle for WMA (#22254)](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/6fab493ed890b4e7e70ed99009b69a0d63c2e212) - 2026-07-28T12:22:30Z - Pedro Augusto Freitas de Souza (@pedroafsouza)
-  - [Merge pull request #22257 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/dfdbab12c735994a445c00edeb3e14314cb08fcf) - 2026-07-27T19:02:51Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [create, review and update (#22256)](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/08499f8bb0322719f7f3cb943f7544efd6112b98) - 2026-07-27T18:45:12Z - twheeloc (@twheeloc)
+- **MicrosoftDocs/azure-dev-docs** (`main`) - **5** commit(s)
+  - [Merge pull request #9523 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-dev-docs/commit/14b61ec17e9bcd344667ff4cced9c41fb56e38a8) - 2026-07-28T17:04:19Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Update resource-provider-overview.md (revives magodo's #7333 and #734…](https://github.com/MicrosoftDocs/azure-dev-docs/commit/4ba044d7b4391dc209506c8f1ad8d1ffa9efd8b1) - 2026-07-28T15:02:28Z - Vishwajeet Ranade (@vranade-microsoft)
+  - [Update package index with latest published versions (#9512)](https://github.com/MicrosoftDocs/azure-dev-docs/commit/8a0cfd189eb38408b5514f31306b512b799f4f04) - 2026-07-28T14:36:37Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot])
+  - [Correct azdo pipeline config OIDC/federated docs (#9520)](https://github.com/MicrosoftDocs/azure-dev-docs/commit/55ecdbbb6e30ae0c915c2894d8174ffaf6e2ed94) - 2026-07-28T14:23:43Z - Victor Vazquez (@vhvb1989)
+  - [Update reference documents for Azure CLI @ 1.28.1 (#9501)](https://github.com/MicrosoftDocs/azure-dev-docs/commit/b944bcad50957349e8ec7446ddaf081714c48f98) - 2026-07-28T14:19:08Z - Azure SDK Bot (@azure-sdk)
 
-- **MicrosoftDocs/azure-docs-sdk-dotnet** (`main`) - **5** commit(s)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/f522a87efd879bfbb8d77d20661dd603e1cabb11) - 2026-07-28T12:39:36Z - azure-sdk (@azure-sdk)
-  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/54c19b06a3e1ed5685058fca11ee119cfe21e45a) - 2026-07-28T01:58:49Z - docsreference@microsoft.com
-  - [Update docs CI configuration](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/fc595d3cb51aebe7fe383dee38779310aa4bff13) - 2026-07-27T23:49:24Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/8c1ec86f49c1de3b9f3a693171ca81d2964d2747) - 2026-07-27T20:40:13Z - azure-sdk (@azure-sdk)
-  - [Remove Broken Link to Nonexistent ACI Management API Reference (#2619)](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/cf20175d2bccdcfa5b5833ce52de5d99df3d4d82) - 2026-07-27T16:22:27Z - Tom Cassidy (@tomvcassidy) - PR: [Remove Broken Link to Nonexistent ACI Management API Reference #2619](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/pull/2619)
+- **MicrosoftDocs/azure-ai-docs** (`main`) - **4** commit(s)
+  - [Document low priority VM retirement and Spot-backed pricing in batch …](https://github.com/MicrosoftDocs/azure-ai-docs/commit/02935e0747f3f85d663726c2be7e3977d94c9efb) - 2026-07-29T15:02:00Z - Radek Maziarka (@rmaziarka) - PR: [Document low priority VM retirement and Spot-backed pricing in batch deployments #791](https://github.com/MicrosoftDocs/azure-ai-docs/pull/791)
+  - [Update navigation steps for viewing workflows in VS Code (#769)](https://github.com/MicrosoftDocs/azure-ai-docs/commit/3e172c520fef0da5e791da59129f4e6dcc60991a) - 2026-07-29T14:26:30Z - AhmadAbdullah91 (@AhmadAbdullah91) - PR: [Update navigation steps for viewing workflows in VS Code #769](https://github.com/MicrosoftDocs/azure-ai-docs/pull/769)
+  - [Resolve syncing conflicts from repo_sync_working_branch to main (#801)](https://github.com/MicrosoftDocs/azure-ai-docs/commit/3ae3b7b1202782174f8d3e4653f48a2f88d446fc) - 2026-07-28T15:58:28Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Resolve syncing conflicts from repo_sync_working_branch to main #801](https://github.com/MicrosoftDocs/azure-ai-docs/pull/801)
+  - [Fix Foundry Local CLI server command docs (#802)](https://github.com/MicrosoftDocs/azure-ai-docs/commit/139a2576ac34d690cdf60f8acc7ab11aa3274348) - 2026-07-28T15:54:02Z - Wayne (@Wayne-Ch) - PR: [Fix Foundry Local CLI server command docs #802](https://github.com/MicrosoftDocs/azure-ai-docs/pull/802)
 
-- **MicrosoftDocs/azure-docs-sdk-python** (`main`) - **5** commit(s)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/74b6ba73bfd5223de247183d291bfcb449baad32) - 2026-07-28T08:45:23Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/c18b7f6c6187023771b84b2c8efb2e8847c62e75) - 2026-07-28T04:55:15Z - azure-sdk (@azure-sdk)
-  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/50b7ddfc5cd74cc8c5500d78436dd24c0ea8377b) - 2026-07-27T23:06:13Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/b53caaf86e369953566be67276e03e99ff27438a) - 2026-07-27T22:02:34Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-python/commit/a869a5d406dd0af03b85dab5002ac2a12af528af) - 2026-07-27T20:02:43Z - azure-sdk (@azure-sdk)
+- **MicrosoftDocs/visualstudio-docs** (`main`) - **4** commit(s)
+  - [Enrich VSTest CLI docs: exit codes, filter/shell escaping, blame dump…](https://github.com/MicrosoftDocs/visualstudio-docs/commit/672b93a5d8fb0be717dfdb2c08c1d0214879dffe) - 2026-07-29T14:38:58Z - Azat Mukhametshin (@azat-msft) - PR: [Enrich VSTest CLI docs: exit codes, filter/shell escaping, blame dumps, option gaps + archived-link cleanup #11401](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11401)
+  - [Merge pull request #11410 from MicrosoftDocs/main639208515610035930sy…](https://github.com/MicrosoftDocs/visualstudio-docs/commit/0cc5c256ebbe51f84c014e0e689409217f6c139e) - 2026-07-28T16:06:17Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #11410](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11410)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/visualst…](https://github.com/MicrosoftDocs/visualstudio-docs/commit/fed5a1ad097c4af17e4109303abd98dcb8a36b25) - 2026-07-28T16:05:58Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #11410](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11410)
+  - [Merge pull request #15622 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/visualstudio-docs/commit/a1bf15b545b2eb1ce6e007fe2c11c16af25a381b) - 2026-07-28T16:04:07Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #11410](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11410)
 
-- **MicrosoftDocs/winrt-api** (`docs`) - **5** commit(s)
-  - [Update implicitanimationcollection.md (#2518)](https://github.com/MicrosoftDocs/winrt-api/commit/3bab1541b165340de8228c183753b05fefd4ec1a) - 2026-07-27T16:30:34Z - HO-COOH (@HO-COOH) - PR: [Update implicitanimationcollection.md #2518](https://github.com/MicrosoftDocs/winrt-api/pull/2518)
-  - [Update expressionanimation.md (#2519)](https://github.com/MicrosoftDocs/winrt-api/commit/2686754c384c0be0304320e6e5930bf28ba4db34) - 2026-07-27T16:30:04Z - HO-COOH (@HO-COOH) - PR: [Update expressionanimation.md #2519](https://github.com/MicrosoftDocs/winrt-api/pull/2519)
-  - [Fix description grammar in ResourceDictionary documentation (#2532)](https://github.com/MicrosoftDocs/winrt-api/commit/7f922af3cd24cef091e3fc6a3bfeac772817b2e3) - 2026-07-27T16:29:15Z - Peter Smith (@pedasmith) - PR: [Fix description grammar in ResourceDictionary documentation #2532](https://github.com/MicrosoftDocs/winrt-api/pull/2532)
-  - [correctly escape angle bracket (#2538)](https://github.com/MicrosoftDocs/winrt-api/commit/f35b82b4be561d8100af879be526154c19dfdb54) - 2026-07-27T16:28:45Z - Junyoung Lee (@leejy12) - PR: [Correctly escape angle bracket inside link #2538](https://github.com/MicrosoftDocs/winrt-api/pull/2538)
-  - [Fix applicationdata.md missing new line (#2541)](https://github.com/MicrosoftDocs/winrt-api/commit/eee8eacd613ab497d7d9849d2bcae950965be797) - 2026-07-27T16:28:34Z - Grinenko Artur (@Arko109) - PR: [Fix applicationdata.md missing new line #2541](https://github.com/MicrosoftDocs/winrt-api/pull/2541)
+- **MicrosoftDocs/memdocs** (`main`) - **4** commit(s)
+  - [Merge pull request #5194 from MicrosoftDocs/main639209072795631908syn…](https://github.com/MicrosoftDocs/memdocs/commit/3d45e8a75bb018311c2ef85d41705dc41c34c615) - 2026-07-29T07:34:54Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5194](https://github.com/MicrosoftDocs/memdocs/pull/5194)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/memdocs-…](https://github.com/MicrosoftDocs/memdocs/commit/87bd8a9e7448fb5baf39b3de0f3898b4f44eb0ca) - 2026-07-29T07:34:37Z - Learn Build Service GitHub App - PR: [Repo sync for protected branch #5194](https://github.com/MicrosoftDocs/memdocs/pull/5194)
+  - [Merge pull request #20588 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/memdocs/commit/c96cc2b1482bf309428d5034d40eb73643abf5bf) - 2026-07-29T07:33:46Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Repo sync for protected branch #5194](https://github.com/MicrosoftDocs/memdocs/pull/5194)
+  - [Added Force Encryption flag support + SQL pages reorg (#20584)](https://github.com/MicrosoftDocs/memdocs/commit/0b6be673bc34dd234d181a133f9cde79df4387f0) - 2026-07-29T03:47:59Z - Pavel Yurenev (@Yupiter2005) - PR: [Repo sync for protected branch #5194](https://github.com/MicrosoftDocs/memdocs/pull/5194)
 
-- **MicrosoftDocs/azure-docs-sdk-java** (`main`) - **4** commit(s)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/316557721884adbd7571671dcd25a12653b055be) - 2026-07-28T07:31:20Z - azure-sdk (@azure-sdk)
-  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/411abc7b8ca375061e3c36601fd41f05f4d32e27) - 2026-07-28T01:39:45Z - docsreference@microsoft.com
-  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/7bf6bcd44e17b48fe3833c59756a8535c5f1f23d) - 2026-07-27T23:38:09Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-java/commit/67e1ec2e83fc44fcebeee6f47b059a31d2cb54db) - 2026-07-27T22:08:33Z - azure-sdk (@azure-sdk)
+- **MicrosoftDocs/azure-management-docs** (`main`) - **4** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-ma…](https://github.com/MicrosoftDocs/azure-management-docs/commit/16c545aa2751cedcf3b8dbb4857b4f625fde6c5c) - 2026-07-28T22:08:36Z - Learn Build Service GitHub App
+  - [Merge pull request #2705 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-management-docs/commit/55620c9c2209f2bb60eb0d731bbbe122518a92b6) - 2026-07-28T22:07:58Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Merge pull request #2704 from davidsmatlak/ds-azure-arc-servers-cloni…](https://github.com/MicrosoftDocs/azure-management-docs/commit/cf4276cf861f66a3f79ba43245550a1357f3d241) - 2026-07-28T18:16:18Z - prmerger-automator[bot] (@prmerger-automator[bot])
+  - [docs: revise Connected Machine agent cloning guidelines](https://github.com/MicrosoftDocs/azure-management-docs/commit/188fd34c678b5ba28d3209de14398082267e3f6d) - 2026-07-28T18:01:11Z - davidsmatlak (@davidsmatlak)
 
-- **MicrosoftDocs/azure-docs-sdk-node** (`main`) - **4** commit(s)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/f122debde9a62f7f1888c3d6eca3a6c463aa6e57) - 2026-07-28T06:35:40Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/2dbbdf874da4f5466419507e22e03851b137f7d4) - 2026-07-28T06:22:01Z - azure-sdk (@azure-sdk)
-  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/cfb155596e0b75b314d1a94f1dd5ae436f6104cd) - 2026-07-27T23:05:06Z - azure-sdk (@azure-sdk)
-  - [Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/6f3500be39e42a94bf3f726f5d296117f7201191) - 2026-07-27T19:51:34Z - azure-sdk (@azure-sdk)
+- **MicrosoftDocs/azure-docs-sdk-dotnet** (`main`) - **3** commit(s)
+  - [Delete autorest.md and autorest-index.md (#2620)](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/1dc7dcce6d851c5a448eb0251a1e6b60613fdbe2) - 2026-07-29T15:06:48Z - Copilot (@Copilot) - PR: [Delete autorest service-level overview files #2620](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/pull/2620)
+  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/0add5cad520a413b7c3c2e3900a30b0a7f4f9b6f) - 2026-07-29T01:54:23Z - docsreference@microsoft.com
+  - [Update docs CI configuration](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet/commit/25d744f94e0896ed29be764454ccbf526e7d0e76) - 2026-07-28T23:46:47Z - azure-sdk (@azure-sdk)
 
-- **MicrosoftDocs/SupportArticles-docs** (`main`) - **4** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/SupportA…](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/acc9da053e85cf5497c546ba4896bed34a90481e) - 2026-07-27T18:04:49Z - Learn Build Service GitHub App
-  - [Merge pull request #12038 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/d933d5b07f7590a078df6fdfff775dab0b432bb7) - 2026-07-27T18:03:11Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [AB#12471: [Windows Server|Update] Articles have missing or malformed …](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/393eb6ddd1f9b2b0506539a4305bf4c70b5cf0f0) - 2026-07-27T17:33:38Z - Teresa Appelgate (@v-tappelgate)
-  - [AB#12440: [Windows Server | Update] Articles missing from TOC (#12034)](https://github.com/MicrosoftDocs/SupportArticles-docs/commit/408980342b5a40e0160658329eac9a1f4dc495c3) - 2026-07-27T17:32:41Z - Teresa Appelgate (@v-tappelgate)
+- **MicrosoftDocs/dynamics365-guidance** (`main`) - **3** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365-guidance/commit/233e2a4cf8fde6aaa02ba6aad19fe1734c37aaff) - 2026-07-29T13:03:18Z - Learn Build Service GitHub App
+  - [Merge pull request #1101 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dynamics365-guidance/commit/c4723244a53f0abb4f199790168ab2c64ae84806) - 2026-07-29T13:02:39Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [List eligible Dynamics 365 applications for FastTrack (#1098)](https://github.com/MicrosoftDocs/dynamics365-guidance/commit/80ed50e29bb4444f7ba4dbde02e38a6637a49ca4) - 2026-07-29T12:50:44Z - Volker Breitkopf (@VolkerDeuss)
 
-- **MicrosoftDocs/dynamics-365-customer-engagement** (`main`) - **3** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/63ac797dfc113441c1a610b699352a4c3cad5a48) - 2026-07-28T01:08:18Z - Learn Build Service GitHub App
-  - [Merge pull request #16776 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/b7e1f2f876a9a349926f5478590310f98acc9dfd) - 2026-07-28T01:05:55Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Update ToC (#16771)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/78f059cf781680db9dab659a13f0b6db97d0da95) - 2026-07-27T19:27:45Z - puneet-singh1 (@puneet-singh1)
+- **MicrosoftDocs/customer-insights** (`main`) - **3** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/customer…](https://github.com/MicrosoftDocs/customer-insights/commit/59c75aa7d870dde9eb6c99843ae9dc90a1f7607f) - 2026-07-29T01:03:06Z - Learn Build Service GitHub App
+  - [Merge pull request #2879 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/customer-insights/commit/3952a953af1da62f58da934d303895b87d349f0c) - 2026-07-29T01:02:27Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Update role-permissions.md (#2878)](https://github.com/MicrosoftDocs/customer-insights/commit/568d664d107d928374a775fd48897facf39d1d0b) - 2026-07-28T20:19:45Z - Alex Ferguson (@alfergus)
 
-- **MicrosoftDocs/powerapps-docs** (`main`) - **3** commit(s)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/powerapp…](https://github.com/MicrosoftDocs/powerapps-docs/commit/5d5bc4c1470bef12d6da1720de1059985e6687cd) - 2026-07-28T01:06:43Z - Learn Build Service GitHub App
-  - [Merge pull request #12425 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/powerapps-docs/commit/d70297696a83250da4c00218413a8dc59f334d14) - 2026-07-28T01:05:01Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Update SharePoint app-from-data doc for single-screen responsive temp…](https://github.com/MicrosoftDocs/powerapps-docs/commit/f95214bd3a8215466da55e94e8cb209651749300) - 2026-07-27T21:56:35Z - Yogesh Gupta (@yogeshgupta698)
+- **MicrosoftDocs/azure-devops-docs** (`main`) - **3** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/azure-de…](https://github.com/MicrosoftDocs/azure-devops-docs/commit/b6da3d6cb7f2c1c8bc9597891c83bec607cf36f0) - 2026-07-28T22:04:30Z - Learn Build Service GitHub App
+  - [Merge pull request #9517 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-devops-docs/commit/3b8aa15b93dd59175eee14c55b4c158527db4236) - 2026-07-28T22:03:16Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Curate, redirect how-long-to-keep-test-results in Test Plans docset (…](https://github.com/MicrosoftDocs/azure-devops-docs/commit/00bd598fc724ace3bf6b062a6328a175806f0a35) - 2026-07-28T19:22:01Z - chcomley (@chcomley)
 
-- **MicrosoftDocs/sdk-api** (`docs`) - **3** commit(s)
-  - [Enhance documentation for SetThreadCursorCreationScaling (#2231)](https://github.com/MicrosoftDocs/sdk-api/commit/b98f3305ce853f0d2080b7cf891c1e7069a8a617) - 2026-07-27T21:44:22Z - Dimitriy Ryazantcev (@DJm00n) - PR: [Enhance documentation for SetThreadCursorCreationScaling #2231](https://github.com/MicrosoftDocs/sdk-api/pull/2231)
-  - [Add reset note to SetSystemCursor Remarks (#2237)](https://github.com/MicrosoftDocs/sdk-api/commit/503de1fbe951f5628def6aef83474b06c0280b86) - 2026-07-27T21:43:30Z - Dimitriy Ryazantcev (@DJm00n) - PR: [Add reset note to SetSystemCursor Remarks #2237](https://github.com/MicrosoftDocs/sdk-api/pull/2237)
-  - [user32: Remove incorrect remark from TileWindows and CascadeWindows (…](https://github.com/MicrosoftDocs/sdk-api/commit/ea48161847a13994ab2d50ed91cf948b76d29eb3) - 2026-07-27T16:22:56Z - Nir Lichtman (@nir9) - PR: [user32: Remove incorrect remark from TileWindows and CascadeWindows #2012](https://github.com/MicrosoftDocs/sdk-api/pull/2012)
+- **MicrosoftDocs/power-platform** (`main`) - **3** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/fd227963edf7b8ba6db3b8a1583fb3a4238ed42f) - 2026-07-28T19:04:42Z - Learn Build Service GitHub App
+  - [Merge pull request #11701 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/power-platform/commit/2e7b49ab884a6010c8d544a7c9be2e6d536ba72e) - 2026-07-28T19:03:46Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [Human review required: Add Dataverse storage advisor (preview) to cap…](https://github.com/MicrosoftDocs/power-platform/commit/be87b29ec46029b3c701b7ab54b996390286cf4d) - 2026-07-28T15:23:34Z - Tapan Maniar (@tapanm-MSFT)
+
+- **MicrosoftDocs/cloud-adoption-framework** (`main`) - **2** commit(s)
+  - [Merge pull request #7308 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/04f517a42788c53870e200a7612de81a7600cfd1) - 2026-07-29T15:04:15Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [What is an Azure Landing Zone - Update (#7299)](https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/0fd9422d525cda5fbbf4d123639a0e96e99ffaf4) - 2026-07-29T14:39:48Z - Stephen Sumner (@stephen-sumner)
+
+- **MicrosoftDocs/azure-aks-docs** (`main`) - **2** commit(s)
+  - [Update app-routing-nginx-to-gateway-api-migration.md (#456)](https://github.com/MicrosoftDocs/azure-aks-docs/commit/be51738fc645f79fb97a46de12108567c204ccfc) - 2026-07-29T14:54:13Z - jacobbaek (@jacobbaek) - PR: [Update app-routing-nginx-to-gateway-api-migration.md #456](https://github.com/MicrosoftDocs/azure-aks-docs/pull/456)
+  - [Update non-Cilium container network metrics tables (Retina) (#454)](https://github.com/MicrosoftDocs/azure-aks-docs/commit/86cab9e3cc3d6ba6559fb351d35926a657e7c510) - 2026-07-28T14:08:31Z - carlotaarvela (@carlotaarvela) - PR: [Update non-Cilium container network metrics tables (Retina) #454](https://github.com/MicrosoftDocs/azure-aks-docs/pull/454)
+
+- **MicrosoftDocs/data-tools** (`main`) - **2** commit(s)
+  - [Merge pull request #881 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/data-tools/commit/17cd56bff97df983f0a21b1f3eaeff0473aafbba) - 2026-07-28T18:39:32Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
+  - [22.8.1 release notes (#879) (#880)](https://github.com/MicrosoftDocs/data-tools/commit/84d7977211aec37e94f632ae5858ba5e6ed082dd) - 2026-07-28T18:27:04Z - Masha Thomas (MSFT) (@MashaMSFT)
+
+- **MicrosoftDocs/windows-dev-docs** (`docs`) - **2** commit(s)
+  - [Add scheduled notifications guidance to UWP→WinUI 3 migration guide (…](https://github.com/MicrosoftDocs/windows-dev-docs/commit/49e56499eea1cf3338c263d46cf027abc615446e) - 2026-07-28T18:30:34Z - Copilot (@Copilot) - PR: [Add scheduled notifications guidance to UWP→WinUI 3 migration guide #6061](https://github.com/MicrosoftDocs/windows-dev-docs/pull/6061)
+  - [Fix incorrect German translation of "English" in supported languages …](https://github.com/MicrosoftDocs/windows-dev-docs/commit/fdd88983c60543fe104389bba2dc7558e982af3d) - 2026-07-28T17:46:57Z - Copilot (@Copilot) - PR: [Fix incorrect German translation of "English" in supported languages table #6060](https://github.com/MicrosoftDocs/windows-dev-docs/pull/6060)
+
+- **MicrosoftDocs/minecraft-creator** (`main`) - **2** commit(s)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/minecraf…](https://github.com/MicrosoftDocs/minecraft-creator/commit/f7dc4d76bf2663262d01b546cd27f0241e0def6e) - 2026-07-28T16:08:04Z - Learn Build Service GitHub App
+  - [Updating reference documentation for 1.26.50-preview.22](https://github.com/MicrosoftDocs/minecraft-creator/commit/a0696b4398d2f8cf63e314055ea8d31e74a0ea1f) - 2026-07-28T16:05:56Z - mcautoma (@mcbuildmsft)
 
 - **MicrosoftDocs/teams-ai-library** (`main`) - **2** commit(s)
   - [Merge pull request #84 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/teams-ai-library/commit/cf8b4b8aa5edf5a5b3f585c52b6eac2359e83be5) - 2026-07-28T14:12:45Z - Nick Walker (@nickwalkmsft)
   - [[Doc Improvement] Snapshot 27/07/2026 (#83)](https://github.com/MicrosoftDocs/teams-ai-library/commit/be20d2a1f1125f5bb3a26de4034d58b27a7d18ce) - 2026-07-28T14:07:50Z - SirajShaik-MSFT (@SirajShaik-MSFT)
 
-- **MicrosoftDocs/power-pages-docs** (`main`) - **2** commit(s)
-  - [Merge pull request #1844 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/power-pages-docs/commit/e83732b56cfbb9df8b344b3e81e87bc2a0b5fe93) - 2026-07-28T13:02:45Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Update setup instructions](https://github.com/MicrosoftDocs/power-pages-docs/commit/95073ac4bde53219b40a0454e2a385d552e00adb) - 2026-07-28T07:44:04Z - Nagesh Bhat (@nageshbhat-msft)
+- **MicrosoftDocs/azure-docs-cli** (`main`) - **1** commit(s)
+  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-cli/commit/9727dcd4e532ed39b297aa47122b97c1c1a8a69d) - 2026-07-29T13:02:13Z - docsreference@microsoft.com
 
-- **MicrosoftDocs/reliability-docs** (`main`) - **2** commit(s)
-  - [Merge pull request #350 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/reliability-docs/commit/2ca9687fb59eb061ba5271fcbe458380496b70cc) - 2026-07-28T11:02:27Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Update region list - India South Central GA (#331)](https://github.com/MicrosoftDocs/reliability-docs/commit/c7803c506e09cb705dd2dd45c338c480a0500e27) - 2026-07-28T07:13:02Z - John Downs (@johndowns)
+- **MicrosoftDocs/vcpkg-docs** (`main`) - **1** commit(s)
+  - [Add .github/copilot-instructions.md (#602)](https://github.com/MicrosoftDocs/vcpkg-docs/commit/14a8715b8df6436aec486950470d65d9afad4042) - 2026-07-29T07:14:19Z - Bowen Gu (@bowengu-ms) - PR: [Add .github/copilot-instructions.md #602](https://github.com/MicrosoftDocs/vcpkg-docs/pull/602)
 
-- **MicrosoftDocs/microsoft-salescopilot-docs** (`main`) - **2** commit(s)
-  - [Merge pull request #548 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/microsoft-salescopilot-docs/commit/925650d44b3a3f4480d3e31e5e15cb5fe0dadb3b) - 2026-07-28T07:02:49Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Starter prompts (#537)](https://github.com/MicrosoftDocs/microsoft-salescopilot-docs/commit/fa1824ef92a0f7fd59034c39f70f7d1ad1255055) - 2026-07-28T05:45:06Z - Shubham Jaiswal (@sbmjais)
+- **MicrosoftDocs/linux** (`main`) - **1** commit(s)
+  - [Merge pull request #76 from pagienge/patch-5](https://github.com/MicrosoftDocs/linux/commit/cbd0d9f48b1e4c3f1039883cce45e0f79f2f389a) - 2026-07-29T00:14:57Z - Carol Smith (@fossygirl) - PR: [Revise package installation instructions for Linux #76](https://github.com/MicrosoftDocs/linux/pull/76)
 
-- **MicrosoftDocs/win32** (`docs`) - **2** commit(s)
-  - [Remove erroneous header reference in IncrementCounter (#2205)](https://github.com/MicrosoftDocs/win32/commit/2eb6588c6703d31599285bbb06563c3d41b57590) - 2026-07-27T21:46:22Z - Gregory Roth (@pow2clk) - PR: [Remove erroneous header reference in DecrementCounter #2205](https://github.com/MicrosoftDocs/win32/pull/2205)
-  - [Remove erroneous header reference (#2204)](https://github.com/MicrosoftDocs/win32/commit/46d7fde117c9c854619e24b7340d2c9a4a3cc45a) - 2026-07-27T21:45:36Z - Gregory Roth (@pow2clk) - PR: [Remove erroneous header reference in IncrementCounter #2204](https://github.com/MicrosoftDocs/win32/pull/2204)
+- **MicrosoftDocs/edge-developer** (`main`) - **1** commit(s)
+  - [What's new in DevTools (Microsoft Edge 150) (#3865)](https://github.com/MicrosoftDocs/edge-developer/commit/6d1b831d19bb342378ea825709b76d3ce971ec2e) - 2026-07-28T21:38:10Z - Leah (@leahmsft) - PR: [What's new in DevTools (Microsoft Edge 150) #3865](https://github.com/MicrosoftDocs/edge-developer/pull/3865)
 
-- **MicrosoftDocs/cloud-adoption-framework** (`main`) - **2** commit(s)
-  - [Merge pull request #7305 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/15852bbf2d6863745952160d6d23ecd48c288acb) - 2026-07-27T20:05:18Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Clarify platform landing zone description (#7298)](https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/cc9352a569a4dee3c4a78b989a9d62c61f14b8be) - 2026-07-27T19:29:05Z - Stephen Sumner (@stephen-sumner)
+- **MicrosoftDocs/sdk-api** (`docs`) - **1** commit(s)
+  - [fix typo (#2241)](https://github.com/MicrosoftDocs/sdk-api/commit/1775372f1bcbcd6fb8807dc84ac55a3a73e0ef8f) - 2026-07-28T17:35:02Z - strager (@strager) - PR: [fix typo #2241](https://github.com/MicrosoftDocs/sdk-api/pull/2241)
 
-- **MicrosoftDocs/powerquery-docs** (`main`) - **2** commit(s)
-  - [Make the `TripPin.Feed` type change more clear (#522)](https://github.com/MicrosoftDocs/powerquery-docs/commit/5c0e38a751a58b32755dd375c1cceac15c43c23a) - 2026-07-27T17:13:42Z - Brandon Stubbs (@brandonstubbs) - PR: [Make the `TripPin.Feed` type change more clear #522](https://github.com/MicrosoftDocs/powerquery-docs/pull/522)
-  - [Update Azure Databricks auth options (#619)](https://github.com/MicrosoftDocs/powerquery-docs/commit/b3f7ed20e788eb8c9325851b7472b2286b60996e) - 2026-07-27T17:11:59Z - emile-00 (@emile-00) - PR: [Update Azure Databricks auth options #619](https://github.com/MicrosoftDocs/powerquery-docs/pull/619)
-
-- **MicrosoftDocs/azure-sovereign-clouds** (`main`) - **2** commit(s)
-  - [Merge pull request #240 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/azure-sovereign-clouds/commit/bb57767e09d5c02f9121ac05b4f16d132ad11623) - 2026-07-27T17:02:47Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-  - [Update SCP topic name in TOC (#238)](https://github.com/MicrosoftDocs/azure-sovereign-clouds/commit/6b25b16eb25fc6256fc2ddbe870841f6a2e244c2) - 2026-07-27T15:05:56Z - Surbhi Dey (@surbhi-test)
-
-- **MicrosoftDocs/cpp-docs** (`main`) - **1** commit(s)
-  - [Clarify version prefix for Visual Studio Command Prompt (#5946)](https://github.com/MicrosoftDocs/cpp-docs/commit/51001e61b1851e888cc4bd28ee593a99bd0d135c) - 2026-07-28T14:11:42Z - Eric Brumer (@ericbrumer) - PR: [Clarify version prefix for Visual Studio Command Prompt #5946](https://github.com/MicrosoftDocs/cpp-docs/pull/5946)
+- **MicrosoftDocs/defender-docs** (`public`) - **1** commit(s)
+  - [Add IIJ as a trusted ARC sealer configuration (#552)](https://github.com/MicrosoftDocs/defender-docs/commit/ba8a948070bbe3dd56f8d6211b7df43f9a8bcaaa) - 2026-07-28T17:02:12Z - ikoga (@ikoga) - PR: [Add IIJ as a trusted ARC sealer configuration #552](https://github.com/MicrosoftDocs/defender-docs/pull/552)
 
 - **MicrosoftDocs/sql-docs** (`live`) - **1** commit(s)
   - [Update set-arithabort-transact-sql.md (#10367)](https://github.com/MicrosoftDocs/sql-docs/commit/3d924732656e21043f73a35511ce3e52e58e5d8d) - 2026-07-28T14:08:57Z - sommarskog (@sommarskog) - PR: [Update set-arithabort-transact-sql.md #10367](https://github.com/MicrosoftDocs/sql-docs/pull/10367)
 
-- **MicrosoftDocs/azure-aks-docs** (`main`) - **1** commit(s)
-  - [Update non-Cilium container network metrics tables (Retina) (#454)](https://github.com/MicrosoftDocs/azure-aks-docs/commit/86cab9e3cc3d6ba6559fb351d35926a657e7c510) - 2026-07-28T14:08:31Z - carlotaarvela (@carlotaarvela) - PR: [Update non-Cilium container network metrics tables (Retina) #454](https://github.com/MicrosoftDocs/azure-aks-docs/pull/454)
-
-- **MicrosoftDocs/azure-docs-cli** (`main`) - **1** commit(s)
-  - [CI Update](https://github.com/MicrosoftDocs/azure-docs-cli/commit/8b650b63f7ff1023f4a0c2048505ac6b98ea4d38) - 2026-07-28T12:53:36Z - docsreference@microsoft.com
-
-- **MicrosoftDocs/msix-docs** (`main`) - **1** commit(s)
-  - [Rename confusing Step 6 table header on Create App Installer file pag…](https://github.com/MicrosoftDocs/msix-docs/commit/87fb664b8eee8160e80f240a92ad2007a7138526) - 2026-07-28T01:12:27Z - Roy (@RDMacLachlan) - PR: [Rename confusing Step 6 table header on Create App Installer file page #494](https://github.com/MicrosoftDocs/msix-docs/pull/494)
-
-- **MicrosoftDocs/openapi-docs** (`main`) - **1** commit(s)
-  - [docs(kiota): document scrubbing custom sensitive headers on redirects…](https://github.com/MicrosoftDocs/openapi-docs/commit/21fb66e7535b8c326dfd88b793af59bd266a11e2) - 2026-07-27T23:50:15Z - Treicy Sanchez (@Treicysg) - PR: [docs(kiota): document scrubbing custom sensitive headers on redirects #172](https://github.com/MicrosoftDocs/openapi-docs/pull/172)
-
-- **MicrosoftDocs/azure-docs-sdk-cpp** (`main`) - **1** commit(s)
-  - [Update docs CI configuration Build: https://dev.azure.com/azure-sdk/i…](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp/commit/bf444676cac24b580c87c60fc8bcc944a4bddd20) - 2026-07-27T23:19:57Z - azure-sdk (@azure-sdk)
-
-- **MicrosoftDocs/Advertising** (`main`) - **1** commit(s)
-  - [Add robots nofollow, noindex in metadata (#743)](https://github.com/MicrosoftDocs/Advertising/commit/218f74283a14bd313294ce924d13db32de193695) - 2026-07-27T22:56:09Z - Rick Garitta (@rgaritta)
-
-- **MicrosoftDocs/vcpkg-docs** (`main`) - **1** commit(s)
-  - [Take unowned articles. (#601)](https://github.com/MicrosoftDocs/vcpkg-docs/commit/1467d3042d5d6eb918a7e0bd47f687aa712f5a6c) - 2026-07-27T21:26:19Z - Billy O'Neal (@BillyONeal) - PR: [Take unowned articles. #601](https://github.com/MicrosoftDocs/vcpkg-docs/pull/601)
-
-- **MicrosoftDocs/trace-processor-reference-docs** (`main`) - **1** commit(s)
-  - [[METADATA UPDATE][Merge by 2026-08-03] Global ms.service and ms.subse…](https://github.com/MicrosoftDocs/trace-processor-reference-docs/commit/a98465813d8f0ea4f1087c28720029ce69aac2af) - 2026-07-27T17:53:12Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [[METADATA UPDATE][Merge by 2026-08-03] Global ms.service and ms.subservice metadata update #21](https://github.com/MicrosoftDocs/trace-processor-reference-docs/pull/21)
-
-- **MicrosoftDocs/PlayReady** (`main`) - **1** commit(s)
-  - [Doc updates for Server SDK 4.8 QFE 1 (#196)](https://github.com/MicrosoftDocs/PlayReady/commit/3374a57b4b64c4a130075bde42a2679a377cb414) - 2026-07-27T17:43:18Z - Matt Gaylor (@magaylor) - PR: [Doc updates for Server SDK 4.8 QFE 1 #196](https://github.com/MicrosoftDocs/PlayReady/pull/196)
-
-- **MicrosoftDocs/power-platform** (`main`) - **1** commit(s)
-  - [Fix doubled-word typos across admin and developer docs (#2880)](https://github.com/MicrosoftDocs/power-platform/commit/05090126d623086950189d9259606d6ae41f0dc7) - 2026-07-27T17:40:05Z - Anwarul Haq (@Anwarluck) - PR: [Fix doubled-word typos across admin and developer docs #2880](https://github.com/MicrosoftDocs/power-platform/pull/2880)
-
-- **MicrosoftDocs/data-tools** (`main`) - **1** commit(s)
-  - [Merge pull request #878 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/data-tools/commit/6e78a13ad2c1229e582d751a2486b894670fa25e) - 2026-07-27T17:32:43Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot])
-
-- **MicrosoftDocs/azure-ai-docs** (`main`) - **1** commit(s)
-  - [Resolve syncing conflicts from repo_sync_working_branch to main (#800)](https://github.com/MicrosoftDocs/azure-ai-docs/commit/c781b82758f5d66b38b68c51c9cb95e15beb083b) - 2026-07-27T17:32:27Z - learn-build-service-prod[bot] (@learn-build-service-prod[bot]) - PR: [Resolve syncing conflicts from repo_sync_working_branch to main #800](https://github.com/MicrosoftDocs/azure-ai-docs/pull/800)
-
-- **MicrosoftDocs/defender-docs** (`public`) - **1** commit(s)
-  - [ATA end-of-life notice (#548)](https://github.com/MicrosoftDocs/defender-docs/commit/6a509d41410f64d334b97daa6cc51472a4ef4f2c) - 2026-07-27T16:42:57Z - Martin Schvartzman (@martin77s) - PR: [ATA end-of-life notice #548](https://github.com/MicrosoftDocs/defender-docs/pull/548)
-
-- **MicrosoftDocs/visualstudio-docs** (`main`) - **1** commit(s)
-  - [Minor phrasing fix in Agent mode file manipulation section (#11408)](https://github.com/MicrosoftDocs/visualstudio-docs/commit/9205022887ea5cf7b045a6be9911d49fcac83713) - 2026-07-27T14:51:48Z - raadisi (@raadisi) - PR: [Minor phrasing fix in Agent mode file manipulation section #11408](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11408)
-
-### OfficeDev
-
-- **OfficeDev/office-js-docs-pr** (`main`) - **2** commit(s)
-  - [[WXP] (runtimes) Clarify the article for setting up shared runtimes (…](https://github.com/OfficeDev/office-js-docs-pr/commit/fc7423ee6093d46c271b2a6849d68a5776c1773f) - 2026-07-28T02:07:30Z - Rick Kirkham (@Rick-Kirkham) - PR: [[WXP] (runtimes) Clarify the article for setting up shared runtimes #5846](https://github.com/OfficeDev/office-js-docs-pr/pull/5846)
-  - [Refresh notes article (#5845)](https://github.com/OfficeDev/office-js-docs-pr/commit/487d71c97058ab8eea2345df24e42ba038ead3dd) - 2026-07-27T21:48:20Z - Alex Jerabek (@AlexJerabek) - PR: [[excel] (Notes) Refresh notes article #5845](https://github.com/OfficeDev/office-js-docs-pr/pull/5845)
-
-- **OfficeDev/microsoft-teams-library-js** (`main`) - **2** commit(s)
-  - [Add helper function getImmediateParentOrigin (#3093)](https://github.com/OfficeDev/microsoft-teams-library-js/commit/c745e26e038c311548828d28118016642202bd81) - 2026-07-27T21:02:39Z - Jim Chou (@jimchou-dev) - PR: [Add helper function getImmediateParentOrigin #3093](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3093)
-  - [Fix playwright e2e test CI failure (#3096)](https://github.com/OfficeDev/microsoft-teams-library-js/commit/0334da77dd7be4cf536838abd1a4d71303064364) - 2026-07-27T19:03:25Z - Jim Chou (@jimchou-dev) - PR: [[CI] Fix playwright e2e test CI failure #3096](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3096)
-
 ### dotnet
 
-- **dotnet/runtime** (`main`) - **30** commit(s)
-  - [Make Uri non-ASCII hex unescaping a bit faster (#131387)](https://github.com/dotnet/runtime/commit/adcd699bca7242dae3d572a283b12e637cc61d08) - 2026-07-28T15:26:47Z - Miha Zupan (@MihaZupan) - PR: [Make Uri non-ASCII hex unescaping a bit faster #131387](https://github.com/dotnet/runtime/pull/131387)
-  - [[mono] Fix interface call in case of reabstraction (#131219)](https://github.com/dotnet/runtime/commit/a7bb6dfe4ab5ba1804be80698cf138a65e9c0370) - 2026-07-28T14:40:15Z - Vlad Brezae (@BrzVlad) - PR: [[mono] Fix interface call in case of reabstraction #131219](https://github.com/dotnet/runtime/pull/131219)
-  - [Improve CI scanner duplicate KBE detection (#131312)](https://github.com/dotnet/runtime/commit/d025911e35e6672573b5ccea12d17ae73cfcb963) - 2026-07-28T14:39:37Z - Petr Onderka (@svick) - PR: [Improve CI scanner duplicate KBE detection #131312](https://github.com/dotnet/runtime/pull/131312)
-  - [Handle Decimal32/64/128 ABI packing in the VM and AOT type system (#1…](https://github.com/dotnet/runtime/commit/989dae08a9b17e8c3bd2a9ce18da656a6589a923) - 2026-07-28T14:25:29Z - Tanner Gooding (@tannergooding) - PR: [Handle Decimal32/64/128 ABI packing in the VM and AOT type system #131345](https://github.com/dotnet/runtime/pull/131345)
-  - [Preserve IL for CoreCLR interpreter fallback on Apple mobile (#130622)](https://github.com/dotnet/runtime/commit/4dc319f37df052eb717f05fedff0a71a5bdb45a6) - 2026-07-28T14:04:39Z - Copilot (@Copilot) - PR: [Preserve IL for CoreCLR interpreter fallback on Apple mobile #130622](https://github.com/dotnet/runtime/pull/130622)
+- **dotnet/runtime** (`main`) - **34** commit(s)
+  - [[cDAC] Always assign IStringHolder in DacDbi GetModulePath for pathle…](https://github.com/dotnet/runtime/commit/d75c1ca395b6f4e4d14925207c3d0e421f6e78e1) - 2026-07-29T15:01:31Z - Tom McDonald (@tommcdon) - PR: [[cDAC] Always assign IStringHolder in DacDbi GetModulePath for pathless modules #131518](https://github.com/dotnet/runtime/pull/131518)
+  - [Use an explicit allow list for SIMD types in getTypeLayout (#131479)](https://github.com/dotnet/runtime/commit/3dad2c9f5b81d9263c01399d8b28c32b979c2da5) - 2026-07-29T14:44:38Z - Tanner Gooding (@tannergooding) - PR: [Use an explicit allow list for SIMD types in getTypeLayout #131479](https://github.com/dotnet/runtime/pull/131479)
+  - [Fix deadlock between EventListenersLock and ArrayPoolEventSource stat…](https://github.com/dotnet/runtime/commit/9fb40ccae4b81a01d301b414894d9996e6da8efe) - 2026-07-29T14:32:33Z - Mitchell Hwang (@mdh1418) - PR: [Fix deadlock between EventListenersLock and ArrayPoolEventSource static ctor #131501](https://github.com/dotnet/runtime/pull/131501)
+  - [Fix config binding source generator duplicating collection items boun…](https://github.com/dotnet/runtime/commit/c62993f5dd000f05d0b6a03d34a6bf341e41140f) - 2026-07-29T14:30:04Z - Petr Onderka (@svick) - PR: [Fix config binding source generator duplicating collection items bound through a constructor parameter #131092](https://github.com/dotnet/runtime/pull/131092)
+  - [Fix crash dump exit code comparison (#131520)](https://github.com/dotnet/runtime/commit/eff9a2f106447f2d7d08a3e1fb2209136b4bf2aa) - 2026-07-29T14:10:31Z - Mitchell Hwang (@mdh1418) - PR: [Fix crash dump exit code comparison #131520](https://github.com/dotnet/runtime/pull/131520)
 
-- **dotnet/roslyn** (`main`) - **11** commit(s)
-  - [Update version to 18.11, set insertions to draft (#84649)](https://github.com/dotnet/roslyn/commit/01fccf11567cb6dfa84254085163492936141266) - 2026-07-28T01:48:07Z - Ankita Khera (@akhera99) - PR: [Update version to 18.11, set insertions to draft #84649](https://github.com/dotnet/roslyn/pull/84649)
-  - [Trim lsp dispatch allocations (#84651)](https://github.com/dotnet/roslyn/commit/cf0761f2146b2ba1587ba8edbd7bdc4edfec902c) - 2026-07-28T01:33:54Z - David Barbet (@dibarbet) - PR: [Trim lsp dispatch allocations #84651](https://github.com/dotnet/roslyn/pull/84651)
-  - [Update version to 18.11, set insertions to draft](https://github.com/dotnet/roslyn/commit/27d6bed68b458350aca01f91397fa8be9605d47b) - 2026-07-28T00:24:41Z - Ankita Khera (@akhera99) - PR: [Update version to 18.11, set insertions to draft #84649](https://github.com/dotnet/roslyn/pull/84649)
-  - [Reduce LSP request handling allocations (#84623)](https://github.com/dotnet/roslyn/commit/30a8500c919377cf3cfdaec5b2b65a57afd3e469) - 2026-07-27T23:03:19Z - David Barbet (@dibarbet) - PR: [Reduce LSP request handling allocations #84623](https://github.com/dotnet/roslyn/pull/84623)
-  - [Preserve line breaks after collapsed Razor blocks (#84630)](https://github.com/dotnet/roslyn/commit/d9e3ded52660c0ec70ba7af208fb5453eb3455be) - 2026-07-27T21:35:16Z - David Wengier (@davidwengier) - PR: [Preserve line breaks after collapsed Razor blocks #84630](https://github.com/dotnet/roslyn/pull/84630)
+- **dotnet/roslyn** (`main`) - **9** commit(s)
+  - [Escape token text in VB grammar generator (#84659)](https://github.com/dotnet/roslyn/commit/d315a4a87b8d77677caf6ded6c2b33ca068c5cd7) - 2026-07-29T09:03:15Z - Giovanni Giordano (@JJordan0C) - PR: [Escape token text in VB grammar generator #84659](https://github.com/dotnet/roslyn/pull/84659)
+  - [Fix three defects in the VB grammar generator (#84661)](https://github.com/dotnet/roslyn/commit/ee4c2a701c90c96d981a0441cbc3fa349499fdf1) - 2026-07-29T08:21:12Z - Cyrus Najmabadi (@CyrusNajmabadi) - PR: [Fix three defects in the VB grammar generator #84661](https://github.com/dotnet/roslyn/pull/84661)
+  - [Unsafe evolution: ensure diagnostics are picked up by IDE (#84603)](https://github.com/dotnet/roslyn/commit/3bc642c5ed78a6305f7589f4730fe4b9a16ee924) - 2026-07-29T08:16:25Z - Jan Jones (@jjonescz) - PR: [Unsafe evolution: ensure diagnostics are picked up by IDE #84603](https://github.com/dotnet/roslyn/pull/84603)
+  - [[main] Update dependencies from dotnet/arcade (#84671)](https://github.com/dotnet/roslyn/commit/c67ab9a38782b72900e4c758a6fcea476a600b44) - 2026-07-29T03:36:19Z - dotnet-maestro[bot] (@dotnet-maestro[bot]) - PR: [[main] Update dependencies from dotnet/arcade #84671](https://github.com/dotnet/roslyn/pull/84671)
+  - [Fix daemon relay exit classification (#84666)](https://github.com/dotnet/roslyn/commit/24d1db313dbf27657b9a4b05b0f16ae296148639) - 2026-07-29T00:00:06Z - David Barbet (@dibarbet) - PR: [Fix daemon relay exit classification #84666](https://github.com/dotnet/roslyn/pull/84666)
 
-- **dotnet/docs-maui** (`main`) - **4** commit(s)
-  - [Bump DavidAnson/markdownlint-cli2-action from 24.0.0 to 24.1.0 (#3422)](https://github.com/dotnet/docs-maui/commit/e53164b11faab0959e4466c035fe319822211f24) - 2026-07-28T08:32:28Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump DavidAnson/markdownlint-cli2-action from 24.0.0 to 24.1.0 #3422](https://github.com/dotnet/docs-maui/pull/3422)
-  - [Bump github/gh-aw/actions/setup from 0.81.6 to 0.82.14 (#3423)](https://github.com/dotnet/docs-maui/commit/fb9b81a4964f1be58b773791984a47243d39485a) - 2026-07-28T08:32:09Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/gh-aw/actions/setup from 0.81.6 to 0.82.14 #3423](https://github.com/dotnet/docs-maui/pull/3423)
-  - [Fix spelling, grammar, and syntax issues in user-interface/controls d…](https://github.com/dotnet/docs-maui/commit/484a0900ec121ee62030e584302d310aa73f5b17) - 2026-07-28T08:31:52Z - Sheik Syed (@sheiksyedm) - PR: [Fix spelling, grammar, and syntax issues in user-interface/controls docs #3426](https://github.com/dotnet/docs-maui/pull/3426)
-  - [Fix spelling, grammar, and code issues across remaining user-interfac…](https://github.com/dotnet/docs-maui/commit/853bc77588b5b79fc3f8d71bd22317e27b5771d6) - 2026-07-28T08:31:13Z - Sheik Syed (@sheiksyedm) - PR: [Fix spelling, grammar, and code issues across remaining user-interface docs #3430](https://github.com/dotnet/docs-maui/pull/3430)
+- **dotnet/msbuild** (`main`) - **6** commit(s)
+  - [Bump main to 18.11.0 after vs18.10 snap (#14564)](https://github.com/dotnet/msbuild/commit/7f9f93cbf460c39e2386a74487cbbebd5932deb3) - 2026-07-29T12:46:47Z - Aleš Prokop (@AlesProkop) - PR: [Bump main to 18.11.0 after vs18.10 snap #14564](https://github.com/dotnet/msbuild/pull/14564)
+  - [Add vs18.10 to merge-flow config; retire vs18.7 (#14563)](https://github.com/dotnet/msbuild/commit/fad8be00697c30e5c2ad32af2537903c146bc4f2) - 2026-07-29T12:01:36Z - Aleš Prokop (@AlesProkop) - PR: [Add vs18.10 to merge-flow config; retire vs18.7 #14563](https://github.com/dotnet/msbuild/pull/14563)
+  - [Enlighten ResolveKeySource for multithreaded mode (#13623)](https://github.com/dotnet/msbuild/commit/c88db8eb054510123cf4511ae3398225099a598f) - 2026-07-29T09:24:00Z - Jan Kratochvíl (@jankratochvilcz) - PR: [Enlighten ResolveKeySource for multithreaded mode #13623](https://github.com/dotnet/msbuild/pull/13623)
+  - [[Flaky Test] Quarantine 2 flaky tests (#14553)](https://github.com/dotnet/msbuild/commit/70b833597fdedcedee7bfa663f9e8a3db37d77de) - 2026-07-29T07:09:12Z - github-actions[bot] (@github-actions[bot]) - PR: [[Flaky Test] Quarantine 2 flaky tests #14553](https://github.com/dotnet/msbuild/pull/14553)
+  - [[Flaky Test] Quarantine 1 flaky test (#14542)](https://github.com/dotnet/msbuild/commit/2087063fcc35b219e87b2e91467b1229d4220ab1) - 2026-07-29T06:18:27Z - github-actions[bot] (@github-actions[bot]) - PR: [[Flaky Test] Quarantine 1 flaky test #14542](https://github.com/dotnet/msbuild/pull/14542)
 
-- **dotnet/docs** (`main`) - **4** commit(s)
-  - [Add link to never rules (#55104)](https://github.com/dotnet/docs/commit/2d3bd63a4449b8be06a2b2ed4c829ae92b9f4bd2) - 2026-07-27T21:34:42Z - Genevieve Warren (@gewarren) - PR: [Add link to never rules #55104](https://github.com/dotnet/docs/pull/55104)
-  - [.NET dependabot-bot automated PR. (#55020)](https://github.com/dotnet/docs/commit/e0a69adc35afedcd25abfe30554c3a8c23712d4e) - 2026-07-27T17:48:52Z - github-actions[bot] (@github-actions[bot]) - PR: [Update dependabot.yml - automatically. #55020](https://github.com/dotnet/docs/pull/55020)
-  - [Update package index with latest published versions (#55012)](https://github.com/dotnet/docs/commit/7917a27422fadd7823eed4d9e387420c45577824) - 2026-07-27T16:19:06Z - azure-sdk-automation[bot] (@azure-sdk-automation[bot]) - PR: [Update package index with latest published versions #55012](https://github.com/dotnet/docs/pull/55012)
-  - [Sync dotnet test (VSTest) docs with microsoft/vstest July 2026 update…](https://github.com/dotnet/docs/commit/5523dd2547f76ffedf6cf1b4b28c880cb1633448) - 2026-07-27T15:52:44Z - Azat Mukhametshin (@azat-msft) - PR: [Sync dotnet test (VSTest) docs with microsoft/vstest July 2026 updates #54835](https://github.com/dotnet/docs/pull/54835)
+- **dotnet/AspNetCore.Docs** (`main`) - **2** commit(s)
+  - [Fix missing Enrollment ToTable mapping in cu50 SchoolContext (#37381)](https://github.com/dotnet/AspNetCore.Docs/commit/2b377eec6221a97d4a5d4cf8ac819c443360867c) - 2026-07-28T23:00:27Z - Copilot (@Copilot) - PR: [Fix missing Enrollment ToTable mapping in cu50 SchoolContext #37381](https://github.com/dotnet/AspNetCore.Docs/pull/37381)
+  - [Revert "Fix environment variable name for HTTPS port (#37386)" (#37390)](https://github.com/dotnet/AspNetCore.Docs/commit/0d9f3843275c4d1750b3c1b6bff4f318bf2ba045) - 2026-07-28T19:29:29Z - Luke Latham (@guardrex) - PR: [Revert "Fix environment variable name for HTTPS port" #37390](https://github.com/dotnet/AspNetCore.Docs/pull/37390)
 
-- **dotnet/docs-tools** (`main`) - **4** commit(s)
-  - [remove unused action inputs (#704)](https://github.com/dotnet/docs-tools/commit/455480c2e1c2fa90ecb711963250f000d66d3251) - 2026-07-27T21:28:15Z - Genevieve Warren (@gewarren) - PR: [Remove unused action inputs for preview link generator #704](https://github.com/dotnet/docs-tools/pull/704)
-  - [Bump yauzl from 3.2.0 to 3.4.0 in /xref-helper (#703)](https://github.com/dotnet/docs-tools/commit/488cadc5ab362083d00f1f9a84d0cc12c25e3c80) - 2026-07-27T17:47:30Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump yauzl from 3.2.0 to 3.4.0 in /xref-helper #703](https://github.com/dotnet/docs-tools/pull/703)
-  - [Generate preview links from build report (#702)](https://github.com/dotnet/docs-tools/commit/d5d277bdf131f7a24414491773acd1f02a1c457c) - 2026-07-27T17:19:26Z - Genevieve Warren (@gewarren) - PR: [Generate preview links from build report #702](https://github.com/dotnet/docs-tools/pull/702)
-  - [Bump the dotnet group with 1 update (#700)](https://github.com/dotnet/docs-tools/commit/81782fc231208470bc2caa308ecc89a599cd5a6c) - 2026-07-27T16:14:07Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the dotnet group with 1 update #700](https://github.com/dotnet/docs-tools/pull/700)
+- **dotnet/docs** (`main`) - **2** commit(s)
+  - [update commit shas and remove unused inputs (#55105)](https://github.com/dotnet/docs/commit/f97a689d114c86ca9f9f467619d15201f7b26968) - 2026-07-28T17:37:20Z - Genevieve Warren (@gewarren) - PR: [Update commit SHAs and remove unused inputs (status checker and preview links) #55105](https://github.com/dotnet/docs/pull/55105)
+  - [docs: Document CS8080 private accessor override limitation (#55014)](https://github.com/dotnet/docs/commit/211ce213e238642d1aa21c7d46ecbe737e8b0396) - 2026-07-28T15:59:51Z - Copilot (@Copilot) - PR: [docs: Document CS8080 private accessor override limitation #55014](https://github.com/dotnet/docs/pull/55014)
 
-- **dotnet/efcore** (`main`) - **3** commit(s)
-  - [Update HasTrigger XML documentation (#38706)](https://github.com/dotnet/efcore/commit/37bef295900c01f8507cbf3652194174b517bbc2) - 2026-07-28T06:37:43Z - Copilot (@Copilot) - PR: [Update HasTrigger XML documentation #38706](https://github.com/dotnet/efcore/pull/38706)
-  - [Bump Azure.ResourceManager.CosmosDB from 1.4.1 to 1.5.0 (#38701)](https://github.com/dotnet/efcore/commit/fb44ee11531314864ec46e0ec5084ed8c04f203e) - 2026-07-27T20:24:37Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump Azure.ResourceManager.CosmosDB from 1.4.1 to 1.5.0 #38701](https://github.com/dotnet/efcore/pull/38701)
-  - [Bump Microsoft.DotNet.XUnitV3Extensions from 11.0.0-beta.26370.1 to 1…](https://github.com/dotnet/efcore/commit/0ab5fd8bdf3e3502b0868c6e2598559815bf9ffa) - 2026-07-27T20:24:21Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump Microsoft.DotNet.XUnitV3Extensions from 11.0.0-beta.26370.1 to 11.0.0-beta.26376.106 #38702](https://github.com/dotnet/efcore/pull/38702)
+- **dotnet/efcore** (`main`) - **1** commit(s)
+  - [Add unit test coverage for TypeFullNameComparer and SharedTypeExtensi…](https://github.com/dotnet/efcore/commit/a0344ff48d0c1fa7a9773ec7511efe1603956371) - 2026-07-29T00:07:19Z - İlker amca (@ilkertskn) - PR: [Add unit test coverage for TypeFullNameComparer and SharedTypeExtensions #38695](https://github.com/dotnet/efcore/pull/38695)
 
-- **dotnet/msbuild** (`main`) - **1** commit(s)
-  - [Fix quoting in eng/build.sh (#14506)](https://github.com/dotnet/msbuild/commit/bf5e076cdd69ffadbd70dc086b29d3645c21b110) - 2026-07-28T12:41:11Z - Omair Majid (@omajid) - PR: [Fix quoting in eng/build.sh #14506](https://github.com/dotnet/msbuild/pull/14506)
-
-- **dotnet/AspNetCore.Docs** (`main`) - **1** commit(s)
-  - [Fix environment variable name for HTTPS port (#37386)](https://github.com/dotnet/AspNetCore.Docs/commit/c5f59713734fd591ef0fc147fdf2a1e4b1896fb4) - 2026-07-28T11:35:01Z - pgab (@pgab) - PR: [Fix environment variable name for HTTPS port #37386](https://github.com/dotnet/AspNetCore.Docs/pull/37386)
-
-- **dotnet/dotnet-api-docs** (`main`) - **1** commit(s)
-  - [Add preview link generator workflow (#12908)](https://github.com/dotnet/dotnet-api-docs/commit/9272fd6ae3484584f0247cd261a0f370a1267bb1) - 2026-07-27T18:01:59Z - Genevieve Warren (@gewarren) - PR: [Add preview link generator workflow #12908](https://github.com/dotnet/dotnet-api-docs/pull/12908)
+- **dotnet/docs-desktop** (`main`) - **1** commit(s)
+  - [update status checker sha and removed unused inputs; add preview link…](https://github.com/dotnet/docs-desktop/commit/db5bb7ba86598e44bf1caae6258948525ae4602d) - 2026-07-28T17:39:28Z - Genevieve Warren (@gewarren) - PR: [Update two workflows #2266](https://github.com/dotnet/docs-desktop/pull/2266)
 
 ### microsoft
 
-- **microsoft/power-pages-samples** (`main`) - **4** commit(s)
-  - [Move skills from .github to .agents (#123)](https://github.com/microsoft/power-pages-samples/commit/c35ce9c8bb0e5a4059c9f3373f091ed72c35f420) - 2026-07-28T11:23:48Z - Priyanshu Agrawal (@priyanshu92) - PR: [Move skills from .github to .agents #123](https://github.com/microsoft/power-pages-samples/pull/123)
-  - [Add Power Pages SPA template catalog (#119)](https://github.com/microsoft/power-pages-samples/commit/49b0e74b386206c7682019110434f034fca2e129) - 2026-07-28T11:03:55Z - Priyanshu Agrawal (@priyanshu92) - PR: [Add Power Pages SPA template catalog #119](https://github.com/microsoft/power-pages-samples/pull/119)
-  - [Fix postcss Dependabot alerts and restore public registry pins (#122)](https://github.com/microsoft/power-pages-samples/commit/80c6b223fdb0273b69e23a0365b1a0f4f01d242d) - 2026-07-27T16:20:01Z - Priyanshu Agrawal (@priyanshu92) - PR: [Fix postcss Dependabot alerts and restore public registry pins #122](https://github.com/microsoft/power-pages-samples/pull/122)
-  - [Fix react-router Dependabot alerts in React SPA samples (#120)](https://github.com/microsoft/power-pages-samples/commit/5285435149ed938cc28dd638eac344b2a275dfec) - 2026-07-27T16:05:05Z - Priyanshu Agrawal (@priyanshu92) - PR: [Fix react-router Dependabot alerts in React SPA samples #120](https://github.com/microsoft/power-pages-samples/pull/120)
+- **microsoft/vscode-docs** (`main`) - **15** commit(s)
+  - [Enhance Custom Endpoint provider documentation (#10029)](https://github.com/microsoft/vscode-docs/commit/3a0faba4f8543ef22007cd726ba25769bd4b2509) - 2026-07-29T14:31:57Z - Vritant Bhardwaj (@vritant24) - PR: [Enhance Custom Endpoint provider documentation #10029](https://github.com/microsoft/vscode-docs/pull/10029)
+  - [Document smart selection provider (#10058)](https://github.com/microsoft/vscode-docs/commit/7bffc534f48c2dd1110aff0b7bf618c1d1c030b1) - 2026-07-29T11:44:56Z - Joachim Nohl (@nohli) - PR: [Document smart selection provider #10058](https://github.com/microsoft/vscode-docs/pull/10058)
+  - [Document date-based VS Code Insiders targeting (#10057)](https://github.com/microsoft/vscode-docs/commit/05f14bf7aa833a7b7295fa6e5144230eb2bba52f) - 2026-07-29T11:39:08Z - Joachim Nohl (@nohli) - PR: [Document date-based VS Code Insiders targeting #10057](https://github.com/microsoft/vscode-docs/pull/10057)
+  - [Merge pull request #10073 from microsoft/ntrogh/insiders-relnotes](https://github.com/microsoft/vscode-docs/commit/380ef3ff40e4e893f31d6e69584e413dcec5a2ab) - 2026-07-29T10:50:48Z - Nick Trogh (@ntrogh) - PR: [Update 1.132 Insiders release notes #10073](https://github.com/microsoft/vscode-docs/pull/10073)
+  - [Update 1.132 Insiders release notes](https://github.com/microsoft/vscode-docs/commit/b5c9909502fe350279f4ffac7bc34a893057e844) - 2026-07-29T09:57:27Z - Nick Trogh (@ntrogh) - PR: [Update 1.132 Insiders release notes #10073](https://github.com/microsoft/vscode-docs/pull/10073)
+
+- **microsoft/aspire-samples** (`main`) - **11** commit(s)
+  - [Bump the misc-deps group (#1852)](https://github.com/microsoft/aspire-samples/commit/072b0c752dcb0dd7d5eba51bfbda540a7ea4261b) - 2026-07-29T06:27:18Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the misc-deps group in /samples/aspire-with-javascript/AspireJavaScript.Vite with 9 updates #1852](https://github.com/microsoft/aspire-samples/pull/1852)
+  - [Bump the misc-deps group (#1851)](https://github.com/microsoft/aspire-samples/commit/7f588c5fcdea4298a9eae9d80fbcbf2c6e8dbccf) - 2026-07-29T06:25:29Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the misc-deps group in /samples/aspire-with-javascript/AspireJavaScript.Angular with 2 updates #1851](https://github.com/microsoft/aspire-samples/pull/1851)
+  - [Bump the misc-deps group (#1850)](https://github.com/microsoft/aspire-samples/commit/7f5ba2589bcc2ab76de7b5c7061b8cbf198e7bb3) - 2026-07-29T06:25:26Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the misc-deps group in /samples/aspire-with-javascript/AspireJavaScript.Vue with 5 updates #1850](https://github.com/microsoft/aspire-samples/pull/1850)
+  - [Bump the misc-deps group (#1849)](https://github.com/microsoft/aspire-samples/commit/545adaa0ca27cee52314216b2e733939e6fb8ccb) - 2026-07-29T06:25:02Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the misc-deps group in /samples/aspire-with-javascript/AspireJavaScript.React with 2 updates #1849](https://github.com/microsoft/aspire-samples/pull/1849)
+  - [Bump the angular-tooling group (#1848)](https://github.com/microsoft/aspire-samples/commit/c8a72487695e9866ff3e9a0a69f4092929790530) - 2026-07-29T00:45:53Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the angular-tooling group in /samples/aspire-with-javascript/AspireJavaScript.Angular with 2 updates #1848](https://github.com/microsoft/aspire-samples/pull/1848)
+
+- **microsoft/GlobalSecureAccess** (`main`) - **7** commit(s)
+  - [Merge pull request #35 from microsoft/dependabot/npm_and_yarn/website…](https://github.com/microsoft/GlobalSecureAccess/commit/a10b6355623fc1befe6dbe6867e52b0d43b8c049) - 2026-07-28T18:39:22Z - Thomas Detzner (@tdetzner) - PR: [Bump shell-quote from 1.8.4 to 1.10.0 in /website #35](https://github.com/microsoft/GlobalSecureAccess/pull/35)
+  - [Merge pull request #34 from microsoft/dependabot/npm_and_yarn/website…](https://github.com/microsoft/GlobalSecureAccess/commit/e2940e0a4fa97d18a70798c88c2713d3d3396f1f) - 2026-07-28T18:35:55Z - Thomas Detzner (@tdetzner) - PR: [Bump body-parser from 1.20.5 to 1.20.6 in /website #34](https://github.com/microsoft/GlobalSecureAccess/pull/34)
+  - [Merge pull request #33 from microsoft/dependabot/npm_and_yarn/website…](https://github.com/microsoft/GlobalSecureAccess/commit/efffb74e56ab6c2e57cbbd6297eb22ddc40540d1) - 2026-07-28T18:35:38Z - Thomas Detzner (@tdetzner) - PR: [Bump postcss from 8.5.15 to 8.5.24 in /website #33](https://github.com/microsoft/GlobalSecureAccess/pull/33)
+  - [Bump body-parser from 1.20.5 to 1.20.6 in /website](https://github.com/microsoft/GlobalSecureAccess/commit/2f73b68f91af7ad19217a430e26f61e88a6d073c) - 2026-07-28T18:35:05Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump body-parser from 1.20.5 to 1.20.6 in /website #34](https://github.com/microsoft/GlobalSecureAccess/pull/34)
+  - [Bump postcss from 8.5.15 to 8.5.24 in /website](https://github.com/microsoft/GlobalSecureAccess/commit/70a2dd8486d76a3097b561b81db5aa49fc71515a) - 2026-07-28T18:35:05Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump postcss from 8.5.15 to 8.5.24 in /website #33](https://github.com/microsoft/GlobalSecureAccess/pull/33)
+
+- **microsoft/kiota-authentication-oauth-ruby** (`main`) - **4** commit(s)
+  - [Merge pull request #61 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-authentication-oauth-ruby/commit/98789d04411fd49f47fba3396cbbcd61d818c798) - 2026-07-29T09:41:47Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #61](https://github.com/microsoft/kiota-authentication-oauth-ruby/pull/61)
+  - [Merge pull request #62 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-authentication-oauth-ruby/commit/afe6fe76563a4a6e0be8f493df7d977196747239) - 2026-07-29T09:41:35Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #62](https://github.com/microsoft/kiota-authentication-oauth-ruby/pull/62)
+  - [Bump ruby/setup-ruby from 1.319.0 to 1.320.0](https://github.com/microsoft/kiota-authentication-oauth-ruby/commit/c2bb5b5adefcd07e9e5dc654d485f3c0e8498888) - 2026-07-28T15:34:05Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #62](https://github.com/microsoft/kiota-authentication-oauth-ruby/pull/62)
+  - [Bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-authentication-oauth-ruby/commit/351337efad6aaf1e8de0cdc2712804f3a26886f1) - 2026-07-28T15:33:44Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #61](https://github.com/microsoft/kiota-authentication-oauth-ruby/pull/61)
 
 - **microsoft/kiota-abstractions-ruby** (`main`) - **4** commit(s)
-  - [Merge pull request #98 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-abstractions-ruby/commit/df4d102492b1218a122e7d1f4efc86db69caf5ac) - 2026-07-28T09:43:20Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #98](https://github.com/microsoft/kiota-abstractions-ruby/pull/98)
-  - [Merge pull request #99 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-abstractions-ruby/commit/dc715786936a5c494b5c078e9671e00f00a53a75) - 2026-07-28T09:42:26Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #99](https://github.com/microsoft/kiota-abstractions-ruby/pull/99)
-  - [Bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-abstractions-ruby/commit/9f0a5c11093a44f395bbbeff73149fbc40a8b361) - 2026-07-28T00:04:39Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #99](https://github.com/microsoft/kiota-abstractions-ruby/pull/99)
-  - [Bump ruby/setup-ruby from 1.319.0 to 1.320.0](https://github.com/microsoft/kiota-abstractions-ruby/commit/90e84aea128d8976b84e8e9b0b4f86cedf2a998b) - 2026-07-28T00:03:27Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #98](https://github.com/microsoft/kiota-abstractions-ruby/pull/98)
+  - [Merge pull request #100 from microsoft/dependabot/github_actions/ruby…](https://github.com/microsoft/kiota-abstractions-ruby/commit/ee85dacfd7bab2fae2da7ef70e7bcf0d5c9fe566) - 2026-07-29T09:38:51Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump ruby/setup-ruby from 1.320.0 to 1.321.0 #100](https://github.com/microsoft/kiota-abstractions-ruby/pull/100)
+  - [Merge pull request #101 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-abstractions-ruby/commit/0f86daa8b0918f6c82400c59498c62096ee7e2ca) - 2026-07-29T09:38:37Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump github/codeql-action from 4.37.2 to 4.37.3 #101](https://github.com/microsoft/kiota-abstractions-ruby/pull/101)
+  - [Bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-abstractions-ruby/commit/6ec07ab6a562472c5f8b54bd640ca1d4fd933486) - 2026-07-29T00:05:14Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/codeql-action from 4.37.2 to 4.37.3 #101](https://github.com/microsoft/kiota-abstractions-ruby/pull/101)
+  - [Bump ruby/setup-ruby from 1.320.0 to 1.321.0](https://github.com/microsoft/kiota-abstractions-ruby/commit/94c2819131a108791b8da17a2e67dd93e9277773) - 2026-07-29T00:03:55Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump ruby/setup-ruby from 1.320.0 to 1.321.0 #100](https://github.com/microsoft/kiota-abstractions-ruby/pull/100)
 
 - **microsoft/kiota-serialization-json-ruby** (`main`) - **4** commit(s)
-  - [Merge pull request #80 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-serialization-json-ruby/commit/dbe1f558838e969cfae24aff391f882b4b2e771d) - 2026-07-28T09:38:50Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #80](https://github.com/microsoft/kiota-serialization-json-ruby/pull/80)
-  - [Merge pull request #81 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-serialization-json-ruby/commit/d53f5b167b50a9f687ccc5861c49276ace6e6606) - 2026-07-28T09:38:36Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump ruby/setup-ruby from 1.319.0 to 1.320.0 #81](https://github.com/microsoft/kiota-serialization-json-ruby/pull/81)
-  - [chore(deps): bump ruby/setup-ruby from 1.319.0 to 1.320.0](https://github.com/microsoft/kiota-serialization-json-ruby/commit/478634ade687a8ec0a2bebf157416a15a2234533) - 2026-07-28T03:53:47Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump ruby/setup-ruby from 1.319.0 to 1.320.0 #81](https://github.com/microsoft/kiota-serialization-json-ruby/pull/81)
-  - [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-serialization-json-ruby/commit/13bd9951dbb18e0088dcfe5b0fe8ce26a60e8fee) - 2026-07-28T03:53:39Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #80](https://github.com/microsoft/kiota-serialization-json-ruby/pull/80)
+  - [Merge pull request #82 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-serialization-json-ruby/commit/5896e4973392fc7181c0b7332388e56aa96171e8) - 2026-07-29T09:37:27Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #82](https://github.com/microsoft/kiota-serialization-json-ruby/pull/82)
+  - [Merge pull request #83 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-serialization-json-ruby/commit/91e460dcb886f8df4558586028c278ca697b4ad2) - 2026-07-29T09:37:13Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump ruby/setup-ruby from 1.320.0 to 1.321.0 #83](https://github.com/microsoft/kiota-serialization-json-ruby/pull/83)
+  - [chore(deps): bump ruby/setup-ruby from 1.320.0 to 1.321.0](https://github.com/microsoft/kiota-serialization-json-ruby/commit/be25ea1e146bf1b2ced3502e97abebfa8be1ee71) - 2026-07-29T03:53:51Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump ruby/setup-ruby from 1.320.0 to 1.321.0 #83](https://github.com/microsoft/kiota-serialization-json-ruby/pull/83)
+  - [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-serialization-json-ruby/commit/37a3195087bfe1c94f1c71244a6e9189079b1a63) - 2026-07-29T03:53:41Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #82](https://github.com/microsoft/kiota-serialization-json-ruby/pull/82)
 
 - **microsoft/kiota-http-ruby** (`main`) - **4** commit(s)
-  - [Merge pull request #73 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-http-ruby/commit/59c14b60fde12973494cc2a7b8bb62e4d5de5593) - 2026-07-28T09:37:30Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #73](https://github.com/microsoft/kiota-http-ruby/pull/73)
-  - [Merge pull request #74 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-http-ruby/commit/d6e75a9b8cb5654d5cbe40dba38d55bf849a1e88) - 2026-07-28T09:37:16Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #74](https://github.com/microsoft/kiota-http-ruby/pull/74)
-  - [Bump ruby/setup-ruby from 1.319.0 to 1.320.0](https://github.com/microsoft/kiota-http-ruby/commit/21ef440df156c5b3d03b4e0e9e438502dea1f9f8) - 2026-07-28T07:23:37Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump ruby/setup-ruby from 1.319.0 to 1.320.0 #74](https://github.com/microsoft/kiota-http-ruby/pull/74)
-  - [Bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-http-ruby/commit/60f62b3ab42b63d6ba85a16a97598d503ed5f51d) - 2026-07-28T07:23:31Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/codeql-action from 4.37.1 to 4.37.2 #73](https://github.com/microsoft/kiota-http-ruby/pull/73)
-
-- **microsoft/kiota-serialization-text-go** (`main`) - **2** commit(s)
-  - [Merge pull request #141 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-serialization-text-go/commit/a1601da06bdfdc5bb74785a2bb92a5e7ccdb3dc0) - 2026-07-28T09:42:15Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #141](https://github.com/microsoft/kiota-serialization-text-go/pull/141)
-  - [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-serialization-text-go/commit/3cc609521079c398c5e9bfa077f4eea79756ed71) - 2026-07-28T02:43:33Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #141](https://github.com/microsoft/kiota-serialization-text-go/pull/141)
-
-- **microsoft/kiota-serialization-multipart-go** (`main`) - **2** commit(s)
-  - [Merge pull request #89 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-serialization-multipart-go/commit/a042c7e5a5987e4bfc916b3400bf0c68d779169b) - 2026-07-28T09:39:49Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #89](https://github.com/microsoft/kiota-serialization-multipart-go/pull/89)
-  - [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-serialization-multipart-go/commit/486ffedf92d52635216fd6244d08aa0a9df8c95e) - 2026-07-28T00:43:35Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #89](https://github.com/microsoft/kiota-serialization-multipart-go/pull/89)
-
-- **microsoft/kiota-serialization-json-go** (`main`) - **2** commit(s)
-  - [Merge pull request #196 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-serialization-json-go/commit/ef14f6f4df49900d511a559057db973238dc97e4) - 2026-07-28T09:37:48Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #196](https://github.com/microsoft/kiota-serialization-json-go/pull/196)
-  - [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-serialization-json-go/commit/ebf68917776a8a02574025299ecda6d55f2a0017) - 2026-07-28T06:43:30Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #196](https://github.com/microsoft/kiota-serialization-json-go/pull/196)
-
-- **microsoft/kiota-abstractions-go** (`main`) - **2** commit(s)
-  - [Merge pull request #250 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-abstractions-go/commit/a990cfcadf5e6e74aac0f6eaf7fba7ef45e1a110) - 2026-07-28T09:36:59Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #250](https://github.com/microsoft/kiota-abstractions-go/pull/250)
-  - [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-abstractions-go/commit/804360f88fa0e702064b199d7d36fde2b89d20c2) - 2026-07-28T07:33:31Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #250](https://github.com/microsoft/kiota-abstractions-go/pull/250)
-
-- **microsoft/kiota-java** (`main`) - **2** commit(s)
-  - [Merge pull request #2145 from microsoft/dependabot/gradle/com.diffplu…](https://github.com/microsoft/kiota-java/commit/eb69bfab0e5deae488b3e4b2b30530a862318d63) - 2026-07-28T09:36:22Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump com.diffplug.spotless from 8.8.0 to 8.9.0 #2145](https://github.com/microsoft/kiota-java/pull/2145)
-  - [chore(deps): bump com.diffplug.spotless from 8.8.0 to 8.9.0](https://github.com/microsoft/kiota-java/commit/8f0444d1bc9b6a8db755f3ca20780c200d90c992) - 2026-07-28T09:03:45Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump com.diffplug.spotless from 8.8.0 to 8.9.0 #2145](https://github.com/microsoft/kiota-java/pull/2145)
-
-- **microsoft/kiota-http-go** (`main`) - **2** commit(s)
-  - [Merge pull request #243 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-http-go/commit/12a6402e10ce92222dd4aab0029d5014ec168c10) - 2026-07-28T09:36:00Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #243](https://github.com/microsoft/kiota-http-go/pull/243)
-  - [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-http-go/commit/8ab3e64dbac42757d46ad70e8c4cef1c14ca8d9f) - 2026-07-28T09:13:43Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #243](https://github.com/microsoft/kiota-http-go/pull/243)
-
-- **microsoft/amplifier-app-cli** (`main`) - **2** commit(s)
-  - [fix(providers): honour pinned provider sources and repair dangling in…](https://github.com/microsoft/amplifier-app-cli/commit/ad69c69f9f486f401b34f8a7701c7664f1a27a89) - 2026-07-28T00:16:26Z - Salil Das (@sadlilas) - PR: [fix(providers): honour pinned provider sources at install time and stop reinstalling working providers #238](https://github.com/microsoft/amplifier-app-cli/pull/238)
-  - [fix(bundle): fail loud when a declared module cannot be activated (#237)](https://github.com/microsoft/amplifier-app-cli/commit/55bf73dce2f831a0617c17ffece3e1c255383864) - 2026-07-28T00:13:49Z - Salil Das (@sadlilas) - PR: [fix(bundle): fail loud when a declared module cannot be activated #237](https://github.com/microsoft/amplifier-app-cli/pull/237)
-
-- **microsoft/amplifier-module-provider-openai** (`main`) - **2** commit(s)
-  - [fix: honor canonical reasoning_effort config key on the normal reques…](https://github.com/microsoft/amplifier-module-provider-openai/commit/435ecbd61368eb5cac5d5c8c589a1adb7725ec43) - 2026-07-27T21:30:29Z - Brian Krabach (@bkrabach) - PR: [fix: honor reasoning_effort config on normal request path with mount-time validation #55](https://github.com/microsoft/amplifier-module-provider-openai/pull/55)
-  - [fix: prevent session-killing orphaned tool calls (truncation-continua…](https://github.com/microsoft/amplifier-module-provider-openai/commit/917c785e7dbc355e477c44987787835556913bd7) - 2026-07-27T14:09:24Z - Brian Krabach (@bkrabach) - PR: [fix: prevent session-killing orphaned tool calls (truncation-continuation, chain pairing) + capability-based max_tokens default #54](https://github.com/microsoft/amplifier-module-provider-openai/pull/54)
+  - [Merge pull request #75 from microsoft/dependabot/github_actions/ruby/…](https://github.com/microsoft/kiota-http-ruby/commit/cbb9743384b60a036f1c7e28e0f4656c908c5c36) - 2026-07-29T09:36:41Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump ruby/setup-ruby from 1.320.0 to 1.321.0 #75](https://github.com/microsoft/kiota-http-ruby/pull/75)
+  - [Merge pull request #76 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-http-ruby/commit/f0874787f594c5e6b710251cbb9ead6f75f3609a) - 2026-07-29T09:35:46Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump github/codeql-action from 4.37.2 to 4.37.3 #76](https://github.com/microsoft/kiota-http-ruby/pull/76)
+  - [Bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-http-ruby/commit/7ba9bf7bb724468fe2406052f8ce011d51975b1f) - 2026-07-29T07:23:54Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump github/codeql-action from 4.37.2 to 4.37.3 #76](https://github.com/microsoft/kiota-http-ruby/pull/76)
+  - [Bump ruby/setup-ruby from 1.320.0 to 1.321.0](https://github.com/microsoft/kiota-http-ruby/commit/67c3f7f5dac0ff2dc914bc99d8c5e8c49df728f6) - 2026-07-29T07:22:47Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump ruby/setup-ruby from 1.320.0 to 1.321.0 #75](https://github.com/microsoft/kiota-http-ruby/pull/75)
 
 - **microsoft/kiota-python** (`main`) - **2** commit(s)
-  - [Merge pull request #673 from microsoft/dependabot/github_actions/acti…](https://github.com/microsoft/kiota-python/commit/aa8272e3d3deb4426d160b331dfd5922cd847f9c) - 2026-07-27T17:18:05Z - Vincent Biret (@baywet) - PR: [chore(deps): bump actions/setup-python from 6.3.0 to 7.0.0 #673](https://github.com/microsoft/kiota-python/pull/673)
-  - [chore(deps): bump actions/setup-python from 6.3.0 to 7.0.0](https://github.com/microsoft/kiota-python/commit/6e75dd4540136918552fc8a00329485a0b1bfed8) - 2026-07-27T16:05:52Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump actions/setup-python from 6.3.0 to 7.0.0 #673](https://github.com/microsoft/kiota-python/pull/673)
+  - [Merge pull request #674 from microsoft/dependabot/github_actions/code…](https://github.com/microsoft/kiota-python/commit/980217420a36bb5889e1dd5aa4041a0bda357bc2) - 2026-07-29T09:40:43Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump the codeql group with 3 updates #674](https://github.com/microsoft/kiota-python/pull/674)
+  - [chore(deps): bump the codeql group with 3 updates](https://github.com/microsoft/kiota-python/commit/76517106684db18622c7f7863ce6aa3d33a2adee) - 2026-07-28T16:06:14Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump the codeql group with 3 updates #674](https://github.com/microsoft/kiota-python/pull/674)
+
+- **microsoft/kiota-authentication-azure-go** (`main`) - **2** commit(s)
+  - [Merge pull request #209 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-authentication-azure-go/commit/b4aae912b44b32cde31ad70b9de677965dea8783) - 2026-07-29T09:40:24Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #209](https://github.com/microsoft/kiota-authentication-azure-go/pull/209)
+  - [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-authentication-azure-go/commit/6c538059609ab2acc66b1be21040b1b14a727dc5) - 2026-07-28T17:13:44Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #209](https://github.com/microsoft/kiota-authentication-azure-go/pull/209)
+
+- **microsoft/kiota-serialization-form-go** (`main`) - **2** commit(s)
+  - [Merge pull request #114 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-serialization-form-go/commit/6ecc60ca8b31f0ee83c9ac6f9a1c63ea35d181bd) - 2026-07-29T09:39:54Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #114](https://github.com/microsoft/kiota-serialization-form-go/pull/114)
+  - [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2](https://github.com/microsoft/kiota-serialization-form-go/commit/2b6424f8dde7831b31aa8c02350d859310eebe72) - 2026-07-28T19:53:24Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.1 to 4.37.2 #114](https://github.com/microsoft/kiota-serialization-form-go/pull/114)
+
+- **microsoft/kiota-java** (`main`) - **2** commit(s)
+  - [Merge pull request #2147 from microsoft/dependabot/devcontainers/ghcr…](https://github.com/microsoft/kiota-java/commit/27eff18f54f91488a5538b200a22fab138d34209) - 2026-07-29T09:39:05Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump ghcr.io/devcontainers/features/java from 1.8.0 to 1.8.1 #2147](https://github.com/microsoft/kiota-java/pull/2147)
+  - [chore(deps): bump ghcr.io/devcontainers/features/java](https://github.com/microsoft/kiota-java/commit/2604ed6e7d23ff163293d08a9c5835dea26ec7a8) - 2026-07-28T22:34:17Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump ghcr.io/devcontainers/features/java from 1.8.0 to 1.8.1 #2147](https://github.com/microsoft/kiota-java/pull/2147)
+
+- **microsoft/kiota-serialization-multipart-go** (`main`) - **2** commit(s)
+  - [Merge pull request #90 from microsoft/dependabot/github_actions/githu…](https://github.com/microsoft/kiota-serialization-multipart-go/commit/f894f9452ac2c152c3cd495a1d44381198b0f399) - 2026-07-29T09:38:22Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #90](https://github.com/microsoft/kiota-serialization-multipart-go/pull/90)
+  - [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-serialization-multipart-go/commit/120c799396846a96bcbda032ac5e2ed3314429cf) - 2026-07-29T00:43:42Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #90](https://github.com/microsoft/kiota-serialization-multipart-go/pull/90)
+
+- **microsoft/kiota-serialization-text-go** (`main`) - **2** commit(s)
+  - [Merge pull request #142 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-serialization-text-go/commit/68543c1db36afec4864d531d6b9822dcedd1bafc) - 2026-07-29T09:37:44Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #142](https://github.com/microsoft/kiota-serialization-text-go/pull/142)
+  - [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-serialization-text-go/commit/1eec1a67b66cd4f2bea2870a244617f78ac6edab) - 2026-07-29T02:43:36Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #142](https://github.com/microsoft/kiota-serialization-text-go/pull/142)
+
+- **microsoft/kiota-serialization-json-go** (`main`) - **2** commit(s)
+  - [Merge pull request #197 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-serialization-json-go/commit/416d2e22513299af85414d3fe6f2c8dc42a39097) - 2026-07-29T09:36:56Z - github-actions[bot] (@github-actions[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #197](https://github.com/microsoft/kiota-serialization-json-go/pull/197)
+  - [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-serialization-json-go/commit/4826e27fa79bda9b4b4432fb6f723d3ffc6bf255) - 2026-07-29T06:43:34Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #197](https://github.com/microsoft/kiota-serialization-json-go/pull/197)
+
+- **microsoft/kiota-abstractions-go** (`main`) - **2** commit(s)
+  - [Merge pull request #251 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-abstractions-go/commit/94dcf3b2b01cc87cea26f3b0a43c06545035b4bb) - 2026-07-29T09:35:22Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #251](https://github.com/microsoft/kiota-abstractions-go/pull/251)
+  - [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-abstractions-go/commit/e0a3b0d3e9baab8a4465d374654449f5e836b75f) - 2026-07-29T07:33:37Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #251](https://github.com/microsoft/kiota-abstractions-go/pull/251)
+
+- **microsoft/kiota-http-go** (`main`) - **2** commit(s)
+  - [Merge pull request #244 from microsoft/dependabot/github_actions/gith…](https://github.com/microsoft/kiota-http-go/commit/cc0d1c76a70d58cc4d5dcf46c1e6cd9f27212bfd) - 2026-07-29T09:35:04Z - github-actions[bot] (@github-actions[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #244](https://github.com/microsoft/kiota-http-go/pull/244)
+  - [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3](https://github.com/microsoft/kiota-http-go/commit/abac6f2f94031d35c46c7b4aa716df143c24432e) - 2026-07-29T09:13:13Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump github/codeql-action from 4.37.2 to 4.37.3 #244](https://github.com/microsoft/kiota-http-go/pull/244)
+
+- **microsoft/winget-cli** (`master`) - **2** commit(s)
+  - [Update to use build agents with VS 2026 (#6383)](https://github.com/microsoft/winget-cli/commit/ede092d1476f14b81b923640f609cd634a6a5a1a) - 2026-07-28T18:29:46Z - Flor Chacón (@florelis) - PR: [Update to use build agents with VS 2026 #6383](https://github.com/microsoft/winget-cli/pull/6383)
+  - [Use PowerShell 5 to create vcpkg port overlay (#6272)](https://github.com/microsoft/winget-cli/commit/abc193642241911003bfeadda3ecf1c8d65d7ee8) - 2026-07-28T18:09:11Z - Tom Plant (@pl4nty) - PR: [Use PowerShell 5 to create vcpkg port overlay #6272](https://github.com/microsoft/winget-cli/pull/6272)
 
 - **microsoft/kiota-dotnet** (`main`) - **1** commit(s)
-  - [build(deps): bump the codeql group with 2 updates (#761)](https://github.com/microsoft/kiota-dotnet/commit/cb91c3a9e0961896ba3f331e9ed2e6674b8629a5) - 2026-07-28T09:39:05Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump the codeql group with 2 updates #761](https://github.com/microsoft/kiota-dotnet/pull/761)
+  - [build(deps): bump the codeql group with 2 updates (#762)](https://github.com/microsoft/kiota-dotnet/commit/f760deb1987ad91efa21f485482bb1c05808fb36) - 2026-07-29T09:38:04Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps): bump the codeql group with 2 updates #762](https://github.com/microsoft/kiota-dotnet/pull/762)
 
-- **microsoft/playwright.dev** (`main`) - **1** commit(s)
-  - [fix(search): label MCP and CLI doc sections in search results (#2109)](https://github.com/microsoft/playwright.dev/commit/3cf6169eade5dc1f951c0545cc45179c42120975) - 2026-07-28T09:06:30Z - Pavel Feldman (@pavelfeldman) - PR: [fix(search): label MCP and CLI doc sections in search results #2109](https://github.com/microsoft/playwright.dev/pull/2109)
+- **microsoft/power-pages-samples** (`main`) - **1** commit(s)
+  - [Add template Dataverse language metadata (#124)](https://github.com/microsoft/power-pages-samples/commit/4e4a9ee592e1d0cdba72bea59729e08bcf2b4607) - 2026-07-29T06:35:16Z - Priyanshu Agrawal (@priyanshu92) - PR: [Add template Dataverse language metadata #124](https://github.com/microsoft/power-pages-samples/pull/124)
 
-- **microsoft/pylance-release** (`main`) - **1** commit(s)
-  - [Add community feedback documentation for most requested features and …](https://github.com/microsoft/pylance-release/commit/2ca12ed695fd3f4fd5783a313ac09b4ec087ca5c) - 2026-07-28T03:44:02Z - Copilot (@Copilot) - PR: [Add community feedback documentation for most requested features and bugs #7836](https://github.com/microsoft/pylance-release/pull/7836)
-
-- **microsoft/amplifier-module-provider-anthropic** (`main`) - **1** commit(s)
-  - [fix: accept canonical 'reasoning_effort' config key and advertise it …](https://github.com/microsoft/amplifier-module-provider-anthropic/commit/99b3df31fddad0b5cea7129bc3842555fb2ca26d) - 2026-07-27T21:39:04Z - Brian Krabach (@bkrabach) - PR: [fix: accept canonical reasoning_effort config key (effort remains as alias) #76](https://github.com/microsoft/amplifier-module-provider-anthropic/pull/76)
-
-### microsoftgraph
-
-- **microsoftgraph/msgraph-snippets-typescript** (`main`) - **6** commit(s)
-  - [Merge pull request #402 from microsoftgraph/dependabot/npm_and_yarn/e…](https://github.com/microsoftgraph/msgraph-snippets-typescript/commit/0af31bdb82623497af1d42a333a67b1262714ad8) - 2026-07-27T21:24:01Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump eslint from 10.7.0 to 10.8.0 #402](https://github.com/microsoftgraph/msgraph-snippets-typescript/pull/402)
-  - [Merge pull request #404 from microsoftgraph/dependabot/npm_and_yarn/t…](https://github.com/microsoftgraph/msgraph-snippets-typescript/commit/99805ed693274105db463639be6b7a887a061942) - 2026-07-27T21:23:47Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump @types/node from 26.1.1 to 26.1.2 #404](https://github.com/microsoftgraph/msgraph-snippets-typescript/pull/404)
-  - [Merge pull request #403 from microsoftgraph/dependabot/npm_and_yarn/p…](https://github.com/microsoftgraph/msgraph-snippets-typescript/commit/4f3a31b05879be5a8110cf9cfb131efbf9c9a17d) - 2026-07-27T21:23:44Z - github-actions[bot] (@github-actions[bot]) - PR: [Bump prettier from 3.9.5 to 3.9.6 #403](https://github.com/microsoftgraph/msgraph-snippets-typescript/pull/403)
-  - [Bump @types/node from 26.1.1 to 26.1.2](https://github.com/microsoftgraph/msgraph-snippets-typescript/commit/b9c21e33c96fb451bdcbcbef9e29dfd628cbd9cb) - 2026-07-27T21:23:17Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump @types/node from 26.1.1 to 26.1.2 #404](https://github.com/microsoftgraph/msgraph-snippets-typescript/pull/404)
-  - [Bump prettier from 3.9.5 to 3.9.6](https://github.com/microsoftgraph/msgraph-snippets-typescript/commit/8217143000c3a2294b44867b5c21e1c08e4baf0d) - 2026-07-27T21:23:10Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump prettier from 3.9.5 to 3.9.6 #403](https://github.com/microsoftgraph/msgraph-snippets-typescript/pull/403)
-
-- **microsoftgraph/microsoft-graph-docs-contrib** (`main`) - **1** commit(s)
-  - [Update date and permissions in group-update.md (#9999)](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/commit/261152ddbaafa3b1c65424901f077ec6e05f2601) - 2026-07-27T20:49:47Z - mbhargav9 (@mbhargav9) - PR: [Clarify Group-NestingSupport permission for update group.md #9999](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/9999)
+- **microsoft/amplifier-app-cli** (`main`) - **1** commit(s)
+  - [fix(providers): repair all configured provider modules, not just the …](https://github.com/microsoft/amplifier-app-cli/commit/145ba2ef0d21c94cb55f7b139d18b6b8e96ad4b9) - 2026-07-28T16:22:33Z - Brian Krabach (@bkrabach) - PR: [fix(providers): repair all configured provider modules, not just the active one #239](https://github.com/microsoft/amplifier-app-cli/pull/239)
 
 ## samples
 
 ### Azure
 
-- **Azure/SAP-automation-samples** (`main`) - **2** commit(s)
-  - [Update HANA client 2.29 BOM metadata (#121)](https://github.com/Azure/SAP-automation-samples/commit/5a97c7a510ddc739fb810bd4b169a6810010ab7f) - 2026-07-28T00:25:08Z - Devansh Jain (@devanshjainms) - PR: [Update HANA client 2.29 BOM metadata #121](https://github.com/Azure/SAP-automation-samples/pull/121)
-  - [Fix S4 HANA BOM dependency name (#120)](https://github.com/Azure/SAP-automation-samples/commit/bc88be2f3919b6a455ce353ced568f30160e2ee2) - 2026-07-27T23:09:12Z - Devansh Jain (@devanshjainms) - PR: [Fix S/4HANA 2025 HANA BOM dependency name #120](https://github.com/Azure/SAP-automation-samples/pull/120)
+- **Azure/azure-dev** (`main`) - **5** commit(s)
+  - [feat(agents): add max_stalls to YAML config and API (YAML-only, no CL…](https://github.com/Azure/azure-dev/commit/f07dfb2409a691fd5d754b94b2a1776c8073d1ea) - 2026-07-29T02:43:51Z - Ilya Matiach (@imatiach-msft) - PR: [feat(agents): add max_stalls parameter to optimize config and API #9314](https://github.com/Azure/azure-dev/pull/9314)
+  - [[evals] Adding in some vally testing for some basic azd scenarios (#9…](https://github.com/Azure/azure-dev/commit/24a0a65ffc6528e7a1c51e6365f5bba027a254a3) - 2026-07-28T21:10:13Z - Richard Park (@richardpark-msft) - PR: [[evals] Adding in some vally testing for some basic azd scenarios #9282](https://github.com/Azure/azure-dev/pull/9282)
+  - [[engsys] Adding myself as an owner for CODEOWNERS as well (#9294)](https://github.com/Azure/azure-dev/commit/14c242e225dd5684042c6c395ad90e120e27c9cf) - 2026-07-28T20:24:00Z - Richard Park (@richardpark-msft) - PR: [[engsys] Update CODEOWNERS #9294](https://github.com/Azure/azure-dev/pull/9294)
+  - [feat: default new agents to invocations protocol 2.0.0 (#9327)](https://github.com/Azure/azure-dev/commit/dc8b86a574da8f92d473b32904bfa4bbcd35a2fa) - 2026-07-28T17:53:34Z - Hui Miao (@huimiu) - PR: [feat: default new agents to invocations protocol 2.0.0 #9327](https://github.com/Azure/azure-dev/pull/9327)
+  - [Extend registry checks to the development registry (#9233)](https://github.com/Azure/azure-dev/commit/24dfd3233cacf089e0f9786cbe36984fddabbc95) - 2026-07-28T16:46:25Z - JeffreyCA (@JeffreyCA) - PR: [Extend registry checks to the development registry #9233](https://github.com/Azure/azure-dev/pull/9233)
 
-- **Azure/setup-azd** (`main`) - **2** commit(s)
-  - [build(deps-dev): bump eslint-plugin-jest from 29.15.4 to 29.15.5 (#552)](https://github.com/Azure/setup-azd/commit/763d099b7ae4bf4fc89889dc0d94b0b5c74670cc) - 2026-07-27T23:10:22Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps-dev): bump eslint-plugin-jest from 29.15.4 to 29.15.5 #552](https://github.com/Azure/setup-azd/pull/552)
-  - [build(deps-dev): bump typescript-eslint from 8.64.0 to 8.65.0 (#553)](https://github.com/Azure/setup-azd/commit/16ac0bf518626078431cc93a2cbf6dd454fa7b8f) - 2026-07-27T22:22:38Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps-dev): bump typescript-eslint from 8.64.0 to 8.65.0 #553](https://github.com/Azure/setup-azd/pull/553)
+- **Azure/setup-azd** (`main`) - **1** commit(s)
+  - [build(deps-dev): bump eslint-plugin-jest from 29.15.5 to 29.16.0 (#557)](https://github.com/Azure/setup-azd/commit/bab3f22bfaf822194a589f29f7a860f0b725dfc4) - 2026-07-29T01:04:01Z - dependabot[bot] (@dependabot[bot]) - PR: [build(deps-dev): bump eslint-plugin-jest from 29.15.5 to 29.16.0 #557](https://github.com/Azure/setup-azd/pull/557)
 
-- **Azure/azure-quickstart-templates** (`master`) - **2** commit(s)
-  - [Implement apply decisions (#14825)](https://github.com/Azure/azure-quickstart-templates/commit/227c21dce8cbf9c4d786a7b6bc5acd418dd113e9) - 2026-07-27T17:37:46Z - Chetan Patel (@dotnet-enthusiast) - PR: [Implement apply decisions #14825](https://github.com/Azure/azure-quickstart-templates/pull/14825)
-  - [Fix CVM Template (#14826)](https://github.com/Azure/azure-quickstart-templates/commit/447157530468196fad5871b247ac718680400ffb) - 2026-07-27T14:28:42Z - prakhar_shukla (@shuklaprakhar415) - PR: [Fix CVM Template #14826](https://github.com/Azure/azure-quickstart-templates/pull/14826)
+- **Azure/homebrew-azd** (`main`) - **1** commit(s)
+  - [Update for azd release 1.29.0-beta.1-daily.6629806](https://github.com/Azure/homebrew-azd/commit/9084848c46c2ea59fa11bfd85412566c2a989703) - 2026-07-28T22:24:41Z - azure-sdk (@azure-sdk)
 
-- **Azure/workload-orchestration** (`main`) - **1** commit(s)
-  - [Merge pull request #17 from mo-niche/inline-schema-changes](https://github.com/Azure/workload-orchestration/commit/151f8cdbfb2cc944a40ed2640f773242cd818f36) - 2026-07-28T05:07:27Z - Shubham Patil (@theshubhamp) - PR: [Inline schema changes #17](https://github.com/Azure/workload-orchestration/pull/17)
+- **Azure/SAP-automation-samples** (`main`) - **1** commit(s)
+  - [Fix HANA SPS08 VCH AFL compatibility (#122)](https://github.com/Azure/SAP-automation-samples/commit/432338aa730f8bfb4e2215fd78dc574507559c03) - 2026-07-28T16:26:47Z - Devansh Jain (@devanshjainms) - PR: [Fix HANA SPS08 VCH AFL compatibility #122](https://github.com/Azure/SAP-automation-samples/pull/122)
 
 ### Azure-Samples
 
-- **Azure-Samples/DevOpsEngineerPersona** (`main`) - **17** commit(s)
-  - [Merge pull request #98 from Azure-Samples/dependabot/npm_and_yarn/pla…](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/5ebbbe6870efaf5bc6d7e188d890c685d9e7259b) - 2026-07-27T18:17:42Z - David Sanchez (@dsanchezcr) - PR: [Bump @playwright/test from 1.61.1 to 1.62.0 #98](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/98)
-  - [Merge branch 'main' into dependabot/npm_and_yarn/playwright/test-1.62.0](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/b55249a2c34434e273322e9d230567502c95c8d4) - 2026-07-27T16:56:30Z - David Sanchez (@dsanchezcr) - PR: [Bump @playwright/test from 1.61.1 to 1.62.0 #98](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/98)
-  - [Merge pull request #99 from Azure-Samples/dependabot/npm_and_yarn/rec…](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/a0712fe7ab94be88af1bd8c283da0d4dfa449252) - 2026-07-27T16:56:12Z - David Sanchez (@dsanchezcr) - PR: [Bump recharts from 3.10.0 to 3.10.1 #99](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/99)
-  - [Bump @playwright/test from 1.61.1 to 1.62.0](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/9ec5fd10f055241cdba760a10d00c93c0d96e071) - 2026-07-27T16:55:23Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump @playwright/test from 1.61.1 to 1.62.0 #98](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/98)
-  - [Merge branch 'main' into dependabot/npm_and_yarn/recharts-3.10.1](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/08120ca027c2046ed18b4fdf46b2d94857df79db) - 2026-07-27T16:53:24Z - David Sanchez (@dsanchezcr) - PR: [Bump recharts from 3.10.0 to 3.10.1 #99](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/99)
+- **Azure-Samples/fibey** (`main`) - **13** commit(s)
+  - [fix(deps): bump transitive postcss to 8.5.21 and pydantic-settings to…](https://github.com/Azure-Samples/fibey/commit/8256054a7b8dc58b7f2c5b8cfa283ee137c80372) - 2026-07-28T21:38:04Z - David Barkol (@dbarkol)
+  - [Bump python-multipart from 0.0.29 to 0.0.31 in /services/inventory-mc…](https://github.com/Azure-Samples/fibey/commit/4f6e4a8b6fa459f7a3cdde428fd8bc848870639e) - 2026-07-28T20:35:24Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump python-multipart from 0.0.29 to 0.0.31 in /services/inventory-mcp #4](https://github.com/Azure-Samples/fibey/pull/4)
+  - [Bump starlette from 1.1.0 to 1.3.1 in /services/inventory-mcp (#7)](https://github.com/Azure-Samples/fibey/commit/4fb112a07cf949dd6abf7a136c70530efb703f54) - 2026-07-28T20:35:11Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump starlette from 1.1.0 to 1.3.1 in /services/inventory-mcp #7](https://github.com/Azure-Samples/fibey/pull/7)
+  - [Bump cryptography from 48.0.0 to 48.0.1 in /services/inventory-mcp (#11)](https://github.com/Azure-Samples/fibey/commit/6476f8490e86fb881eed17fa4d4b8eec8b8aa985) - 2026-07-28T20:34:58Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump cryptography from 48.0.0 to 48.0.1 in /services/inventory-mcp #11](https://github.com/Azure-Samples/fibey/pull/11)
+  - [Bump pydantic-settings from 2.14.1 to 2.14.2 in /services/inventory-m…](https://github.com/Azure-Samples/fibey/commit/340a41ea711d7cde25f9a03272afcd96237f04d0) - 2026-07-28T20:34:46Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump pydantic-settings from 2.14.1 to 2.14.2 in /services/inventory-mcp #12](https://github.com/Azure-Samples/fibey/pull/12)
 
-- **Azure-Samples/PhotoAlbum-Java-Lite** (`main`) - **3** commit(s)
-  - [Merge pull request #10 from Azure-Samples/fenzho/fix-cwe](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/commit/67f3139efc6ae7229f98693aa930db5b38d753e3) - 2026-07-28T06:58:37Z - zhoufenqin (@zhoufenqin) - PR: [Fix CWE-798/CWE-306/CWE-400 in photoalbum-java-lite #10](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/pull/10)
-  - [Fix CWE-306/CWE-400 in photoalbum-java-lite](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/commit/3bad2e544f1750c974819f8ace7af18ed8221be8) - 2026-07-28T05:58:54Z - Fenqin Zhou (@zhoufenqin) - PR: [Fix CWE-798/CWE-306/CWE-400 in photoalbum-java-lite #10](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/pull/10)
-  - [Fix CWE-798: remove hard-coded credentials and enforce least privilege](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/commit/09f4de72f880c0d034efbe18c6f12be57c21afd4) - 2026-07-28T05:30:29Z - Fenqin Zhou (@zhoufenqin) - PR: [Fix CWE-798/CWE-306/CWE-400 in photoalbum-java-lite #10](https://github.com/Azure-Samples/PhotoAlbum-Java-Lite/pull/10)
+- **Azure-Samples/ai-policy-engine** (`main`) - **11** commit(s)
+  - [Merge pull request #64 from Azure-Samples/dependabot/npm_and_yarn/npm…](https://github.com/Azure-Samples/ai-policy-engine/commit/e430255e9564d421e44189d97fd5188413e9dc1b) - 2026-07-28T18:51:44Z - Zack Way (@seiggy) - PR: [build(deps-dev): bump ws from 8.20.0 to 8.21.1 in the npm_and_yarn group across 1 directory #64](https://github.com/Azure-Samples/ai-policy-engine/pull/64)
+  - [Merge pull request #58 from Azure-Samples/dependabot/nuget/src/NSubst…](https://github.com/Azure-Samples/ai-policy-engine/commit/6f303ac1f975ed75219e4545ac2ddaa3d3b16996) - 2026-07-28T18:48:49Z - Zack Way (@seiggy) - PR: [Bump NSubstitute from 5.3.0 to 6.0.0 #58](https://github.com/Azure-Samples/ai-policy-engine/pull/58)
+  - [Merge pull request #55 from Azure-Samples/dependabot/github_actions/a…](https://github.com/Azure-Samples/ai-policy-engine/commit/0fc1f85992de76b54b76ea09be2e463a3dae5596) - 2026-07-28T18:48:33Z - Zack Way (@seiggy) - PR: [build(deps): bump actions/setup-dotnet from 5 to 6 #55](https://github.com/Azure-Samples/ai-policy-engine/pull/55)
+  - [Merge pull request #44 from Azure-Samples/dependabot/github_actions/a…](https://github.com/Azure-Samples/ai-policy-engine/commit/94f1f2c31617f010b01135cc9a8d02bab5f14baa) - 2026-07-28T18:48:14Z - Zack Way (@seiggy) - PR: [build(deps): bump actions/checkout from 6 to 7 #44](https://github.com/Azure-Samples/ai-policy-engine/pull/44)
+  - [Bump NSubstitute from 5.3.0 to 6.0.0](https://github.com/Azure-Samples/ai-policy-engine/commit/ba8235ed841d6f21934c8d47339e6864c23dc673) - 2026-07-28T15:59:11Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump NSubstitute from 5.3.0 to 6.0.0 #58](https://github.com/Azure-Samples/ai-policy-engine/pull/58)
 
-- **Azure-Samples/AzureLocal** (`main`) - **2** commit(s)
-  - [Merge pull request #102 from Azure-Samples/ronmiab-patch-2](https://github.com/Azure-Samples/AzureLocal/commit/d303bdd38719e3991f13f20aec07c269fb744232) - 2026-07-27T20:28:44Z - sipastak (@sipastak) - PR: [Rename CVM_Configuring_UEF_settings_June20-2026.pdf to CVM_Configurin… #102](https://github.com/Azure-Samples/AzureLocal/pull/102)
-  - [Rename CVM_Configuring_UEF_settings_June20-2026.pdf to CVM_Configurin…](https://github.com/Azure-Samples/AzureLocal/commit/fa59c47f293f92e21bf0d87954a746f3a17ca912) - 2026-07-27T20:20:23Z - Ronmia Bess (@ronmiab) - PR: [Rename CVM_Configuring_UEF_settings_June20-2026.pdf to CVM_Configurin… #102](https://github.com/Azure-Samples/AzureLocal/pull/102)
+- **Azure-Samples/appconfig-javascript-clientapp-with-afd** (`main`) - **9** commit(s)
+  - [Use mock ai (#20)](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/commit/b00dc8fafb9b904ecaf8aad8012c23c4861e7ef1) - 2026-07-29T07:42:14Z - Zhiyuan Liang (@zhiyuanliang-ms) - PR: [Use mock ai #20](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/pull/20)
+  - [Bump js-yaml from 4.1.1 to 4.3.0 in /src/frontend (#18)](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/commit/307ba400e0c82f419559cbc6486d5f4cc7b19222) - 2026-07-29T06:36:53Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump js-yaml from 4.1.1 to 4.3.0 in /src/frontend #18](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/pull/18)
+  - [Bump postcss from 8.5.6 to 8.5.24 in /src/frontend (#16)](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/commit/2341126a8abf4e46a46d7ce27b8687e4bba09d47) - 2026-07-29T06:36:39Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump postcss from 8.5.6 to 8.5.24 in /src/frontend #16](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/pull/16)
+  - [Bump body-parser from 1.20.3 to 1.20.6 in /src/backend (#17)](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/commit/5ee43370602500c65cde6024fb02aa222c8e9e4a) - 2026-07-29T06:36:21Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump body-parser from 1.20.3 to 1.20.6 in /src/backend #17](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/pull/17)
+  - [Bump minimatch in /src/frontend (#14)](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/commit/d4ef2c499d855df0f7c47740f968647ac295fcae) - 2026-07-29T06:35:45Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump minimatch in /src/frontend #14](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd/pull/14)
 
-- **Azure-Samples/Apim-Samples** (`main`) - **1** commit(s)
+- **Azure-Samples/Microhack-Ask-Analyze-Act** (`main`) - **4** commit(s)
+  - [Merge pull request #1 from henrikmotzkus/main](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/commit/d3464e10d0d7b979814a71ecac035f143a25a873) - 2026-07-29T15:07:26Z - Henrik Motzkus (@henrikmotzkus) - PR: [Add Ask, Analyze, Act microhack environment #1](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/pull/1)
+  - [Initial](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/commit/469523239acb6d21db91ce40f2eb00779f4ae53d) - 2026-07-29T13:02:53Z - henrikmotzkus (@henrikmotzkus) - PR: [Add Ask, Analyze, Act microhack environment #1](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/pull/1)
+  - [README.md: Setup instructions](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/commit/91244daf89bfa4d9f8c152dc32aae6627facb7a8) - 2026-07-29T12:16:12Z - microsoft-github-operations[bot] (@microsoft-github-operations[bot])
+  - [Initial commit](https://github.com/Azure-Samples/Microhack-Ask-Analyze-Act/commit/6589db58450edb527184e54c971ed79862499849) - 2026-07-29T12:16:05Z - Henrik Motzkus (@henrikmotzkus)
+
+- **Azure-Samples/Copilot-Studio-with-Azure-AI-Search** (`main`) - **3** commit(s)
+  - [chore(deps): bump ghcr.io/devcontainers/features/docker-in-docker (#415)](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/commit/1c82edf85a3cd52e77c60445fe55e084acab0207) - 2026-07-28T23:20:24Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump ghcr.io/devcontainers/features/docker-in-docker from 3.1.0 to 4.0.0 in the devcontainer group #415](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/pull/415)
+  - [chore(deps): bump the terraform-providers group across 2 directories …](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/commit/62e00dd60d8a7df2450740d07570a20b617c3674) - 2026-07-28T23:19:52Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump the terraform-providers group across 2 directories with 9 updates #418](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/pull/418)
+  - [chore(deps): bump the github-actions group across 1 directory with 6 …](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/commit/ae5cf2a76b57c9d6905ca1fa9c650d3a66a4f553) - 2026-07-28T23:19:21Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump the github-actions group across 1 directory with 6 updates #420](https://github.com/Azure-Samples/Copilot-Studio-with-Azure-AI-Search/pull/420)
+
+- **Azure-Samples/AI-Gateway** (`main`) - **2** commit(s)
+  - [chore: update labs-config.json for changed labs [skip ci]](https://github.com/Azure-Samples/AI-Gateway/commit/dccbb2f496417251e3fdefac135c40ecf685f362) - 2026-07-29T14:13:17Z - github-actions[bot] (@github-actions[bot])
+  - [Add AI Gateway Foundry Models lab (#389)](https://github.com/Azure-Samples/AI-Gateway/commit/bc77afa9e06ddd5c13c0352a870e6008c513a1ab) - 2026-07-29T14:12:51Z - Alex Vieira (@vieiraae) - PR: [Add AI Gateway Foundry Models lab #389](https://github.com/Azure-Samples/AI-Gateway/pull/389)
+
+- **Azure-Samples/Apim-Samples** (`main`) - **2** commit(s)
+  - [Bump the github-actions group with 5 updates (#257)](https://github.com/Azure-Samples/Apim-Samples/commit/10001372e9404db8138128695f9143ab4fbc67a4) - 2026-07-29T12:45:36Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump the github-actions group with 5 updates #257](https://github.com/Azure-Samples/Apim-Samples/pull/257)
   - [Bump matplotlib from 3.11.0 to 3.11.1 in the python-packages group (#…](https://github.com/Azure-Samples/Apim-Samples/commit/5fd063f1528328e5f06e2d7d615b0c702bee73ad) - 2026-07-28T14:50:01Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump matplotlib from 3.11.0 to 3.11.1 in the python-packages group #256](https://github.com/Azure-Samples/Apim-Samples/pull/256)
 
-- **Azure-Samples/Spec2Cloud** (`main`) - **1** commit(s)
+- **Azure-Samples/DevOpsEngineerPersona** (`main`) - **2** commit(s)
+  - [Merge pull request #57 from Azure-Samples/copilot/add-confeti-visual-…](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/bbbafc53ab06a9a98e82b33640f75c594114d6db) - 2026-07-28T17:35:14Z - David Sanchez (@dsanchezcr) - PR: [Add participant assignment confetti celebration on details open #57](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/57)
+  - [Merge branch 'main' into copilot/add-confeti-visual-effect](https://github.com/Azure-Samples/DevOpsEngineerPersona/commit/21787018ad78e3566269165b8f15c6e7465d3649) - 2026-07-28T17:27:50Z - David Sanchez (@dsanchezcr) - PR: [Add participant assignment confetti celebration on details open #57](https://github.com/Azure-Samples/DevOpsEngineerPersona/pull/57)
+
+- **Azure-Samples/Spec2Cloud** (`main`) - **2** commit(s)
+  - [Update templates.json [automated]](https://github.com/Azure-Samples/Spec2Cloud/commit/c606406adf43b5db99482c3bc0fbf2c2fa8c09af) - 2026-07-28T15:46:05Z - github-actions[bot] (@github-actions[bot])
   - [Update templates.json [automated]](https://github.com/Azure-Samples/Spec2Cloud/commit/dbe6a08fb022f2a2b8651adc41e0f513261f695f) - 2026-07-28T14:49:33Z - github-actions[bot] (@github-actions[bot])
 
-- **Azure-Samples/semantic-kernel-customer-assistant-demo-java** (`main`) - **1** commit(s)
-  - [Merge pull request #68 from Azure-Samples/dependabot/npm_and_yarn/src…](https://github.com/Azure-Samples/semantic-kernel-customer-assistant-demo-java/commit/c9003ddda47f31eea1af6b67f77a31d75621513f) - 2026-07-28T07:53:00Z - Martijn Verburg (@karianna) - PR: [Bump fast-uri from 3.1.2 to 3.1.4 in /src/main/webapp #68](https://github.com/Azure-Samples/semantic-kernel-customer-assistant-demo-java/pull/68)
+- **Azure-Samples/foundry-local-model-catalog** (`main`) - **1** commit(s)
+  - [Merge pull request #32 from Azure-Samples/update-catalog-174049869](https://github.com/Azure-Samples/foundry-local-model-catalog/commit/4e417175fe513cbc3af07b6c81b3a166f0b8016d) - 2026-07-29T09:27:15Z - nitzko24 (@nitzko24) - PR: [Update MODEL_CATALOG.md (build 174049869) #32](https://github.com/Azure-Samples/foundry-local-model-catalog/pull/32)
 
-- **Azure-Samples/PhotoAlbum** (`main`) - **1** commit(s)
-  - [Fix CWE-434/CWE-79/CWE-306 in PhotoAlbum (.NET) (#4)](https://github.com/Azure-Samples/PhotoAlbum/commit/2fd6aff064d101cee630a25bbc0e42d14ce8599a) - 2026-07-28T07:19:14Z - zhoufenqin (@zhoufenqin) - PR: [Fix CWE-434/CWE-79/CWE-306 in PhotoAlbum #4](https://github.com/Azure-Samples/PhotoAlbum/pull/4)
+- **Azure-Samples/azure-docs-powershell-samples** (`main`) - **1** commit(s)
+  - [Virtual Network Manager - Revise script prerequisites and IPAM pool I…](https://github.com/Azure-Samples/azure-docs-powershell-samples/commit/e90e097a4a99a742bd3cbad144dbcb4aa13eead7) - 2026-07-28T20:36:20Z - Michael Bender (@mbender-ms) - PR: [Virtual Network Manager - Revise script prerequisites and IPAM pool I… #65](https://github.com/Azure-Samples/azure-docs-powershell-samples/pull/65)
 
-- **Azure-Samples/PhotoAlbum-Java** (`main`) - **1** commit(s)
-  - [Fix CWE-798/CWE-862/CWE-400 in PhotoAlbum-Java (#26)](https://github.com/Azure-Samples/PhotoAlbum-Java/commit/de25211e05863811b8995d6b5c343d5bc6898bc0) - 2026-07-28T06:58:30Z - zhoufenqin (@zhoufenqin) - PR: [Fix CWE-798/CWE-862/CWE-400 in PhotoAlbum-Java #26](https://github.com/Azure-Samples/PhotoAlbum-Java/pull/26)
+### OfficeDev
 
-- **Azure-Samples/java-migration-copilot-samples** (`main`) - **1** commit(s)
-  - [Fix CWE-79 stored XSS in student list pages and admin notifications (…](https://github.com/Azure-Samples/java-migration-copilot-samples/commit/317d3bbfd61fb1e402bea61f90e385bec12f2070) - 2026-07-28T06:58:22Z - zhoufenqin (@zhoufenqin) - PR: [Fix CWE-79 stored XSS in student list pages and admin notifications #80](https://github.com/Azure-Samples/java-migration-copilot-samples/pull/80)
-
-- **Azure-Samples/chat-with-your-data-solution-accelerator** (`main`) - **1** commit(s)
-  - [chore: Dev to Main (#2332)](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator/commit/175743088b07a7d0079e46e7b6a2e6b17ea2385a) - 2026-07-28T03:46:44Z - PadhiAjit-Microsoft (@PadhiAjit-Microsoft) - PR: [chore: Dev to Main #2332](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator/pull/2332)
-
-- **Azure-Samples/cognitive-services-speech-sdk** (`master`) - **1** commit(s)
-  - [Update sample for 1.51.1 (#3057)](https://github.com/Azure-Samples/cognitive-services-speech-sdk/commit/2ecf7e62c3fe68094403dc672ad589d99add6fb0) - 2026-07-27T23:08:54Z - HuapingLiu (@HuapingLiu) - PR: [Update sample for 1.51.1 #3057](https://github.com/Azure-Samples/cognitive-services-speech-sdk/pull/3057)
-
-- **Azure-Samples/durable-functions-quickstart-dotnet-azd** (`main`) - **1** commit(s)
-  - [Enable run local without DTS emulation (`azd provision` + `azd deploy…](https://github.com/Azure-Samples/durable-functions-quickstart-dotnet-azd/commit/c7b0bda15fb96ea5fd72fcfc039a192e066cc91c) - 2026-07-27T22:27:51Z - Glenn Gailey (@ggailey777) - PR: [Enable run local without DTS emulation (`azd provision` + `azd deploy`) plus README and other bug fixes #14](https://github.com/Azure-Samples/durable-functions-quickstart-dotnet-azd/pull/14)
-
-- **Azure-Samples/azure-search-openai-demo** (`main`) - **1** commit(s)
-  - [chore(deps): bump pypdf from 6.13.3 to 6.14.2 in /app/backend (#3178)](https://github.com/Azure-Samples/azure-search-openai-demo/commit/3f4a21f03ae3d565aca37cc300e3d38b0c7b582a) - 2026-07-27T20:00:14Z - dependabot[bot] (@dependabot[bot]) - PR: [chore(deps): bump pypdf from 6.13.3 to 6.14.2 in /app/backend #3178](https://github.com/Azure-Samples/azure-search-openai-demo/pull/3178)
-
-- **Azure-Samples/microsoft-foundry-baseline** (`main`) - **1** commit(s)
-  - [feat (iac): [foundry] update Azure OpenAI model to GPT-5.4 (#107)](https://github.com/Azure-Samples/microsoft-foundry-baseline/commit/e0d3fdafadc794e51ca2b6e4595964c00f391815) - 2026-07-27T16:14:47Z - Fernando Antivero (@ferantivero) - PR: [feat (iac): [foundry] update Azure OpenAI model to GPT-5.4 #107](https://github.com/Azure-Samples/microsoft-foundry-baseline/pull/107)
+- **OfficeDev/Office-Add-in-samples** (`main`) - **12** commit(s)
+  - [Bump fast-uri (#1491)](https://github.com/OfficeDev/Office-Add-in-samples/commit/ac6203cb293da83192cd99d47c2f12c64e47a1af) - 2026-07-28T18:49:23Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/outlook-check-item-categories/manifest-configurations/add-in-only #1491](https://github.com/OfficeDev/Office-Add-in-samples/pull/1491)
+  - [Bump fast-uri (#1499)](https://github.com/OfficeDev/Office-Add-in-samples/commit/099a16167592c3b28dd649f9d77e7f463f3a2883) - 2026-07-28T18:03:27Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/Excel.OfflineStorageAddin/manifest-configurations/add-in-only #1499](https://github.com/OfficeDev/Office-Add-in-samples/pull/1499)
+  - [Bump fast-uri in /Samples/excel-custom-functions-sync (#1494)](https://github.com/OfficeDev/Office-Add-in-samples/commit/8684a53dd02d80ca9a7e0014349ca530d9b1744c) - 2026-07-28T18:03:18Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/excel-custom-functions-sync #1494](https://github.com/OfficeDev/Office-Add-in-samples/pull/1494)
+  - [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/office-keytips (#1493)](https://github.com/OfficeDev/Office-Add-in-samples/commit/6ff30f736a130cdbd26809337f5b44c746bedca1) - 2026-07-28T18:03:11Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/office-keytips #1493](https://github.com/OfficeDev/Office-Add-in-samples/pull/1493)
+  - [Bump fast-uri (#1492)](https://github.com/OfficeDev/Office-Add-in-samples/commit/5bd654d632a0543fa94d87fa8e2f68fde2a4fbcf) - 2026-07-28T18:03:03Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-uri from 3.1.3 to 3.1.4 in /Samples/outlook-set-signature/manifest-configurations/unified #1492](https://github.com/OfficeDev/Office-Add-in-samples/pull/1492)
 
 ### microsoft
 
-- **microsoft/onnxruntime** (`main`) - **17** commit(s)
-  - [[MLAS] Extend the fp16 direct C output to the 4 bit CompFp32 path (#2…](https://github.com/microsoft/onnxruntime/commit/47faa11b035d53c49f3f93e815d004e616d360ca) - 2026-07-28T06:02:23Z - Aaryan Mehta (@blazingphoenix7) - PR: [[MLAS] Extend the fp16 direct C output to the 4 bit CompFp32 path #29901](https://github.com/microsoft/onnxruntime/pull/29901)
-  - [Fix MoE security issue when the attribute k is larger than the number…](https://github.com/microsoft/onnxruntime/commit/fa29d1c0090dcdbe33f03441f995dd249c98e9a4) - 2026-07-28T01:48:42Z - Nenad Banfic (@nenad1002) - PR: [Fix MoE security issue when the attribute k is larger than the number of experts #29907](https://github.com/microsoft/onnxruntime/pull/29907)
-  - [Fix memory leak in GetOverridableInitializerNames() (#29616)](https://github.com/microsoft/onnxruntime/commit/1d776ea70e7f2b10ec2b3f75df3d0868b26b10a9) - 2026-07-28T01:42:53Z - Copilot (@Copilot) - PR: [Fix memory leak in GetOverridableInitializerNames() #29616](https://github.com/microsoft/onnxruntime/pull/29616)
-  - [[WebNN EP] Support uint8-packed 4-bit GatherBlockQuantized (#29801)](https://github.com/microsoft/onnxruntime/commit/7e76a52398ebf966bcbe4a10e552f438059edfce) - 2026-07-28T01:23:49Z - Wanming Lin (@Honry) - PR: [[WebNN EP] Support uint8-packed 4-bit GatherBlockQuantized #29801](https://github.com/microsoft/onnxruntime/pull/29801)
-  - [[MLAS] Document SDE based validation of the ISA dispatch tiers (#29903)](https://github.com/microsoft/onnxruntime/commit/adfa0955f2415ef067727987b0c620708939bdb1) - 2026-07-28T00:32:31Z - Aaryan Mehta (@blazingphoenix7) - PR: [[MLAS] Document SDE based validation of the ISA dispatch tiers #29903](https://github.com/microsoft/onnxruntime/pull/29903)
+- **microsoft/onnxruntime** (`main`) - **5** commit(s)
+  - [[js/webgpu] Add DFT operator (#29454)](https://github.com/microsoft/onnxruntime/commit/3eda9022d9a57aea63a44d7266252b40fe232e9c) - 2026-07-29T05:10:01Z - Nicholas Celestin (@nicholascelestin) - PR: [[js/webgpu] Add DFT operator #29454](https://github.com/microsoft/onnxruntime/pull/29454)
+  - [[WebGPU EP] Support uint8 for Expand (#29854)](https://github.com/microsoft/onnxruntime/commit/90cc3aa01648aae3da69632ac1922b3021e1b7cf) - 2026-07-29T01:27:58Z - mingmingtasd (@mingmingtasd) - PR: [[WebGPU EP] Support uint8 for Expand #29854](https://github.com/microsoft/onnxruntime/pull/29854)
+  - [[WebGPU EP] Support uint8 for Reshape (#29897)](https://github.com/microsoft/onnxruntime/commit/65abd89f8e4b75b8d3e488df20d75265ed3324df) - 2026-07-28T21:12:03Z - Bin Miao (@miaobin) - PR: [[WebGPU EP] Support uint8 for Reshape #29897](https://github.com/microsoft/onnxruntime/pull/29897)
+  - [Update nextjs-default e2e fixture lockfile for security advisories (#…](https://github.com/microsoft/onnxruntime/commit/688d306124bdfb6f0ff994476066fccfd2a4b6a2) - 2026-07-28T20:35:25Z - Mustapha Jaber (@mustjab) - PR: [Update nextjs-default e2e fixture lockfile for security advisories #29926](https://github.com/microsoft/onnxruntime/pull/29926)
+  - [[MLAS][KleidiAI] Add MatMul, Gemm, and Conv FP16 execution paths (#29…](https://github.com/microsoft/onnxruntime/commit/40cba38d44328322500f1ec809d6a2b3af0d5aab) - 2026-07-28T17:59:43Z - Jonathan Clohessy (@JonathanC-ARM) - PR: [[MLAS][KleidiAI] Add MatMul, Gemm, and Conv FP16 execution paths #29709](https://github.com/microsoft/onnxruntime/pull/29709)
 
-- **microsoft/github-copilot-java-mcp-demo** (`main`) - **9** commit(s)
-  - [Refine narration in script.md for Episode 1, enhancing clarity on VS …](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/f28feeb3fe6712b653b8509d8dc8c21a24b7532f) - 2026-07-28T14:25:45Z - Rory Preddy (@roryp)
-  - [Refine narration in script.md for Episode 1, clarifying recording rul…](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/b26bc530c9e02d4c71cceab32e25ee39e49c2f63) - 2026-07-28T12:01:45Z - Rory Preddy (@roryp)
-  - [Refine narration in script.md for Episode 1, adjusting intro timings …](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/410db81e8c4fb1bf2d55bf7e4f341ed18019f275) - 2026-07-28T11:56:20Z - Rory Preddy (@roryp)
-  - [Refine narration in script.md for Episode 1, clarifying JDK selection…](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/f68784bf74f2841611fdff9c90f2e363d0aaf8ea) - 2026-07-28T11:29:37Z - Rory Preddy (@roryp)
-  - [Refine narration in script.md for clarity on MCP functionality and up…](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/6f031c28a77bc189f9eb53a847ef4505fb84643a) - 2026-07-28T08:38:57Z - Rory Preddy (@roryp)
+- **microsoft/bobsql** (`master`) - **3** commit(s)
+  - [Merge pull request #106 from microsoft/bw](https://github.com/microsoft/bobsql/commit/a81d34bdef5cc9d25d8ec613a82b1a91aee48745) - 2026-07-28T22:57:36Z - Bob Ward (@rgward) - PR: [hyperscale-developer demo #106](https://github.com/microsoft/bobsql/pull/106)
+  - [updated demo items](https://github.com/microsoft/bobsql/commit/88dac133df0322012480af6bfaa0907a8a23a466) - 2026-07-28T22:44:54Z - Bob Ward (@rgward) - PR: [hyperscale-developer demo #106](https://github.com/microsoft/bobsql/pull/106)
+  - [updates for sqlmcpserver demos](https://github.com/microsoft/bobsql/commit/3dae08448ac303f2d5f359ed3a420fe1bbb9850f) - 2026-07-28T22:13:24Z - Bob Ward (@rgward) - PR: [hyperscale-developer demo #106](https://github.com/microsoft/bobsql/pull/106)
 
-- **microsoft/TypeAgent** (`main`) - **9** commit(s)
-  - [Clear chat history when opening a session (#2746)](https://github.com/microsoft/TypeAgent/commit/0dba5972db566a65d63c10b44c3c8735f94a0922) - 2026-07-28T02:50:03Z - Dominic Nguyen (@datduyng) - PR: [Clear chat history when opening a session #2746](https://github.com/microsoft/TypeAgent/pull/2746)
-  - [ReasoningAction can now spawn sub-agents (+ some UI updates) (#2749)](https://github.com/microsoft/TypeAgent/commit/c279503d4112d791f731fde676669cb823abbe46) - 2026-07-27T23:51:38Z - robgruen (@robgruen) - PR: [ReasoningAction can now spawn sub-agents (+ some UI updates) #2749](https://github.com/microsoft/TypeAgent/pull/2749)
-  - [Fix intermittent heal job failure from pnpm cache post-step (#2732)](https://github.com/microsoft/TypeAgent/commit/2815363bcd62f356811f77390f3a15151f9f88cc) - 2026-07-27T22:02:07Z - Tal Zaccai (@TalZaccai) - PR: [Fix intermittent heal job failure from pnpm cache post-step #2732](https://github.com/microsoft/TypeAgent/pull/2732)
-  - [Promote core agents to installable @typeagent/* packages (#2743)](https://github.com/microsoft/TypeAgent/commit/c0b16aee259ae85cf7b9b0be4bcd97b1ca9dd750) - 2026-07-27T21:30:24Z - Hillary Mutisya (@hillary-mutisya) - PR: [Promote core agents to installable @typeagent/* packages #2743](https://github.com/microsoft/TypeAgent/pull/2743)
-  - [Bump fast-xml-parser from 5.7.0 to 5.7.1 in /ts (#2737)](https://github.com/microsoft/TypeAgent/commit/922461386e16789754d86fe536c1ce230c9094fd) - 2026-07-27T18:53:42Z - dependabot[bot] (@dependabot[bot]) - PR: [Bump fast-xml-parser from 5.7.0 to 5.7.1 in /ts #2737](https://github.com/microsoft/TypeAgent/pull/2737)
+- **microsoft/TypeAgent** (`main`) - **3** commit(s)
+  - [fix: remediate Dependabot security alerts (2026-07-28) (#2750)](https://github.com/microsoft/TypeAgent/commit/0ec6207b2888743f4909f6365a7c207cde00b861) - 2026-07-28T18:48:18Z - typeagent-bot[bot] (@typeagent-bot[bot]) - PR: [fix: remediate Dependabot security alerts (2026-07-28) #2750](https://github.com/microsoft/TypeAgent/pull/2750)
+  - [Run command files without interactive console setup (#2747)](https://github.com/microsoft/TypeAgent/commit/bc881c92b60015ba3a59df79e286d8657cac74cb) - 2026-07-28T17:24:09Z - Dominic Nguyen (@datduyng) - PR: [Run command files without interactive console setup #2747](https://github.com/microsoft/TypeAgent/pull/2747)
+  - [Show warnings from successful grammar loads (#2728)](https://github.com/microsoft/TypeAgent/commit/3a35183d6d348f174cc9b0a75a88dab8f9b47fd6) - 2026-07-28T17:14:29Z - Dominic Nguyen (@datduyng) - PR: [Show warnings from successful grammar loads #2728](https://github.com/microsoft/TypeAgent/pull/2728)
 
-- **microsoft/Federal-Business-Applications** (`main`) - **9** commit(s)
-  - [Update Azure AD Connector reference to Microsoft Entra ID](https://github.com/microsoft/Federal-Business-Applications/commit/fd156f2b25ee5a93dff8c3c979c8faeb79a3ae7d) - 2026-07-27T19:58:15Z - Grayson Bishop (@Grayson-Bishop)
-  - [Update Azure AD to Microsoft Entra ID in README](https://github.com/microsoft/Federal-Business-Applications/commit/29f056ef6cdda1e981c450c24bd57f5eca6306a3) - 2026-07-27T19:56:49Z - Grayson Bishop (@Grayson-Bishop)
-  - [Add files via upload](https://github.com/microsoft/Federal-Business-Applications/commit/57355f3150a3bf67171bea4c732cc3f23195f90e) - 2026-07-27T19:54:33Z - Grayson Bishop (@Grayson-Bishop)
-  - [Remove dated PVA/Power BI whitepaper, link to Copilot Studio Kit (#87)](https://github.com/microsoft/Federal-Business-Applications/commit/8933e08fa5b5d72cec1ad86431b657abc1dfb0fd) - 2026-07-27T19:46:01Z - Grayson Bishop (@Grayson-Bishop) - PR: [Remove dated PVA/Power BI whitepaper, link to Copilot Studio Kit #87](https://github.com/microsoft/Federal-Business-Applications/pull/87)
-  - [Add files via upload](https://github.com/microsoft/Federal-Business-Applications/commit/62173cfe2f318cdc9e88f511489b8e0bba9e6103) - 2026-07-27T19:33:51Z - Grayson Bishop (@Grayson-Bishop)
+- **microsoft/DirectX-Graphics-Samples** (`master`) - **2** commit(s)
+  - [Merge pull request #968 from microsoft/hello-ser-fix](https://github.com/microsoft/DirectX-Graphics-Samples/commit/a19ee605ab42a73b65758acf11ef69cb77b02201) - 2026-07-28T23:01:51Z - Jesse Natalie (@jenatali) - PR: [Fix SER GetAttributes in HelloSER sample #968](https://github.com/microsoft/DirectX-Graphics-Samples/pull/968)
+  - [Fix SER GetAttributes in HelloSER sample](https://github.com/microsoft/DirectX-Graphics-Samples/commit/14ec386bb5b2d73f01dedb04aaef7a93535f638d) - 2026-07-28T22:57:05Z - Jesse Natalie (@jenatali) - PR: [Fix SER GetAttributes in HelloSER sample #968](https://github.com/microsoft/DirectX-Graphics-Samples/pull/968)
 
-- **microsoft/zerotrustassessment** (`main`) - **8** commit(s)
-  - [Add network pillar guidance for Global Secure Access AI protection an…](https://github.com/microsoft/zerotrustassessment/commit/e8b99a657b231d927c335432bb3d63da55035de3) - 2026-07-28T11:33:20Z - Anton Staykov (@astaykov) - PR: [Add network pillar guidance for Global Secure Access AI protection and Explicit Forward Proxy #1455](https://github.com/microsoft/zerotrustassessment/pull/1455)
-  - [Add network pillar guidance: Explicit Forward Proxy, Copilot Studio a…](https://github.com/microsoft/zerotrustassessment/commit/c6cc2e04a97db5190cf9cc07c7ed653695da1360) - 2026-07-28T11:28:31Z - Thomas Detzner (@tdetzner) - PR: [Add network pillar guidance for Global Secure Access AI protection and Explicit Forward Proxy #1455](https://github.com/microsoft/zerotrustassessment/pull/1455)
-  - [docs: add DevSecOps workshop guidance (DS series) - Aug 2026 update (…](https://github.com/microsoft/zerotrustassessment/commit/9f95f30e0093d33be22c85d78b1905a01820e93c) - 2026-07-27T17:32:22Z - Tyler Chan (@tylchan) - PR: [docs: add DevSecOps workshop guidance (DS series) - Aug 2026 update #1453](https://github.com/microsoft/zerotrustassessment/pull/1453)
-  - [Potential fix for pull request finding](https://github.com/microsoft/zerotrustassessment/commit/0df2dec274d141de57076a3764395598d1ca2ec3) - 2026-07-27T17:27:18Z - Tyler Chan (@tylchan) - PR: [docs: add DevSecOps workshop guidance (DS series) - Aug 2026 update #1453](https://github.com/microsoft/zerotrustassessment/pull/1453)
-  - [Potential fix for pull request finding](https://github.com/microsoft/zerotrustassessment/commit/0c399ce54baafc2e7b1a6686289f9f33648bd9b4) - 2026-07-27T17:27:10Z - Tyler Chan (@tylchan) - PR: [docs: add DevSecOps workshop guidance (DS series) - Aug 2026 update #1453](https://github.com/microsoft/zerotrustassessment/pull/1453)
-
-- **microsoft/bobsql** (`master`) - **6** commit(s)
-  - [Merge pull request #105 from microsoft/bw](https://github.com/microsoft/bobsql/commit/f72da00b951859a1a57b320c282ce41db3333cca) - 2026-07-28T00:20:10Z - Bob Ward (@rgward) - PR: [cleanup sqlmcpserver repo #105](https://github.com/microsoft/bobsql/pull/105)
-  - [cleanup](https://github.com/microsoft/bobsql/commit/e0a32fea2198690bfaf2fa4d28a10a758ebaa34f) - 2026-07-28T00:20:03Z - Bob Ward (@rgward) - PR: [cleanup sqlmcpserver repo #105](https://github.com/microsoft/bobsql/pull/105)
-  - [Update dab-overview.svg](https://github.com/microsoft/bobsql/commit/64b41a0c9fef337f186dc3455c2394aae77aea10) - 2026-07-27T22:30:57Z - Bob Ward (@rgward) - PR: [cleanup sqlmcpserver repo #105](https://github.com/microsoft/bobsql/pull/105)
-  - [sqlmcpserver cleanup](https://github.com/microsoft/bobsql/commit/d292b039d956f74632c862b977a66ac05e4366cd) - 2026-07-27T22:26:49Z - Bob Ward (@rgward) - PR: [cleanup sqlmcpserver repo #105](https://github.com/microsoft/bobsql/pull/105)
-  - [Merge pull request #104 from microsoft/bw](https://github.com/microsoft/bobsql/commit/927d507234931d32032ab4a98fb592623e5a75a1) - 2026-07-27T22:17:36Z - Bob Ward (@rgward) - PR: [sqlmcpserver demo #104](https://github.com/microsoft/bobsql/pull/104)
-
-- **microsoft/BuildXL** (`main`) - **3** commit(s)
-  - [Merged PR 937191: Fix DX0059 catastrophic failure when a front-end fi…](https://github.com/microsoft/BuildXL/commit/9b952f40c966396c0443dd3bbde476c26ac84708) - 2026-07-27T18:31:26Z - Michael Pysson (@mpysson)
-  - [Merged PR 942068: Update BuildXL LKG Version to 0.1.0-20260724.3](https://github.com/microsoft/BuildXL/commit/d945e60d25804eb87feea46e8236b089cd06a044) - 2026-07-27T18:26:49Z - BuildXL-Pipelines
-  - [Merged PR 942004: Update newcopilot.cmd to connect sessions to agency…](https://github.com/microsoft/BuildXL/commit/a15d7deb1358dbfaa383195545e4179ab9576968) - 2026-07-27T17:41:08Z - Michael Pysson (@mpysson)
+- **microsoft/dragon-copilot-extension-samples** (`main`) - **1** commit(s)
+  - [deps(deps-dev): bump ts-jest in /tools/dragon-copilot-cli (#282)](https://github.com/microsoft/dragon-copilot-extension-samples/commit/dffb0a77547498216ea79d4204bb13068b9546a3) - 2026-07-29T14:56:42Z - dependabot[bot] (@dependabot[bot]) - PR: [deps(deps-dev): bump ts-jest from 29.4.11 to 29.4.12 in /tools/dragon-copilot-cli #282](https://github.com/microsoft/dragon-copilot-extension-samples/pull/282)
 
 - **microsoft/sample-webapp** (`main`) - **1** commit(s)
-  - [project update](https://github.com/microsoft/sample-webapp/commit/5d524d3e5e2fce0c4057492a0bdb8725ea44eb68) - 2026-07-28T10:32:23Z - Kashish Gupta (@kashish2508)
+  - [🤖 App Testing Agent — coverage for main (#339)](https://github.com/microsoft/sample-webapp/commit/7e7b2b9de33a3b016a18dbd189842484176663c8) - 2026-07-29T07:25:58Z - Kashish Gupta (@kashish2508) - PR: [🤖 App Testing Agent — coverage for main #339](https://github.com/microsoft/sample-webapp/pull/339)
 
-- **microsoft/mcp-dotnet-samples** (`main`) - **1** commit(s)
-  - [Update metadata.json](https://github.com/microsoft/mcp-dotnet-samples/commit/e24431204e9b9dfea8bcd3fdc7136634621df69d) - 2026-07-28T01:36:50Z - GitHub Actions (@actions-user)
+- **microsoft/zerotrustassessment** (`main`) - **1** commit(s)
+  - [Version 3.1](https://github.com/microsoft/zerotrustassessment/commit/ce8a5bf94e45259664572b8a10dfeffa261c0403) - 2026-07-28T21:06:02Z - Tyler Chan (@tylchan)
 
-- **microsoft/Windows-driver-samples** (`main`) - **1** commit(s)
-  - [Merge pull request #1403 from microsoft/user/jvalesmena/WDK-2607](https://github.com/microsoft/Windows-driver-samples/commit/ef7c3074748ab05726c3a9161d3256118efd76e2) - 2026-07-27T20:34:34Z - prashantchahar (@prashantchahar) - PR: [Bump WDK/SDK NuGet packages to 10.0.28000.2525 #1403](https://github.com/microsoft/Windows-driver-samples/pull/1403)
+- **microsoft/react-native-windows-samples** (`main`) - **1** commit(s)
+  - [Update the Sample App for 0.85 (#1288)](https://github.com/microsoft/react-native-windows-samples/commit/d9bbe76a911549997216b8bdbd2c864b966905e8) - 2026-07-28T17:28:04Z - anuagragith (@anuagragith) - PR: [Update the Sample App for 0.85 #1288](https://github.com/microsoft/react-native-windows-samples/pull/1288)
 
-- **microsoft/AzureTRE** (`main`) - **1** commit(s)
-  - [Fix changelog (#5004)](https://github.com/microsoft/AzureTRE/commit/183fdccc3252c8a85059ceffa58bd58ed8322254) - 2026-07-27T15:00:29Z - James Chapman (@JC-wk) - PR: [Fix changelog #5004](https://github.com/microsoft/AzureTRE/pull/5004)
+- **microsoft/XBOX-Godot-Sample** (`main`) - **1** commit(s)
+  - [Fix #134: harden GDK export against missing GDExtension DLLs (#135)](https://github.com/microsoft/XBOX-Godot-Sample/commit/1d0b11ef02504cb2de992d47f33144eb18e62dcf) - 2026-07-28T15:59:48Z - James Lenell (@jameslen-atg) - PR: [Fix #134: harden GDK export against missing GDExtension DLLs #135](https://github.com/microsoft/XBOX-Godot-Sample/pull/135)
+
+- **microsoft/github-copilot-java-mcp-demo** (`main`) - **1** commit(s)
+  - [Refine narration in script.md for Episode 1, enhancing clarity on VS …](https://github.com/microsoft/github-copilot-java-mcp-demo/commit/f28feeb3fe6712b653b8509d8dc8c21a24b7532f) - 2026-07-28T14:25:45Z - Rory Preddy (@roryp)
 
 ## training
 
 ### MicrosoftLearning
 
-- **MicrosoftLearning/AB-6008_delegate_work_with_AI** (`main`) - **10** commit(s)
-  - [Add delegate work instructions for Microsoft Copilot](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/e6a80d4f59b3971ec5b5cc79147d4b07024b9648) - 2026-07-28T02:49:11Z - AnikaMicrosoft (@AnikaMicrosoft)
-  - [Modify exercise title and duration estimate](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/63e3bcc9c902a4cd91874364bd7fe4b4f74ec2d2) - 2026-07-28T02:47:58Z - AnikaMicrosoft (@AnikaMicrosoft)
-  - [Fix typos and enhance clarity in exercise template](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/528bd57505c17095a0b883b96db53391d7fd4d51) - 2026-07-28T02:47:16Z - AnikaMicrosoft (@AnikaMicrosoft)
-  - [Update 01-exercise-template.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/899ae3316d877046b7f5ea0b3ba0dee83ef8c048) - 2026-07-28T02:36:21Z - AnikaMicrosoft (@AnikaMicrosoft)
-  - [Update 01-exercise-template.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/0bacdf200ad0c6d6edf4dfa0a7667450dac2a2b7) - 2026-07-28T02:35:35Z - AnikaMicrosoft (@AnikaMicrosoft)
+- **MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst** (`master`) - **34** commit(s)
+  - [Merge pull request #571 from MicrosoftLearning/reconcile-pr-512](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/commit/46bb8cd2c0bdc0844a1f98ac963ab7836a9bae33) - 2026-07-29T15:16:22Z - Hassan Rasheed (@hrasheed-msft) - PR: [Resolve conflicts: Lab 09 Ex02 - Notebooks Defender #571](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/pull/571)
+  - [Merge remote-tracking branch 'origin/master' into Lab-09-Ex02-Fixes](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/commit/28f1ff6f6c143c15dbeea5d54e54dcd69776c09c) - 2026-07-29T15:16:17Z - Hassan Rasheed (@hrasheed-msft) - PR: [Resolve conflicts: Lab 09 Ex02 - Notebooks Defender #571](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/pull/571)
+  - [Merge pull request #570 from MicrosoftLearning/reconcile-pr-511](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/commit/241e9cb16186d460570f19481b15f0f7ab044680) - 2026-07-29T15:15:37Z - Hassan Rasheed (@hrasheed-msft) - PR: [Resolve conflicts: Lab 09 Ex01 - Hunting Defender #570](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/pull/570)
+  - [Merge remote-tracking branch 'origin/master' into Lab-09-Ex01-Fixes](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/commit/ba74dd924900b8f3f308fd3ec720450c5db0f9d4) - 2026-07-29T15:15:32Z - Hassan Rasheed (@hrasheed-msft) - PR: [Resolve conflicts: Lab 09 Ex01 - Hunting Defender #570](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/pull/570)
+  - [Merge pull request #569 from MicrosoftLearning/reconcile-pr-502](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/commit/3eacbec7319a4aa2ca1f695ea291ca01a6dc61e9) - 2026-07-29T15:14:52Z - Hassan Rasheed (@hrasheed-msft) - PR: [Resolve conflicts: Lab 08 Ex02 - Scheduled Query Defender #569](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/pull/569)
 
-- **MicrosoftLearning/mslearn-copilotstudio** (`main`) - **2** commit(s)
-  - [Merge pull request #75 from Desiderio25/Fix/Issue#73](https://github.com/MicrosoftLearning/mslearn-copilotstudio/commit/8cf037590e97a82e064787488cf475fdfb4fc149) - 2026-07-27T18:05:10Z - chandlersyal (@chandlersyal) - PR: [fix(lab00/ex01/t03): enable Dataverse manually in dev environment setup #75](https://github.com/MicrosoftLearning/mslearn-copilotstudio/pull/75)
-  - [fix(lab00/ex01/t03): correct environment creation steps and note wording](https://github.com/MicrosoftLearning/mslearn-copilotstudio/commit/a54758c932ceec338dafd32fb4b459ce768a5c5e) - 2026-07-27T17:41:03Z - Andre Desiderio - PR: [fix(lab00/ex01/t03): enable Dataverse manually in dev environment setup #75](https://github.com/MicrosoftLearning/mslearn-copilotstudio/pull/75)
+- **MicrosoftLearning/AB-6008_delegate_work_with_AI** (`main`) - **5** commit(s)
+  - [Update 01-delegate-work-microsoft-copilot-cowork.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/bb24ebaa6c40dcef29e8f840b5c2aed727dcb514) - 2026-07-28T21:54:34Z - AnikaMicrosoft (@AnikaMicrosoft)
+  - [Update 01-delegate-work-microsoft-copilot-cowork.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/6b49ace48b55a8384073fc0b1a5f90a3a19d77ba) - 2026-07-28T21:28:58Z - AnikaMicrosoft (@AnikaMicrosoft)
+  - [Fix numbering for final instruction in lab document](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/6f8f9a9c7ac0169d0082f42c5ab5373152205820) - 2026-07-28T20:14:31Z - AnikaMicrosoft (@AnikaMicrosoft)
+  - [Update 01-delegate-work-microsoft-copilot-cowork.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/8bf880c03e47d9d2156a7334fb5c31c40f8c4900) - 2026-07-28T20:14:07Z - AnikaMicrosoft (@AnikaMicrosoft)
+  - [Update 01-delegate-work-microsoft-copilot-cowork.md](https://github.com/MicrosoftLearning/AB-6008_delegate_work_with_AI/commit/96f4f7887d389a3b9af7d8530a35c3144cc8e29f) - 2026-07-28T20:12:50Z - AnikaMicrosoft (@AnikaMicrosoft)
 
-- **MicrosoftLearning/mslearn-ai-agents** (`main`) - **2** commit(s)
-  - [fix fence indendation](https://github.com/MicrosoftLearning/mslearn-ai-agents/commit/0e3b0ca52955cbe73eaaf50c7e33dc60b1e6984a) - 2026-07-27T17:13:20Z - Ivor Berry (@ivorb)
-  - [fix code sample indentation](https://github.com/MicrosoftLearning/mslearn-ai-agents/commit/6023ba4c20cbee050d63a2d1d68c44da2b2308e2) - 2026-07-27T17:00:31Z - Ivor Berry (@ivorb)
+- **MicrosoftLearning/mslearn-copilot** (`main`) - **4** commit(s)
+  - [Fix status formatting in web copilot lab instructions](https://github.com/MicrosoftLearning/mslearn-copilot/commit/2f3c8f529d934c95ca567d2d639081b104e8eac5) - 2026-07-29T00:19:09Z - Rosemary Caperton (@rcaper)
+  - [Add status field to lab instructions](https://github.com/MicrosoftLearning/mslearn-copilot/commit/11f479b8ee2d3c6acd760ad54db5018ae74e32a9) - 2026-07-29T00:18:27Z - Rosemary Caperton (@rcaper)
+  - [Update status to released in lab instructions](https://github.com/MicrosoftLearning/mslearn-copilot/commit/b61fba812a621f97683730173be8eea28d91b398) - 2026-07-29T00:18:05Z - Rosemary Caperton (@rcaper)
+  - [Update lab status to 'released'](https://github.com/MicrosoftLearning/mslearn-copilot/commit/f84bf5d8aef039a7a145d57a7af6873813a7d787) - 2026-07-29T00:18:00Z - Rosemary Caperton (@rcaper)
 
-- **MicrosoftLearning/SC-5007-Implement-retention-eDiscovery-and-Communication-compliance-in-Microsoft-Purview** (`master`) - **2** commit(s)
-  - [Merge pull request #33 from v-absamim/master](https://github.com/MicrosoftLearning/SC-5007-Implement-retention-eDiscovery-and-Communication-compliance-in-Microsoft-Purview/commit/3bf61e88551b4cbb68f0f9e2a8b08bad18aaebd0) - 2026-07-27T15:06:34Z - Richelle Swinton (@riswinto) - PR: [Updated add-users-retention-policy image #33](https://github.com/MicrosoftLearning/SC-5007-Implement-retention-eDiscovery-and-Communication-compliance-in-Microsoft-Purview/pull/33)
-  - [Merge pull request #36 from v-absamim/patch-6](https://github.com/MicrosoftLearning/SC-5007-Implement-retention-eDiscovery-and-Communication-compliance-in-Microsoft-Purview/commit/51cc8a35a5f7b11a973bfd9f9d698a89faac9f5a) - 2026-07-27T15:05:44Z - Richelle Swinton (@riswinto) - PR: [Lab 1 - Updated instructions for creating retention policies #36](https://github.com/MicrosoftLearning/SC-5007-Implement-retention-eDiscovery-and-Communication-compliance-in-Microsoft-Purview/pull/36)
+- **MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator** (`master`) - **2** commit(s)
+  - [Update VM size from Standard_D2s_v3 to Standard_D2s_v5](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/commit/4d86e74fedfbe5567cbd7aefdeca68153aeac203) - 2026-07-28T16:32:54Z - Rob-Barefoot (@Rob-Barefoot)
+  - [Change default VM size from D2s_v3 to D2s_v5](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/commit/50595b7b0e23cffa465bd17c051a20ca803a4561) - 2026-07-28T16:32:34Z - Rob-Barefoot (@Rob-Barefoot)
 
-- **MicrosoftLearning/mslearn-ai-fundamentals** (`main`) - **1** commit(s)
-  - [Edit image](https://github.com/MicrosoftLearning/mslearn-ai-fundamentals/commit/52634499fa1c27276fc1675ee6f897add9612d7c) - 2026-07-27T19:46:38Z - Graeme Malcolm (@GraemeMalcolm)
+- **MicrosoftLearning/AZ-2006-automate-azure-loadtesting-github-actions** (`master`) - **2** commit(s)
+  - [Merge pull request #15 from MicrosoftLearning/exercise-3-updates](https://github.com/MicrosoftLearning/AZ-2006-automate-azure-loadtesting-github-actions/commit/bb1b25cd5e32566018c2cbcf5e3f22625883007e) - 2026-07-28T15:48:37Z - JeffKoMS (@JeffKoMS) - PR: [exercise 3 app was  updated to .net 10 #15](https://github.com/MicrosoftLearning/AZ-2006-automate-azure-loadtesting-github-actions/pull/15)
+  - [exercise 3 app was  updated to .net 10](https://github.com/MicrosoftLearning/AZ-2006-automate-azure-loadtesting-github-actions/commit/558815ef9072c6f07302461228aea893c27b77eb) - 2026-07-28T15:48:18Z - jeffkoms (@JeffKoMS) - PR: [exercise 3 app was  updated to .net 10 #15](https://github.com/MicrosoftLearning/AZ-2006-automate-azure-loadtesting-github-actions/pull/15)
 
-- **MicrosoftLearning/MS-4021-Copilot-Immersion-Experience** (`master`) - **1** commit(s)
-  - [Merge pull request #9 from MicrosoftLearning/July-Update](https://github.com/MicrosoftLearning/MS-4021-Copilot-Immersion-Experience/commit/682b85948fdfe729e5173aed0149821f5631c779) - 2026-07-27T13:59:09Z - Matt Quinlan (@maquinl) - PR: [Update #9](https://github.com/MicrosoftLearning/MS-4021-Copilot-Immersion-Experience/pull/9)
+- **MicrosoftLearning/azure-load-test-sample-app** (`main`) - **2** commit(s)
+  - [Merge pull request #5 from MicrosoftLearning/issues-fixes](https://github.com/MicrosoftLearning/azure-load-test-sample-app/commit/06989059ba64deadae834c6882ad1582c236625f) - 2026-07-28T15:45:26Z - JeffKoMS (@JeffKoMS) - PR: [Fixed load testing version and updated app to .net 10 #5](https://github.com/MicrosoftLearning/azure-load-test-sample-app/pull/5)
+  - [Fixed load testing version and updated app to .net 10](https://github.com/MicrosoftLearning/azure-load-test-sample-app/commit/f4babeab3d76f916be6b8dd843446f3fb85d7006) - 2026-07-28T15:43:57Z - jeffkoms (@JeffKoMS) - PR: [Fixed load testing version and updated app to .net 10 #5](https://github.com/MicrosoftLearning/azure-load-test-sample-app/pull/5)
+
+- **MicrosoftLearning/mslearn-agent-quickstart** (`main`) - **1** commit(s)
+  - [Update 01-get-started-in-foundry.md](https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/1bbe3acf962a2c176d6fdeac568ee5b62d2d608c) - 2026-07-29T14:40:37Z - Graeme Malcolm (@GraemeMalcolm)
+
+- **MicrosoftLearning/mslearn-ai-concepts** (`main`) - **1** commit(s)
+  - [Added index to RAG lab](https://github.com/MicrosoftLearning/mslearn-ai-concepts/commit/a3b2adcedab969a8dcb62475b5d0770d28e52aa5) - 2026-07-29T04:15:44Z - GraemeMalcolm (@GraemeMalcolm)
+
+- **MicrosoftLearning/ai-apps** (`main`) - **1** commit(s)
+  - [Added indexing to file upload](https://github.com/MicrosoftLearning/ai-apps/commit/25463bc514434977453ce848666884d10d40d600) - 2026-07-29T03:54:25Z - GraemeMalcolm (@GraemeMalcolm)
+
+### OfficeDev
+
+- **OfficeDev/office-js-snippets** (`main`) - **2** commit(s)
+  - [[excel] (Data Validation) Remove note about DV bug (#1100)](https://github.com/OfficeDev/office-js-snippets/commit/e41f143cce8d9dabc38f4073aae695ed1c1a42b6) - 2026-07-28T20:30:05Z - Alex Jerabek (@AlexJerabek) - PR: [[excel] (Data Validation) Remove note about DV bug #1100](https://github.com/OfficeDev/office-js-snippets/pull/1100)
+  - [[excel] (Data Types) Update data types sample to show basic functiona…](https://github.com/OfficeDev/office-js-snippets/commit/c4afed93c8d60a55954c49e5a89c57b48d0fe08c) - 2026-07-28T15:58:43Z - Alex Jerabek (@AlexJerabek) - PR: [[excel] (Data Types) Update data types sample to show basic functionality more clearly #1099](https://github.com/OfficeDev/office-js-snippets/pull/1099)
 
 ### microsoft
 
-- **microsoft/copilot-camp** (`main`) - **8** commit(s)
-  - [Merge pull request #969 from rabwill/blog-sso](https://github.com/microsoft/copilot-camp/commit/78e6c8d2b162c69d8d5bf9f6be264ed195c9ff55) - 2026-07-28T00:36:20Z - Rabia Williams (@rabwill) - PR: [Blog sso #969](https://github.com/microsoft/copilot-camp/pull/969)
-  - [undo hide nav cowork](https://github.com/microsoft/copilot-camp/commit/0f5a6a1a4893bda8a699a227fa605f884a986048) - 2026-07-28T00:35:25Z - Rabia Williams (@rabwill) - PR: [Blog sso #969](https://github.com/microsoft/copilot-camp/pull/969)
-  - [updated the readme](https://github.com/microsoft/copilot-camp/commit/289188dab4adb1e7250bf60cc02a51bfce8f618e) - 2026-07-28T00:34:30Z - Rabia Williams (@rabwill) - PR: [Blog sso #969](https://github.com/microsoft/copilot-camp/pull/969)
-  - [Merge pull request #968 from rabwill/blog-sso](https://github.com/microsoft/copilot-camp/commit/4d7eab85fd871e9bc6a2269ee2965c7a62faca24) - 2026-07-28T00:24:20Z - Rabia Williams (@rabwill) - PR: [Blog sso #968](https://github.com/microsoft/copilot-camp/pull/968)
-  - [remove extra title](https://github.com/microsoft/copilot-camp/commit/63decc6016292bc6e10d73dc434f05e6b55c4c68) - 2026-07-28T00:23:41Z - Rabia Williams (@rabwill) - PR: [Blog sso #968](https://github.com/microsoft/copilot-camp/pull/968)
-
-- **microsoft/SPARROW** (`main`) - **2** commit(s)
-  - [Merge pull request #71 from microsoft/bump-pillow-12.3](https://github.com/microsoft/SPARROW/commit/8c2f946285b98200c33bf4a1a8e8d98a78f84271) - 2026-07-27T16:04:14Z - Federico Alves (@urucoder) - PR: [Bump Pillow 12.2.0 -> 12.3.0 to close 13 dependabot alerts #71](https://github.com/microsoft/SPARROW/pull/71)
-  - [Bump Pillow 12.2.0 -> 12.3.0 to close 13 dependabot alerts](https://github.com/microsoft/SPARROW/commit/57a025af60c9c0d087a28ad8779da528897b2c7f) - 2026-07-27T14:47:56Z - Carl Chalmers - PR: [Bump Pillow 12.2.0 -> 12.3.0 to close 13 dependabot alerts #71](https://github.com/microsoft/SPARROW/pull/71)
+- **microsoft/SPARROW** (`main`) - **4** commit(s)
+  - [Merge pull request #74 from microsoft/setup-auto-detect-devices](https://github.com/microsoft/SPARROW/commit/85a9f420a2cf60daa3a3c7c2996217982a5e9666) - 2026-07-28T18:45:24Z - Federico Alves (@urucoder) - PR: [setup: auto-detect FTDI + Victron serial devices at install time #74](https://github.com/microsoft/SPARROW/pull/74)
+  - [setup: address PR #74 Copilot review — idempotent FTDI un-comment, re…](https://github.com/microsoft/SPARROW/commit/925781dc5c8dfec2921a86c54335179cb5a07a03) - 2026-07-28T17:59:10Z - Carl Chalmers - PR: [setup: auto-detect FTDI + Victron serial devices at install time #74](https://github.com/microsoft/SPARROW/pull/74)
+  - [setup: auto-detect FTDI + Victron serial devices on the target Pi](https://github.com/microsoft/SPARROW/commit/33bc1623f874cf76cbe95cd78f8657f3c372d189) - 2026-07-28T17:37:04Z - Carl Chalmers - PR: [setup: auto-detect FTDI + Victron serial devices at install time #74](https://github.com/microsoft/SPARROW/pull/74)
+  - [Merge pull request #73 from microsoft/codeql-quality-cleanup](https://github.com/microsoft/SPARROW/commit/8b6aeb169c8537153c2e4b23eb41ec14035bd748) - 2026-07-28T17:26:08Z - Federico Alves (@urucoder) - PR: [Address CodeQL code-quality alerts #73](https://github.com/microsoft/SPARROW/pull/73)
 
