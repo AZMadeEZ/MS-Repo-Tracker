@@ -86,33 +86,33 @@
     {
       "artifact_type": "markdown",
       "name": "dated_human_report",
-      "path": "reports/2026-08-23.md",
+      "path": "reports/2026-08-24.md",
       "required": true
     },
     {
       "artifact_type": "markdown",
       "name": "dated_consumer_report",
-      "path": "reports/2026-08-23.consumer.md",
+      "path": "reports/2026-08-24.consumer.md",
       "required": true
     },
     {
       "artifact_type": "json",
       "name": "dated_machine_report",
-      "path": "reports/2026-08-23.json",
+      "path": "reports/2026-08-24.json",
       "required": true,
       "schema_url": "schemas/report.v1.schema.json"
     },
     {
       "artifact_type": "json",
       "name": "dated_summary",
-      "path": "reports/2026-08-23.summary.json",
+      "path": "reports/2026-08-24.summary.json",
       "required": true,
       "schema_url": "schemas/summary.v1.schema.json"
     },
     {
       "artifact_type": "ndjson",
       "name": "dated_event_stream",
-      "path": "reports/2026-08-23.events.ndjson",
+      "path": "reports/2026-08-24.events.ndjson",
       "required": true,
       "schema_url": "schemas/event.v1.schema.json"
     },
@@ -136,18 +136,18 @@
     "max_age_hours": 30,
     "state": "fresh"
   },
-  "generated_at": "2026-08-23T13:49:44.551029Z",
+  "generated_at": "2026-08-24T14:07:44.449651Z",
   "schema_url": "schemas/manifest.v1.schema.json",
   "schema_version": 1,
   "source": {
-    "commit": "e0e6e23ed3dc6bf1e207fb2c8af6edc5b2f8a718",
+    "commit": "3027341f0a11e3bc82fd2826cd0ab80d07e66606",
     "repository": "AZMadeEZ/MS-Repo-Tracker",
     "workflow": "Microsoft Repo Change Digest",
-    "workflow_run_id": "32643492930",
-    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/32643492930"
+    "workflow_run_id": "32736681691",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/32736681691"
   },
   "status": {
-    "latest_report_generated_at": "2026-08-23T13:49:44.551029Z",
+    "latest_report_generated_at": "2026-08-24T14:07:44.449651Z",
     "latest_report_stale": false,
     "reason": "success",
     "status": "complete"
