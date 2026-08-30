@@ -821,315 +821,182 @@
       "report_json": "2026-08-29.json",
       "report_md": "2026-08-29.md",
       "repos_with_movement": 93
+    },
+    {
+      "date": "2026-08-30",
+      "default_branch_commits": 38,
+      "generated_at": "2026-08-30T17:37:22.470145Z",
+      "high_signal_count": 14,
+      "release_count": 0,
+      "report_json": "2026-08-30.json",
+      "report_md": "2026-08-30.md",
+      "repos_with_movement": 24
     }
   ],
-  "generated_at": "2026-08-29T17:15:06.799694Z",
+  "generated_at": "2026-08-30T17:38:34.409195Z",
   "latest": {
     "consumer_md": "latest.consumer.md",
-    "date": "2026-08-29",
-    "default_branch_commits": 355,
+    "date": "2026-08-30",
+    "default_branch_commits": 38,
     "event_stream": "latest.events.ndjson",
-    "generated_at": "2026-08-29T17:14:06.104621Z",
-    "high_signal_count": 25,
+    "generated_at": "2026-08-30T17:37:22.470145Z",
+    "high_signal_count": 14,
     "product_area_summary": [
       {
-        "event_count": 128,
-        "noisy_event_count": 54,
-        "notable_event_count": 107,
+        "event_count": 15,
+        "noisy_event_count": 4,
+        "notable_event_count": 13,
         "product_area": "Azure",
-        "release_count": 9,
-        "repo_count": 40,
-        "security_event_count": 5,
-        "top_events": [
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-29T12:57:22Z",
-            "headline": "Core: Make dry-run credential-free across all interfaces",
-            "notability_score": 100,
-            "repo": "Azure/co-op-translator",
-            "url": "https://github.com/Azure/co-op-translator/pull/518"
-          },
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-29T10:31:04Z",
-            "headline": "Fedora: publish Source0 subtree tarball azure-protected-vm-secrets-1.\u2026",
-            "notability_score": 100,
-            "repo": "Azure/confidential-computing-cvm-guest-attestation",
-            "url": "https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/94c34bcc959760462d2532cc37c15c3148ff6ab7"
-          },
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-29T10:31:01Z",
-            "headline": "Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master\u2026",
-            "notability_score": 100,
-            "repo": "Azure/confidential-computing-cvm-guest-attestation",
-            "url": "https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/56f9af792e4ecc984a2edcdca686de69676bc96a"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 7,
-            "repo": "Azure/azure-sdk-for-java"
-          },
-          {
-            "event_count": 7,
-            "repo": "Azure/azure-sdk-for-python"
-          },
-          {
-            "event_count": 6,
-            "repo": "Azure/co-op-translator"
-          },
-          {
-            "event_count": 6,
-            "repo": "Azure/azure-sdk-for-net"
-          },
-          {
-            "event_count": 5,
-            "repo": "Azure/azure-event-hubs-emulator-installer"
-          }
-        ]
-      },
-      {
-        "event_count": 86,
-        "noisy_event_count": 22,
-        "notable_event_count": 70,
-        "product_area": "Unmapped Activity",
-        "release_count": 2,
-        "repo_count": 34,
-        "security_event_count": 6,
-        "top_events": [
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-29T06:11:17Z",
-            "headline": "lab bug fix",
-            "notability_score": 100,
-            "repo": "MicrosoftLearning/SC-401T00-Information-Security-Administrator",
-            "url": "https://github.com/MicrosoftLearning/SC-401T00-Information-Security-Administrator/pull/137"
-          },
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-29T06:05:16Z",
-            "headline": "lab bug fixes",
-            "notability_score": 100,
-            "repo": "MicrosoftLearning/SC-401T00-Information-Security-Administrator",
-            "url": "https://github.com/MicrosoftLearning/SC-401T00-Information-Security-Administrator/pull/136"
-          },
-          {
-            "change_type": "security_fix",
-            "committed_at": "2026-08-28T17:51:40Z",
-            "headline": "Document COPY INTO Workspace Identity credential use (#37955)",
-            "notability_score": 100,
-            "repo": "MicrosoftDocs/sql-docs",
-            "url": "https://github.com/MicrosoftDocs/sql-docs/commit/e4b93c3bfcdf54ce9e99261320c8a5828549b32b"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "microsoft/onnxruntime"
-          },
-          {
-            "event_count": 5,
-            "repo": "microsoft/amplifier-module-provider-openai"
-          },
-          {
-            "event_count": 5,
-            "repo": "MicrosoftLearning/SC-401T00-Information-Security-Administrator"
-          },
-          {
-            "event_count": 5,
-            "repo": "MicrosoftDocs/fabric-docs"
-          },
-          {
-            "event_count": 5,
-            "repo": "microsoft/fabric-data-agent-workshop"
-          }
-        ]
-      },
-      {
-        "event_count": 14,
-        "noisy_event_count": 1,
-        "notable_event_count": 6,
-        "product_area": ".NET",
         "release_count": 0,
-        "repo_count": 5,
+        "repo_count": 9,
         "security_event_count": 0,
         "top_events": [
           {
+            "change_type": "release",
+            "committed_at": "2026-08-30T16:21:12Z",
+            "headline": "Update for azd release 1.32.0-daily.6763766",
+            "notability_score": 100,
+            "repo": "Azure/homebrew-azd",
+            "url": "https://github.com/Azure/homebrew-azd/commit/e2fb96bd615f1168a48c01d980f11fb6f642d25c"
+          },
+          {
             "change_type": "feature",
-            "committed_at": "2026-08-28T23:21:08Z",
-            "headline": "Add asynchronous LSP request context accessors",
+            "committed_at": "2026-08-30T14:47:18Z",
+            "headline": "feat: add shared Foundry condition helper",
             "notability_score": 90,
-            "repo": "dotnet/roslyn",
-            "url": "https://github.com/dotnet/roslyn/pull/84975"
+            "repo": "Azure/azure-dev",
+            "url": "https://github.com/Azure/azure-dev/pull/9782"
           },
           {
-            "change_type": "docs_update",
-            "committed_at": "2026-08-29T00:01:07Z",
-            "headline": "Refactor the LanguageServerProjectLoader",
+            "change_type": "bug_fix",
+            "committed_at": "2026-08-29T20:48:29Z",
+            "headline": "fix: coerce use_managed_identity string values in _get_bool",
             "notability_score": 90,
-            "repo": "dotnet/roslyn",
-            "url": "https://github.com/dotnet/roslyn/pull/84982"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-08-28T23:48:47Z",
-            "headline": "Send $/progress notifications with named arguments",
-            "notability_score": 90,
-            "repo": "dotnet/roslyn",
-            "url": "https://github.com/dotnet/roslyn/pull/85076"
+            "repo": "microsoft/amplifier-module-provider-azure-openai",
+            "url": "https://github.com/microsoft/amplifier-module-provider-azure-openai/pull/38"
           }
         ],
         "top_repos": [
           {
-            "event_count": 5,
-            "repo": "dotnet/roslyn"
-          },
-          {
-            "event_count": 5,
-            "repo": "dotnet/runtime"
+            "event_count": 4,
+            "repo": "MicrosoftDocs/azure-docs"
           },
           {
             "event_count": 2,
-            "repo": "dotnet/AspNetCore.Docs"
+            "repo": "Azure-Samples/foundry-local-model-catalog"
+          },
+          {
+            "event_count": 2,
+            "repo": "Azure/co-op-translator"
+          },
+          {
+            "event_count": 2,
+            "repo": "microsoft/amplifier-module-provider-azure-openai"
           },
           {
             "event_count": 1,
-            "repo": "dotnet/roslyn-api-docs"
-          },
-          {
-            "event_count": 1,
-            "repo": "dotnet/eShop"
+            "repo": "Azure/homebrew-azd"
           }
         ]
       },
       {
-        "event_count": 5,
+        "event_count": 19,
         "noisy_event_count": 2,
-        "notable_event_count": 5,
-        "product_area": "Identity",
+        "notable_event_count": 8,
+        "product_area": "Unmapped Activity",
         "release_count": 0,
-        "repo_count": 1,
+        "repo_count": 12,
         "security_event_count": 1,
         "top_events": [
           {
             "change_type": "security_fix",
-            "committed_at": "2026-08-28T23:44:29Z",
-            "headline": "Restore the client credentials grant link",
+            "committed_at": "2026-08-30T04:05:46Z",
+            "headline": "fix: onboarding defects (Ctrl-C data corruption, false secret-scan warning, traceback leaks) + openai-chatgpt first-class + login wizard",
             "notability_score": 100,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/1d7164b4fa6ac37001e088693dcea5dd06625dec"
+            "repo": "microsoft/amplifier-app-cli",
+            "url": "https://github.com/microsoft/amplifier-app-cli/pull/287"
           },
           {
             "change_type": "feature",
-            "committed_at": "2026-08-28T22:51:30Z",
-            "headline": "Add self-service SCIM provisioning validation docs for Microsoft Entr\u2026",
+            "committed_at": "2026-08-29T17:53:00Z",
+            "headline": "Add MAI and Phi to index",
             "notability_score": 90,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/a8cbb59d22b1f7f1d1b17f142b6f36ef935c16c8"
+            "repo": "MicrosoftLearning/ai-apps",
+            "url": "https://github.com/MicrosoftLearning/ai-apps/commit/5ea7fc26c97a84654b92bcfff602fc700222c342"
           },
           {
-            "change_type": "bug_fix",
-            "committed_at": "2026-08-28T23:35:26Z",
-            "headline": "Point SCIM developers at self-service onboarding and fix author metadata",
+            "change_type": "docs_update",
+            "committed_at": "2026-08-30T11:07:25Z",
+            "headline": "Repo sync for protected branch",
             "notability_score": 90,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/d50a7db0877e57d040c7034db7e3f20ecaf1aa80"
+            "repo": "MicrosoftDocs/fabric-docs",
+            "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3296"
           }
         ],
         "top_repos": [
           {
-            "event_count": 5,
-            "repo": "MicrosoftDocs/entra-docs"
-          }
-        ]
-      },
-      {
-        "event_count": 12,
-        "noisy_event_count": 12,
-        "notable_event_count": 4,
-        "product_area": "Microsoft Graph",
-        "release_count": 0,
-        "repo_count": 4,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "sdk_generation",
-            "committed_at": "2026-08-28T20:47:17Z",
-            "headline": "chore(deps): update OpenAPI.NET version",
-            "notability_score": 75,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/pull/8093"
-          },
-          {
-            "change_type": "sdk_generation",
-            "committed_at": "2026-08-28T18:39:39Z",
-            "headline": "Move required exploded array query parameters into the exploded form expansion",
-            "notability_score": 75,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/pull/8101"
-          },
-          {
-            "change_type": "sdk_generation",
-            "committed_at": "2026-08-28T18:34:58Z",
-            "headline": "fix(ruby): add composed type support and disable inner classes for wrappers",
-            "notability_score": 75,
-            "repo": "microsoft/kiota",
-            "url": "https://github.com/microsoft/kiota/pull/8065"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 5,
-            "repo": "microsoft/kiota"
+            "event_count": 3,
+            "repo": "MicrosoftDocs/fabric-docs"
           },
           {
             "event_count": 3,
-            "repo": "microsoft/kiota-serialization-multipart-go"
+            "repo": "microsoft/amplifier-app-cli"
+          },
+          {
+            "event_count": 3,
+            "repo": "microsoft/onnxruntime"
           },
           {
             "event_count": 2,
-            "repo": "microsoft/kiota-java"
+            "repo": "microsoft/HealthBotContainerSample"
           },
           {
-            "event_count": 2,
-            "repo": "microsoft/kiota-serialization-form-go"
+            "event_count": 1,
+            "repo": "microsoft/amplifier-module-loop-streaming"
           }
         ]
       },
       {
-        "event_count": 6,
-        "noisy_event_count": 4,
-        "notable_event_count": 4,
-        "product_area": "Developer Tools",
+        "event_count": 3,
+        "noisy_event_count": 0,
+        "notable_event_count": 2,
+        "product_area": ".NET",
         "release_count": 0,
         "repo_count": 2,
         "security_event_count": 0,
         "top_events": [
           {
             "change_type": "docs_update",
-            "committed_at": "2026-08-28T22:06:54Z",
-            "headline": "Repo sync for protected branch",
+            "committed_at": "2026-08-30T01:00:11Z",
+            "headline": "Support F# Document Outline via LSP textDocument/documentSymbol",
             "notability_score": 90,
-            "repo": "MicrosoftDocs/visualstudio-docs",
-            "url": "https://github.com/MicrosoftDocs/visualstudio-docs/pull/11431"
+            "repo": "dotnet/roslyn",
+            "url": "https://github.com/dotnet/roslyn/pull/85087"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-08-29T17:58:10Z",
+            "headline": "Shut down compiler server before publishing rebuild logs",
+            "notability_score": 90,
+            "repo": "dotnet/roslyn",
+            "url": "https://github.com/dotnet/roslyn/pull/85039"
           }
         ],
         "top_repos": [
           {
-            "event_count": 5,
-            "repo": "MicrosoftDocs/visualstudio-docs"
+            "event_count": 2,
+            "repo": "dotnet/roslyn"
           },
           {
             "event_count": 1,
-            "repo": "microsoft/vscode-platform-specific-sample"
+            "repo": "dotnet/runtime"
           }
         ]
       },
       {
-        "event_count": 2,
-        "noisy_event_count": 1,
-        "notable_event_count": 2,
+        "event_count": 1,
+        "noisy_event_count": 0,
+        "notable_event_count": 1,
         "product_area": "PowerShell",
         "release_count": 0,
         "repo_count": 1,
@@ -1137,91 +1004,46 @@
         "top_events": [
           {
             "change_type": "docs_update",
-            "committed_at": "2026-08-28T19:00:18Z",
-            "headline": "TLFS update Aug 2026 (#1702)",
+            "committed_at": "2026-08-29T19:34:51Z",
+            "headline": "Correct 'Edit all mode' behavior description for read-only fields in list forms",
             "notability_score": 90,
-            "repo": "MicrosoftDocs/Virtualization-Documentation",
-            "url": "https://github.com/MicrosoftDocs/Virtualization-Documentation/commit/045e8f4cb5c32833d307b236de1911868325f3ab"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-08-28T23:02:14Z",
-            "headline": "Merge pull request #1703 from MicrosoftDocs/main",
-            "notability_score": 70,
-            "repo": "MicrosoftDocs/Virtualization-Documentation",
-            "url": "https://github.com/MicrosoftDocs/Virtualization-Documentation/commit/64807f67af2ad3ece31b64b2f8224d22a259e6cc"
-          }
-        ],
-        "top_repos": [
-          {
-            "event_count": 2,
-            "repo": "MicrosoftDocs/Virtualization-Documentation"
-          }
-        ]
-      },
-      {
-        "event_count": 2,
-        "noisy_event_count": 0,
-        "notable_event_count": 2,
-        "product_area": "Windows",
-        "release_count": 0,
-        "repo_count": 2,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-08-28T21:42:18Z",
-            "headline": "Document User age-verification and age-range methods",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/winrt-api",
-            "url": "https://github.com/MicrosoftDocs/winrt-api/pull/2556"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-08-28T18:21:44Z",
-            "headline": "Propagate the PackageReference version into the C# wapproj template's BlankApp project file",
-            "notability_score": 90,
-            "repo": "microsoft/WindowsAppSDK",
-            "url": "https://github.com/microsoft/WindowsAppSDK/pull/6705"
+            "repo": "SharePoint/sp-dev-docs",
+            "url": "https://github.com/SharePoint/sp-dev-docs/pull/11010"
           }
         ],
         "top_repos": [
           {
             "event_count": 1,
-            "repo": "MicrosoftDocs/winrt-api"
-          },
-          {
-            "event_count": 1,
-            "repo": "microsoft/WindowsAppSDK"
+            "repo": "SharePoint/sp-dev-docs"
           }
         ]
       }
     ],
-    "release_count": 11,
+    "release_count": 0,
     "report_json": "latest.json",
     "report_md": "latest.md",
-    "repos_with_movement": 93,
+    "repos_with_movement": 24,
     "summary_json": "latest.summary.json"
   },
-  "report_count": 82,
+  "report_count": 83,
   "schema_url": "schemas/report-index.v1.schema.json",
   "schema_version": 1,
   "top_products": [
     {
       "product": "Azure",
-      "report_count": 12847
+      "report_count": 12869
     },
     {
       "product": "Unmapped Activity",
-      "report_count": 5652
+      "report_count": 5660
     },
     {
       "product": ".NET",
-      "report_count": 2087
+      "report_count": 2091
     },
     {
       "product": "Azure SDK",
-      "report_count": 1821
+      "report_count": 1826
     },
     {
       "product": "Microsoft Graph",
@@ -1229,11 +1051,11 @@
     },
     {
       "product": "PowerShell",
-      "report_count": 1432
+      "report_count": 1435
     },
     {
       "product": "Azure AI",
-      "report_count": 999
+      "report_count": 1006
     },
     {
       "product": "Identity",
@@ -1255,19 +1077,19 @@
   "top_recurring_repos": [
     {
       "full_name": "dotnet/runtime",
-      "report_count": 82
+      "report_count": 83
     },
     {
       "full_name": "Azure/azure-sdk-for-net",
-      "report_count": 77
+      "report_count": 78
     },
     {
       "full_name": "MicrosoftDocs/azure-docs",
-      "report_count": 75
+      "report_count": 76
     },
     {
       "full_name": "microsoft/onnxruntime",
-      "report_count": 73
+      "report_count": 74
     },
     {
       "full_name": "Azure/azure-sdk-for-java",
@@ -1275,18 +1097,18 @@
     },
     {
       "full_name": "Azure/azure-sdk-for-python",
-      "report_count": 71
+      "report_count": 72
     },
     {
       "full_name": "dotnet/roslyn",
-      "report_count": 70
-    },
-    {
-      "full_name": "microsoft/TypeAgent",
-      "report_count": 70
+      "report_count": 71
     },
     {
       "full_name": "Azure/azure-dev",
+      "report_count": 71
+    },
+    {
+      "full_name": "microsoft/TypeAgent",
       "report_count": 70
     },
     {
@@ -1294,11 +1116,11 @@
       "report_count": 69
     },
     {
-      "full_name": "MicrosoftDocs/azure-docs-sdk-java",
-      "report_count": 68
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "report_count": 69
     },
     {
-      "full_name": "MicrosoftDocs/fabric-docs",
+      "full_name": "MicrosoftDocs/azure-docs-sdk-java",
       "report_count": 68
     },
     {
@@ -1356,16 +1178,16 @@
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 16486,
-      "release_count": 497,
+      "default_branch_commits": 15862,
+      "release_count": 485,
       "report_count": 30,
-      "repos_with_movement": 3011
+      "repos_with_movement": 2920
     },
     "last_7_days": {
-      "default_branch_commits": 4063,
-      "release_count": 134,
+      "default_branch_commits": 4073,
+      "release_count": 132,
       "report_count": 7,
-      "repos_with_movement": 731
+      "repos_with_movement": 743
     }
   }
 }
