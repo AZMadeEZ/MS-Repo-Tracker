@@ -1051,116 +1051,126 @@
       "report_json": "2026-09-21.json",
       "report_md": "2026-09-21.md",
       "repos_with_movement": 106
+    },
+    {
+      "date": "2026-09-22",
+      "default_branch_commits": 684,
+      "generated_at": "2026-09-22T17:40:30.627337Z",
+      "high_signal_count": 25,
+      "release_count": 14,
+      "report_json": "2026-09-22.json",
+      "report_md": "2026-09-22.md",
+      "repos_with_movement": 127
     }
   ],
-  "generated_at": "2026-09-21T18:49:14.753779Z",
+  "generated_at": "2026-09-22T17:42:08.017832Z",
   "latest": {
     "consumer_md": "latest.consumer.md",
-    "date": "2026-09-21",
-    "default_branch_commits": 416,
+    "date": "2026-09-22",
+    "default_branch_commits": 684,
     "event_stream": "latest.events.ndjson",
-    "generated_at": "2026-09-21T18:47:36.321306Z",
+    "generated_at": "2026-09-22T17:40:30.627337Z",
     "high_signal_count": 25,
     "product_area_summary": [
       {
-        "event_count": 131,
-        "noisy_event_count": 60,
-        "notable_event_count": 98,
+        "event_count": 158,
+        "noisy_event_count": 51,
+        "notable_event_count": 133,
         "product_area": "Azure",
-        "release_count": 10,
-        "repo_count": 42,
-        "security_event_count": 2,
+        "release_count": 9,
+        "repo_count": 51,
+        "security_event_count": 3,
         "top_events": [
           {
             "change_type": "security_fix",
-            "committed_at": "2026-09-21T17:11:08Z",
-            "headline": "Security refresh - set-permissions-access-work-tracking.md (#9729)",
+            "committed_at": "2026-09-22T14:31:55Z",
+            "headline": "Repo sync for protected branch",
             "notability_score": 100,
-            "repo": "MicrosoftDocs/azure-devops-docs",
-            "url": "https://github.com/MicrosoftDocs/azure-devops-docs/commit/b4ec4acb6183f7ada8cd2f7a893dfb74ab24e74a"
+            "repo": "MicrosoftDocs/azure-stack-docs",
+            "url": "https://github.com/MicrosoftDocs/azure-stack-docs/pull/4495"
           },
           {
             "change_type": "security_fix",
-            "committed_at": "2026-09-21T16:54:47Z",
-            "headline": "General updates, SEO improvements, and security checks",
+            "committed_at": "2026-09-22T08:00:49Z",
+            "headline": "[azure-ai-ml] Update setuptools development pin to fix CVE-2025-47273",
             "notability_score": 100,
-            "repo": "MicrosoftDocs/azure-dev-docs",
-            "url": "https://github.com/MicrosoftDocs/azure-dev-docs/commit/76ae574ad85a51d105d2549e4256299195f4a5c9"
+            "repo": "Azure/azure-sdk-for-python",
+            "url": "https://github.com/Azure/azure-sdk-for-python/pull/49111"
           },
           {
             "change_type": "release",
-            "committed_at": "2026-09-21T18:30:15Z",
-            "headline": "azure-mgmt-resource-policy_1.0.0",
+            "committed_at": "2026-09-22T17:28:13Z",
+            "headline": "com.azure.resourcemanager+azure-resourcemanager-sql_2.55.0-beta.1",
             "notability_score": 100,
-            "repo": "Azure/azure-sdk-for-python",
-            "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resource-policy_1.0.0"
+            "repo": "Azure/azure-sdk-for-java",
+            "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-sql_2.55.0-beta.1"
           }
         ],
         "top_repos": [
           {
-            "event_count": 9,
-            "repo": "Azure/azure-sdk-for-net"
+            "event_count": 8,
+            "repo": "Azure/azure-sdk-for-python"
           },
           {
             "event_count": 7,
-            "repo": "Azure/azure-sdk-for-python"
+            "repo": "Azure/azure-sdk-for-java"
           },
           {
             "event_count": 7,
             "repo": "Azure/azure-cli-extensions"
           },
           {
-            "event_count": 5,
-            "repo": "MicrosoftDocs/architecture-center"
+            "event_count": 6,
+            "repo": "Azure/azure-sdk-for-js"
           },
           {
-            "event_count": 5,
-            "repo": "Azure/azure-sdk-for-java"
+            "event_count": 6,
+            "repo": "Azure/GPT-RAG"
           }
         ]
       },
       {
-        "event_count": 89,
-        "noisy_event_count": 23,
-        "notable_event_count": 66,
+        "event_count": 115,
+        "noisy_event_count": 35,
+        "notable_event_count": 93,
         "product_area": "Unmapped Activity",
-        "release_count": 1,
-        "repo_count": 30,
+        "release_count": 4,
+        "repo_count": 36,
         "security_event_count": 1,
         "top_events": [
           {
             "change_type": "security_fix",
-            "committed_at": "2026-09-21T10:26:41Z",
-            "headline": "fix(runtime): resolve provider preflight from the configured source",
-            "notability_score": 95,
-            "repo": "microsoft/amplifier-app-cli",
-            "url": "https://github.com/microsoft/amplifier-app-cli/pull/358"
+            "committed_at": "2026-09-21T23:40:23Z",
+            "headline": "Workforce Engagement Management app, security roles (#708)",
+            "notability_score": 100,
+            "repo": "MicrosoftDocs/dynamics-365-contact-center",
+            "url": "https://github.com/MicrosoftDocs/dynamics-365-contact-center/commit/7e39f1f29f66a7f7298e8782a926336d71018047"
           },
           {
             "change_type": "release",
-            "committed_at": "2026-09-21T14:15:26Z",
-            "headline": "Power Pages templates templates-v1.0.0",
-            "notability_score": 90,
-            "repo": "microsoft/power-pages-samples",
-            "url": "https://github.com/microsoft/power-pages-samples/releases/tag/templates-v1.0.0"
+            "committed_at": "2026-09-22T08:14:41Z",
+            "headline": "Now module to merge into main from release branch (#56241)",
+            "notability_score": 100,
+            "repo": "MicrosoftDocs/learn",
+            "url": "https://github.com/MicrosoftDocs/learn/commit/add98c428ee12171e0323d0ca696aa919c2e9558"
           },
           {
-            "change_type": "feature",
-            "committed_at": "2026-09-21T17:09:51Z",
-            "headline": "Add workaround for intercompany PO distribution error (#12426)",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/SupportArticles-docs",
-            "url": "https://github.com/MicrosoftDocs/SupportArticles-docs/commit/bcf70d2c666ef389cec2cbb8b983cef3f8fb0654"
+            "change_type": "release",
+            "committed_at": "2026-09-21T22:48:50Z",
+            "headline": "2026.3.105",
+            "notability_score": 100,
+            "repo": "microsoft/pylance-release",
+            "url": "https://github.com/microsoft/pylance-release/releases/tag/2026.3.105"
           }
         ],
         "top_repos": [
           {
-            "event_count": 5,
-            "repo": "MicrosoftDocs/copilot-connectors"
+            "event_count": 6,
+            "repo": "microsoft/onnxruntime"
           },
           {
             "event_count": 5,
-            "repo": "MicrosoftDocs/SupportArticles-docs"
+            "repo": "MicrosoftDocs/sql-docs"
           },
           {
             "event_count": 5,
@@ -1168,75 +1178,75 @@
           },
           {
             "event_count": 5,
-            "repo": "MicrosoftDocs/power-pages-docs"
+            "repo": "MicrosoftDocs/copilot-connectors"
           },
           {
             "event_count": 5,
-            "repo": "microsoft/amplifier-app-cli"
+            "repo": "microsoft/power-pages-samples"
           }
         ]
       },
       {
-        "event_count": 51,
-        "noisy_event_count": 37,
-        "notable_event_count": 34,
+        "event_count": 32,
+        "noisy_event_count": 27,
+        "notable_event_count": 24,
         "product_area": "Microsoft Graph",
-        "release_count": 12,
-        "repo_count": 11,
+        "release_count": 0,
+        "repo_count": 15,
         "security_event_count": 0,
         "top_events": [
           {
-            "change_type": "release",
-            "committed_at": "2026-09-21T16:00:53Z",
-            "headline": "v0.23.0",
-            "notability_score": 100,
-            "repo": "microsoft/kiota-ruby",
-            "url": "https://github.com/microsoft/kiota-ruby/releases/tag/v0.23.0"
+            "change_type": "bug_fix",
+            "committed_at": "2026-09-22T16:44:46Z",
+            "headline": "SER Demo Sakura forest: fix reflection hint",
+            "notability_score": 90,
+            "repo": "microsoft/DirectX-Graphics-Samples",
+            "url": "https://github.com/microsoft/DirectX-Graphics-Samples/pull/973"
           },
           {
-            "change_type": "release",
-            "committed_at": "2026-09-21T16:00:27Z",
-            "headline": "chore(main): release 0.23.0",
-            "notability_score": 100,
-            "repo": "microsoft/kiota-ruby",
-            "url": "https://github.com/microsoft/kiota-ruby/pull/161"
+            "change_type": "bug_fix",
+            "committed_at": "2026-09-22T15:38:54Z",
+            "headline": "SER Demo SakuraForest: Use fixed seed for foliage generation",
+            "notability_score": 90,
+            "repo": "microsoft/DirectX-Graphics-Samples",
+            "url": "https://github.com/microsoft/DirectX-Graphics-Samples/pull/972"
           },
           {
-            "change_type": "release",
-            "committed_at": "2026-09-21T15:58:25Z",
-            "headline": "@microsoft/kiota-serialization-text: v1.0.0-preview.108",
-            "notability_score": 100,
-            "repo": "microsoft/kiota-typescript",
-            "url": "https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-text%401.0.0-preview.108"
+            "change_type": "ci_infra",
+            "committed_at": "2026-09-21T23:56:15Z",
+            "headline": "Pin GitHub Actions to full-length commit SHAs",
+            "notability_score": 80,
+            "repo": "microsoftgraph/dotnet-aad-query-sample",
+            "url": "https://github.com/microsoftgraph/dotnet-aad-query-sample/pull/35"
           }
         ],
         "top_repos": [
           {
-            "event_count": 10,
-            "repo": "microsoft/kiota-python"
-          },
-          {
-            "event_count": 9,
-            "repo": "microsoft/kiota-typescript"
-          },
-          {
-            "event_count": 6,
-            "repo": "microsoft/kiota-ruby"
+            "event_count": 5,
+            "repo": "microsoft/DirectX-Graphics-Samples"
           },
           {
             "event_count": 5,
             "repo": "microsoft/kiota"
           },
           {
-            "event_count": 5,
-            "repo": "microsoft/kiota-java"
+            "event_count": 4,
+            "repo": "microsoft/kiota-python"
+          },
+          {
+            "event_count": 3,
+            "repo": "microsoft/kiota-typescript"
+          },
+          {
+            "event_count": 3,
+            "repo": "microsoft/kiota-ruby"
           }
         ]
       },
       {
-        "event_count": 28,
-        "noisy_event_count": 7,
-        "notable_event_count": 13,
+        "event_count": 37,
+        "noisy_event_count": 12,
+        "notable_event_count": 23,
         "product_area": ".NET",
         "release_count": 0,
         "repo_count": 11,
@@ -1244,33 +1254,33 @@
         "top_events": [
           {
             "change_type": "feature",
-            "committed_at": "2026-09-21T16:23:44Z",
-            "headline": "Improve OTLP observability example: add usings, reorder steps, refresh versions",
+            "committed_at": "2026-09-22T16:20:58Z",
+            "headline": "Rework Blazor validation docs and add .NET 11 features",
             "notability_score": 90,
-            "repo": "dotnet/docs",
-            "url": "https://github.com/dotnet/docs/pull/55623"
+            "repo": "dotnet/AspNetCore.Docs",
+            "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37488"
+          },
+          {
+            "change_type": "feature",
+            "committed_at": "2026-09-21T22:15:53Z",
+            "headline": "Enforce HTTPS: add SLES/openSUSE certificate trust instructions (#28292)",
+            "notability_score": 90,
+            "repo": "dotnet/AspNetCore.Docs",
+            "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37675"
           },
           {
             "change_type": "bug_fix",
-            "committed_at": "2026-09-21T16:14:07Z",
-            "headline": "Fix typo from `senario` to `scenario`",
+            "committed_at": "2026-09-22T10:29:53Z",
+            "headline": "Fix razor generator/ed files not appearing in solution explorer",
             "notability_score": 90,
-            "repo": "dotnet/runtime",
-            "url": "https://github.com/dotnet/runtime/pull/134338"
-          },
-          {
-            "change_type": "bug_fix",
-            "committed_at": "2026-09-21T15:41:30Z",
-            "headline": "Fix typo from `transaciton` to `transaction`",
-            "notability_score": 90,
-            "repo": "dotnet/runtime",
-            "url": "https://github.com/dotnet/runtime/pull/134333"
+            "repo": "dotnet/roslyn",
+            "url": "https://github.com/dotnet/roslyn/pull/85673"
           }
         ],
         "top_repos": [
           {
             "event_count": 5,
-            "repo": "dotnet/docs"
+            "repo": "dotnet/roslyn"
           },
           {
             "event_count": 5,
@@ -1278,72 +1288,84 @@
           },
           {
             "event_count": 5,
-            "repo": "dotnet/docfx"
+            "repo": "dotnet/AspNetCore.Docs"
           },
           {
-            "event_count": 4,
-            "repo": "dotnet/msbuild"
+            "event_count": 5,
+            "repo": "dotnet/efcore"
           },
           {
-            "event_count": 2,
-            "repo": "MicrosoftLearning/mslearn-csharp-programming"
+            "event_count": 5,
+            "repo": "dotnet/docs"
           }
         ]
       },
       {
-        "event_count": 5,
-        "noisy_event_count": 2,
-        "notable_event_count": 5,
+        "event_count": 15,
+        "noisy_event_count": 7,
+        "notable_event_count": 14,
         "product_area": "Identity",
         "release_count": 0,
-        "repo_count": 2,
-        "security_event_count": 1,
+        "repo_count": 3,
+        "security_event_count": 0,
         "top_events": [
           {
-            "change_type": "security_fix",
-            "committed_at": "2026-09-21T01:31:23Z",
-            "headline": "Update Telesign Security Store link",
-            "notability_score": 100,
-            "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/73584ba66245f917915b884cbd4bcd12138586b3"
+            "change_type": "bug_fix",
+            "committed_at": "2026-09-22T10:52:45Z",
+            "headline": "Fix AL MCP Server startup command to include required project path",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+            "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/pull/3638"
           },
           {
-            "change_type": "feature",
-            "committed_at": "2026-09-21T01:27:03Z",
-            "headline": "Add telephony provider offer links",
+            "change_type": "docs_update",
+            "committed_at": "2026-09-22T16:04:47Z",
+            "headline": "Adding screenshot in the Netskope article (#14431)",
             "notability_score": 90,
             "repo": "MicrosoftDocs/entra-docs",
-            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/8672b7c052b4c815977be391eca1c1918addc4a6"
+            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/602c8e73e09773d6de6cb61408133fdc9cb24de3"
           },
           {
-            "change_type": "training_update",
-            "committed_at": "2026-09-21T16:12:19Z",
-            "headline": "Assigned ID Ranges to all LABs and refactored LAB 02 Upgrade to match current design patterns",
+            "change_type": "docs_update",
+            "committed_at": "2026-09-22T15:00:00Z",
+            "headline": "Learn Editor: Update concept-continuous-access-evaluation.md",
             "notability_score": 90,
-            "repo": "MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
-            "url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification/pull/14"
+            "repo": "MicrosoftDocs/entra-docs",
+            "url": "https://github.com/MicrosoftDocs/entra-docs/commit/2bb6142a6edb5713ab8975f937c7ba3097bddfbc"
           }
         ],
         "top_repos": [
           {
-            "event_count": 4,
+            "event_count": 5,
             "repo": "MicrosoftDocs/entra-docs"
           },
           {
-            "event_count": 1,
-            "repo": "MicrosoftLearning/MB-820-Business-Central-Developer-Certification"
+            "event_count": 5,
+            "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+          },
+          {
+            "event_count": 5,
+            "repo": "MicrosoftDocs/dynamics365smb-docs"
           }
         ]
       },
       {
-        "event_count": 5,
+        "event_count": 12,
         "noisy_event_count": 2,
-        "notable_event_count": 4,
+        "notable_event_count": 12,
         "product_area": "PowerShell",
         "release_count": 1,
-        "repo_count": 3,
+        "repo_count": 5,
         "security_event_count": 0,
         "top_events": [
+          {
+            "change_type": "release",
+            "committed_at": "2026-09-22T00:52:30Z",
+            "headline": "Update release notes for PS7.7-p5 release",
+            "notability_score": 100,
+            "repo": "MicrosoftDocs/PowerShell-Docs",
+            "url": "https://github.com/MicrosoftDocs/PowerShell-Docs/pull/13295"
+          },
           {
             "change_type": "release",
             "committed_at": "2026-09-21T18:45:34Z",
@@ -1353,85 +1375,44 @@
             "url": "https://github.com/microsoft/winget-cli/releases/tag/v1.29.380"
           },
           {
-            "change_type": "bug_fix",
-            "committed_at": "2026-09-21T16:00:52Z",
-            "headline": "Fix dangling view",
+            "change_type": "feature",
+            "committed_at": "2026-09-22T15:59:35Z",
+            "headline": "Add index schema 2.1 with delta support",
             "notability_score": 90,
             "repo": "microsoft/winget-cli",
-            "url": "https://github.com/microsoft/winget-cli/pull/6532"
-          },
-          {
-            "change_type": "bug_fix",
-            "committed_at": "2026-09-21T06:39:23Z",
-            "headline": "fix(ci): stop no-op label events from cancelling PR deployments",
-            "notability_score": 90,
-            "repo": "microsoft/finops-toolkit",
-            "url": "https://github.com/microsoft/finops-toolkit/pull/2303"
+            "url": "https://github.com/microsoft/winget-cli/pull/6523"
           }
         ],
         "top_repos": [
           {
-            "event_count": 2,
+            "event_count": 6,
             "repo": "microsoft/winget-cli"
           },
           {
             "event_count": 2,
-            "repo": "microsoft/finops-toolkit"
+            "repo": "MicrosoftDocs/PowerShell-Docs"
           },
-          {
-            "event_count": 1,
-            "repo": "MicrosoftDocs/power-platform"
-          }
-        ]
-      },
-      {
-        "event_count": 4,
-        "noisy_event_count": 0,
-        "notable_event_count": 2,
-        "product_area": "Windows",
-        "release_count": 0,
-        "repo_count": 3,
-        "security_event_count": 0,
-        "top_events": [
-          {
-            "change_type": "feature",
-            "committed_at": "2026-09-20T22:06:59Z",
-            "headline": "Add schema documentation for windows.diagnosticServiceModule extension",
-            "notability_score": 90,
-            "repo": "MicrosoftDocs/winrt-related",
-            "url": "https://github.com/MicrosoftDocs/winrt-related/pull/412"
-          },
-          {
-            "change_type": "docs_update",
-            "committed_at": "2026-09-21T12:57:47Z",
-            "headline": "Retire the standalone Storage Pickers UI test app",
-            "notability_score": 90,
-            "repo": "microsoft/WindowsAppSDK",
-            "url": "https://github.com/microsoft/WindowsAppSDK/pull/6779"
-          }
-        ],
-        "top_repos": [
           {
             "event_count": 2,
-            "repo": "microsoft/Windows-Camera"
+            "repo": "MicrosoftDocs/PowerShell-Docs-PSGet"
           },
           {
             "event_count": 1,
-            "repo": "microsoft/WindowsAppSDK"
+            "repo": "MicrosoftDocs/windows-powershell-docs"
           },
           {
             "event_count": 1,
-            "repo": "MicrosoftDocs/winrt-related"
+            "repo": "MicrosoftDocs/office-docs-powershell"
           }
         ]
       },
       {
-        "event_count": 2,
-        "noisy_event_count": 0,
-        "notable_event_count": 2,
+        "event_count": 9,
+        "noisy_event_count": 4,
+        "notable_event_count": 8,
         "product_area": "Developer Tools",
         "release_count": 0,
-        "repo_count": 1,
+        "repo_count": 2,
         "security_event_count": 0,
         "top_events": [
           {
@@ -1441,185 +1422,258 @@
             "notability_score": 100,
             "repo": "microsoft/vscode-docs",
             "url": "https://github.com/microsoft/vscode-docs/pull/10336"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-09-21T22:06:55Z",
+            "headline": "Repo sync for protected branch",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/visualstudio-docs",
+            "url": "https://github.com/MicrosoftDocs/visualstudio-docs/pull/11451"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-09-21T20:16:20Z",
+            "headline": "Docs/agent hooks harness support",
+            "notability_score": 90,
+            "repo": "microsoft/vscode-docs",
+            "url": "https://github.com/microsoft/vscode-docs/pull/10329"
           }
         ],
         "top_repos": [
           {
-            "event_count": 2,
+            "event_count": 5,
+            "repo": "MicrosoftDocs/visualstudio-docs"
+          },
+          {
+            "event_count": 4,
             "repo": "microsoft/vscode-docs"
+          }
+        ]
+      },
+      {
+        "event_count": 7,
+        "noisy_event_count": 0,
+        "notable_event_count": 5,
+        "product_area": "Microsoft 365",
+        "release_count": 0,
+        "repo_count": 4,
+        "security_event_count": 0,
+        "top_events": [
+          {
+            "change_type": "feature",
+            "committed_at": "2026-09-21T21:06:12Z",
+            "headline": "Add new Copilot origins to validDomains.json",
+            "notability_score": 90,
+            "repo": "OfficeDev/microsoft-teams-library-js",
+            "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3172"
+          },
+          {
+            "change_type": "feature",
+            "committed_at": "2026-09-21T18:06:28Z",
+            "headline": "Add LOB MCP app design guidance (#1703)",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/m365copilot-docs",
+            "url": "https://github.com/MicrosoftDocs/m365copilot-docs/commit/e5b15bd17fb45c1410dc6a6a0ce986db5a45fa77"
+          },
+          {
+            "change_type": "docs_update",
+            "committed_at": "2026-09-21T19:34:48Z",
+            "headline": "[Doc Improvement] Enhancements to Formatting bot messages content",
+            "notability_score": 90,
+            "repo": "MicrosoftDocs/msteams-docs",
+            "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14582"
+          }
+        ],
+        "top_repos": [
+          {
+            "event_count": 3,
+            "repo": "MicrosoftDocs/m365copilot-docs"
+          },
+          {
+            "event_count": 2,
+            "repo": "microsoft/atlas-design"
+          },
+          {
+            "event_count": 1,
+            "repo": "OfficeDev/microsoft-teams-library-js"
+          },
+          {
+            "event_count": 1,
+            "repo": "MicrosoftDocs/msteams-docs"
           }
         ]
       }
     ],
-    "release_count": 24,
+    "release_count": 14,
     "report_json": "latest.json",
     "report_md": "latest.md",
-    "repos_with_movement": 106,
+    "repos_with_movement": 127,
     "summary_json": "latest.summary.json"
   },
-  "report_count": 105,
+  "report_count": 106,
   "schema_url": "schemas/report-index.v1.schema.json",
   "schema_version": 1,
   "top_products": [
     {
       "product": "Azure",
-      "report_count": 16593
+      "report_count": 16777
     },
     {
       "product": "Unmapped Activity",
-      "report_count": 7010
+      "report_count": 7103
     },
     {
       "product": ".NET",
-      "report_count": 2634
+      "report_count": 2668
     },
     {
       "product": "Azure SDK",
-      "report_count": 2382
+      "report_count": 2416
     },
     {
       "product": "Microsoft Graph",
-      "report_count": 2194
+      "report_count": 2249
     },
     {
       "product": "PowerShell",
-      "report_count": 1865
+      "report_count": 1888
     },
     {
       "product": "Azure AI",
-      "report_count": 1279
+      "report_count": 1292
     },
     {
       "product": "Identity",
-      "report_count": 961
+      "report_count": 978
     },
     {
       "product": "Microsoft 365",
-      "report_count": 958
+      "report_count": 967
     },
     {
       "product": "Developer Tools",
-      "report_count": 653
+      "report_count": 663
     },
     {
       "product": "Windows",
-      "report_count": 475
+      "report_count": 476
     }
   ],
   "top_recurring_repos": [
     {
       "full_name": "dotnet/runtime",
-      "report_count": 105
+      "report_count": 106
     },
     {
       "full_name": "Azure/azure-sdk-for-net",
-      "report_count": 100
+      "report_count": 101
     },
     {
       "full_name": "MicrosoftDocs/azure-docs",
-      "report_count": 97
+      "report_count": 98
     },
     {
       "full_name": "dotnet/roslyn",
-      "report_count": 93
+      "report_count": 94
     },
     {
       "full_name": "microsoft/onnxruntime",
-      "report_count": 93
+      "report_count": 94
     },
     {
       "full_name": "Azure/azure-sdk-for-java",
-      "report_count": 92
+      "report_count": 93
     },
     {
       "full_name": "Azure/azure-sdk-for-python",
-      "report_count": 92
+      "report_count": 93
     },
     {
       "full_name": "Azure/azure-dev",
-      "report_count": 89
+      "report_count": 90
     },
     {
       "full_name": "MicrosoftDocs/fabric-docs",
-      "report_count": 89
+      "report_count": 90
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-sdk-java",
-      "report_count": 87
+      "report_count": 88
     },
     {
       "full_name": "MicrosoftDocs/entra-docs",
-      "report_count": 87
+      "report_count": 88
     },
     {
       "full_name": "microsoft/TypeAgent",
-      "report_count": 86
+      "report_count": 87
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-sdk-python",
-      "report_count": 86
+      "report_count": 87
     },
     {
       "full_name": "Azure/azure-sdk-for-js",
-      "report_count": 85
+      "report_count": 86
     },
     {
       "full_name": "Azure/azure-sdk-for-go",
-      "report_count": 85
+      "report_count": 86
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-sdk-dotnet",
-      "report_count": 85
+      "report_count": 86
     },
     {
       "full_name": "MicrosoftDocs/azure-monitor-docs",
-      "report_count": 85
+      "report_count": 86
     },
     {
       "full_name": "dotnet/msbuild",
-      "report_count": 83
+      "report_count": 84
     },
     {
       "full_name": "dotnet/docs",
-      "report_count": 83
+      "report_count": 84
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-sdk-node",
-      "report_count": 83
+      "report_count": 84
     },
     {
       "full_name": "MicrosoftDocs/azure-aks-docs",
-      "report_count": 81
+      "report_count": 82
     },
     {
       "full_name": "MicrosoftDocs/azure-docs-cli",
-      "report_count": 80
+      "report_count": 81
     },
     {
       "full_name": "Azure/azure-cli-extensions",
-      "report_count": 79
+      "report_count": 80
     },
     {
       "full_name": "microsoft/vscode-docs",
-      "report_count": 77
+      "report_count": 78
     },
     {
       "full_name": "Azure/azure-sdk-for-rust",
-      "report_count": 77
+      "report_count": 78
     }
   ],
   "trends": {
     "last_30_days": {
-      "default_branch_commits": 16732,
-      "release_count": 571,
+      "default_branch_commits": 17388,
+      "release_count": 583,
       "report_count": 30,
-      "repos_with_movement": 3112
+      "repos_with_movement": 3227
     },
     "last_7_days": {
-      "default_branch_commits": 4589,
-      "release_count": 159,
+      "default_branch_commits": 4447,
+      "release_count": 156,
       "report_count": 7,
-      "repos_with_movement": 787
+      "repos_with_movement": 758
     }
   }
 }
