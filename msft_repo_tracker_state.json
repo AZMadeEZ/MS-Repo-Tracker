@@ -682,26 +682,26 @@
     }
   },
   "last_digest": {
-    "candidate_repos": 285,
-    "completed_at": "2026-09-25T17:59:43.448419Z",
+    "candidate_repos": 117,
+    "completed_at": "2026-09-26T17:16:59.009054Z",
     "digest_overlap_hours": 2,
     "events_calibration_enabled": false,
     "events_prefilter_mode": "off",
     "filtered_repos": 2691,
     "graphql_batch_size": 35,
-    "graphql_detail_batches": 5,
+    "graphql_detail_batches": 3,
     "graphql_enrichment_mode": "two-stage",
     "hours_requested": 24,
-    "inventory_repos": 16675,
+    "inventory_repos": 16680,
     "max_lookback_hours": 168,
-    "pushed_at_candidate_repos": 285,
+    "pushed_at_candidate_repos": 117,
     "release_mode": "candidates-and-watched",
     "repos_checked_for_releases": 150,
-    "repos_with_movement": 163,
-    "repos_with_releases": 14,
-    "since": "2026-09-23T15:53:11.626347Z",
+    "repos_with_movement": 90,
+    "repos_with_releases": 9,
+    "since": "2026-09-25T15:59:43.448419Z",
     "state_window_enabled": true,
-    "until": "2026-09-25T17:59:43.448419Z"
+    "until": "2026-09-26T17:16:59.009054Z"
   },
   "last_events_calibration": {
     "completed_at": "2026-09-21T19:45:02.432389Z",
@@ -1037,43 +1037,57 @@
   "last_inventory_lifecycle": {
     "archived_changed": [
       {
-        "archived": true,
+        "archived": false,
         "category": "other",
         "created_at": "2017-12-19T18:33:42Z",
-        "current_archived": true,
+        "current_archived": false,
         "default_branch": "main",
         "fork": false,
         "full_name": "Azure/azure-storage-azcopy",
         "html_url": "https://github.com/Azure/azure-storage-azcopy",
         "name": "azure-storage-azcopy",
         "org": "Azure",
-        "previous_archived": false,
-        "pushed_at": "2026-09-25T16:11:48Z"
+        "previous_archived": true,
+        "pushed_at": "2026-09-25T21:12:15Z"
       },
       {
         "archived": true,
-        "category": "samples",
-        "created_at": "2023-04-06T21:16:41Z",
+        "category": "other",
+        "created_at": "2016-11-01T21:43:39Z",
         "current_archived": true,
+        "default_branch": "archive",
+        "fork": false,
+        "full_name": "dotnet/linker",
+        "html_url": "https://github.com/dotnet/linker",
+        "name": "linker",
+        "org": "dotnet",
+        "previous_archived": false,
+        "pushed_at": "2026-09-16T08:11:47Z"
+      },
+      {
+        "archived": false,
+        "category": "other",
+        "created_at": "2026-04-02T16:11:32Z",
+        "current_archived": false,
         "default_branch": "main",
         "fork": false,
-        "full_name": "microsoft/sample-app-aoai-chatGPT",
-        "html_url": "https://github.com/microsoft/sample-app-aoai-chatGPT",
-        "name": "sample-app-aoai-chatGPT",
+        "full_name": "microsoft/Build26-LAB501-from-zero-to-deployed-on-azure-with-ai-agents",
+        "html_url": "https://github.com/microsoft/Build26-LAB501-from-zero-to-deployed-on-azure-with-ai-agents",
+        "name": "Build26-LAB501-from-zero-to-deployed-on-azure-with-ai-agents",
         "org": "microsoft",
-        "previous_archived": false,
-        "pushed_at": "2026-09-24T00:45:02Z"
+        "previous_archived": true,
+        "pushed_at": "2026-09-25T23:54:39Z"
       }
     ],
     "available": true,
     "category_changed": [],
-    "completed_at": "2026-09-25T17:59:08.065994Z",
+    "completed_at": "2026-09-26T17:16:27.044604Z",
     "counts": {
-      "archived_changed": 2,
+      "archived_changed": 3,
       "category_changed": 0,
       "default_branch_changed": 0,
       "fork_changed": 0,
-      "new_repos": 12,
+      "new_repos": 5,
       "removed_repos": 0
     },
     "default_branch_changed": [],
@@ -1082,147 +1096,63 @@
     "new_repos": [
       {
         "archived": false,
-        "category": "samples",
-        "created_at": "2026-05-15T16:46:58Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "Azure-Samples/azure-monitor-lab",
-        "html_url": "https://github.com/Azure-Samples/azure-monitor-lab",
-        "name": "azure-monitor-lab",
-        "org": "Azure-Samples",
-        "pushed_at": "2026-09-25T17:43:25Z"
-      },
-      {
-        "archived": false,
-        "category": "samples",
-        "created_at": "2026-09-25T04:39:27Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "Azure-Samples/governed-multitenant-agent-platform",
-        "html_url": "https://github.com/Azure-Samples/governed-multitenant-agent-platform",
-        "name": "governed-multitenant-agent-platform",
-        "org": "Azure-Samples",
-        "pushed_at": "2026-09-25T05:08:51Z"
-      },
-      {
-        "archived": false,
         "category": "other",
-        "created_at": "2026-06-30T19:56:29Z",
+        "created_at": "2026-09-26T01:54:29Z",
         "default_branch": "main",
         "fork": false,
-        "full_name": "Azure/sonic-redfish.msft",
-        "html_url": "https://github.com/Azure/sonic-redfish.msft",
-        "name": "sonic-redfish.msft",
+        "full_name": "Azure/terraform-azure-avm-res-signalrservice-webpubsub",
+        "html_url": "https://github.com/Azure/terraform-azure-avm-res-signalrservice-webpubsub",
+        "name": "terraform-azure-avm-res-signalrservice-webpubsub",
         "org": "Azure",
-        "pushed_at": "2026-09-25T17:59:26Z"
+        "pushed_at": "2026-09-26T01:54:59Z"
       },
       {
         "archived": false,
         "category": "other",
-        "created_at": "2026-08-26T00:51:53Z",
+        "created_at": "2026-09-22T04:48:03Z",
         "default_branch": "main",
         "fork": false,
-        "full_name": "microsoft/CABRA",
-        "html_url": "https://github.com/microsoft/CABRA",
-        "name": "CABRA",
+        "full_name": "microsoft/ai_night_scientist",
+        "html_url": "https://github.com/microsoft/ai_night_scientist",
+        "name": "ai_night_scientist",
         "org": "microsoft",
-        "pushed_at": "2026-09-24T22:11:59Z"
+        "pushed_at": "2026-09-26T08:50:20Z"
       },
       {
         "archived": false,
         "category": "other",
-        "created_at": "2026-09-25T01:20:24Z",
+        "created_at": "2026-09-26T04:52:42Z",
         "default_branch": "main",
         "fork": false,
-        "full_name": "microsoft/CoworkSuperUser",
-        "html_url": "https://github.com/microsoft/CoworkSuperUser",
-        "name": "CoworkSuperUser",
+        "full_name": "microsoft/amplifier-bundle-imagegen",
+        "html_url": "https://github.com/microsoft/amplifier-bundle-imagegen",
+        "name": "amplifier-bundle-imagegen",
         "org": "microsoft",
-        "pushed_at": "2026-09-25T15:32:53Z"
+        "pushed_at": "2026-09-26T05:44:53Z"
       },
       {
         "archived": false,
         "category": "other",
-        "created_at": "2026-09-23T18:50:01Z",
+        "created_at": "2026-08-24T18:29:54Z",
         "default_branch": "main",
         "fork": false,
-        "full_name": "microsoft/XBOX-GDK-dotnet",
-        "html_url": "https://github.com/microsoft/XBOX-GDK-dotnet",
-        "name": "XBOX-GDK-dotnet",
+        "full_name": "microsoft/azure-sql-dev-hub",
+        "html_url": "https://github.com/microsoft/azure-sql-dev-hub",
+        "name": "azure-sql-dev-hub",
         "org": "microsoft",
-        "pushed_at": "2026-09-24T19:46:28Z"
+        "pushed_at": "2026-09-25T23:34:31Z"
       },
       {
         "archived": false,
         "category": "other",
-        "created_at": "2026-09-21T02:18:44Z",
+        "created_at": "2026-08-20T21:51:55Z",
         "default_branch": "main",
         "fork": false,
-        "full_name": "microsoft/amplifier-app-tui",
-        "html_url": "https://github.com/microsoft/amplifier-app-tui",
-        "name": "amplifier-app-tui",
+        "full_name": "microsoft/microsoft-sql",
+        "html_url": "https://github.com/microsoft/microsoft-sql",
+        "name": "microsoft-sql",
         "org": "microsoft",
-        "pushed_at": "2026-09-23T13:42:08Z"
-      },
-      {
-        "archived": false,
-        "category": "other",
-        "created_at": "2026-09-21T00:16:29Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "microsoft/amplifier-bundle-work",
-        "html_url": "https://github.com/microsoft/amplifier-bundle-work",
-        "name": "amplifier-bundle-work",
-        "org": "microsoft",
-        "pushed_at": "2026-09-22T17:04:11Z"
-      },
-      {
-        "archived": false,
-        "category": "other",
-        "created_at": "2026-09-21T00:19:30Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "microsoft/amplifier-module-loop-live",
-        "html_url": "https://github.com/microsoft/amplifier-module-loop-live",
-        "name": "amplifier-module-loop-live",
-        "org": "microsoft",
-        "pushed_at": "2026-09-25T13:44:15Z"
-      },
-      {
-        "archived": false,
-        "category": "other",
-        "created_at": "2026-09-21T00:14:57Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "microsoft/amplifier-unified",
-        "html_url": "https://github.com/microsoft/amplifier-unified",
-        "name": "amplifier-unified",
-        "org": "microsoft",
-        "pushed_at": "2026-09-25T14:22:41Z"
-      },
-      {
-        "archived": false,
-        "category": "other",
-        "created_at": "2026-09-17T20:41:30Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "microsoft/azure-dev-tools",
-        "html_url": "https://github.com/microsoft/azure-dev-tools",
-        "name": "azure-dev-tools",
-        "org": "microsoft",
-        "pushed_at": "2026-09-24T19:38:35Z"
-      },
-      {
-        "archived": false,
-        "category": "other",
-        "created_at": "2026-09-02T23:49:59Z",
-        "default_branch": "main",
-        "fork": false,
-        "full_name": "microsoft/opentelemetry-distro-browser",
-        "html_url": "https://github.com/microsoft/opentelemetry-distro-browser",
-        "name": "opentelemetry-distro-browser",
-        "org": "microsoft",
-        "pushed_at": "2026-09-25T17:58:38Z"
+        "pushed_at": "2026-09-25T21:51:09Z"
       }
     ],
     "orgs_completed": [
@@ -1241,19 +1171,19 @@
     "removed_repos": []
   },
   "last_release_scan": {
-    "completed_at": "2026-09-25T18:00:31.324403Z",
+    "completed_at": "2026-09-26T17:17:35.964127Z",
     "enabled": true,
     "error_count": 0,
     "errors": [],
     "max_releases_per_repo": 5,
     "repos_checked": 150,
-    "repos_with_releases": 14,
+    "repos_with_releases": 9,
     "requests_changed": 150,
     "requests_checked": 150,
     "requests_not_modified": 0
   },
   "last_run": {
-    "completed_at": "2026-09-25T17:59:08.065994Z",
+    "completed_at": "2026-09-26T17:16:27.044604Z",
     "include_other_baseline": true,
     "mode": "incremental",
     "orgs_completed": [
@@ -1282,107 +1212,107 @@
       "microsoft",
       "aspnet"
     ],
-    "repos_written": 16675
+    "repos_written": 16680
   },
   "orgs": {
     "Azure": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 3,
-      "last_repo_count": 2745,
+      "last_repo_count": 2746,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:59:26Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T16:59:07Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "Azure-Samples": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 3322,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:43:25Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T17:06:29Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "MicrosoftDocs": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 761,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:56:25Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T17:10:38Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "MicrosoftLearning": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 375,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T16:44:15Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-25T20:58:40Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "OfficeDev": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 389,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:58:18Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T06:49:05Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "PowerShell": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 106,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:44:29Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-25T21:03:20Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "SharePoint": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 1,
       "last_repo_count": 31,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-23T17:53:04Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T16:40:31Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "aspnet": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 112,
       "last_scan_mode": "incremental",
       "last_seen_pushed_at": "2026-09-24T22:40:34Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "dotnet": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 280,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:59:10Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T17:06:40Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "microsoft": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
-      "last_pages_scanned": 7,
-      "last_repo_count": 8321,
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
+      "last_pages_scanned": 6,
+      "last_repo_count": 8325,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T17:59:26Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T17:15:36Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     },
     "microsoftgraph": {
       "last_full_scan_at": "2026-09-20T06:17:44.914394Z",
-      "last_incremental_scan_at": "2026-09-25T17:59:08.065994Z",
+      "last_incremental_scan_at": "2026-09-26T17:16:27.044604Z",
       "last_pages_scanned": 2,
       "last_repo_count": 233,
       "last_scan_mode": "incremental",
-      "last_seen_pushed_at": "2026-09-25T14:00:08Z",
-      "last_successful_scan_at": "2026-09-25T17:59:08.065994Z"
+      "last_seen_pushed_at": "2026-09-26T08:14:50Z",
+      "last_successful_scan_at": "2026-09-26T17:16:27.044604Z"
     }
   },
   "release_request_cache": {
@@ -1689,8 +1619,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:59.204296Z",
-      "etag": "W/\"7c11179bd852636f2c92df94e21843144d2d7bc823d6c1db3a6fb86556a49054\"",
+      "cached_at": "2026-09-26T17:17:12.033821Z",
+      "etag": "W/\"dce7e9959e4c7a74bf974330624d3c4f769cab79e12906783da4c9f52a33e475\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -2815,8 +2745,8 @@
       ]
     },
     "https://api.github.com/repos/Azure-Samples/azure-finops-agent/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:56.897009Z",
-      "etag": "W/\"28ccc039586593c34e0773cb84fa08fa2c2ee9a3a4ba89fa9b5660f187595738\"",
+      "cached_at": "2026-09-26T17:16:59.909105Z",
+      "etag": "W/\"fcab48e1ae440bb9227982ebcf86edca2a58285049ba236b9cc1422796a07054\"",
       "has_next": false,
       "item_count": 3,
       "releases": [
@@ -2916,8 +2846,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure-Samples/azure-monitor-lab/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:49.648703Z",
-      "etag": "W/\"d0517a43a665d92db17956ddcd8f548dcd898921f1cfa9a000d388ac837c2912\"",
+      "cached_at": "2026-09-26T17:17:03.529826Z",
+      "etag": "W/\"6115a6e30f35dbb1d3807d37e64572639c8a198822fde9fd450c9dbee4371838\"",
       "has_next": false,
       "item_count": 2,
       "releases": [
@@ -4009,6 +3939,13 @@
       "item_count": 0,
       "releases": []
     },
+    "https://api.github.com/repos/Azure-Samples/dynamic-sessions-custom-container/releases?per_page=5": {
+      "cached_at": "2026-09-26T17:17:23.950640Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
+      "has_next": false,
+      "item_count": 0,
+      "releases": []
+    },
     "https://api.github.com/repos/Azure-Samples/eShopLite/releases?per_page=5": {
       "cached_at": "2026-07-06T16:32:56.120830Z",
       "etag": "\"e927c55fe9acd1dbe5998b8084483d8182b8d640751f2d3eb7b9743ab0adf9ef\"",
@@ -4043,8 +3980,8 @@
       ]
     },
     "https://api.github.com/repos/Azure-Samples/explore-iot-operations/releases?per_page=5": {
-      "cached_at": "2026-09-21T18:48:29.348928Z",
-      "etag": "W/\"8852a334813fc2b3d15198642dcaa4d5600e19eea290faa11c43291fcd5f74ba\"",
+      "cached_at": "2026-09-26T17:17:15.110733Z",
+      "etag": "W/\"79c5c8bc615ce7ac6923f2fd45a514d1f0bfba8b8127e668df3f7440f696465d\"",
       "has_next": false,
       "item_count": 2,
       "releases": [
@@ -4940,8 +4877,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure-Samples/modernize-bootcamp/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:06.199114Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:20.934716Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -4992,8 +4929,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure-Samples/ms-identity-ciam-native-auth-ios-sample/releases?per_page=5": {
-      "cached_at": "2026-08-18T14:01:56.246106Z",
-      "etag": "\"726f9ed038ddfdb0a28f14b2a86b5304d53aaa87023697817fe1b9d76ceee73b\"",
+      "cached_at": "2026-09-26T17:17:09.601976Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -5366,8 +5303,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure-Samples/postgres-hub/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:59.449456Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:27.968914Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -6085,64 +6022,91 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/GPT-RAG/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:41:03.753159Z",
-      "etag": "W/\"f6ac0facbabd80e335adf00842c87067b90f953f499ac610e7a443dc5263b0aa\"",
+      "cached_at": "2026-09-26T17:17:14.605750Z",
+      "etag": "W/\"d5914ead98efe28965005737a08ece05dec17e4aadb2f1d9b3ee98fbec402236\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
         {
           "draft": false,
-          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.5",
-          "name": "v3.8.5",
+          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.10",
+          "name": "v3.8.10",
           "prerelease": false,
-          "published_at": "2026-09-22T02:01:44Z",
+          "published_at": "2026-09-25T22:49:23Z",
           "repo_full_name": "Azure/GPT-RAG",
-          "tag_name": "v3.8.5"
+          "tag_name": "v3.8.10"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.4",
-          "name": "v3.8.4",
+          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.9",
+          "name": "v3.8.9",
           "prerelease": false,
-          "published_at": "2026-09-21T13:52:04Z",
+          "published_at": "2026-09-25T22:13:18Z",
           "repo_full_name": "Azure/GPT-RAG",
-          "tag_name": "v3.8.4"
+          "tag_name": "v3.8.9"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.3",
-          "name": "v3.8.3",
+          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.8",
+          "name": "v3.8.8",
           "prerelease": false,
-          "published_at": "2026-09-03T18:21:04Z",
+          "published_at": "2026-09-25T20:54:52Z",
           "repo_full_name": "Azure/GPT-RAG",
-          "tag_name": "v3.8.3"
+          "tag_name": "v3.8.8"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.2",
-          "name": "v3.8.2",
+          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.7",
+          "name": "v3.8.7",
           "prerelease": false,
-          "published_at": "2026-09-03T11:30:41Z",
+          "published_at": "2026-09-25T20:39:28Z",
           "repo_full_name": "Azure/GPT-RAG",
-          "tag_name": "v3.8.2"
+          "tag_name": "v3.8.7"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.1",
-          "name": "v3.8.1",
+          "html_url": "https://github.com/Azure/GPT-RAG/releases/tag/v3.8.6",
+          "name": "v3.8.6",
           "prerelease": false,
-          "published_at": "2026-09-03T11:05:17Z",
+          "published_at": "2026-09-25T20:18:46Z",
           "repo_full_name": "Azure/GPT-RAG",
-          "tag_name": "v3.8.1"
+          "tag_name": "v3.8.6"
         }
       ]
     },
     "https://api.github.com/repos/Azure/LogicAppsUX/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:15.078563Z",
-      "etag": "W/\"34c232d3311813293a481b8a81a99365a10a81498e0b65fb8b5ce3a7f167b126\"",
+      "cached_at": "2026-09-26T17:17:03.797344Z",
+      "etag": "W/\"20060bc412b97d1702f28e43bcc8eca2f05d27cf191f153f5b77372200f0ab1d\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1004.0",
+          "name": "Release v5.1004.0",
+          "prerelease": false,
+          "published_at": "2026-09-24T17:09:34Z",
+          "repo_full_name": "Azure/LogicAppsUX",
+          "tag_name": "v5.1004.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1003.0",
+          "name": "Release v5.1003.0",
+          "prerelease": false,
+          "published_at": "2026-09-24T15:03:15Z",
+          "repo_full_name": "Azure/LogicAppsUX",
+          "tag_name": "v5.1003.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1002.6",
+          "name": "Release v5.1002.6",
+          "prerelease": false,
+          "published_at": "2026-09-24T16:54:27Z",
+          "repo_full_name": "Azure/LogicAppsUX",
+          "tag_name": "v5.1002.6"
+        },
         {
           "draft": false,
           "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1002.5",
@@ -6160,33 +6124,6 @@
           "published_at": "2026-09-22T18:54:44Z",
           "repo_full_name": "Azure/LogicAppsUX",
           "tag_name": "v5.1002.4"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1002.3",
-          "name": "Release v5.1002.3",
-          "prerelease": false,
-          "published_at": "2026-09-22T18:14:12Z",
-          "repo_full_name": "Azure/LogicAppsUX",
-          "tag_name": "v5.1002.3"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1002.2",
-          "name": "Release v5.1002.2",
-          "prerelease": false,
-          "published_at": "2026-09-22T17:23:33Z",
-          "repo_full_name": "Azure/LogicAppsUX",
-          "tag_name": "v5.1002.2"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1002.1",
-          "name": "Release v5.1002.1",
-          "prerelease": false,
-          "published_at": "2026-09-22T06:08:37Z",
-          "repo_full_name": "Azure/LogicAppsUX",
-          "tag_name": "v5.1002.1"
         }
       ]
     },
@@ -6337,8 +6274,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/agentops/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:02.194783Z",
-      "etag": "W/\"0716a7dae143d1a41da2dfb37a675ed87b5575a9f07225dd6f3013a38083607f\"",
+      "cached_at": "2026-09-26T17:17:28.699269Z",
+      "etag": "W/\"afb802559d2ac023de5b4fb9d0e330648c14f6ad813709fb6f0d870b28fd0805\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -6531,15 +6468,15 @@
       ]
     },
     "https://api.github.com/repos/Azure/aks-rdma-infiniband/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:24.873073Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:31.538796Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/Azure/aksArc/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:26.737232Z",
-      "etag": "W/\"2aef4a4f9ba63f1fd48a86d0590d648a3f1eedb957a0c8e103ec78c85ea7505b\"",
+      "cached_at": "2026-09-26T17:17:26.082260Z",
+      "etag": "W/\"c6338b0efa2e899859c962dc58fc7d107da6aec2386b5b9a2758c0d6a511e462\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -6797,8 +6734,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/awesome-azd/releases?per_page=5": {
-      "cached_at": "2026-09-21T18:48:34.266172Z",
-      "etag": "\"fca8069c67f382f6bb6e09221fc94a4eeb9b1273a08082940aa231e8fcb77a72\"",
+      "cached_at": "2026-09-26T17:17:34.556836Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -6818,11 +6755,20 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/azure-cli-extensions/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:18.420726Z",
-      "etag": "W/\"9e627e38e371dfd41ef8d5a190f27c2ece874f13ab9bdcd609ec0676a489896c\"",
+      "cached_at": "2026-09-26T17:17:04.616360Z",
+      "etag": "W/\"134f7d209464e504091552df1ac3793adf533ab6b221ccc9ffce070858942cba\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-ops-2.10.0",
+          "name": "azure-iot-ops 2.10.0",
+          "prerelease": false,
+          "published_at": "2026-09-26T10:34:50Z",
+          "repo_full_name": "Azure/azure-cli-extensions",
+          "tag_name": "azure-iot-ops-2.10.0"
+        },
         {
           "draft": false,
           "html_url": "https://github.com/Azure/azure-cli-extensions/releases/tag/vm-repair-2.4.5",
@@ -6858,15 +6804,6 @@
           "published_at": "2026-09-25T01:04:18Z",
           "repo_full_name": "Azure/azure-cli-extensions",
           "tag_name": "foundry-cost-control-1.0.0b1"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-cli-extensions/releases/tag/arcdata-1.5.33",
-          "name": "arcdata 1.5.33",
-          "prerelease": false,
-          "published_at": "2026-09-25T00:58:38Z",
-          "repo_full_name": "Azure/azure-cli-extensions",
-          "tag_name": "arcdata-1.5.33"
         }
       ]
     },
@@ -6938,8 +6875,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-dev/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:52.734817Z",
-      "etag": "W/\"0d0516266c883916a12d8c9b70aedd489c672c7f7c62dce249928c42ed051c14\"",
+      "cached_at": "2026-09-26T17:17:03.021523Z",
+      "etag": "W/\"2a8fcdc7793c435559e969f88b0967b09845c7470c514c03de11c188f879cea5\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7350,8 +7287,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-cpp/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:03.293848Z",
-      "etag": "W/\"0f9b05e4806f1475691a041442305c18011ad66b6ad7364c2532e59b636b00f0\"",
+      "cached_at": "2026-09-26T17:17:08.265397Z",
+      "etag": "W/\"487e1f0849eee778517145945cfcfb57aeffa4fefb3c05d445d7933bee8d1b99\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7403,8 +7340,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-go/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:01.193835Z",
-      "etag": "W/\"a51cb9ee39d5bd7cd87ced0cf1ed1fde59b365d311712579a18233a8fff3b4f2\"",
+      "cached_at": "2026-09-26T17:17:07.947800Z",
+      "etag": "W/\"797164056e50a1af7ab6cc23b75eaf6b1c3c83da63a15e94afa63c95e14416d4\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7456,8 +7393,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-java/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:53.724262Z",
-      "etag": "W/\"bd0454c6049af9d9ad235bbd955d61236b4fef92bb8c4230fe16ac0361fb3e24\"",
+      "cached_at": "2026-09-26T17:17:07.673763Z",
+      "etag": "W/\"77cda1ecb26d5ec2eab60d84a13139fad248ae781ad3937c7bbf23c19a7b181a\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7469,6 +7406,15 @@
           "published_at": "2026-09-25T17:12:31Z",
           "repo_full_name": "Azure/azure-sdk-for-java",
           "tag_name": "com.azure.resourcemanager+azure-resourcemanager-compute_2.61.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-messaging-servicebus_7.18.0",
+          "name": "com.azure+azure-messaging-servicebus_7.18.0",
+          "prerelease": false,
+          "published_at": "2026-09-25T22:26:02Z",
+          "repo_full_name": "Azure/azure-sdk-for-java",
+          "tag_name": "com.azure+azure-messaging-servicebus_7.18.0"
         },
         {
           "draft": false,
@@ -7496,21 +7442,12 @@
           "published_at": "2026-09-24T06:00:39Z",
           "repo_full_name": "Azure/azure-sdk-for-java",
           "tag_name": "com.azure.resourcemanager+azure-resourcemanager-oracledatabase_1.3.0"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-ai-projects_2.6.1",
-          "name": "com.azure+azure-ai-projects_2.6.1",
-          "prerelease": false,
-          "published_at": "2026-09-23T22:55:45Z",
-          "repo_full_name": "Azure/azure-sdk-for-java",
-          "tag_name": "com.azure+azure-ai-projects_2.6.1"
         }
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-js/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:01.764246Z",
-      "etag": "W/\"7020ee0c2ee9db527ced5b9b2a7e3af3b0a3df12825ec4e13e35519d3c3f29be\"",
+      "cached_at": "2026-09-26T17:17:06.528011Z",
+      "etag": "W/\"2dd2f4b28fe277e2e17fa52ff18c9b4af6b5651d2531c8885d63b5346ef9195d\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7562,11 +7499,29 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-net/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:48.663307Z",
-      "etag": "W/\"7cfa680fa13a0d63ebd92da24c575079e47aced5c7dbf5891f7c5b4d871321d3\"",
+      "cached_at": "2026-09-26T17:17:05.035930Z",
+      "etag": "W/\"ee1eb36b7d5bb38db6c19a243018b33689d6089b12949d87d3cc94bab37f90fc\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Storage_1.8.0",
+          "name": "Azure.ResourceManager.Storage_1.8.0",
+          "prerelease": false,
+          "published_at": "2026-09-25T18:30:18Z",
+          "repo_full_name": "Azure/azure-sdk-for-net",
+          "tag_name": "Azure.ResourceManager.Storage_1.8.0"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Core_1.63.0",
+          "name": "Azure.Core_1.63.0",
+          "prerelease": false,
+          "published_at": "2026-09-25T22:59:03Z",
+          "repo_full_name": "Azure/azure-sdk-for-net",
+          "tag_name": "Azure.Core_1.63.0"
+        },
         {
           "draft": false,
           "html_url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Messaging.ServiceBus_7.21.0",
@@ -7593,30 +7548,12 @@
           "published_at": "2026-09-24T08:53:23Z",
           "repo_full_name": "Azure/azure-sdk-for-net",
           "tag_name": "Azure.Provisioning.AppContainers_1.3.0-beta.2"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Data.Tables_12.13.0",
-          "name": "Azure.Data.Tables_12.13.0",
-          "prerelease": false,
-          "published_at": "2026-09-23T19:29:05Z",
-          "repo_full_name": "Azure/azure-sdk-for-net",
-          "tag_name": "Azure.Data.Tables_12.13.0"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Search_1.4.0-beta.3",
-          "name": "Azure.ResourceManager.Search_1.4.0-beta.3",
-          "prerelease": true,
-          "published_at": "2026-09-23T02:52:34Z",
-          "repo_full_name": "Azure/azure-sdk-for-net",
-          "tag_name": "Azure.ResourceManager.Search_1.4.0-beta.3"
         }
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-python/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:50.291059Z",
-      "etag": "W/\"18bd8fc89fdcc1e14940103189743354413244121062094feb10a84d88b79070\"",
+      "cached_at": "2026-09-26T17:17:06.261377Z",
+      "etag": "W/\"3add44d6ceac67ace765794b9d40bdb28e4fa95cf258292840a79d2d9df8eb9c\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7640,36 +7577,36 @@
         },
         {
           "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-template_1.0.0b6885700",
+          "name": "azure-template_1.0.0b6885700",
+          "prerelease": true,
+          "published_at": "2026-09-25T18:13:24Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-template_1.0.0b6885700"
+        },
+        {
+          "draft": false,
+          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-template-two_1.0.0b6885700",
+          "name": "azure-template-two_1.0.0b6885700",
+          "prerelease": true,
+          "published_at": "2026-09-25T21:01:13Z",
+          "repo_full_name": "Azure/azure-sdk-for-python",
+          "tag_name": "azure-template-two_1.0.0b6885700"
+        },
+        {
+          "draft": false,
           "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-platformvalidation_1.0.0b1",
           "name": "azure-mgmt-platformvalidation_1.0.0b1",
           "prerelease": true,
           "published_at": "2026-09-25T17:41:56Z",
           "repo_full_name": "Azure/azure-sdk-for-python",
           "tag_name": "azure-mgmt-platformvalidation_1.0.0b1"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-responses_2.2.0b2",
-          "name": "azure-ai-agentserver-responses_2.2.0b2",
-          "prerelease": true,
-          "published_at": "2026-09-25T13:40:01Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-ai-agentserver-responses_2.2.0b2"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-storage_25.2.0",
-          "name": "azure-mgmt-storage_25.2.0",
-          "prerelease": false,
-          "published_at": "2026-09-24T05:08:33Z",
-          "repo_full_name": "Azure/azure-sdk-for-python",
-          "tag_name": "azure-mgmt-storage_25.2.0"
         }
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk-for-rust/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:57.250930Z",
-      "etag": "W/\"7df378d0916a660b608264396b37db1a9c73dfc41fdd7492bc1f19da3104fb3b\"",
+      "cached_at": "2026-09-26T17:17:02.447928Z",
+      "etag": "W/\"4fab756a4c4a7cc546463c9143dc39b18bf8854073e1648c59d8005a4c56d629\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7721,8 +7658,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/azure-sdk/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:52.355380Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:02.108277Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -7802,8 +7739,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/communication-ui-library-android/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:31.082959Z",
-      "etag": "W/\"7f716af8a251e6f2c526f752b9fddcecfa54c486308913d6af6098e61119dca4\"",
+      "cached_at": "2026-09-26T17:17:32.733731Z",
+      "etag": "W/\"c0d0c5fea74aceab95675c97d0ea0a4a3684a990247ac94463ce01dd91ce3162\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7869,8 +7806,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/data-api-builder/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:15.254280Z",
-      "etag": "W/\"9064d416f4e88f36ae8fd3e458ffb81e40e08dc3cb8d2617e794127f264a49cb\"",
+      "cached_at": "2026-09-26T17:17:05.559010Z",
+      "etag": "W/\"c88fc5972b835b20ef863a5768ddec0ae224d2fe8c8d5417fd8d3647653caa56\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -7922,8 +7859,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/homebrew-azd/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:21.647029Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:31.296221Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -7971,8 +7908,8 @@
       ]
     },
     "https://api.github.com/repos/Azure/iot-operations-sdks/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:45.979978Z",
-      "etag": "W/\"b4bf7a5a9f81d1c0f7c390200453c6b3fb844d576535eacdd8fd65388e2b1ac5\"",
+      "cached_at": "2026-09-26T17:17:22.168881Z",
+      "etag": "W/\"f676290be5630805bff829c73ee6738b08f838c12866e4b958152d1c72598f6b\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -8031,8 +7968,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/kars/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:20.505576Z",
-      "etag": "W/\"24fa7e101c5b273cae4bea658ddd055a85b7845fb620c97496096ea1f9574507\"",
+      "cached_at": "2026-09-26T17:17:09.361193Z",
+      "etag": "W/\"eca77cd2974982875e9eb1741e18a629cb15ba7e6590986745b149cc8bff0df2\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -8091,8 +8028,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/logicapps-labs/releases?per_page=5": {
-      "cached_at": "2026-09-14T18:43:33.362822Z",
-      "etag": "\"d5014e9e283b1b7408d10140114ab6857c144b7e08b9768711171da171e2b335\"",
+      "cached_at": "2026-09-26T17:17:34.791696Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8337,8 +8274,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/setup-azd/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:07.670942Z",
-      "etag": "W/\"2f23d2b728bf3b2fdbcdc8727cf2e4806256a177e5c3426a4932ebbe55b19ec6\"",
+      "cached_at": "2026-09-26T17:17:22.451235Z",
+      "etag": "W/\"7eb4427bcb2f4d88757be1ada65c51d5b2326fcf57ecfb2412779a2358b1d9ff\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -8470,8 +8407,8 @@
       "releases": []
     },
     "https://api.github.com/repos/Azure/workload-orchestration-quickstart/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:11.000248Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:29.945495Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8491,8 +8428,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/Advertising/releases?per_page=5": {
-      "cached_at": "2026-09-20T16:53:53.266603Z",
-      "etag": "\"362dc7f979134c2051e3fa5f90e1a30b3e0ecc8f1848447fc0a03e914df2e98b\"",
+      "cached_at": "2026-09-26T17:17:34.355875Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8521,6 +8458,13 @@
     "https://api.github.com/repos/MicrosoftDocs/CommunityToolkit/releases?per_page=5": {
       "cached_at": "2026-08-05T15:33:34.730517Z",
       "etag": "\"9b8ca3710aec9882689cd4c92dd93cd0821f4b19cba3af02550275b977b26087\"",
+      "has_next": false,
+      "item_count": 0,
+      "releases": []
+    },
+    "https://api.github.com/repos/MicrosoftDocs/Console-Docs/releases?per_page=5": {
+      "cached_at": "2026-09-26T17:17:06.937620Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8561,8 +8505,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/OfficeDocs-SharePoint-PowerShell/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:48.344358Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:15.595197Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8592,22 +8536,22 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/PowerShell-Docs-Modules/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:30.742273Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:32.451094Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/PowerShell-Docs-PSGet/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:30.461310Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:32.218114Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/PowerShell-Docs/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:40:49.592683Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:33.699566Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8620,8 +8564,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/SupportArticles-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:16.795156Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:16.981296Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8734,8 +8678,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/Xandr-docs/releases?per_page=5": {
-      "cached_at": "2026-09-21T18:47:39.173431Z",
-      "etag": "\"fca8069c67f382f6bb6e09221fc94a4eeb9b1273a08082940aa231e8fcb77a72\"",
+      "cached_at": "2026-09-26T17:17:12.271268Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8755,8 +8699,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/anyscale-on-azure-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:54.406220Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:26.983388Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8769,8 +8713,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/architecture-center/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:51.536268Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:06.724665Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8783,15 +8727,15 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-ai-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:52.009666Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:16.231274Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-aks-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:30.191188Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:31.977037Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8804,8 +8748,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-compute-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:55.198291Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:06.000627Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8818,8 +8762,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-dev-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:55.897342Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:13.882738Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8839,50 +8783,50 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-devops-docs/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:40:51.391066Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:25.804605Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-devops-yaml-schema/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:31.324396Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:32.968332Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-cli/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:09.267918Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:13.650967Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-powershell/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:42.964919Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:17.698088Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-sdk-cpp/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:13.881141Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:13.172183Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-sdk-dotnet/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:46.219744Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:16:59.642138Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-sdk-java/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:47.497636Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:05.786889Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8895,8 +8839,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-sdk-node/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:46.474025Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:02.711238Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8909,29 +8853,29 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs-sdk-python/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:44.537681Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:03.253448Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:54.660818Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:07.194115Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-management-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:54.918651Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:16.739338Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-monitor-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:19.235614Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:16.498197Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -8958,8 +8902,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/azure-stack-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:50.909703Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:15.792304Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9000,22 +8944,22 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/copilot-connectors/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:00.871816Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:28.405230Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/cpp-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:50.576649Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:26.528309Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/customer-insights/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:18.683738Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:23.523290Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9063,15 +9007,15 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/dynamics-365-contact-center/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:23.039665Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:11.319402Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/dynamics-365-customer-engagement/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:12.384590Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:23.320049Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9098,15 +9042,15 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/dynamics-365-project-operations/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:09.031942Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:29.557768Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/dynamics-365-unified-operations-public/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:35.829700Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:23.098892Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9189,8 +9133,8 @@
       ]
     },
     "https://api.github.com/repos/MicrosoftDocs/edge-developer/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:02.503711Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:28.988128Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9203,8 +9147,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/entra-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:10.721934Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:14.821192Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9238,8 +9182,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/learn/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:53.013617Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:16.002668Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9252,8 +9196,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/m365copilot-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:13.600106Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:30.168390Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9287,8 +9231,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/microsoft-authentication-library-dotnet/releases?per_page=5": {
-      "cached_at": "2026-09-20T16:54:14.172410Z",
-      "etag": "\"362dc7f979134c2051e3fa5f90e1a30b3e0ecc8f1848447fc0a03e914df2e98b\"",
+      "cached_at": "2026-09-26T17:17:35.964119Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9336,15 +9280,15 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/microsoft-salescopilot-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:09.512227Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:29.772984Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/microsoftgraph-docs-powershell/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:18.936677Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:30.898310Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9378,8 +9322,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/msteams-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:57.503369Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:14.315472Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9425,8 +9369,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/office-365-management-api/releases?per_page=5": {
-      "cached_at": "2026-08-30T17:38:18.202691Z",
-      "etag": "\"08687f2a3da04171c535015294dfcdc2e0964b31c2a5333e34a9b935febe0505\"",
+      "cached_at": "2026-09-26T17:17:35.004268Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9453,8 +9397,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/office-docs-powershell/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:18.861370Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:35.766122Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9481,8 +9425,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/power-automate-docs/releases?per_page=5": {
-      "cached_at": "2026-09-20T16:54:00.324047Z",
-      "etag": "\"362dc7f979134c2051e3fa5f90e1a30b3e0ecc8f1848447fc0a03e914df2e98b\"",
+      "cached_at": "2026-09-26T17:17:23.751673Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9495,15 +9439,15 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/power-platform/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:07.915346Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:11.063977Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/powerapps-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:12.659667Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:10.866135Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9530,8 +9474,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/quantum-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:01.445042Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:01.588025Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9544,8 +9488,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/reliability-docs/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:41:18.761450Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:35.561548Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9579,8 +9523,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/sql-docs/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:18.655072Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:21.666671Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9670,8 +9614,8 @@
       ]
     },
     "https://api.github.com/repos/MicrosoftDocs/visualstudio-docs/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:41:19.067288Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:33.455085Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9719,8 +9663,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/windows-dev-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:27.341299Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:31.749014Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9740,8 +9684,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftDocs/windows-iot-public/releases?per_page=5": {
-      "cached_at": "2026-09-20T16:54:09.901755Z",
-      "etag": "\"362dc7f979134c2051e3fa5f90e1a30b3e0ecc8f1848447fc0a03e914df2e98b\"",
+      "cached_at": "2026-09-26T17:17:33.198689Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9749,6 +9693,13 @@
     "https://api.github.com/repos/MicrosoftDocs/windows-powershell-docs/releases?per_page=5": {
       "cached_at": "2026-09-23T17:53:41.820090Z",
       "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "has_next": false,
+      "item_count": 0,
+      "releases": []
+    },
+    "https://api.github.com/repos/MicrosoftDocs/windows-topic-specific-samples/releases?per_page=5": {
+      "cached_at": "2026-09-26T17:17:34.146300Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9852,8 +9803,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/AI-Flight-Academy/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:32.787080Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:33.884873Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9880,8 +9831,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/releases?per_page=5": {
-      "cached_at": "2026-08-10T14:33:54.644327Z",
-      "etag": "\"e3e933875e293597b0256c90edbb05cae41417e28730b4188f881c39c71526af\"",
+      "cached_at": "2026-09-26T17:17:35.199580Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -9957,8 +9908,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/Build-Govern-and-Scale-AI-Solutions-with-Cowork-Scout/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:20.807015Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:31.096302Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -10080,8 +10031,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/MB-230-Dynamics365forCustomerService/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:03.902577Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:29.259715Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -10195,8 +10146,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/MS-4004-Empower-workforce-copilot-use-cases/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:58.471005Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:27.721436Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -10746,8 +10697,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/mslearn-copilotstudio/releases?per_page=5": {
-      "cached_at": "2026-09-20T16:53:59.902202Z",
-      "etag": "\"362dc7f979134c2051e3fa5f90e1a30b3e0ecc8f1848447fc0a03e914df2e98b\"",
+      "cached_at": "2026-09-26T17:17:35.394814Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -10907,8 +10858,8 @@
       "releases": []
     },
     "https://api.github.com/repos/MicrosoftLearning/trainer-demo-deploy/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:37.899358Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:19.768500Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -10921,8 +10872,8 @@
       "releases": []
     },
     "https://api.github.com/repos/OfficeDev/Office-Add-in-samples/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:48.990277Z",
-      "etag": "W/\"c6b67d5b10158ab336fbf55915ec6eb019aaaeef5a84c13d75fd281b44d7a19b\"",
+      "cached_at": "2026-09-26T17:17:14.138596Z",
+      "etag": "W/\"56c58bee08762f1df1f9b996ec3ce135d900ac3cf50d1914738540939ff5fe5c\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -11048,29 +10999,29 @@
       "releases": []
     },
     "https://api.github.com/repos/OfficeDev/office-js-docs-pr/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:48.306930Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:22.897816Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/OfficeDev/office-js-docs-reference/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:47.775444Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:24.953980Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/OfficeDev/office-js-snippets/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:44.279264Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:17.400077Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/OfficeDev/office-scripts-docs-reference/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:48.802617Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:17.232762Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -11125,8 +11076,8 @@
       "releases": []
     },
     "https://api.github.com/repos/dotnet/AspNetCore.Docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:49.345183Z",
-      "etag": "W/\"2b1d490c100f1ec4a50e8a4c676de2b4cd5185903c3f462b483cf27645dd42c4\"",
+      "cached_at": "2026-09-26T17:17:21.209831Z",
+      "etag": "W/\"57383f73d0060ca20b219998356d28eec797675cb90403e7afcafe777f4d9206\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -11185,8 +11136,8 @@
       "releases": []
     },
     "https://api.github.com/repos/dotnet/EntityFramework.Docs/releases?per_page=5": {
-      "cached_at": "2026-09-14T18:43:42.500409Z",
-      "etag": "\"d5014e9e283b1b7408d10140114ab6857c144b7e08b9768711171da171e2b335\"",
+      "cached_at": "2026-09-26T17:17:07.423072Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -11245,8 +11196,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/android-api-docs/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:41:09.927792Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:05.254148Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -11305,8 +11256,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/blazor-samples/releases?per_page=5": {
-      "cached_at": "2026-09-22T17:40:46.979807Z",
-      "etag": "\"ca3c72c6efadd0482dbc5948792ac95797d56191e44011afadd5fdd906de11f5\"",
+      "cached_at": "2026-09-26T17:17:21.468853Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -11480,8 +11431,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:46.802744Z",
-      "etag": "W/\"39f5605765153e662f366815328b4ded387a4da100b79216b48bffab0908fc15\"",
+      "cached_at": "2026-09-26T17:17:01.898239Z",
+      "etag": "W/\"2c1a57d347f731a2711e8ddc2f2eca4458caedd17a2169043cf30c27c5b8444b\"",
       "has_next": false,
       "item_count": 1,
       "releases": [
@@ -11497,8 +11448,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/dotnet-api-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:43.992206Z",
-      "etag": "W/\"a91b4ea85027bde3774c7c9c1b97f6048d5253b30162ccebd13bb651e785e2f3\"",
+      "cached_at": "2026-09-26T17:17:24.747669Z",
+      "etag": "W/\"8fd1011b24c83e71699e67d5d1319147dece447543f93346916c884dedfdf149\"",
       "has_next": false,
       "item_count": 3,
       "releases": [
@@ -11539,8 +11490,8 @@
       "releases": []
     },
     "https://api.github.com/repos/dotnet/eShop/releases?per_page=5": {
-      "cached_at": "2026-08-29T17:14:34.197430Z",
-      "etag": "W/\"f24bbd8a854018fe9ffcf4af9b2cbf27c33c9795d72dd25e32e6338a9e336e07\"",
+      "cached_at": "2026-09-26T17:17:10.657154Z",
+      "etag": "W/\"2c378274457a84c23340104b113259d02567cf2eecd3eeeb0f3b5708ce008cc0\"",
       "has_next": false,
       "item_count": 1,
       "releases": [
@@ -11609,8 +11560,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/efcore/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:51.249031Z",
-      "etag": "W/\"6e2e19b747ece70bc433e280424cddb6e5a939444eecc172e28197a386150b14\"",
+      "cached_at": "2026-09-26T17:17:09.036045Z",
+      "etag": "W/\"189583653110337d0727c3a0413ee57cdeef445d8eee33b5449c896e582b2e52\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -11789,8 +11740,8 @@
       "releases": []
     },
     "https://api.github.com/repos/dotnet/msbuild/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:58.778653Z",
-      "etag": "W/\"130be9593bcf529c1b73832bab287b7a100581a5035baeee3c39022f39a15d71\"",
+      "cached_at": "2026-09-26T17:17:19.517215Z",
+      "etag": "W/\"c508dec2a88cb20e2afb42b63ed98efd206edc0428df577587e327f0d48b31de\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -11902,8 +11853,8 @@
       "releases": []
     },
     "https://api.github.com/repos/dotnet/roslyn/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:04.269861Z",
-      "etag": "W/\"504a70ebdcc5f78db985ab319f57f5a8b05f803f5aa31c9b4a4fa081c4acfb5a\"",
+      "cached_at": "2026-09-26T17:17:08.773638Z",
+      "etag": "W/\"53ef36a7000f85d28bb1bc27118c312049dea84e007dc281bcd668cd699afd2b\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -12008,8 +11959,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/runtime/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:49.998507Z",
-      "etag": "W/\"62dfabd0bc8819f1c88a26a1c63d1ec9729ea6ca5f1881ff8dd40aeebcf01d25\"",
+      "cached_at": "2026-09-26T17:17:00.170513Z",
+      "etag": "W/\"1f0b592bb941c6ee14e9667e04b470c6cd8cdf0f9a06adb23ca3c25247539fd6\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -12114,8 +12065,8 @@
       ]
     },
     "https://api.github.com/repos/dotnet/templating/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:22.005513Z",
-      "etag": "W/\"0cd51e6c6f47ea9c77e66c0eec78f24bb64e0ded31862f8c8e50e054490231a2\"",
+      "cached_at": "2026-09-26T17:17:20.770294Z",
+      "etag": "W/\"3b01bf092d85dedbca05ad8aa7dd8deceb4cd3fbbc055af5025d003af899e9fb\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -12353,8 +12304,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/AzureTRE/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:00.566151Z",
-      "etag": "W/\"c3f437135d99316947db8d57aa28e34c03e98cc9fd02348303216da200c8bdde\"",
+      "cached_at": "2026-09-26T17:17:28.202370Z",
+      "etag": "W/\"541d26fad30e9b93a90580dbf3bb4b6bed93892cb1c47515ed1d6ae7b6ab6d34\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -12641,8 +12592,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/BuildXL/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:45.311633Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:11.526893Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -12715,8 +12666,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/Container-Migration-Solution-Accelerator/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:49.895298Z",
-      "etag": "W/\"d753f563fd4e7ce95cd5694252b16085a4b5d780ed727e2bb225d19240d395b1\"",
+      "cached_at": "2026-09-26T17:17:10.134692Z",
+      "etag": "W/\"f9dacf785a03b2645b00311bb78fd2063e1e1fa5c757aa6367e54c5c053cc917\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -13116,22 +13067,22 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/Dynamics365Commerce.InStore/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:06.487476Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:04.295559Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/Dynamics365Commerce.ScaleUnit/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:14.496728Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:04.800033Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/Dynamics365Commerce.Solutions/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:12.985259Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:04.048556Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -13473,8 +13424,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/MultiAgent-Accelerator/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:25.390865Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:22.672680Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -13948,8 +13899,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/TypeAgent/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:14.153491Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:16:59.400876Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -14082,8 +14033,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/Windows-IoT-Samples/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:48.019527Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:10.387781Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -14142,8 +14093,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/Windows-driver-samples/releases?per_page=5": {
-      "cached_at": "2026-09-18T17:07:39.649018Z",
-      "etag": "W/\"fcbdadce0f7611996103c7d0f6faffd060b44a9fad0df6607b7227857cc1f75a\"",
+      "cached_at": "2026-09-26T17:17:17.974246Z",
+      "etag": "W/\"fc2ffe3add21c87b615be8e3a4c9c0a198f29975a11617550af41d1ed6056dc1\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -14221,8 +14172,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/WindowsAppSDK/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:59.808220Z",
-      "etag": "W/\"6ad0feb3b66bfa8239e0ec1a2348560e966703f835389a0e05fda3f3a4adb5d3\"",
+      "cached_at": "2026-09-26T17:17:00.457774Z",
+      "etag": "W/\"9e7d037b8cf94a7cea2aa83fc9c97108e9fed2dc06762d824f1a5b666c58e45d\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -14358,8 +14309,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/XBOX-Godot-Sample/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:27.853409Z",
-      "etag": "W/\"8aa0687503908c793ec2f0eba0c54c69feb5d2a8a4e33fc357d03a6ad9c5b024\"",
+      "cached_at": "2026-09-26T17:17:12.544059Z",
+      "etag": "W/\"b9f7b91b1be942f635847a547210634b85ce0fb2ff9e90af1d492746c900fe1a\"",
       "has_next": false,
       "item_count": 3,
       "releases": [
@@ -14393,8 +14344,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/Xbox-GDK-Samples/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:30.377156Z",
-      "etag": "W/\"097e3c064a25b0f37fe1dd617216ba0d33112db79f3974517492925c19a6db1c\"",
+      "cached_at": "2026-09-26T17:17:18.283669Z",
+      "etag": "W/\"fdb60f8c9179148a2d5e2af4c96c8ecfc0448db85da017f46512723e98a5db80\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -14467,8 +14418,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:56.586515Z",
-      "etag": "W/\"92a7a04a25cc5dd2bbfd074d3be87af26c44e565a9dc48d4a5475b1ac0e4cd47\"",
+      "cached_at": "2026-09-26T17:17:27.259003Z",
+      "etag": "W/\"7618ddcf3ab1591e1789799435d7aa79d4a874649c27eb48416a61e9260e3a5a\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -14541,8 +14492,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/amplifier-app-log-viewer/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:00.109456Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:24.178671Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -14716,22 +14667,22 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/apps-agents-workshop/releases?per_page=5": {
-      "cached_at": "2026-09-12T16:23:37.392083Z",
-      "etag": "\"85e27122c37f29c49d0b5ef41d1bb672ae011f6a4c033b2bcca1d26f64e69e14\"",
+      "cached_at": "2026-09-26T17:17:12.955553Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/aspire-samples/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:04.816843Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:08.494218Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/atlas-design/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:29.269840Z",
-      "etag": "W/\"0d1f95ca0dc57f52cef6ee8363a31297d80a671a60b6cd65d3fcc71ca528cfe4\"",
+      "cached_at": "2026-09-26T17:17:21.919615Z",
+      "etag": "W/\"e4369f50bbb966e76d01e340ce1dfa392192377833e025a26e40a742a5f590be\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -14987,8 +14938,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/azure-quantum-python/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:44.955164Z",
-      "etag": "W/\"f7c17b7c72d755f189f9eae4aa50d0e5072c14407130e5e59bfc896a596c38b1\"",
+      "cached_at": "2026-09-26T17:17:26.297207Z",
+      "etag": "W/\"cc575a807ac4de39b065af214eb487b187d310d93d2fef733f3806219b3ea120\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -16225,8 +16176,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-authentication-azure-go/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:53.350841Z",
-      "etag": "W/\"805d104a8dc07199281a055344ae3fd5647e5a8b2cbc13927cfdf995f10ec7cd\"",
+      "cached_at": "2026-09-26T17:17:25.562501Z",
+      "etag": "W/\"baa4de7d4d116eda1bd085ef2b78ff81d0f9df90d8d48e5448e5877a854d72d9\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -16437,8 +16388,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-dotnet/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:05.565360Z",
-      "etag": "W/\"819742da90283fc9c985b46d9b2901cadb8e4b9efbf8864eb80fd9d955d067ff\"",
+      "cached_at": "2026-09-26T17:17:18.953042Z",
+      "etag": "W/\"157c39f5d3f13fbc1b82d276cda9d4c98055b49d3c77f66c85276408df9a16f6\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -16649,8 +16600,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-java/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:54.094689Z",
-      "etag": "W/\"ef0038612540fef99020f79caa0d7c53ba94d615c0667e86ae71c4120d76f326\"",
+      "cached_at": "2026-09-26T17:17:15.390251Z",
+      "etag": "W/\"a1564a98d09f882c38f609e74591d93d9629518ee6c5bd96c01106cb1e34eb73\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -16702,61 +16653,61 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-python/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:56.212949Z",
-      "etag": "W/\"a326e8884095ba52e2c59883ba874adddd4788d114aaa10a2fa8e041bf12d995\"",
+      "cached_at": "2026-09-26T17:17:20.021691Z",
+      "etag": "W/\"72c965bfd716de697aa7a0b45d2e28e41304aa246490e4f123058411ef262827\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
         {
           "draft": false,
-          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.0",
-          "name": "microsoft-kiota-serialization-text: v1.14.0",
+          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.1",
+          "name": "microsoft-kiota-serialization-text: v1.14.1",
           "prerelease": false,
-          "published_at": "2026-09-21T15:03:00Z",
+          "published_at": "2026-09-25T20:52:57Z",
           "repo_full_name": "microsoft/kiota-python",
-          "tag_name": "microsoft-kiota-serialization-text-v1.14.0"
+          "tag_name": "microsoft-kiota-serialization-text-v1.14.1"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.0",
-          "name": "microsoft-kiota-serialization-multipart: v1.14.0",
+          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.1",
+          "name": "microsoft-kiota-serialization-multipart: v1.14.1",
           "prerelease": false,
-          "published_at": "2026-09-21T15:03:01Z",
+          "published_at": "2026-09-25T20:52:58Z",
           "repo_full_name": "microsoft/kiota-python",
-          "tag_name": "microsoft-kiota-serialization-multipart-v1.14.0"
+          "tag_name": "microsoft-kiota-serialization-multipart-v1.14.1"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-json-v1.14.0",
-          "name": "microsoft-kiota-serialization-json: v1.14.0",
+          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-json-v1.14.1",
+          "name": "microsoft-kiota-serialization-json: v1.14.1",
           "prerelease": false,
-          "published_at": "2026-09-21T15:02:58Z",
+          "published_at": "2026-09-25T20:52:56Z",
           "repo_full_name": "microsoft/kiota-python",
-          "tag_name": "microsoft-kiota-serialization-json-v1.14.0"
+          "tag_name": "microsoft-kiota-serialization-json-v1.14.1"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.0",
-          "name": "microsoft-kiota-serialization-form: v1.14.0",
+          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.1",
+          "name": "microsoft-kiota-serialization-form: v1.14.1",
           "prerelease": false,
-          "published_at": "2026-09-21T15:02:59Z",
+          "published_at": "2026-09-25T20:52:57Z",
           "repo_full_name": "microsoft/kiota-python",
-          "tag_name": "microsoft-kiota-serialization-form-v1.14.0"
+          "tag_name": "microsoft-kiota-serialization-form-v1.14.1"
         },
         {
           "draft": false,
-          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-http-v1.14.0",
-          "name": "microsoft-kiota-http: v1.14.0",
+          "html_url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-http-v1.14.1",
+          "name": "microsoft-kiota-http: v1.14.1",
           "prerelease": false,
-          "published_at": "2026-09-21T15:02:57Z",
+          "published_at": "2026-09-25T20:52:55Z",
           "repo_full_name": "microsoft/kiota-python",
-          "tag_name": "microsoft-kiota-http-v1.14.0"
+          "tag_name": "microsoft-kiota-http-v1.14.1"
         }
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-ruby/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:58.211833Z",
-      "etag": "W/\"d5f1eae07b79ac96ef034d6c0f278add660b3004e20fd7c908b6becdc591a472\"",
+      "cached_at": "2026-09-26T17:17:27.513319Z",
+      "etag": "W/\"b265648a22db9d0316ebd63eb3a993c1f236364594c8f4c4c9d19ea71a66b48d\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -16808,15 +16759,15 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-samples/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:29.463046Z",
-      "etag": "\"b4f1b1804f222b0be76b279ec036e636af09118337dbb1732f2ebaf5d772d14a\"",
+      "cached_at": "2026-09-26T17:17:19.272217Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/kiota-serialization-form-go/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:55.588174Z",
-      "etag": "W/\"5b1106b68b283b8115b5f53a18506c9b48ac3186589151bb28e364bb3f93eabd\"",
+      "cached_at": "2026-09-26T17:17:20.297243Z",
+      "etag": "W/\"4615a3c2c3424be6f5bf2f3e3cc742b8ddbd49da3d2527f01bc78598c98196c4\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -17080,8 +17031,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota-serialization-multipart-go/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:23.997202Z",
-      "etag": "W/\"1311f4a2f3250c9cb442bbb4334a8d84f67495b3d3c3750dd46d7c2db1da5da7\"",
+      "cached_at": "2026-09-26T17:17:25.259639Z",
+      "etag": "W/\"a86edb8510dfb0e8cad33e92a118d47a1428fd07b04353d319055228f987dfa1\"",
       "has_next": false,
       "item_count": 4,
       "releases": [
@@ -17283,8 +17234,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/kiota/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:57.911755Z",
-      "etag": "W/\"a544a56b721f4f894d513927acf8185f3a71f2b53968b257264cc1b3b8038991\"",
+      "cached_at": "2026-09-26T17:17:18.633574Z",
+      "etag": "W/\"a0f94b722d380fdbee0aabd550c5568935d7c23d56d37ae823ecf8127f33018c\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -17364,8 +17315,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/mggraph-intune-samples/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:51.756281Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:26.773859Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -17617,8 +17568,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/onnxruntime/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:47.240352Z",
-      "etag": "W/\"5cbc75a923286e4d6cc9ce93970a271e9f00caec338ffb489f97797838b9d617\"",
+      "cached_at": "2026-09-26T17:17:01.347948Z",
+      "etag": "W/\"6a579c8194fad11cdf71a7ec187e680ad86ef79022aa125ae5453aabef9a900d\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -17843,15 +17794,15 @@
       ]
     },
     "https://api.github.com/repos/microsoft/playwright.dev/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:03.608351Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:12.737746Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
     },
     "https://api.github.com/repos/microsoft/power-pages-samples/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:27.698688Z",
-      "etag": "W/\"2e4c0033aabc053fd53e02e093006ba7bc6545f3fa4db1d913557b188dae2085\"",
+      "cached_at": "2026-09-26T17:17:13.407163Z",
+      "etag": "W/\"7290aa3ae6311cfd22e69f8c7d3e5b9fe2111f5a9e4f59cd3865cd718c8424a5\"",
       "has_next": false,
       "item_count": 1,
       "releases": [
@@ -17902,11 +17853,20 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/pylance-release/releases?per_page=5": {
-      "cached_at": "2026-09-23T17:53:46.327937Z",
-      "etag": "W/\"ea11b1b0430707842771c2684d3f8d70566c88faaff2c1ba5c17bf5eba46265b\"",
+      "cached_at": "2026-09-26T17:17:24.498196Z",
+      "etag": "W/\"b45aa605e86ba969c5b3e856b3bbd6d11c991b417b19b12b1cd3592d04628df6\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/microsoft/pylance-release/releases/tag/2026.4.1",
+          "name": "2026.4.1",
+          "prerelease": false,
+          "published_at": "2026-09-23T21:36:53Z",
+          "repo_full_name": "microsoft/pylance-release",
+          "tag_name": "2026.4.1"
+        },
         {
           "draft": false,
           "html_url": "https://github.com/microsoft/pylance-release/releases/tag/2026.3.105",
@@ -17942,15 +17902,6 @@
           "published_at": "2026-09-04T21:45:06Z",
           "repo_full_name": "microsoft/pylance-release",
           "tag_name": "2026.3.102"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/microsoft/pylance-release/releases/tag/2026.3.101",
-          "name": "2026.3.101",
-          "prerelease": true,
-          "published_at": "2026-08-28T21:53:34Z",
-          "repo_full_name": "microsoft/pylance-release",
-          "tag_name": "2026.3.101"
         }
       ]
     },
@@ -18088,8 +18039,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/simplechat/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:07.301459Z",
-      "etag": "W/\"62a4fd0b9eb3de4124b730c819820856b5764908808f7a6ac3a954fe3a8c6794\"",
+      "cached_at": "2026-09-26T17:17:00.736873Z",
+      "etag": "W/\"32e5121a6751bf975487a208f7dcf2efdc9f1e7d48a60a3bf57f954c7e0f7305\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -18617,8 +18568,8 @@
       ]
     },
     "https://api.github.com/repos/microsoft/vscode-docs/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:17.292834Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:20.497383Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -18666,11 +18617,20 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoft/winget-cli-restsource/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:27.044185Z",
-      "etag": "W/\"5eba2bf5b30cb530dae92e8dc76a2d80b575c33b8a4f1d12285e68511c90e9bf\"",
+      "cached_at": "2026-09-26T17:17:09.899966Z",
+      "etag": "W/\"15a3297deb3b26cb74475788515ab7b8f4492ed9b1d77d8d2a89eed02b0e5745\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/microsoft/winget-cli-restsource/releases/tag/1.10.1",
+          "name": "Windows Package Manager REST Source Reference Implementation 1.10.1",
+          "prerelease": false,
+          "published_at": "2026-09-26T02:01:02Z",
+          "repo_full_name": "microsoft/winget-cli-restsource",
+          "tag_name": "1.10.1"
+        },
         {
           "draft": false,
           "html_url": "https://github.com/microsoft/winget-cli-restsource/releases/tag/1.10.0",
@@ -18706,21 +18666,12 @@
           "published_at": "2023-08-23T19:12:25Z",
           "repo_full_name": "microsoft/winget-cli-restsource",
           "tag_name": "1.1.20230823"
-        },
-        {
-          "draft": false,
-          "html_url": "https://github.com/microsoft/winget-cli-restsource/releases/tag/1.1.20230126",
-          "name": "Windows Package Manager REST Source Reference Implementation 1.1.20230126",
-          "prerelease": false,
-          "published_at": "2023-01-27T17:44:25Z",
-          "repo_full_name": "microsoft/winget-cli-restsource",
-          "tag_name": "1.1.20230126"
         }
       ]
     },
     "https://api.github.com/repos/microsoft/winget-cli/releases?per_page=5": {
-      "cached_at": "2026-09-25T17:59:45.646402Z",
-      "etag": "W/\"1e8b514a0f17c1b2acb1f97cbcfcd825e62a69011ae4dcd813b18ca2e308b4c2\"",
+      "cached_at": "2026-09-26T17:17:01.079732Z",
+      "etag": "W/\"b50bcd185f1dbcdaa6f2e1c294cb94fa6123433a130272c0c2ba10aad93c5f36\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -18846,8 +18797,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoftgraph/microsoft-graph-docs-contrib/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:24.293729Z",
-      "etag": "\"5b4c5497576b1e8753d53b322ea14b47500b399fe8f3e536626008b326bd38ec\"",
+      "cached_at": "2026-09-26T17:17:11.747893Z",
+      "etag": "\"2e2eda84d0012b1f67744f3f1598e4357c9a972ebe3f7009178f342f786e36d7\"",
       "has_next": false,
       "item_count": 0,
       "releases": []
@@ -18959,8 +18910,8 @@
       ]
     },
     "https://api.github.com/repos/microsoftgraph/msgraph-beta-sdk-java/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:18.083415Z",
-      "etag": "W/\"3971bab4946e10689b615f2f5d5ca728a09ecb6af4603786fe5c81c94d384394\"",
+      "cached_at": "2026-09-26T17:17:30.688160Z",
+      "etag": "W/\"6ed9991f23b22070abd442e2255431fecf7f257983981571578ff8f516639f22\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -19026,8 +18977,8 @@
       "releases": []
     },
     "https://api.github.com/repos/microsoftgraph/msgraph-sdk-go-core/releases?per_page=5": {
-      "cached_at": "2026-09-25T18:00:15.518921Z",
-      "etag": "W/\"6124d79ee67260d5e398fb3dcb6ec85b84cb05241099b118b915fefb0d62200b\"",
+      "cached_at": "2026-09-26T17:17:30.438459Z",
+      "etag": "W/\"3fa4a2f2a4ec1d01bc8f0e7de0f00ffeee6901fc7780e969829e9fdc7612fea2\"",
       "has_next": true,
       "item_count": 5,
       "releases": [
@@ -19390,18 +19341,21 @@
       ]
     },
     "https://api.github.com/orgs/Azure-Samples/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:26.589250Z",
-      "etag": "W/\"965a50978b211f46f21d792293e78e983573df82734932dbb784d7841cc9b3b8\"",
+      "cached_at": "2026-09-26T17:16:43.692324Z",
+      "etag": "W/\"2fe43b2f3d13995b333c223b45da02b73914202110c52711931aef7a6b5743b3\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "Azure-Samples/azure-monitor-lab",
         "Azure-Samples/azure-finops-agent",
+        "Azure-Samples/azure-monitor-lab",
+        "Azure-Samples/ms-identity-ciam-native-auth-ios-sample",
         "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample",
+        "Azure-Samples/explore-iot-operations",
+        "Azure-Samples/modernize-bootcamp",
+        "Azure-Samples/dynamic-sessions-custom-container",
         "Azure-Samples/postgres-hub",
         "Azure-Samples/iot-edge-opc-plc",
         "Azure-Samples/azure-search-openai-demo-purviewdatasecurity",
-        "Azure-Samples/modernize-bootcamp",
         "Azure-Samples/chat-with-your-data-solution-accelerator",
         "Azure-Samples/openai-secure-ui-js",
         "Azure-Samples/azure-cleanroom-samples",
@@ -19443,8 +19397,8 @@
         "Azure-Samples/azure-container-apps-sandboxes",
         "Azure-Samples/azure-cli-samples",
         "Azure-Samples/functions-quickstart-typescript-azd-cosmosdb",
-        "Azure-Samples/functions-quickstart-typescript-azd-eventhub",
         "Azure-Samples/functions-quickstart-javascript-azd-eventhub",
+        "Azure-Samples/functions-quickstart-typescript-azd-eventhub",
         "Azure-Samples/functions-quickstart-dotnet-azd-timer",
         "Azure-Samples/functions-quickstart-typescript-azd",
         "Azure-Samples/simple-agent-functions-python",
@@ -19467,8 +19421,8 @@
         "Azure-Samples/functions-quickstart-dotnet-azd-tf",
         "Azure-Samples/functions-quickstart-dotnet-azd-eventhub",
         "Azure-Samples/functions-quickstart-dotnet-azd-eventgrid-blob",
-        "Azure-Samples/functions-connectors-net",
         "Azure-Samples/functions-connectors-python",
+        "Azure-Samples/functions-connectors-net",
         "Azure-Samples/durable-functions-quickstart-typescript-azd",
         "Azure-Samples/durable-functions-quickstart-python-azd",
         "Azure-Samples/durable-functions-quickstart-dotnet-azd",
@@ -19490,11 +19444,8 @@
         "Azure-Samples/hello-azd-python",
         "Azure-Samples/msdocs-flask-postgresql-sample-app",
         "Azure-Samples/ctfd-azure-paas",
-        "Azure-Samples/explore-iot-operations",
         "Azure-Samples/Durable-Task-Scheduler",
-        "Azure-Samples/app-service-javascript-sap-cloud-sdk-quickstart",
-        "Azure-Samples/voicelive-api-salescoach",
-        "Azure-Samples/DevOpsEngineerPersona"
+        "Azure-Samples/app-service-javascript-sap-cloud-sdk-quickstart"
       ]
     },
     "https://api.github.com/orgs/Azure-Samples/repos?type=public&per_page=100&page=10&sort=full_name&direction=asc": {
@@ -20686,11 +20637,13 @@
       ]
     },
     "https://api.github.com/orgs/Azure-Samples/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:27.915081Z",
-      "etag": "W/\"ff44d658eefb9deec5a996a9ea5a3abaa1bbfbab4500e32f941b8f6b098d7987\"",
+      "cached_at": "2026-09-26T17:16:45.339483Z",
+      "etag": "W/\"a7e3174476903978a77be3ac6845c72376e4c0b8a7f87a736749b80a62624ca1\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "Azure-Samples/voicelive-api-salescoach",
+        "Azure-Samples/DevOpsEngineerPersona",
         "Azure-Samples/msdocs-django-postgresql-sample-app",
         "Azure-Samples/azure-ai-vision-sdk",
         "Azure-Samples/claude",
@@ -20788,9 +20741,7 @@
         "Azure-Samples/quote-of-the-day-dotnet",
         "Azure-Samples/quote-of-the-day-python",
         "Azure-Samples/containerapps-albumapi-python",
-        "Azure-Samples/containerapps-albumapi-javascript",
-        "Azure-Samples/get-started-with-ai-chat",
-        "Azure-Samples/autoauth-solution-accelerator"
+        "Azure-Samples/containerapps-albumapi-javascript"
       ]
     },
     "https://api.github.com/orgs/Azure-Samples/repos?type=public&per_page=100&page=20&sort=full_name&direction=asc": {
@@ -23304,111 +23255,111 @@
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:29.378561Z",
-      "etag": "W/\"7177f05840671ef47e4b5815bd718eb1e5bad5fa7534ce70a189943a92d02d4f\"",
+      "cached_at": "2026-09-26T17:16:46.409500Z",
+      "etag": "W/\"5401c7ddb48d460bcf13f0246750c06b492cecece1ce733d5b7383972d98c4d3\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "Azure/sonic-redfish.msft",
-        "Azure/osdu-spi-stack",
-        "Azure/azure-rest-api-specs",
-        "Azure/iot-operations-sdks",
-        "Azure/azure-functions-python-worker",
-        "Azure/WALinuxAgent",
-        "Azure/Connectors-NET-SDK",
-        "Azure/clds",
-        "Azure/terraform-azurerm-avm-ptn-alz",
-        "Azure/AgentBaker",
-        "Azure/azure-sdk-for-net",
-        "Azure/azure-sdk-for-python",
-        "Azure/karpenter-provider-azure",
+        "Azure/unbounded",
+        "Azure/CosmosDBShell",
+        "Azure/mpf",
         "Azure/azihsm-sdk",
+        "Azure/osdu-spi-stack",
+        "Azure/azureml-assets",
+        "Azure/ARO-HCP",
+        "Azure/azure-sdk",
+        "Azure/azure-sdk-for-rust",
+        "Azure/Azure-Verified-Modules",
+        "Azure/sonic-buildimage-msft",
+        "Azure/azure-dev",
+        "Azure/azure-rest-api-specs-examples",
+        "Azure/LogicAppsUX",
+        "Azure/azure-storage-fuse",
+        "Azure/azure-verified-modules-tools",
+        "Azure/azure-cli-extensions",
+        "Azure/azure-powershell",
         "Azure/bicep",
-        "Azure/azure-functions-core-tools",
+        "Azure/homebrew-kubelogin",
+        "Azure/azure-sdk-for-net",
+        "Azure/data-api-builder",
+        "Azure/azure-rest-api-specs",
+        "Azure/sonic-mgmt.msft",
+        "Azure/issue-sentinel",
+        "Azure/azure-sdk-for-python",
+        "Azure/azure-sdk-for-js",
+        "Azure/telescope",
+        "Azure/sonic-gnmi.msft",
+        "Azure/azure-sdk-for-java",
+        "Azure/azure-sdk-for-ios",
+        "Azure/azure-sdk-for-go",
+        "Azure/azure-sdk-for-cpp",
+        "Azure/azure-sdk-tools",
+        "Azure/azure-iot-cli-extension",
+        "Azure/azure-functions-powershell-worker",
+        "Azure/Azure-Sentinel",
+        "Azure/kars",
+        "Azure/azure-dev-tools",
+        "Azure/c-build-tools",
+        "Azure/sonic-utilities.msft",
+        "Azure/karpenter-provider-azure",
+        "Azure/terraform-azure-avm-res-signalrservice-webpubsub",
+        "Azure/apiops-cli",
+        "Azure/azure-functions-host",
+        "Azure/azure-iot-sdk-csharp",
         "Azure/azure-container-networking",
         "Azure/bicep-types-k8s",
-        "Azure/azure-verified-modules-tools",
-        "Azure/cyclecloud-pbspro",
+        "Azure/azure-signalr-client-e2e",
         "Azure/azhpc-images",
-        "Azure/bicep-registry-modules",
-        "Azure/azure-sdk",
-        "Azure/cosmos-explorer",
-        "Azure/ARO-RP",
-        "Azure/azureml-assets",
-        "Azure/azure-functions-agents-runtime",
-        "Azure/azure-dev",
-        "Azure/ARO-HCP",
-        "Azure/azure-functions-powershell-worker",
-        "Azure/azure-sdk-assets",
-        "Azure/sonic-mgmt.msft",
-        "Azure/unbounded",
-        "Azure/azure-sdk-for-java",
-        "Azure/Azure-Verified-Modules",
-        "Azure/prometheus-collector",
-        "Azure/CosmosDBShell",
-        "Azure/typespec-azure",
-        "Azure/ProjectAutoTemplates",
-        "Azure/azure-sdk-for-rust",
-        "Azure/azure-cosmos-dotnet-v3",
-        "Azure/Azure-Sentinel",
-        "Azure/azure-functions-python-extensions",
-        "Azure/azure-sdk-tools",
-        "Azure/bicep-shared-tools",
-        "Azure/azure-storage-azcopy",
-        "Azure/azure-sdk-for-go",
-        "Azure/azure-sdk-for-js",
-        "Azure/apiops-cli",
-        "Azure/cyclecloud-gridengine",
-        "Azure/agentops",
-        "Azure/azure-sdk-for-cpp",
-        "Azure/mapotf",
-        "Azure/AKSFlexNode",
-        "Azure/terraform-azurerm-avm-ptn-aiml-landing-zone",
-        "Azure/repair-script-library",
-        "Azure/setup-azd",
-        "Azure/azure-storage-fuse",
-        "Azure/sonic-buildimage-msft",
-        "Azure/terraform-azurerm-avm-res-insights-activitylogalert",
-        "Azure/artifact-signing-notation-plugin",
-        "Azure/workload-orchestration-quickstart",
-        "Azure/autorest",
-        "Azure/openapi-diff",
-        "Azure/local-csi-driver",
-        "Azure/telescope",
-        "Azure/azure-rest-api-specs-examples",
-        "Azure/vscode-aks-tools",
-        "Azure/terraform-provider-azapi",
-        "Azure/terraform-azurerm-avm-ptn-azure-local-migrate",
-        "Azure/data-api-builder",
-        "Azure/azure-powershell",
-        "Azure/azure-linux-extensions",
-        "Azure/taugrid",
-        "Azure/applicationhealth-extension-linux",
-        "Azure/aztfexport",
-        "Azure/osdu-spi-partition",
-        "Azure/cluster-health-monitor",
+        "Azure/azure-iot-sdk-java",
+        "Azure/azure-functions-core-tools",
+        "Azure/bicep-reps",
+        "Azure/azure-functions-skills",
+        "Azure/AppService",
         "Azure/communication-ui-library",
-        "Azure/azure-cli-extensions",
-        "Azure/azqr",
-        "Azure/logicapps-migration-agent",
-        "Azure/run-command-handler-linux",
-        "Azure/sonic-gnmi.msft",
-        "Azure/azure-service-operator",
-        "Azure/azure-iot-cli-extension",
-        "Azure/azure-arc-for-vmware-scripts",
-        "Azure/LinuxPatchExtension",
-        "Azure/azure-sdk-for-ios",
-        "Azure/kars",
-        "Azure/gpt-rag-ingestion",
-        "Azure/homebrew-azd",
-        "Azure/Enterprise-Scale",
-        "Azure/azure-dev-tools",
-        "Azure/armstrong",
-        "Azure/azure-functions-tooling-feed",
-        "Azure/azure-webpubsub",
-        "Azure/azure-cli",
-        "Azure/aaz",
-        "Azure/GuestProxyAgent"
+        "Azure/AgentBaker",
+        "Azure/GuestProxyAgent",
+        "Azure/azure-cosmos-dotnet-v3",
+        "Azure/azure-functions-durable-extension",
+        "Azure/azure-iot-ops-cli-extension",
+        "Azure/GPT-RAG",
+        "Azure/typespec-azure",
+        "Azure/taugrid",
+        "Azure/azurehpc-health-checks",
+        "Azure/osdu-spi-partition",
+        "Azure/bicep-ptn-aiml-landing-zone",
+        "Azure/azure-functions-agents-runtime",
+        "Azure/cosmos-explorer",
+        "Azure/terraform-azurerm-avm-res-dbformysql-flexibleserver",
+        "Azure/Connectors-NET-SDK",
+        "Azure/azure-storage-azcopy",
+        "Azure/documentdb-agent-kit",
+        "Azure/osdu-spi",
+        "Azure/guard",
+        "Azure/azure-sdk-assets",
+        "Azure/CloudShell",
+        "Azure/eno",
+        "Azure/azure-cleanroom",
+        "Azure/kperf",
+        "Azure/iot-operations-sdks",
+        "Azure/terraform-azurerm-avm-res-insights-metricalert",
+        "Azure/terraform-azurerm-avm-res-insights-actiongroup",
+        "Azure/ARO-RP",
+        "Azure/setup-azd",
+        "Azure/service-fabric-rs",
+        "Azure/artifact-signing-action",
+        "Azure/bicep-registry-modules",
+        "Azure/aks-desktop",
+        "Azure/Azurite",
+        "Azure/cyclecloud-symphony",
+        "Azure/azure-functions-python-worker",
+        "Azure/terraform-azurerm-avm-ptn-aiml-landing-zone",
+        "Azure/aksArc",
+        "Azure/terraform-azurerm-avm-ptn-alz-connectivity-hub-and-spoke-vnet",
+        "Azure/sonic-redfish.msft",
+        "Azure/WALinuxAgent",
+        "Azure/clds",
+        "Azure/terraform-azurerm-avm-ptn-alz",
+        "Azure/cyclecloud-pbspro"
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=10&sort=full_name&direction=asc": {
@@ -24600,19 +24551,51 @@
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:30.594667Z",
-      "etag": "W/\"19ee0a5e719cc310b744f504fa21b6f89a080a296e62b01ccbcdf425842adb5d\"",
+      "cached_at": "2026-09-26T17:16:47.574793Z",
+      "etag": "W/\"e40dc0bd7efafdb3395e33e9cbb6336a7fcf520102d215608975c46d2a8977da\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "Azure/azure-signalr-client-e2e",
+        "Azure/prometheus-collector",
+        "Azure/ProjectAutoTemplates",
+        "Azure/azure-functions-python-extensions",
+        "Azure/bicep-shared-tools",
+        "Azure/cyclecloud-gridengine",
+        "Azure/agentops",
+        "Azure/mapotf",
+        "Azure/AKSFlexNode",
+        "Azure/repair-script-library",
+        "Azure/terraform-azurerm-avm-res-insights-activitylogalert",
+        "Azure/artifact-signing-notation-plugin",
+        "Azure/workload-orchestration-quickstart",
+        "Azure/autorest",
+        "Azure/openapi-diff",
+        "Azure/local-csi-driver",
+        "Azure/vscode-aks-tools",
+        "Azure/terraform-provider-azapi",
+        "Azure/terraform-azurerm-avm-ptn-azure-local-migrate",
+        "Azure/azure-linux-extensions",
+        "Azure/applicationhealth-extension-linux",
+        "Azure/aztfexport",
+        "Azure/cluster-health-monitor",
+        "Azure/azqr",
+        "Azure/logicapps-migration-agent",
+        "Azure/run-command-handler-linux",
+        "Azure/azure-service-operator",
+        "Azure/azure-arc-for-vmware-scripts",
+        "Azure/LinuxPatchExtension",
+        "Azure/gpt-rag-ingestion",
+        "Azure/homebrew-azd",
+        "Azure/Enterprise-Scale",
+        "Azure/armstrong",
+        "Azure/azure-functions-tooling-feed",
+        "Azure/azure-webpubsub",
+        "Azure/azure-cli",
+        "Azure/aaz",
         "Azure/aks-rdma-infiniband",
         "Azure/azure-functions-connector-extension",
         "Azure/pod-nsg-controller",
-        "Azure/azure-functions-skills",
-        "Azure/aksArc",
         "Azure/custom-script-extension-linux",
-        "Azure/guard",
         "Azure/autoscaler",
         "Azure/contentflow",
         "Azure/universal-print-for-sap-starter-pack",
@@ -24621,10 +24604,8 @@
         "Azure/terraform-azurerm-avm-res-network-applicationgateway",
         "Azure/kube-state-logs",
         "Azure/communication-ui-library-android",
-        "Azure/LogicAppsUX",
         "Azure/terraform-azurerm-avm-res-compute-hostgroup",
         "Azure/durabletask",
-        "Azure/azure-functions-durable-extension",
         "Azure/git-ape",
         "Azure/AzureLocal-Supportability",
         "Azure/content-understanding-toolkit",
@@ -24634,14 +24615,11 @@
         "Azure/logicapps-labs",
         "Azure/Microsoft.Extensions.Caching.Postgres",
         "Azure/action-release-workflows",
-        "Azure/azure-functions-host",
-        "Azure/azure-iot-ops-cli-extension",
         "Azure/AKS",
         "Azure/azure-init",
         "Azure/azure-netapp-files",
         "Azure/odinforazurelocal",
         "Azure/aks-ctf",
-        "Azure/Azurite",
         "Azure/vscode-azureterraform",
         "Azure/kimojio-rs",
         "Azure/terraform-azurerm-avm-res-web-site",
@@ -24661,20 +24639,15 @@
         "Azure/AODv2",
         "Azure/HubAndSpokeResearchEnclave",
         "Azure/sap-automation",
-        "Azure/aks-desktop",
         "Azure/Synapse-workspace-deployment",
         "Azure/azure-kusto-spark",
         "Azure/blip",
         "Azure/terraform-ai-gateway-landing-zone",
         "Azure/aztfmigrate",
-        "Azure/azure-cleanroom",
         "Azure/Azure-SiteRecovery",
-        "Azure/terraform-azurerm-avm-ptn-alz-connectivity-hub-and-spoke-vnet",
         "Azure/terraform-azurerm-avm-res-eventhub-namespace",
         "Azure/AppConfiguration",
-        "Azure/osdu-spi",
         "Azure/AzureNamingTool",
-        "Azure/sonic-utilities.msft",
         "Azure/AzFilesAuthenticator",
         "Azure/Azure-Landing-Zones",
         "Azure/avs-byol-transition-calculator",
@@ -24682,29 +24655,7 @@
         "Azure/aaz-dev-tools",
         "Azure/ARO-Tools",
         "Azure/terraform-azurerm-avm-res-azurestackhci-cluster",
-        "Azure/terraform-azurerm-avm-res-azurestackhci-logicalnetwork",
-        "Azure/terraform-azurerm-avm-ptn-azuremonitorwindowsagent",
-        "Azure/terraform-azurerm-avm-res-compute-virtualmachinescaleset",
-        "Azure/sonic-linux-kernel.msft",
-        "Azure/terraform-azurerm-avm-ptn-alz-connectivity-virtual-wan",
-        "Azure/connectors-python-sdk",
-        "Azure/AppService",
-        "Azure/azure-amqp",
-        "Azure/cyclecloud-healthagent",
-        "Azure/azure-quickstart-templates",
-        "Azure/FederalAVD",
-        "Azure/communication-ui-library-ios",
-        "Azure/typespec-rust",
-        "Azure/azure-support-scripts",
-        "Azure/Microsoft.AVS.Management",
-        "Azure/azure-functions-templates",
-        "Azure/terraform-azurerm-avm-res-compute-virtualmachine",
-        "Azure/sap-automation-qa",
-        "Azure/homebrew-functions",
-        "Azure/api-management-developer-portal",
-        "Azure/service-fabric-rs",
-        "Azure/cyclecloud-scalelib",
-        "Azure/kubelogin"
+        "Azure/terraform-azurerm-avm-res-azurestackhci-logicalnetwork"
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=20&sort=full_name&direction=asc": {
@@ -25730,15 +25681,33 @@
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=3&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:31.930356Z",
-      "etag": "W/\"c6e559dd002ca84a4ea1f90e78e67eba208eea84e0bb50664ecbe3b9406d09d2\"",
+      "cached_at": "2026-09-26T17:16:48.809819Z",
+      "etag": "W/\"8322fc7487e3cebcfaea2b8905f709595434012e0e68d4381a4f5219c76b5c8e\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "Azure/terraform-azurerm-avm-ptn-azuremonitorwindowsagent",
+        "Azure/terraform-azurerm-avm-res-compute-virtualmachinescaleset",
+        "Azure/sonic-linux-kernel.msft",
+        "Azure/terraform-azurerm-avm-ptn-alz-connectivity-virtual-wan",
+        "Azure/connectors-python-sdk",
+        "Azure/azure-amqp",
+        "Azure/cyclecloud-healthagent",
+        "Azure/azure-quickstart-templates",
+        "Azure/FederalAVD",
+        "Azure/communication-ui-library-ios",
+        "Azure/typespec-rust",
+        "Azure/azure-support-scripts",
+        "Azure/Microsoft.AVS.Management",
+        "Azure/azure-functions-templates",
+        "Azure/terraform-azurerm-avm-res-compute-virtualmachine",
+        "Azure/sap-automation-qa",
+        "Azure/homebrew-functions",
+        "Azure/api-management-developer-portal",
+        "Azure/cyclecloud-scalelib",
+        "Azure/kubelogin",
         "Azure/VMApplication-Extension",
         "Azure/AgentVerse",
-        "Azure/azure-iot-sdk-csharp",
-        "Azure/azure-iot-sdk-java",
         "Azure/azure-extension-platform",
         "Azure/adx-mon",
         "Azure/terraform-azurerm-avm-res-web-hostingenvironment",
@@ -25762,7 +25731,6 @@
         "Azure/sonic-platform-daemons.msft",
         "Azure/iot-sdks-e2e-fx",
         "Azure/digital-ops-scale-kit",
-        "Azure/azurehpc-health-checks",
         "Azure/SwiftPM-AzureCommunicationCalling",
         "Azure/azure-functions-durable-js",
         "Azure/AzureLocal-LENS-Workbook",
@@ -25796,7 +25764,6 @@
         "Azure/Connectors-NET-LSP",
         "Azure/azure-relay-node",
         "Azure/WPLUS-Azure-AI-Platform-and-Services",
-        "Azure/GPT-RAG",
         "Azure/Logic-Apps-Automation",
         "Azure/azure-sdk-for-sap-odata",
         "Azure/azhpc-extensions",
@@ -25811,30 +25778,14 @@
         "Azure/terraform-azurerm-avm-res-keyvault-vault",
         "Azure/mcp-kubernetes",
         "Azure/azure-iot-sdk-c",
-        "Azure/mpf",
-        "Azure/bicep-ptn-aiml-landing-zone",
-        "Azure/eno",
         "Azure/azure-storage-for-pytorch",
         "Azure/terraform-azure-avm-ptn-ai-platform-baseline",
         "Azure/azure-functions-openai-extension",
         "Azure/azure-relay-dotnet",
-        "Azure/artifact-signing-action",
-        "Azure/bicep-reps",
         "Azure/terraform-azure-avm-ptn-bcdr-vm-replication",
         "Azure/terraform-azure-avm-ptn-app-service-landing-zone",
         "Azure/terraform-azurerm-avm-ptn-azureimagebuilder",
-        "Azure/terraform-azurerm-avm-ptn-app-paas-ase-cosmosdb-tier-four",
-        "Azure/terraform-azurerm-avm-ptn-finopstoolkit-finopshub",
-        "Azure/ipam",
-        "Azure/documentdb-agent-kit",
-        "Azure/eviction-autoscaler",
-        "Azure/AzFilesSmbMIClient",
-        "Azure/terraform-azure-avm-res-signalrservice-signalr",
-        "Azure/terraform-azure-avm-res-servicefabric-cluster",
-        "Azure/terraform-azure-avm-res-resources-feature",
-        "Azure/terraform-azure-avm-res-powerbidedicated-capacity",
-        "Azure/terraform-azure-avm-res-operationsmanagement-solution",
-        "Azure/terraform-azure-avm-res-network-virtualrouter"
+        "Azure/terraform-azurerm-avm-ptn-app-paas-ase-cosmosdb-tier-four"
       ]
     },
     "https://api.github.com/orgs/Azure/repos?type=public&per_page=100&page=4&sort=full_name&direction=asc": {
@@ -26918,43 +26869,51 @@
       ]
     },
     "https://api.github.com/orgs/MicrosoftDocs/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:09.773833Z",
-      "etag": "W/\"8c29d96eba81df5a23447339a8028327b5a6b0693cae227f2815989f27b04639\"",
+      "cached_at": "2026-09-26T17:16:28.325005Z",
+      "etag": "W/\"f2d9413a8ff01ffe11bdd6a6d562ca1816b71904a01b3277ddddccb9d0c4f4f2\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "MicrosoftDocs/azure-docs-sdk-python",
         "MicrosoftDocs/azure-docs-sdk-dotnet",
+        "MicrosoftDocs/quantum-docs",
         "MicrosoftDocs/azure-docs-sdk-node",
+        "MicrosoftDocs/azure-docs-sdk-python",
         "MicrosoftDocs/azure-docs-sdk-java",
-        "MicrosoftDocs/cpp-docs",
-        "MicrosoftDocs/azure-stack-docs",
-        "MicrosoftDocs/architecture-center",
-        "MicrosoftDocs/azure-ai-docs",
-        "MicrosoftDocs/learn",
-        "MicrosoftDocs/anyscale-on-azure-docs",
-        "MicrosoftDocs/azure-docs",
-        "MicrosoftDocs/azure-management-docs",
         "MicrosoftDocs/azure-compute-docs",
+        "MicrosoftDocs/architecture-center",
+        "MicrosoftDocs/Console-Docs",
+        "MicrosoftDocs/azure-docs",
+        "MicrosoftDocs/powerapps-docs",
+        "MicrosoftDocs/power-platform",
+        "MicrosoftDocs/dynamics-365-contact-center",
+        "MicrosoftDocs/Xandr-docs",
+        "MicrosoftDocs/azure-docs-sdk-cpp",
+        "MicrosoftDocs/azure-docs-cli",
         "MicrosoftDocs/azure-dev-docs",
         "MicrosoftDocs/msteams-docs",
-        "MicrosoftDocs/copilot-connectors",
-        "MicrosoftDocs/quantum-docs",
-        "MicrosoftDocs/edge-developer",
-        "MicrosoftDocs/power-platform",
-        "MicrosoftDocs/dynamics-365-project-operations",
-        "MicrosoftDocs/azure-docs-cli",
-        "MicrosoftDocs/microsoft-salescopilot-docs",
         "MicrosoftDocs/entra-docs",
-        "MicrosoftDocs/dynamics-365-customer-engagement",
-        "MicrosoftDocs/powerapps-docs",
-        "MicrosoftDocs/m365copilot-docs",
-        "MicrosoftDocs/azure-docs-sdk-cpp",
-        "MicrosoftDocs/SupportArticles-docs",
-        "MicrosoftDocs/customer-insights",
-        "MicrosoftDocs/microsoftgraph-docs-powershell",
+        "MicrosoftDocs/OfficeDocs-SharePoint-PowerShell",
+        "MicrosoftDocs/azure-stack-docs",
+        "MicrosoftDocs/learn",
+        "MicrosoftDocs/azure-ai-docs",
         "MicrosoftDocs/azure-monitor-docs",
-        "MicrosoftDocs/dynamics-365-contact-center",
+        "MicrosoftDocs/azure-management-docs",
+        "MicrosoftDocs/SupportArticles-docs",
+        "MicrosoftDocs/azure-docs-powershell",
+        "MicrosoftDocs/sql-docs",
+        "MicrosoftDocs/dynamics-365-unified-operations-public",
+        "MicrosoftDocs/dynamics-365-customer-engagement",
+        "MicrosoftDocs/customer-insights",
+        "MicrosoftDocs/power-automate-docs",
+        "MicrosoftDocs/azure-devops-docs",
+        "MicrosoftDocs/cpp-docs",
+        "MicrosoftDocs/anyscale-on-azure-docs",
+        "MicrosoftDocs/copilot-connectors",
+        "MicrosoftDocs/edge-developer",
+        "MicrosoftDocs/dynamics-365-project-operations",
+        "MicrosoftDocs/microsoft-salescopilot-docs",
+        "MicrosoftDocs/m365copilot-docs",
+        "MicrosoftDocs/microsoftgraph-docs-powershell",
         "MicrosoftDocs/windows-dev-docs",
         "MicrosoftDocs/azure-aks-docs",
         "MicrosoftDocs/PowerShell-Docs-PSGet",
@@ -26962,25 +26921,18 @@
         "MicrosoftDocs/azure-devops-yaml-schema",
         "MicrosoftDocs/windows-iot-public",
         "MicrosoftDocs/visualstudio-docs",
-        "MicrosoftDocs/azure-devops-docs",
         "MicrosoftDocs/PowerShell-Docs",
         "MicrosoftDocs/windows-topic-specific-samples",
         "MicrosoftDocs/Advertising",
-        "MicrosoftDocs/OfficeDocs-SharePoint-PowerShell",
         "MicrosoftDocs/office-365-management-api",
-        "MicrosoftDocs/Xandr-docs",
-        "MicrosoftDocs/dynamics-365-unified-operations-public",
         "MicrosoftDocs/reliability-docs",
         "MicrosoftDocs/office-docs-powershell",
         "MicrosoftDocs/microsoft-authentication-library-dotnet",
         "MicrosoftDocs/microsoft-authentication-library-javascript",
         "MicrosoftDocs/dynamics365smb-docs",
         "MicrosoftDocs/customer-voice",
-        "MicrosoftDocs/azure-docs-powershell",
-        "MicrosoftDocs/power-automate-docs",
         "MicrosoftDocs/CSIDev-Public",
         "MicrosoftDocs/globalization",
-        "MicrosoftDocs/sql-docs",
         "MicrosoftDocs/fabric-docs",
         "MicrosoftDocs/dataexplorer-docs",
         "MicrosoftDocs/ef-core-for-beginners",
@@ -27021,8 +26973,7 @@
         "MicrosoftDocs/FastTrackBlogRepo",
         "MicrosoftDocs/Azure-MachineLearning-DataScience",
         "MicrosoftDocs/mcp",
-        "MicrosoftDocs/microsoft-authentication-library-java",
-        "MicrosoftDocs/km"
+        "MicrosoftDocs/microsoft-authentication-library-java"
       ]
     },
     "https://api.github.com/orgs/MicrosoftDocs/repos?type=public&per_page=100&page=2&sort=full_name&direction=asc": {
@@ -27134,11 +27085,12 @@
       ]
     },
     "https://api.github.com/orgs/MicrosoftDocs/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:11.181276Z",
-      "etag": "W/\"4dbc2c103b57f702711b434736379ff9d21e4b7fdeb5ec84cc2c66bed38f673e\"",
+      "cached_at": "2026-09-26T17:16:29.661843Z",
+      "etag": "W/\"ad960a9c973179f824eb22d752e8baf9b78f7ad858bbc2f063315e59153fa5d7\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "MicrosoftDocs/km",
         "MicrosoftDocs/VBA-Docs",
         "MicrosoftDocs/Azure-RMSDocs",
         "MicrosoftDocs/ai-builder",
@@ -27196,7 +27148,6 @@
         "MicrosoftDocs/office-developer-lync-wfp-ref-dotnet",
         "MicrosoftDocs/community-content",
         "MicrosoftDocs/quantum-api",
-        "MicrosoftDocs/Console-Docs",
         "MicrosoftDocs/bingmaps-docs",
         "MicrosoftDocs/OData-docs",
         "MicrosoftDocs/sccm-docs-powershell-ref",
@@ -27976,11 +27927,12 @@
       ]
     },
     "https://api.github.com/orgs/MicrosoftLearning/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:13.026810Z",
-      "etag": "W/\"11624860d8976e3ee4c1306db41c00f9a6f020496862e7ab5deb5317b61d9692\"",
+      "cached_at": "2026-09-26T17:16:31.158826Z",
+      "etag": "W/\"f3fb0ae0c73d462ebaa243c9155ccdfdbe716f4b8f0ecc11a3fc735759ad0fcc\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "MicrosoftLearning/trainer-demo-deploy",
         "MicrosoftLearning/MS-4004-Empower-workforce-copilot-use-cases",
         "MicrosoftLearning/MB-230-Dynamics365forCustomerService",
         "MicrosoftLearning/Build-Govern-and-Scale-AI-Solutions-with-Cowork-Scout",
@@ -27993,7 +27945,6 @@
         "MicrosoftLearning/MS-4018-Draft-analyze-present-Microsoft-365-Copilot",
         "MicrosoftLearning/mslearn-ai-language",
         "MicrosoftLearning/MS-4022-Extend-Microsoft-365-Copilot-in-Copilot-Studio",
-        "MicrosoftLearning/trainer-demo-deploy",
         "MicrosoftLearning/mslearn-genaiops",
         "MicrosoftLearning/mslearn-copilot",
         "MicrosoftLearning/mslearn-ai-information-extraction",
@@ -28192,8 +28143,8 @@
       ]
     },
     "https://api.github.com/orgs/MicrosoftLearning/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:14.627516Z",
-      "etag": "W/\"bdbe720a8bf18f76a7e599e2e97c1c93d3a065069cf55c76c2f0d7af03ec8792\"",
+      "cached_at": "2026-09-26T17:16:32.276589Z",
+      "etag": "W/\"da734db92c989152ad2294635de2afe412e1d865f86273d901ef461092356220\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
@@ -28597,19 +28548,20 @@
       ]
     },
     "https://api.github.com/orgs/OfficeDev/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:21.321238Z",
-      "etag": "W/\"af888b19328fb868a7cf9178accc6799da1b245196ab8ba80371fcf7de3539fd\"",
+      "cached_at": "2026-09-26T17:16:38.919972Z",
+      "etag": "W/\"698f85f8c2a5aa9b97c245e1ddfd22eaa915cf975a8d2bb11af6ce0546595d30\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "OfficeDev/office-js-snippets",
-        "OfficeDev/office-js-docs-reference",
-        "OfficeDev/office-js-docs-pr",
-        "OfficeDev/Office-Add-in-samples",
-        "OfficeDev/msteams-client-docs-ref-typescript",
         "OfficeDev/microsoft-365-agents-toolkit",
-        "OfficeDev/microsoft-365-agents-toolkit-samples",
+        "OfficeDev/Office-Add-in-samples",
         "OfficeDev/Office-Addin-Scripts",
+        "OfficeDev/office-scripts-docs-reference",
+        "OfficeDev/office-js-snippets",
+        "OfficeDev/office-js-docs-pr",
+        "OfficeDev/office-js-docs-reference",
+        "OfficeDev/msteams-client-docs-ref-typescript",
+        "OfficeDev/microsoft-365-agents-toolkit-samples",
         "OfficeDev/Excel-Custom-Functions-JS",
         "OfficeDev/Excel-Custom-Functions",
         "OfficeDev/Excel-Custom-Functions-Shared",
@@ -28624,7 +28576,6 @@
         "OfficeDev/microsoft-teams-library-js",
         "OfficeDev/office-dev-program-docs",
         "OfficeDev/office-scripts-docs",
-        "OfficeDev/office-scripts-docs-reference",
         "OfficeDev/Office-Inspectors-for-Fiddler",
         "OfficeDev/O365-EDU-Tools",
         "OfficeDev/Office-Addin-TaskPane-SSO-NAA",
@@ -28643,7 +28594,6 @@
         "OfficeDev/Word-Scenario-based-Add-in-Samples",
         "OfficeDev/Project-docs-pr",
         "OfficeDev/Office-Js-Requirement-Sets",
-        "OfficeDev/Excel-Add-in-SalesLeads",
         "OfficeDev/O365-EDU-Assignments-GradeSync-App",
         "OfficeDev/browser-native",
         "OfficeDev/Microsoft-Teams-Adaptive-Card-Samples",
@@ -28701,7 +28651,8 @@
         "OfficeDev/ews-managed-api",
         "OfficeDev/Outlook-Add-in-JavaScript-ModuleExtension",
         "OfficeDev/microsoft-teams-apps-remotesupport",
-        "OfficeDev/Office-365-Huddle-Templates"
+        "OfficeDev/Office-365-Huddle-Templates",
+        "OfficeDev/acpreviewer"
       ]
     },
     "https://api.github.com/orgs/OfficeDev/repos?type=public&per_page=100&page=2&sort=full_name&direction=asc": {
@@ -28813,12 +28764,11 @@
       ]
     },
     "https://api.github.com/orgs/OfficeDev/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:22.575272Z",
-      "etag": "W/\"e702f703e9d596bbf6090f4c12343ab1ba0e4d221b03ff515ac245a90c9b66ca\"",
+      "cached_at": "2026-09-26T17:16:40.186627Z",
+      "etag": "W/\"04accf38e23aa6efd86824aa12164259fb55411c21d84b022c5332a3f6a6daa3\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "OfficeDev/acpreviewer",
         "OfficeDev/Scenario-based-Sample-Scripts",
         "OfficeDev/microsoft-teams-apps-2048-tournament",
         "OfficeDev/microsoft-teams-apps-tetris-tournament",
@@ -28867,9 +28817,7 @@
         "OfficeDev/Office-Addin-TaskPane-Angular-JS",
         "OfficeDev/Office-Addin-TaskPane-Angular",
         "OfficeDev/Office-Addin-Content",
-        "OfficeDev/PowerPoint-Add-in-JavaScript-SliceDataChunks",
         "OfficeDev/OData-BCS-SharePoint-Hosted-App-Code-Sample",
-        "OfficeDev/Excel-Add-in-WoodGrove-Expense-Trends",
         "OfficeDev/Warranty-Repair-Response-Outlook-Mail-App",
         "OfficeDev/Image-FileHandler",
         "OfficeDev/teams-chef-sample",
@@ -28917,7 +28865,10 @@
         "OfficeDev/Office-365-SDK-for-Java",
         "OfficeDev/Mail-API-Win10-UWP",
         "OfficeDev/Project-REST-Basic-Operations",
-        "OfficeDev/Outlook-SDK-iOS"
+        "OfficeDev/Outlook-SDK-iOS",
+        "OfficeDev/skype-web-sdk-samples",
+        "OfficeDev/skype-ios-app-sdk-samples",
+        "OfficeDev/Project-JSOM-Copy-Work-Packages"
       ]
     },
     "https://api.github.com/orgs/OfficeDev/repos?type=public&per_page=100&page=3&sort=full_name&direction=asc": {
@@ -29264,8 +29215,8 @@
       ]
     },
     "https://api.github.com/orgs/PowerShell/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:23.786618Z",
-      "etag": "W/\"ceb26a09fc95a9ec662d4ed244386bf7113be07331078b7c8c279bffba062def\"",
+      "cached_at": "2026-09-26T17:16:41.506982Z",
+      "etag": "W/\"380c275be9a9d2c9502eaf76115ce513225060c33def58b3e8c36c72d51c3b09\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
@@ -29386,8 +29337,8 @@
       ]
     },
     "https://api.github.com/orgs/PowerShell/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:24.185515Z",
-      "etag": "W/\"eeee5de4beec10ddfddbb7fddfe3aefbd13be0134a3811507adf4fed7e12a50f\"",
+      "cached_at": "2026-09-26T17:16:41.818130Z",
+      "etag": "W/\"1055397826464bba8e6e1b2c5e41267273cbcef7213f460be56487ff3ac08dd5\"",
       "has_next": false,
       "item_count": 6,
       "repo_full_names": [
@@ -29438,13 +29389,13 @@
       ]
     },
     "https://api.github.com/orgs/SharePoint/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:24.859816Z",
-      "etag": "W/\"e20ab4a7375eef840b3916dbca28ce20933e53dd0854652a6d5c3d236ea8aa45\"",
+      "cached_at": "2026-09-26T17:16:42.376127Z",
+      "etag": "W/\"eaceadcaabd5180008be46b952ab4629a220905331b51fcdefddbb59b2f07d7d\"",
       "has_next": false,
       "item_count": 31,
       "repo_full_names": [
-        "SharePoint/sp-dev-docs",
         "SharePoint/microsoft-365-docs",
+        "SharePoint/sp-dev-docs",
         "SharePoint/sp-dev-training-spfx-webpart-proppane",
         "SharePoint/sp-dev-training-spfx-ace",
         "SharePoint/sp-dev-training-spfx-getting-started",
@@ -29585,8 +29536,8 @@
       ]
     },
     "https://api.github.com/orgs/aspnet/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:42.224221Z",
-      "etag": "W/\"ecdcbc16e1bdd7a69201f723fa39fb27b147738be74777caaaf3679ac656be89\"",
+      "cached_at": "2026-09-26T17:16:57.883053Z",
+      "etag": "W/\"1fd58aa6466d9cf193cd2e69c649c7af6328ad5a0bc7dd343dd9ebc85de09e57\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
@@ -29713,8 +29664,8 @@
       ]
     },
     "https://api.github.com/orgs/aspnet/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:42.645096Z",
-      "etag": "W/\"4df507a531df2547d241564e3b4977bbb7e98e66528fefa99838da9077a595ae\"",
+      "cached_at": "2026-09-26T17:16:58.227589Z",
+      "etag": "W/\"d6450a792ec745ca039ee4bb76d2d1b2cfd4f071fd0a6fe3bce2fd186c3a91e6\"",
       "has_next": false,
       "item_count": 12,
       "repo_full_names": [
@@ -29841,72 +29792,78 @@
       ]
     },
     "https://api.github.com/orgs/dotnet/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:18.919943Z",
-      "etag": "W/\"4b765471afbc62433543e1dccf79f72bcac017714257758789a5b2187531325a\"",
+      "cached_at": "2026-09-26T17:16:36.193895Z",
+      "etag": "W/\"a4d2ad10fa8081a7f4462d7b7a55c49658f988ac44d0b03bfb6848e5cad63dbf\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "dotnet/dotnet-api-docs",
-        "dotnet/dotnet",
-        "dotnet/dotnet-monitor",
-        "dotnet/SqlClient",
-        "dotnet/docs",
-        "dotnet/source-build",
-        "dotnet/versions",
-        "dotnet/source-build-assets",
-        "dotnet/AspNetCore.Docs",
+        "dotnet/core",
         "dotnet/runtime",
-        "dotnet/efcore",
         "dotnet/fsharp",
-        "dotnet/sdk",
-        "dotnet/maui",
-        "dotnet/vscode-csharp",
         "dotnet/macios",
-        "dotnet/dotNext",
-        "dotnet/aspnetcore",
-        "dotnet/diagnostics",
-        "dotnet/android",
-        "dotnet/msbuild",
-        "dotnet/maui-labs",
-        "dotnet/docker-tools",
         "dotnet/orleans",
         "dotnet/skills",
-        "dotnet/extensions",
-        "dotnet/workload-versions",
-        "dotnet/Scaffolding",
-        "dotnet/csharpstandard",
-        "dotnet/core",
-        "dotnet/emsdk",
-        "dotnet/dotnet-buildtools-prereqs-docker",
-        "dotnet/arcade",
-        "dotnet/roslyn",
-        "dotnet/arcade-services",
-        "dotnet/runtimelab",
+        "dotnet/android",
+        "dotnet/docs",
         "dotnet/Nerdbank.Streams",
+        "dotnet/maui",
         "dotnet/Nerdbank.GitVersioning",
+        "dotnet/sdk",
+        "dotnet/workload-versions",
+        "dotnet/dotnet",
+        "dotnet/android-api-docs",
+        "dotnet/runtimelab",
+        "dotnet/performance",
+        "dotnet/EntityFramework.Docs",
+        "dotnet/roslyn",
+        "dotnet/efcore",
+        "dotnet/Scaffolding",
+        "dotnet/dotnet-monitor",
+        "dotnet/source-build-assets",
+        "dotnet/aspnetcore",
+        "dotnet/NuGet.BuildTasks",
+        "dotnet/wcf",
+        "dotnet/eShop",
+        "dotnet/maui-labs",
+        "dotnet/sign",
+        "dotnet/dnceng",
+        "dotnet/jitutils",
+        "dotnet/vscode-dotnet-runtime",
+        "dotnet/diagnostics",
+        "dotnet/SqlClient",
+        "dotnet/docker-tools",
+        "dotnet/wpf",
+        "dotnet/vscode-csharp",
+        "dotnet/msbuild",
+        "dotnet/arcade",
+        "dotnet/templating",
+        "dotnet/AspNetCore.Docs",
+        "dotnet/blazor-samples",
+        "dotnet/installer",
+        "dotnet/dotnet-buildtools-prereqs-docker",
+        "dotnet/dotnet-docker",
+        "dotnet/versions",
+        "dotnet/dotNext",
+        "dotnet/extensions",
+        "dotnet/dotnet-api-docs",
+        "dotnet/source-build",
+        "dotnet/csharpstandard",
+        "dotnet/emsdk",
+        "dotnet/arcade-services",
         "dotnet/machinelearning",
         "dotnet/reactive",
-        "dotnet/dotnet-docker",
         "dotnet/dotnet-operator-sdk",
-        "dotnet/performance",
         "dotnet/dev-proxy",
-        "dotnet/wcf",
-        "dotnet/wpf",
         "dotnet/winforms",
         "dotnet/windowsdesktop",
-        "dotnet/templating",
-        "dotnet/NuGet.BuildTasks",
         "dotnet/Silk.NET",
         "dotnet/docfx",
-        "dotnet/dnceng",
         "dotnet/docs-tools",
-        "dotnet/sign",
         "dotnet/website-thanks-data",
         "dotnet/xcsync",
         "dotnet/emscripten",
         "dotnet/iot",
         "dotnet/crank",
-        "dotnet/blazor-samples",
         "dotnet/docs-maui",
         "dotnet/arcade-skills",
         "dotnet/xharness",
@@ -29929,23 +29886,17 @@
         "dotnet/nuget-trends",
         "dotnet/apisof.net",
         "dotnet/install-scripts",
-        "dotnet/vscode-dotnet-runtime",
         "dotnet/android-libraries",
         "dotnet/wpf-test",
         "dotnet/homebrew-dev-proxy",
         "dotnet/AspNetCore.Docs.Automation",
-        "dotnet/android-api-docs",
         "dotnet/source-build-externals",
         "dotnet/cecil",
         "dotnet/llvm-project",
         "dotnet/maintenance-packages",
         "dotnet/roslyn-analyzers",
         "dotnet/yarp",
-        "dotnet/hotreload-utils",
-        "dotnet/format",
-        "dotnet/extensions-samples",
-        "dotnet/systemweb-adapters",
-        "dotnet/cli-lab"
+        "dotnet/hotreload-utils"
       ]
     },
     "https://api.github.com/orgs/dotnet/repos?type=public&per_page=100&page=2&sort=full_name&direction=asc": {
@@ -30057,20 +30008,22 @@
       ]
     },
     "https://api.github.com/orgs/dotnet/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:20.054664Z",
-      "etag": "W/\"0371393f0444b1cf3805b4e73f0c0b7b677e22ede84f2225b4aba70840fb72f4\"",
+      "cached_at": "2026-09-26T17:16:37.791356Z",
+      "etag": "W/\"208fc277761fef6b05bf59c43cf79fac5b99c5891333f488769a0f1fb1d4530e\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "dotnet/format",
+        "dotnet/extensions-samples",
+        "dotnet/systemweb-adapters",
+        "dotnet/cli-lab",
         "dotnet/symreader-converter",
         "dotnet/symreader-portable",
         "dotnet/interactive-window",
         "dotnet/metadata-tools",
         "dotnet/ef6",
-        "dotnet/eShop",
         "dotnet/scenario-tests",
         "dotnet/designs",
-        "dotnet/installer",
         "dotnet/samples",
         "dotnet/docs-desktop",
         "dotnet/ResXResourceManager",
@@ -30082,7 +30035,6 @@
         "dotnet/linker",
         "dotnet/apireviews",
         "dotnet/WatsonWebserver",
-        "dotnet/EntityFramework.Docs",
         "dotnet/msbuild-api-docs",
         "dotnet/roslynator",
         "dotnet/csharp-tmLanguage",
@@ -30092,7 +30044,6 @@
         "dotnet/AspNetApiDocs",
         "dotnet/skills-data",
         "dotnet/aspnet-api-versioning",
-        "dotnet/jitutils",
         "dotnet/machinelearning-samples",
         "dotnet/roslyn-api-docs",
         "dotnet/LLVMSharp",
@@ -30446,111 +30397,111 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:33.154397Z",
-      "etag": "W/\"bb97a734b24973556c41cf208c89852cf68494508aee993b45fcdb616379d2c2\"",
+      "cached_at": "2026-09-26T17:16:50.140604Z",
+      "etag": "W/\"ec652ebecdf8f590995135350a466e2943b6a6f06fb9d7beabee4f8768497714\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "microsoft/vscode",
-        "microsoft/onnxruntime-genai",
-        "microsoft/opentelemetry-distro-browser",
-        "microsoft/Application-Insights-Workbooks",
-        "microsoft/Employee-Self-Service-Agent-Developer-Kit",
-        "microsoft/aspire",
-        "microsoft/mcp",
-        "microsoft/Olive",
-        "microsoft/litebox",
-        "microsoft/vscode-azurefunctions",
-        "microsoft/pxt",
-        "microsoft/azure-quantum-python",
-        "microsoft/BuildXL",
-        "microsoft/winget-cli",
-        "microsoft/physical-ai-toolchain",
-        "microsoft/mssql-rs",
-        "microsoft/vssdktestfx",
-        "microsoft/onnxruntime",
-        "microsoft/qdk",
-        "microsoft/What-I-did-with-Cowork",
-        "microsoft/scope",
-        "microsoft/olive-recipes",
-        "microsoft/agent-host-protocol",
-        "microsoft/fhir-server",
-        "microsoft/TypeScript",
-        "microsoft/qdk-ec",
-        "microsoft/agent365-skills",
-        "microsoft/webui",
-        "microsoft/playwright",
-        "microsoft/work-iq",
-        "microsoft/python-environment-tools",
-        "microsoft/onnxruntime-extensions",
-        "microsoft/Windows-IoT-Samples",
         "microsoft/winget-pkgs",
-        "microsoft/CopyOnWrite",
-        "microsoft/vsts-extension-multivalue-control",
-        "microsoft/garnet",
-        "microsoft/mxc",
-        "microsoft/qdk-chemistry",
-        "microsoft/aspire.dev",
-        "microsoft/durabletask-js",
-        "microsoft/slngen",
-        "microsoft/vs-threading",
-        "microsoft/rust-mqtt-client",
-        "microsoft/omnichannel-chat-widget",
-        "microsoft/go-winio",
-        "microsoft/LinuxBrokerForAVDAccess",
-        "microsoft/language-server-protocol",
-        "microsoft/snocat",
-        "microsoft/DirectStorage",
-        "microsoft/discovery",
-        "microsoft/promptu",
-        "microsoft/vcpkg",
-        "microsoft/mggraph-intune-samples",
-        "microsoft/DirectXShaderCompiler",
-        "microsoft/v8-jsi",
-        "microsoft/GitHub-Copilot-for-Azure",
-        "microsoft/ApplicationInsights-dotnet",
-        "microsoft/fast",
+        "microsoft/PyRIT",
+        "microsoft/TypeAgent",
+        "microsoft/hve-core",
         "microsoft/BCApps",
-        "microsoft/WSL",
-        "microsoft/vscode-mssql",
-        "microsoft/BestPractice_Deploy-Scripts",
-        "microsoft/kiota-authentication-azure-go",
-        "microsoft/oxidizer",
-        "microsoft/component-detection",
-        "microsoft/clarity",
-        "microsoft/kiota-php",
+        "microsoft/webui",
+        "microsoft/WindowsAppSDK",
         "microsoft/msquic",
-        "microsoft/kiota-java",
-        "microsoft/vscode-loc",
-        "microsoft/vscode-python",
-        "microsoft/azure-pipelines-tasks",
-        "microsoft/testfx",
-        "microsoft/kiota-serialization-form-go",
-        "microsoft/apm",
-        "microsoft/lisa",
-        "microsoft/typespec",
-        "microsoft/kiota-python",
-        "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
-        "microsoft/vsmarketplace",
-        "microsoft/graphitation",
-        "microsoft/retina",
-        "microsoft/kata-containers",
-        "microsoft/vscode-azureresourcegroups",
-        "microsoft/Agents-for-python",
-        "microsoft/kiota",
-        "microsoft/CCF",
-        "microsoft/kiota-ruby",
-        "microsoft/setup-kiota",
-        "microsoft/fluentui-blazor",
-        "microsoft/EventLogExpert",
-        "microsoft/CmdPal-Extensions",
-        "microsoft/vscode-flake8",
-        "microsoft/mu_basecore",
-        "microsoft/power-platform-skills",
+        "microsoft/vscode",
+        "microsoft/mxc",
+        "microsoft/agent-framework-durable-extension",
+        "microsoft/vstest",
+        "microsoft/onnxruntime-genai",
+        "microsoft/simplechat",
+        "microsoft/mssql-rs",
+        "microsoft/aspire",
         "microsoft/agent-governance-toolkit",
-        "microsoft/mssql-python",
+        "microsoft/quicreach",
+        "microsoft/winget-cli",
+        "microsoft/onnxruntime",
+        "microsoft/tgrep",
+        "microsoft/pxt-common-packages",
+        "microsoft/Microsoft-AI-Decision-Framework",
+        "microsoft/mimalloc",
+        "microsoft/LinuxBrokerForAVDAccess",
+        "microsoft/mscclpp",
+        "microsoft/site-admin",
+        "microsoft/aspire.dev",
+        "microsoft/litebox",
         "microsoft/PowerToys",
-        "microsoft/rhobotics"
+        "microsoft/AzureLinuxVulnerabilityData",
+        "microsoft/testfx",
+        "microsoft/oxidizer",
+        "microsoft/intelligent-terminal",
+        "microsoft/pxt-arcade",
+        "microsoft/ntosebpfext",
+        "microsoft/vcpkg",
+        "microsoft/garnet",
+        "microsoft/azurelinux",
+        "microsoft/PAX",
+        "microsoft/amplifier-unified",
+        "microsoft/microsoft-ui-xaml",
+        "microsoft/FastTrack",
+        "microsoft/Analytics-Hub",
+        "microsoft/Dynamics365Commerce.Solutions",
+        "microsoft/vscode-cosmosdb",
+        "microsoft/Dynamics365Commerce.InStore",
+        "microsoft/durabletask-dotnet",
+        "microsoft/Dynamics365Commerce.ScaleUnit",
+        "microsoft/waza",
+        "microsoft/mssql-python",
+        "microsoft/lisa",
+        "microsoft/foundry-local",
+        "microsoft/ai_night_scientist",
+        "microsoft/homebrew-apm",
+        "microsoft/TypeScript-DOM-lib-generator",
+        "microsoft/fluentui-blazor",
+        "microsoft/WinUI-Gallery",
+        "microsoft/fluentui-charting-contrib",
+        "microsoft/vscode-pull-request-github",
+        "microsoft/qdk-ec",
+        "microsoft/vsmarketplace",
+        "microsoft/Employee-Self-Service-Agent-Developer-Kit",
+        "microsoft/openjdk-jdk",
+        "microsoft/STL",
+        "microsoft/vscode-cpptools",
+        "microsoft/durabletask-go",
+        "microsoft/durabletask-java",
+        "microsoft/durabletask-js",
+        "microsoft/durabletask-python",
+        "microsoft/hcsshim",
+        "microsoft/healthcare-shared-components",
+        "microsoft/sarif-sdk",
+        "microsoft/vcpkg-tool",
+        "microsoft/python-lsp-compare",
+        "microsoft/mssql-jdbc",
+        "microsoft/amplifier-bundle-imagegen",
+        "microsoft/playwright",
+        "microsoft/amplifier-bundle-work",
+        "microsoft/benchpress",
+        "microsoft/CsWinRT",
+        "microsoft/MIDI",
+        "microsoft/vscode-python-environments",
+        "microsoft/mcp",
+        "microsoft/aspire-samples",
+        "microsoft/WindowsDeveloperConfig",
+        "microsoft/nvx",
+        "microsoft/clarity",
+        "microsoft/win-net-test",
+        "microsoft/xdp-for-windows",
+        "microsoft/microsoft-ui-reactor",
+        "microsoft/physical-ai-toolchain",
+        "microsoft/azure-dev-tools",
+        "microsoft/power-platform-skills",
+        "microsoft/amplifier-smart-tools-catalog",
+        "microsoft/trident",
+        "microsoft/HOBL",
+        "microsoft/vs-servicehub",
+        "microsoft/qdk",
+        "microsoft/sbi"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=10&sort=full_name&direction=asc": {
@@ -31742,111 +31693,111 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:34.404240Z",
-      "etag": "W/\"7b791bdf25b546ac32e0338bceb50449971dedfca3f1a5cc9b3a55281ebc2096\"",
+      "cached_at": "2026-09-26T17:16:51.421356Z",
+      "etag": "W/\"99ad7e6f617c82740c88049629b3e08fe4a2cf809bed46da316f3264fb8dd4eb\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "microsoft/amplifier-voice",
+        "microsoft/winget-cli-restsource",
+        "microsoft/Container-Migration-Solution-Accelerator",
+        "microsoft/Windows-IoT-Samples",
         "microsoft/DiskANN",
+        "microsoft/fabric-rti-mcp",
+        "microsoft/Olive",
+        "microsoft/qdk-chemistry",
+        "microsoft/react-native-macos",
+        "microsoft/ebpf-for-windows",
+        "microsoft/v8-jsi",
+        "microsoft/Graphormer",
+        "microsoft/terminal",
+        "microsoft/opentelemetry-distro-browser",
+        "microsoft/EventLogExpert",
+        "microsoft/BuildXL",
+        "microsoft/SAIMOpt.jl",
+        "microsoft/rushstack",
+        "microsoft/CsWin32",
+        "microsoft/libHttpClient",
+        "microsoft/fhir-server",
+        "microsoft/airflow-providers-microsoft-fabric",
         "microsoft/FluidFramework",
-        "microsoft/amplifier-module-tool-mcp",
-        "microsoft/go",
-        "microsoft/SqlNexus",
-        "microsoft/copilot-studio-plugin",
-        "microsoft/WindowsAppSDK",
-        "microsoft/quicreach",
-        "microsoft/frontier-ghcp-rvas",
-        "microsoft/amplifier-bundle-ts-dev",
-        "microsoft/dotnet-modernization-for-beginners",
-        "microsoft/mscclpp",
-        "microsoft/agent-framework-durable-extension",
-        "microsoft/amplifier-app-log-viewer",
-        "microsoft/microsoft-ui-xaml",
-        "microsoft/PTVS",
-        "microsoft/vs-renovate-presets",
-        "microsoft/ApplicationInsights-Kubernetes",
-        "microsoft/AzureTRE",
-        "microsoft/agent-framework-go",
-        "microsoft/aurora",
-        "microsoft/vs-mef",
-        "microsoft/o365-moodle",
+        "microsoft/Build26-LAB501-from-zero-to-deployed-on-azure-with-ai-agents",
+        "microsoft/dcp",
         "microsoft/VirtualClient",
-        "microsoft/hcsshim",
-        "microsoft/azure-pipelines-tasks-common-packages",
-        "microsoft/foundry-local",
-        "microsoft/Agent365-devTools",
-        "microsoft/FluidExamples",
-        "microsoft/Analytics-Hub",
-        "microsoft/agent-framework",
-        "microsoft/vscode-cosmosdb",
-        "microsoft/ox-tools",
-        "microsoft/pg_durable",
-        "microsoft/Agents-for-js",
-        "microsoft/win-dev-skills",
-        "microsoft/vs-servicehub",
-        "microsoft/CoworkSuperUser",
-        "microsoft/Oryx",
-        "microsoft/BC-Bench",
+        "microsoft/TypeScript",
+        "microsoft/awesome-rayfin",
+        "microsoft/azure-sql-dev-hub",
+        "microsoft/XBOX-Godot-Sample",
+        "microsoft/WSL",
         "microsoft/playwright.dev",
-        "microsoft/mrc-nccl-plugin",
-        "microsoft/ObjectStoreProvider",
-        "microsoft/nova-facade",
-        "microsoft/MIDI",
-        "microsoft/aspire-samples",
-        "microsoft/kiota-serialization-text-go",
-        "microsoft/site-admin",
-        "microsoft/Qcodes",
-        "microsoft/kiota-dotnet",
-        "microsoft/kiota-typescript",
-        "microsoft/OpenApi.ApiManifest",
-        "microsoft/vs-validation",
-        "microsoft/WinUI-Gallery",
-        "microsoft/PSRule",
-        "microsoft/Dynamics365Commerce.InStore",
-        "microsoft/perfview",
-        "microsoft/PyRIT",
-        "microsoft/vscode-python-environments",
-        "microsoft/amplifier-agent",
-        "microsoft/kompli",
-        "microsoft/vscode-containers",
-        "microsoft/vscode-documentdb",
-        "microsoft/azure-devops-mcp",
-        "microsoft/amplifier-unified",
-        "microsoft/fluentui",
-        "microsoft/simplechat",
-        "microsoft/AzureLinuxVulnerabilityData",
-        "microsoft/terraform-provider-msgraph",
-        "microsoft/nvx",
-        "microsoft/go-infra",
-        "microsoft/amplifier-module-loop-live",
-        "microsoft/fluentui-system-icons",
-        "microsoft/merklecpp",
-        "microsoft/PowerPlatformConnectors",
-        "microsoft/PAX",
-        "microsoft/go-crypto-openssl",
-        "microsoft/FastTrack",
-        "microsoft/brewlet",
+        "microsoft/apps-agents-workshop",
+        "microsoft/olive-recipes",
         "microsoft/Agents",
-        "microsoft/amplifier-app-cli",
-        "microsoft/amplifier-bundle-context-managed",
-        "microsoft/amplifier-module-loop-streaming",
-        "microsoft/amplifier-module-context-simple",
-        "microsoft/amplifier-module-provider-openai",
-        "microsoft/amplifier-lib",
-        "microsoft/amplifier-foundation",
-        "microsoft/BC-ALAgents",
-        "microsoft/Agents-for-net",
-        "microsoft/vstest",
+        "microsoft/Application-Insights-Workbooks",
+        "microsoft/cognitive-services-speech-sdk-js",
+        "microsoft/power-pages-samples",
+        "microsoft/go-images",
+        "microsoft/opentelemetry-distro-python",
+        "microsoft/teams.ts",
+        "microsoft/Docker-Provider",
+        "microsoft/DirectXShaderCompiler",
+        "microsoft/opentelemetry-distro-dotnet",
+        "microsoft/react-native-windows",
+        "microsoft/integrity-vhd",
+        "microsoft/playwright-mcp",
+        "microsoft/artifacts-credprovider",
+        "microsoft/kiota-java",
+        "microsoft/onnxruntime-extensions",
+        "microsoft/python-environment-tools",
+        "microsoft/openvmm",
+        "microsoft/openvmm-deps",
+        "microsoft/WATCH",
+        "microsoft/copilot-studio-plugin",
+        "microsoft/discovery",
+        "microsoft/Agents-for-python",
+        "microsoft/BestPractice_Deploy-Scripts",
+        "microsoft/promptu",
+        "microsoft/usersim",
+        "microsoft/Windows-driver-samples",
+        "microsoft/service-fabric-explorer",
+        "microsoft/fluentui-system-icons",
+        "microsoft/microsoft-sql",
+        "microsoft/pxt-microbit",
+        "microsoft/kata-containers",
+        "microsoft/durabletask-mssql",
+        "microsoft/azure-pipelines-tasks",
+        "microsoft/CopilotScope",
+        "microsoft/Xbox-GDK-Samples",
+        "microsoft/amplifier-bundle-dot-graph",
+        "microsoft/OpenAPI.NET",
+        "microsoft/typespec",
+        "microsoft/kiota",
+        "microsoft/teams.net",
+        "microsoft/teams.py",
+        "microsoft/kiota-dotnet",
+        "microsoft/kiota-samples",
+        "microsoft/react-native-gallery",
+        "microsoft/CoworkDashboard",
+        "microsoft/vscode-azureresourcegroups",
+        "microsoft/azure-solution-hub",
+        "microsoft/json-schemas",
+        "microsoft/powerbi-modeling-mcp",
+        "microsoft/kiota-python",
+        "microsoft/kiota-serialization-form-go",
+        "microsoft/vscode-docs",
+        "microsoft/global-renewables-watch",
+        "microsoft/ebpf-extension-common",
+        "microsoft/ApplicationInsights-Kubernetes",
+        "microsoft/slngen",
+        "microsoft/win-dev-skills",
+        "microsoft/ConsumptionCentral-for-Microsoft-Copilot",
         "microsoft/pyright",
-        "microsoft/SLG-Business-Applications",
-        "microsoft/binskim",
-        "microsoft/kiota-serialization-json-go",
-        "microsoft/kiota-bundle-go",
-        "microsoft/BCQuality",
-        "microsoft/rust-guidelines",
-        "microsoft/azurelinux",
-        "microsoft/vs-streamjsonrpc"
+        "microsoft/CopyOnWrite",
+        "microsoft/dev-tunnels",
+        "microsoft/cognitive-services-speech-sdk-go",
+        "microsoft/amplifier-bundle-browser",
+        "microsoft/tyger",
+        "microsoft/rs-deviceid",
+        "microsoft/rhobotics"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=20&sort=full_name&direction=asc": {
@@ -33038,111 +32989,111 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=3&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:35.671709Z",
-      "etag": "W/\"bac97d79e1189c71b7696f72f3cf4d15cf22d9549eb9596298b013483077dfdb\"",
+      "cached_at": "2026-09-26T17:16:52.830427Z",
+      "etag": "W/\"bd8b02ad126ce8662ad6c302ba1d9f1b7e43e5959cc3807d77ddb44bb489b4cc\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
-        "microsoft/navcontainerhelper",
-        "microsoft/aspire-skills",
-        "microsoft/rnx-kit",
-        "microsoft/CsWin32",
-        "microsoft/go-crypto-winnative",
-        "microsoft/go-crypto-darwin",
-        "microsoft/Dynamics365Commerce.Solutions",
-        "microsoft/skills-for-fabric",
-        "microsoft/dbt-fabricspark",
-        "microsoft/CopilotScope",
-        "microsoft/dicom-server",
-        "microsoft/retrochimera",
-        "microsoft/Kusto-Query-Language",
+        "microsoft/vscode-mssql",
+        "microsoft/atlas-design",
+        "microsoft/SimpleL7Proxy",
+        "microsoft/CCF",
+        "microsoft/o365-moodle",
         "microsoft/vscode-isort",
-        "microsoft/TypeAgent",
-        "microsoft/verona-rt",
-        "microsoft/Dynamics365Commerce.ScaleUnit",
-        "microsoft/customer-chatbot-solution-accelerator",
-        "microsoft/react-native-test-app",
-        "microsoft/PAX-Fabric",
-        "microsoft/kiota-abstractions-go",
-        "microsoft/kiota-http-go",
-        "microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
-        "microsoft/vscode-languageserver-node",
-        "microsoft/powerbi-visuals-webpack-plugin",
-        "microsoft/azure-pipelines-task-lib",
-        "microsoft/MHA",
-        "microsoft/kanagawa",
-        "microsoft/vscode-docs",
-        "microsoft/MicroHack",
-        "microsoft/microsoft-iq-solution-accelerator",
-        "microsoft/azure-boards-estimate",
-        "microsoft/vsts-extension-integer-control",
-        "microsoft/vcpkg-tool",
-        "microsoft/TypeScript-DOM-lib-generator",
-        "microsoft/adaptive-apps",
-        "microsoft/FluidHelloWorld",
-        "microsoft/powerbi-modeling-mcp",
-        "microsoft/ConsumptionCentral-for-Microsoft-Copilot",
-        "microsoft/teams.ts",
-        "microsoft/fluentui-charting-contrib",
-        "microsoft/ApplicationInsights-JS",
-        "microsoft/vscode-cpptools",
-        "microsoft/STL",
-        "microsoft/PowerBI-visuals-tools",
-        "microsoft/openjdk-jdk",
-        "microsoft/Power-CAT-Copilot-Studio-Kit",
+        "microsoft/dotnet-framework-docker",
+        "microsoft/SqlNexus",
+        "microsoft/roosterjs",
+        "microsoft/ai-agent-runbooks",
+        "microsoft/snocat",
+        "microsoft/retina",
+        "microsoft/brewlet",
+        "microsoft/CmdPal-Extensions",
+        "microsoft/pxt",
+        "microsoft/MultiAgent-Accelerator",
+        "microsoft/amplifier-bundle-a2a",
+        "microsoft/vscode-azurefunctions",
+        "microsoft/didx509cpp",
+        "microsoft/Cowork-Adoption-Intelligence",
+        "microsoft/agent-framework",
+        "microsoft/mu_tiano_platforms",
+        "microsoft/OpenAPI.NET.OData",
+        "microsoft/apm",
+        "microsoft/amplifier-app-log-viewer",
+        "microsoft/ApplicationInsights-dotnet",
+        "microsoft/frontier-agentic-cobuild-rvas",
+        "microsoft/component-detection",
+        "microsoft/go-infra",
+        "microsoft/StateKeeper",
+        "microsoft/pylance-release",
+        "microsoft/rust-mqtt-client",
         "microsoft/azure-container-linux",
-        "microsoft/seguru",
-        "microsoft/hve-core",
-        "microsoft/python-lsp-compare",
-        "microsoft/verismo",
-        "microsoft/react-native-windows",
-        "microsoft/sbi",
-        "microsoft/win32metadata",
-        "microsoft/wil",
-        "microsoft/fabric-rti-mcp",
-        "microsoft/teams-agent-accelerator-templates",
-        "microsoft/amplifier-module-provider-chat-completions",
-        "microsoft/SdnDiagnostics",
-        "microsoft/VbsEnclaveTooling",
-        "microsoft/BotFramework-WebChat",
-        "microsoft/asconnect",
         "microsoft/VSSDK-Analyzers",
-        "microsoft/FLAML",
-        "microsoft/SynapseML",
-        "microsoft/artifacts-keyring-nofuss",
-        "microsoft/SWE-bench-Live",
-        "microsoft/RepoLaunch",
-        "microsoft/trident",
-        "microsoft/amplifier-smart-tools-catalog",
-        "microsoft/microsoft-ui-reactor",
-        "microsoft/amplifier-module-provider-anthropic",
-        "microsoft/microsoft-store-apppublisher",
-        "microsoft/moc-sdk-for-go",
-        "microsoft/winappCli",
-        "microsoft/applicationinsights-angularplugin-js",
-        "microsoft/AutoSaddler",
-        "microsoft/WindowsAppSdkResources",
-        "microsoft/low-latency-audio",
-        "microsoft/finops-toolkit",
-        "microsoft/HealthAgentBench",
-        "microsoft/opensource-management-portal",
-        "microsoft/Skeena-Indigenous-Typeface",
-        "microsoft/agent-learning",
-        "microsoft/cheriot-kudu",
-        "microsoft/powerplatform-vscode",
-        "microsoft/dcp",
-        "microsoft/terraform-provider-fabric",
-        "microsoft/SwiftStreamingMarkdown",
-        "microsoft/go-infra-images",
-        "microsoft/ebpf-for-windows",
+        "microsoft/agent365-skills",
         "microsoft/kiota-serialization-multipart-go",
-        "microsoft/SAIMOpt.jl",
-        "microsoft/azure-linux-dev-tools",
-        "microsoft/fluentui-react-native",
-        "microsoft/pxt-common-packages",
-        "microsoft/WindowsDeveloperConfig",
-        "microsoft/InternPing-Website",
-        "microsoft/MultiAgent-Accelerator"
+        "microsoft/setup-kiota",
+        "microsoft/kiota-authentication-azure-go",
+        "microsoft/GitHub-Copilot-for-Azure",
+        "microsoft/python-type-stubs",
+        "microsoft/vasim",
+        "microsoft/azure-quantum-python",
+        "microsoft/vssdktestfx",
+        "microsoft/What-I-did-with-Cowork",
+        "microsoft/scope",
+        "microsoft/agent-host-protocol",
+        "microsoft/work-iq",
+        "microsoft/vsts-extension-multivalue-control",
+        "microsoft/vs-threading",
+        "microsoft/omnichannel-chat-widget",
+        "microsoft/go-winio",
+        "microsoft/language-server-protocol",
+        "microsoft/DirectStorage",
+        "microsoft/mggraph-intune-samples",
+        "microsoft/fast",
+        "microsoft/kiota-php",
+        "microsoft/vscode-loc",
+        "microsoft/vscode-python",
+        "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+        "microsoft/graphitation",
+        "microsoft/kiota-ruby",
+        "microsoft/vscode-flake8",
+        "microsoft/mu_basecore",
+        "microsoft/amplifier-voice",
+        "microsoft/amplifier-module-tool-mcp",
+        "microsoft/go",
+        "microsoft/frontier-ghcp-rvas",
+        "microsoft/amplifier-bundle-ts-dev",
+        "microsoft/dotnet-modernization-for-beginners",
+        "microsoft/PTVS",
+        "microsoft/vs-renovate-presets",
+        "microsoft/AzureTRE",
+        "microsoft/agent-framework-go",
+        "microsoft/vs-mef",
+        "microsoft/aurora",
+        "microsoft/azure-pipelines-tasks-common-packages",
+        "microsoft/Agent365-devTools",
+        "microsoft/FluidExamples",
+        "microsoft/ox-tools",
+        "microsoft/pg_durable",
+        "microsoft/Agents-for-js",
+        "microsoft/CoworkSuperUser",
+        "microsoft/Oryx",
+        "microsoft/BC-Bench",
+        "microsoft/mrc-nccl-plugin",
+        "microsoft/ObjectStoreProvider",
+        "microsoft/nova-facade",
+        "microsoft/kiota-serialization-text-go",
+        "microsoft/Qcodes",
+        "microsoft/kiota-typescript",
+        "microsoft/OpenApi.ApiManifest",
+        "microsoft/vs-validation",
+        "microsoft/PSRule",
+        "microsoft/perfview",
+        "microsoft/amplifier-agent",
+        "microsoft/kompli",
+        "microsoft/vscode-containers",
+        "microsoft/vscode-documentdb",
+        "microsoft/azure-devops-mcp",
+        "microsoft/fluentui"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=30&sort=full_name&direction=asc": {
@@ -34334,111 +34285,111 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=4&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:37.003922Z",
-      "etag": "W/\"8fcf7ba965aa7e521ab54778524019cd38d1394b302114b5a2edca67e1bb7e92\"",
+      "cached_at": "2026-09-26T17:16:54.240186Z",
+      "etag": "W/\"7e881113eebbe91200a8d96352836e1c2cf170e681aea679e499e81734aaea24\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "microsoft/terraform-provider-msgraph",
+        "microsoft/amplifier-module-loop-live",
+        "microsoft/merklecpp",
+        "microsoft/PowerPlatformConnectors",
+        "microsoft/go-crypto-openssl",
+        "microsoft/amplifier-app-cli",
+        "microsoft/amplifier-bundle-context-managed",
+        "microsoft/amplifier-module-loop-streaming",
+        "microsoft/amplifier-module-context-simple",
+        "microsoft/amplifier-module-provider-openai",
+        "microsoft/amplifier-lib",
+        "microsoft/amplifier-foundation",
+        "microsoft/BC-ALAgents",
+        "microsoft/Agents-for-net",
+        "microsoft/SLG-Business-Applications",
+        "microsoft/binskim",
+        "microsoft/kiota-serialization-json-go",
+        "microsoft/kiota-bundle-go",
+        "microsoft/BCQuality",
+        "microsoft/rust-guidelines",
+        "microsoft/vs-streamjsonrpc",
+        "microsoft/navcontainerhelper",
+        "microsoft/aspire-skills",
+        "microsoft/rnx-kit",
+        "microsoft/go-crypto-winnative",
+        "microsoft/go-crypto-darwin",
+        "microsoft/skills-for-fabric",
+        "microsoft/dbt-fabricspark",
+        "microsoft/dicom-server",
+        "microsoft/retrochimera",
+        "microsoft/Kusto-Query-Language",
+        "microsoft/verona-rt",
+        "microsoft/customer-chatbot-solution-accelerator",
+        "microsoft/react-native-test-app",
+        "microsoft/PAX-Fabric",
+        "microsoft/kiota-abstractions-go",
+        "microsoft/kiota-http-go",
+        "microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+        "microsoft/vscode-languageserver-node",
+        "microsoft/powerbi-visuals-webpack-plugin",
+        "microsoft/azure-pipelines-task-lib",
+        "microsoft/MHA",
+        "microsoft/kanagawa",
+        "microsoft/MicroHack",
+        "microsoft/microsoft-iq-solution-accelerator",
+        "microsoft/azure-boards-estimate",
+        "microsoft/vsts-extension-integer-control",
+        "microsoft/adaptive-apps",
+        "microsoft/FluidHelloWorld",
+        "microsoft/ApplicationInsights-JS",
+        "microsoft/PowerBI-visuals-tools",
+        "microsoft/Power-CAT-Copilot-Studio-Kit",
+        "microsoft/seguru",
+        "microsoft/verismo",
+        "microsoft/win32metadata",
+        "microsoft/wil",
+        "microsoft/teams-agent-accelerator-templates",
+        "microsoft/amplifier-module-provider-chat-completions",
+        "microsoft/SdnDiagnostics",
+        "microsoft/VbsEnclaveTooling",
+        "microsoft/BotFramework-WebChat",
+        "microsoft/asconnect",
+        "microsoft/FLAML",
+        "microsoft/SynapseML",
+        "microsoft/artifacts-keyring-nofuss",
+        "microsoft/SWE-bench-Live",
+        "microsoft/RepoLaunch",
+        "microsoft/amplifier-module-provider-anthropic",
+        "microsoft/microsoft-store-apppublisher",
+        "microsoft/moc-sdk-for-go",
+        "microsoft/winappCli",
+        "microsoft/applicationinsights-angularplugin-js",
+        "microsoft/AutoSaddler",
+        "microsoft/WindowsAppSdkResources",
+        "microsoft/low-latency-audio",
+        "microsoft/finops-toolkit",
+        "microsoft/HealthAgentBench",
+        "microsoft/opensource-management-portal",
+        "microsoft/Skeena-Indigenous-Typeface",
+        "microsoft/agent-learning",
+        "microsoft/cheriot-kudu",
+        "microsoft/powerplatform-vscode",
+        "microsoft/terraform-provider-fabric",
+        "microsoft/SwiftStreamingMarkdown",
+        "microsoft/go-infra-images",
+        "microsoft/azure-linux-dev-tools",
+        "microsoft/fluentui-react-native",
+        "microsoft/InternPing-Website",
         "microsoft/amplifier-bundle-context-intelligence",
         "microsoft/amplifier-module-provider-github-copilot",
         "microsoft/TWL300-AI-Apps-and-agents",
-        "microsoft/react-native-macos",
-        "microsoft/healthcare-shared-components",
-        "microsoft/Docker-Provider",
         "microsoft/Dataverse-skills",
-        "microsoft/HOBL",
         "microsoft/just",
-        "microsoft/opentelemetry-distro-dotnet",
         "microsoft/scitt-verifier",
-        "microsoft/terminal",
         "microsoft/react-native-xaml",
         "microsoft/azuresqlfoundations",
         "microsoft/powerplatform-cli-wrapper",
-        "microsoft/mu_tiano_platforms",
-        "microsoft/winget-cli-restsource",
-        "microsoft/power-pages-samples",
         "microsoft/igvm",
         "microsoft/TRPL",
-        "microsoft/amplifier-app-wiki-weaver",
-        "microsoft/netremote",
-        "microsoft/teams.py",
-        "microsoft/openvmm",
-        "microsoft/durabletask-dotnet",
-        "microsoft/Loopsbench",
-        "microsoft/pxt-arcade",
-        "microsoft/makecode-csp",
-        "microsoft/amplifier-bundle-dot-runner",
-        "microsoft/Build25-BRK234",
-        "microsoft/azure-linux-image-tools",
-        "microsoft/teams.net",
-        "microsoft/content-processing-solution-accelerator",
-        "microsoft/chaos-studio",
-        "microsoft/Sico",
-        "microsoft/quicksand",
-        "microsoft/atlas-design",
-        "microsoft/onnxscript",
-        "microsoft/lage",
-        "microsoft/OpenAIWorkshop",
-        "microsoft/CABRA",
-        "microsoft/VFSForGit",
-        "microsoft/Container-Migration-Solution-Accelerator",
-        "microsoft/rushstack",
-        "microsoft/keyborg",
-        "microsoft/amplifier-app-openclaw",
-        "microsoft/hlsl-specs",
-        "microsoft/Huabu",
-        "microsoft/managed-apps",
-        "microsoft/opentelemetry-distro-python",
-        "microsoft/model-mondays",
-        "microsoft/flipcard",
-        "microsoft/monaco-editor",
-        "microsoft/azure-pipelines-extensions",
-        "microsoft/Graphormer",
-        "microsoft/Shiksha-Copilot",
-        "microsoft/kiota-samples",
-        "microsoft/playwright-dotnet",
-        "microsoft/OHCL-Linux-Kernel",
-        "microsoft/Agents-M365Copilot",
-        "microsoft/azure-solution-hub",
-        "microsoft/CoseSignTool",
-        "microsoft/CoworkDashboard",
-        "microsoft/virtualnodesOnAzureContainerInstances",
-        "microsoft/teams-sdk",
-        "microsoft/Migrate2GSA",
-        "microsoft/libHttpClient",
-        "microsoft/sre-agent",
-        "microsoft/edge-ai",
-        "microsoft/rayfin",
-        "microsoft/z3guide",
-        "microsoft/haste",
-        "microsoft/Power-Fx",
-        "microsoft/GlobalSecureAccess",
-        "microsoft/mu_common_intel_min_platform",
-        "microsoft/GSL",
-        "microsoft/terraform-provider-power-platform",
-        "microsoft/30daysof",
-        "microsoft/XBOX-GDK-dotnet",
-        "microsoft/react-native-windows-samples",
-        "microsoft/azure-dev-tools",
-        "microsoft/eval-recipes",
-        "microsoft/AutoRF",
-        "microsoft/SchGen",
-        "microsoft/cpp_client_telemetry",
-        "microsoft/TWL300-Extending-M365",
-        "microsoft/synapse-spark-runtime",
-        "microsoft/LakeBench",
-        "microsoft/copilot-brag-sheet",
-        "microsoft/vscode-team-kit",
-        "microsoft/shell-intune-samples",
-        "microsoft/MigTD",
-        "microsoft/dotnet-framework-docker",
-        "microsoft/entra-verifiedid-wallet-library-android",
-        "microsoft/WindowsAppSDK-Samples",
-        "microsoft/amplifier-smart-tools",
-        "microsoft/ReDeck",
-        "microsoft/mssql-django",
-        "microsoft/playwright-python",
-        "microsoft/artifacts-credprovider"
+        "microsoft/amplifier-app-wiki-weaver"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=40&sort=full_name&direction=asc": {
@@ -35630,11 +35581,73 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=5&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:38.194468Z",
-      "etag": "W/\"17f3fb6cb220265484ac3d8776f1ff978762895b5ba79cc5adaf8227110f44b4\"",
+      "cached_at": "2026-09-26T17:16:55.425023Z",
+      "etag": "W/\"37d8e7e1ac1725499c85793e114d8e56543936af9533bc7010063b284968d846\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "microsoft/netremote",
+        "microsoft/Loopsbench",
+        "microsoft/makecode-csp",
+        "microsoft/amplifier-bundle-dot-runner",
+        "microsoft/Build25-BRK234",
+        "microsoft/azure-linux-image-tools",
+        "microsoft/content-processing-solution-accelerator",
+        "microsoft/chaos-studio",
+        "microsoft/Sico",
+        "microsoft/quicksand",
+        "microsoft/onnxscript",
+        "microsoft/lage",
+        "microsoft/OpenAIWorkshop",
+        "microsoft/CABRA",
+        "microsoft/VFSForGit",
+        "microsoft/keyborg",
+        "microsoft/amplifier-app-openclaw",
+        "microsoft/hlsl-specs",
+        "microsoft/Huabu",
+        "microsoft/managed-apps",
+        "microsoft/model-mondays",
+        "microsoft/flipcard",
+        "microsoft/monaco-editor",
+        "microsoft/azure-pipelines-extensions",
+        "microsoft/Shiksha-Copilot",
+        "microsoft/playwright-dotnet",
+        "microsoft/OHCL-Linux-Kernel",
+        "microsoft/Agents-M365Copilot",
+        "microsoft/CoseSignTool",
+        "microsoft/virtualnodesOnAzureContainerInstances",
+        "microsoft/teams-sdk",
+        "microsoft/Migrate2GSA",
+        "microsoft/sre-agent",
+        "microsoft/edge-ai",
+        "microsoft/rayfin",
+        "microsoft/z3guide",
+        "microsoft/haste",
+        "microsoft/Power-Fx",
+        "microsoft/GlobalSecureAccess",
+        "microsoft/mu_common_intel_min_platform",
+        "microsoft/GSL",
+        "microsoft/terraform-provider-power-platform",
+        "microsoft/30daysof",
+        "microsoft/XBOX-GDK-dotnet",
+        "microsoft/react-native-windows-samples",
+        "microsoft/eval-recipes",
+        "microsoft/AutoRF",
+        "microsoft/SchGen",
+        "microsoft/cpp_client_telemetry",
+        "microsoft/TWL300-Extending-M365",
+        "microsoft/synapse-spark-runtime",
+        "microsoft/LakeBench",
+        "microsoft/copilot-brag-sheet",
+        "microsoft/vscode-team-kit",
+        "microsoft/shell-intune-samples",
+        "microsoft/MigTD",
+        "microsoft/entra-verifiedid-wallet-library-android",
+        "microsoft/WindowsAppSDK-Samples",
+        "microsoft/amplifier-smart-tools",
+        "microsoft/ReDeck",
+        "microsoft/mssql-django",
+        "microsoft/playwright-python",
         "microsoft/power-cat-skills",
         "microsoft/scitt-ccf-ledger",
         "microsoft/sql-server-samples",
@@ -35643,12 +35656,8 @@
         "microsoft/azure-pipelines-agent",
         "microsoft/CSS-Exchange",
         "microsoft/BabylonJS-React-Template",
-        "microsoft/vasim",
         "microsoft/DirectXMesh",
-        "microsoft/XBOX-Godot-Sample",
         "microsoft/amplifier-bundle-gitea",
-        "microsoft/durabletask-mssql",
-        "microsoft/waza",
         "microsoft/PlanetaryComputerDataCatalog",
         "microsoft/tui-test",
         "microsoft/azure-skills",
@@ -35657,7 +35666,6 @@
         "microsoft/agent-academy",
         "microsoft/vscode-copilotstudio",
         "microsoft/openaivec",
-        "microsoft/mssql-jdbc",
         "microsoft/vscode-github-issue-notebooks",
         "microsoft/Microsoft.IO.RecyclableMemoryStream",
         "microsoft/fabric-architecture-review",
@@ -35671,70 +35679,13 @@
         "microsoft/CookInlet_Belugas",
         "microsoft/understanding_pidm_for_imitation_learning",
         "microsoft/RAMPART",
-        "microsoft/intelligent-terminal",
         "microsoft/imitation_learning_in_modern_video_games",
         "microsoft/frontier-ghcp-ttt-rvas",
         "microsoft/go-mssqldb",
         "microsoft/DirectX-Specs",
         "microsoft/rats",
         "microsoft/ShadowFrog",
-        "microsoft/trivia-challenge",
-        "microsoft/tensile-perf",
-        "microsoft/sarif-sdk",
-        "microsoft/mu_plus",
-        "microsoft/Microsoft.Unity.Analyzers",
-        "microsoft/powerbi-visuals-utils-testutils",
-        "microsoft/Dynamics-365-FastTrack-Implementation-Assets",
-        "microsoft/dynwinrt",
-        "microsoft/dstoolkit-devcontainers",
-        "microsoft/data-factory-testing-framework",
-        "microsoft/azure-devops-rust-api",
-        "microsoft/Agent365-Samples",
-        "microsoft/eslint-plugin-powerbi-visuals",
-        "microsoft/multilspy",
-        "microsoft/Agent365-nodejs",
-        "microsoft/SPTAG",
-        "microsoft/AL-Go",
-        "microsoft/fabric-cicd",
-        "microsoft/semantic-link-labs",
-        "microsoft/go-images-versions",
-        "microsoft/vscode-pylint",
-        "microsoft/vscode-black-formatter",
-        "microsoft/copilot-studio-gallery",
-        "microsoft/amplifier-module-provider-openai-chatgpt",
-        "microsoft/frontier-agentic-modernization-rvas",
-        "microsoft/HARC",
-        "microsoft/vscode-websearchforcopilot",
-        "microsoft/Azure-Ledger-Explorer",
-        "microsoft/skills-for-copilot-studio",
-        "microsoft/IssueLens",
-        "microsoft/amplifier-bundle-routing-matrix",
-        "microsoft/ai-dev-gallery",
-        "microsoft/CsWinRT",
-        "microsoft/ts-gyb",
-        "microsoft/foundry-dev-tools",
-        "microsoft/debugpy",
-        "microsoft/go-winmd",
-        "microsoft/tscodesearch",
-        "microsoft/vscode-java-pack",
-        "microsoft/accessibility-insights-service",
-        "microsoft/json-schemas",
-        "microsoft/Custom-Copilot-Connector-using-Connector-SDK",
-        "microsoft/vscode-java-debug",
-        "microsoft/copilot-for-eclipse",
-        "microsoft/ltp-platform",
-        "microsoft/amplifier-core",
-        "microsoft/cognitive-services-speech-sdk-js",
-        "microsoft/mu_feature_mm_supv",
-        "microsoft/tgrep",
-        "microsoft/FeatureManagement-Dotnet",
-        "microsoft/amplifier-bundle-computer-use",
-        "microsoft/MarS",
-        "microsoft/msagljs",
-        "microsoft/generative-ai-for-beginners",
-        "microsoft/winml-cli",
-        "microsoft/vscode-java-test",
-        "microsoft/mapi-rs"
+        "microsoft/trivia-challenge"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=50&sort=full_name&direction=asc": {
@@ -36926,19 +36877,68 @@
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=6&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:39.605553Z",
-      "etag": "W/\"2ec1b346a36d0d5960f5aad4e97040796b1476b1377b1f1add47e76b6b7ac62e\"",
+      "cached_at": "2026-09-26T17:16:56.743103Z",
+      "etag": "W/\"a44d569ef175f4a71ac69fed1a41518be6171ca82e80a304d58b6b534e5086d3\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "microsoft/tensile-perf",
+        "microsoft/mu_plus",
+        "microsoft/Microsoft.Unity.Analyzers",
+        "microsoft/powerbi-visuals-utils-testutils",
+        "microsoft/Dynamics-365-FastTrack-Implementation-Assets",
+        "microsoft/dynwinrt",
+        "microsoft/dstoolkit-devcontainers",
+        "microsoft/data-factory-testing-framework",
+        "microsoft/azure-devops-rust-api",
+        "microsoft/Agent365-Samples",
+        "microsoft/eslint-plugin-powerbi-visuals",
+        "microsoft/multilspy",
+        "microsoft/Agent365-nodejs",
+        "microsoft/SPTAG",
+        "microsoft/AL-Go",
+        "microsoft/fabric-cicd",
+        "microsoft/semantic-link-labs",
+        "microsoft/go-images-versions",
+        "microsoft/vscode-pylint",
+        "microsoft/vscode-black-formatter",
+        "microsoft/copilot-studio-gallery",
+        "microsoft/amplifier-module-provider-openai-chatgpt",
+        "microsoft/frontier-agentic-modernization-rvas",
+        "microsoft/HARC",
+        "microsoft/vscode-websearchforcopilot",
+        "microsoft/Azure-Ledger-Explorer",
+        "microsoft/skills-for-copilot-studio",
+        "microsoft/IssueLens",
+        "microsoft/amplifier-bundle-routing-matrix",
+        "microsoft/ai-dev-gallery",
+        "microsoft/ts-gyb",
+        "microsoft/foundry-dev-tools",
+        "microsoft/debugpy",
+        "microsoft/go-winmd",
+        "microsoft/tscodesearch",
+        "microsoft/vscode-java-pack",
+        "microsoft/accessibility-insights-service",
+        "microsoft/Custom-Copilot-Connector-using-Connector-SDK",
+        "microsoft/vscode-java-debug",
+        "microsoft/copilot-for-eclipse",
+        "microsoft/ltp-platform",
+        "microsoft/amplifier-core",
+        "microsoft/mu_feature_mm_supv",
+        "microsoft/FeatureManagement-Dotnet",
+        "microsoft/amplifier-bundle-computer-use",
+        "microsoft/MarS",
+        "microsoft/msagljs",
+        "microsoft/generative-ai-for-beginners",
+        "microsoft/winml-cli",
+        "microsoft/vscode-java-test",
+        "microsoft/mapi-rs",
         "microsoft/wassette",
         "microsoft/graphrag",
         "microsoft/copilot-intellij-feedback",
         "microsoft/mstic",
         "microsoft/pgsql-tools",
         "microsoft/sample-app-aoai-chatGPT",
-        "microsoft/amplifier-bundle-a2a",
-        "microsoft/amplifier-bundle-dot-graph",
         "microsoft/amplifier-bundle-stories",
         "microsoft/amplifier-bundle-rust-dev",
         "microsoft/amplifier-bundle-typescript-dev",
@@ -36946,7 +36946,6 @@
         "microsoft/amplifier-bundle-recipes",
         "microsoft/amplifier-module-tool-web",
         "microsoft/amplifier-module-tool-search",
-        "microsoft/amplifier-bundle-browser",
         "microsoft/amplifier-bundle-superpowers",
         "microsoft/vscode-cmake-tools",
         "microsoft/SOWGenerator",
@@ -36959,16 +36958,11 @@
         "microsoft/amplifier-bundle-my-voice",
         "microsoft/XBOX-Godot-NetRumble",
         "microsoft/SPARROW-Engine",
-        "microsoft/Windows-driver-samples",
         "microsoft/mu_msvm",
-        "microsoft/pxt-microbit",
         "microsoft/avml",
         "microsoft/copilot-camp",
         "microsoft/amplifier-bundle-skills",
         "microsoft/msvm-patina-bins",
-        "microsoft/OpenAPI.NET",
-        "microsoft/ntosebpfext",
-        "microsoft/pylance-release",
         "microsoft/uf2",
         "microsoft/mu_crypto_release",
         "microsoft/PowerBI-visuals-StrippetsBrowser",
@@ -36976,61 +36970,18 @@
         "microsoft/Federal-Agents",
         "microsoft/xlang",
         "microsoft/DacFx",
-        "microsoft/Microsoft-AI-Decision-Framework",
         "microsoft/universal-print-resources",
         "microsoft/PowerPlatform-EnterprisePolicies",
-        "microsoft/Cowork-Adoption-Intelligence",
         "microsoft/FHIR-Converter",
-        "microsoft/service-fabric-explorer",
         "microsoft/opentelemetry-distro-javascript",
         "microsoft/DevSkim",
         "microsoft/conductor",
         "microsoft/typescript-error-deltas",
         "microsoft/RAFT",
         "microsoft/DirectX-Graphics-Samples",
-        "microsoft/durabletask-java",
-        "microsoft/openvmm-deps",
         "microsoft/frontier-sre-agent-rvas",
         "microsoft/nacelle",
-        "microsoft/iq-series",
-        "microsoft/codeql",
-        "microsoft/moc",
-        "microsoft/amplifier-context-intelligence",
-        "microsoft/makecode-minecraft-roller-coaster",
-        "microsoft/vscode-js-debug",
-        "microsoft/DirectX-Headers",
-        "microsoft/copilot-alm-starter",
-        "microsoft/wssd-sdk-for-go",
-        "microsoft/ApplicationInsights-Java",
-        "microsoft/side-channel-fuzzer",
-        "microsoft/service-fabric-dotnet",
-        "microsoft/github-copilot-modernization",
-        "microsoft/ms-tcg-tpm-sys",
-        "microsoft/entrabot",
-        "microsoft/flint-chart",
-        "microsoft/nav-docker",
-        "microsoft/Xbox-GDK-Samples",
-        "microsoft/DirectXTK12",
-        "microsoft/GitHubCopilotLicenseAssignment",
-        "microsoft/vscode-smoketest-check",
-        "microsoft/powerbi-visuals-utils-localizationutils",
-        "microsoft/uefi_debug_tools",
-        "microsoft/agent365-runbook",
-        "microsoft/mstunnel-ocserv",
-        "microsoft/acs-resource-explorer",
-        "microsoft/griffel",
-        "microsoft/dragon-copilot-extension-samples",
-        "microsoft/TWL400-Customer-Intent-Agent",
-        "microsoft/syntheseus",
-        "microsoft/edit",
-        "microsoft/github-copilot-java-mcp-demo",
-        "microsoft/amplifier-app-tui",
-        "microsoft/debug-gym",
-        "microsoft/TEE-Attestation-Verification",
-        "microsoft/msticpy",
-        "microsoft/vscode-jupyter-hub",
-        "microsoft/FlowQuery",
-        "microsoft/fabric-cli"
+        "microsoft/iq-series"
       ]
     },
     "https://api.github.com/orgs/microsoft/repos?type=public&per_page=100&page=60&sort=full_name&direction=asc": {
@@ -40396,26 +40347,26 @@
       ]
     },
     "https://api.github.com/orgs/microsoftgraph/repos?type=public&per_page=100&page=1&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:16.296965Z",
-      "etag": "W/\"d871fdbe35898b06cf649cdf0bff61d0d17fc713ef12474aa169b1aaf0aee436\"",
+      "cached_at": "2026-09-26T17:16:33.436338Z",
+      "etag": "W/\"d3258ba059969f39e89392ab4480f3f6194b1e653c07e66dae75b8cb373d86d3\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
+        "microsoftgraph/msgraph-sdk-powershell",
+        "microsoftgraph/microsoft-graph-explorer-v4",
         "microsoftgraph/microsoft-graph-devx-content",
+        "microsoftgraph/microsoft-graph-docs-contrib",
         "microsoftgraph/msgraph-sdk-go-core",
         "microsoftgraph/msgraph-sdk-typescript-core",
         "microsoftgraph/msgraph-beta-sdk-java",
-        "microsoftgraph/msgraph-sdk-powershell",
         "microsoftgraph/msgraph-beta-sdk-typescript",
         "microsoftgraph/msgraph-training-javascript",
         "microsoftgraph/msgraph-sdk-python-core",
         "microsoftgraph/msgraph-metadata",
-        "microsoftgraph/microsoft-graph-docs-contrib",
         "microsoftgraph/msgraph-sdk-python",
         "microsoftgraph/eol-blocker",
         "microsoftgraph/msgraph-sdk-typescript",
         "microsoftgraph/msgraph-snippets-typescript",
-        "microsoftgraph/microsoft-graph-explorer-v4",
         "microsoftgraph/changelog-link-check",
         "microsoftgraph/msgraph-bicep-types",
         "microsoftgraph/msgraph-training-typescript",
@@ -40612,8 +40563,8 @@
       ]
     },
     "https://api.github.com/orgs/microsoftgraph/repos?type=public&per_page=100&page=2&sort=pushed&direction=desc": {
-      "cached_at": "2026-09-25T17:59:17.690496Z",
-      "etag": "W/\"a55758577f3902b7b02728aa67677a84312494c316548e81e7d627b2ba504f84\"",
+      "cached_at": "2026-09-26T17:16:34.792563Z",
+      "etag": "W/\"f0139653cd6ee980de45a24ab4e3f1607e6fedfb928d9b31d0b6fd761dd88f45\"",
       "has_next": true,
       "item_count": 100,
       "repo_full_names": [
@@ -40762,5 +40713,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-25T17:59:08.065994Z"
+  "updated_at": "2026-09-26T17:16:27.044604Z"
 }
