@@ -1,0 +1,390 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-11.consumer.md",
+    "dated_event_stream": "reports/2026-10-11.events.ndjson",
+    "dated_markdown": "reports/2026-10-11.md",
+    "dated_report_json": "reports/2026-10-11.json",
+    "dated_summary_json": "reports/2026-10-11.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 53,
+    "dated_path": "reports/2026-10-11.events.ndjson",
+    "event_count": 55,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 2,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-11T18:11:01.346676Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 9,
+      "bot": 6,
+      "human": 1
+    },
+    "change_types": {
+      "bug_fix": 1,
+      "dependency_update": 1,
+      "docs_update": 7,
+      "release": 2,
+      "sample_update": 4,
+      "sdk_generation": 1
+    },
+    "event_count": 16,
+    "top_repos": [
+      {
+        "event_count": 4,
+        "repo": "Azure-Samples/Spec2Cloud"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/dataexplorer-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/architecture-center"
+      },
+      {
+        "event_count": 1,
+        "repo": "Azure/SAP-automation-samples"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET, Developer Tools led the visible product-area activity in this window.",
+    "2 release item(s) were detected during the window.",
+    "Start with human-authored changes in dotnet/runtime, MicrosoftDocs/dataexplorer-docs, MicrosoftDocs/azure-ai-docs, microsoft/voice-agent.",
+    "16 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 36,
+      "noisy_event_count": 16,
+      "notable_event_count": 25,
+      "product_area": "Azure",
+      "release_count": 2,
+      "repo_count": 15,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-11T09:11:15Z",
+          "headline": "azure-mgmt-resiliencemanagement_1.0.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resiliencemanagement_1.0.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-11T03:30:45Z",
+          "headline": "Workshop standardization skill v0.1.0-preview.2",
+          "notability_score": 90,
+          "repo": "Azure-Samples/workshop-standards",
+          "url": "https://github.com/Azure-Samples/workshop-standards/releases/tag/workshop-skill-v0.1.0-preview.2"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-11T09:22:09Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dataexplorer-docs",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2946"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "Azure/SAP-automation-samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/dataexplorer-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/Spec2Cloud"
+        },
+        {
+          "event_count": 3,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/architecture-center"
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-10T22:24:56Z",
+          "headline": "Update MsQuic to 2.5.11 to unblock release/10.0 builds",
+          "notability_score": 100,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/135548"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-11T09:26:02Z",
+          "headline": "Fix ParentTag binding for Tag Helpers inside plain HTML elements (#85\u2026",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/commit/f5ceb9666d6870bd4d9a0ffcd6788eb34d57b8db"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-11T06:50:19Z",
+          "headline": "Fix escaped parent tag handling and verify Tag Helper does not bind",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/commit/fb5ed8c0f888a57a195790aeebbdb5c454569e6b"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 3,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/android-api-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-10T18:55:55Z",
+          "headline": "docs(python): fix dropped resolution text in troubleshooting table",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10454"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-10T18:53:44Z",
+          "headline": "docs(agents): fix broken section anchor links across AI agent documentation",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10451"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-10T19:15:40Z",
+          "headline": "Reference Ruby testing in Testing user guide next steps (#7927)",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10437"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/vscode-remote-try-node"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 4,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-10T22:19:35Z",
+          "headline": "Add native Gemini image generation and editing capability",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-module-provider-gemini",
+          "url": "https://github.com/microsoft/amplifier-module-provider-gemini/pull/55"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-11T11:20:30Z",
+          "headline": "Detect lost HTTP peers without limiting model reasoning",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-module-provider-openai",
+          "url": "https://github.com/microsoft/amplifier-module-provider-openai/pull/126"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-11T00:07:37Z",
+          "headline": "Keep Gemini tool responses JSON-safe for transcript checkpoints",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-module-provider-gemini",
+          "url": "https://github.com/microsoft/amplifier-module-provider-gemini/pull/56"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "microsoft/amplifier-module-provider-openai"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/amplifier-module-provider-gemini"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/amplifier-module-provider-anthropic"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 0,
+      "notable_event_count": 1,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-10T17:18:38Z",
+          "headline": "Update resource-specific consent permissions",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14650"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/msteams-docs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "b12422ec49ff80a7ef0caa0d12554e9bd3507de1",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "38162680551",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/38162680551"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resiliencemanagement_1.0.0",
+      "why": "Release activity: azure-mgmt-resiliencemanagement_1.0.0"
+    },
+    {
+      "priority": 2,
+      "repo": "dotnet/runtime",
+      "url": "https://github.com/dotnet/runtime/pull/135548",
+      "why": "Release activity: Update MsQuic to 2.5.11 to unblock release/10.0 builds"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure-Samples/workshop-standards",
+      "url": "https://github.com/Azure-Samples/workshop-standards/releases/tag/workshop-skill-v0.1.0-preview.2",
+      "why": "Release activity: Workshop standardization skill v0.1.0-preview.2"
+    },
+    {
+      "priority": 4,
+      "repo": "MicrosoftDocs/dataexplorer-docs",
+      "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2946",
+      "why": "Feature or capability signal: Repo sync for protected branch"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/azure-ai-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-ai-docs/commit/ba1cff2668b9d0c0f6430e825ef6cdfd67a8ec35",
+      "why": "Feature or capability signal: Add Live Interpreter SDK samples for C++, Java, JavaScript, and Pytho\u2026"
+    },
+    {
+      "priority": 6,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/32",
+      "why": "Feature or capability signal: Add vehicle voice cockpit with local tool search and interruption"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/amplifier-module-provider-gemini",
+      "url": "https://github.com/microsoft/amplifier-module-provider-gemini/pull/55",
+      "why": "Feature or capability signal: Add native Gemini image generation and editing capability"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/AI-Landing-Zones",
+      "url": "https://github.com/Azure/AI-Landing-Zones/pull/149",
+      "why": "Feature or capability signal: docs: explain payload-free UI boundary diagnostics"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 65,
+    "default_branch_commits": 53,
+    "filtered_repos": 2616,
+    "inventory_repos": 16659,
+    "pushed_at_candidate_repos": 65,
+    "release_count": 2,
+    "repos_with_movement": 24,
+    "repos_with_releases": 2
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-10T15:55:04.601438Z",
+    "state_window_enabled": true,
+    "until": "2026-10-11T18:11:01.346676Z"
+  }
+}
