@@ -1,135 +1,178 @@
-# Microsoft Ecosystem Brief - 2026-10-11
+# Microsoft Ecosystem Brief - 2026-10-12
 
-> Fresh as of 2026-10-11 18:11 UTC. 24 repos moved, 53 commits, 2 releases, 55 tracked events.
+> Fresh as of 2026-10-12 21:47 UTC. 100 repos moved, 459 commits, 24 releases, 313 tracked events.
 
 ## What To Look At First
 
-### 1. [Release activity: azure-mgmt-resiliencemanagement_1.0.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resiliencemanagement_1.0.0)
+### 1. [Security-related change: Add Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/109)
 
-- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
+- Repository: [Azure-Samples/AzureLocal](https://github.com/Azure-Samples/AzureLocal)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 2. [Release activity: @azure/arm-commvaultcontentstore_1.0.0](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-commvaultcontentstore_1.0.0)
+
+- Repository: [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 2. [Release activity: Update MsQuic to 2.5.11 to unblock release/10.0 builds](https://github.com/dotnet/runtime/pull/135548)
+### 3. [Release activity: Update for azd release 1.36.0-beta.1-daily.6946788](https://github.com/Azure/homebrew-azd/commit/b88fe22f4bbaf0b5c97049c21f7ceedcb1758ce1)
 
-- Repository: [dotnet/runtime](https://github.com/dotnet/runtime)
+- Repository: [Azure/homebrew-azd](https://github.com/Azure/homebrew-azd)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 3. [Release activity: Workshop standardization skill v0.1.0-preview.2](https://github.com/Azure-Samples/workshop-standards/releases/tag/workshop-skill-v0.1.0-preview.2)
+### 4. [Release activity: sdk/resourcemanager/commvaultcontentstore/armcommvaultcontentstore/v1.0.0](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/commvaultcontentstore/armcommvaultcontentstore/v1.0.0)
 
-- Repository: [Azure-Samples/workshop-standards](https://github.com/Azure-Samples/workshop-standards)
+- Repository: [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 4. [Feature or capability signal: Repo sync for protected branch](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2946)
+### 5. [Release activity: fix: reducing logo size to 1024x1024 for vscode marketplace release](https://github.com/microsoft/kiota/pull/8393)
 
-- Repository: [MicrosoftDocs/dataexplorer-docs](https://github.com/MicrosoftDocs/dataexplorer-docs)
-- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
+- Repository: [microsoft/kiota](https://github.com/microsoft/kiota)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 5. [Feature or capability signal: Add Live Interpreter SDK samples for C++, Java, JavaScript, and Pytho…](https://github.com/MicrosoftDocs/azure-ai-docs/commit/ba1cff2668b9d0c0f6430e825ef6cdfd67a8ec35)
+### 6. [Release activity: com.azure.resourcemanager+azure-resourcemanager-commvaultcontentstore_1.0.0](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-commvaultcontentstore_1.0.0)
 
-- Repository: [MicrosoftDocs/azure-ai-docs](https://github.com/MicrosoftDocs/azure-ai-docs)
-- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
+- Repository: [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 6. [Feature or capability signal: Add vehicle voice cockpit with local tool search and interruption](https://github.com/microsoft/voice-agent/pull/32)
+### 7. [Release activity: [automated] Merge branch 'release/11.0' => 'main'](https://github.com/dotnet/efcore/pull/39226)
 
-- Repository: [microsoft/voice-agent](https://github.com/microsoft/voice-agent)
-- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
+- Repository: [dotnet/efcore](https://github.com/dotnet/efcore)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 7. [Feature or capability signal: Add native Gemini image generation and editing capability](https://github.com/microsoft/amplifier-module-provider-gemini/pull/55)
+### 8. [Release activity: Replace MIT license with EULA reference and update release documentation](https://github.com/microsoft/Aion-Instruct-Preview-Sample/pull/12)
 
-- Repository: [microsoft/amplifier-module-provider-gemini](https://github.com/microsoft/amplifier-module-provider-gemini)
-- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
-
-### 8. [Feature or capability signal: docs: explain payload-free UI boundary diagnostics](https://github.com/Azure/AI-Landing-Zones/pull/149)
-
-- Repository: [Azure/AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones)
-- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
+- Repository: [microsoft/Aion-Instruct-Preview-Sample](https://github.com/microsoft/Aion-Instruct-Preview-Sample)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
 ## Product Area Briefings
 
 ### Azure
 
-15 repos, 36 tracked events, 2 releases, 0 security/admin signals.
+53 repos, 179 tracked events, 21 releases, 1 security/admin signal.
 
-- Likely audience: Learners, Developers, General MS consumers.
-- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Likely audience: Developers, Learners, General MS consumers.
+- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [azure-mgmt-resiliencemanagement_1.0.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resiliencemanagement_1.0.0) (Azure/azure-sdk-for-python)
-  - [Workshop standardization skill v0.1.0-preview.2](https://github.com/Azure-Samples/workshop-standards/releases/tag/workshop-skill-v0.1.0-preview.2) (Azure-Samples/workshop-standards)
-  - [Repo sync for protected branch](https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2946) (MicrosoftDocs/dataexplorer-docs)
-
-### .NET
-
-3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers, General MS consumers.
-- Reader takeaway: Scan top links for meaningful guidance or sample movement.
-- Most useful links:
-  - [Update MsQuic to 2.5.11 to unblock release/10.0 builds](https://github.com/dotnet/runtime/pull/135548) (dotnet/runtime)
-  - [Fix ParentTag binding for Tag Helpers inside plain HTML elements (#85…](https://github.com/dotnet/roslyn/commit/f5ceb9666d6870bd4d9a0ffcd6788eb34d57b8db) (dotnet/roslyn)
-  - [Fix escaped parent tag handling and verify Tag Helper does not bind](https://github.com/dotnet/roslyn/commit/fb5ed8c0f888a57a195790aeebbdb5c454569e6b) (dotnet/roslyn)
-
-### Developer Tools
-
-2 repos, 6 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers.
-- Reader takeaway: Scan top links for meaningful guidance or sample movement.
-- Most useful links:
-  - [docs(python): fix dropped resolution text in troubleshooting table](https://github.com/microsoft/vscode-docs/pull/10454) (microsoft/vscode-docs)
-  - [docs(agents): fix broken section anchor links across AI agent documentation](https://github.com/microsoft/vscode-docs/pull/10451) (microsoft/vscode-docs)
-  - [Reference Ruby testing in Testing user guide next steps (#7927)](https://github.com/microsoft/vscode-docs/pull/10437) (microsoft/vscode-docs)
+  - [Add Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/109) (Azure-Samples/AzureLocal)
+  - [@azure/arm-commvaultcontentstore_1.0.0](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-commvaultcontentstore_1.0.0) (Azure/azure-sdk-for-js)
+  - [Update for azd release 1.36.0-beta.1-daily.6946788](https://github.com/Azure/homebrew-azd/commit/b88fe22f4bbaf0b5c97049c21f7ceedcb1758ce1) (Azure/homebrew-azd)
 
 ### Unmapped Activity
 
-3 repos, 5 tracked events, 0 releases, 0 security/admin signals.
+23 repos, 60 tracked events, 1 release, 0 security/admin signals.
 
-- Likely audience: General MS consumers.
-- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Likely audience: General MS consumers, Learners, Developers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [Add native Gemini image generation and editing capability](https://github.com/microsoft/amplifier-module-provider-gemini/pull/55) (microsoft/amplifier-module-provider-gemini)
-  - [Detect lost HTTP peers without limiting model reasoning](https://github.com/microsoft/amplifier-module-provider-openai/pull/126) (microsoft/amplifier-module-provider-openai)
-  - [Keep Gemini tool responses JSON-safe for transcript checkpoints](https://github.com/microsoft/amplifier-module-provider-gemini/pull/56) (microsoft/amplifier-module-provider-gemini)
+  - [Web platform release notes 156 and action fixes](https://github.com/MicrosoftDocs/edge-developer/pull/3974) (MicrosoftDocs/edge-developer)
+  - [New module in my fork of release branch (#56442) (#56444)](https://github.com/MicrosoftDocs/learn/commit/e2ba564a8ec433da6a48ffa98211f687775cd4b9) (MicrosoftDocs/learn)
+  - [Power Pages templates templates-v2.0.0](https://github.com/microsoft/power-pages-samples/releases/tag/templates-v2.0.0) (microsoft/power-pages-samples)
+
+### PowerShell
+
+6 repos, 17 tracked events, 1 release, 0 security/admin signals.
+
+- Likely audience: Admins, Learners.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Most useful links:
+  - [Replace MIT license with EULA reference and update release documentation](https://github.com/microsoft/Aion-Instruct-Preview-Sample/pull/12) (microsoft/Aion-Instruct-Preview-Sample)
+  - [Aion Instruct Preview SDK 1.0.0.3](https://github.com/microsoft/Aion-Instruct-Preview-Sample/releases/tag/v1.0.0.3) (microsoft/Aion-Instruct-Preview-Sample)
+  - [docs: add Copilot UX theme and design article](https://github.com/SharePoint/sp-dev-docs/pull/11053) (SharePoint/sp-dev-docs)
+
+### .NET
+
+7 repos, 22 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: General MS consumers, Developers, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [[automated] Merge branch 'release/11.0' => 'main'](https://github.com/dotnet/efcore/pull/39226) (dotnet/efcore)
+  - [[release/11.0] Fix Cosmos concurrency tests by normalizing ETag comparisons](https://github.com/dotnet/efcore/pull/39215) (dotnet/efcore)
+  - [[automated] Merge branch 'release/11.0' => 'main'](https://github.com/dotnet/efcore/pull/39191) (dotnet/efcore)
+
+### Identity
+
+2 repos, 8 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: General MS consumers, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [Fix tooltip inline tip include paths in documentation (#5212)](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/351a16531813f50ef8f139d1999a72708e74cb97) (MicrosoftDocs/dynamics365smb-docs)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/553190376e8bbeef236f8bdccad162485e13d38f) (MicrosoftDocs/dynamics365smb-docs)
+  - [Align attestation registration guidance](https://github.com/MicrosoftDocs/entra-docs/commit/88126d77c666343ae44867cd532995fa6807b148) (MicrosoftDocs/entra-docs)
 
 ### Microsoft 365
 
-1 repo, 1 tracked event, 0 releases, 0 security/admin signals.
+3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers, General MS consumers, Learners.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Most useful links:
+  - [Remove sessions feature docs](https://github.com/MicrosoftDocs/msteams-docs/pull/14653) (MicrosoftDocs/msteams-docs)
+  - [TOC fixup](https://github.com/MicrosoftDocs/msteams-docs/commit/0d1cd09039bc8eb8341435c9cf92702395d79604) (MicrosoftDocs/msteams-docs)
+  - [field_level_acl_setup.js: add DRY_RUN safety gate (default true) and fix verification guidance](https://github.com/microsoft/copilot-servicenow-connector-setup-scripts/pull/7) (microsoft/copilot-servicenow-connector-setup-scripts)
+
+### Microsoft Graph
+
+4 repos, 16 tracked events, 1 release, 0 security/admin signals.
+
+- Likely audience: Developers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Most useful links:
+  - [fix: reducing logo size to 1024x1024 for vscode marketplace release](https://github.com/microsoft/kiota/pull/8393) (microsoft/kiota)
+  - [v1.36.1](https://github.com/microsoft/kiota/releases/tag/v1.36.1) (microsoft/kiota)
+  - [chore: bumps version for release of 1.36.1](https://github.com/microsoft/kiota/pull/8392) (microsoft/kiota)
+
+### Developer Tools
+
+1 repo, 2 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: Developers.
 - Reader takeaway: Scan top links for meaningful guidance or sample movement.
 - Most useful links:
-  - [Update resource-specific consent permissions](https://github.com/MicrosoftDocs/msteams-docs/pull/14650) (MicrosoftDocs/msteams-docs)
+  - [Update Insiders release notes](https://github.com/microsoft/vscode-docs/pull/10462) (microsoft/vscode-docs)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-resiliencemanagement_1.0.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-resiliencemanagement_1.0.0) | New release available for consumers of this repo. |
-| Azure | [Azure-Samples/workshop-standards](https://github.com/Azure-Samples/workshop-standards) | [Workshop standardization skill v0.1.0-preview.2](https://github.com/Azure-Samples/workshop-standards/releases/tag/workshop-skill-v0.1.0-preview.2) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/arm-commvaultcontentstore_1.0.0](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-commvaultcontentstore_1.0.0) | New release available for consumers of this repo. |
+| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP Function ZIPs 124.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-124-1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/resourcemanager/commvaultcontentstore/armcommvaultcontentstore/v1.0.0](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/commvaultcontentstore/armcommvaultcontentstore/v1.0.0) | New release available for consumers of this repo. |
+| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP Function ZIPs 122.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-122-1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure.resourcemanager+azure-resourcemanager-commvaultcontentstore_1.0.0](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-commvaultcontentstore_1.0.0) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota](https://github.com/microsoft/kiota) | [v1.36.1](https://github.com/microsoft/kiota/releases/tag/v1.36.1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.ResourceManager.IotHub_1.2.0-beta.5](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.IotHub_1.2.0-beta.5) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure.resourcemanager+azure-resourcemanager-iothub_1.4.0-beta.4](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-iothub_1.4.0-beta.4) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-iothub_5.0.0b5](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-iothub_5.0.0b5) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/arm-storagediscovery_1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-storagediscovery_1.1.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/arm-elasticsan_3.0.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-elasticsan_3.0.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/resourcemanager/iothub/armiothub/v2.0.0-beta.3](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/iothub/armiothub/v2.0.0-beta.3) | Pre-release; inspect before adopting broadly. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- No security/admin-sensitive notable changes were selected.
+- [Azure-Samples/AzureLocal](https://github.com/Azure-Samples/AzureLocal): [Add Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/109)
 
 ## What Was Mostly Noise
 
-16 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+120 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
-- [Azure-Samples/Spec2Cloud](https://github.com/Azure-Samples/Spec2Cloud) - 4 events
-- [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) - 3 events
-- [MicrosoftDocs/dataexplorer-docs](https://github.com/MicrosoftDocs/dataexplorer-docs) - 2 events
-- [MicrosoftDocs/architecture-center](https://github.com/MicrosoftDocs/architecture-center) - 2 events
-- [Azure/SAP-automation-samples](https://github.com/Azure/SAP-automation-samples) - 1 event
+- [microsoftgraph/msgraph-snippets-java](https://github.com/microsoftgraph/msgraph-snippets-java) - 5 events
+- [microsoftgraph/msgraph-sample-github-connector-typescript](https://github.com/microsoftgraph/msgraph-sample-github-connector-typescript) - 5 events
+- [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) - 5 events
+- [Azure-Samples/Spec2Cloud](https://github.com/Azure-Samples/Spec2Cloud) - 5 events
+- [microsoft/playwright.dev](https://github.com/microsoft/playwright.dev) - 5 events
 
-Noise mix: Docs: 7, Sample: 4, Release: 2, Dependency: 1, SDK: 1, Fix: 1.
+Noise mix: Docs: 51, Dependency: 26, Sample: 24, SDK: 9, CI/Infra: 9, Release: 1.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 26.3 hours from `2026-10-10T15:55:04.601438Z` to `2026-10-11T18:11:01.346676Z`.
-- Event stream: 53 commits, 2 releases.
+- Window: 29.6 hours from `2026-10-11T16:11:01.346676Z` to `2026-10-12T21:47:05.276220Z`.
+- Event stream: 289 commits, 24 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
