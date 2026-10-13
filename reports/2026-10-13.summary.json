@@ -1,0 +1,584 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-13.consumer.md",
+    "dated_event_stream": "reports/2026-10-13.events.ndjson",
+    "dated_markdown": "reports/2026-10-13.md",
+    "dated_report_json": "reports/2026-10-13.json",
+    "dated_summary_json": "reports/2026-10-13.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 366,
+    "dated_path": "reports/2026-10-13.events.ndjson",
+    "event_count": 393,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 27,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-13T19:54:19.603603Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 42,
+      "bot": 58,
+      "human": 30
+    },
+    "change_types": {
+      "bug_fix": 3,
+      "bulk_automation": 1,
+      "ci_infra": 10,
+      "dependency_update": 36,
+      "docs_update": 52,
+      "release": 5,
+      "sample_update": 8,
+      "sdk_generation": 15
+    },
+    "event_count": 130,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-ruby"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure-Samples/Durable-Task-Scheduler"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-python"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "27 release item(s) were detected during the window.",
+    "Security-related changes appeared in dotnet/android-api-docs, MicrosoftDocs/azure-aks-docs, MicrosoftDocs/learn.",
+    "Start with human-authored changes in dotnet/android-api-docs, MicrosoftDocs/azure-aks-docs, MicrosoftDocs/learn, Azure/dacs.",
+    "130 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 199,
+      "noisy_event_count": 62,
+      "notable_event_count": 163,
+      "product_area": "Azure",
+      "release_count": 21,
+      "repo_count": 51,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-13T16:59:57Z",
+          "headline": "security: Document external node CSR role permission breaking change \u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/azure-aks-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/5b20bb37906d55958b5d66d9ed36c5e3d6555ef2"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T18:46:49Z",
+          "headline": "azure-ai-agentserver-activity_1.0.0b4",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-activity_1.0.0b4"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T17:00:57Z",
+          "headline": "v0.1.0-alpha.2",
+          "notability_score": 100,
+          "repo": "Azure/dacs",
+          "url": "https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample"
+        }
+      ]
+    },
+    {
+      "event_count": 88,
+      "noisy_event_count": 26,
+      "notable_event_count": 64,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 31,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-13T15:51:06Z",
+          "headline": "Security Operations and Remediation Workflows with GitHub Advanced Se\u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/607e605e31b0b128c2ed81a70bb0f72fe644c693"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-13T15:51:03Z",
+          "headline": "Security Campaigns & Prevention-First Strategy (#56436) (#56499)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/49c369d2f2c43ea20d3a444cf9fd6be5d3c9695d"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T12:26:22Z",
+          "headline": "Field Service ur9.3 8.8.150.60 release notes (#17173)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/dynamics-365-customer-engagement",
+          "url": "https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/df5f85bec60a6aeb59931908447ab313777d986f"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-project-operations"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        }
+      ]
+    },
+    {
+      "event_count": 38,
+      "noisy_event_count": 6,
+      "notable_event_count": 28,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 12,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-13T17:08:00Z",
+          "headline": "Add Android.Security.Net.Config API 37 documentation",
+          "notability_score": 100,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/841"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-13T17:15:23Z",
+          "headline": "Add Android HID device documentation",
+          "notability_score": 90,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/838"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-13T17:08:37Z",
+          "headline": "Add InputMethodManager animation documentation",
+          "notability_score": 90,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/832"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs-maui"
+        }
+      ]
+    },
+    {
+      "event_count": 39,
+      "noisy_event_count": 28,
+      "notable_event_count": 23,
+      "product_area": "Microsoft Graph",
+      "release_count": 6,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T13:47:33Z",
+          "headline": "microsoft-kiota-serialization-multipart: v1.14.3",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-python",
+          "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.3"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T13:47:32Z",
+          "headline": "microsoft-kiota-serialization-text: v1.14.3",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-python",
+          "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.3"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-13T13:47:31Z",
+          "headline": "microsoft-kiota-serialization-form: v1.14.3",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-python",
+          "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.3"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-ruby"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-dotnet"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 4,
+      "notable_event_count": 8,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T19:03:20Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/5b4de6fbf5ed769f456035cf8cefb202de2ab015"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T15:00:23Z",
+          "headline": "Update cross-tenant-access-overview.md",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/d232317b9764e7f6fd301001850cd7a7ab3abaa7"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T14:54:53Z",
+          "headline": "Update cross-tenant-access-overview.md",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/96112b88b3fc5a0c3e5f145e23651392e4013b5d"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 9,
+      "noisy_event_count": 1,
+      "notable_event_count": 6,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-13T03:26:25Z",
+          "headline": "Updates to preview-feature article",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14644"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-12T20:13:00Z",
+          "headline": "Auto Publish \u2013 main to live - 2026-10-13 15:00 UTC",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14657"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T18:00:54Z",
+          "headline": "Clarify border indexes for Excel conditional formatting",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/VBA-Docs",
+          "url": "https://github.com/MicrosoftDocs/VBA-Docs/pull/1970"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/VBA-Docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-reference"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-snippets"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 1,
+      "notable_event_count": 6,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T19:05:19Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/19f1c024e35badc1ffa6f78936fde596c91e32dd"
+        },
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-10-13T18:24:40Z",
+          "headline": "Make the WinUI app per-monitor DPI aware",
+          "notability_score": 90,
+          "repo": "microsoft/Aion-Instruct-Preview-Sample",
+          "url": "https://github.com/microsoft/Aion-Instruct-Preview-Sample/pull/13"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T17:08:52Z",
+          "headline": "Update geographical-availability-copilot.md (#12028)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/e601fd6673c7d13351dcb1559362ac15b39f808b"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/Aion-Instruct-Preview-Sample"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 2,
+      "notable_event_count": 5,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T16:24:32Z",
+          "headline": "Update WindowsServerDocs/manage/windows-admin-center/azure/extension-\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/f0b090426599f586bc237eb60675b5a3105d4a5b"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T16:24:16Z",
+          "headline": "Update WindowsServerDocs/manage/windows-admin-center/azure/extension-\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/9364fd987567e8769f5a25074e8c9296137ed8be"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-13T16:24:04Z",
+          "headline": "Update WindowsServerDocs/manage/windows-admin-center/azure/manage-arc\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/44deab5fe7abf77a0e2c4a1d651ca66288ee1317"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/windowsserverdocs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "61d0e5ae4525674e2043b9b8f5dc4a1076127a2c",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "38458420270",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/38458420270"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "dotnet/android-api-docs",
+      "url": "https://github.com/dotnet/android-api-docs/pull/841",
+      "why": "Security-related change: Add Android.Security.Net.Config API 37 documentation"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/azure-aks-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/5b20bb37906d55958b5d66d9ed36c5e3d6555ef2",
+      "why": "Security-related change: security: Document external node CSR role permission breaking change \u2026"
+    },
+    {
+      "priority": 3,
+      "repo": "MicrosoftDocs/learn",
+      "url": "https://github.com/MicrosoftDocs/learn/commit/607e605e31b0b128c2ed81a70bb0f72fe644c693",
+      "why": "Security-related change: Security Operations and Remediation Workflows with GitHub Advanced Se\u2026"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-activity_1.0.0b4",
+      "why": "Release activity: azure-ai-agentserver-activity_1.0.0b4"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/dacs",
+      "url": "https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.2",
+      "why": "Release activity: v0.1.0-alpha.2"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4",
+      "why": "Release activity: Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/kiota-python",
+      "url": "https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.3",
+      "why": "Release activity: microsoft-kiota-serialization-multipart: v1.14.3"
+    },
+    {
+      "priority": 8,
+      "repo": "microsoft/kiota-dotnet",
+      "url": "https://github.com/microsoft/kiota-dotnet/releases/tag/v2.1.5",
+      "why": "Release activity: v2.1.5"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 210,
+    "default_branch_commits": 755,
+    "filtered_repos": 2627,
+    "inventory_repos": 16680,
+    "pushed_at_candidate_repos": 210,
+    "release_count": 27,
+    "repos_with_movement": 115,
+    "repos_with_releases": 10
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-12T19:47:05.276220Z",
+    "state_window_enabled": true,
+    "until": "2026-10-13T19:54:19.603603Z"
+  }
+}
