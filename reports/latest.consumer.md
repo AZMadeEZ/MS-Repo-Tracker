@@ -1,183 +1,183 @@
-# Microsoft Ecosystem Brief - 2026-10-13
+# Microsoft Ecosystem Brief - 2026-10-14
 
-> Fresh as of 2026-10-13 19:54 UTC. 115 repos moved, 755 commits, 27 releases, 393 tracked events.
+> Fresh as of 2026-10-14 18:04 UTC. 105 repos moved, 640 commits, 34 releases, 362 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: Add Android.Security.Net.Config API 37 documentation](https://github.com/dotnet/android-api-docs/pull/841)
+### 1. [Security-related change: Introduce management of individual Security Defaults protections (#14…](https://github.com/MicrosoftDocs/entra-docs/commit/c8aff6d01240069732e475e6be0a6c28c12bbca4)
 
-- Repository: [dotnet/android-api-docs](https://github.com/dotnet/android-api-docs)
+- Repository: [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 2. [Security-related change: security: Document external node CSR role permission breaking change …](https://github.com/MicrosoftDocs/azure-aks-docs/commit/5b20bb37906d55958b5d66d9ed36c5e3d6555ef2)
+### 2. [Security-related change: Update how-to-plan-supercomputer-network-security-groups.md](https://github.com/MicrosoftDocs/azure-docs/commit/c0d2053049a6a4b3c06546e35f9f2a370c8ae664)
 
-- Repository: [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs)
+- Repository: [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 3. [Security-related change: Security Operations and Remediation Workflows with GitHub Advanced Se…](https://github.com/MicrosoftDocs/learn/commit/607e605e31b0b128c2ed81a70bb0f72fe644c693)
+### 3. [Security-related change: Fix reference link for Cloud Security Report (#56506)](https://github.com/MicrosoftDocs/learn/commit/6a12ce5affc08697161641ad9fabb625a0999897)
 
 - Repository: [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 4. [Release activity: azure-ai-agentserver-activity_1.0.0b4](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-activity_1.0.0b4)
+### 4. [Security-related change: Standardize security sample directory names](https://github.com/dotnet/AspNetCore.Docs/pull/37862)
 
-- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
+- Repository: [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 5. [Release activity: Use GitHub App token for auto-release spec verification](https://github.com/Azure/azure-sdk-for-java/pull/50796)
+
+- Repository: [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 5. [Release activity: v0.1.0-alpha.2](https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.2)
-
-- Repository: [Azure/dacs](https://github.com/Azure/dacs)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 6. [Release activity: Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4)
-
-- Repository: [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 7. [Release activity: microsoft-kiota-serialization-multipart: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.3)
+### 6. [Release activity: microsoft-kiota-serialization-multipart: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.4)
 
 - Repository: [microsoft/kiota-python](https://github.com/microsoft/kiota-python)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 8. [Release activity: v2.1.5](https://github.com/microsoft/kiota-dotnet/releases/tag/v2.1.5)
+### 7. [Release activity: ci(release): publish Kiota NuGet packages through ESRP](https://github.com/microsoft/kiota-dotnet/pull/828)
 
 - Repository: [microsoft/kiota-dotnet](https://github.com/microsoft/kiota-dotnet)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+
+### 8. [Release activity: Fix security issues link in release notes v1.141](https://github.com/microsoft/vscode-docs/pull/10482)
+
+- Repository: [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
 ## Product Area Briefings
 
 ### Azure
 
-51 repos, 199 tracked events, 21 releases, 1 security/admin signal.
+42 repos, 162 tracked events, 20 releases, 1 security/admin signal.
 
 - Likely audience: Developers, Learners, General MS consumers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [security: Document external node CSR role permission breaking change …](https://github.com/MicrosoftDocs/azure-aks-docs/commit/5b20bb37906d55958b5d66d9ed36c5e3d6555ef2) (MicrosoftDocs/azure-aks-docs)
-  - [azure-ai-agentserver-activity_1.0.0b4](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-activity_1.0.0b4) (Azure/azure-sdk-for-python)
-  - [v0.1.0-alpha.2](https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.2) (Azure/dacs)
+  - [Update how-to-plan-supercomputer-network-security-groups.md](https://github.com/MicrosoftDocs/azure-docs/commit/c0d2053049a6a4b3c06546e35f9f2a370c8ae664) (MicrosoftDocs/azure-docs)
+  - [Use GitHub App token for auto-release spec verification](https://github.com/Azure/azure-sdk-for-java/pull/50796) (Azure/azure-sdk-for-java)
+  - [azure-mgmt-compute-bulkaction_1.0.0b6](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-compute-bulkaction_1.0.0b6) (Azure/azure-sdk-for-python)
 
 ### Unmapped Activity
 
-31 repos, 88 tracked events, 0 releases, 2 security/admin signals.
+26 repos, 79 tracked events, 3 releases, 1 security/admin signal.
 
 - Likely audience: General MS consumers, Learners, Developers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Security Operations and Remediation Workflows with GitHub Advanced Se…](https://github.com/MicrosoftDocs/learn/commit/607e605e31b0b128c2ed81a70bb0f72fe644c693) (MicrosoftDocs/learn)
-  - [Security Campaigns & Prevention-First Strategy (#56436) (#56499)](https://github.com/MicrosoftDocs/learn/commit/49c369d2f2c43ea20d3a444cf9fd6be5d3c9695d) (MicrosoftDocs/learn)
-  - [Field Service ur9.3 8.8.150.60 release notes (#17173)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/commit/df5f85bec60a6aeb59931908447ab313777d986f) (MicrosoftDocs/dynamics-365-customer-engagement)
+  - [Fix reference link for Cloud Security Report (#56506)](https://github.com/MicrosoftDocs/learn/commit/6a12ce5affc08697161641ad9fabb625a0999897) (MicrosoftDocs/learn)
+  - [22.11.0 release notes (#934) (#935) (#936)](https://github.com/MicrosoftDocs/data-tools/commit/44c6f5a9e629245e018dd6b28d0d1c78f4a35cff) (MicrosoftDocs/data-tools)
+  - [22.11.0 release notes (#934) (#935)](https://github.com/MicrosoftDocs/data-tools/commit/95bfffbde215131c826da59fe3581fe685c0909c) (MicrosoftDocs/data-tools)
 
 ### .NET
 
-12 repos, 38 tracked events, 0 releases, 1 security/admin signal.
+12 repos, 43 tracked events, 6 releases, 1 security/admin signal.
 
-- Likely audience: General MS consumers, Learners, Developers.
+- Likely audience: General MS consumers, Developers, Learners.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Add Android.Security.Net.Config API 37 documentation](https://github.com/dotnet/android-api-docs/pull/841) (dotnet/android-api-docs)
-  - [Add Android HID device documentation](https://github.com/dotnet/android-api-docs/pull/838) (dotnet/android-api-docs)
-  - [Add InputMethodManager animation documentation](https://github.com/dotnet/android-api-docs/pull/832) (dotnet/android-api-docs)
+  - [Standardize security sample directory names](https://github.com/dotnet/AspNetCore.Docs/pull/37862) (dotnet/AspNetCore.Docs)
+  - [.NET 10.0.13](https://github.com/dotnet/runtime/releases/tag/v10.0.13) (dotnet/runtime)
+  - [.NET 10.0.13](https://github.com/dotnet/efcore/releases/tag/v10.0.13) (dotnet/efcore)
 
 ### Microsoft Graph
 
-9 repos, 39 tracked events, 6 releases, 0 security/admin signals.
+10 repos, 40 tracked events, 5 releases, 0 security/admin signals.
 
 - Likely audience: Developers, General MS consumers, Admins.
 - Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [microsoft-kiota-serialization-multipart: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.3) (microsoft/kiota-python)
-  - [microsoft-kiota-serialization-text: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.3) (microsoft/kiota-python)
-  - [microsoft-kiota-serialization-form: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.3) (microsoft/kiota-python)
-
-### Identity
-
-2 repos, 8 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: General MS consumers, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/5b4de6fbf5ed769f456035cf8cefb202de2ab015) (MicrosoftDocs/dynamics365smb-devitpro-pb)
-  - [Update cross-tenant-access-overview.md](https://github.com/MicrosoftDocs/entra-docs/commit/d232317b9764e7f6fd301001850cd7a7ab3abaa7) (MicrosoftDocs/entra-docs)
-  - [Update cross-tenant-access-overview.md](https://github.com/MicrosoftDocs/entra-docs/commit/96112b88b3fc5a0c3e5f145e23651392e4013b5d) (MicrosoftDocs/entra-docs)
-
-### Microsoft 365
-
-6 repos, 9 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers, Learners, General MS consumers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Updates to preview-feature article](https://github.com/MicrosoftDocs/msteams-docs/pull/14644) (MicrosoftDocs/msteams-docs)
-  - [Auto Publish – main to live - 2026-10-13 15:00 UTC](https://github.com/MicrosoftDocs/msteams-docs/pull/14657) (MicrosoftDocs/msteams-docs)
-  - [Clarify border indexes for Excel conditional formatting](https://github.com/MicrosoftDocs/VBA-Docs/pull/1970) (MicrosoftDocs/VBA-Docs)
+  - [microsoft-kiota-serialization-multipart: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.4) (microsoft/kiota-python)
+  - [microsoft-kiota-serialization-text: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.4) (microsoft/kiota-python)
+  - [microsoft-kiota-serialization-form: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.4) (microsoft/kiota-python)
 
 ### PowerShell
 
-2 repos, 6 tracked events, 0 releases, 0 security/admin signals.
+4 repos, 11 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Admins.
+- Likely audience: Admins, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/19f1c024e35badc1ffa6f78936fde596c91e32dd) (MicrosoftDocs/power-platform)
-  - [Make the WinUI app per-monitor DPI aware](https://github.com/microsoft/Aion-Instruct-Preview-Sample/pull/13) (microsoft/Aion-Instruct-Preview-Sample)
-  - [Update geographical-availability-copilot.md (#12028)](https://github.com/MicrosoftDocs/power-platform/commit/e601fd6673c7d13351dcb1559362ac15b39f808b) (MicrosoftDocs/power-platform)
+  - [fix(docs): repoint dead aka.ms/ftk links to working targets](https://github.com/microsoft/finops-toolkit/commit/219956cd498c4a2d87f7345ddb32b112872800e5) (microsoft/finops-toolkit)
+  - [docs: update changelog ms.date](https://github.com/microsoft/finops-toolkit/commit/d048064a9ed1f6f83526acf9b3f444937a97ee5d) (microsoft/finops-toolkit)
+  - [[Open Data] Update instance size flexibility ratios (October 2026)](https://github.com/microsoft/finops-toolkit/pull/2344) (microsoft/finops-toolkit)
+
+### Developer Tools
+
+2 repos, 10 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: General MS consumers, Developers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [Fix security issues link in release notes v1.141](https://github.com/microsoft/vscode-docs/pull/10482) (microsoft/vscode-docs)
+  - [Show release 1.142 in ToC](https://github.com/microsoft/vscode-docs/pull/10481) (microsoft/vscode-docs)
+  - [Repo sync for protected branch](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11462) (MicrosoftDocs/visualstudio-docs)
+
+### Identity
+
+2 repos, 7 tracked events, 0 releases, 1 security/admin signal.
+
+- Likely audience: General MS consumers, Learners.
+- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
+- Most useful links:
+  - [Introduce management of individual Security Defaults protections (#14…](https://github.com/MicrosoftDocs/entra-docs/commit/c8aff6d01240069732e475e6be0a6c28c12bbca4) (MicrosoftDocs/entra-docs)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/5b4de6fbf5ed769f456035cf8cefb202de2ab015) (MicrosoftDocs/dynamics365smb-devitpro-pb)
+  - [Merge pull request #14601 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/entra-docs/commit/bb7280b7cd3538710cff4da36c4fd818bb436af1) (MicrosoftDocs/entra-docs)
 
 ### Windows
 
-1 repo, 5 tracked events, 0 releases, 0 security/admin signals.
+5 repos, 7 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: General MS consumers.
+- Likely audience: Developers, General MS consumers, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Update WindowsServerDocs/manage/windows-admin-center/azure/extension-…](https://github.com/MicrosoftDocs/windowsserverdocs/commit/f0b090426599f586bc237eb60675b5a3105d4a5b) (MicrosoftDocs/windowsserverdocs)
-  - [Update WindowsServerDocs/manage/windows-admin-center/azure/extension-…](https://github.com/MicrosoftDocs/windowsserverdocs/commit/9364fd987567e8769f5a25074e8c9296137ed8be) (MicrosoftDocs/windowsserverdocs)
-  - [Update WindowsServerDocs/manage/windows-admin-center/azure/manage-arc…](https://github.com/MicrosoftDocs/windowsserverdocs/commit/44deab5fe7abf77a0e2c4a1d651ca66288ee1317) (MicrosoftDocs/windowsserverdocs)
+  - [Clarify Command Prompt support for WinGet configuration](https://github.com/MicrosoftDocs/windows-driver-docs/pull/4049) (MicrosoftDocs/windows-driver-docs)
+  - [Update icacls.md to use no-loc formatting (#8487)](https://github.com/MicrosoftDocs/windowsserverdocs/commit/75cd32d6dbbfdd84d6a03a7196d81b87ac95886d) (MicrosoftDocs/windowsserverdocs)
+  - [Update LKG version to 2.6.0-dev.experimental6](https://github.com/microsoft/WindowsAppSDK/pull/6864) (microsoft/WindowsAppSDK)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-ai-agentserver-activity_1.0.0b4](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-agentserver-activity_1.0.0b4) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP Function ZIPs 128.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-128-1) | New release available for consumers of this repo. |
-| Azure | [Azure/dacs](https://github.com/Azure/dacs) | [v0.1.0-alpha.2](https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.2) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/dacs](https://github.com/Azure/dacs) | [v0.1.0-alpha.1](https://github.com/Azure/dacs/releases/tag/v0.1.0-alpha.1) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute.BulkActions_1.2.0-beta.4) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-multipart: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-text: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-form: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-json: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-json-v1.14.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-http: v1.14.3](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-http-v1.14.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-dotnet](https://github.com/microsoft/kiota-dotnet) | [v2.1.5](https://github.com/microsoft/kiota-dotnet/releases/tag/v2.1.5) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.ResourceManager.Compute_1.18.0](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Compute_1.18.0) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-multipart: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-multipart-v1.14.4) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-text: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-text-v1.14.4) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-form: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-form-v1.14.4) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-serialization-json: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-serialization-json-v1.14.4) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/kiota-python](https://github.com/microsoft/kiota-python) | [microsoft-kiota-http: v1.14.4](https://github.com/microsoft/kiota-python/releases/tag/microsoft-kiota-http-v1.14.4) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-compute-bulkaction_1.0.0b6](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-compute-bulkaction_1.0.0b6) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure+azure-security-keyvault-administration_4.9.0-beta.2](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-security-keyvault-administration_4.9.0-beta.2) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Provisioning.Sphere_1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Sphere_1.0.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/arm-cosmosdb_17.1.0-beta.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-cosmosdb_17.1.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Provisioning.Storage_1.2.0-beta.2](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.Storage_1.2.0-beta.2) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-cli-extensions](https://github.com/Azure/azure-cli-extensions) | [ml 2.45.2](https://github.com/Azure/azure-cli-extensions/releases/tag/ml-2.45.2) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/arm-compute-bulkactions_1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-compute-bulkactions_1.0.0-beta.6) | Pre-release; inspect before adopting broadly. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- [dotnet/android-api-docs](https://github.com/dotnet/android-api-docs): [Add Android.Security.Net.Config API 37 documentation](https://github.com/dotnet/android-api-docs/pull/841)
-- [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs): [security: Document external node CSR role permission breaking change …](https://github.com/MicrosoftDocs/azure-aks-docs/commit/5b20bb37906d55958b5d66d9ed36c5e3d6555ef2)
-- [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn): [Security Operations and Remediation Workflows with GitHub Advanced Se…](https://github.com/MicrosoftDocs/learn/commit/607e605e31b0b128c2ed81a70bb0f72fe644c693)
-- [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn): [Security Campaigns & Prevention-First Strategy (#56436) (#56499)](https://github.com/MicrosoftDocs/learn/commit/49c369d2f2c43ea20d3a444cf9fd6be5d3c9695d)
+- [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs): [Introduce management of individual Security Defaults protections (#14…](https://github.com/MicrosoftDocs/entra-docs/commit/c8aff6d01240069732e475e6be0a6c28c12bbca4)
+- [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs): [Update how-to-plan-supercomputer-network-security-groups.md](https://github.com/MicrosoftDocs/azure-docs/commit/c0d2053049a6a4b3c06546e35f9f2a370c8ae664)
+- [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn): [Fix reference link for Cloud Security Report (#56506)](https://github.com/MicrosoftDocs/learn/commit/6a12ce5affc08697161641ad9fabb625a0999897)
+- [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs): [Standardize security sample directory names](https://github.com/dotnet/AspNetCore.Docs/pull/37862)
 
 ## What Was Mostly Noise
 
-130 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+128 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
+- [Azure-Samples/azure-search-openai-demo-java](https://github.com/Azure-Samples/azure-search-openai-demo-java) - 5 events
+- [microsoft/terraform-provider-power-platform](https://github.com/microsoft/terraform-provider-power-platform) - 5 events
+- [microsoftgraph/msgraph-snippets-dotnet](https://github.com/microsoftgraph/msgraph-snippets-dotnet) - 5 events
+- [microsoftgraph/msgraph-snippets-go](https://github.com/microsoftgraph/msgraph-snippets-go) - 5 events
 - [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) - 5 events
-- [microsoft/kiota-ruby](https://github.com/microsoft/kiota-ruby) - 5 events
-- [Azure-Samples/Durable-Task-Scheduler](https://github.com/Azure-Samples/Durable-Task-Scheduler) - 5 events
-- [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) - 4 events
-- [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 4 events
 
-Noise mix: Docs: 52, Dependency: 36, SDK: 15, CI/Infra: 10, Sample: 8, Release: 5, Fix: 3, Automation: 1.
+Noise mix: Dependency: 53, Docs: 49, SDK: 12, CI/Infra: 8, Release: 3, Feature: 1, Automation: 1, Fix: 1.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 24.1 hours from `2026-10-12T19:47:05.276220Z` to `2026-10-13T19:54:19.603603Z`.
-- Event stream: 366 commits, 27 releases.
+- Window: 24.2 hours from `2026-10-13T17:54:19.603603Z` to `2026-10-14T18:04:19.333702Z`.
+- Event stream: 328 commits, 34 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
