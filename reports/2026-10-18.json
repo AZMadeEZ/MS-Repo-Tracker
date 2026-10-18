@@ -1,0 +1,3639 @@
+{
+  "activities": [
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 9,
+      "commits": [
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-18T07:38:31Z",
+          "headline": "Fix malformed XML doc comments under src/coreclr/tools (#136018)",
+          "oid": "ec0059c08c077e839c6eb8827c846530a891d7e2",
+          "pr_number": 136018,
+          "pr_title": "Fix malformed XML doc comments under src/coreclr/tools",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136018",
+          "url": "https://github.com/dotnet/runtime/commit/ec0059c08c077e839c6eb8827c846530a891d7e2"
+        },
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-18T06:07:59Z",
+          "headline": "Add ILVerify tests for exception-handling errors (#136023)",
+          "oid": "8fc62c36ded0202b81baa62d9571bf5f2ad22a49",
+          "pr_number": 136023,
+          "pr_title": "Add ILVerify tests for exception-handling errors",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136023",
+          "url": "https://github.com/dotnet/runtime/commit/8fc62c36ded0202b81baa62d9571bf5f2ad22a49"
+        },
+        {
+          "author": "Andrew (@andrew-kulikov)",
+          "committed_date": "2026-10-18T01:43:35Z",
+          "headline": "[NativeAOT] Hash relocations in method body folding keys (#135943)",
+          "oid": "42118298a268ef93deda05104fb31b8e83126255",
+          "pr_number": 135943,
+          "pr_title": "[NativeAOT] Hash relocations in method body folding keys",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135943",
+          "url": "https://github.com/dotnet/runtime/commit/42118298a268ef93deda05104fb31b8e83126255"
+        },
+        {
+          "author": "Andy Gocke (@agocke)",
+          "committed_date": "2026-10-18T01:05:45Z",
+          "headline": "Use geometric body buffer growth in HTTP loopback servers (#135974)",
+          "oid": "dcc404c54bbe3830a343a182ecea4becc9f61439",
+          "pr_number": 135974,
+          "pr_title": "Use geometric body buffer growth in HTTP loopback servers",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135974",
+          "url": "https://github.com/dotnet/runtime/commit/dcc404c54bbe3830a343a182ecea4becc9f61439"
+        },
+        {
+          "author": "Fuad Laguda (@lagudafuadtosin)",
+          "committed_date": "2026-10-18T00:55:49Z",
+          "headline": "ilverify: allow ldsflda of initonly static fields outside the cctor (\u2026",
+          "oid": "b22bfee2010118c58ae143c3b8a1aaee3d0c8c4c",
+          "pr_number": 135994,
+          "pr_title": "ilverify: allow ldsflda of initonly static fields outside the cctor",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135994",
+          "url": "https://github.com/dotnet/runtime/commit/b22bfee2010118c58ae143c3b8a1aaee3d0c8c4c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-10-18T07:38:31Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 49,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-10-18T13:23:32Z",
+          "headline": "Relax Copilot date and metadata requirements (#37929)",
+          "oid": "775c2096c0c8a16197fcd50f346c97caada76bb9",
+          "pr_number": 37929,
+          "pr_title": "Relax Copilot date and metadata requirements",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37929",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/775c2096c0c8a16197fcd50f346c97caada76bb9"
+        },
+        {
+          "author": "Genevieve Warren (@gewarren)",
+          "committed_date": "2026-10-18T13:19:33Z",
+          "headline": "Add snippets 5000 workflow (#37911)",
+          "oid": "909efded43c9fe6db7901c2b78c598940f14a284",
+          "pr_number": 37911,
+          "pr_title": "Add snippets 5000 workflow",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37911",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/909efded43c9fe6db7901c2b78c598940f14a284"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:15:30Z",
+          "headline": "Update RP tutorial to use 'MoviePages' folder (#37914)",
+          "oid": "4e1bf434fc113070ae4045c88b836d1f36c7e259",
+          "pr_number": 37914,
+          "pr_title": "Update RP tutorial to use 'MoviePages' folder",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37914",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/4e1bf434fc113070ae4045c88b836d1f36c7e259"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:14:42Z",
+          "headline": "Drop dotnet-aspnet-codegenerator tooling (#37916)",
+          "oid": "51bce72da7ac873859f2f1e6dac37728564106bd",
+          "pr_number": 37916,
+          "pr_title": "Drop dotnet-aspnet-codegenerator tooling",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37916",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/51bce72da7ac873859f2f1e6dac37728564106bd"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:14:12Z",
+          "headline": "Add guideline for Microsoft Writing Style compliance (#37918)",
+          "oid": "b83883e69dfaeb313ae9221837b0c770b74c0c95",
+          "pr_number": 37918,
+          "pr_title": "Add guideline for Microsoft Writing Style compliance",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/b83883e69dfaeb313ae9221837b0c770b74c0c95"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/AspNetCore.Docs",
+      "name": "AspNetCore.Docs",
+      "newest_commit_date": "2026-10-18T13:23:32Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 82,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "copilot"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:03:22Z",
+          "headline": "Merge pull request #2948 from MicrosoftDocs/main639279181870004847syn\u2026",
+          "oid": "b46de48462b28e63ca8ef78251da7d171eb817c7",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/b46de48462b28e63ca8ef78251da7d171eb817c7"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T11:03:04Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dataexpl\u2026",
+          "oid": "c2c80d37f8246bad59e26826e6ebe6ba1ff39258",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c2c80d37f8246bad59e26826e6ebe6ba1ff39258"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:02:09Z",
+          "headline": "Merge pull request #7621 from MicrosoftDocs/main",
+          "oid": "851346aec3d8206c7d0541c67e504cfea98a1654",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/851346aec3d8206c7d0541c67e504cfea98a1654"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-18T07:03:11Z",
+          "headline": "Merge pull request #7618 from hzargari-ms/wi-635756-DAX-plugin",
+          "oid": "c8570e125968d54ff2eebf337eef8746a5a4a9ff",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c8570e125968d54ff2eebf337eef8746a5a4a9ff"
+        },
+        {
+          "author": "Hodayah Zargari (@hzargari-ms)",
+          "committed_date": "2026-10-18T06:57:00Z",
+          "headline": "Merge branch 'wi-635756-DAX-plugin' of https://github.com/hzargari-ms\u2026",
+          "oid": "dd69f68bb8d8fdc4418f86b3efea0ad731417570",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/dd69f68bb8d8fdc4418f86b3efea0ad731417570"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/dataexplorer-docs",
+      "name": "dataexplorer-docs",
+      "newest_commit_date": "2026-10-18T11:03:22Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 81,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;keyword:tool;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-18T13:06:27Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "01529077d2167ff4133addc478eeec00eb7c7f69",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/01529077d2167ff4133addc478eeec00eb7c7f69"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-18T12:10:14Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "4df74b7aaeff9386b6e7274a3e276c035246359a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/4df74b7aaeff9386b6e7274a3e276c035246359a"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-17T17:06:21Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "70134ec3ef1883535e4f06f39709043ed577dd72",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/70134ec3ef1883535e4f06f39709043ed577dd72"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-17T16:07:18Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "43ce5c8be10f9ff84ac6a4426d632a833db2c91d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/43ce5c8be10f9ff84ac6a4426d632a833db2c91d"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/Spec2Cloud",
+      "name": "Spec2Cloud",
+      "newest_commit_date": "2026-10-18T13:06:27Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 4,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:05:42Z",
+          "headline": "Merge pull request #3432 from MicrosoftDocs/main639279183139745335syn\u2026",
+          "oid": "0dd0cd5977ed7d2b53e4c955c3f838d7634f6218",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/0dd0cd5977ed7d2b53e4c955c3f838d7634f6218"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T11:05:11Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "0f50ce2da9915af8379313fb7b9bc0b80bb744ca",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/0f50ce2da9915af8379313fb7b9bc0b80bb744ca"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:02:36Z",
+          "headline": "Merge pull request #16996 from MicrosoftDocs/main",
+          "oid": "1588679afe6f4f2a76b396d895faa52764245e55",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/1588679afe6f4f2a76b396d895faa52764245e55"
+        },
+        {
+          "author": "hzargari-ms (@hzargari-ms)",
+          "committed_date": "2026-10-18T09:22:35Z",
+          "headline": "Time pivot in RTD supported visuals (#16949)",
+          "oid": "5a4d4409f18b57743bd96f56952e9074ed0043a2",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/5a4d4409f18b57743bd96f56952e9074ed0043a2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-10-18T11:05:42Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T17:31:43Z",
+          "headline": "Start the live evaluations alongside the regressions again",
+          "oid": "8a5b58923926627f3d9722f19ac7df561f0cccb2",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8a5b58923926627f3d9722f19ac7df561f0cccb2"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T17:26:12Z",
+          "headline": "Accept C# numeric casts in queries; gate corrections by start time",
+          "oid": "7a061c8039cfb2de87b32e0663409e0f3885aab8",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/7a061c8039cfb2de87b32e0663409e0f3885aab8"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T15:33:42Z",
+          "headline": "Test that live evaluations wait for the regressions",
+          "oid": "1823018f5bbe18837f1ba31cca8e1755ea22ffb0",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/1823018f5bbe18837f1ba31cca8e1755ea22ffb0"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T15:16:33Z",
+          "headline": "Resend a model request once after an in-stream server_error",
+          "oid": "8dfdcad38735a3bd6db6d78ff10fdbade0f62843",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8dfdcad38735a3bd6db6d78ff10fdbade0f62843"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azure-finops-agent",
+      "name": "azure-finops-agent",
+      "newest_commit_date": "2026-10-17T17:31:43Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 79,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "docs",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;keyword:platform;keyword:powershell;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T07:03:49Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "oid": "d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T07:02:44Z",
+          "headline": "Merge pull request #12061 from MicrosoftDocs/main",
+          "oid": "90e506d340d2c6abdd2136866b0326df04610a53",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/90e506d340d2c6abdd2136866b0326df04610a53"
+        },
+        {
+          "author": "Dileep Singh (@dileepsinghmicrosoft)",
+          "committed_date": "2026-10-18T06:18:21Z",
+          "headline": "Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)",
+          "oid": "72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/power-platform",
+      "name": "power-platform",
+      "newest_commit_date": "2026-10-18T07:03:49Z",
+      "org": "MicrosoftDocs",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 2,
+        "score": 78,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:38:46Z",
+          "headline": "Merge pull request #321537 from MicrosoftDocs/main",
+          "oid": "2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525"
+        },
+        {
+          "author": "Raj Singh (@rajsinghmsa)",
+          "committed_date": "2026-10-18T09:34:37Z",
+          "headline": "Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026",
+          "oid": "29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-10-18T11:38:46Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:platform;fallback:Unknown;keyword:training",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Yuhx141 (@Yuhx141)",
+          "committed_date": "2026-10-18T07:34:33Z",
+          "headline": "Fix safety guards in training loss fusions (#32987)",
+          "oid": "c1ea5bffb8f78d6d6b7239eccf66ebfc3e5833b0",
+          "pr_number": 32987,
+          "pr_title": "Fix safety guards in training loss fusions",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/32987",
+          "url": "https://github.com/microsoft/onnxruntime/commit/c1ea5bffb8f78d6d6b7239eccf66ebfc3e5833b0"
+        },
+        {
+          "author": "Tianlei Wu (@tianleiwu)",
+          "committed_date": "2026-10-18T06:38:13Z",
+          "headline": "[CUDA plugin EP] Improve NuGet package metadata (#33405)",
+          "oid": "ce1d73c22219cb7a0b60d219b9fb90f2936d4e0b",
+          "pr_number": 33405,
+          "pr_title": "[CUDA plugin EP] Improve NuGet package metadata",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33405",
+          "url": "https://github.com/microsoft/onnxruntime/commit/ce1d73c22219cb7a0b60d219b9fb90f2936d4e0b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-10-18T07:34:33Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftLearning;category:training;keyword:azure;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "MScalopez (@MScalopez)",
+          "committed_date": "2026-10-18T01:09:37Z",
+          "headline": "minor fixes to Lab 12",
+          "oid": "0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec"
+        },
+        {
+          "author": "MScalopez (@MScalopez)",
+          "committed_date": "2026-10-17T23:27:29Z",
+          "headline": "fixes to lab 12",
+          "oid": "73c7bdb8632689562b3a11e25a505c5168c015f5",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/73c7bdb8632689562b3a11e25a505c5168c015f5"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/dp-420-cosmos-db-dev",
+      "name": "dp-420-cosmos-db-dev",
+      "newest_commit_date": "2026-10-18T01:09:37Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 77,
+        "tags": [
+          "human-authored",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftDocs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T01:04:13Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/cloud-ad\u2026",
+          "oid": "96a2c776aeac995e06a78557e7b718af795910c4",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/96a2c776aeac995e06a78557e7b718af795910c4"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T01:03:09Z",
+          "headline": "Merge pull request #7410 from MicrosoftDocs/main",
+          "oid": "c3a15397dedfdf37ad1171bc41e71d6a89457e07",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/c3a15397dedfdf37ad1171bc41e71d6a89457e07"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/cloud-adoption-framework",
+      "name": "cloud-adoption-framework",
+      "newest_commit_date": "2026-10-18T01:04:13Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-10-17T17:52:03Z",
+          "headline": "Increment version for ai releases (#63942)",
+          "oid": "999c8a67bd73f03457eb7e1406059764c4a28c32",
+          "pr_number": 63942,
+          "pr_title": "Increment version for ai releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/63942",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/999c8a67bd73f03457eb7e1406059764c4a28c32"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-10-17T17:51:44Z",
+          "headline": "Increment package version after release of Azure.Containers.Container\u2026",
+          "oid": "bf477a369a8a1faf31c6ac995679dd8006d20766",
+          "pr_number": 63945,
+          "pr_title": "Increment version for containerregistry releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/63945",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/bf477a369a8a1faf31c6ac995679dd8006d20766"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-10-17T17:52:03Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 0,
+        "score": 37,
+        "tags": [
+          "bot-only",
+          "docs",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-net"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:terraform;org:Azure;keyword:lab",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-10-18T16:00:20Z",
+          "headline": "docs: simplify Agent Landing Zone planning and deployment guidance",
+          "oid": "544078c8a8e920345ad1172e0b7936aebf9ab09a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure/AI-Landing-Zones/commit/544078c8a8e920345ad1172e0b7936aebf9ab09a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/AI-Landing-Zones",
+      "name": "AI-Landing-Zones",
+      "newest_commit_date": "2026-10-18T16:00:20Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftLearning;category:training;fallback:Unknown;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Ashley Bowen (@ashleybowen)",
+          "committed_date": "2026-10-18T01:57:02Z",
+          "headline": "Merge pull request #2 from MicrosoftLearning/update/copilot-chat-clie\u2026",
+          "oid": "8561f635b16f28cfe7d27022bfb9d9ade50008c3",
+          "pr_number": 2,
+          "pr_title": "branding and additional tweaks to client summit exercise",
+          "pr_url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/pull/2",
+          "url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/commit/8561f635b16f28cfe7d27022bfb9d9ade50008c3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/AB-730-AI-business-professional",
+      "name": "AB-730-AI-business-professional",
+      "newest_commit_date": "2026-10-18T01:57:02Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "human-authored",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "copilot"
+          ],
+          "orgs": [
+            "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-18T00:05:10Z",
+          "headline": "Fix regional Voice Agent sample to use South India and gpt-realtime-r\u2026",
+          "oid": "37d8e0ac708241a34d18fa9d4dc5539a32adbaa7",
+          "pr_number": 39,
+          "pr_title": "Fix regional Voice Agent sample to use South India and gpt-realtime-regional",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/39",
+          "url": "https://github.com/microsoft/voice-agent/commit/37d8e0ac708241a34d18fa9d4dc5539a32adbaa7"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/voice-agent",
+      "name": "voice-agent",
+      "newest_commit_date": "2026-10-18T00:05:10Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;org:dotnet;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Dave (@reduckted)",
+          "committed_date": "2026-10-17T17:44:04Z",
+          "headline": "Removed double word. (#56410)",
+          "oid": "c1cd7d1ce319fa12d17e8d0fb6bb31c0def08a19",
+          "pr_number": 56410,
+          "pr_title": "Removed double word (\"update update\")",
+          "pr_url": "https://github.com/dotnet/docs/pull/56410",
+          "url": "https://github.com/dotnet/docs/commit/c1cd7d1ce319fa12d17e8d0fb6bb31c0def08a19"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/docs",
+      "name": "docs",
+      "newest_commit_date": "2026-10-17T17:44:04Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roger Doherty (MSFT) (@doherty100)",
+          "committed_date": "2026-10-17T16:12:47Z",
+          "headline": "Register manual deployment source choice on main (#853) (#869)",
+          "oid": "6bc68d542c744220d13ba99b7bbd3006d6088add",
+          "pr_number": 869,
+          "pr_title": "Register manual deployment source choice on main (#853)",
+          "pr_url": "https://github.com/Azure-Samples/azuresandbox/pull/869",
+          "url": "https://github.com/Azure-Samples/azuresandbox/commit/6bc68d542c744220d13ba99b7bbd3006d6088add"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azuresandbox",
+      "name": "azuresandbox",
+      "newest_commit_date": "2026-10-17T16:12:47Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Raki (@mdrakiburrahman)",
+          "committed_date": "2026-10-17T14:38:11Z",
+          "headline": "fix: recover materialized views with missing Delta targets (#311)",
+          "oid": "b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4",
+          "pr_number": 311,
+          "pr_title": "fix: recover materialized views with missing Delta targets",
+          "pr_url": "https://github.com/microsoft/dbt-fabricspark/pull/311",
+          "url": "https://github.com/microsoft/dbt-fabricspark/commit/b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/dbt-fabricspark",
+      "name": "dbt-fabricspark",
+      "newest_commit_date": "2026-10-17T14:38:11Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+          "name": "v1.13.9",
+          "prerelease": false,
+          "published_at": "2026-10-17T14:38:52Z",
+          "repo_full_name": "microsoft/dbt-fabricspark",
+          "tag_name": "v1.13.9"
+        }
+      ],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 81,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "artifact_type": "tracker-report",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 46,
+    "dated_path": "reports/2026-10-18.events.ndjson",
+    "event_count": 47,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 1,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "events_calibration": {},
+  "events_prefilter": {
+    "enabled": false,
+    "mode": "off"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "generated_at": "2026-10-18T16:36:52.727010Z",
+  "graphql": {
+    "batch_size": 35,
+    "candidate_repos": 87,
+    "count_batches": 3,
+    "detail_batches": 1,
+    "max_commits": 5,
+    "mode": "two-stage",
+    "remaining_at_start": 5000,
+    "repos_counted": 87,
+    "repos_enriched": 18,
+    "repos_with_count": 18,
+    "repos_with_movement": 18,
+    "requested_batch_size": 0,
+    "stage_one_total_commits": 53,
+    "strategy": "balanced"
+  },
+  "lifecycle": {
+    "archived_changed": [
+      {
+        "archived": false,
+        "category": "other",
+        "created_at": "2026-08-28T09:02:05Z",
+        "current_archived": false,
+        "default_branch": "main",
+        "fork": false,
+        "full_name": "microsoft/Multimodal-Cultural-Alignment-Africa",
+        "html_url": "https://github.com/microsoft/Multimodal-Cultural-Alignment-Africa",
+        "name": "Multimodal-Cultural-Alignment-Africa",
+        "org": "microsoft",
+        "previous_archived": true,
+        "pushed_at": "2026-10-18T07:37:49Z"
+      }
+    ],
+    "available": true,
+    "category_changed": [],
+    "completed_at": "2026-10-18T16:36:20.403957Z",
+    "counts": {
+      "archived_changed": 1,
+      "category_changed": 0,
+      "default_branch_changed": 0,
+      "fork_changed": 0,
+      "new_repos": 0,
+      "removed_repos": 0
+    },
+    "default_branch_changed": [],
+    "fork_changed": [],
+    "mode": "incremental",
+    "new_repos": [],
+    "orgs_completed": [
+      "Azure",
+      "Azure-Samples",
+      "MicrosoftDocs",
+      "MicrosoftLearning",
+      "OfficeDev",
+      "PowerShell",
+      "SharePoint",
+      "aspnet",
+      "dotnet",
+      "microsoft",
+      "microsoftgraph"
+    ],
+    "removed_repos": []
+  },
+  "noise_summary": {
+    "actor_types": {
+      "automation": 11,
+      "bot": 3,
+      "human": 1
+    },
+    "change_types": {
+      "ci_infra": 1,
+      "docs_update": 9,
+      "release": 1,
+      "sample_update": 4
+    },
+    "event_count": 15,
+    "top_repos": [
+      {
+        "event_count": 4,
+        "repo": "Azure-Samples/Spec2Cloud"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/dataexplorer-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 1,
+        "repo": "dotnet/AspNetCore.Docs"
+      }
+    ]
+  },
+  "notable_changes": [
+    {
+      "actor_type": "human",
+      "author": "Raj Singh (@rajsinghmsa)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+      "committed_at": "2026-10-18T09:34:37Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+      "headline": "Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "unknown",
+      "author": "",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+      "committed_at": "2026-10-17T14:38:52Z",
+      "customer_visible": "true",
+      "event_id": "github_release:microsoft/dbt-fabricspark:v1.13.9",
+      "headline": "v1.13.9",
+      "noise_level": "low",
+      "notability_reason": [
+        "release"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Unknown",
+      "repo": "microsoft/dbt-fabricspark"
+    },
+    {
+      "actor_type": "human",
+      "author": "Luke Latham (@guardrex)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/dotnet/AspNetCore.Docs/commit/b83883e69dfaeb313ae9221837b0c770b74c0c95",
+      "committed_at": "2026-10-18T13:14:12Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/AspNetCore.Docs:b83883e69dfaeb313ae9221837b0c770b74c0c95",
+      "headline": "Add guideline for Microsoft Writing Style compliance (#37918)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 37918,
+      "pr_title": "Add guideline for Microsoft Writing Style compliance",
+      "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918",
+      "product_area": ".NET",
+      "repo": "dotnet/AspNetCore.Docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Dileep Singh (@dileepsinghmicrosoft)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+      "committed_at": "2026-10-18T06:18:21Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/power-platform:72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+      "headline": "Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/power-platform"
+    },
+    {
+      "actor_type": "human",
+      "author": "MScalopez (@MScalopez)",
+      "category": "training",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+      "committed_at": "2026-10-18T01:09:37Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/dp-420-cosmos-db-dev:0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+      "headline": "minor fixes to Lab 12",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftLearning/dp-420-cosmos-db-dev"
+    },
+    {
+      "actor_type": "human",
+      "author": "szhaomsft (@szhaomsft)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/voice-agent/commit/37d8e0ac708241a34d18fa9d4dc5539a32adbaa7",
+      "committed_at": "2026-10-18T00:05:10Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/voice-agent:37d8e0ac708241a34d18fa9d4dc5539a32adbaa7",
+      "headline": "Fix regional Voice Agent sample to use South India and gpt-realtime-r\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 39,
+      "pr_title": "Fix regional Voice Agent sample to use South India and gpt-realtime-regional",
+      "pr_url": "https://github.com/microsoft/voice-agent/pull/39",
+      "product_area": "Azure",
+      "repo": "microsoft/voice-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "MScalopez (@MScalopez)",
+      "category": "training",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/73c7bdb8632689562b3a11e25a505c5168c015f5",
+      "committed_at": "2026-10-17T23:27:29Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/dp-420-cosmos-db-dev:73c7bdb8632689562b3a11e25a505c5168c015f5",
+      "headline": "fixes to lab 12",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftLearning/dp-420-cosmos-db-dev"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paulo Lacerda (@placerda)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/AI-Landing-Zones/commit/544078c8a8e920345ad1172e0b7936aebf9ab09a",
+      "committed_at": "2026-10-18T16:00:20Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/AI-Landing-Zones:544078c8a8e920345ad1172e0b7936aebf9ab09a",
+      "headline": "docs: simplify Agent Landing Zone planning and deployment guidance",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "Azure/AI-Landing-Zones"
+    },
+    {
+      "actor_type": "human",
+      "author": "Copilot (@Copilot)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/dotnet/AspNetCore.Docs/commit/775c2096c0c8a16197fcd50f346c97caada76bb9",
+      "committed_at": "2026-10-18T13:23:32Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/AspNetCore.Docs:775c2096c0c8a16197fcd50f346c97caada76bb9",
+      "headline": "Relax Copilot date and metadata requirements (#37929)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 37929,
+      "pr_title": "Relax Copilot date and metadata requirements",
+      "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37929",
+      "product_area": ".NET",
+      "repo": "dotnet/AspNetCore.Docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Luke Latham (@guardrex)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/dotnet/AspNetCore.Docs/commit/4e1bf434fc113070ae4045c88b836d1f36c7e259",
+      "committed_at": "2026-10-18T13:15:30Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/AspNetCore.Docs:4e1bf434fc113070ae4045c88b836d1f36c7e259",
+      "headline": "Update RP tutorial to use 'MoviePages' folder (#37914)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 37914,
+      "pr_title": "Update RP tutorial to use 'MoviePages' folder",
+      "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37914",
+      "product_area": ".NET",
+      "repo": "dotnet/AspNetCore.Docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Luke Latham (@guardrex)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/dotnet/AspNetCore.Docs/commit/51bce72da7ac873859f2f1e6dac37728564106bd",
+      "committed_at": "2026-10-18T13:14:42Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/AspNetCore.Docs:51bce72da7ac873859f2f1e6dac37728564106bd",
+      "headline": "Drop dotnet-aspnet-codegenerator tooling (#37916)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 37916,
+      "pr_title": "Drop dotnet-aspnet-codegenerator tooling",
+      "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37916",
+      "product_area": ".NET",
+      "repo": "dotnet/AspNetCore.Docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/fabric-docs/commit/0f50ce2da9915af8379313fb7b9bc0b80bb744ca",
+      "committed_at": "2026-10-18T11:05:11Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/fabric-docs:0f50ce2da9915af8379313fb7b9bc0b80bb744ca",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3432,
+      "pr_title": "Repo sync for protected branch",
+      "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+      "product_area": "Unknown",
+      "repo": "MicrosoftDocs/fabric-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c2c80d37f8246bad59e26826e6ebe6ba1ff39258",
+      "committed_at": "2026-10-18T11:03:04Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/dataexplorer-docs:c2c80d37f8246bad59e26826e6ebe6ba1ff39258",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dataexpl\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 2948,
+      "pr_title": "Repo sync for protected branch",
+      "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/dataexplorer-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/power-platform/commit/d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d",
+      "committed_at": "2026-10-18T07:03:49Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/power-platform:d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/power-platform"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ashley Bowen (@ashleybowen)",
+      "category": "training",
+      "change_type": "training_update",
+      "commit_url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/commit/8561f635b16f28cfe7d27022bfb9d9ade50008c3",
+      "committed_at": "2026-10-18T01:57:02Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/AB-730-AI-business-professional:8561f635b16f28cfe7d27022bfb9d9ade50008c3",
+      "headline": "Merge pull request #2 from MicrosoftLearning/update/copilot-chat-clie\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 2,
+      "pr_title": "branding and additional tweaks to client summit exercise",
+      "pr_url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/pull/2",
+      "product_area": "Unknown",
+      "repo": "MicrosoftLearning/AB-730-AI-business-professional"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/96a2c776aeac995e06a78557e7b718af795910c4",
+      "committed_at": "2026-10-18T01:04:13Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/cloud-adoption-framework:96a2c776aeac995e06a78557e7b718af795910c4",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/cloud-ad\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Unknown",
+      "repo": "MicrosoftDocs/cloud-adoption-framework"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ali Reza Farahnak (@alfarahn)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8a5b58923926627f3d9722f19ac7df561f0cccb2",
+      "committed_at": "2026-10-17T17:31:43Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-finops-agent:8a5b58923926627f3d9722f19ac7df561f0cccb2",
+      "headline": "Start the live evaluations alongside the regressions again",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-finops-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ali Reza Farahnak (@alfarahn)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/azure-finops-agent/commit/7a061c8039cfb2de87b32e0663409e0f3885aab8",
+      "committed_at": "2026-10-17T17:26:12Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-finops-agent:7a061c8039cfb2de87b32e0663409e0f3885aab8",
+      "headline": "Accept C# numeric casts in queries; gate corrections by start time",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-finops-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ali Reza Farahnak (@alfarahn)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/azure-finops-agent/commit/1823018f5bbe18837f1ba31cca8e1755ea22ffb0",
+      "committed_at": "2026-10-17T15:33:42Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-finops-agent:1823018f5bbe18837f1ba31cca8e1755ea22ffb0",
+      "headline": "Test that live evaluations wait for the regressions",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-finops-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Ali Reza Farahnak (@alfarahn)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8dfdcad38735a3bd6db6d78ff10fdbade0f62843",
+      "committed_at": "2026-10-17T15:16:33Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-finops-agent:8dfdcad38735a3bd6db6d78ff10fdbade0f62843",
+      "headline": "Resend a model request once after an in-stream server_error",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-finops-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Raki (@mdrakiburrahman)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/dbt-fabricspark/commit/b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4",
+      "committed_at": "2026-10-17T14:38:11Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/dbt-fabricspark:b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4",
+      "headline": "fix: recover materialized views with missing Delta targets (#311)",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 80,
+      "pr_number": 311,
+      "pr_title": "fix: recover materialized views with missing Delta targets",
+      "pr_url": "https://github.com/microsoft/dbt-fabricspark/pull/311",
+      "product_area": "Unknown",
+      "repo": "microsoft/dbt-fabricspark"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525",
+      "committed_at": "2026-10-18T11:38:46Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525",
+      "headline": "Merge pull request #321537 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/power-platform/commit/90e506d340d2c6abdd2136866b0326df04610a53",
+      "committed_at": "2026-10-18T07:02:44Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/power-platform:90e506d340d2c6abdd2136866b0326df04610a53",
+      "headline": "Merge pull request #12061 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "MicrosoftDocs/power-platform"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/c3a15397dedfdf37ad1171bc41e71d6a89457e07",
+      "committed_at": "2026-10-18T01:03:09Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/cloud-adoption-framework:c3a15397dedfdf37ad1171bc41e71d6a89457e07",
+      "headline": "Merge pull request #7410 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Unknown",
+      "repo": "MicrosoftDocs/cloud-adoption-framework"
+    },
+    {
+      "actor_type": "human",
+      "author": "Peter Shrosbree (@pcshrosbree)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/dotnet/runtime/commit/8fc62c36ded0202b81baa62d9571bf5f2ad22a49",
+      "committed_at": "2026-10-18T06:07:59Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/runtime:8fc62c36ded0202b81baa62d9571bf5f2ad22a49",
+      "headline": "Add ILVerify tests for exception-handling errors (#136023)",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 59,
+      "pr_number": 136023,
+      "pr_title": "Add ILVerify tests for exception-handling errors",
+      "pr_url": "https://github.com/dotnet/runtime/pull/136023",
+      "product_area": ".NET",
+      "repo": "dotnet/runtime"
+    }
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 22,
+      "noisy_event_count": 10,
+      "notable_event_count": 15,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-18T09:34:37Z",
+          "headline": "Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/azure-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T01:09:37Z",
+          "headline": "minor fixes to Lab 12",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/dp-420-cosmos-db-dev",
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T00:05:10Z",
+          "headline": "Fix regional Voice Agent sample to use South India and gpt-realtime-regional",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/39"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dataexplorer-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/Spec2Cloud"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/azure-finops-agent"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftLearning/dp-420-cosmos-db-dev"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 3,
+      "notable_event_count": 9,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 5,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-17T14:38:52Z",
+          "headline": "v1.13.9",
+          "notability_score": 90,
+          "repo": "microsoft/dbt-fabricspark",
+          "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T11:05:11Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-10-18T01:57:02Z",
+          "headline": "branding and additional tweaks to client summit exercise",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/AB-730-AI-business-professional",
+          "url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/pull/2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/cloud-adoption-framework"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/dbt-fabricspark"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftLearning/AB-730-AI-business-professional"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 1,
+      "notable_event_count": 5,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-18T13:14:12Z",
+          "headline": "Add guideline for Microsoft Writing Style compliance",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T13:23:32Z",
+          "headline": "Relax Copilot date and metadata requirements",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37929"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T13:15:30Z",
+          "headline": "Update RP tutorial to use 'MoviePages' folder",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37914"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 3,
+      "noisy_event_count": 1,
+      "notable_event_count": 3,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T06:18:21Z",
+          "headline": "Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T07:03:49Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T07:02:44Z",
+          "headline": "Merge pull request #12061 from MicrosoftDocs/main",
+          "notability_score": 70,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/90e506d340d2c6abdd2136866b0326df04610a53"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        }
+      ]
+    }
+  ],
+  "recent_repo_creations": [],
+  "releases": {
+    "items": [
+      {
+        "draft": false,
+        "html_url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+        "name": "v1.13.9",
+        "prerelease": false,
+        "published_at": "2026-10-17T14:38:52Z",
+        "repo_full_name": "microsoft/dbt-fabricspark",
+        "tag_name": "v1.13.9"
+      }
+    ],
+    "summary": {
+      "candidate_repo_cap": 150,
+      "enabled": true,
+      "error_count": 0,
+      "errors": [],
+      "max_releases_per_repo": 5,
+      "mode": "candidates-and-watched",
+      "repos_checked": 150,
+      "repos_with_releases": 1,
+      "requests_changed": 150,
+      "requests_checked": 150,
+      "requests_not_modified": 0
+    }
+  },
+  "schema_url": "schemas/report.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "7cb830013144a16f9bfb49438f2c39edeccd3c92",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "39145736219",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/39145736219"
+  },
+  "summaries": {
+    "by_category": {
+      "docs": 12,
+      "samples": 4,
+      "training": 2
+    },
+    "by_org": {
+      "Azure": 2,
+      "Azure-Samples": 3,
+      "MicrosoftDocs": 5,
+      "MicrosoftLearning": 2,
+      "dotnet": 3,
+      "microsoft": 3
+    },
+    "signals": {
+      "bot_or_dependency_noise": [
+        {
+          "full_name": "Azure/azure-sdk-for-net",
+          "score": 37,
+          "tags": [
+            "bot-only",
+            "docs",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release",
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-net"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/Spec2Cloud",
+          "score": 0,
+          "tags": [
+            "bot-only",
+            "samples"
+          ],
+          "watchlist_matches": {}
+        }
+      ],
+      "high_signal": [
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "dotnet/AspNetCore.Docs",
+          "score": 82,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "copilot"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/dbt-fabricspark",
+          "score": 81,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release"
+          ],
+          "watchlist_matches": {}
+        },
+        {
+          "full_name": "MicrosoftDocs/dataexplorer-docs",
+          "score": 81,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/azure-finops-agent",
+          "score": 79,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/power-platform",
+          "score": 78,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/dp-420-cosmos-db-dev",
+          "score": 77,
+          "tags": [
+            "human-authored",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftLearning"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/cloud-adoption-framework",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/voice-agent",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/AB-730-AI-business-professional",
+          "score": 76,
+          "tags": [
+            "human-authored",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "copilot"
+            ],
+            "orgs": [
+              "MicrosoftLearning"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/AI-Landing-Zones",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        }
+      ],
+      "tag_counts": {
+        "bot-only": 2,
+        "docs": 12,
+        "human-authored": 16,
+        "product:Azure AI": 3,
+        "product:Azure SDK": 1,
+        "product:PowerShell": 1,
+        "release": 1,
+        "release-language": 2,
+        "samples": 4,
+        "training": 2,
+        "watchlist": 12
+      },
+      "watched": [
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "dotnet/AspNetCore.Docs",
+          "score": 82,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "copilot"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/dataexplorer-docs",
+          "score": 81,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/azure-finops-agent",
+          "score": 79,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/power-platform",
+          "score": 78,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/dp-420-cosmos-db-dev",
+          "score": 77,
+          "tags": [
+            "human-authored",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftLearning"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/cloud-adoption-framework",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/voice-agent",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/AB-730-AI-business-professional",
+          "score": 76,
+          "tags": [
+            "human-authored",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "copilot"
+            ],
+            "orgs": [
+              "MicrosoftLearning"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/AI-Landing-Zones",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/azure-sdk-for-net",
+          "score": 37,
+          "tags": [
+            "bot-only",
+            "docs",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release",
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-net"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+      "why": "Release activity: Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/dbt-fabricspark",
+      "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+      "why": "Release activity: v1.13.9"
+    },
+    {
+      "priority": 3,
+      "repo": "dotnet/AspNetCore.Docs",
+      "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918",
+      "why": "Feature or capability signal: Add guideline for Microsoft Writing Style compliance"
+    },
+    {
+      "priority": 4,
+      "repo": "MicrosoftDocs/power-platform",
+      "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+      "why": "Fix signal: Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftLearning/dp-420-cosmos-db-dev",
+      "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+      "why": "Fix signal: minor fixes to Lab 12"
+    },
+    {
+      "priority": 6,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/39",
+      "why": "Fix signal: Fix regional Voice Agent sample to use South India and gpt-realtime-regional"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/AI-Landing-Zones",
+      "url": "https://github.com/Azure/AI-Landing-Zones/commit/544078c8a8e920345ad1172e0b7936aebf9ab09a",
+      "why": "Docs update: docs: simplify Agent Landing Zone planning and deployment guidance"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+      "why": "Docs update: Repo sync for protected branch"
+    }
+  ],
+  "top_repos": [
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:38:46Z",
+          "headline": "Merge pull request #321537 from MicrosoftDocs/main",
+          "oid": "2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/2ec7ec2691fab6f449fe6ab4ad5e7d5719ad4525"
+        },
+        {
+          "author": "Raj Singh (@rajsinghmsa)",
+          "committed_date": "2026-10-18T09:34:37Z",
+          "headline": "Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026",
+          "oid": "29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-10-18T11:38:46Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-10-18T13:23:32Z",
+          "headline": "Relax Copilot date and metadata requirements (#37929)",
+          "oid": "775c2096c0c8a16197fcd50f346c97caada76bb9",
+          "pr_number": 37929,
+          "pr_title": "Relax Copilot date and metadata requirements",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37929",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/775c2096c0c8a16197fcd50f346c97caada76bb9"
+        },
+        {
+          "author": "Genevieve Warren (@gewarren)",
+          "committed_date": "2026-10-18T13:19:33Z",
+          "headline": "Add snippets 5000 workflow (#37911)",
+          "oid": "909efded43c9fe6db7901c2b78c598940f14a284",
+          "pr_number": 37911,
+          "pr_title": "Add snippets 5000 workflow",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37911",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/909efded43c9fe6db7901c2b78c598940f14a284"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:15:30Z",
+          "headline": "Update RP tutorial to use 'MoviePages' folder (#37914)",
+          "oid": "4e1bf434fc113070ae4045c88b836d1f36c7e259",
+          "pr_number": 37914,
+          "pr_title": "Update RP tutorial to use 'MoviePages' folder",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37914",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/4e1bf434fc113070ae4045c88b836d1f36c7e259"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:14:42Z",
+          "headline": "Drop dotnet-aspnet-codegenerator tooling (#37916)",
+          "oid": "51bce72da7ac873859f2f1e6dac37728564106bd",
+          "pr_number": 37916,
+          "pr_title": "Drop dotnet-aspnet-codegenerator tooling",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37916",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/51bce72da7ac873859f2f1e6dac37728564106bd"
+        },
+        {
+          "author": "Luke Latham (@guardrex)",
+          "committed_date": "2026-10-18T13:14:12Z",
+          "headline": "Add guideline for Microsoft Writing Style compliance (#37918)",
+          "oid": "b83883e69dfaeb313ae9221837b0c770b74c0c95",
+          "pr_number": 37918,
+          "pr_title": "Add guideline for Microsoft Writing Style compliance",
+          "pr_url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/commit/b83883e69dfaeb313ae9221837b0c770b74c0c95"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/AspNetCore.Docs",
+      "name": "AspNetCore.Docs",
+      "newest_commit_date": "2026-10-18T13:23:32Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 82,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "copilot"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:03:22Z",
+          "headline": "Merge pull request #2948 from MicrosoftDocs/main639279181870004847syn\u2026",
+          "oid": "b46de48462b28e63ca8ef78251da7d171eb817c7",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/b46de48462b28e63ca8ef78251da7d171eb817c7"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T11:03:04Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dataexpl\u2026",
+          "oid": "c2c80d37f8246bad59e26826e6ebe6ba1ff39258",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c2c80d37f8246bad59e26826e6ebe6ba1ff39258"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:02:09Z",
+          "headline": "Merge pull request #7621 from MicrosoftDocs/main",
+          "oid": "851346aec3d8206c7d0541c67e504cfea98a1654",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/851346aec3d8206c7d0541c67e504cfea98a1654"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-18T07:03:11Z",
+          "headline": "Merge pull request #7618 from hzargari-ms/wi-635756-DAX-plugin",
+          "oid": "c8570e125968d54ff2eebf337eef8746a5a4a9ff",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/c8570e125968d54ff2eebf337eef8746a5a4a9ff"
+        },
+        {
+          "author": "Hodayah Zargari (@hzargari-ms)",
+          "committed_date": "2026-10-18T06:57:00Z",
+          "headline": "Merge branch 'wi-635756-DAX-plugin' of https://github.com/hzargari-ms\u2026",
+          "oid": "dd69f68bb8d8fdc4418f86b3efea0ad731417570",
+          "pr_number": 2948,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/dataexplorer-docs/pull/2948",
+          "url": "https://github.com/MicrosoftDocs/dataexplorer-docs/commit/dd69f68bb8d8fdc4418f86b3efea0ad731417570"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/dataexplorer-docs",
+      "name": "dataexplorer-docs",
+      "newest_commit_date": "2026-10-18T11:03:22Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 81,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Raki (@mdrakiburrahman)",
+          "committed_date": "2026-10-17T14:38:11Z",
+          "headline": "fix: recover materialized views with missing Delta targets (#311)",
+          "oid": "b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4",
+          "pr_number": 311,
+          "pr_title": "fix: recover materialized views with missing Delta targets",
+          "pr_url": "https://github.com/microsoft/dbt-fabricspark/pull/311",
+          "url": "https://github.com/microsoft/dbt-fabricspark/commit/b3a4c127d3f4e0f5f2c6719021aaed48bd96c5b4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/dbt-fabricspark",
+      "name": "dbt-fabricspark",
+      "newest_commit_date": "2026-10-17T14:38:11Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [
+        {
+          "draft": false,
+          "html_url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+          "name": "v1.13.9",
+          "prerelease": false,
+          "published_at": "2026-10-17T14:38:52Z",
+          "repo_full_name": "microsoft/dbt-fabricspark",
+          "tag_name": "v1.13.9"
+        }
+      ],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 81,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:05:42Z",
+          "headline": "Merge pull request #3432 from MicrosoftDocs/main639279183139745335syn\u2026",
+          "oid": "0dd0cd5977ed7d2b53e4c955c3f838d7634f6218",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/0dd0cd5977ed7d2b53e4c955c3f838d7634f6218"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T11:05:11Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "0f50ce2da9915af8379313fb7b9bc0b80bb744ca",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/0f50ce2da9915af8379313fb7b9bc0b80bb744ca"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T11:02:36Z",
+          "headline": "Merge pull request #16996 from MicrosoftDocs/main",
+          "oid": "1588679afe6f4f2a76b396d895faa52764245e55",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/1588679afe6f4f2a76b396d895faa52764245e55"
+        },
+        {
+          "author": "hzargari-ms (@hzargari-ms)",
+          "committed_date": "2026-10-18T09:22:35Z",
+          "headline": "Time pivot in RTD supported visuals (#16949)",
+          "oid": "5a4d4409f18b57743bd96f56952e9074ed0043a2",
+          "pr_number": 3432,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/5a4d4409f18b57743bd96f56952e9074ed0043a2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-10-18T11:05:42Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T17:31:43Z",
+          "headline": "Start the live evaluations alongside the regressions again",
+          "oid": "8a5b58923926627f3d9722f19ac7df561f0cccb2",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8a5b58923926627f3d9722f19ac7df561f0cccb2"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T17:26:12Z",
+          "headline": "Accept C# numeric casts in queries; gate corrections by start time",
+          "oid": "7a061c8039cfb2de87b32e0663409e0f3885aab8",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/7a061c8039cfb2de87b32e0663409e0f3885aab8"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T15:33:42Z",
+          "headline": "Test that live evaluations wait for the regressions",
+          "oid": "1823018f5bbe18837f1ba31cca8e1755ea22ffb0",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/1823018f5bbe18837f1ba31cca8e1755ea22ffb0"
+        },
+        {
+          "author": "Ali Reza Farahnak (@alfarahn)",
+          "committed_date": "2026-10-17T15:16:33Z",
+          "headline": "Resend a model request once after an in-stream server_error",
+          "oid": "8dfdcad38735a3bd6db6d78ff10fdbade0f62843",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/azure-finops-agent/commit/8dfdcad38735a3bd6db6d78ff10fdbade0f62843"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azure-finops-agent",
+      "name": "azure-finops-agent",
+      "newest_commit_date": "2026-10-17T17:31:43Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 79,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "docs",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;keyword:platform;keyword:powershell;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T07:03:49Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "oid": "d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T07:02:44Z",
+          "headline": "Merge pull request #12061 from MicrosoftDocs/main",
+          "oid": "90e506d340d2c6abdd2136866b0326df04610a53",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/90e506d340d2c6abdd2136866b0326df04610a53"
+        },
+        {
+          "author": "Dileep Singh (@dileepsinghmicrosoft)",
+          "committed_date": "2026-10-18T06:18:21Z",
+          "headline": "Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)",
+          "oid": "72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/power-platform",
+      "name": "power-platform",
+      "newest_commit_date": "2026-10-18T07:03:49Z",
+      "org": "MicrosoftDocs",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 2,
+        "score": 78,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftLearning;category:training;keyword:azure;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "MScalopez (@MScalopez)",
+          "committed_date": "2026-10-18T01:09:37Z",
+          "headline": "minor fixes to Lab 12",
+          "oid": "0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec"
+        },
+        {
+          "author": "MScalopez (@MScalopez)",
+          "committed_date": "2026-10-17T23:27:29Z",
+          "headline": "fixes to lab 12",
+          "oid": "73c7bdb8632689562b3a11e25a505c5168c015f5",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/73c7bdb8632689562b3a11e25a505c5168c015f5"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/dp-420-cosmos-db-dev",
+      "name": "dp-420-cosmos-db-dev",
+      "newest_commit_date": "2026-10-18T01:09:37Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 77,
+        "tags": [
+          "human-authored",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftDocs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-18T01:04:13Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/cloud-ad\u2026",
+          "oid": "96a2c776aeac995e06a78557e7b718af795910c4",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/96a2c776aeac995e06a78557e7b718af795910c4"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-18T01:03:09Z",
+          "headline": "Merge pull request #7410 from MicrosoftDocs/main",
+          "oid": "c3a15397dedfdf37ad1171bc41e71d6a89457e07",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/c3a15397dedfdf37ad1171bc41e71d6a89457e07"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/cloud-adoption-framework",
+      "name": "cloud-adoption-framework",
+      "newest_commit_date": "2026-10-18T01:04:13Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:terraform;org:Azure;keyword:lab",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Paulo Lacerda (@placerda)",
+          "committed_date": "2026-10-18T16:00:20Z",
+          "headline": "docs: simplify Agent Landing Zone planning and deployment guidance",
+          "oid": "544078c8a8e920345ad1172e0b7936aebf9ab09a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure/AI-Landing-Zones/commit/544078c8a8e920345ad1172e0b7936aebf9ab09a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/AI-Landing-Zones",
+      "name": "AI-Landing-Zones",
+      "newest_commit_date": "2026-10-18T16:00:20Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:MicrosoftLearning;category:training;fallback:Unknown;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Ashley Bowen (@ashleybowen)",
+          "committed_date": "2026-10-18T01:57:02Z",
+          "headline": "Merge pull request #2 from MicrosoftLearning/update/copilot-chat-clie\u2026",
+          "oid": "8561f635b16f28cfe7d27022bfb9d9ade50008c3",
+          "pr_number": 2,
+          "pr_title": "branding and additional tweaks to client summit exercise",
+          "pr_url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/pull/2",
+          "url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/commit/8561f635b16f28cfe7d27022bfb9d9ade50008c3"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/AB-730-AI-business-professional",
+      "name": "AB-730-AI-business-professional",
+      "newest_commit_date": "2026-10-18T01:57:02Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "human-authored",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "copilot"
+          ],
+          "orgs": [
+            "MicrosoftLearning"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-18T00:05:10Z",
+          "headline": "Fix regional Voice Agent sample to use South India and gpt-realtime-r\u2026",
+          "oid": "37d8e0ac708241a34d18fa9d4dc5539a32adbaa7",
+          "pr_number": 39,
+          "pr_title": "Fix regional Voice Agent sample to use South India and gpt-realtime-regional",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/39",
+          "url": "https://github.com/microsoft/voice-agent/commit/37d8e0ac708241a34d18fa9d4dc5539a32adbaa7"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/voice-agent",
+      "name": "voice-agent",
+      "newest_commit_date": "2026-10-18T00:05:10Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 9,
+      "commits": [
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-18T07:38:31Z",
+          "headline": "Fix malformed XML doc comments under src/coreclr/tools (#136018)",
+          "oid": "ec0059c08c077e839c6eb8827c846530a891d7e2",
+          "pr_number": 136018,
+          "pr_title": "Fix malformed XML doc comments under src/coreclr/tools",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136018",
+          "url": "https://github.com/dotnet/runtime/commit/ec0059c08c077e839c6eb8827c846530a891d7e2"
+        },
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-18T06:07:59Z",
+          "headline": "Add ILVerify tests for exception-handling errors (#136023)",
+          "oid": "8fc62c36ded0202b81baa62d9571bf5f2ad22a49",
+          "pr_number": 136023,
+          "pr_title": "Add ILVerify tests for exception-handling errors",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136023",
+          "url": "https://github.com/dotnet/runtime/commit/8fc62c36ded0202b81baa62d9571bf5f2ad22a49"
+        },
+        {
+          "author": "Andrew (@andrew-kulikov)",
+          "committed_date": "2026-10-18T01:43:35Z",
+          "headline": "[NativeAOT] Hash relocations in method body folding keys (#135943)",
+          "oid": "42118298a268ef93deda05104fb31b8e83126255",
+          "pr_number": 135943,
+          "pr_title": "[NativeAOT] Hash relocations in method body folding keys",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135943",
+          "url": "https://github.com/dotnet/runtime/commit/42118298a268ef93deda05104fb31b8e83126255"
+        },
+        {
+          "author": "Andy Gocke (@agocke)",
+          "committed_date": "2026-10-18T01:05:45Z",
+          "headline": "Use geometric body buffer growth in HTTP loopback servers (#135974)",
+          "oid": "dcc404c54bbe3830a343a182ecea4becc9f61439",
+          "pr_number": 135974,
+          "pr_title": "Use geometric body buffer growth in HTTP loopback servers",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135974",
+          "url": "https://github.com/dotnet/runtime/commit/dcc404c54bbe3830a343a182ecea4becc9f61439"
+        },
+        {
+          "author": "Fuad Laguda (@lagudafuadtosin)",
+          "committed_date": "2026-10-18T00:55:49Z",
+          "headline": "ilverify: allow ldsflda of initonly static fields outside the cctor (\u2026",
+          "oid": "b22bfee2010118c58ae143c3b8a1aaee3d0c8c4c",
+          "pr_number": 135994,
+          "pr_title": "ilverify: allow ldsflda of initonly static fields outside the cctor",
+          "pr_url": "https://github.com/dotnet/runtime/pull/135994",
+          "url": "https://github.com/dotnet/runtime/commit/b22bfee2010118c58ae143c3b8a1aaee3d0c8c4c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-10-18T07:38:31Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 49,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:platform;fallback:Unknown;keyword:training",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Yuhx141 (@Yuhx141)",
+          "committed_date": "2026-10-18T07:34:33Z",
+          "headline": "Fix safety guards in training loss fusions (#32987)",
+          "oid": "c1ea5bffb8f78d6d6b7239eccf66ebfc3e5833b0",
+          "pr_number": 32987,
+          "pr_title": "Fix safety guards in training loss fusions",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/32987",
+          "url": "https://github.com/microsoft/onnxruntime/commit/c1ea5bffb8f78d6d6b7239eccf66ebfc3e5833b0"
+        },
+        {
+          "author": "Tianlei Wu (@tianleiwu)",
+          "committed_date": "2026-10-18T06:38:13Z",
+          "headline": "[CUDA plugin EP] Improve NuGet package metadata (#33405)",
+          "oid": "ce1d73c22219cb7a0b60d219b9fb90f2936d4e0b",
+          "pr_number": 33405,
+          "pr_title": "[CUDA plugin EP] Improve NuGet package metadata",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33405",
+          "url": "https://github.com/microsoft/onnxruntime/commit/ce1d73c22219cb7a0b60d219b9fb90f2936d4e0b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-10-18T07:34:33Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;org:dotnet;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Dave (@reduckted)",
+          "committed_date": "2026-10-17T17:44:04Z",
+          "headline": "Removed double word. (#56410)",
+          "oid": "c1cd7d1ce319fa12d17e8d0fb6bb31c0def08a19",
+          "pr_number": 56410,
+          "pr_title": "Removed double word (\"update update\")",
+          "pr_url": "https://github.com/dotnet/docs/pull/56410",
+          "url": "https://github.com/dotnet/docs/commit/c1cd7d1ce319fa12d17e8d0fb6bb31c0def08a19"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/docs",
+      "name": "docs",
+      "newest_commit_date": "2026-10-17T17:44:04Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Roger Doherty (MSFT) (@doherty100)",
+          "committed_date": "2026-10-17T16:12:47Z",
+          "headline": "Register manual deployment source choice on main (#853) (#869)",
+          "oid": "6bc68d542c744220d13ba99b7bbd3006d6088add",
+          "pr_number": 869,
+          "pr_title": "Register manual deployment source choice on main (#853)",
+          "pr_url": "https://github.com/Azure-Samples/azuresandbox/pull/869",
+          "url": "https://github.com/Azure-Samples/azuresandbox/commit/6bc68d542c744220d13ba99b7bbd3006d6088add"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azuresandbox",
+      "name": "azuresandbox",
+      "newest_commit_date": "2026-10-17T16:12:47Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-10-17T17:52:03Z",
+          "headline": "Increment version for ai releases (#63942)",
+          "oid": "999c8a67bd73f03457eb7e1406059764c4a28c32",
+          "pr_number": 63942,
+          "pr_title": "Increment version for ai releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/63942",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/999c8a67bd73f03457eb7e1406059764c4a28c32"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-10-17T17:51:44Z",
+          "headline": "Increment package version after release of Azure.Containers.Container\u2026",
+          "oid": "bf477a369a8a1faf31c6ac995679dd8006d20766",
+          "pr_number": 63945,
+          "pr_title": "Increment version for containerregistry releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/63945",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/bf477a369a8a1faf31c6ac995679dd8006d20766"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-10-17T17:52:03Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 0,
+        "score": 37,
+        "tags": [
+          "bot-only",
+          "docs",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-net"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;keyword:tool;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-18T13:06:27Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "01529077d2167ff4133addc478eeec00eb7c7f69",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/01529077d2167ff4133addc478eeec00eb7c7f69"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-18T12:10:14Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "4df74b7aaeff9386b6e7274a3e276c035246359a",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/4df74b7aaeff9386b6e7274a3e276c035246359a"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-17T17:06:21Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "70134ec3ef1883535e4f06f39709043ed577dd72",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/70134ec3ef1883535e4f06f39709043ed577dd72"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-17T16:07:18Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "43ce5c8be10f9ff84ac6a4426d632a833db2c91d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/43ce5c8be10f9ff84ac6a4426d632a833db2c91d"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/Spec2Cloud",
+      "name": "Spec2Cloud",
+      "newest_commit_date": "2026-10-18T13:06:27Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 4,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "totals": {
+    "candidate_repos": 87,
+    "default_branch_commits": 53,
+    "filtered_repos": 2617,
+    "inventory_repos": 16693,
+    "pushed_at_candidate_repos": 87,
+    "release_count": 1,
+    "repos_with_movement": 18,
+    "repos_with_releases": 1
+  },
+  "watchlist": {
+    "keyword_count": 21,
+    "org_count": 5,
+    "products": [
+      "Azure AI",
+      "Microsoft Graph",
+      "PowerShell",
+      "Azure SDK"
+    ],
+    "repo_count": 17
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-17T14:30:57.128585Z",
+    "state_window_enabled": true,
+    "until": "2026-10-18T16:36:52.727010Z"
+  }
+}

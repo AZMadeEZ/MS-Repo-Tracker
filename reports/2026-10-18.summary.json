@@ -1,0 +1,367 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-18.consumer.md",
+    "dated_event_stream": "reports/2026-10-18.events.ndjson",
+    "dated_markdown": "reports/2026-10-18.md",
+    "dated_report_json": "reports/2026-10-18.json",
+    "dated_summary_json": "reports/2026-10-18.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 46,
+    "dated_path": "reports/2026-10-18.events.ndjson",
+    "event_count": 47,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 1,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-18T16:36:52.727010Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 11,
+      "bot": 3,
+      "human": 1
+    },
+    "change_types": {
+      "ci_infra": 1,
+      "docs_update": 9,
+      "release": 1,
+      "sample_update": 4
+    },
+    "event_count": 15,
+    "top_repos": [
+      {
+        "event_count": 4,
+        "repo": "Azure-Samples/Spec2Cloud"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/dataexplorer-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 1,
+        "repo": "dotnet/AspNetCore.Docs"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "1 release item(s) were detected during the window.",
+    "Start with human-authored changes in MicrosoftDocs/azure-docs, dotnet/AspNetCore.Docs, MicrosoftDocs/power-platform, MicrosoftLearning/dp-420-cosmos-db-dev.",
+    "15 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 22,
+      "noisy_event_count": 10,
+      "notable_event_count": 15,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-18T09:34:37Z",
+          "headline": "Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/azure-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T01:09:37Z",
+          "headline": "minor fixes to Lab 12",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/dp-420-cosmos-db-dev",
+          "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T00:05:10Z",
+          "headline": "Fix regional Voice Agent sample to use South India and gpt-realtime-regional",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/39"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dataexplorer-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/Spec2Cloud"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/azure-finops-agent"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftLearning/dp-420-cosmos-db-dev"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 3,
+      "notable_event_count": 9,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 5,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-17T14:38:52Z",
+          "headline": "v1.13.9",
+          "notability_score": 90,
+          "repo": "microsoft/dbt-fabricspark",
+          "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T11:05:11Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-10-18T01:57:02Z",
+          "headline": "branding and additional tweaks to client summit exercise",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/AB-730-AI-business-professional",
+          "url": "https://github.com/MicrosoftLearning/AB-730-AI-business-professional/pull/2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/cloud-adoption-framework"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/dbt-fabricspark"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftLearning/AB-730-AI-business-professional"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 1,
+      "notable_event_count": 5,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-18T13:14:12Z",
+          "headline": "Add guideline for Microsoft Writing Style compliance",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T13:23:32Z",
+          "headline": "Relax Copilot date and metadata requirements",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37929"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T13:15:30Z",
+          "headline": "Update RP tutorial to use 'MoviePages' folder",
+          "notability_score": 90,
+          "repo": "dotnet/AspNetCore.Docs",
+          "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37914"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 3,
+      "noisy_event_count": 1,
+      "notable_event_count": 3,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-18T06:18:21Z",
+          "headline": "Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T07:03:49Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/d3ea021e3811c26b96f13ef4bc95bf4e67d7c95d"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-18T07:02:44Z",
+          "headline": "Merge pull request #12061 from MicrosoftDocs/main",
+          "notability_score": 70,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/90e506d340d2c6abdd2136866b0326df04610a53"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "7cb830013144a16f9bfb49438f2c39edeccd3c92",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "39145736219",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/39145736219"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/29a275bde688c7f8d6a16c6127fb2f65585c6b8c",
+      "why": "Release activity: Add VMXNET3 Ethernet Controller support to Storage Mover release note\u2026"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/dbt-fabricspark",
+      "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.9",
+      "why": "Release activity: v1.13.9"
+    },
+    {
+      "priority": 3,
+      "repo": "dotnet/AspNetCore.Docs",
+      "url": "https://github.com/dotnet/AspNetCore.Docs/pull/37918",
+      "why": "Feature or capability signal: Add guideline for Microsoft Writing Style compliance"
+    },
+    {
+      "priority": 4,
+      "repo": "MicrosoftDocs/power-platform",
+      "url": "https://github.com/MicrosoftDocs/power-platform/commit/72cd241ab3eeea05159a53f5ef5df13a68be2a43",
+      "why": "Fix signal: Fix Dataverse for Teams suspension date to September 15, 2027 (#12059)"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftLearning/dp-420-cosmos-db-dev",
+      "url": "https://github.com/MicrosoftLearning/dp-420-cosmos-db-dev/commit/0dfabeeddf36a8cc4f845bd202e3695f5ed0d1ec",
+      "why": "Fix signal: minor fixes to Lab 12"
+    },
+    {
+      "priority": 6,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/39",
+      "why": "Fix signal: Fix regional Voice Agent sample to use South India and gpt-realtime-regional"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/AI-Landing-Zones",
+      "url": "https://github.com/Azure/AI-Landing-Zones/commit/544078c8a8e920345ad1172e0b7936aebf9ab09a",
+      "why": "Docs update: docs: simplify Agent Landing Zone planning and deployment guidance"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3432",
+      "why": "Docs update: Repo sync for protected branch"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 87,
+    "default_branch_commits": 53,
+    "filtered_repos": 2617,
+    "inventory_repos": 16693,
+    "pushed_at_candidate_repos": 87,
+    "release_count": 1,
+    "repos_with_movement": 18,
+    "repos_with_releases": 1
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-17T14:30:57.128585Z",
+    "state_window_enabled": true,
+    "until": "2026-10-18T16:36:52.727010Z"
+  }
+}
