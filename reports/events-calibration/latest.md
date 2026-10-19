@@ -1,104 +1,104 @@
-# Events API Calibration - 2026-10-12
+# Events API Calibration - 2026-10-19
 
-Generated: `2026-10-12T22:15:49.608844Z`
+Generated: `2026-10-19T20:13:41.832714Z`
 
-Window since: `2026-10-11T22:15:49.608844Z`
+Window since: `2026-10-18T20:13:41.832714Z`
 
 ## Summary
 
 | Metric | Value |
 | --- | ---: |
-| Inventory repositories | 16673 |
-| Filtered repositories | 2624 |
-| `pushed_at` candidates | 154 |
-| Events candidates in report scope | 180 |
-| Events candidates outside report scope | 146 |
-| Intersection candidates | 78 |
-| Union candidates | 256 |
-| Intersect candidate savings | 76 |
-| Intersect potential misses | 76 |
+| Inventory repositories | 16698 |
+| Filtered repositories | 2618 |
+| `pushed_at` candidates | 185 |
+| Events candidates in report scope | 169 |
+| Events candidates outside report scope | 154 |
+| Intersection candidates | 86 |
+| Union candidates | 268 |
+| Intersect candidate savings | 99 |
+| Intersect potential misses | 99 |
 
 ## Pushed-Only Sample
 
 - [Azure-Samples/Durable-Task-Scheduler](https://github.com/Azure-Samples/Durable-Task-Scheduler)
-- [Azure-Samples/appconfig-javascript-clientapp-with-afd](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd)
-- [Azure-Samples/azure-monitor-lab](https://github.com/Azure-Samples/azure-monitor-lab)
-- [Azure-Samples/communication-services-dotnet-quickstarts](https://github.com/Azure-Samples/communication-services-dotnet-quickstarts)
+- [Azure-Samples/aks-store-demo](https://github.com/Azure-Samples/aks-store-demo)
+- [Azure-Samples/chat-with-your-data-solution-accelerator](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator)
+- [Azure-Samples/claude](https://github.com/Azure-Samples/claude)
+- [Azure-Samples/java-on-aca-quarkus](https://github.com/Azure-Samples/java-on-aca-quarkus)
+- [Azure-Samples/llama-index-javascript](https://github.com/Azure-Samples/llama-index-javascript)
 - [Azure/AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones)
-- [Azure/AKS-Construction](https://github.com/Azure/AKS-Construction)
-- [Azure/Azure-Landing-Zones](https://github.com/Azure/Azure-Landing-Zones)
-- [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX)
-- [Azure/alz-bicep-accelerator](https://github.com/Azure/alz-bicep-accelerator)
-- [Azure/awesome-azd](https://github.com/Azure/awesome-azd)
-- [Azure/azure-devops-cli-extension](https://github.com/Azure/azure-devops-cli-extension)
-- [Azure/azure-policy](https://github.com/Azure/azure-policy)
-- [Azure/azure-sdk](https://github.com/Azure/azure-sdk)
+- [Azure/APICenter-Portal-Starter](https://github.com/Azure/APICenter-Portal-Starter)
+- [Azure/AppConfiguration](https://github.com/Azure/AppConfiguration)
+- [Azure/Managed-Instance-on-Azure-App-Service](https://github.com/Azure/Managed-Instance-on-Azure-App-Service)
+- [Azure/PSDocs.Azure-quickstart](https://github.com/Azure/PSDocs.Azure-quickstart)
+- [Azure/SAP-automation-samples](https://github.com/Azure/SAP-automation-samples)
+- [Azure/agentops](https://github.com/Azure/agentops)
+- [Azure/api-management-self-hosted-gateway](https://github.com/Azure/api-management-self-hosted-gateway)
+- [Azure/azure-dev](https://github.com/Azure/azure-dev)
+- [Azure/azure-service-bus-emulator-installer](https://github.com/Azure/azure-service-bus-emulator-installer)
+- [Azure/azureml-examples](https://github.com/Azure/azureml-examples)
+- [Azure/confidential-computing-cvm-guest-attestation](https://github.com/Azure/confidential-computing-cvm-guest-attestation)
 - [Azure/dacs](https://github.com/Azure/dacs)
 - [Azure/data-api-builder](https://github.com/Azure/data-api-builder)
-- [Azure/intelligent-app-workshop](https://github.com/Azure/intelligent-app-workshop)
 - [Azure/kars](https://github.com/Azure/kars)
+- [Azure/sap-automation](https://github.com/Azure/sap-automation)
+- [Azure/sap-edge-integration-cell-on-azure-accelerator](https://github.com/Azure/sap-edge-integration-cell-on-azure-accelerator)
+- [Azure/setup-azd](https://github.com/Azure/setup-azd)
 - [Azure/template-reference-generator](https://github.com/Azure/template-reference-generator)
-- [MicrosoftDocs/azure-docs-sdk-cpp](https://github.com/MicrosoftDocs/azure-docs-sdk-cpp)
-- [MicrosoftDocs/copilot-connectors](https://github.com/MicrosoftDocs/copilot-connectors)
-- [MicrosoftDocs/customer-insights](https://github.com/MicrosoftDocs/customer-insights)
-- [MicrosoftDocs/dataexplorer-docs](https://github.com/MicrosoftDocs/dataexplorer-docs)
-- [MicrosoftDocs/dynamics-365-contact-center](https://github.com/MicrosoftDocs/dynamics-365-contact-center)
-- [MicrosoftDocs/dynamics-365-customer-engagement](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement)
-- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
 
 ## Events-Only Sample
 
-- [Azure-Samples/AI-Gateway](https://github.com/Azure-Samples/AI-Gateway)
-- [Azure-Samples/azure-container-apps-sandboxes](https://github.com/Azure-Samples/azure-container-apps-sandboxes)
-- [Azure-Samples/azure-elastic-san](https://github.com/Azure-Samples/azure-elastic-san)
+- [Azure-Samples/SQL-AI-samples](https://github.com/Azure-Samples/SQL-AI-samples)
+- [Azure-Samples/acr-build-helloworld-node](https://github.com/Azure-Samples/acr-build-helloworld-node)
+- [Azure-Samples/ai-hub-gateway-solution-accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator)
+- [Azure-Samples/app-service-builder-dotnet](https://github.com/Azure-Samples/app-service-builder-dotnet)
+- [Azure-Samples/app-service-builder-nodejs](https://github.com/Azure-Samples/app-service-builder-nodejs)
+- [Azure-Samples/app-service-builder-python](https://github.com/Azure-Samples/app-service-builder-python)
+- [Azure-Samples/appconfig-javascript-clientapp-with-afd](https://github.com/Azure-Samples/appconfig-javascript-clientapp-with-afd)
 - [Azure-Samples/azure-health-data-and-ai-samples](https://github.com/Azure-Samples/azure-health-data-and-ai-samples)
 - [Azure-Samples/azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo)
 - [Azure-Samples/azureai-samples](https://github.com/Azure-Samples/azureai-samples)
 - [Azure-Samples/cognitive-services-speech-sdk](https://github.com/Azure-Samples/cognitive-services-speech-sdk)
-- [Azure-Samples/cosmos-db-design-patterns](https://github.com/Azure-Samples/cosmos-db-design-patterns)
-- [Azure-Samples/explore-iot-operations](https://github.com/Azure-Samples/explore-iot-operations)
-- [Azure-Samples/foundry-local-model-catalog](https://github.com/Azure-Samples/foundry-local-model-catalog)
-- [Azure-Samples/get-started-with-ai-chat](https://github.com/Azure-Samples/get-started-with-ai-chat)
-- [Azure-Samples/js-e2e-express-server](https://github.com/Azure-Samples/js-e2e-express-server)
-- [Azure-Samples/python-app-service-postgresql-infra](https://github.com/Azure-Samples/python-app-service-postgresql-infra)
-- [Azure-Samples/quote-of-the-day-dotnet](https://github.com/Azure-Samples/quote-of-the-day-dotnet)
-- [Azure-Samples/service-bus-dotnet-messaging-performance](https://github.com/Azure-Samples/service-bus-dotnet-messaging-performance)
-- [Azure/sap-automation](https://github.com/Azure/sap-automation)
-- [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills)
-- [MicrosoftDocs/OfficeDocs-SharePoint-PowerShell](https://github.com/MicrosoftDocs/OfficeDocs-SharePoint-PowerShell)
+- [Azure-Samples/eShopLite](https://github.com/Azure-Samples/eShopLite)
+- [Azure-Samples/laravel-tasks](https://github.com/Azure-Samples/laravel-tasks)
+- [Azure-Samples/php-docs-hello-world](https://github.com/Azure-Samples/php-docs-hello-world)
+- [Azure-Samples/rag-postgres-openai-python](https://github.com/Azure-Samples/rag-postgres-openai-python)
+- [Azure-Samples/simple-foundry-hosted-agent-python-aigateway](https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway)
+- [Azure/azure-policy](https://github.com/Azure/azure-policy)
 - [MicrosoftDocs/PowerShell-Docs](https://github.com/MicrosoftDocs/PowerShell-Docs)
-- [MicrosoftDocs/Virtualization-Documentation](https://github.com/MicrosoftDocs/Virtualization-Documentation)
+- [MicrosoftDocs/PowerShell-Docs-PSGet](https://github.com/MicrosoftDocs/PowerShell-Docs-PSGet)
+- [MicrosoftDocs/SecurityBenchmarks](https://github.com/MicrosoftDocs/SecurityBenchmarks)
 - [MicrosoftDocs/WSL](https://github.com/MicrosoftDocs/WSL)
 - [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs)
-- [MicrosoftDocs/azure-compute-docs](https://github.com/MicrosoftDocs/azure-compute-docs)
-- [MicrosoftDocs/azure-docs-powershell](https://github.com/MicrosoftDocs/azure-docs-powershell)
-- [MicrosoftDocs/azure-management-docs](https://github.com/MicrosoftDocs/azure-management-docs)
+- [MicrosoftDocs/mcp](https://github.com/MicrosoftDocs/mcp)
+- [MicrosoftDocs/microsoft-365-docs](https://github.com/MicrosoftDocs/microsoft-365-docs)
+- [MicrosoftDocs/minecraft-creator](https://github.com/MicrosoftDocs/minecraft-creator)
 
 ## Events Outside Report Scope Sample
 
-- [Azure-Samples/esp32-iot-devkit-get-started](https://github.com/Azure-Samples/esp32-iot-devkit-get-started)
-- [Azure/AKS](https://github.com/Azure/AKS)
+- [Azure-Samples/containerapps-albumui](https://github.com/Azure-Samples/containerapps-albumui)
+- [Azure/AKSFlexNode](https://github.com/Azure/AKSFlexNode)
 - [Azure/ARO-HCP](https://github.com/Azure/ARO-HCP)
 - [Azure/ARO-RP](https://github.com/Azure/ARO-RP)
 - [Azure/AgentBaker](https://github.com/Azure/AgentBaker)
-- [Azure/Azure-Verified-Modules](https://github.com/Azure/Azure-Verified-Modules)
-- [Azure/Connectors-NodeJS-SDK](https://github.com/Azure/Connectors-NodeJS-SDK)
-- [Azure/artifact-signing-action](https://github.com/Azure/artifact-signing-action)
+- [Azure/Azure-Sentinel](https://github.com/Azure/Azure-Sentinel)
+- [Azure/adx-mon](https://github.com/Azure/adx-mon)
+- [Azure/aks-desktop](https://github.com/Azure/aks-desktop)
+- [Azure/azhpc-images](https://github.com/Azure/azhpc-images)
 - [Azure/azihsm-sdk](https://github.com/Azure/azihsm-sdk)
+- [Azure/azure-c-shared-utility](https://github.com/Azure/azure-c-shared-utility)
 - [Azure/azure-cli](https://github.com/Azure/azure-cli)
 - [Azure/azure-container-networking](https://github.com/Azure/azure-container-networking)
 - [Azure/azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3)
+- [Azure/azure-functions-agents-runtime](https://github.com/Azure/azure-functions-agents-runtime)
 - [Azure/azure-functions-core-tools](https://github.com/Azure/azure-functions-core-tools)
 - [Azure/azure-functions-durable-extension](https://github.com/Azure/azure-functions-durable-extension)
-- [Azure/azure-functions-golang-worker](https://github.com/Azure/azure-functions-golang-worker)
-- [Azure/azure-functions-python-library](https://github.com/Azure/azure-functions-python-library)
-- [Azure/azure-functions-python-worker](https://github.com/Azure/azure-functions-python-worker)
+- [Azure/azure-functions-host](https://github.com/Azure/azure-functions-host)
+- [Azure/azure-functions-skills](https://github.com/Azure/azure-functions-skills)
+- [Azure/azure-iot-cli-extension](https://github.com/Azure/azure-iot-cli-extension)
 - [Azure/azure-iot-ops-cli-extension](https://github.com/Azure/azure-iot-ops-cli-extension)
 - [Azure/azure-iot-sdk](https://github.com/Azure/azure-iot-sdk)
 - [Azure/azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c)
+- [Azure/azure-powershell](https://github.com/Azure/azure-powershell)
 - [Azure/azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs)
-- [Azure/azure-service-operator](https://github.com/Azure/azure-service-operator)
-- [Azure/azure-signalr-client-e2e](https://github.com/Azure/azure-signalr-client-e2e)
-- [Azure/azure-storage-azcopy](https://github.com/Azure/azure-storage-azcopy)
-- [Azure/bicep-registry-modules](https://github.com/Azure/bicep-registry-modules)
 
