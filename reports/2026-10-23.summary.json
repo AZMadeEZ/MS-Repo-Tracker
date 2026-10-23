@@ -1,0 +1,616 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-23.consumer.md",
+    "dated_event_stream": "reports/2026-10-23.events.ndjson",
+    "dated_markdown": "reports/2026-10-23.md",
+    "dated_report_json": "reports/2026-10-23.json",
+    "dated_summary_json": "reports/2026-10-23.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 635,
+    "dated_path": "reports/2026-10-23.events.ndjson",
+    "event_count": 684,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 49,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-23T17:54:41.237000Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 64,
+      "bot": 152,
+      "human": 71
+    },
+    "change_types": {
+      "bug_fix": 3,
+      "ci_infra": 25,
+      "dependency_update": 132,
+      "docs_update": 74,
+      "release": 9,
+      "sample_update": 19,
+      "sdk_generation": 22,
+      "training_update": 1
+    },
+    "event_count": 287,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "MicrosoftDocs/azure-aks-docs"
+      },
+      {
+        "event_count": 5,
+        "repo": "dotnet/blazor-samples"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-http-go"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure-Samples/iot-edge-opc-plc"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft Graph led the visible product-area activity in this window.",
+    "49 release item(s) were detected during the window.",
+    "Security-related changes appeared in microsoft/TypeAgent, MicrosoftDocs/dynamics-365-unified-operations-public, microsoft/BuildXL.",
+    "Start with human-authored changes in microsoft/TypeAgent, MicrosoftDocs/dynamics-365-unified-operations-public, microsoft/BuildXL, microsoft/ProtocolTestFramework.",
+    "287 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 274,
+      "noisy_event_count": 105,
+      "notable_event_count": 193,
+      "product_area": "Azure",
+      "release_count": 37,
+      "repo_count": 73,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T17:52:36Z",
+          "headline": "azure-ai-voicelive_1.3.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-voicelive_1.3.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T17:23:21Z",
+          "headline": "@azure/arm-edgeoperator_1.0.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-js",
+          "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-edgeoperator_1.0.0-beta.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T14:44:22Z",
+          "headline": "sdk/resourcemanager/edgeactions/armedgeactions/v1.0.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-go",
+          "url": "https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/edgeactions/armedgeactions/v1.0.0"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-rust"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-cli-extensions"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample"
+        }
+      ]
+    },
+    {
+      "event_count": 139,
+      "noisy_event_count": 33,
+      "notable_event_count": 102,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 48,
+      "security_event_count": 4,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T13:54:45Z",
+          "headline": "Upgrade to Node.js LTS 22.2+ for security updates",
+          "notability_score": 100,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3210"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T08:49:44Z",
+          "headline": "docs: remove deprecated Visual Studio security-report reference (#22703)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
+          "url": "https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/d6e2b9470c5a5bad2cab731d804228bb92323d03"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T04:17:16Z",
+          "headline": "Merged PR 967647: [SECURITY][SFI] Fix ip-address vulnerability (Alert\u2026",
+          "notability_score": 100,
+          "repo": "microsoft/BuildXL",
+          "url": "https://github.com/microsoft/BuildXL/commit/493d0f57f5db191e7a5d26e960a0473223e8ed6a"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/Advertising"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/perfview"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/TypeAgent"
+        }
+      ]
+    },
+    {
+      "event_count": 121,
+      "noisy_event_count": 103,
+      "notable_event_count": 50,
+      "product_area": "Microsoft Graph",
+      "release_count": 11,
+      "repo_count": 27,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T11:52:51Z",
+          "headline": "microsoft_kiota_abstractions: v0.3.2",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-dart",
+          "url": "https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_abstractions-v0.3.2"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-22T21:31:28Z",
+          "headline": "v6.65.0",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-beta-sdk-java",
+          "url": "https://github.com/microsoftgraph/msgraph-beta-sdk-java/releases/tag/v6.65.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-22T21:31:22Z",
+          "headline": "v1.105.0",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-sdk-go",
+          "url": "https://github.com/microsoftgraph/msgraph-sdk-go/releases/tag/v1.105.0"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "microsoft/kiota-typescript"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-serialization-form-go"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-java"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoftgraph/msgraph-beta-sdk-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/msgraph-sample-github-connector-dotnet"
+        }
+      ]
+    },
+    {
+      "event_count": 58,
+      "noisy_event_count": 19,
+      "notable_event_count": 32,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 16,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T05:04:45Z",
+          "headline": "[automated] Merge branch 'release/11.0' => 'main'",
+          "notability_score": 100,
+          "repo": "dotnet/efcore",
+          "url": "https://github.com/dotnet/efcore/pull/39348"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-23T09:35:26Z",
+          "headline": "Add test coverage for existing Razor component import precedence behaviour",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86187"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-22T21:31:39Z",
+          "headline": "Small fix",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56488"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/blazor-samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 25,
+      "noisy_event_count": 4,
+      "notable_event_count": 24,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T07:58:22Z",
+          "headline": "Automate Power BI release packaging and fix template generation bugs",
+          "notability_score": 100,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2322"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-23T12:53:08Z",
+          "headline": "Add Module 1 step to download workshop files to C:\\github on the VM",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a22847b3eb68706e12b950e1b4857cc6aa684b6a"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-23T12:51:33Z",
+          "headline": "Add new Modernize frontline applications reference architecture (#12076)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/97e09856cd60df0701906770bd76768b64a6f2f4"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/ppcc26-apps-automations-agents"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/fabriciq-thirdparty-plugins"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/windows-powershell-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 15,
+      "noisy_event_count": 6,
+      "notable_event_count": 15,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T17:36:47Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/entra-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/14259148d99e631f8b197ae5883fb53449da09f8"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T13:03:05Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/8a6359d5cde6711e5ab8a90bc65b253596f038bc"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T12:35:39Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/entra-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/87a93e9739bb79757b25f65ca48cee6ba25ce60c"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 28,
+      "noisy_event_count": 6,
+      "notable_event_count": 13,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-22T21:22:23Z",
+          "headline": "Allow Changesets to use GitHub App credentials",
+          "notability_score": 95,
+          "repo": "microsoft/atlas-design",
+          "url": "https://github.com/microsoft/atlas-design/pull/940"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-21T17:49:58Z",
+          "headline": "Add Copilot Studio origins to validDomains.json",
+          "notability_score": 90,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3189"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-23T11:39:05Z",
+          "headline": "fix: Changed Application Insights configuration to use connection strings instead of instrumentation keys",
+          "notability_score": 90,
+          "repo": "microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator",
+          "url": "https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator/pull/535"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "OfficeDev/office-js-snippets"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/teams-agent-accelerator-templates"
+        },
+        {
+          "event_count": 3,
+          "repo": "OfficeDev/office-js-docs-pr"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/msteams-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 14,
+      "noisy_event_count": 7,
+      "notable_event_count": 10,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 5,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-21T17:27:15Z",
+          "headline": "Migrate Release-Publish-DotnetNew-Nuget to governed pipeline templates",
+          "notability_score": 100,
+          "repo": "microsoft/WindowsAppSDK",
+          "url": "https://github.com/microsoft/WindowsAppSDK/pull/6886"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-23T17:18:50Z",
+          "headline": "Add DNS forwarding and namespace conflict guides (#8496)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/005d8545aa5bb02fd8d9759904cad07d4fb0eb17"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-22T22:30:30Z",
+          "headline": "2026_08 - Fix monthly broken links (#3305)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windows-driver-docs",
+          "url": "https://github.com/MicrosoftDocs/windows-driver-docs/commit/8bf796c7126ac13e8ef5f5d1013d0326dc9a0215"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/windowsserverdocs"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/react-native-windows-samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/windows-driver-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/WindowsAppSDK"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/webview2-win32-reference"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "90fc6b336f7637d228047ef9e68f46def9327d28",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "39998792334",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/39998792334"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/TypeAgent",
+      "url": "https://github.com/microsoft/TypeAgent/pull/3210",
+      "why": "Security-related change: Upgrade to Node.js LTS 22.2+ for security updates"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
+      "url": "https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/d6e2b9470c5a5bad2cab731d804228bb92323d03",
+      "why": "Security-related change: docs: remove deprecated Visual Studio security-report reference (#22703)"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/BuildXL",
+      "url": "https://github.com/microsoft/BuildXL/commit/493d0f57f5db191e7a5d26e960a0473223e8ed6a",
+      "why": "Security-related change: Merged PR 967647: [SECURITY][SFI] Fix ip-address vulnerability (Alert\u2026"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/ProtocolTestFramework",
+      "url": "https://github.com/microsoft/ProtocolTestFramework/pull/39",
+      "why": "Security-related change: Fixing securty fixes for CWE78 and 94"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-voicelive_1.3.1",
+      "why": "Release activity: azure-ai-voicelive_1.3.1"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-edgeoperator_1.0.0-beta.1",
+      "why": "Release activity: @azure/arm-edgeoperator_1.0.0-beta.1"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/azure-sdk-for-go",
+      "url": "https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/edgeactions/armedgeactions/v1.0.0",
+      "why": "Release activity: sdk/resourcemanager/edgeactions/armedgeactions/v1.0.0"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/pull/50966",
+      "why": "Release activity: Mergeback PR for October BOM release"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 291,
+    "default_branch_commits": 1591,
+    "filtered_repos": 2631,
+    "inventory_repos": 16730,
+    "pushed_at_candidate_repos": 291,
+    "release_count": 49,
+    "repos_with_movement": 191,
+    "repos_with_releases": 19
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-21T16:08:24.178389Z",
+    "state_window_enabled": true,
+    "until": "2026-10-23T17:54:41.237000Z"
+  }
+}
