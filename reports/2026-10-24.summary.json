@@ -1,0 +1,576 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-24.consumer.md",
+    "dated_event_stream": "reports/2026-10-24.events.ndjson",
+    "dated_markdown": "reports/2026-10-24.md",
+    "dated_report_json": "reports/2026-10-24.json",
+    "dated_summary_json": "reports/2026-10-24.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 248,
+    "dated_path": "reports/2026-10-24.events.ndjson",
+    "event_count": 266,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 18,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-24T16:43:16.261501Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 29,
+      "bot": 41,
+      "human": 13
+    },
+    "change_types": {
+      "bug_fix": 1,
+      "ci_infra": 6,
+      "dependency_update": 23,
+      "docs_update": 40,
+      "release": 2,
+      "sample_update": 6,
+      "sdk_generation": 4,
+      "security_fix": 1
+    },
+    "event_count": 83,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "MicrosoftDocs/sql-docs"
+      },
+      {
+        "event_count": 4,
+        "repo": "MicrosoftDocs/azure-docs"
+      },
+      {
+        "event_count": 4,
+        "repo": "dotnet/blazor-samples"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-dev"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoftgraph/msgraph-snippets-go"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, PowerShell led the visible product-area activity in this window.",
+    "18 release item(s) were detected during the window.",
+    "Security-related changes appeared in Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample, MicrosoftDocs/quantum-docs, Azure-Samples/active-directory-verifiable-credentials-dotnet.",
+    "Start with human-authored changes in Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample, MicrosoftDocs/quantum-docs, Azure/azure-sdk-for-net, microsoft/winget-cli.",
+    "83 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 136,
+      "noisy_event_count": 42,
+      "notable_event_count": 103,
+      "product_area": "Azure",
+      "release_count": 15,
+      "repo_count": 44,
+      "security_event_count": 5,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T22:34:20Z",
+          "headline": "Capture all numeric AADSTS codes in credential logs",
+          "notability_score": 100,
+          "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample",
+          "url": "https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/pull/73"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T21:12:43Z",
+          "headline": "Log safe Entra codes for provider credential failures",
+          "notability_score": 100,
+          "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample",
+          "url": "https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/pull/72"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-23T17:12:19Z",
+          "headline": "New article about Azure Quantum security boundary (#1690)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/quantum-docs",
+          "url": "https://github.com/MicrosoftDocs/quantum-docs/commit/3e38936f53b7cd33379637851d7567e1dbe59c53"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-dev"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/modernize-bootcamp"
+        }
+      ]
+    },
+    {
+      "event_count": 61,
+      "noisy_event_count": 18,
+      "notable_event_count": 39,
+      "product_area": "Unmapped Activity",
+      "release_count": 2,
+      "repo_count": 23,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-24T02:02:22Z",
+          "headline": "v1.13.10",
+          "notability_score": 90,
+          "repo": "microsoft/dbt-fabricspark",
+          "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.10"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T15:40:24Z",
+          "headline": "add local Nemotron speech recognition",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3218"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T04:58:53Z",
+          "headline": "feat: add passive CLI doctor diagnostics and on-demand agent",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-app-cli",
+          "url": "https://github.com/microsoft/amplifier-app-cli/pull/380"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/TypeAgent"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/BuildXL"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        }
+      ]
+    },
+    {
+      "event_count": 16,
+      "noisy_event_count": 1,
+      "notable_event_count": 16,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 5,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T21:38:06Z",
+          "headline": "Update minor version and reform release notes",
+          "notability_score": 100,
+          "repo": "microsoft/winget-cli",
+          "url": "https://github.com/microsoft/winget-cli/pull/6609"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T15:47:31Z",
+          "headline": "docs(module4): add environment check before Commander creation",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/4d11561e2cb64b21a30ee9be5aecfd487b77901b"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T15:44:50Z",
+          "headline": "docs(module4): add Maker path hint for Copilot Studio",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/428e480847f554a47a197c4b361170a077a721a6"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/ppcc26-apps-automations-agents"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/windows-powershell-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        }
+      ]
+    },
+    {
+      "event_count": 22,
+      "noisy_event_count": 4,
+      "notable_event_count": 10,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 10,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-24T16:05:26Z",
+          "headline": "Fix IEnumerator adapter initialization for COM RCWs",
+          "notability_score": 90,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/136392"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-24T15:06:24Z",
+          "headline": "Use Ubuntu 26.04 for developer innerloop builds",
+          "notability_score": 90,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/136345"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-24T15:03:53Z",
+          "headline": "Move ARM64 Helix container hosts to Azure Linux 4",
+          "notability_score": 90,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/136387"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 4,
+          "repo": "dotnet/blazor-samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/AspNetApiDocs"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/android-api-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 15,
+      "noisy_event_count": 13,
+      "notable_event_count": 7,
+      "product_area": "Microsoft Graph",
+      "release_count": 1,
+      "repo_count": 7,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T18:37:15Z",
+          "headline": "v0.25.1",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-ruby",
+          "url": "https://github.com/microsoft/kiota-ruby/releases/tag/v0.25.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T18:36:31Z",
+          "headline": "chore(main): release 0.25.1",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-ruby",
+          "url": "https://github.com/microsoft/kiota-ruby/pull/191"
+        },
+        {
+          "change_type": "ci_infra",
+          "committed_at": "2026-10-23T19:10:48Z",
+          "headline": "Pin GitHub Actions to full-length commit SHAs",
+          "notability_score": 80,
+          "repo": "microsoftgraph/msgraph-sdk-java",
+          "url": "https://github.com/microsoftgraph/msgraph-sdk-java/pull/2677"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-ruby"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoftgraph/msgraph-snippets-go"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-serialization-form-go"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoftgraph/msgraph-sample-github-connector-dotnet"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoftgraph/msgraph-sdk-java"
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "noisy_event_count": 3,
+      "notable_event_count": 7,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-23T18:30:21Z",
+          "headline": "Merge pull request #14675 from aricrowe57/release-clarify-credential-\u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/ca5e8a311fddbcd0bd42b6f60cf9f9a1328d1d7a"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T22:35:42Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/entra-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/bccf3a329973a5484935ce479707d23d3fc3772f"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T20:54:15Z",
+          "headline": "Document provisioning object connections (Preview) (#14526)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/7092dbab97388386125431d6703c214f995653c2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 2,
+      "notable_event_count": 6,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-23T17:18:50Z",
+          "headline": "Add DNS forwarding and namespace conflict guides (#8496)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/005d8545aa5bb02fd8d9759904cad07d4fb0eb17"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-24T01:55:58Z",
+          "headline": "Remove headers from Dotnet templates",
+          "notability_score": 90,
+          "repo": "microsoft/WindowsAppSDK",
+          "url": "https://github.com/microsoft/WindowsAppSDK/pull/6894"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T22:26:20Z",
+          "headline": "Merge all the .NET .vstemplate based templates to use dotnet new templates",
+          "notability_score": 90,
+          "repo": "microsoft/WindowsAppSDK",
+          "url": "https://github.com/microsoft/WindowsAppSDK/pull/6874"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/windowsserverdocs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/WindowsAppSDK"
+        }
+      ]
+    },
+    {
+      "event_count": 3,
+      "noisy_event_count": 0,
+      "notable_event_count": 1,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-23T20:38:56Z",
+          "headline": "[all hosts] Move GH Copilot prompt library to Prototype section",
+          "notability_score": 90,
+          "repo": "OfficeDev/office-js-docs-pr",
+          "url": "https://github.com/OfficeDev/office-js-docs-pr/pull/5914"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-snippets"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-pr"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-reference"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "390bbe96568a4f9e3809f338f8c0ebe18fe319c9",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "40112785110",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/40112785110"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample",
+      "url": "https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/pull/73",
+      "why": "Security-related change: Capture all numeric AADSTS codes in credential logs"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/quantum-docs",
+      "url": "https://github.com/MicrosoftDocs/quantum-docs/commit/3e38936f53b7cd33379637851d7567e1dbe59c53",
+      "why": "Security-related change: New article about Azure Quantum security boundary (#1690)"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/pull/64162",
+      "why": "Release activity: [EngSys] Fix .NET auto-release package version selection"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-ai-evaluation_1.18.10",
+      "why": "Release activity: azure-ai-evaluation_1.18.10"
+    },
+    {
+      "priority": 5,
+      "repo": "microsoft/winget-cli",
+      "url": "https://github.com/microsoft/winget-cli/pull/6609",
+      "why": "Release activity: Update minor version and reform release notes"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/homebrew-azd",
+      "url": "https://github.com/Azure/homebrew-azd/commit/776b5d4c6dcce62c50f7191f0634085d3b334a5e",
+      "why": "Release activity: Update for azd release 1.38.0-beta.1-daily.6994995"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/pull/40482",
+      "why": "Release activity: Fix js-sdk-release-tools formatting check"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-dev",
+      "url": "https://github.com/Azure/azure-dev/releases/tag/azd-ext-azure-ai-inspector_1.0.0-beta.9",
+      "why": "Release activity: azd-ext-azure-ai-inspector_1.0.0-beta.9"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 142,
+    "default_branch_commits": 387,
+    "filtered_repos": 2632,
+    "inventory_repos": 16732,
+    "pushed_at_candidate_repos": 142,
+    "release_count": 18,
+    "repos_with_movement": 95,
+    "repos_with_releases": 8
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-23T15:54:41.237000Z",
+    "state_window_enabled": true,
+    "until": "2026-10-24T16:43:16.261501Z"
+  }
+}
