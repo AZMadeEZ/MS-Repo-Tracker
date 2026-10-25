@@ -1,0 +1,374 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-25.consumer.md",
+    "dated_event_stream": "reports/2026-10-25.events.ndjson",
+    "dated_markdown": "reports/2026-10-25.md",
+    "dated_report_json": "reports/2026-10-25.json",
+    "dated_summary_json": "reports/2026-10-25.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 59,
+    "dated_path": "reports/2026-10-25.events.ndjson",
+    "event_count": 59,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 0,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-25T17:06:20.705522Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 7,
+      "bot": 10,
+      "human": 6
+    },
+    "change_types": {
+      "dependency_update": 12,
+      "docs_update": 7,
+      "sample_update": 2,
+      "sdk_generation": 2
+    },
+    "event_count": 23,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/aspire-samples"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure-Samples/agent-architecture-review-sample"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure-Samples/interview-coach-agent-framework"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure-Samples/Spec2Cloud"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, PowerShell led the visible product-area activity in this window.",
+    "Start with human-authored changes in microsoft/ppcc26-apps-automations-agents, microsoft/voice-agent, MicrosoftDocs/azure-aks-docs, microsoft/TypeAgent.",
+    "23 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 26,
+      "noisy_event_count": 12,
+      "notable_event_count": 16,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:47:35Z",
+          "headline": "Add MAI Flash voices and improve bottom panel readability",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/61"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:28:31Z",
+          "headline": "Add natural scenery animation and a scenery-only view",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/59"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T08:00:41Z",
+          "headline": "Add cluster-level FIPS for AKS clusters (preview) article (#4042)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/azure-aks-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/voice-agent"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/interview-coach-agent-framework"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "Azure-Samples/agent-architecture-review-sample"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure-Samples/modernize-bootcamp"
+        }
+      ]
+    },
+    {
+      "event_count": 20,
+      "noisy_event_count": 9,
+      "notable_event_count": 9,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 8,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T22:17:27Z",
+          "headline": "Add BEAM memory benchmarks and improve ingestion and retrieval",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3219"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T15:40:24Z",
+          "headline": "add local Nemotron speech recognition",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3218"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-25T17:05:22Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/aspire-samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/TypeAgent"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/amplifier-module-provider-gemini"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:58:51Z",
+          "headline": "docs(module4): add step-6 verify screenshot",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-25T15:36:54Z",
+          "headline": "docs(module4): fix post-image line breaks",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/41986b8388d821670cdb23c9f3f6898d57f0a09e"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-25T15:34:47Z",
+          "headline": "docs(module4): fix commander step spacing",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a18e19f8854420e357dcf4be8826b995ac44e5df"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/ppcc26-apps-automations-agents"
+        },
+        {
+          "event_count": 1,
+          "repo": "SharePoint/sp-dev-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 2,
+      "notable_event_count": 2,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-10-25T13:22:14Z",
+          "headline": "fix(text): add nil receiver guards to parse node callbacks, raw value, and serialization writer",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-serialization-text-go",
+          "url": "https://github.com/microsoft/kiota-serialization-text-go/pull/176"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-10-25T13:11:59Z",
+          "headline": "fix(text): handle single quote sanitization and support content-type parameters",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-dart",
+          "url": "https://github.com/microsoft/kiota-dart/pull/157"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/kiota-serialization-text-go"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/kiota-dart"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 0,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "97d86b6ef1e533aee03348588427245c0f58a2d2",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "40214777228",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/40214777228"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/ppcc26-apps-automations-agents",
+      "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+      "why": "Feature or capability signal: docs(module4): add step-6 verify screenshot"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/61",
+      "why": "Feature or capability signal: Add MAI Flash voices and improve bottom panel readability"
+    },
+    {
+      "priority": 3,
+      "repo": "MicrosoftDocs/azure-aks-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+      "why": "Feature or capability signal: Add cluster-level FIPS for AKS clusters (preview) article (#4042)"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/TypeAgent",
+      "url": "https://github.com/microsoft/TypeAgent/pull/3219",
+      "why": "Feature or capability signal: Add BEAM memory benchmarks and improve ingestion and retrieval"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+      "why": "Feature or capability signal: Add advanced capacity insights availability regions"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+      "why": "Docs update: Repo sync for protected branch"
+    },
+    {
+      "priority": 7,
+      "repo": "SharePoint/sp-dev-docs",
+      "url": "https://github.com/SharePoint/sp-dev-docs/pull/11073",
+      "why": "Docs update: Update old links to current URLs"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/azure-monitor-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/b011f0c29bfbd371cecc243f5201965481d0aa12",
+      "why": "Docs update: Chaos Studio Workspaces: supported resources and Actions matrix (#5674)"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 62,
+    "default_branch_commits": 114,
+    "filtered_repos": 2626,
+    "inventory_repos": 16719,
+    "pushed_at_candidate_repos": 62,
+    "release_count": 0,
+    "repos_with_movement": 22,
+    "repos_with_releases": 0
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-24T14:43:16.261501Z",
+    "state_window_enabled": true,
+    "until": "2026-10-25T17:06:20.705522Z"
+  }
+}

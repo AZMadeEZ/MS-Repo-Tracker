@@ -1,0 +1,4092 @@
+{
+  "activities": [
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.2",
+      "classification_reason": "keyword:training;category:training;keyword:powershell;keyword:workshop",
+      "classification_version": "2026-06-08",
+      "commit_count": 31,
+      "commits": [
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T15:36:54Z",
+          "headline": "docs(module4): fix post-image line breaks",
+          "oid": "41986b8388d821670cdb23c9f3f6898d57f0a09e",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/41986b8388d821670cdb23c9f3f6898d57f0a09e"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T15:34:47Z",
+          "headline": "docs(module4): fix commander step spacing",
+          "oid": "a18e19f8854420e357dcf4be8826b995ac44e5df",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a18e19f8854420e357dcf4be8826b995ac44e5df"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T13:06:31Z",
+          "headline": "docs(module4): fix business skill step spacing",
+          "oid": "cbc154616cb98b9895bea463735114b1d3f76027",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/cbc154616cb98b9895bea463735114b1d3f76027"
+        },
+        {
+          "author": "Nikita Polyakov (@NikitaPolyakovMSFT)",
+          "committed_date": "2026-10-25T13:05:00Z",
+          "headline": "Update instructions for enabling Work IQ setting",
+          "oid": "ac15a1983aa13b2de388c7359f38d03b6a2e9beb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/ac15a1983aa13b2de388c7359f38d03b6a2e9beb"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T11:58:51Z",
+          "headline": "docs(module4): add step-6 verify screenshot",
+          "oid": "9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/ppcc26-apps-automations-agents",
+      "name": "ppcc26-apps-automations-agents",
+      "newest_commit_date": "2026-10-25T15:36:54Z",
+      "org": "microsoft",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 100,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "product:PowerShell",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "powershell"
+          ],
+          "products": [
+            "Azure AI",
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 15,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T17:05:42Z",
+          "headline": "Merge pull request #3455 from MicrosoftDocs/main639285447248520164syn\u2026",
+          "oid": "6b1f9558cccc6f1bc4aa8de27f30e7beda296f79",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/6b1f9558cccc6f1bc4aa8de27f30e7beda296f79"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-25T17:05:22Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "ece3393213f0969b0933db0d15a05fdf7d385512",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/ece3393213f0969b0933db0d15a05fdf7d385512"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T17:02:19Z",
+          "headline": "Merge pull request #17080 from MicrosoftDocs/main",
+          "oid": "12616b63b032c52432fb6e38aee259f4fcd90e66",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/12616b63b032c52432fb6e38aee259f4fcd90e66"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-25T16:36:13Z",
+          "headline": "Merge pull request #17078 from eranbenayun1/eranbenayun/remove-gcc-li\u2026",
+          "oid": "902057a1ffcfc80f171364de04890309172d6007",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/902057a1ffcfc80f171364de04890309172d6007"
+        },
+        {
+          "author": "Eran Benayun",
+          "committed_date": "2026-10-25T16:30:25Z",
+          "headline": "Remove GCC known limitation from the Gen1 to Gen2 migration article",
+          "oid": "cf261de21d63d13cbd65de599206df0f8898d2ef",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/cf261de21d63d13cbd65de599206df0f8898d2ef"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-10-25T17:05:42Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 90,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "migration"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:workshop",
+      "classification_version": "2026-06-08",
+      "commit_count": 13,
+      "commits": [
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T06:35:52Z",
+          "headline": "Advance workshop to 3.1.1 and teach shared response-language policy (\u2026",
+          "oid": "f41fb63b0a20ab1fa846a02056b8ae6814383ce5",
+          "pr_number": 58,
+          "pr_title": "Advance workshop to 3.1.1 and teach shared response-language policy",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/58",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/f41fb63b0a20ab1fa846a02056b8ae6814383ce5"
+        },
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T04:04:46Z",
+          "headline": "Align file-based AppHost SDK and use RunAsEmulator (#57)",
+          "oid": "fe1e28d6d1946bea954c26dd503d6a50569ac30c",
+          "pr_number": 57,
+          "pr_title": "Align file-based AppHost SDK and use RunAsEmulator",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/57",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/fe1e28d6d1946bea954c26dd503d6a50569ac30c"
+        },
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T03:18:41Z",
+          "headline": "Fix workshop TypeScript peer dependency (#56)",
+          "oid": "40a20e2614805019b8d033a4d3d01a46c0d97ecc",
+          "pr_number": 56,
+          "pr_title": "Fix workshop TypeScript peer dependency",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/56",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/40a20e2614805019b8d033a4d3d01a46c0d97ecc"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T02:58:33Z",
+          "headline": "Bump the npm group across 1 directory with 3 updates (#55)",
+          "oid": "5a1f8bd0fb74c16367b87220922500866f05f00e",
+          "pr_number": 55,
+          "pr_title": "Bump the npm group across 1 directory with 3 updates",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/55",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/5a1f8bd0fb74c16367b87220922500866f05f00e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T02:55:46Z",
+          "headline": "Bump postcss-selector-parser and @expressive-code/core in /workshop (\u2026",
+          "oid": "956d7de444484e332272bf7b07ab58aac0194164",
+          "pr_number": 54,
+          "pr_title": "Bump postcss-selector-parser and @expressive-code/core in /workshop",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/54",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/956d7de444484e332272bf7b07ab58aac0194164"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/interview-coach-agent-framework",
+      "name": "interview-coach-agent-framework",
+      "newest_commit_date": "2026-10-25T06:35:52Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 3,
+        "score": 88,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "product:Azure SDK",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "sdk"
+          ],
+          "products": [
+            "Azure AI",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 10,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T12:59:37Z",
+          "headline": "Bump serialize-javascript (#2122)",
+          "oid": "355afc497ed93fe7012b6d6ccb8848538d0ef51b",
+          "pr_number": 2122,
+          "pr_title": "Bump serialize-javascript from 7.0.5 to 7.1.4 in /samples/aspire-with-javascript/AspireJavaScript.Angular",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/2122",
+          "url": "https://github.com/microsoft/aspire-samples/commit/355afc497ed93fe7012b6d6ccb8848538d0ef51b"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T12:36:28Z",
+          "headline": "Bump opentelemetry-api in /samples/polyglot-task-queue/worker-python \u2026",
+          "oid": "5cf1d15f51eff94233b60f181274ea50f0772625",
+          "pr_number": 2115,
+          "pr_title": "Bump opentelemetry-api from 1.41.1 to 1.45.1 in /samples/polyglot-task-queue/worker-python",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/2115",
+          "url": "https://github.com/microsoft/aspire-samples/commit/5cf1d15f51eff94233b60f181274ea50f0772625"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T12:15:11Z",
+          "headline": "Bump zod from 4.4.3 to 4.6.7 in /samples/aspire-with-node/api (#2121)",
+          "oid": "597b627066ffcc0390560896a9558cdccb67283d",
+          "pr_number": 2121,
+          "pr_title": "Bump zod from 4.4.3 to 4.6.7 in /samples/aspire-with-node/api",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/2121",
+          "url": "https://github.com/microsoft/aspire-samples/commit/597b627066ffcc0390560896a9558cdccb67283d"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T12:14:52Z",
+          "headline": "Bump opentelemetry-api in /samples/aspire-with-python/app (#2119)",
+          "oid": "650031f7a03b9ca9d870d985a41dc39d460a7962",
+          "pr_number": 2119,
+          "pr_title": "Bump opentelemetry-api from 1.42.0 to 1.45.1 in /samples/aspire-with-python/app",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/2119",
+          "url": "https://github.com/microsoft/aspire-samples/commit/650031f7a03b9ca9d870d985a41dc39d460a7962"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T12:11:45Z",
+          "headline": "Bump github.com/go-chi/chi/v5 in /samples/golang-api/api (#2118)",
+          "oid": "86d1efb6501cf96f71d47301089b2b811544108f",
+          "pr_number": 2118,
+          "pr_title": "Bump github.com/go-chi/chi/v5 from 5.2.5 to 5.4.0 in /samples/golang-api/api",
+          "pr_url": "https://github.com/microsoft/aspire-samples/pull/2118",
+          "url": "https://github.com/microsoft/aspire-samples/commit/86d1efb6501cf96f71d47301089b2b811544108f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/aspire-samples",
+      "name": "aspire-samples",
+      "newest_commit_date": "2026-10-25T12:59:37Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 5,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "dependency-noise",
+          "docs"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 10,
+      "commits": [
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T12:29:51Z",
+          "headline": "Improve text readability over animated scenery (#62)",
+          "oid": "15a6395e62c2c47ccc28f4a9874736f139be531a",
+          "pr_number": 62,
+          "pr_title": "Improve text readability over animated scenery",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/62",
+          "url": "https://github.com/microsoft/voice-agent/commit/15a6395e62c2c47ccc28f4a9874736f139be531a"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:47:35Z",
+          "headline": "Add MAI Flash voices and improve bottom panel readability (#61)",
+          "oid": "57d87c3dd6d6d927205ff5fea8facdc3cf037cf9",
+          "pr_number": 61,
+          "pr_title": "Add MAI Flash voices and improve bottom panel readability",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/61",
+          "url": "https://github.com/microsoft/voice-agent/commit/57d87c3dd6d6d927205ff5fea8facdc3cf037cf9"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:35:02Z",
+          "headline": "Remove animation documentation from the voice sample README (#60)",
+          "oid": "39891cdf173aa15264d896fac1e9f3dd7484a350",
+          "pr_number": 60,
+          "pr_title": "Remove animation documentation from the voice sample README",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/60",
+          "url": "https://github.com/microsoft/voice-agent/commit/39891cdf173aa15264d896fac1e9f3dd7484a350"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:28:31Z",
+          "headline": "Add natural scenery animation and a scenery-only view (#59)",
+          "oid": "a192daf5495413afc6bbf9dcdf613a446bdc1f5d",
+          "pr_number": 59,
+          "pr_title": "Add natural scenery animation and a scenery-only view",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/59",
+          "url": "https://github.com/microsoft/voice-agent/commit/a192daf5495413afc6bbf9dcdf613a446bdc1f5d"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T10:59:13Z",
+          "headline": "Make the browser voice sample layout conversation-first (#58)",
+          "oid": "1d63f68a3aa4c2afad2e767b981f2c8d7813501e",
+          "pr_number": 58,
+          "pr_title": "Make the browser voice sample layout conversation-first",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/58",
+          "url": "https://github.com/microsoft/voice-agent/commit/1d63f68a3aa4c2afad2e767b981f2c8d7813501e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/voice-agent",
+      "name": "voice-agent",
+      "newest_commit_date": "2026-10-25T12:29:51Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 85,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "Steve Pfister (@steveisok)",
+          "committed_date": "2026-10-25T16:39:41Z",
+          "headline": "Exclude mixed-mode regression tests from ReadyToRun (#136442)",
+          "oid": "0815b560489a487dc43288f5d88f085afe71c2ea",
+          "pr_number": 136442,
+          "pr_title": "Exclude mixed-mode regression tests from ReadyToRun",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136442",
+          "url": "https://github.com/dotnet/runtime/commit/0815b560489a487dc43288f5d88f085afe71c2ea"
+        },
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-25T14:02:19Z",
+          "headline": "Fix SampleProfilerSampleType overflow on 32-bit platforms (#136433)",
+          "oid": "b9878c0bcf7da7877e93f00720e58c4502c2aaef",
+          "pr_number": 136433,
+          "pr_title": "Fix SampleProfilerSampleType overflow on 32-bit platforms",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136433",
+          "url": "https://github.com/dotnet/runtime/commit/b9878c0bcf7da7877e93f00720e58c4502c2aaef"
+        },
+        {
+          "author": "Adeel Mujahid (@am11)",
+          "committed_date": "2026-10-24T18:05:03Z",
+          "headline": "Fix VersionConverter for versions without Build/Revision (#136423)",
+          "oid": "f0c7a08c8dea85b0271b5ed128530169b9ad79ff",
+          "pr_number": 136423,
+          "pr_title": "Fix VersionConverter for versions without Build/Revision",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136423",
+          "url": "https://github.com/dotnet/runtime/commit/f0c7a08c8dea85b0271b5ed128530169b9ad79ff"
+        },
+        {
+          "author": "Aaron R Robinson (@AaronRobinsonMSFT)",
+          "committed_date": "2026-10-24T16:05:26Z",
+          "headline": "Fix IEnumerator adapter initialization for COM RCWs (#136392)",
+          "oid": "1df7015e61349dafdc12ceb1b14840c79d60ea48",
+          "pr_number": 136392,
+          "pr_title": "Fix IEnumerator adapter initialization for COM RCWs",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136392",
+          "url": "https://github.com/dotnet/runtime/commit/1df7015e61349dafdc12ceb1b14840c79d60ea48"
+        },
+        {
+          "author": "Steve Pfister (@steveisok)",
+          "committed_date": "2026-10-24T15:06:24Z",
+          "headline": "Use Ubuntu 26.04 for developer innerloop builds (#136345)",
+          "oid": "36e205e2a4d7d899c0c0f1bb4f85f81f10cb9ccc",
+          "pr_number": 136345,
+          "pr_title": "Use Ubuntu 26.04 for developer innerloop builds",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136345",
+          "url": "https://github.com/dotnet/runtime/commit/36e205e2a4d7d899c0c0f1bb4f85f81f10cb9ccc"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-10-25T16:39:41Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 56,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "architect",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;category:samples;fallback:Unknown;keyword:architecture",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "robgruen (@robgruen)",
+          "committed_date": "2026-10-25T02:27:15Z",
+          "headline": "Bound local audio transcription requests (#3175)",
+          "oid": "a5764991376175989b8399021bb379fe767c2280",
+          "pr_number": 3175,
+          "pr_title": "Bound local audio transcription requests",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3175",
+          "url": "https://github.com/microsoft/TypeAgent/commit/a5764991376175989b8399021bb379fe767c2280"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T22:41:55Z",
+          "headline": "Configure Foundry native NuGet feeds during developer setup (#3220)",
+          "oid": "34a6ce26060cf9ff2ceb53ab5847b59e61fe6734",
+          "pr_number": 3220,
+          "pr_title": "Configure Foundry native NuGet feeds during developer setup",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3220",
+          "url": "https://github.com/microsoft/TypeAgent/commit/34a6ce26060cf9ff2ceb53ab5847b59e61fe6734"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T22:17:27Z",
+          "headline": "Add BEAM memory benchmarks and improve ingestion and retrieval (#3219)",
+          "oid": "370b64f523179f1a7fb2d1ca415ff7c675ea04d6",
+          "pr_number": 3219,
+          "pr_title": "Add BEAM memory benchmarks and improve ingestion and retrieval",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3219",
+          "url": "https://github.com/microsoft/TypeAgent/commit/370b64f523179f1a7fb2d1ca415ff7c675ea04d6"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T15:40:24Z",
+          "headline": "add local Nemotron speech recognition (#3218)",
+          "oid": "d6b9c40a1fdef109f7f9abdae6089c459b0c6995",
+          "pr_number": 3218,
+          "pr_title": "add local Nemotron speech recognition",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3218",
+          "url": "https://github.com/microsoft/TypeAgent/commit/d6b9c40a1fdef109f7f9abdae6089c459b0c6995"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/TypeAgent",
+      "name": "TypeAgent",
+      "newest_commit_date": "2026-10-25T02:27:15Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 79,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "foundry"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-24T22:07:56Z",
+          "headline": "Merge pull request #321674 from MicrosoftDocs/main",
+          "oid": "eefab58716b8d922cc9741a9754009c46470e7cb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/eefab58716b8d922cc9741a9754009c46470e7cb"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-24T21:55:48Z",
+          "headline": "Merge pull request #321673 from pthippeswamy/pthippes/discoveryRegions",
+          "oid": "b161e81773af838e4cbadaae691674233f34c9dc",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/b161e81773af838e4cbadaae691674233f34c9dc"
+        },
+        {
+          "author": "Preethi Thippeswamy (@pthippeswamy)",
+          "committed_date": "2026-10-24T21:36:51Z",
+          "headline": "Alphabetize advanced capacity insights regions",
+          "oid": "d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b"
+        },
+        {
+          "author": "Preethi Thippeswamy (@pthippeswamy)",
+          "committed_date": "2026-10-24T21:33:59Z",
+          "headline": "Add advanced capacity insights availability regions",
+          "oid": "22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-10-24T22:07:56Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "architect",
+      "category": "samples",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:Azure-Samples;keyword:samples;name:samples;keyword:cli;org:Azure-Samples;keyword:architecture",
+      "classification_version": "2026-06-08",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "SHIVAM (@ShivamGoyal03)",
+          "committed_date": "2026-10-25T05:27:34Z",
+          "headline": "Merge pull request #41 from Azure-Samples/dependabot/npm_and_yarn/fro\u2026",
+          "oid": "dcbd8aa82e13559f92d28aa4df15e7c09e3831f8",
+          "pr_number": 41,
+          "pr_title": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/41",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/dcbd8aa82e13559f92d28aa4df15e7c09e3831f8"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T05:25:41Z",
+          "headline": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "oid": "764af2e724876eec2f8f1100f9afe1f2a50c0c3a",
+          "pr_number": 41,
+          "pr_title": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/41",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/764af2e724876eec2f8f1100f9afe1f2a50c0c3a"
+        },
+        {
+          "author": "SHIVAM (@ShivamGoyal03)",
+          "committed_date": "2026-10-25T05:22:59Z",
+          "headline": "Merge pull request #40 from Azure-Samples/dependabot/npm_and_yarn/fro\u2026",
+          "oid": "4a63d9b38bd8178fd0e690294a152c865ecb1af4",
+          "pr_number": 40,
+          "pr_title": "Bump source-map-js from 1.2.1 to 1.2.2 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/40",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/4a63d9b38bd8178fd0e690294a152c865ecb1af4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/agent-architecture-review-sample",
+      "name": "agent-architecture-review-sample",
+      "newest_commit_date": "2026-10-25T05:27:34Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 2,
+        "score": 78,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "AdonisLL (@AdonisLL)",
+          "committed_date": "2026-10-25T14:14:52Z",
+          "headline": "...",
+          "oid": "db5b4ac1cfc4bd0fa5e4417ffdf7d822f2a6721b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/modernize-bootcamp/commit/db5b4ac1cfc4bd0fa5e4417ffdf7d822f2a6721b"
+        },
+        {
+          "author": "AdonisLL (@AdonisLL)",
+          "committed_date": "2026-10-25T14:06:31Z",
+          "headline": "Remove local docker build test",
+          "oid": "65fe4d12c4ce901c03ceffb47505ecdd77304062",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/modernize-bootcamp/commit/65fe4d12c4ce901c03ceffb47505ecdd77304062"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/modernize-bootcamp",
+      "name": "modernize-bootcamp",
+      "newest_commit_date": "2026-10-25T14:14:52Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T12:03:20Z",
+          "headline": "Merge pull request #5675 from MicrosoftDocs/main",
+          "oid": "6dd308dc3f9d12b68af769428de4c8a33152c868",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/6dd308dc3f9d12b68af769428de4c8a33152c868"
+        },
+        {
+          "author": "Nikhil Kaul (@nikhilkaul1234)",
+          "committed_date": "2026-10-25T09:30:11Z",
+          "headline": "Chaos Studio Workspaces: supported resources and Actions matrix (#5674)",
+          "oid": "b011f0c29bfbd371cecc243f5201965481d0aa12",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/b011f0c29bfbd371cecc243f5201965481d0aa12"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-monitor-docs",
+      "name": "azure-monitor-docs",
+      "newest_commit_date": "2026-10-25T12:03:20Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T11:02:53Z",
+          "headline": "Merge pull request #4057 from MicrosoftDocs/main",
+          "oid": "74df7f377256b388589965b2d2c6f3e7c3f34497",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/74df7f377256b388589965b2d2c6f3e7c3f34497"
+        },
+        {
+          "author": "Jing Gao (@everjing)",
+          "committed_date": "2026-10-25T08:00:41Z",
+          "headline": "Add cluster-level FIPS for AKS clusters (preview) article (#4042)",
+          "oid": "20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-aks-docs",
+      "name": "azure-aks-docs",
+      "newest_commit_date": "2026-10-25T11:02:53Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;keyword:tool;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-25T09:07:35Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "1e18bea0e4db23221cbc94679d5eb0b324e765f6",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/1e18bea0e4db23221cbc94679d5eb0b324e765f6"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-10-25T08:09:30Z",
+          "headline": "Update templates.json [automated]",
+          "oid": "a36aea44588c61ffccc1676d9c73c3a8fb6849eb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/Spec2Cloud/commit/a36aea44588c61ffccc1676d9c73c3a8fb6849eb"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/Spec2Cloud",
+      "name": "Spec2Cloud",
+      "newest_commit_date": "2026-10-25T09:07:35Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:platform;fallback:Unknown;keyword:training",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Tianlei Wu (@tianleiwu)",
+          "committed_date": "2026-10-25T01:09:22Z",
+          "headline": "[CUDA] Add fast INT3 QMoE kernels and offline SM80 INT2/INT4 prepack \u2026",
+          "oid": "bd6010c0e1ff09b016c3fa6c9c818b6699ccd9b9",
+          "pr_number": 33569,
+          "pr_title": "[CUDA] Add fast INT3 QMoE kernels and offline SM80 INT2/INT4 prepack support",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33569",
+          "url": "https://github.com/microsoft/onnxruntime/commit/bd6010c0e1ff09b016c3fa6c9c818b6699ccd9b9"
+        },
+        {
+          "author": "Akshay Sonawane (@apsonawane)",
+          "committed_date": "2026-10-24T22:59:43Z",
+          "headline": "Add exact normalization and rotary CUDA operator modes (#33469)",
+          "oid": "c7873286778c3d3509773ec3796f2ba443514bfe",
+          "pr_number": 33469,
+          "pr_title": "[CUDA] Add RMSNormRotary contrib operator",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33469",
+          "url": "https://github.com/microsoft/onnxruntime/commit/c7873286778c3d3509773ec3796f2ba443514bfe"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-10-25T01:09:22Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Brian Krabach (@bkrabach)",
+          "committed_date": "2026-10-25T15:26:09Z",
+          "headline": "fix: retain uncertainty for image finish evidence (#59)",
+          "oid": "4e4a093624ef2c878d9859bac86124095c13b0fc",
+          "pr_number": 59,
+          "pr_title": "Fix uncertain Gemini image finish evidence without replay",
+          "pr_url": "https://github.com/microsoft/amplifier-module-provider-gemini/pull/59",
+          "url": "https://github.com/microsoft/amplifier-module-provider-gemini/commit/4e4a093624ef2c878d9859bac86124095c13b0fc"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/amplifier-module-provider-gemini",
+      "name": "amplifier-module-provider-gemini",
+      "newest_commit_date": "2026-10-25T15:26:09Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Brian Krabach (@bkrabach)",
+          "committed_date": "2026-10-25T15:18:41Z",
+          "headline": "feat: add cooperative safe-boundary execution suspension (#67)",
+          "oid": "941806a4a42c84c7c239fd8e0f8ef1260f1ec32f",
+          "pr_number": 67,
+          "pr_title": "Add cooperative safe-boundary execution suspension",
+          "pr_url": "https://github.com/microsoft/amplifier-module-loop-streaming/pull/67",
+          "url": "https://github.com/microsoft/amplifier-module-loop-streaming/commit/941806a4a42c84c7c239fd8e0f8ef1260f1ec32f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/amplifier-module-loop-streaming",
+      "name": "amplifier-module-loop-streaming",
+      "newest_commit_date": "2026-10-25T15:18:41Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;keyword:kiota;keyword:sdk",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-10-25T13:22:14Z",
+          "headline": "Merge pull request #176 from hardikkaurani/fix/nil-receiver-callbacks\u2026",
+          "oid": "5c6909dc78ae045e07cfe3101aa1c817de3c28df",
+          "pr_number": 176,
+          "pr_title": "fix(text): add nil receiver guards to parse node callbacks, raw value, and serialization writer",
+          "pr_url": "https://github.com/microsoft/kiota-serialization-text-go/pull/176",
+          "url": "https://github.com/microsoft/kiota-serialization-text-go/commit/5c6909dc78ae045e07cfe3101aa1c817de3c28df"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-serialization-text-go",
+      "name": "kiota-serialization-text-go",
+      "newest_commit_date": "2026-10-25T13:22:14Z",
+      "org": "microsoft",
+      "product_area": "Microsoft Graph",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "product:Microsoft Graph",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "graph",
+            "kiota",
+            "sdk"
+          ],
+          "products": [
+            "Microsoft Graph",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:kiota;keyword:kiota;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Hardik K (@hardikkaurani)",
+          "committed_date": "2026-10-25T13:11:59Z",
+          "headline": "fix(text): handle single quote sanitization and support content-type \u2026",
+          "oid": "8788b1296ff725bd61a180fa9babcaaf6037cd8f",
+          "pr_number": 157,
+          "pr_title": "fix(text): handle single quote sanitization and support content-type parameters",
+          "pr_url": "https://github.com/microsoft/kiota-dart/pull/157",
+          "url": "https://github.com/microsoft/kiota-dart/commit/8788b1296ff725bd61a180fa9babcaaf6037cd8f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-dart",
+      "name": "kiota-dart",
+      "newest_commit_date": "2026-10-25T13:11:59Z",
+      "org": "microsoft",
+      "product_area": "Microsoft Graph",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "product:Microsoft Graph",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "graph",
+            "kiota",
+            "sdk"
+          ],
+          "products": [
+            "Microsoft Graph",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;keyword:powershell;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Andrew Connell (@andrewconnell)",
+          "committed_date": "2026-10-25T10:47:25Z",
+          "headline": "Update old links to current URLs (#11073)",
+          "oid": "f676e228f8a3be68773faa245e5df3a8c761f096",
+          "pr_number": 11073,
+          "pr_title": "Update old links to current URLs",
+          "pr_url": "https://github.com/SharePoint/sp-dev-docs/pull/11073",
+          "url": "https://github.com/SharePoint/sp-dev-docs/commit/f676e228f8a3be68773faa245e5df3a8c761f096"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "SharePoint/sp-dev-docs",
+      "name": "sp-dev-docs",
+      "newest_commit_date": "2026-10-25T10:47:25Z",
+      "org": "SharePoint",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;category:samples;fallback:Unknown;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "may-hartov (@may-hartov)",
+          "committed_date": "2026-10-25T08:16:31Z",
+          "headline": "Merge pull request #245 from may-hartov/fix/credential-helper-depende\u2026",
+          "oid": "7d377d9e9b1faaa99f83f90442247902f0d87521",
+          "pr_number": 245,
+          "pr_title": "Anchor credential helper dependencies to the script directory",
+          "pr_url": "https://github.com/microsoft/PowerBI-Developer-Samples/pull/245",
+          "url": "https://github.com/microsoft/PowerBI-Developer-Samples/commit/7d377d9e9b1faaa99f83f90442247902f0d87521"
+        }
+      ],
+      "default_branch": "master",
+      "full_name": "microsoft/PowerBI-Developer-Samples",
+      "name": "PowerBI-Developer-Samples",
+      "newest_commit_date": "2026-10-25T08:16:31Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 66,
+        "tags": [
+          "human-authored",
+          "samples",
+          "security"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-10-24T22:44:32Z",
+          "headline": "Migrate AI Gateway infrastructure to standalone RP and aliases (#23)",
+          "oid": "0e27ed07e150cf10f9971d7aa577a9865a602b46",
+          "pr_number": 23,
+          "pr_title": "Migrate AI Gateway infrastructure to standalone RP and aliases",
+          "pr_url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/pull/23",
+          "url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/commit/0e27ed07e150cf10f9971d7aa577a9865a602b46"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/simple-foundry-hosted-agent-python-aigateway",
+      "name": "simple-foundry-hosted-agent-python-aigateway",
+      "newest_commit_date": "2026-10-24T22:44:32Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "copilot",
+            "foundry"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;category:samples;fallback:Unknown;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Conrad Johnston (@ConradJohnston)",
+          "committed_date": "2026-10-24T15:38:19Z",
+          "headline": "data: add ruthenium catalyst XVIII FCIDUMP from von Burg et al. (#13)",
+          "oid": "ae67b5d906b1212b899d3f395dd7fef3313a96d7",
+          "pr_number": 13,
+          "pr_title": "data: add ruthenium catalyst XVIII FCIDUMP from von Burg et al.",
+          "pr_url": "https://github.com/microsoft/qdk-chemistry-data/pull/13",
+          "url": "https://github.com/microsoft/qdk-chemistry-data/commit/ae67b5d906b1212b899d3f395dd7fef3313a96d7"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/qdk-chemistry-data",
+      "name": "qdk-chemistry-data",
+      "newest_commit_date": "2026-10-24T15:38:19Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "artifact_type": "tracker-report",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 59,
+    "dated_path": "reports/2026-10-25.events.ndjson",
+    "event_count": 59,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 0,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "events_calibration": {},
+  "events_prefilter": {
+    "enabled": false,
+    "mode": "off"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "generated_at": "2026-10-25T17:06:20.705522Z",
+  "graphql": {
+    "batch_size": 35,
+    "candidate_repos": 62,
+    "count_batches": 2,
+    "detail_batches": 1,
+    "max_commits": 5,
+    "mode": "two-stage",
+    "remaining_at_start": 5000,
+    "repos_counted": 62,
+    "repos_enriched": 22,
+    "repos_with_count": 22,
+    "repos_with_movement": 22,
+    "requested_batch_size": 0,
+    "stage_one_total_commits": 114,
+    "strategy": "balanced"
+  },
+  "lifecycle": {
+    "archived_changed": [],
+    "available": true,
+    "category_changed": [],
+    "completed_at": "2026-10-25T17:05:45.499388Z",
+    "counts": {
+      "archived_changed": 0,
+      "category_changed": 0,
+      "default_branch_changed": 0,
+      "fork_changed": 0,
+      "new_repos": 0,
+      "removed_repos": 0
+    },
+    "default_branch_changed": [],
+    "fork_changed": [],
+    "mode": "incremental",
+    "new_repos": [],
+    "orgs_completed": [
+      "Azure",
+      "Azure-Samples",
+      "MicrosoftDocs",
+      "MicrosoftLearning",
+      "OfficeDev",
+      "PowerShell",
+      "SharePoint",
+      "aspnet",
+      "dotnet",
+      "microsoft",
+      "microsoftgraph"
+    ],
+    "removed_repos": []
+  },
+  "noise_summary": {
+    "actor_types": {
+      "automation": 7,
+      "bot": 10,
+      "human": 6
+    },
+    "change_types": {
+      "dependency_update": 12,
+      "docs_update": 7,
+      "sample_update": 2,
+      "sdk_generation": 2
+    },
+    "event_count": 23,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/aspire-samples"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure-Samples/agent-architecture-review-sample"
+      },
+      {
+        "event_count": 3,
+        "repo": "Azure-Samples/interview-coach-agent-framework"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure-Samples/Spec2Cloud"
+      }
+    ]
+  },
+  "notable_changes": [
+    {
+      "actor_type": "human",
+      "author": "Nikita Polyakov",
+      "category": "training",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+      "committed_at": "2026-10-25T11:58:51Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/ppcc26-apps-automations-agents:9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+      "headline": "docs(module4): add step-6 verify screenshot",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "microsoft/ppcc26-apps-automations-agents"
+    },
+    {
+      "actor_type": "human",
+      "author": "szhaomsft (@szhaomsft)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/voice-agent/commit/57d87c3dd6d6d927205ff5fea8facdc3cf037cf9",
+      "committed_at": "2026-10-25T11:47:35Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/voice-agent:57d87c3dd6d6d927205ff5fea8facdc3cf037cf9",
+      "headline": "Add MAI Flash voices and improve bottom panel readability (#61)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 61,
+      "pr_title": "Add MAI Flash voices and improve bottom panel readability",
+      "pr_url": "https://github.com/microsoft/voice-agent/pull/61",
+      "product_area": "Azure",
+      "repo": "microsoft/voice-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "szhaomsft (@szhaomsft)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/voice-agent/commit/a192daf5495413afc6bbf9dcdf613a446bdc1f5d",
+      "committed_at": "2026-10-25T11:28:31Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/voice-agent:a192daf5495413afc6bbf9dcdf613a446bdc1f5d",
+      "headline": "Add natural scenery animation and a scenery-only view (#59)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 59,
+      "pr_title": "Add natural scenery animation and a scenery-only view",
+      "pr_url": "https://github.com/microsoft/voice-agent/pull/59",
+      "product_area": "Azure",
+      "repo": "microsoft/voice-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Jing Gao (@everjing)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+      "committed_at": "2026-10-25T08:00:41Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-aks-docs:20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+      "headline": "Add cluster-level FIPS for AKS clusters (preview) article (#4042)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-aks-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Hillary Mutisya (@hillary-mutisya)",
+      "category": "samples",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/TypeAgent/commit/370b64f523179f1a7fb2d1ca415ff7c675ea04d6",
+      "committed_at": "2026-10-24T22:17:27Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/TypeAgent:370b64f523179f1a7fb2d1ca415ff7c675ea04d6",
+      "headline": "Add BEAM memory benchmarks and improve ingestion and retrieval (#3219)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3219,
+      "pr_title": "Add BEAM memory benchmarks and improve ingestion and retrieval",
+      "pr_url": "https://github.com/microsoft/TypeAgent/pull/3219",
+      "product_area": "Unknown",
+      "repo": "microsoft/TypeAgent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Preethi Thippeswamy (@pthippeswamy)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+      "committed_at": "2026-10-24T21:33:59Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+      "headline": "Add advanced capacity insights availability regions",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Hillary Mutisya (@hillary-mutisya)",
+      "category": "samples",
+      "change_type": "feature",
+      "commit_url": "https://github.com/microsoft/TypeAgent/commit/d6b9c40a1fdef109f7f9abdae6089c459b0c6995",
+      "committed_at": "2026-10-24T15:40:24Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/TypeAgent:d6b9c40a1fdef109f7f9abdae6089c459b0c6995",
+      "headline": "add local Nemotron speech recognition (#3218)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3218,
+      "pr_title": "add local Nemotron speech recognition",
+      "pr_url": "https://github.com/microsoft/TypeAgent/pull/3218",
+      "product_area": "Unknown",
+      "repo": "microsoft/TypeAgent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Nikita Polyakov",
+      "category": "training",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/41986b8388d821670cdb23c9f3f6898d57f0a09e",
+      "committed_at": "2026-10-25T15:36:54Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/ppcc26-apps-automations-agents:41986b8388d821670cdb23c9f3f6898d57f0a09e",
+      "headline": "docs(module4): fix post-image line breaks",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "microsoft/ppcc26-apps-automations-agents"
+    },
+    {
+      "actor_type": "human",
+      "author": "Nikita Polyakov",
+      "category": "training",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a18e19f8854420e357dcf4be8826b995ac44e5df",
+      "committed_at": "2026-10-25T15:34:47Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/ppcc26-apps-automations-agents:a18e19f8854420e357dcf4be8826b995ac44e5df",
+      "headline": "docs(module4): fix commander step spacing",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "microsoft/ppcc26-apps-automations-agents"
+    },
+    {
+      "actor_type": "human",
+      "author": "Nikita Polyakov",
+      "category": "training",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/cbc154616cb98b9895bea463735114b1d3f76027",
+      "committed_at": "2026-10-25T13:06:31Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/ppcc26-apps-automations-agents:cbc154616cb98b9895bea463735114b1d3f76027",
+      "headline": "docs(module4): fix business skill step spacing",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "PowerShell",
+      "repo": "microsoft/ppcc26-apps-automations-agents"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/fabric-docs/commit/ece3393213f0969b0933db0d15a05fdf7d385512",
+      "committed_at": "2026-10-25T17:05:22Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/fabric-docs:ece3393213f0969b0933db0d15a05fdf7d385512",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3455,
+      "pr_title": "Repo sync for protected branch",
+      "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+      "product_area": "Unknown",
+      "repo": "MicrosoftDocs/fabric-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "szhaomsft (@szhaomsft)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/microsoft/voice-agent/commit/15a6395e62c2c47ccc28f4a9874736f139be531a",
+      "committed_at": "2026-10-25T12:29:51Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/voice-agent:15a6395e62c2c47ccc28f4a9874736f139be531a",
+      "headline": "Improve text readability over animated scenery (#62)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 62,
+      "pr_title": "Improve text readability over animated scenery",
+      "pr_url": "https://github.com/microsoft/voice-agent/pull/62",
+      "product_area": "Azure",
+      "repo": "microsoft/voice-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "szhaomsft (@szhaomsft)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/microsoft/voice-agent/commit/39891cdf173aa15264d896fac1e9f3dd7484a350",
+      "committed_at": "2026-10-25T11:35:02Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/voice-agent:39891cdf173aa15264d896fac1e9f3dd7484a350",
+      "headline": "Remove animation documentation from the voice sample README (#60)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 60,
+      "pr_title": "Remove animation documentation from the voice sample README",
+      "pr_url": "https://github.com/microsoft/voice-agent/pull/60",
+      "product_area": "Azure",
+      "repo": "microsoft/voice-agent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Andrew Connell (@andrewconnell)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/SharePoint/sp-dev-docs/commit/f676e228f8a3be68773faa245e5df3a8c761f096",
+      "committed_at": "2026-10-25T10:47:25Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:SharePoint/sp-dev-docs:f676e228f8a3be68773faa245e5df3a8c761f096",
+      "headline": "Update old links to current URLs (#11073)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 11073,
+      "pr_title": "Update old links to current URLs",
+      "pr_url": "https://github.com/SharePoint/sp-dev-docs/pull/11073",
+      "product_area": "PowerShell",
+      "repo": "SharePoint/sp-dev-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Nikhil Kaul (@nikhilkaul1234)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/b011f0c29bfbd371cecc243f5201965481d0aa12",
+      "committed_at": "2026-10-25T09:30:11Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-monitor-docs:b011f0c29bfbd371cecc243f5201965481d0aa12",
+      "headline": "Chaos Studio Workspaces: supported resources and Actions matrix (#5674)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-monitor-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Justin Yoo (@justinyoo)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/f41fb63b0a20ab1fa846a02056b8ae6814383ce5",
+      "committed_at": "2026-10-25T06:35:52Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/interview-coach-agent-framework:f41fb63b0a20ab1fa846a02056b8ae6814383ce5",
+      "headline": "Advance workshop to 3.1.1 and teach shared response-language policy (\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 58,
+      "pr_title": "Advance workshop to 3.1.1 and teach shared response-language policy",
+      "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/58",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/interview-coach-agent-framework"
+    },
+    {
+      "actor_type": "human",
+      "author": "Justin Yoo (@justinyoo)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/fe1e28d6d1946bea954c26dd503d6a50569ac30c",
+      "committed_at": "2026-10-25T04:04:46Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/interview-coach-agent-framework:fe1e28d6d1946bea954c26dd503d6a50569ac30c",
+      "headline": "Align file-based AppHost SDK and use RunAsEmulator (#57)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 57,
+      "pr_title": "Align file-based AppHost SDK and use RunAsEmulator",
+      "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/57",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/interview-coach-agent-framework"
+    },
+    {
+      "actor_type": "human",
+      "author": "robgruen (@robgruen)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/TypeAgent/commit/a5764991376175989b8399021bb379fe767c2280",
+      "committed_at": "2026-10-25T02:27:15Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/TypeAgent:a5764991376175989b8399021bb379fe767c2280",
+      "headline": "Bound local audio transcription requests (#3175)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3175,
+      "pr_title": "Bound local audio transcription requests",
+      "pr_url": "https://github.com/microsoft/TypeAgent/pull/3175",
+      "product_area": "Unknown",
+      "repo": "microsoft/TypeAgent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Copilot (@Copilot)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/commit/0e27ed07e150cf10f9971d7aa577a9865a602b46",
+      "committed_at": "2026-10-24T22:44:32Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/simple-foundry-hosted-agent-python-aigateway:0e27ed07e150cf10f9971d7aa577a9865a602b46",
+      "headline": "Migrate AI Gateway infrastructure to standalone RP and aliases (#23)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 23,
+      "pr_title": "Migrate AI Gateway infrastructure to standalone RP and aliases",
+      "pr_url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/pull/23",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/simple-foundry-hosted-agent-python-aigateway"
+    },
+    {
+      "actor_type": "human",
+      "author": "Hillary Mutisya (@hillary-mutisya)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/TypeAgent/commit/34a6ce26060cf9ff2ceb53ab5847b59e61fe6734",
+      "committed_at": "2026-10-24T22:41:55Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/TypeAgent:34a6ce26060cf9ff2ceb53ab5847b59e61fe6734",
+      "headline": "Configure Foundry native NuGet feeds during developer setup (#3220)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3220,
+      "pr_title": "Configure Foundry native NuGet feeds during developer setup",
+      "pr_url": "https://github.com/microsoft/TypeAgent/pull/3220",
+      "product_area": "Unknown",
+      "repo": "microsoft/TypeAgent"
+    },
+    {
+      "actor_type": "human",
+      "author": "Preethi Thippeswamy (@pthippeswamy)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b",
+      "committed_at": "2026-10-24T21:36:51Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b",
+      "headline": "Alphabetize advanced capacity insights regions",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Vincent Biret (@baywet)",
+      "category": "docs",
+      "change_type": "sdk_generation",
+      "commit_url": "https://github.com/microsoft/kiota-serialization-text-go/commit/5c6909dc78ae045e07cfe3101aa1c817de3c28df",
+      "committed_at": "2026-10-25T13:22:14Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/kiota-serialization-text-go:5c6909dc78ae045e07cfe3101aa1c817de3c28df",
+      "headline": "Merge pull request #176 from hardikkaurani/fix/nil-receiver-callbacks\u2026",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "human_authored",
+        "automation_or_bot",
+        "sdk_generation"
+      ],
+      "notability_score": 75,
+      "pr_number": 176,
+      "pr_title": "fix(text): add nil receiver guards to parse node callbacks, raw value, and serialization writer",
+      "pr_url": "https://github.com/microsoft/kiota-serialization-text-go/pull/176",
+      "product_area": "Microsoft Graph",
+      "repo": "microsoft/kiota-serialization-text-go"
+    },
+    {
+      "actor_type": "human",
+      "author": "Hardik K (@hardikkaurani)",
+      "category": "docs",
+      "change_type": "sdk_generation",
+      "commit_url": "https://github.com/microsoft/kiota-dart/commit/8788b1296ff725bd61a180fa9babcaaf6037cd8f",
+      "committed_at": "2026-10-25T13:11:59Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/kiota-dart:8788b1296ff725bd61a180fa9babcaaf6037cd8f",
+      "headline": "fix(text): handle single quote sanitization and support content-type \u2026",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "human_authored",
+        "automation_or_bot",
+        "sdk_generation"
+      ],
+      "notability_score": 75,
+      "pr_number": 157,
+      "pr_title": "fix(text): handle single quote sanitization and support content-type parameters",
+      "pr_url": "https://github.com/microsoft/kiota-dart/pull/157",
+      "product_area": "Microsoft Graph",
+      "repo": "microsoft/kiota-dart"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/6dd308dc3f9d12b68af769428de4c8a33152c868",
+      "committed_at": "2026-10-25T12:03:20Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-monitor-docs:6dd308dc3f9d12b68af769428de4c8a33152c868",
+      "headline": "Merge pull request #5675 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-monitor-docs"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/74df7f377256b388589965b2d2c6f3e7c3f34497",
+      "committed_at": "2026-10-25T11:02:53Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-aks-docs:74df7f377256b388589965b2d2c6f3e7c3f34497",
+      "headline": "Merge pull request #4057 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-aks-docs"
+    }
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 26,
+      "noisy_event_count": 12,
+      "notable_event_count": 16,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:47:35Z",
+          "headline": "Add MAI Flash voices and improve bottom panel readability",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/61"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:28:31Z",
+          "headline": "Add natural scenery animation and a scenery-only view",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/59"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T08:00:41Z",
+          "headline": "Add cluster-level FIPS for AKS clusters (preview) article (#4042)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/azure-aks-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/voice-agent"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/interview-coach-agent-framework"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "Azure-Samples/agent-architecture-review-sample"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure-Samples/modernize-bootcamp"
+        }
+      ]
+    },
+    {
+      "event_count": 20,
+      "noisy_event_count": 9,
+      "notable_event_count": 9,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 8,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T22:17:27Z",
+          "headline": "Add BEAM memory benchmarks and improve ingestion and retrieval",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3219"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-24T15:40:24Z",
+          "headline": "add local Nemotron speech recognition",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3218"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-25T17:05:22Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/aspire-samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/TypeAgent"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/amplifier-module-provider-gemini"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-25T11:58:51Z",
+          "headline": "docs(module4): add step-6 verify screenshot",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-25T15:36:54Z",
+          "headline": "docs(module4): fix post-image line breaks",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/41986b8388d821670cdb23c9f3f6898d57f0a09e"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-25T15:34:47Z",
+          "headline": "docs(module4): fix commander step spacing",
+          "notability_score": 90,
+          "repo": "microsoft/ppcc26-apps-automations-agents",
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a18e19f8854420e357dcf4be8826b995ac44e5df"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/ppcc26-apps-automations-agents"
+        },
+        {
+          "event_count": 1,
+          "repo": "SharePoint/sp-dev-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 2,
+      "notable_event_count": 2,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-10-25T13:22:14Z",
+          "headline": "fix(text): add nil receiver guards to parse node callbacks, raw value, and serialization writer",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-serialization-text-go",
+          "url": "https://github.com/microsoft/kiota-serialization-text-go/pull/176"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-10-25T13:11:59Z",
+          "headline": "fix(text): handle single quote sanitization and support content-type parameters",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-dart",
+          "url": "https://github.com/microsoft/kiota-dart/pull/157"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/kiota-serialization-text-go"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/kiota-dart"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 0,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        }
+      ]
+    }
+  ],
+  "recent_repo_creations": [],
+  "releases": {
+    "items": [],
+    "summary": {
+      "candidate_repo_cap": 150,
+      "enabled": true,
+      "error_count": 0,
+      "errors": [],
+      "max_releases_per_repo": 5,
+      "mode": "candidates-and-watched",
+      "repos_checked": 150,
+      "repos_with_releases": 0,
+      "requests_changed": 150,
+      "requests_checked": 150,
+      "requests_not_modified": 0
+    }
+  },
+  "schema_url": "schemas/report.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "97d86b6ef1e533aee03348588427245c0f58a2d2",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "40214777228",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/40214777228"
+  },
+  "summaries": {
+    "by_category": {
+      "docs": 12,
+      "samples": 9,
+      "training": 1
+    },
+    "by_org": {
+      "Azure-Samples": 5,
+      "MicrosoftDocs": 4,
+      "SharePoint": 1,
+      "dotnet": 1,
+      "microsoft": 11
+    },
+    "signals": {
+      "bot_or_dependency_noise": [
+        {
+          "full_name": "microsoft/aspire-samples",
+          "score": 0,
+          "tags": [
+            "bot-only",
+            "dependency-noise",
+            "docs"
+          ],
+          "watchlist_matches": {}
+        },
+        {
+          "full_name": "Azure-Samples/Spec2Cloud",
+          "score": 0,
+          "tags": [
+            "bot-only",
+            "samples"
+          ],
+          "watchlist_matches": {}
+        }
+      ],
+      "high_signal": [
+        {
+          "full_name": "microsoft/ppcc26-apps-automations-agents",
+          "score": 100,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "product:PowerShell",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "powershell"
+            ],
+            "products": [
+              "Azure AI",
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 90,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "migration"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/interview-coach-agent-framework",
+          "score": 88,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "product:Azure SDK",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "sdk"
+            ],
+            "products": [
+              "Azure AI",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-aks-docs",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/voice-agent",
+          "score": 85,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/TypeAgent",
+          "score": 79,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "foundry"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/agent-architecture-review-sample",
+          "score": 78,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-monitor-docs",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/kiota-serialization-text-go",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "product:Microsoft Graph",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "graph",
+              "kiota",
+              "sdk"
+            ],
+            "products": [
+              "Microsoft Graph",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/kiota-dart",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "product:Microsoft Graph",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "graph",
+              "kiota",
+              "sdk"
+            ],
+            "products": [
+              "Microsoft Graph",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "SharePoint/sp-dev-docs",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/simple-foundry-hosted-agent-python-aigateway",
+          "score": 76,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "copilot",
+              "foundry"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/PowerBI-Developer-Samples",
+          "score": 66,
+          "tags": [
+            "human-authored",
+            "samples",
+            "security"
+          ],
+          "watchlist_matches": {}
+        },
+        {
+          "full_name": "dotnet/runtime",
+          "score": 56,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language"
+          ],
+          "watchlist_matches": {}
+        }
+      ],
+      "tag_counts": {
+        "bot-only": 2,
+        "dependency-noise": 1,
+        "docs": 12,
+        "human-authored": 20,
+        "product:Azure AI": 6,
+        "product:Azure SDK": 3,
+        "product:Microsoft Graph": 2,
+        "product:PowerShell": 2,
+        "release-language": 2,
+        "samples": 9,
+        "security": 1,
+        "training": 1,
+        "watchlist": 13
+      },
+      "watched": [
+        {
+          "full_name": "microsoft/ppcc26-apps-automations-agents",
+          "score": 100,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "product:PowerShell",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "powershell"
+            ],
+            "products": [
+              "Azure AI",
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 90,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "migration"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/interview-coach-agent-framework",
+          "score": 88,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "product:Azure SDK",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "sdk"
+            ],
+            "products": [
+              "Azure AI",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-aks-docs",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/voice-agent",
+          "score": 85,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/TypeAgent",
+          "score": 79,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "foundry"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/agent-architecture-review-sample",
+          "score": 78,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-monitor-docs",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/kiota-serialization-text-go",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "product:Microsoft Graph",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "graph",
+              "kiota",
+              "sdk"
+            ],
+            "products": [
+              "Microsoft Graph",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/kiota-dart",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "product:Microsoft Graph",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "graph",
+              "kiota",
+              "sdk"
+            ],
+            "products": [
+              "Microsoft Graph",
+              "Azure SDK"
+            ]
+          }
+        },
+        {
+          "full_name": "SharePoint/sp-dev-docs",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure-Samples/simple-foundry-hosted-agent-python-aigateway",
+          "score": 76,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "samples",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "copilot",
+              "foundry"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/ppcc26-apps-automations-agents",
+      "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+      "why": "Feature or capability signal: docs(module4): add step-6 verify screenshot"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/61",
+      "why": "Feature or capability signal: Add MAI Flash voices and improve bottom panel readability"
+    },
+    {
+      "priority": 3,
+      "repo": "MicrosoftDocs/azure-aks-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+      "why": "Feature or capability signal: Add cluster-level FIPS for AKS clusters (preview) article (#4042)"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/TypeAgent",
+      "url": "https://github.com/microsoft/TypeAgent/pull/3219",
+      "why": "Feature or capability signal: Add BEAM memory benchmarks and improve ingestion and retrieval"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+      "why": "Feature or capability signal: Add advanced capacity insights availability regions"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+      "why": "Docs update: Repo sync for protected branch"
+    },
+    {
+      "priority": 7,
+      "repo": "SharePoint/sp-dev-docs",
+      "url": "https://github.com/SharePoint/sp-dev-docs/pull/11073",
+      "why": "Docs update: Update old links to current URLs"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/azure-monitor-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/b011f0c29bfbd371cecc243f5201965481d0aa12",
+      "why": "Docs update: Chaos Studio Workspaces: supported resources and Actions matrix (#5674)"
+    }
+  ],
+  "top_repos": [
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "0.2",
+      "classification_reason": "keyword:training;category:training;keyword:powershell;keyword:workshop",
+      "classification_version": "2026-06-08",
+      "commit_count": 31,
+      "commits": [
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T15:36:54Z",
+          "headline": "docs(module4): fix post-image line breaks",
+          "oid": "41986b8388d821670cdb23c9f3f6898d57f0a09e",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/41986b8388d821670cdb23c9f3f6898d57f0a09e"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T15:34:47Z",
+          "headline": "docs(module4): fix commander step spacing",
+          "oid": "a18e19f8854420e357dcf4be8826b995ac44e5df",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/a18e19f8854420e357dcf4be8826b995ac44e5df"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T13:06:31Z",
+          "headline": "docs(module4): fix business skill step spacing",
+          "oid": "cbc154616cb98b9895bea463735114b1d3f76027",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/cbc154616cb98b9895bea463735114b1d3f76027"
+        },
+        {
+          "author": "Nikita Polyakov (@NikitaPolyakovMSFT)",
+          "committed_date": "2026-10-25T13:05:00Z",
+          "headline": "Update instructions for enabling Work IQ setting",
+          "oid": "ac15a1983aa13b2de388c7359f38d03b6a2e9beb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/ac15a1983aa13b2de388c7359f38d03b6a2e9beb"
+        },
+        {
+          "author": "Nikita Polyakov",
+          "committed_date": "2026-10-25T11:58:51Z",
+          "headline": "docs(module4): add step-6 verify screenshot",
+          "oid": "9b8b08665efb8bbb78dfdb1a244cf819b7e62863",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/microsoft/ppcc26-apps-automations-agents/commit/9b8b08665efb8bbb78dfdb1a244cf819b7e62863"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/ppcc26-apps-automations-agents",
+      "name": "ppcc26-apps-automations-agents",
+      "newest_commit_date": "2026-10-25T15:36:54Z",
+      "org": "microsoft",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 100,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "product:PowerShell",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "powershell"
+          ],
+          "products": [
+            "Azure AI",
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 15,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T17:05:42Z",
+          "headline": "Merge pull request #3455 from MicrosoftDocs/main639285447248520164syn\u2026",
+          "oid": "6b1f9558cccc6f1bc4aa8de27f30e7beda296f79",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/6b1f9558cccc6f1bc4aa8de27f30e7beda296f79"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-10-25T17:05:22Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "ece3393213f0969b0933db0d15a05fdf7d385512",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/ece3393213f0969b0933db0d15a05fdf7d385512"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T17:02:19Z",
+          "headline": "Merge pull request #17080 from MicrosoftDocs/main",
+          "oid": "12616b63b032c52432fb6e38aee259f4fcd90e66",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/12616b63b032c52432fb6e38aee259f4fcd90e66"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-25T16:36:13Z",
+          "headline": "Merge pull request #17078 from eranbenayun1/eranbenayun/remove-gcc-li\u2026",
+          "oid": "902057a1ffcfc80f171364de04890309172d6007",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/902057a1ffcfc80f171364de04890309172d6007"
+        },
+        {
+          "author": "Eran Benayun",
+          "committed_date": "2026-10-25T16:30:25Z",
+          "headline": "Remove GCC known limitation from the Gen1 to Gen2 migration article",
+          "oid": "cf261de21d63d13cbd65de599206df0f8898d2ef",
+          "pr_number": 3455,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3455",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/cf261de21d63d13cbd65de599206df0f8898d2ef"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-10-25T17:05:42Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 90,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "migration"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:workshop",
+      "classification_version": "2026-06-08",
+      "commit_count": 13,
+      "commits": [
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T06:35:52Z",
+          "headline": "Advance workshop to 3.1.1 and teach shared response-language policy (\u2026",
+          "oid": "f41fb63b0a20ab1fa846a02056b8ae6814383ce5",
+          "pr_number": 58,
+          "pr_title": "Advance workshop to 3.1.1 and teach shared response-language policy",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/58",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/f41fb63b0a20ab1fa846a02056b8ae6814383ce5"
+        },
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T04:04:46Z",
+          "headline": "Align file-based AppHost SDK and use RunAsEmulator (#57)",
+          "oid": "fe1e28d6d1946bea954c26dd503d6a50569ac30c",
+          "pr_number": 57,
+          "pr_title": "Align file-based AppHost SDK and use RunAsEmulator",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/57",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/fe1e28d6d1946bea954c26dd503d6a50569ac30c"
+        },
+        {
+          "author": "Justin Yoo (@justinyoo)",
+          "committed_date": "2026-10-25T03:18:41Z",
+          "headline": "Fix workshop TypeScript peer dependency (#56)",
+          "oid": "40a20e2614805019b8d033a4d3d01a46c0d97ecc",
+          "pr_number": 56,
+          "pr_title": "Fix workshop TypeScript peer dependency",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/56",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/40a20e2614805019b8d033a4d3d01a46c0d97ecc"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T02:58:33Z",
+          "headline": "Bump the npm group across 1 directory with 3 updates (#55)",
+          "oid": "5a1f8bd0fb74c16367b87220922500866f05f00e",
+          "pr_number": 55,
+          "pr_title": "Bump the npm group across 1 directory with 3 updates",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/55",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/5a1f8bd0fb74c16367b87220922500866f05f00e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T02:55:46Z",
+          "headline": "Bump postcss-selector-parser and @expressive-code/core in /workshop (\u2026",
+          "oid": "956d7de444484e332272bf7b07ab58aac0194164",
+          "pr_number": 54,
+          "pr_title": "Bump postcss-selector-parser and @expressive-code/core in /workshop",
+          "pr_url": "https://github.com/Azure-Samples/interview-coach-agent-framework/pull/54",
+          "url": "https://github.com/Azure-Samples/interview-coach-agent-framework/commit/956d7de444484e332272bf7b07ab58aac0194164"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/interview-coach-agent-framework",
+      "name": "interview-coach-agent-framework",
+      "newest_commit_date": "2026-10-25T06:35:52Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 3,
+        "score": 88,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "product:Azure SDK",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "sdk"
+          ],
+          "products": [
+            "Azure AI",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T11:02:53Z",
+          "headline": "Merge pull request #4057 from MicrosoftDocs/main",
+          "oid": "74df7f377256b388589965b2d2c6f3e7c3f34497",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/74df7f377256b388589965b2d2c6f3e7c3f34497"
+        },
+        {
+          "author": "Jing Gao (@everjing)",
+          "committed_date": "2026-10-25T08:00:41Z",
+          "headline": "Add cluster-level FIPS for AKS clusters (preview) article (#4042)",
+          "oid": "20825dc96ca09f871d4e024a8dd9df145c5f5a8e",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/20825dc96ca09f871d4e024a8dd9df145c5f5a8e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-aks-docs",
+      "name": "azure-aks-docs",
+      "newest_commit_date": "2026-10-25T11:02:53Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 10,
+      "commits": [
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T12:29:51Z",
+          "headline": "Improve text readability over animated scenery (#62)",
+          "oid": "15a6395e62c2c47ccc28f4a9874736f139be531a",
+          "pr_number": 62,
+          "pr_title": "Improve text readability over animated scenery",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/62",
+          "url": "https://github.com/microsoft/voice-agent/commit/15a6395e62c2c47ccc28f4a9874736f139be531a"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:47:35Z",
+          "headline": "Add MAI Flash voices and improve bottom panel readability (#61)",
+          "oid": "57d87c3dd6d6d927205ff5fea8facdc3cf037cf9",
+          "pr_number": 61,
+          "pr_title": "Add MAI Flash voices and improve bottom panel readability",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/61",
+          "url": "https://github.com/microsoft/voice-agent/commit/57d87c3dd6d6d927205ff5fea8facdc3cf037cf9"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:35:02Z",
+          "headline": "Remove animation documentation from the voice sample README (#60)",
+          "oid": "39891cdf173aa15264d896fac1e9f3dd7484a350",
+          "pr_number": 60,
+          "pr_title": "Remove animation documentation from the voice sample README",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/60",
+          "url": "https://github.com/microsoft/voice-agent/commit/39891cdf173aa15264d896fac1e9f3dd7484a350"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T11:28:31Z",
+          "headline": "Add natural scenery animation and a scenery-only view (#59)",
+          "oid": "a192daf5495413afc6bbf9dcdf613a446bdc1f5d",
+          "pr_number": 59,
+          "pr_title": "Add natural scenery animation and a scenery-only view",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/59",
+          "url": "https://github.com/microsoft/voice-agent/commit/a192daf5495413afc6bbf9dcdf613a446bdc1f5d"
+        },
+        {
+          "author": "szhaomsft (@szhaomsft)",
+          "committed_date": "2026-10-25T10:59:13Z",
+          "headline": "Make the browser voice sample layout conversation-first (#58)",
+          "oid": "1d63f68a3aa4c2afad2e767b981f2c8d7813501e",
+          "pr_number": 58,
+          "pr_title": "Make the browser voice sample layout conversation-first",
+          "pr_url": "https://github.com/microsoft/voice-agent/pull/58",
+          "url": "https://github.com/microsoft/voice-agent/commit/1d63f68a3aa4c2afad2e767b981f2c8d7813501e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/voice-agent",
+      "name": "voice-agent",
+      "newest_commit_date": "2026-10-25T12:29:51Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 85,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "architect",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;category:samples;fallback:Unknown;keyword:architecture",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "robgruen (@robgruen)",
+          "committed_date": "2026-10-25T02:27:15Z",
+          "headline": "Bound local audio transcription requests (#3175)",
+          "oid": "a5764991376175989b8399021bb379fe767c2280",
+          "pr_number": 3175,
+          "pr_title": "Bound local audio transcription requests",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3175",
+          "url": "https://github.com/microsoft/TypeAgent/commit/a5764991376175989b8399021bb379fe767c2280"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T22:41:55Z",
+          "headline": "Configure Foundry native NuGet feeds during developer setup (#3220)",
+          "oid": "34a6ce26060cf9ff2ceb53ab5847b59e61fe6734",
+          "pr_number": 3220,
+          "pr_title": "Configure Foundry native NuGet feeds during developer setup",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3220",
+          "url": "https://github.com/microsoft/TypeAgent/commit/34a6ce26060cf9ff2ceb53ab5847b59e61fe6734"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T22:17:27Z",
+          "headline": "Add BEAM memory benchmarks and improve ingestion and retrieval (#3219)",
+          "oid": "370b64f523179f1a7fb2d1ca415ff7c675ea04d6",
+          "pr_number": 3219,
+          "pr_title": "Add BEAM memory benchmarks and improve ingestion and retrieval",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3219",
+          "url": "https://github.com/microsoft/TypeAgent/commit/370b64f523179f1a7fb2d1ca415ff7c675ea04d6"
+        },
+        {
+          "author": "Hillary Mutisya (@hillary-mutisya)",
+          "committed_date": "2026-10-24T15:40:24Z",
+          "headline": "add local Nemotron speech recognition (#3218)",
+          "oid": "d6b9c40a1fdef109f7f9abdae6089c459b0c6995",
+          "pr_number": 3218,
+          "pr_title": "add local Nemotron speech recognition",
+          "pr_url": "https://github.com/microsoft/TypeAgent/pull/3218",
+          "url": "https://github.com/microsoft/TypeAgent/commit/d6b9c40a1fdef109f7f9abdae6089c459b0c6995"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/TypeAgent",
+      "name": "TypeAgent",
+      "newest_commit_date": "2026-10-25T02:27:15Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 79,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "foundry"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-24T22:07:56Z",
+          "headline": "Merge pull request #321674 from MicrosoftDocs/main",
+          "oid": "eefab58716b8d922cc9741a9754009c46470e7cb",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/eefab58716b8d922cc9741a9754009c46470e7cb"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-10-24T21:55:48Z",
+          "headline": "Merge pull request #321673 from pthippeswamy/pthippes/discoveryRegions",
+          "oid": "b161e81773af838e4cbadaae691674233f34c9dc",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/b161e81773af838e4cbadaae691674233f34c9dc"
+        },
+        {
+          "author": "Preethi Thippeswamy (@pthippeswamy)",
+          "committed_date": "2026-10-24T21:36:51Z",
+          "headline": "Alphabetize advanced capacity insights regions",
+          "oid": "d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/d05f820792f14e8324c9b07a7adfe4b9fbaaeb3b"
+        },
+        {
+          "author": "Preethi Thippeswamy (@pthippeswamy)",
+          "committed_date": "2026-10-24T21:33:59Z",
+          "headline": "Add advanced capacity insights availability regions",
+          "oid": "22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/22fb03e0b7fdaefaf1c9770da3079a2ec0dceda9"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-10-24T22:07:56Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "architect",
+      "category": "samples",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:Azure-Samples;keyword:samples;name:samples;keyword:cli;org:Azure-Samples;keyword:architecture",
+      "classification_version": "2026-06-08",
+      "commit_count": 3,
+      "commits": [
+        {
+          "author": "SHIVAM (@ShivamGoyal03)",
+          "committed_date": "2026-10-25T05:27:34Z",
+          "headline": "Merge pull request #41 from Azure-Samples/dependabot/npm_and_yarn/fro\u2026",
+          "oid": "dcbd8aa82e13559f92d28aa4df15e7c09e3831f8",
+          "pr_number": 41,
+          "pr_title": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/41",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/dcbd8aa82e13559f92d28aa4df15e7c09e3831f8"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-10-25T05:25:41Z",
+          "headline": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "oid": "764af2e724876eec2f8f1100f9afe1f2a50c0c3a",
+          "pr_number": 41,
+          "pr_title": "Bump vite from 8.0.16 to 8.3.5 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/41",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/764af2e724876eec2f8f1100f9afe1f2a50c0c3a"
+        },
+        {
+          "author": "SHIVAM (@ShivamGoyal03)",
+          "committed_date": "2026-10-25T05:22:59Z",
+          "headline": "Merge pull request #40 from Azure-Samples/dependabot/npm_and_yarn/fro\u2026",
+          "oid": "4a63d9b38bd8178fd0e690294a152c865ecb1af4",
+          "pr_number": 40,
+          "pr_title": "Bump source-map-js from 1.2.1 to 1.2.2 in /frontend",
+          "pr_url": "https://github.com/Azure-Samples/agent-architecture-review-sample/pull/40",
+          "url": "https://github.com/Azure-Samples/agent-architecture-review-sample/commit/4a63d9b38bd8178fd0e690294a152c865ecb1af4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/agent-architecture-review-sample",
+      "name": "agent-architecture-review-sample",
+      "newest_commit_date": "2026-10-25T05:27:34Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 2,
+        "score": 78,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;keyword:service;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-10-25T12:03:20Z",
+          "headline": "Merge pull request #5675 from MicrosoftDocs/main",
+          "oid": "6dd308dc3f9d12b68af769428de4c8a33152c868",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/6dd308dc3f9d12b68af769428de4c8a33152c868"
+        },
+        {
+          "author": "Nikhil Kaul (@nikhilkaul1234)",
+          "committed_date": "2026-10-25T09:30:11Z",
+          "headline": "Chaos Studio Workspaces: supported resources and Actions matrix (#5674)",
+          "oid": "b011f0c29bfbd371cecc243f5201965481d0aa12",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/b011f0c29bfbd371cecc243f5201965481d0aa12"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-monitor-docs",
+      "name": "azure-monitor-docs",
+      "newest_commit_date": "2026-10-25T12:03:20Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;keyword:kiota;keyword:sdk",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Vincent Biret (@baywet)",
+          "committed_date": "2026-10-25T13:22:14Z",
+          "headline": "Merge pull request #176 from hardikkaurani/fix/nil-receiver-callbacks\u2026",
+          "oid": "5c6909dc78ae045e07cfe3101aa1c817de3c28df",
+          "pr_number": 176,
+          "pr_title": "fix(text): add nil receiver guards to parse node callbacks, raw value, and serialization writer",
+          "pr_url": "https://github.com/microsoft/kiota-serialization-text-go/pull/176",
+          "url": "https://github.com/microsoft/kiota-serialization-text-go/commit/5c6909dc78ae045e07cfe3101aa1c817de3c28df"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-serialization-text-go",
+      "name": "kiota-serialization-text-go",
+      "newest_commit_date": "2026-10-25T13:22:14Z",
+      "org": "microsoft",
+      "product_area": "Microsoft Graph",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "product:Microsoft Graph",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "graph",
+            "kiota",
+            "sdk"
+          ],
+          "products": [
+            "Microsoft Graph",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:kiota;keyword:kiota;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Hardik K (@hardikkaurani)",
+          "committed_date": "2026-10-25T13:11:59Z",
+          "headline": "fix(text): handle single quote sanitization and support content-type \u2026",
+          "oid": "8788b1296ff725bd61a180fa9babcaaf6037cd8f",
+          "pr_number": 157,
+          "pr_title": "fix(text): handle single quote sanitization and support content-type parameters",
+          "pr_url": "https://github.com/microsoft/kiota-dart/pull/157",
+          "url": "https://github.com/microsoft/kiota-dart/commit/8788b1296ff725bd61a180fa9babcaaf6037cd8f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/kiota-dart",
+      "name": "kiota-dart",
+      "newest_commit_date": "2026-10-25T13:11:59Z",
+      "org": "microsoft",
+      "product_area": "Microsoft Graph",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "product:Microsoft Graph",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "graph",
+            "kiota",
+            "sdk"
+          ],
+          "products": [
+            "Microsoft Graph",
+            "Azure SDK"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "admin",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;category:docs;keyword:powershell;keyword:powershell",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Andrew Connell (@andrewconnell)",
+          "committed_date": "2026-10-25T10:47:25Z",
+          "headline": "Update old links to current URLs (#11073)",
+          "oid": "f676e228f8a3be68773faa245e5df3a8c761f096",
+          "pr_number": 11073,
+          "pr_title": "Update old links to current URLs",
+          "pr_url": "https://github.com/SharePoint/sp-dev-docs/pull/11073",
+          "url": "https://github.com/SharePoint/sp-dev-docs/commit/f676e228f8a3be68773faa245e5df3a8c761f096"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "SharePoint/sp-dev-docs",
+      "name": "sp-dev-docs",
+      "newest_commit_date": "2026-10-25T10:47:25Z",
+      "org": "SharePoint",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Copilot (@Copilot)",
+          "committed_date": "2026-10-24T22:44:32Z",
+          "headline": "Migrate AI Gateway infrastructure to standalone RP and aliases (#23)",
+          "oid": "0e27ed07e150cf10f9971d7aa577a9865a602b46",
+          "pr_number": 23,
+          "pr_title": "Migrate AI Gateway infrastructure to standalone RP and aliases",
+          "pr_url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/pull/23",
+          "url": "https://github.com/Azure-Samples/simple-foundry-hosted-agent-python-aigateway/commit/0e27ed07e150cf10f9971d7aa577a9865a602b46"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/simple-foundry-hosted-agent-python-aigateway",
+      "name": "simple-foundry-hosted-agent-python-aigateway",
+      "newest_commit_date": "2026-10-24T22:44:32Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "samples",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "copilot",
+            "foundry"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;category:samples;fallback:Unknown;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "may-hartov (@may-hartov)",
+          "committed_date": "2026-10-25T08:16:31Z",
+          "headline": "Merge pull request #245 from may-hartov/fix/credential-helper-depende\u2026",
+          "oid": "7d377d9e9b1faaa99f83f90442247902f0d87521",
+          "pr_number": 245,
+          "pr_title": "Anchor credential helper dependencies to the script directory",
+          "pr_url": "https://github.com/microsoft/PowerBI-Developer-Samples/pull/245",
+          "url": "https://github.com/microsoft/PowerBI-Developer-Samples/commit/7d377d9e9b1faaa99f83f90442247902f0d87521"
+        }
+      ],
+      "default_branch": "master",
+      "full_name": "microsoft/PowerBI-Developer-Samples",
+      "name": "PowerBI-Developer-Samples",
+      "newest_commit_date": "2026-10-25T08:16:31Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 66,
+        "tags": [
+          "human-authored",
+          "samples",
+          "security"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 6,
+      "commits": [
+        {
+          "author": "Steve Pfister (@steveisok)",
+          "committed_date": "2026-10-25T16:39:41Z",
+          "headline": "Exclude mixed-mode regression tests from ReadyToRun (#136442)",
+          "oid": "0815b560489a487dc43288f5d88f085afe71c2ea",
+          "pr_number": 136442,
+          "pr_title": "Exclude mixed-mode regression tests from ReadyToRun",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136442",
+          "url": "https://github.com/dotnet/runtime/commit/0815b560489a487dc43288f5d88f085afe71c2ea"
+        },
+        {
+          "author": "Peter Shrosbree (@pcshrosbree)",
+          "committed_date": "2026-10-25T14:02:19Z",
+          "headline": "Fix SampleProfilerSampleType overflow on 32-bit platforms (#136433)",
+          "oid": "b9878c0bcf7da7877e93f00720e58c4502c2aaef",
+          "pr_number": 136433,
+          "pr_title": "Fix SampleProfilerSampleType overflow on 32-bit platforms",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136433",
+          "url": "https://github.com/dotnet/runtime/commit/b9878c0bcf7da7877e93f00720e58c4502c2aaef"
+        },
+        {
+          "author": "Adeel Mujahid (@am11)",
+          "committed_date": "2026-10-24T18:05:03Z",
+          "headline": "Fix VersionConverter for versions without Build/Revision (#136423)",
+          "oid": "f0c7a08c8dea85b0271b5ed128530169b9ad79ff",
+          "pr_number": 136423,
+          "pr_title": "Fix VersionConverter for versions without Build/Revision",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136423",
+          "url": "https://github.com/dotnet/runtime/commit/f0c7a08c8dea85b0271b5ed128530169b9ad79ff"
+        },
+        {
+          "author": "Aaron R Robinson (@AaronRobinsonMSFT)",
+          "committed_date": "2026-10-24T16:05:26Z",
+          "headline": "Fix IEnumerator adapter initialization for COM RCWs (#136392)",
+          "oid": "1df7015e61349dafdc12ceb1b14840c79d60ea48",
+          "pr_number": 136392,
+          "pr_title": "Fix IEnumerator adapter initialization for COM RCWs",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136392",
+          "url": "https://github.com/dotnet/runtime/commit/1df7015e61349dafdc12ceb1b14840c79d60ea48"
+        },
+        {
+          "author": "Steve Pfister (@steveisok)",
+          "committed_date": "2026-10-24T15:06:24Z",
+          "headline": "Use Ubuntu 26.04 for developer innerloop builds (#136345)",
+          "oid": "36e205e2a4d7d899c0c0f1bb4f85f81f10cb9ccc",
+          "pr_number": 136345,
+          "pr_title": "Use Ubuntu 26.04 for developer innerloop builds",
+          "pr_url": "https://github.com/dotnet/runtime/pull/136345",
+          "url": "https://github.com/dotnet/runtime/commit/36e205e2a4d7d899c0c0f1bb4f85f81f10cb9ccc"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-10-25T16:39:41Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 56,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;category:samples;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "AdonisLL (@AdonisLL)",
+          "committed_date": "2026-10-25T14:14:52Z",
+          "headline": "...",
+          "oid": "db5b4ac1cfc4bd0fa5e4417ffdf7d822f2a6721b",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/modernize-bootcamp/commit/db5b4ac1cfc4bd0fa5e4417ffdf7d822f2a6721b"
+        },
+        {
+          "author": "AdonisLL (@AdonisLL)",
+          "committed_date": "2026-10-25T14:06:31Z",
+          "headline": "Remove local docker build test",
+          "oid": "65fe4d12c4ce901c03ceffb47505ecdd77304062",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure-Samples/modernize-bootcamp/commit/65fe4d12c4ce901c03ceffb47505ecdd77304062"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/modernize-bootcamp",
+      "name": "modernize-bootcamp",
+      "newest_commit_date": "2026-10-25T14:14:52Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:platform;fallback:Unknown;keyword:training",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Tianlei Wu (@tianleiwu)",
+          "committed_date": "2026-10-25T01:09:22Z",
+          "headline": "[CUDA] Add fast INT3 QMoE kernels and offline SM80 INT2/INT4 prepack \u2026",
+          "oid": "bd6010c0e1ff09b016c3fa6c9c818b6699ccd9b9",
+          "pr_number": 33569,
+          "pr_title": "[CUDA] Add fast INT3 QMoE kernels and offline SM80 INT2/INT4 prepack support",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33569",
+          "url": "https://github.com/microsoft/onnxruntime/commit/bd6010c0e1ff09b016c3fa6c9c818b6699ccd9b9"
+        },
+        {
+          "author": "Akshay Sonawane (@apsonawane)",
+          "committed_date": "2026-10-24T22:59:43Z",
+          "headline": "Add exact normalization and rotary CUDA operator modes (#33469)",
+          "oid": "c7873286778c3d3509773ec3796f2ba443514bfe",
+          "pr_number": 33469,
+          "pr_title": "[CUDA] Add RMSNormRotary contrib operator",
+          "pr_url": "https://github.com/microsoft/onnxruntime/pull/33469",
+          "url": "https://github.com/microsoft/onnxruntime/commit/c7873286778c3d3509773ec3796f2ba443514bfe"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/onnxruntime",
+      "name": "onnxruntime",
+      "newest_commit_date": "2026-10-25T01:09:22Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 42,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Brian Krabach (@bkrabach)",
+          "committed_date": "2026-10-25T15:26:09Z",
+          "headline": "fix: retain uncertainty for image finish evidence (#59)",
+          "oid": "4e4a093624ef2c878d9859bac86124095c13b0fc",
+          "pr_number": 59,
+          "pr_title": "Fix uncertain Gemini image finish evidence without replay",
+          "pr_url": "https://github.com/microsoft/amplifier-module-provider-gemini/pull/59",
+          "url": "https://github.com/microsoft/amplifier-module-provider-gemini/commit/4e4a093624ef2c878d9859bac86124095c13b0fc"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/amplifier-module-provider-gemini",
+      "name": "amplifier-module-provider-gemini",
+      "newest_commit_date": "2026-10-25T15:26:09Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;category:docs;fallback:Unknown;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Brian Krabach (@bkrabach)",
+          "committed_date": "2026-10-25T15:18:41Z",
+          "headline": "feat: add cooperative safe-boundary execution suspension (#67)",
+          "oid": "941806a4a42c84c7c239fd8e0f8ef1260f1ec32f",
+          "pr_number": 67,
+          "pr_title": "Add cooperative safe-boundary execution suspension",
+          "pr_url": "https://github.com/microsoft/amplifier-module-loop-streaming/pull/67",
+          "url": "https://github.com/microsoft/amplifier-module-loop-streaming/commit/941806a4a42c84c7c239fd8e0f8ef1260f1ec32f"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/amplifier-module-loop-streaming",
+      "name": "amplifier-module-loop-streaming",
+      "newest_commit_date": "2026-10-25T15:18:41Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;category:samples;fallback:Unknown;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Conrad Johnston (@ConradJohnston)",
+          "committed_date": "2026-10-24T15:38:19Z",
+          "headline": "data: add ruthenium catalyst XVIII FCIDUMP from von Burg et al. (#13)",
+          "oid": "ae67b5d906b1212b899d3f395dd7fef3313a96d7",
+          "pr_number": 13,
+          "pr_title": "data: add ruthenium catalyst XVIII FCIDUMP from von Burg et al.",
+          "pr_url": "https://github.com/microsoft/qdk-chemistry-data/pull/13",
+          "url": "https://github.com/microsoft/qdk-chemistry-data/commit/ae67b5d906b1212b899d3f395dd7fef3313a96d7"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/qdk-chemistry-data",
+      "name": "qdk-chemistry-data",
+      "newest_commit_date": "2026-10-24T15:38:19Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 41,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "totals": {
+    "candidate_repos": 62,
+    "default_branch_commits": 114,
+    "filtered_repos": 2626,
+    "inventory_repos": 16719,
+    "pushed_at_candidate_repos": 62,
+    "release_count": 0,
+    "repos_with_movement": 22,
+    "repos_with_releases": 0
+  },
+  "watchlist": {
+    "keyword_count": 21,
+    "org_count": 5,
+    "products": [
+      "Azure AI",
+      "Microsoft Graph",
+      "PowerShell",
+      "Azure SDK"
+    ],
+    "repo_count": 17
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-24T14:43:16.261501Z",
+    "state_window_enabled": true,
+    "until": "2026-10-25T17:06:20.705522Z"
+  }
+}
