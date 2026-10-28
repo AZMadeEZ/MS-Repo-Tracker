@@ -1,0 +1,588 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-10-28.consumer.md",
+    "dated_event_stream": "reports/2026-10-28.events.ndjson",
+    "dated_markdown": "reports/2026-10-28.md",
+    "dated_report_json": "reports/2026-10-28.json",
+    "dated_summary_json": "reports/2026-10-28.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 551,
+    "dated_path": "reports/2026-10-28.events.ndjson",
+    "event_count": 587,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 36,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-10-28T18:57:07.167288Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 46,
+      "bot": 123,
+      "human": 102
+    },
+    "change_types": {
+      "bug_fix": 1,
+      "ci_infra": 61,
+      "dependency_update": 122,
+      "docs_update": 55,
+      "feature": 1,
+      "release": 4,
+      "sample_update": 2,
+      "sdk_generation": 24
+    },
+    "event_count": 271,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/dragon-copilot-extension-samples"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-python"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-ruby"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft Graph led the visible product-area activity in this window.",
+    "36 release item(s) were detected during the window.",
+    "Security-related changes appeared in MicrosoftDocs/entra-docs, Azure-Samples/azure-search-openai-demo-purviewdatasecurity.",
+    "Start with human-authored changes in MicrosoftDocs/entra-docs, Azure-Samples/azure-search-openai-demo-purviewdatasecurity, microsoft/finops-toolkit, microsoft/vscode-docs.",
+    "271 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 284,
+      "noisy_event_count": 130,
+      "notable_event_count": 192,
+      "product_area": "Azure",
+      "release_count": 32,
+      "repo_count": 90,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-27T18:51:14Z",
+          "headline": "Pin all GitHub Actions to immutable commit SHAs",
+          "notability_score": 100,
+          "repo": "Azure-Samples/azure-search-openai-demo-purviewdatasecurity",
+          "url": "https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity/pull/101"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T18:18:15Z",
+          "headline": "azure-mgmt-iothubprovisioningservices_2.1.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-iothubprovisioningservices_2.1.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T17:56:14Z",
+          "headline": "com.azure+azure-core-serializer-json-jackson_1.7.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-core-serializer-json-jackson_1.7.0"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-go"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-cli-extensions"
+        }
+      ]
+    },
+    {
+      "event_count": 115,
+      "noisy_event_count": 47,
+      "notable_event_count": 81,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 37,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-27T19:15:00Z",
+          "headline": "Agent Review Center 20261023.2",
+          "notability_score": 90,
+          "repo": "microsoft/AI-Solution-Review",
+          "url": "https://github.com/microsoft/AI-Solution-Review/releases/tag/v20261023.2"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-28T15:15:04Z",
+          "headline": "Add UID-safe Atlas gs metadata to Learn modules and learning paths (#\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/6009dc198aa1a7a2f2124e26b465f1fbc2ebc417"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-28T09:42:57Z",
+          "headline": "Update standard labs for blank-agent creation and scenario-specific instructions",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-copilotstudio",
+          "url": "https://github.com/MicrosoftLearning/mslearn-copilotstudio/pull/94"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/dragon-copilot-extension-samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        }
+      ]
+    },
+    {
+      "event_count": 73,
+      "noisy_event_count": 64,
+      "notable_event_count": 29,
+      "product_area": "Microsoft Graph",
+      "release_count": 2,
+      "repo_count": 21,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T12:59:03Z",
+          "headline": "v1.12.0",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-abstractions-go",
+          "url": "https://github.com/microsoft/kiota-abstractions-go/releases/tag/v1.12.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-27T19:03:50Z",
+          "headline": "v1.6.0",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-http-go",
+          "url": "https://github.com/microsoft/kiota-http-go/releases/tag/v1.6.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-27T19:01:20Z",
+          "headline": "chore(main): release 1.6.0",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-http-go",
+          "url": "https://github.com/microsoft/kiota-http-go/pull/285"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-abstractions-go"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-http-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/DirectX-Graphics-Samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota"
+        }
+      ]
+    },
+    {
+      "event_count": 22,
+      "noisy_event_count": 5,
+      "notable_event_count": 22,
+      "product_area": "PowerShell",
+      "release_count": 1,
+      "repo_count": 11,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T16:23:29Z",
+          "headline": "Oct 2026 (v15)",
+          "notability_score": 100,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/releases/tag/v15"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T16:22:10Z",
+          "headline": "Prep for v15 release",
+          "notability_score": 100,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2341"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-28T02:23:23Z",
+          "headline": "Add -EnableWorkIQTranscriptAccess parameter to Set-CsTeamsMeetingConfiguration",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/office-docs-powershell",
+          "url": "https://github.com/MicrosoftDocs/office-docs-powershell/pull/13851"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 6,
+          "repo": "microsoft/finops-toolkit"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        },
+        {
+          "event_count": 2,
+          "repo": "SharePoint/sp-dev-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/ppcc26-apps-automations-agents"
+        }
+      ]
+    },
+    {
+      "event_count": 51,
+      "noisy_event_count": 18,
+      "notable_event_count": 22,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 13,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-27T18:07:00Z",
+          "headline": "Publish release packages as an additional pipeline artifact",
+          "notability_score": 90,
+          "repo": "dotnet/msbuild",
+          "url": "https://github.com/dotnet/msbuild/pull/15407"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-10-28T15:04:20Z",
+          "headline": "Add WinZip Aes Hmac details",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56359"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-27T17:30:04Z",
+          "headline": "Disable TaskAnalyzer code fixes for 18.13",
+          "notability_score": 90,
+          "repo": "dotnet/msbuild",
+          "url": "https://github.com/dotnet/msbuild/pull/15402"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/dotnet-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 21,
+      "noisy_event_count": 3,
+      "notable_event_count": 13,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 10,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-28T13:10:58Z",
+          "headline": "Fix CLI link (#87)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/teams-ai-library",
+          "url": "https://github.com/MicrosoftDocs/teams-ai-library/commit/343b9f0fc7a168a38581382c957852c453348844"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-28T15:58:05Z",
+          "headline": "Doc improvement verbatim feedback avenue",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14675"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-28T15:57:36Z",
+          "headline": "Update as per doc enhancement",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14687"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/teams-ai-library"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/microsoft-teams-library-js"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/copilot-camp"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 3,
+      "notable_event_count": 12,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-10-28T16:02:30Z",
+          "headline": "Update Vonage provisioning for OAuth client credentials (#14683)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/fb0fc37bfabb8bb7ffefff5802026e41890f6722"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-28T18:12:57Z",
+          "headline": "fix(a365): wrap Work IQ JSON-RPC error detail in the XPIA envelope",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/132"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-10-28T15:12:38Z",
+          "headline": "perf(storage): cache the Agent User storage token across blob operations",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/130"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/entrabot"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 1,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-28T15:03:57Z",
+          "headline": "Merge private repo into public docs",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10555"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/visualstudio-docs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "417715b648fb3d902fb0cc4b25921685eba9476a",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "40749622179",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/40749622179"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/fb0fc37bfabb8bb7ffefff5802026e41890f6722",
+      "why": "Security-related change: Update Vonage provisioning for OAuth client credentials (#14683)"
+    },
+    {
+      "priority": 2,
+      "repo": "Azure-Samples/azure-search-openai-demo-purviewdatasecurity",
+      "url": "https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity/pull/101",
+      "why": "Security-related change: Pin all GitHub Actions to immutable commit SHAs"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-iothubprovisioningservices_2.1.0",
+      "why": "Release activity: azure-mgmt-iothubprovisioningservices_2.1.0"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-core-serializer-json-jackson_1.7.0",
+      "why": "Release activity: com.azure+azure-core-serializer-json-jackson_1.7.0"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/azure-sdk-for-go",
+      "url": "https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/deviceprovisioningservices/armdeviceprovisioningservices/v1.4.0",
+      "why": "Release activity: sdk/resourcemanager/deviceprovisioningservices/armdeviceprovisioningservices/v1.4.0"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/arm-deviceprovisioningservices_6.1.0",
+      "why": "Release activity: @azure/arm-deviceprovisioningservices_6.1.0"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/finops-toolkit",
+      "url": "https://github.com/microsoft/finops-toolkit/releases/tag/v15",
+      "why": "Release activity: Oct 2026 (v15)"
+    },
+    {
+      "priority": 8,
+      "repo": "microsoft/vscode-docs",
+      "url": "https://github.com/microsoft/vscode-docs/pull/10555",
+      "why": "Release activity: Merge private repo into public docs"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 247,
+    "default_branch_commits": 1299,
+    "filtered_repos": 2630,
+    "inventory_repos": 16737,
+    "pushed_at_candidate_repos": 247,
+    "release_count": 36,
+    "repos_with_movement": 188,
+    "repos_with_releases": 12
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-27T16:46:41.622179Z",
+    "state_window_enabled": true,
+    "until": "2026-10-28T18:57:07.167288Z"
+  }
+}
