@@ -1,0 +1,356 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-01.consumer.md",
+    "dated_event_stream": "reports/2026-11-01.events.ndjson",
+    "dated_markdown": "reports/2026-11-01.md",
+    "dated_report_json": "reports/2026-11-01.json",
+    "dated_summary_json": "reports/2026-11-01.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 66,
+    "dated_path": "reports/2026-11-01.events.ndjson",
+    "event_count": 70,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 4,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-01T18:27:49.624428Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 7,
+      "bot": 15,
+      "human": 3
+    },
+    "change_types": {
+      "ci_infra": 1,
+      "dependency_update": 9,
+      "docs_update": 12,
+      "release": 1,
+      "sample_update": 2
+    },
+    "event_count": 25,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/foundry-local-on-windowsserver-samples"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-sdk-for-java"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure-Samples/Cosmic-Food-RAG-app"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/azure-compute-docs"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft 365 led the visible product-area activity in this window.",
+    "4 release item(s) were detected during the window.",
+    "Start with human-authored changes in Azure/AI-Landing-Zones, microsoft/voice-agent, Azure-Samples/fibey, MicrosoftDocs/msteams-docs.",
+    "25 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 39,
+      "noisy_event_count": 16,
+      "notable_event_count": 30,
+      "product_area": "Azure",
+      "release_count": 3,
+      "repo_count": 14,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-31T22:14:20Z",
+          "headline": "com.azure.resourcemanager+azure-resourcemanager-privatetrafficmanager_1.0.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-privatetrafficmanager_1.0.0-beta.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-31T20:45:57Z",
+          "headline": "com.azure.resourcemanager+azure-resourcemanager-aiinfraoptimization_1.0.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-aiinfraoptimization_1.0.0-beta.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-10-31T18:04:19Z",
+          "headline": "com.azure.resourcemanager+azure-resourcemanager-netapp_2.6.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-netapp_2.6.0-beta.1"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 7,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/AI-Landing-Zones"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/fibey"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/azure-compute-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/azure-docs-sdk-java"
+        }
+      ]
+    },
+    {
+      "event_count": 18,
+      "noisy_event_count": 4,
+      "notable_event_count": 10,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 7,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-11-01T15:38:01Z",
+          "headline": "Align sample UI with the internal portal (streaming, react migration)",
+          "notability_score": 90,
+          "repo": "microsoft/HealthBotContainerSample",
+          "url": "https://github.com/microsoft/HealthBotContainerSample/pull/155"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-01T11:05:15Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3477"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-10-31T19:05:43Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/powerapp\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/powerapps-docs",
+          "url": "https://github.com/MicrosoftDocs/powerapps-docs/commit/d397af4e3ce29f9e6d88d6433827f80c64f86632"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/HealthBotContainerSample"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/amplifier-module-loop-streaming"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 0,
+      "notable_event_count": 2,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-01T18:13:12Z",
+          "headline": "[Doc Improvement] [Resource-specific consent] [5882817]",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14668"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-01T16:34:57Z",
+          "headline": "Graph permissions updates",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14665"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/msteams-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 1,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-01T16:41:52Z",
+          "headline": "Inline eng\\Packages.props into Directory.Packages.props.",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86271"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/roslyn"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 5,
+      "notable_event_count": 0,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/foundry-local-on-windowsserver-samples"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "e9392c5f10ef408127da56dcd62a15a76578c564",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "41336671268",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/41336671268"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-privatetrafficmanager_1.0.0-beta.1",
+      "why": "Release activity: com.azure.resourcemanager+azure-resourcemanager-privatetrafficmanager_1.0.0-beta.1"
+    },
+    {
+      "priority": 2,
+      "repo": "Azure/AI-Landing-Zones",
+      "url": "https://github.com/Azure/AI-Landing-Zones/commit/e82fb69f54794f6b2678def248f0af0c0f80ac75",
+      "why": "Feature or capability signal: docs: add native application overview diagram"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/101",
+      "why": "Fix signal: fix(webrtc): guard settings and other read routes against untrusted hosts"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure-Samples/fibey",
+      "url": "https://github.com/Azure-Samples/fibey/commit/6e30421bcd4165b6341a875c0aabe3b46f214e97",
+      "why": "Fix signal: Fix hosted agent deployment and streaming (#36)"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/msteams-docs",
+      "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14668",
+      "why": "Docs update: [Doc Improvement] [Resource-specific consent] [5882817]"
+    },
+    {
+      "priority": 6,
+      "repo": "dotnet/roslyn",
+      "url": "https://github.com/dotnet/roslyn/pull/86271",
+      "why": "Docs update: Inline eng\\Packages.props into Directory.Packages.props."
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/HealthBotContainerSample",
+      "url": "https://github.com/microsoft/HealthBotContainerSample/pull/155",
+      "why": "Sample update: Align sample UI with the internal portal (streaming, react migration)"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3477",
+      "why": "Docs update: Repo sync for protected branch"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 90,
+    "default_branch_commits": 84,
+    "filtered_repos": 2607,
+    "inventory_repos": 16730,
+    "pushed_at_candidate_repos": 90,
+    "release_count": 4,
+    "repos_with_movement": 24,
+    "repos_with_releases": 2
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-10-31T15:50:06.622669Z",
+    "state_window_enabled": true,
+    "until": "2026-11-01T18:27:49.624428Z"
+  }
+}
