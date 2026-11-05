@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-11-03T20:13:30.456907Z`
+Generated: `2026-11-05T20:46:35.779920Z`
 
 ## Latest Brief
 
@@ -9,56 +9,57 @@ Generated: `2026-11-03T20:13:30.456907Z`
 ## Current Status
 
 - Status: Fresh at latest report generation. Current status lives in `status.json`.
-- Last generated: `2026-11-03 20:11 UTC`
+- Last generated: `2026-11-05 20:44 UTC`
 - Latest artifacts: [Daily brief](latest.md), [Consumer brief](latest.consumer.md), [JSON](latest.json), [Summary](latest.summary.json), [Events](latest.events.ndjson)
 
 ## 7-Day Snapshot
 
 - Reports: 7
-- Repositories with movement: 880
-- Default-branch commits: 5059
-- Releases: 176
+- Repositories with movement: 883
+- Default-branch commits: 5370
+- Releases: 184
 
 ## 30-Day Snapshot
 
 - Reports: 30
-- Repositories with movement: 3204
-- Default-branch commits: 18662
-- Releases: 716
+- Repositories with movement: 3372
+- Default-branch commits: 20190
+- Releases: 758
 
 ## Latest Product Areas
 
 | Product area | Signal | Repos | Events | Releases | Security |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Azure | 143 | 55 | 192 | 23 | 2 |
-| Unmapped Activity | 71 | 33 | 96 | 0 | 0 |
-| Microsoft Graph | 64 | 22 | 87 | 15 | 0 |
-| .NET | 11 | 10 | 32 | 0 | 0 |
-| Identity | 10 | 2 | 10 | 0 | 2 |
-| PowerShell | 9 | 4 | 9 | 0 | 0 |
-| Developer Tools | 8 | 4 | 11 | 0 | 0 |
-| Windows | 5 | 4 | 5 | 1 | 0 |
+| Azure | 216 | 77 | 298 | 41 | 2 |
+| Unmapped Activity | 97 | 48 | 140 | 1 | 0 |
+| .NET | 30 | 15 | 51 | 0 | 0 |
+| Microsoft Graph | 27 | 19 | 57 | 1 | 0 |
+| Microsoft 365 | 19 | 11 | 23 | 1 | 0 |
+| PowerShell | 17 | 7 | 20 | 0 | 0 |
+| Identity | 15 | 3 | 15 | 0 | 0 |
+| Windows | 10 | 7 | 15 | 0 | 0 |
 
 ## Most Active Product Areas
 
 | Product area | Activity score |
 | --- | ---: |
-| Azure | 23250 |
-| Unmapped Activity | 9477 |
-| Microsoft Graph | 3913 |
-| .NET | 3697 |
-| Azure SDK | 3483 |
-| PowerShell | 2615 |
-| Azure AI | 1818 |
-| Microsoft 365 | 1371 |
-| Identity | 1338 |
-| Developer Tools | 919 |
-| Windows | 710 |
+| Azure | 23543 |
+| Unmapped Activity | 9574 |
+| Microsoft Graph | 3981 |
+| .NET | 3742 |
+| Azure SDK | 3529 |
+| PowerShell | 2646 |
+| Azure AI | 1839 |
+| Microsoft 365 | 1401 |
+| Identity | 1356 |
+| Developer Tools | 923 |
+| Windows | 727 |
 
 ## Daily Reports
 
 | Date | Repositories | Commits | Releases | High-signal | Links |
 | --- | ---: | ---: | ---: | ---: | --- |
+| 2026-11-05 | 191 | 1610 | 44 | 25 | [md](2026-11-05.md) / [json](2026-11-05.json) |
 | 2026-11-03 | 139 | 859 | 39 | 25 | [md](2026-11-03.md) / [json](2026-11-03.json) |
 | 2026-11-02 | 121 | 643 | 20 | 25 | [md](2026-11-02.md) / [json](2026-11-02.json) |
 | 2026-11-01 | 24 | 84 | 4 | 14 | [md](2026-11-01.md) / [json](2026-11-01.json) |
@@ -209,29 +210,29 @@ Generated: `2026-11-03T20:13:30.456907Z`
 
 | Repository | Reports |
 | --- | ---: |
-| [dotnet/runtime](https://github.com/dotnet/runtime) | 145 |
-| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 138 |
-| [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) | 136 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 132 |
-| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 128 |
-| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 128 |
-| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 127 |
-| [MicrosoftDocs/fabric-docs](https://github.com/MicrosoftDocs/fabric-docs) | 125 |
-| [Azure/azure-dev](https://github.com/Azure/azure-dev) | 124 |
-| [microsoft/TypeAgent](https://github.com/microsoft/TypeAgent) | 121 |
-| [MicrosoftDocs/azure-docs-sdk-java](https://github.com/MicrosoftDocs/azure-docs-sdk-java) | 121 |
-| [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs) | 120 |
-| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 119 |
-| [MicrosoftDocs/azure-docs-sdk-dotnet](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet) | 118 |
-| [MicrosoftDocs/azure-docs-sdk-node](https://github.com/MicrosoftDocs/azure-docs-sdk-node) | 118 |
-| [MicrosoftDocs/azure-docs-sdk-python](https://github.com/MicrosoftDocs/azure-docs-sdk-python) | 118 |
-| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 116 |
-| [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) | 116 |
-| [dotnet/docs](https://github.com/dotnet/docs) | 115 |
-| [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) | 113 |
-| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 112 |
-| [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs) | 111 |
-| [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn) | 110 |
-| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 109 |
-| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 109 |
+| [dotnet/runtime](https://github.com/dotnet/runtime) | 146 |
+| [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | 139 |
+| [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) | 137 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 133 |
+| [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | 129 |
+| [dotnet/roslyn](https://github.com/dotnet/roslyn) | 129 |
+| [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | 128 |
+| [MicrosoftDocs/fabric-docs](https://github.com/MicrosoftDocs/fabric-docs) | 126 |
+| [Azure/azure-dev](https://github.com/Azure/azure-dev) | 125 |
+| [microsoft/TypeAgent](https://github.com/microsoft/TypeAgent) | 122 |
+| [MicrosoftDocs/azure-docs-sdk-java](https://github.com/MicrosoftDocs/azure-docs-sdk-java) | 122 |
+| [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs) | 121 |
+| [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | 120 |
+| [MicrosoftDocs/azure-docs-sdk-dotnet](https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet) | 119 |
+| [MicrosoftDocs/azure-docs-sdk-node](https://github.com/MicrosoftDocs/azure-docs-sdk-node) | 119 |
+| [MicrosoftDocs/azure-docs-sdk-python](https://github.com/MicrosoftDocs/azure-docs-sdk-python) | 119 |
+| [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | 117 |
+| [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) | 117 |
+| [dotnet/docs](https://github.com/dotnet/docs) | 116 |
+| [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) | 114 |
+| [dotnet/msbuild](https://github.com/dotnet/msbuild) | 113 |
+| [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs) | 112 |
+| [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn) | 111 |
+| [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 110 |
+| [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 110 |
 

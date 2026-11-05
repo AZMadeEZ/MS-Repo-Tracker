@@ -1,182 +1,181 @@
-# Microsoft Ecosystem Brief - 2026-11-03
+# Microsoft Ecosystem Brief - 2026-11-05
 
-> Fresh as of 2026-11-03 20:11 UTC. 139 repos moved, 859 commits, 39 releases, 448 tracked events.
+> Fresh as of 2026-11-05 20:44 UTC. 191 repos moved, 1610 commits, 44 releases, 631 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: fix(deps): consolidate frontend security updates](https://github.com/Azure-Samples/moneta-agents/commit/b9bb4e67816795575188c1153cfdaaabe7216d7e)
+### 1. [Security-related change: [ML] Avoid secret-scanning false positive in named OneLake test](https://github.com/Azure/azure-sdk-for-python/pull/49835)
 
-- Repository: [Azure-Samples/moneta-agents](https://github.com/Azure-Samples/moneta-agents)
+- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 2. [Security-related change: fix(security): keep the XPIA envelope on channel pushes](https://github.com/microsoft/entrabot/pull/145)
+### 2. [Security-related change: [Identity] Add GitHubActionsCredential](https://github.com/Azure/azure-sdk-for-java/pull/50916)
 
-- Repository: [microsoft/entrabot](https://github.com/microsoft/entrabot)
+- Repository: [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 3. [Release activity: sdk/storage/azdatalake/v1.7.1](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/storage/azdatalake/v1.7.1)
+### 3. [Release activity: Release v5.1013.2](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1013.2)
 
-- Repository: [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go)
+- Repository: [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 4. [Release activity: azure_data_cosmos@1.1.0-beta.2](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_data_cosmos%401.1.0-beta.2)
+### 4. [Release activity: Update for azd release 1.37.3-daily.7042835](https://github.com/Azure/homebrew-azd/commit/e67169c6a099087d3c00990c7e847f9009dc0b65)
 
-- Repository: [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust)
+- Repository: [Azure/homebrew-azd](https://github.com/Azure/homebrew-azd)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 5. [Release activity: Project Operations UR73 Release Notes (#2818)](https://github.com/MicrosoftDocs/dynamics-365-project-operations/commit/9971f655ef8044d50a3668bbce48c61488877dd0)
+### 5. [Release activity: Azure.Iot.Operations.Mqtt 1.2.1 Release](https://github.com/Azure/iot-operations-sdks/releases/tag/net/mqtt/1.2.1)
 
-- Repository: [MicrosoftDocs/dynamics-365-project-operations](https://github.com/MicrosoftDocs/dynamics-365-project-operations)
+- Repository: [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 6. [Release activity: 2.2.3](https://github.com/microsoft/kiota-http-guzzle-php/releases/tag/2.2.3)
+### 6. [Release activity: Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1)
 
-- Repository: [microsoft/kiota-http-guzzle-php](https://github.com/microsoft/kiota-http-guzzle-php)
+- Repository: [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 7. [Release activity: 2.2.3](https://github.com/microsoft/kiota-serialization-form-php/releases/tag/2.2.3)
+### 7. [Release activity: Add release notes for release 2611](https://github.com/MicrosoftDocs/windows-driver-docs/commit/bd11144d7747d03044e1313e99081e6ad7762a48)
 
-- Repository: [microsoft/kiota-serialization-form-php](https://github.com/microsoft/kiota-serialization-form-php)
+- Repository: [MicrosoftDocs/windows-driver-docs](https://github.com/MicrosoftDocs/windows-driver-docs)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 8. [Release activity: 2.2.3](https://github.com/microsoft/kiota-authentication-phpleague-php/releases/tag/2.2.3)
+### 8. [Release activity: Prepare azd 1.37.3 release](https://github.com/Azure/azure-dev/pull/10842)
 
-- Repository: [microsoft/kiota-authentication-phpleague-php](https://github.com/microsoft/kiota-authentication-phpleague-php)
+- Repository: [Azure/azure-dev](https://github.com/Azure/azure-dev)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
 ## Product Area Briefings
 
 ### Azure
 
-55 repos, 192 tracked events, 23 releases, 2 security/admin signals.
+77 repos, 298 tracked events, 41 releases, 2 security/admin signals.
 
 - Likely audience: Developers, Learners, General MS consumers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [fix(deps): consolidate frontend security updates](https://github.com/Azure-Samples/moneta-agents/commit/b9bb4e67816795575188c1153cfdaaabe7216d7e) (Azure-Samples/moneta-agents)
-  - [fix(deps): consolidate Python security updates](https://github.com/Azure-Samples/moneta-agents/commit/c32a815a6a6eef45b8b5ad7550ba66ccaaba798c) (Azure-Samples/moneta-agents)
-  - [sdk/storage/azdatalake/v1.7.1](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/storage/azdatalake/v1.7.1) (Azure/azure-sdk-for-go)
+  - [[ML] Avoid secret-scanning false positive in named OneLake test](https://github.com/Azure/azure-sdk-for-python/pull/49835) (Azure/azure-sdk-for-python)
+  - [[Identity] Add GitHubActionsCredential](https://github.com/Azure/azure-sdk-for-java/pull/50916) (Azure/azure-sdk-for-java)
+  - [Release v5.1013.2](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1013.2) (Azure/LogicAppsUX)
 
 ### Unmapped Activity
 
-33 repos, 96 tracked events, 0 releases, 0 security/admin signals.
+48 repos, 140 tracked events, 1 release, 0 security/admin signals.
 
 - Likely audience: General MS consumers, Learners, Developers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Most useful links:
+  - [ci: preserve CodeQL coverage across release branches](https://github.com/microsoft/simplechat/pull/1879) (microsoft/simplechat)
+  - [Merged PR 972002: Add retrospective release notes for 0.1.0-20261023.5.3](https://github.com/microsoft/BuildXL/commit/9e02e5a204dabfd76a9609ada15149eda0fcdc20) (microsoft/BuildXL)
+  - [Merged PR 971993: Update Release-Notes.md for 0.1.0-20261030.6](https://github.com/microsoft/BuildXL/commit/873e2d98c0d8ecba41139ed89fec671b9230e285) (microsoft/BuildXL)
+
+### .NET
+
+15 repos, 51 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Learners, General MS consumers, Developers.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Project Operations UR73 Release Notes (#2818)](https://github.com/MicrosoftDocs/dynamics-365-project-operations/commit/9971f655ef8044d50a3668bbce48c61488877dd0) (MicrosoftDocs/dynamics-365-project-operations)
-  - [Fix typo in USING_WITH_PYRIGHT.md ("Pyight" -> "Pyright")](https://github.com/microsoft/pylance-release/pull/8287) (microsoft/pylance-release)
-  - [Repo sync for protected branch](https://github.com/MicrosoftDocs/fabric-docs/pull/3483) (MicrosoftDocs/fabric-docs)
+  - [Update Copilot instructions for release notes](https://github.com/dotnet/AspNetCore.Docs/pull/38072) (dotnet/AspNetCore.Docs)
+  - [Add [Experimental] to precompute API](https://github.com/dotnet/msbuild/pull/15472) (dotnet/msbuild)
+  - [Add convention builder APIs for JSON mapping](https://github.com/dotnet/efcore/pull/39513) (dotnet/efcore)
 
 ### Microsoft Graph
 
-22 repos, 87 tracked events, 15 releases, 0 security/admin signals.
+19 repos, 57 tracked events, 1 release, 0 security/admin signals.
 
 - Likely audience: Developers, General MS consumers, Learners.
 - Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [2.2.3](https://github.com/microsoft/kiota-http-guzzle-php/releases/tag/2.2.3) (microsoft/kiota-http-guzzle-php)
-  - [2.2.3](https://github.com/microsoft/kiota-serialization-form-php/releases/tag/2.2.3) (microsoft/kiota-serialization-form-php)
-  - [2.2.3](https://github.com/microsoft/kiota-authentication-phpleague-php/releases/tag/2.2.3) (microsoft/kiota-authentication-phpleague-php)
+  - [Fabric Architecture Review 2026.11.0](https://github.com/microsoft/fabric-architecture-review/releases/tag/v2026.11.0) (microsoft/fabric-architecture-review)
+  - [Release 2026.11.0: service-principal reviews and temporary workspace …](https://github.com/microsoft/fabric-architecture-review/commit/356d7fce392d303e53ff5683455186d87bdc5769) (microsoft/fabric-architecture-review)
+  - [Generated beta models and request builders](https://github.com/microsoftgraph/msgraph-beta-sdk-java/pull/1423) (microsoftgraph/msgraph-beta-sdk-java)
 
-### .NET
+### Microsoft 365
 
-10 repos, 32 tracked events, 0 releases, 0 security/admin signals.
+11 repos, 23 tracked events, 1 release, 0 security/admin signals.
 
-- Likely audience: General MS consumers, Learners, Developers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Likely audience: Learners, Developers, General MS consumers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [Fix PAL alternate signal stack leak after application reconfiguration](https://github.com/dotnet/runtime/pull/136883) (dotnet/runtime)
-  - [Invoke debugger function evaluations through managed UCO](https://github.com/dotnet/runtime/pull/133659) (dotnet/runtime)
-  - [Fix condition in target setting HotReloadBrowserToolsEnabled](https://github.com/dotnet/roslyn/pull/86287) (dotnet/roslyn)
-
-### Identity
-
-2 repos, 10 tracked events, 0 releases, 2 security/admin signals.
-
-- Likely audience: General MS consumers.
-- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
-- Most useful links:
-  - [fix(security): keep the XPIA envelope on channel pushes](https://github.com/microsoft/entrabot/pull/145) (microsoft/entrabot)
-  - [Revise documentation for sign-in every time feature](https://github.com/MicrosoftDocs/entra-docs/commit/868224e121c117b1727d4474395657c892c1d12f) (MicrosoftDocs/entra-docs)
-  - [fix(storage): keep the watched-chat list and email cursor in the memory backend](https://github.com/microsoft/entrabot/pull/142) (microsoft/entrabot)
+  - [Cleanup release v2.59.0](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3204) (OfficeDev/microsoft-teams-library-js)
+  - [v2.59.0](https://github.com/OfficeDev/microsoft-teams-library-js/releases/tag/v2.59.0) (OfficeDev/microsoft-teams-library-js)
+  - [Add credit request APIs to Cost Management API docs (beta) (#1766)](https://github.com/MicrosoftDocs/m365copilot-docs/commit/2c8880c2c62c6ee0152d82e2819ff117da6b1cbd) (MicrosoftDocs/m365copilot-docs)
 
 ### PowerShell
 
-4 repos, 9 tracked events, 0 releases, 0 security/admin signals.
+7 repos, 20 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: Admins, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Fix manifest file reference in release notes](https://github.com/SharePoint/sp-dev-docs/pull/11080) (SharePoint/sp-dev-docs)
-  - [Document SPFx 1.24.1 maintenance release](https://github.com/SharePoint/sp-dev-docs/commit/1f791de2c74eaf1ac8c261851a24c51fd513a188) (SharePoint/sp-dev-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/d487bd253557b9889a2a2a603d7d7b5b9648f049) (MicrosoftDocs/power-platform)
+  - [feat(hubs): Add opt-in Key Vault RBAC authorization for CAF/landing zone compliance](https://github.com/microsoft/finops-toolkit/pull/2249) (microsoft/finops-toolkit)
+  - [feat(agents): add support-report and support-sweep skills](https://github.com/microsoft/finops-toolkit/pull/2367) (microsoft/finops-toolkit)
+  - [fix(powershell): retry export read in CostExports integration test](https://github.com/microsoft/finops-toolkit/commit/a78b835ef2463ce577d1c3a61eb38368afb8c02d) (microsoft/finops-toolkit)
 
-### Developer Tools
+### Identity
 
-4 repos, 11 tracked events, 0 releases, 0 security/admin signals.
+3 repos, 15 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Developers, General MS consumers.
+- Likely audience: General MS consumers, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Update Docker Desktop troubleshooting and FAQ links](https://github.com/microsoft/vscode-docs/pull/10577) (microsoft/vscode-docs)
-  - [Fix the Emmet CSS snippets link](https://github.com/microsoft/vscode-docs/pull/10578) (microsoft/vscode-docs)
-  - [Fix the Fabric extension Marketplace link](https://github.com/microsoft/vscode-docs/pull/10579) (microsoft/vscode-docs)
+  - [feat: read Excel files via Graph and Work IQ; keep Work IQ output in the XPIA envelope](https://github.com/microsoft/entrabot/pull/148) (microsoft/entrabot)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/748de5167ff143a62d0cc2bfa86d696a108432de) (MicrosoftDocs/entra-docs)
+  - [Clarify CYOT provider registration application ID](https://github.com/MicrosoftDocs/entra-docs/commit/d38d53c6235a3923197fa575d4a18dc92a1dbd50) (MicrosoftDocs/entra-docs)
 
 ### Windows
 
-4 repos, 5 tracked events, 1 release, 0 security/admin signals.
+7 repos, 15 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Developers, General MS consumers.
-- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Likely audience: Developers, Learners, General MS consumers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Windows App SDK 2.6.5](https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.6.5) (microsoft/WindowsAppSDK)
-  - [chore(deps): update to October 2026 windows-drivers-rs release](https://github.com/microsoft/Windows-rust-driver-samples/pull/67) (microsoft/Windows-rust-driver-samples)
-  - [Document winrt::clock system-time conversions](https://github.com/MicrosoftDocs/winrt-related/pull/423) (MicrosoftDocs/winrt-related)
+  - [Add release notes for release 2611](https://github.com/MicrosoftDocs/windows-driver-docs/commit/bd11144d7747d03044e1313e99081e6ad7762a48) (MicrosoftDocs/windows-driver-docs)
+  - [Fix MVVMTK0045 warnings in the MVVM app template](https://github.com/microsoft/WindowsAppSDK/pull/6923) (microsoft/WindowsAppSDK)
+  - [Docs: replace invalid `ExecutionProvider.DeviceType` references in `FindAllProviders` examples](https://github.com/MicrosoftDocs/winapps-winrt-api/pull/127) (MicrosoftDocs/winapps-winrt-api)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/storage/azdatalake/v1.7.1](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/storage/azdatalake/v1.7.1) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_data_cosmos@1.1.0-beta.2](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_data_cosmos%401.1.0-beta.2) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_data_cosmos_driver@1.1.0-beta.2](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_data_cosmos_driver%401.1.0-beta.2) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_data_cosmos_macros@1.1.0-beta.2](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_data_cosmos_macros%401.1.0-beta.2) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/resourcemanager/postgresql/armpostgresqlflexibleservers/v6.0.0](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/postgresql/armpostgresqlflexibleservers/v6.0.0) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-http-guzzle-php](https://github.com/microsoft/kiota-http-guzzle-php) | [2.2.3](https://github.com/microsoft/kiota-http-guzzle-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-serialization-form-php](https://github.com/microsoft/kiota-serialization-form-php) | [2.2.3](https://github.com/microsoft/kiota-serialization-form-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-authentication-phpleague-php](https://github.com/microsoft/kiota-authentication-phpleague-php) | [2.2.3](https://github.com/microsoft/kiota-authentication-phpleague-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-serialization-text-php](https://github.com/microsoft/kiota-serialization-text-php) | [2.2.3](https://github.com/microsoft/kiota-serialization-text-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-serialization-json-php](https://github.com/microsoft/kiota-serialization-json-php) | [2.2.3](https://github.com/microsoft/kiota-serialization-json-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-abstractions-php](https://github.com/microsoft/kiota-abstractions-php) | [2.2.3](https://github.com/microsoft/kiota-abstractions-php/releases/tag/2.2.3) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-serialization-multipart-go](https://github.com/microsoft/kiota-serialization-multipart-go) | [v1.1.5](https://github.com/microsoft/kiota-serialization-multipart-go/releases/tag/v1.1.5) | New release available for consumers of this repo. |
+| Azure | [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX) | [Release v5.1013.2](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1013.2) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-storage-queue_12.19.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-queue_12.19.0b1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-storage-file-share_12.28.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-file-share_12.28.0b1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-storage-blob_12.32.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-storage-blob_12.32.0b1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks) | [Azure.Iot.Operations.Mqtt 1.2.1 Release](https://github.com/Azure/iot-operations-sdks/releases/tag/net/mqtt/1.2.1) | New release available for consumers of this repo. |
+| Azure | [Azure/iot-operations-sdks](https://github.com/Azure/iot-operations-sdks) | [Azure.Iot.Operations.Connector 1.3.0 Release](https://github.com/Azure/iot-operations-sdks/releases/tag/net/connector/1.3.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.Monitor.Workspaces_1.1.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX) | [Release v5.1017.0](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1017.0) | New release available for consumers of this repo. |
+| Azure | [Azure/dacs](https://github.com/Azure/dacs) | [v0.1.0](https://github.com/Azure/dacs/releases/tag/v0.1.0) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoft/fabric-architecture-review](https://github.com/microsoft/fabric-architecture-review) | [Fabric Architecture Review 2026.11.0](https://github.com/microsoft/fabric-architecture-review/releases/tag/v2026.11.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-dev](https://github.com/Azure/azure-dev) | [azd-ext-azure-ai-inspector_1.0.0](https://github.com/Azure/azure-dev/releases/tag/azd-ext-azure-ai-inspector_1.0.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-dev](https://github.com/Azure/azure-dev) | [azd-ext-azure-ai-projects_1.0.0](https://github.com/Azure/azure-dev/releases/tag/azd-ext-azure-ai-projects_1.0.0) | New release available for consumers of this repo. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- [Azure-Samples/moneta-agents](https://github.com/Azure-Samples/moneta-agents): [fix(deps): consolidate frontend security updates](https://github.com/Azure-Samples/moneta-agents/commit/b9bb4e67816795575188c1153cfdaaabe7216d7e)
-- [Azure-Samples/moneta-agents](https://github.com/Azure-Samples/moneta-agents): [fix(deps): consolidate Python security updates](https://github.com/Azure-Samples/moneta-agents/commit/c32a815a6a6eef45b8b5ad7550ba66ccaaba798c)
-- [microsoft/entrabot](https://github.com/microsoft/entrabot): [fix(security): keep the XPIA envelope on channel pushes](https://github.com/microsoft/entrabot/pull/145)
+- [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python): [[ML] Avoid secret-scanning false positive in named OneLake test](https://github.com/Azure/azure-sdk-for-python/pull/49835)
+- [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java): [[Identity] Add GitHubActionsCredential](https://github.com/Azure/azure-sdk-for-java/pull/50916)
 
 ## What Was Mostly Noise
 
-178 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+222 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
-- [microsoft/kiota-serialization-form-go](https://github.com/microsoft/kiota-serialization-form-go) - 5 events
-- [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) - 5 events
-- [dotnet/dotnet-api-docs](https://github.com/dotnet/dotnet-api-docs) - 5 events
-- [microsoft/kiota-http-go](https://github.com/microsoft/kiota-http-go) - 5 events
 - [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 5 events
+- [microsoft/kiota-ruby](https://github.com/microsoft/kiota-ruby) - 5 events
+- [microsoft/kiota-serialization-multipart-go](https://github.com/microsoft/kiota-serialization-multipart-go) - 5 events
+- [microsoft/kiota-serialization-form-go](https://github.com/microsoft/kiota-serialization-form-go) - 5 events
+- [microsoft/kiota-java](https://github.com/microsoft/kiota-java) - 5 events
 
-Noise mix: Dependency: 60, Docs: 45, SDK: 42, Release: 19, CI/Infra: 9, Sample: 3.
+Noise mix: Dependency: 105, Docs: 54, SDK: 23, CI/Infra: 17, Sample: 15, Release: 3, Fix: 2, Training: 2.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 24 hours from `2026-11-02T20:11:31.801667Z` to `2026-11-03T20:11:31.801667Z`.
-- Event stream: 409 commits, 39 releases.
+- Window: 50.5 hours from `2026-11-03T18:11:31.801667Z` to `2026-11-05T20:44:01.221349Z`.
+- Event stream: 587 commits, 44 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
