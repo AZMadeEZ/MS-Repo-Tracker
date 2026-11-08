@@ -1,0 +1,415 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-08.consumer.md",
+    "dated_event_stream": "reports/2026-11-08.events.ndjson",
+    "dated_markdown": "reports/2026-11-08.md",
+    "dated_report_json": "reports/2026-11-08.json",
+    "dated_summary_json": "reports/2026-11-08.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 57,
+    "dated_path": "reports/2026-11-08.events.ndjson",
+    "event_count": 62,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 5,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-08T18:24:25.676319Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 11,
+      "bot": 5
+    },
+    "change_types": {
+      "dependency_update": 1,
+      "docs_update": 11,
+      "release": 1,
+      "sample_update": 3
+    },
+    "event_count": 16,
+    "top_repos": [
+      {
+        "event_count": 3,
+        "repo": "Azure-Samples/Spec2Cloud"
+      },
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/azure-aks-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/azure-monitor-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/azure-docs"
+      },
+      {
+        "event_count": 1,
+        "repo": "MicrosoftDocs/azure-management-docs"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Developer Tools led the visible product-area activity in this window.",
+    "5 release item(s) were detected during the window.",
+    "Start with human-authored changes in microsoft/vscode-docs, MicrosoftDocs/azure-aks-docs, microsoft/voice-agent, MicrosoftDocs/azure-monitor-docs.",
+    "16 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 32,
+      "noisy_event_count": 13,
+      "notable_event_count": 27,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-08T02:41:09Z",
+          "headline": "Temporarily remove AzL support during NVIDIA container toolkit release",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/azure-aks-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/fed623cc01c328804151c50c93c07a17dcee8ba0"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-08T13:48:24Z",
+          "headline": "Add Example 36: multi-stage OTP verification showcase",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/115"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-08T10:26:40Z",
+          "headline": "Author templates as inline subagents, align runtime defaults, and add the Ignite planner sample",
+          "notability_score": 90,
+          "repo": "microsoft/voice-agent",
+          "url": "https://github.com/microsoft/voice-agent/pull/114"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs-sdk-node"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/voice-agent"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-monitor-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-aks-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 15,
+      "noisy_event_count": 0,
+      "notable_event_count": 3,
+      "product_area": "Unmapped Activity",
+      "release_count": 5,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-08T11:00:14Z",
+          "headline": "Expose exact effective-model context window in budget decisions",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-module-provider-openai",
+          "url": "https://github.com/microsoft/amplifier-module-provider-openai/pull/146"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-07T20:23:32Z",
+          "headline": "Preserve saved function-call identity when computer tools change",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-module-provider-openai",
+          "url": "https://github.com/microsoft/amplifier-module-provider-openai/pull/147"
+        },
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-11-07T16:32:28Z",
+          "headline": "Extract publishable memory-view package installation",
+          "notability_score": 90,
+          "repo": "microsoft/TypeAgent",
+          "url": "https://github.com/microsoft/TypeAgent/pull/3271"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/bobsql"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/amplifier-module-provider-openai"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/amplifier-module-context-simple"
+        }
+      ]
+    },
+    {
+      "event_count": 3,
+      "noisy_event_count": 0,
+      "notable_event_count": 3,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-08T15:25:24Z",
+          "headline": "docs: upgrade custom layout doc link to HTTPS in v1.85 release notes",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10607"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-07T19:40:40Z",
+          "headline": "Restructure remote sessions content",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10609"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 3,
+      "noisy_event_count": 1,
+      "notable_event_count": 3,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-08T08:00:42Z",
+          "headline": "Add new known GUIDs (#14831)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/26846637415a593f2bc1f986e1bf6c70d6f8252b"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-08T08:39:26Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/entra-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/59b123da699e70670d284da5ee179ba5684b32aa"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-08T08:35:48Z",
+          "headline": "Merge pull request #14837 from MicrosoftDocs/main",
+          "notability_score": 70,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/2392be2334ada1a53a9715953734be83b3b39377"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/entra-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 0,
+      "notable_event_count": 1,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-08T17:38:32Z",
+          "headline": "fix(demo): Keep 3 months on the demo version being built",
+          "notability_score": 90,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2408"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/roslyn"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/react-native-windows-samples"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "553229c946bf0ad3dbb80515dab9c1a3c167d22a",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "42509785823",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/42509785823"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/vscode-docs",
+      "url": "https://github.com/microsoft/vscode-docs/pull/10607",
+      "why": "Release activity: docs: upgrade custom layout doc link to HTTPS in v1.85 release notes"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/azure-aks-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-aks-docs/commit/fed623cc01c328804151c50c93c07a17dcee8ba0",
+      "why": "Release activity: Temporarily remove AzL support during NVIDIA container toolkit release"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/voice-agent",
+      "url": "https://github.com/microsoft/voice-agent/pull/115",
+      "why": "Feature or capability signal: Add Example 36: multi-stage OTP verification showcase"
+    },
+    {
+      "priority": 4,
+      "repo": "MicrosoftDocs/azure-monitor-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-monitor-docs/commit/13d5a8d50a7442bb3e6b2f9c23794cea9f4d55b1",
+      "why": "Feature or capability signal: Add Azure Arc-enabled System Center Virtual Machine Manager reliabili\u2026"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/26846637415a593f2bc1f986e1bf6c70d6f8252b",
+      "why": "Feature or capability signal: Add new known GUIDs (#14831)"
+    },
+    {
+      "priority": 6,
+      "repo": "microsoft/finops-toolkit",
+      "url": "https://github.com/microsoft/finops-toolkit/pull/2408",
+      "why": "Fix signal: fix(demo): Keep 3 months on the demo version being built"
+    },
+    {
+      "priority": 7,
+      "repo": "MicrosoftDocs/azure-docs-sdk-node",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/7921a7371b69fa495a85a53e63da3ed73d4617c1",
+      "why": "Docs update: Update docs metadata"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/2c09cb2be8c4b46e0c6ea31c59affdf1c7df5df9",
+      "why": "Docs update: Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 51,
+    "default_branch_commits": 70,
+    "filtered_repos": 2568,
+    "inventory_repos": 16759,
+    "pushed_at_candidate_repos": 51,
+    "release_count": 5,
+    "repos_with_movement": 21,
+    "repos_with_releases": 1
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-07T16:05:43.479049Z",
+    "state_window_enabled": true,
+    "until": "2026-11-08T18:24:25.676319Z"
+  }
+}

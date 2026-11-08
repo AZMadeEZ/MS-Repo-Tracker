@@ -1,178 +1,151 @@
-# Microsoft Ecosystem Brief - 2026-11-07
+# Microsoft Ecosystem Brief - 2026-11-08
 
-> Fresh as of 2026-11-07 18:05 UTC. 97 repos moved, 440 commits, 13 releases, 248 tracked events.
+> Fresh as of 2026-11-08 18:24 UTC. 21 repos moved, 70 commits, 5 releases, 62 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: fix: isolate credentialed PR evaluation from candidate code](https://github.com/Azure/agentops/pull/547)
+### 1. [Release activity: docs: upgrade custom layout doc link to HTTPS in v1.85 release notes](https://github.com/microsoft/vscode-docs/pull/10607)
 
-- Repository: [Azure/agentops](https://github.com/Azure/agentops)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 2. [Release activity: @azure/core-xml_1.6.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-xml_1.6.1)
-
-- Repository: [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js)
+- Repository: [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 3. [Release activity: Merge new module from release branch to main. (#56749)](https://github.com/MicrosoftDocs/learn/commit/a923a3731c91b195cb6283c968c41381b0226de3)
+### 2. [Release activity: Temporarily remove AzL support during NVIDIA container toolkit release](https://github.com/MicrosoftDocs/azure-aks-docs/commit/fed623cc01c328804151c50c93c07a17dcee8ba0)
 
-- Repository: [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn)
+- Repository: [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 4. [Release activity: 2.6 Experimental (2.6.6-experimental) 🧪](https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.6.6-exp)
+### 3. [Feature or capability signal: Add Example 36: multi-stage OTP verification showcase](https://github.com/microsoft/voice-agent/pull/115)
 
-- Repository: [microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [microsoft/voice-agent](https://github.com/microsoft/voice-agent)
+- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
 
-### 5. [Release activity: Release v5.1013.3](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1013.3)
+### 4. [Feature or capability signal: Add Azure Arc-enabled System Center Virtual Machine Manager reliabili…](https://github.com/MicrosoftDocs/azure-monitor-docs/commit/13d5a8d50a7442bb3e6b2f9c23794cea9f4d55b1)
 
-- Repository: [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs)
+- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
 
-### 6. [Release activity: 11/6 publish 2](https://github.com/MicrosoftDocs/teams-sdk-python/pull/38)
+### 5. [Feature or capability signal: Add new known GUIDs (#14831)](https://github.com/MicrosoftDocs/entra-docs/commit/26846637415a593f2bc1f986e1bf6c70d6f8252b)
 
-- Repository: [MicrosoftDocs/teams-sdk-python](https://github.com/MicrosoftDocs/teams-sdk-python)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs)
+- Why it matters: Scan for new capability or sample behavior that may be useful to builders.
 
-### 7. [Release activity: [Storage] Update versions after STG105 beta release](https://github.com/Azure/azure-sdk-for-python/pull/49852)
+### 6. [Fix signal: fix(demo): Keep 3 months on the demo version being built](https://github.com/microsoft/finops-toolkit/pull/2408)
 
-- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit)
+- Why it matters: Review if you depend on this area; it may remove a known rough edge.
 
-### 8. [Release activity: Add a release-teamsjs skill for the Prod, SDF beta and DDL releases](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3199)
+### 7. [Docs update: Update docs metadata](https://github.com/MicrosoftDocs/azure-docs-sdk-node/commit/7921a7371b69fa495a85a53e63da3ed73d4617c1)
 
-- Repository: [OfficeDev/microsoft-teams-library-js](https://github.com/OfficeDev/microsoft-teams-library-js)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [MicrosoftDocs/azure-docs-sdk-node](https://github.com/MicrosoftDocs/azure-docs-sdk-node)
+- Why it matters: Review for guidance, learning, reference, or sample changes that may affect downstream readers.
+
+### 8. [Docs update: Merging changes synced from https://github.com/MicrosoftDocs/azure-do…](https://github.com/MicrosoftDocs/azure-docs/commit/2c09cb2be8c4b46e0c6ea31c59affdf1c7df5df9)
+
+- Repository: [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs)
+- Why it matters: Review for guidance, learning, reference, or sample changes that may affect downstream readers.
 
 ## Product Area Briefings
 
 ### Azure
 
-34 repos, 101 tracked events, 9 releases, 2 security/admin signals.
+9 repos, 32 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Developers, Learners, General MS consumers.
-- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
+- Likely audience: Learners, Developers, General MS consumers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [fix: isolate credentialed PR evaluation from candidate code](https://github.com/Azure/agentops/pull/547) (Azure/agentops)
-  - [@azure/core-xml_1.6.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-xml_1.6.1) (Azure/azure-sdk-for-js)
-  - [@typespec/ts-http-runtime_0.3.10](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40typespec/ts-http-runtime_0.3.10) (Azure/azure-sdk-for-js)
+  - [Temporarily remove AzL support during NVIDIA container toolkit release](https://github.com/MicrosoftDocs/azure-aks-docs/commit/fed623cc01c328804151c50c93c07a17dcee8ba0) (MicrosoftDocs/azure-aks-docs)
+  - [Add Example 36: multi-stage OTP verification showcase](https://github.com/microsoft/voice-agent/pull/115) (microsoft/voice-agent)
+  - [Author templates as inline subagents, align runtime defaults, and add the Ignite planner sample](https://github.com/microsoft/voice-agent/pull/114) (microsoft/voice-agent)
 
 ### Unmapped Activity
 
-28 repos, 73 tracked events, 3 releases, 0 security/admin signals.
+6 repos, 15 tracked events, 5 releases, 0 security/admin signals.
 
-- Likely audience: General MS consumers, Learners, Developers.
+- Likely audience: General MS consumers, Developers, Learners.
 - Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [Merge new module from release branch to main. (#56749)](https://github.com/MicrosoftDocs/learn/commit/a923a3731c91b195cb6283c968c41381b0226de3) (MicrosoftDocs/learn)
-  - [First draft of module in my fork of release branch (#56747)](https://github.com/MicrosoftDocs/learn/commit/81a5ce8a74a23490a389d16fecd21c5ea84d760d) (MicrosoftDocs/learn)
-  - [Persona Workshop 0.6.0](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.6.0) (microsoft/amplifier-persona-workshop)
-
-### .NET
-
-7 repos, 19 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Learners, General MS consumers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Add support for uninstalling .NET 11](https://github.com/dotnet/cli-lab/pull/450) (dotnet/cli-lab)
-  - [Add runtime documentation backport skill](https://github.com/dotnet/dotnet-api-docs/pull/13299) (dotnet/dotnet-api-docs)
-  - [Fix typo in distribution-packaging.md](https://github.com/dotnet/docs/pull/56777) (dotnet/docs)
-
-### Microsoft Graph
-
-14 repos, 21 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers, General MS consumers, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [ci: prepare for merge queue](https://github.com/microsoft/kiota-python/pull/842) (microsoft/kiota-python)
-  - [ci: prepare for merge queue](https://github.com/microsoft/kiota-serialization-form-go/pull/157) (microsoft/kiota-serialization-form-go)
-  - [ci: prepare for merge queue](https://github.com/microsoft/kiota-http-go/pull/298) (microsoft/kiota-http-go)
-
-### Microsoft 365
-
-6 repos, 13 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers, General MS consumers, Learners.
-- Reader takeaway: Scan top links for meaningful guidance or sample movement.
-- Most useful links:
-  - [11/6 publish 2](https://github.com/MicrosoftDocs/teams-sdk-python/pull/38) (MicrosoftDocs/teams-sdk-python)
-  - [Fix release date for Teams SDK version 2.2.0](https://github.com/MicrosoftDocs/teams-sdk-python/pull/37) (MicrosoftDocs/teams-sdk-python)
-  - [Add a release-teamsjs skill for the Prod, SDF beta and DDL releases](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3199) (OfficeDev/microsoft-teams-library-js)
-
-### Identity
-
-2 repos, 7 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: General MS consumers, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [add link to second CPS article](https://github.com/MicrosoftDocs/entra-docs/commit/6b6e5da18df73416da35014dfa16d3ffea7d36d0) (MicrosoftDocs/entra-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/38d23554938fa37c97496d9d16dc69c8fc74d408) (MicrosoftDocs/entra-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/5c982f2b5f933ea3cd90aeed2c832105798f50a8) (MicrosoftDocs/entra-docs)
-
-### PowerShell
-
-3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Admins, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Add Intune Remediations scripts that repair missing Universal Print printers](https://github.com/microsoft/universal-print-resources/pull/27) (microsoft/universal-print-resources)
-  - [Shutdown synchronization fixes](https://github.com/microsoft/winget-cli/pull/6656) (microsoft/winget-cli)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/71a5423a1cffff45739b8801fc08770dc9ca5a27) (MicrosoftDocs/power-platform)
+  - [Expose exact effective-model context window in budget decisions](https://github.com/microsoft/amplifier-module-provider-openai/pull/146) (microsoft/amplifier-module-provider-openai)
+  - [Preserve saved function-call identity when computer tools change](https://github.com/microsoft/amplifier-module-provider-openai/pull/147) (microsoft/amplifier-module-provider-openai)
+  - [Extract publishable memory-view package installation](https://github.com/microsoft/TypeAgent/pull/3271) (microsoft/TypeAgent)
 
 ### Developer Tools
 
-1 repo, 4 tracked events, 0 releases, 0 security/admin signals.
+1 repo, 3 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Most useful links:
+  - [docs: upgrade custom layout doc link to HTTPS in v1.85 release notes](https://github.com/microsoft/vscode-docs/pull/10607) (microsoft/vscode-docs)
+  - [Restructure remote sessions content](https://github.com/microsoft/vscode-docs/pull/10609) (microsoft/vscode-docs)
+
+### Identity
+
+1 repo, 3 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: General MS consumers.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Repo sync for protected branch](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11487) (MicrosoftDocs/visualstudio-docs)
+  - [Add new known GUIDs (#14831)](https://github.com/MicrosoftDocs/entra-docs/commit/26846637415a593f2bc1f986e1bf6c70d6f8252b) (MicrosoftDocs/entra-docs)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/59b123da699e70670d284da5ee179ba5684b32aa) (MicrosoftDocs/entra-docs)
+  - [Merge pull request #14837 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/entra-docs/commit/2392be2334ada1a53a9715953734be83b3b39377) (MicrosoftDocs/entra-docs)
+
+### PowerShell
+
+1 repo, 1 tracked event, 0 releases, 0 security/admin signals.
+
+- Likely audience: Learners.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Most useful links:
+  - [fix(demo): Keep 3 months on the demo version being built](https://github.com/microsoft/finops-toolkit/pull/2408) (microsoft/finops-toolkit)
+
+### .NET
+
+3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: General MS consumers, Learners, Developers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+
+### Windows
+
+1 repo, 1 tracked event, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-xml_1.6.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-xml_1.6.1) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@typespec/ts-http-runtime_0.3.10](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40typespec/ts-http-runtime_0.3.10) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-client_1.11.2](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-client_1.11.2) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-lro_3.4.2](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-lro_3.4.2) | New release available for consumers of this repo. |
-| Windows | [microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK) | [2.6 Experimental (2.6.6-experimental) 🧪](https://github.com/microsoft/WindowsAppSDK/releases/tag/v2.6.6-exp) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX) | [Release v5.1013.3](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1013.3) | New release available for consumers of this repo. |
-| Azure | [Azure/agentops](https://github.com/Azure/agentops) | [v0.16.2](https://github.com/Azure/agentops/releases/tag/v0.16.2) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/data/azcosmos/v1.6.0-beta.5](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/data/azcosmos/v1.6.0-beta.5) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/cosmos_4.10.2](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/cosmos_4.10.2) | New release available for consumers of this repo. |
-| Unknown | [microsoft/dbt-fabricspark](https://github.com/microsoft/dbt-fabricspark) | [v1.13.12](https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.12) | New release available for consumers of this repo. |
-| Unknown | [microsoft/amplifier-persona-workshop](https://github.com/microsoft/amplifier-persona-workshop) | [Persona Workshop 0.6.0](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.6.0) | New release available for consumers of this repo. |
-| Unknown | [microsoft/amplifier-acp-lab](https://github.com/microsoft/amplifier-acp-lab) | [ACP Lab 0.4.0](https://github.com/microsoft/amplifier-acp-lab/releases/tag/v0.4.0) | New release available for consumers of this repo. |
+| Unmapped Activity | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-rest-pipeline_1.25.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-rest-pipeline_1.25.1) | New release available for consumers of this repo. |
+| Unmapped Activity | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-xml_1.6.1](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-xml_1.6.1) | New release available for consumers of this repo. |
+| Unmapped Activity | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@typespec/ts-http-runtime_0.3.10](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40typespec/ts-http-runtime_0.3.10) | Pre-release; inspect before adopting broadly. |
+| Unmapped Activity | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-client_1.11.2](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-client_1.11.2) | New release available for consumers of this repo. |
+| Unmapped Activity | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/core-lro_3.4.2](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/core-lro_3.4.2) | New release available for consumers of this repo. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- [Azure/agentops](https://github.com/Azure/agentops): [fix: isolate credentialed PR evaluation from candidate code](https://github.com/Azure/agentops/pull/547)
+- No security/admin-sensitive notable changes were selected.
 
 ## What Was Mostly Noise
 
-82 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+16 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
-- [MicrosoftDocs/azure-compute-docs](https://github.com/MicrosoftDocs/azure-compute-docs) - 5 events
-- [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) - 5 events
-- [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) - 4 events
-- [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) - 4 events
-- [microsoft/kiota](https://github.com/microsoft/kiota) - 4 events
+- [Azure-Samples/Spec2Cloud](https://github.com/Azure-Samples/Spec2Cloud) - 3 events
+- [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) - 3 events
+- [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) - 2 events
+- [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) - 2 events
+- [MicrosoftDocs/azure-management-docs](https://github.com/MicrosoftDocs/azure-management-docs) - 1 event
 
-Noise mix: Docs: 43, SDK: 17, Dependency: 14, Sample: 4, Release: 2, CI/Infra: 1, Training: 1.
+Noise mix: Docs: 11, Sample: 3, Release: 1, Dependency: 1.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 24.1 hours from `2026-11-06T17:59:44.639331Z` to `2026-11-07T18:05:43.479049Z`.
-- Event stream: 235 commits, 13 releases.
+- Window: 26.3 hours from `2026-11-07T16:05:43.479049Z` to `2026-11-08T18:24:25.676319Z`.
+- Event stream: 57 commits, 5 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
