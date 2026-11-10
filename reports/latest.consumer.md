@@ -1,182 +1,184 @@
-# Microsoft Ecosystem Brief - 2026-11-09
+# Microsoft Ecosystem Brief - 2026-11-10
 
-> Fresh as of 2026-11-09 23:02 UTC. 115 repos moved, 587 commits, 30 releases, 367 tracked events.
+> Fresh as of 2026-11-10 20:30 UTC. 131 repos moved, 786 commits, 39 releases, 417 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: Sync Rust article wording with the published Security Blog](https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51)
+### 1. [Security-related change: Complete Android.Security XML documentation](https://github.com/dotnet/android-api-docs/pull/1319)
+
+- Repository: [dotnet/android-api-docs](https://github.com/dotnet/android-api-docs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 2. [Security-related change: Add multicloud extended security updates sql server (#3044)](https://github.com/MicrosoftDocs/azure-management-docs/commit/4adf3803ed3fbb790269fa6fa015f428edecb99d)
+
+- Repository: [MicrosoftDocs/azure-management-docs](https://github.com/MicrosoftDocs/azure-management-docs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 3. [Security-related change: Add password management and a unified credentials list](https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples/pull/70)
+
+- Repository: [Azure-Samples/ms-identity-ciam-native-javascript-samples](https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 4. [Security-related change: Document password updates in the credential management API (#14808)](https://github.com/MicrosoftDocs/entra-docs/commit/200f25103eadac6fa0af2ce361549f698bbe4029)
+
+- Repository: [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 5. [Security-related change: Sync Rust article wording with the published Security Blog](https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51)
 
 - Repository: [microsoft/forge-lab](https://github.com/microsoft/forge-lab)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 2. [Security-related change: Revise security pop-up instructions in build guide](https://github.com/microsoft/MCAPSTechConnect26-LAB483/commit/3e006776e35773d669d87862f1931637c8b11ffe)
-
-- Repository: [microsoft/MCAPSTechConnect26-LAB483](https://github.com/microsoft/MCAPSTechConnect26-LAB483)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 3. [Security-related change: Enable secretless OBO authentication in DAB using Workload Identity Federation](https://github.com/Azure/data-api-builder/pull/3880)
-
-- Repository: [Azure/data-api-builder](https://github.com/Azure/data-api-builder)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 4. [Release activity: azure-iot-ops 2.11.2](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-ops-2.11.2)
-
-- Repository: [Azure/azure-cli-extensions](https://github.com/Azure/azure-cli-extensions)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 5. [Release activity: Update release notes](https://github.com/Azure/logicapps/pull/1578)
-
-- Repository: [Azure/logicapps](https://github.com/Azure/logicapps)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 6. [Release activity: [Attestation] Prepare 1.0.2 release](https://github.com/Azure/azure-sdk-for-js/pull/40722)
+### 6. [Release activity: @azure/template_1.0.13-beta.7060330](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/template_1.0.13-beta.7060330)
 
 - Repository: [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 7. [Release activity: Update for azd release 1.38.0-beta.1-daily.7054853](https://github.com/Azure/homebrew-azd/commit/00e99a45985ed5c7071fff4d27cab55a90de41f1)
+### 7. [Release activity: azure-mgmt-redisenterprise_4.1.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-redisenterprise_4.1.0b1)
 
-- Repository: [Azure/homebrew-azd](https://github.com/Azure/homebrew-azd)
+- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 8. [Release activity: Fix release pipelines failing at 'View Published Package URLs' (stale artifact path)](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3187)
+### 8. [Release activity: com.azure.resourcemanager+azure-resourcemanager-horizondb_1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-horizondb_1.0.0-beta.4)
 
-- Repository: [OfficeDev/microsoft-teams-library-js](https://github.com/OfficeDev/microsoft-teams-library-js)
+- Repository: [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
 ## Product Area Briefings
 
 ### Azure
 
-49 repos, 138 tracked events, 16 releases, 1 security/admin signal.
+59 repos, 188 tracked events, 24 releases, 2 security/admin signals.
 
 - Likely audience: Developers, Learners, General MS consumers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Enable secretless OBO authentication in DAB using Workload Identity Federation](https://github.com/Azure/data-api-builder/pull/3880) (Azure/data-api-builder)
-  - [azure-iot-ops 2.11.2](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-ops-2.11.2) (Azure/azure-cli-extensions)
-  - [azure-iot 1.1.0b1](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-1.1.0b1) (Azure/azure-cli-extensions)
+  - [Add multicloud extended security updates sql server (#3044)](https://github.com/MicrosoftDocs/azure-management-docs/commit/4adf3803ed3fbb790269fa6fa015f428edecb99d) (MicrosoftDocs/azure-management-docs)
+  - [Add password management and a unified credentials list](https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples/pull/70) (Azure-Samples/ms-identity-ciam-native-javascript-samples)
+  - [@azure/template_1.0.13-beta.7060330](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/template_1.0.13-beta.7060330) (Azure/azure-sdk-for-js)
 
 ### Unmapped Activity
 
-25 repos, 78 tracked events, 4 releases, 1 security/admin signal.
+31 repos, 85 tracked events, 4 releases, 1 security/admin signal.
+
+- Likely audience: General MS consumers, Developers, Learners.
+- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
+- Most useful links:
+  - [Sync Rust article wording with the published Security Blog](https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51) (microsoft/forge-lab)
+  - [Remove links to release plans (#1257)](https://github.com/MicrosoftDocs/ai-builder/commit/b3a52449b6e24ad47d6ff969ecfd90a608311541) (MicrosoftDocs/ai-builder)
+  - [script_version(1.2.13): harden installation and persist MDC provisioning](https://github.com/microsoft/mdatp-xplat/pull/264) (microsoft/mdatp-xplat)
+
+### .NET
+
+10 repos, 42 tracked events, 10 releases, 1 security/admin signal.
 
 - Likely audience: General MS consumers, Learners, Developers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Sync Rust article wording with the published Security Blog](https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51) (microsoft/forge-lab)
-  - [release rust-std-memory-safety](https://github.com/microsoft/forge-lab/commit/55b9a3953caf8731d2e1cdda33c31f0487e139ee) (microsoft/forge-lab)
-  - [WMA 4.2.3.0 and 4.3.0.0 release schedule and 4.2.3.0 release notes (#…](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/commit/1e863d64e5e846c9a0bab1ee47f278078c937fd5) (MicrosoftDocs/dynamics-365-unified-operations-public)
+  - [Complete Android.Security XML documentation](https://github.com/dotnet/android-api-docs/pull/1319) (dotnet/android-api-docs)
+  - [.NET 10.0.15](https://github.com/dotnet/runtime/releases/tag/v10.0.15) (dotnet/runtime)
+  - [.NET 9.0.23](https://github.com/dotnet/runtime/releases/tag/v9.0.23) (dotnet/runtime)
 
 ### Microsoft Graph
 
-18 repos, 76 tracked events, 10 releases, 0 security/admin signals.
+17 repos, 60 tracked events, 1 release, 0 security/admin signals.
 
 - Likely audience: Developers, General MS consumers, Learners.
 - Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [microsoft_kiota_serialization_multipart: v0.0.5](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_multipart-v0.0.5) (microsoft/kiota-dart)
-  - [microsoft_kiota_serialization_json: v0.0.11](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_json-v0.0.11) (microsoft/kiota-dart)
-  - [microsoft_kiota_serialization_form: v0.0.7](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_form-v0.0.7) (microsoft/kiota-dart)
-
-### .NET
-
-9 repos, 31 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: Developers, General MS consumers, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Fix nullable annotation warning from nameof emission for a generic component parameter](https://github.com/dotnet/roslyn/pull/86311) (dotnet/roslyn)
-  - [Allow Razor utilities package on non-Windows](https://github.com/dotnet/roslyn/pull/86349) (dotnet/roslyn)
-  - [Remove plan-first requirement from agent instructions](https://github.com/dotnet/roslyn/pull/86353) (dotnet/roslyn)
+  - [Fabric Architecture Review 2026.11.1](https://github.com/microsoft/fabric-architecture-review/releases/tag/v2026.11.1) (microsoft/fabric-architecture-review)
+  - [Release 2026.11.1: accept regional owner-model refresh polling locations](https://github.com/microsoft/fabric-architecture-review/commit/4610cf595f79f85cefb7865473ae0da36949ae55) (microsoft/fabric-architecture-review)
+  - [fix(serialization): emit normalized ISO 8601 durations](https://github.com/microsoft/kiota-dart/pull/176) (microsoft/kiota-dart)
 
 ### Identity
 
-3 repos, 13 tracked events, 0 releases, 0 security/admin signals.
+3 repos, 14 tracked events, 0 releases, 1 security/admin signal.
 
 - Likely audience: Learners, General MS consumers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/7a8f426815c5929226ba385fb5524a741fee23f4) (MicrosoftDocs/dynamics365smb-devitpro-pb)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/6eb04b2fe92a7e9b7d3b94615b2dcc80a2c6bb09) (MicrosoftDocs/dynamics365smb-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/entra-do…](https://github.com/MicrosoftDocs/entra-docs/commit/523f3dd86df8938363d761064d4465c56977c43e) (MicrosoftDocs/entra-docs)
+  - [Document password updates in the credential management API (#14808)](https://github.com/MicrosoftDocs/entra-docs/commit/200f25103eadac6fa0af2ce361549f698bbe4029) (MicrosoftDocs/entra-docs)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/24ee336802727121f2725471ab8c861c739eedfc) (MicrosoftDocs/dynamics365smb-docs)
+  - [Remove Preview from clear attribute values navigation (#14796)](https://github.com/MicrosoftDocs/entra-docs/commit/749c88404158eed957d73d95668441384a644f4b) (MicrosoftDocs/entra-docs)
 
 ### PowerShell
 
-5 repos, 12 tracked events, 0 releases, 0 security/admin signals.
+7 repos, 12 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Learners, Admins.
+- Likely audience: Admins, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Add multilingual self service agent reference architecture (#12163)](https://github.com/MicrosoftDocs/power-platform/commit/7fc78075f0015bc13df070b962566af9e7e4ee2f) (MicrosoftDocs/power-platform)
-  - [Fix Cosmos provisioning, initialization retries, and health checks](https://github.com/MicrosoftLearning/mslearn-devops/pull/51) (MicrosoftLearning/mslearn-devops)
-  - [fix(demo): Keep 3 months on the demo version being built](https://github.com/microsoft/finops-toolkit/pull/2408) (microsoft/finops-toolkit)
+  - [fix(hubs): Normalize x_BillingProfileId on Actual and Amortized paths](https://github.com/microsoft/finops-toolkit/pull/2409) (microsoft/finops-toolkit)
+  - [Update README.md](https://github.com/microsoft/Federal-Business-Applications/commit/6a352586f8829687708c4a7d17b2d29cadd0df68) (microsoft/Federal-Business-Applications)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/9e4c7dbec59241ed6e752c5c463d01631be3e813) (MicrosoftDocs/power-platform)
 
 ### Microsoft 365
 
-4 repos, 8 tracked events, 0 releases, 1 security/admin signal.
+3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Learners, General MS consumers, Developers.
-- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
+- Likely audience: General MS consumers, Developers, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Revise security pop-up instructions in build guide](https://github.com/microsoft/MCAPSTechConnect26-LAB483/commit/3e006776e35773d669d87862f1931637c8b11ffe) (microsoft/MCAPSTechConnect26-LAB483)
+  - [Cover the imported release templates in the release pipelines instruction](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3205) (OfficeDev/microsoft-teams-library-js)
   - [Fix release pipelines failing at 'View Published Package URLs' (stale artifact path)](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3187) (OfficeDev/microsoft-teams-library-js)
-  - [Add read-only release checks to the release-teamsjs skill](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3200) (OfficeDev/microsoft-teams-library-js)
+  - [Add new page for ABS agent auth config](https://github.com/MicrosoftDocs/msteams-docs/pull/14569) (MicrosoftDocs/msteams-docs)
 
 ### Developer Tools
 
-2 repos, 8 tracked events, 0 releases, 0 security/admin signals.
+1 repo, 5 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: Developers, General MS consumers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Likely audience: Developers.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
 - Most useful links:
-  - [Update Insiders release notes](https://github.com/microsoft/vscode-docs/pull/10615) (microsoft/vscode-docs)
-  - [docs(setup): document PATH verification and unrecognized command troubleshooting on Windows](https://github.com/microsoft/vscode-docs/pull/10614) (microsoft/vscode-docs)
-  - [Correct terminal confirmOnExit description](https://github.com/microsoft/vscode-docs/pull/10611) (microsoft/vscode-docs)
+  - [Update issue links for recovery release](https://github.com/microsoft/vscode-docs/pull/10629) (microsoft/vscode-docs)
+  - [Fix issue link](https://github.com/microsoft/vscode-docs/pull/10630) (microsoft/vscode-docs)
+  - [Document --profile-temp for extension debugging in isolated profiles (fixes #6220)](https://github.com/microsoft/vscode-docs/pull/10608) (microsoft/vscode-docs)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/azure-cli-extensions](https://github.com/Azure/azure-cli-extensions) | [azure-iot-ops 2.11.2](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-ops-2.11.2) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-cli-extensions](https://github.com/Azure/azure-cli-extensions) | [azure-iot 1.1.0b1](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-1.1.0b1) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-cli-extensions](https://github.com/Azure/azure-cli-extensions) | [azure-iot 1.0.0](https://github.com/Azure/azure-cli-extensions/releases/tag/azure-iot-1.0.0) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_storage_blob@1.2.0-beta.1](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_storage_blob%401.2.0-beta.1) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_storage_sas@1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_storage_sas%401.1.0-beta.1) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | [azure_storage_common@1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-rust/releases/tag/azure_storage_common%401.1.0-beta.1) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure-Samples/azuresandbox](https://github.com/Azure-Samples/azuresandbox) | [AzureSandbox v6.0.7](https://github.com/Azure-Samples/azuresandbox/releases/tag/v6.0.7) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure+azure-data-appconfiguration_1.12.0](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-data-appconfiguration_1.12.0) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-dart](https://github.com/microsoft/kiota-dart) | [microsoft_kiota_serialization_multipart: v0.0.5](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_multipart-v0.0.5) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-dart](https://github.com/microsoft/kiota-dart) | [microsoft_kiota_serialization_json: v0.0.11](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_json-v0.0.11) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-dart](https://github.com/microsoft/kiota-dart) | [microsoft_kiota_serialization_form: v0.0.7](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_serialization_form-v0.0.7) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota-dart](https://github.com/microsoft/kiota-dart) | [microsoft_kiota_http: v0.0.8](https://github.com/microsoft/kiota-dart/releases/tag/microsoft_kiota_http-v0.0.8) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/template_1.0.13-beta.7060330](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/template_1.0.13-beta.7060330) | Pre-release; inspect before adopting broadly. |
+| Unmapped Activity | [Azure-Samples/azure-ai-vision-sdk](https://github.com/Azure-Samples/azure-ai-vision-sdk) | [Azure AI Vision SDK 1.5.2 Release](https://github.com/Azure-Samples/azure-ai-vision-sdk/releases/tag/1.5.2) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-redisenterprise_4.1.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-redisenterprise_4.1.0b1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-horizondb_1.0.0b4](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-horizondb_1.0.0b4) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure.resourcemanager+azure-resourcemanager-horizondb_1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-horizondb_1.0.0-beta.4) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure-Samples/azure-finops-agent](https://github.com/Azure-Samples/azure-finops-agent) | [v0.5.1 — Fixes found by the post-release evaluations](https://github.com/Azure-Samples/azure-finops-agent/releases/tag/v0.5.1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/resourcemanager/horizondb/armhorizondb/v0.4.0](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/resourcemanager/horizondb/armhorizondb/v0.4.0) | Pre-release; inspect before adopting broadly. |
+| Unmapped Activity | [dotnet/templating](https://github.com/dotnet/templating) | [.NET 10.0.15](https://github.com/dotnet/templating/releases/tag/v10.0.404) | New release available for consumers of this repo. |
+| .NET | [dotnet/runtime](https://github.com/dotnet/runtime) | [.NET 10.0.15](https://github.com/dotnet/runtime/releases/tag/v10.0.15) | New release available for consumers of this repo. |
+| .NET | [dotnet/efcore](https://github.com/dotnet/efcore) | [.NET 10.0.15](https://github.com/dotnet/efcore/releases/tag/v10.0.15) | New release available for consumers of this repo. |
+| Unmapped Activity | [dotnet/templating](https://github.com/dotnet/templating) | [.NET 9.0.23](https://github.com/dotnet/templating/releases/tag/v9.0.321) | New release available for consumers of this repo. |
+| .NET | [dotnet/runtime](https://github.com/dotnet/runtime) | [.NET 9.0.23](https://github.com/dotnet/runtime/releases/tag/v9.0.23) | New release available for consumers of this repo. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
+- [dotnet/android-api-docs](https://github.com/dotnet/android-api-docs): [Complete Android.Security XML documentation](https://github.com/dotnet/android-api-docs/pull/1319)
+- [MicrosoftDocs/azure-management-docs](https://github.com/MicrosoftDocs/azure-management-docs): [Add multicloud extended security updates sql server (#3044)](https://github.com/MicrosoftDocs/azure-management-docs/commit/4adf3803ed3fbb790269fa6fa015f428edecb99d)
+- [Azure-Samples/ms-identity-ciam-native-javascript-samples](https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples): [Add password management and a unified credentials list](https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples/pull/70)
+- [MicrosoftDocs/entra-docs](https://github.com/MicrosoftDocs/entra-docs): [Document password updates in the credential management API (#14808)](https://github.com/MicrosoftDocs/entra-docs/commit/200f25103eadac6fa0af2ce361549f698bbe4029)
 - [microsoft/forge-lab](https://github.com/microsoft/forge-lab): [Sync Rust article wording with the published Security Blog](https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51)
-- [microsoft/MCAPSTechConnect26-LAB483](https://github.com/microsoft/MCAPSTechConnect26-LAB483): [Revise security pop-up instructions in build guide](https://github.com/microsoft/MCAPSTechConnect26-LAB483/commit/3e006776e35773d669d87862f1931637c8b11ffe)
-- [Azure/data-api-builder](https://github.com/Azure/data-api-builder): [Enable secretless OBO authentication in DAB using Workload Identity Federation](https://github.com/Azure/data-api-builder/pull/3880)
 
 ## What Was Mostly Noise
 
-134 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+148 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
-- [microsoft/kiota-abstractions-go](https://github.com/microsoft/kiota-abstractions-go) - 5 events
-- [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 5 events
+- [microsoft/kiota-dart](https://github.com/microsoft/kiota-dart) - 5 events
 - [microsoft/kiota](https://github.com/microsoft/kiota) - 5 events
-- [dotnet/docs](https://github.com/dotnet/docs) - 5 events
+- [microsoft/kiota-authentication-azure-go](https://github.com/microsoft/kiota-authentication-azure-go) - 5 events
+- [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 5 events
 - [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) - 5 events
 
-Noise mix: Docs: 43, Dependency: 38, SDK: 38, CI/Infra: 8, Release: 4, Sample: 2, Training: 1.
+Noise mix: Dependency: 54, Docs: 54, SDK: 26, Release: 6, CI/Infra: 4, Sample: 2, Feature: 2.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 30.6 hours from `2026-11-08T16:24:25.676319Z` to `2026-11-09T23:02:13.950407Z`.
-- Event stream: 337 commits, 30 releases.
+- Window: 24 hours from `2026-11-09T20:30:32.503814Z` to `2026-11-10T20:30:32.503814Z`.
+- Event stream: 378 commits, 39 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).

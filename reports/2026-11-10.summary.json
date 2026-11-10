@@ -1,0 +1,591 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-10.consumer.md",
+    "dated_event_stream": "reports/2026-11-10.events.ndjson",
+    "dated_markdown": "reports/2026-11-10.md",
+    "dated_report_json": "reports/2026-11-10.json",
+    "dated_summary_json": "reports/2026-11-10.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 378,
+    "dated_path": "reports/2026-11-10.events.ndjson",
+    "event_count": 417,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 39,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-10T20:30:32.503814Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 40,
+      "bot": 85,
+      "human": 23
+    },
+    "change_types": {
+      "ci_infra": 4,
+      "dependency_update": 54,
+      "docs_update": 54,
+      "feature": 2,
+      "release": 6,
+      "sample_update": 2,
+      "sdk_generation": 26
+    },
+    "event_count": 148,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-dart"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-authentication-azure-go"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-python"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "39 release item(s) were detected during the window.",
+    "Security-related changes appeared in dotnet/android-api-docs, MicrosoftDocs/azure-management-docs, Azure-Samples/ms-identity-ciam-native-javascript-samples.",
+    "Start with human-authored changes in dotnet/android-api-docs, MicrosoftDocs/azure-management-docs, Azure-Samples/ms-identity-ciam-native-javascript-samples, MicrosoftDocs/entra-docs.",
+    "148 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 188,
+      "noisy_event_count": 56,
+      "notable_event_count": 147,
+      "product_area": "Azure",
+      "release_count": 24,
+      "repo_count": 59,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-10T17:55:17Z",
+          "headline": "Add multicloud extended security updates sql server (#3044)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/azure-management-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-management-docs/commit/4adf3803ed3fbb790269fa6fa015f428edecb99d"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-10T17:08:11Z",
+          "headline": "Add password management and a unified credentials list",
+          "notability_score": 100,
+          "repo": "Azure-Samples/ms-identity-ciam-native-javascript-samples",
+          "url": "https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples/pull/70"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T20:05:29Z",
+          "headline": "@azure/template_1.0.13-beta.7060330",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-js",
+          "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/template_1.0.13-beta.7060330"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-go"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 7,
+          "repo": "Azure-Samples/azure-finops-agent"
+        }
+      ]
+    },
+    {
+      "event_count": 85,
+      "noisy_event_count": 20,
+      "notable_event_count": 75,
+      "product_area": "Unmapped Activity",
+      "release_count": 4,
+      "repo_count": 31,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-09T20:38:58Z",
+          "headline": "Sync Rust article wording with the published Security Blog",
+          "notability_score": 100,
+          "repo": "microsoft/forge-lab",
+          "url": "https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T18:07:39Z",
+          "headline": "Remove links to release plans (#1257)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/ai-builder",
+          "url": "https://github.com/MicrosoftDocs/ai-builder/commit/b3a52449b6e24ad47d6ff969ecfd90a608311541"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T11:17:29Z",
+          "headline": "script_version(1.2.13): harden installation and persist MDC provisioning",
+          "notability_score": 100,
+          "repo": "microsoft/mdatp-xplat",
+          "url": "https://github.com/microsoft/mdatp-xplat/pull/264"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/openapi-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-unified-operations-public"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/bobsql"
+        }
+      ]
+    },
+    {
+      "event_count": 42,
+      "noisy_event_count": 2,
+      "notable_event_count": 38,
+      "product_area": ".NET",
+      "release_count": 10,
+      "repo_count": 10,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-10T19:26:19Z",
+          "headline": "Complete Android.Security XML documentation",
+          "notability_score": 100,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/1319"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T17:15:38Z",
+          "headline": ".NET 10.0.15",
+          "notability_score": 100,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/releases/tag/v10.0.15"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T17:12:01Z",
+          "headline": ".NET 9.0.23",
+          "notability_score": 100,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/releases/tag/v9.0.23"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 8,
+          "repo": "dotnet/efcore"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 60,
+      "noisy_event_count": 58,
+      "notable_event_count": 17,
+      "product_area": "Microsoft Graph",
+      "release_count": 1,
+      "repo_count": 17,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T13:12:31Z",
+          "headline": "Fabric Architecture Review 2026.11.1",
+          "notability_score": 100,
+          "repo": "microsoft/fabric-architecture-review",
+          "url": "https://github.com/microsoft/fabric-architecture-review/releases/tag/v2026.11.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T13:12:14Z",
+          "headline": "Release 2026.11.1: accept regional owner-model refresh polling locations",
+          "notability_score": 100,
+          "repo": "microsoft/fabric-architecture-review",
+          "url": "https://github.com/microsoft/fabric-architecture-review/commit/4610cf595f79f85cefb7865473ae0da36949ae55"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-10T20:02:21Z",
+          "headline": "fix(serialization): emit normalized ISO 8601 durations",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-dart",
+          "url": "https://github.com/microsoft/kiota-dart/pull/176"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-dart"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-ruby"
+        }
+      ]
+    },
+    {
+      "event_count": 14,
+      "noisy_event_count": 7,
+      "notable_event_count": 14,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-10T16:41:46Z",
+          "headline": "Document password updates in the credential management API (#14808)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/200f25103eadac6fa0af2ce361549f698bbe4029"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-10T19:03:29Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/24ee336802727121f2725471ab8c861c739eedfc"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-10T16:32:40Z",
+          "headline": "Remove Preview from clear attribute values navigation (#14796)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/749c88404158eed957d73d95668441384a644f4b"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 4,
+      "notable_event_count": 11,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 7,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-10T02:21:14Z",
+          "headline": "fix(hubs): Normalize x_BillingProfileId on Actual and Amortized paths",
+          "notability_score": 90,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2409"
+        },
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-11-10T16:06:38Z",
+          "headline": "Update README.md",
+          "notability_score": 90,
+          "repo": "microsoft/Federal-Business-Applications",
+          "url": "https://github.com/microsoft/Federal-Business-Applications/commit/6a352586f8829687708c4a7d17b2d29cadd0df68"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-10T07:04:15Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/9e4c7dbec59241ed6e752c5c463d01631be3e813"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/OfficeDocs-SharePoint-PowerShell"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/Federal-Business-Applications"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "noisy_event_count": 1,
+      "notable_event_count": 6,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-09T23:07:28Z",
+          "headline": "Cover the imported release templates in the release pipelines instruction",
+          "notability_score": 100,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3205"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-09T21:46:28Z",
+          "headline": "Fix release pipelines failing at 'View Published Package URLs' (stale artifact path)",
+          "notability_score": 100,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3187"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-09T20:56:04Z",
+          "headline": "Add new page for ABS agent auth config",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14569"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "OfficeDev/microsoft-teams-library-js"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-reference"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-10T15:11:48Z",
+          "headline": "Update issue links for recovery release",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10629"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-10T16:33:24Z",
+          "headline": "Fix issue link",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10630"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-10T14:46:01Z",
+          "headline": "Document --profile-temp for extension debugging in isolated profiles (fixes #6220)",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10608"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "c4b1e7f7360004be97895326ea70326cd7179d14",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "42895766958",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/42895766958"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "dotnet/android-api-docs",
+      "url": "https://github.com/dotnet/android-api-docs/pull/1319",
+      "why": "Security-related change: Complete Android.Security XML documentation"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/azure-management-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-management-docs/commit/4adf3803ed3fbb790269fa6fa015f428edecb99d",
+      "why": "Security-related change: Add multicloud extended security updates sql server (#3044)"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure-Samples/ms-identity-ciam-native-javascript-samples",
+      "url": "https://github.com/Azure-Samples/ms-identity-ciam-native-javascript-samples/pull/70",
+      "why": "Security-related change: Add password management and a unified credentials list"
+    },
+    {
+      "priority": 4,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/200f25103eadac6fa0af2ce361549f698bbe4029",
+      "why": "Security-related change: Document password updates in the credential management API (#14808)"
+    },
+    {
+      "priority": 5,
+      "repo": "microsoft/forge-lab",
+      "url": "https://github.com/microsoft/forge-lab/commit/4438373672e014bead76885633c4e5e8470a1e51",
+      "why": "Security-related change: Sync Rust article wording with the published Security Blog"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/template_1.0.13-beta.7060330",
+      "why": "Release activity: @azure/template_1.0.13-beta.7060330"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-redisenterprise_4.1.0b1",
+      "why": "Release activity: azure-mgmt-redisenterprise_4.1.0b1"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-horizondb_1.0.0-beta.4",
+      "why": "Release activity: com.azure.resourcemanager+azure-resourcemanager-horizondb_1.0.0-beta.4"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 201,
+    "default_branch_commits": 786,
+    "filtered_repos": 2565,
+    "inventory_repos": 16769,
+    "pushed_at_candidate_repos": 201,
+    "release_count": 39,
+    "repos_with_movement": 131,
+    "repos_with_releases": 15
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-09T20:30:32.503814Z",
+    "state_window_enabled": true,
+    "until": "2026-11-10T20:30:32.503814Z"
+  }
+}
