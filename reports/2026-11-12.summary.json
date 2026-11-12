@@ -1,0 +1,606 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-12.consumer.md",
+    "dated_event_stream": "reports/2026-11-12.events.ndjson",
+    "dated_markdown": "reports/2026-11-12.md",
+    "dated_report_json": "reports/2026-11-12.json",
+    "dated_summary_json": "reports/2026-11-12.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 435,
+    "dated_path": "reports/2026-11-12.events.ndjson",
+    "event_count": 473,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 38,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-12T20:57:16.143501Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 38,
+      "bot": 73,
+      "human": 40
+    },
+    "change_types": {
+      "ci_infra": 10,
+      "dependency_update": 70,
+      "docs_update": 52,
+      "release": 3,
+      "sample_update": 3,
+      "sdk_generation": 13
+    },
+    "event_count": 151,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-abstractions-go"
+      },
+      {
+        "event_count": 5,
+        "repo": "MicrosoftDocs/architecture-center"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure-Samples/Legacy-Modernization-Agents"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, PowerShell led the visible product-area activity in this window.",
+    "38 release item(s) were detected during the window.",
+    "Security-related changes appeared in Azure/azure-sdk-for-rust, Azure/azure-sdk-for-python, microsoft/content-processing-solution-accelerator.",
+    "Start with human-authored changes in Azure/azure-sdk-for-rust, Azure/azure-sdk-for-python, microsoft/content-processing-solution-accelerator, microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.",
+    "151 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 226,
+      "noisy_event_count": 64,
+      "notable_event_count": 173,
+      "product_area": "Azure",
+      "release_count": 34,
+      "repo_count": 59,
+      "security_event_count": 6,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-12T19:06:44Z",
+          "headline": "Add GitHubActionsCredential to azure_identity",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-rust",
+          "url": "https://github.com/Azure/azure-sdk-for-rust/pull/5588"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-12T18:17:12Z",
+          "headline": "[Identity] Fix blocking OIDC requests in async AzurePipelinesCredential",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/pull/49831"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-12T17:24:53Z",
+          "headline": "fix: restrict Azure authentication and image publishing to non-PR runs",
+          "notability_score": 100,
+          "repo": "microsoft/content-processing-solution-accelerator",
+          "url": "https://github.com/microsoft/content-processing-solution-accelerator/pull/727"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-go"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-cli-extensions"
+        }
+      ]
+    },
+    {
+      "event_count": 103,
+      "noisy_event_count": 33,
+      "notable_event_count": 70,
+      "product_area": "Unmapped Activity",
+      "release_count": 3,
+      "repo_count": 32,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-12T13:13:27Z",
+          "headline": "deps: patch security alerts in certifi, urllib3, Pillow, filelock",
+          "notability_score": 100,
+          "repo": "microsoft/SPARROW",
+          "url": "https://github.com/microsoft/SPARROW/pull/92"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-12T18:04:50Z",
+          "headline": "Persona Workshop 0.7.1 \u2014 native Windows startup repair",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-persona-workshop",
+          "url": "https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-12T15:09:38Z",
+          "headline": "Persona Workshop 0.7.0",
+          "notability_score": 90,
+          "repo": "microsoft/amplifier-persona-workshop",
+          "url": "https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.0"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 7,
+          "repo": "microsoft/amplifier-persona-workshop"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-unified-operations-public"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        }
+      ]
+    },
+    {
+      "event_count": 20,
+      "noisy_event_count": 2,
+      "notable_event_count": 19,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 8,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-12T16:32:43Z",
+          "headline": "feat(open-data): Add meter category to Services to split shared resou\u2026",
+          "notability_score": 90,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/commit/6ebd06573435168952b62c048f85ea46d8a2b30a"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-12T19:04:24Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/5e9f6b370edf9a1a56b84d54f1aba5d8b6bf3179"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-11-12T18:40:02Z",
+          "headline": "Update Lab 1D: standardize Cloud Shell and portal wording",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-sec-identity",
+          "url": "https://github.com/MicrosoftLearning/mslearn-sec-identity/pull/28"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftLearning/mslearn-sec-identity"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 1,
+          "repo": "SharePoint/sp-dev-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        }
+      ]
+    },
+    {
+      "event_count": 30,
+      "noisy_event_count": 26,
+      "notable_event_count": 17,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 10,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-11T19:06:54Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 100,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+          "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10093"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-11T20:13:11Z",
+          "headline": "ci: upgrade ESRP release task to v14",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-sdk-java",
+          "url": "https://github.com/microsoftgraph/msgraph-sdk-java/pull/2714"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-12T15:12:38Z",
+          "headline": "Document Microsoft Threat Intelligence API rate limit",
+          "notability_score": 90,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+          "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10091"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-abstractions-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-serialization-form-go"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-java"
+        }
+      ]
+    },
+    {
+      "event_count": 44,
+      "noisy_event_count": 13,
+      "notable_event_count": 17,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 17,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-12T18:49:07Z",
+          "headline": "Update .NET 11 release documentation",
+          "notability_score": 100,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56871"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-11T18:28:21Z",
+          "headline": "Add Popup support for AppTheme",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/CommunityToolkit",
+          "url": "https://github.com/MicrosoftDocs/CommunityToolkit/pull/664"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-11T20:18:18Z",
+          "headline": "CommunityToolkit.Maui Docs Updates for Device Tests Fixes + Findings",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/CommunityToolkit",
+          "url": "https://github.com/MicrosoftDocs/CommunityToolkit/pull/665"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/CommunityToolkit"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        }
+      ]
+    },
+    {
+      "event_count": 15,
+      "noisy_event_count": 7,
+      "notable_event_count": 15,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-12T14:29:22Z",
+          "headline": "Refresh security and privacy (#5278)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/2533bf80fa5ced6ba979842f11447aee85712faf"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-12T17:37:25Z",
+          "headline": "docs: add Resource Policy built-in roles (#14780)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/4d1cfd8890e24b3b822d77c485175604b3ae6ad9"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-12T08:44:18Z",
+          "headline": "Add video link to early-access-preview-edit-with-copilot.md (#8152)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/dc20aa40c75ef8638f6de97dfd6be1eae23e96a2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 4,
+      "notable_event_count": 12,
+      "product_area": "Developer Tools",
+      "release_count": 1,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-12T14:43:56Z",
+          "headline": "v0.6.4",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-custom-data",
+          "url": "https://github.com/microsoft/vscode-custom-data/releases/tag/v0.6.4"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-12T16:27:01Z",
+          "headline": "Revise customization guide to use annotated code blocks",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10642"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-12T16:07:13Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/visualstudio-docs",
+          "url": "https://github.com/MicrosoftDocs/visualstudio-docs/pull/11492"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/visualstudio-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/vscode-custom-data"
+        }
+      ]
+    },
+    {
+      "event_count": 18,
+      "noisy_event_count": 2,
+      "notable_event_count": 12,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-12T04:21:11Z",
+          "headline": "Add check preflight and check announcement-draft to the release skill",
+          "notability_score": 100,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3212"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-12T03:21:07Z",
+          "headline": "Add a Prod validation stage before the Lockbox approval",
+          "notability_score": 90,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3207"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-11T21:35:20Z",
+          "headline": "Redirect fixes",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/teams-ai-library",
+          "url": "https://github.com/MicrosoftDocs/teams-ai-library/commit/4052df1948e8bf060c971c5ab4b6a86aea11e327"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 5,
+          "repo": "OfficeDev/microsoft-teams-library-js"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/teams-ai-library"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-reference"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "d1c31ed5b7d8d1cf15f5394cb033fe8cc5492e82",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "43305227941",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/43305227941"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/azure-sdk-for-rust",
+      "url": "https://github.com/Azure/azure-sdk-for-rust/pull/5588",
+      "why": "Security-related change: Add GitHubActionsCredential to azure_identity"
+    },
+    {
+      "priority": 2,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/pull/49831",
+      "why": "Security-related change: [Identity] Fix blocking OIDC requests in async AzurePipelinesCredential"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/content-processing-solution-accelerator",
+      "url": "https://github.com/microsoft/content-processing-solution-accelerator/pull/727",
+      "why": "Security-related change: fix: restrict Azure authentication and image publishing to non-PR runs"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/Conversation-Knowledge-Mining-Solution-Accelerator",
+      "url": "https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/pull/1075",
+      "why": "Security-related change: fix: Add fork guard to workflow_run deploy and drop production env for PR \u2026"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/kars",
+      "url": "https://github.com/Azure/kars/pull/619",
+      "why": "Security-related change: ci(headlamp): verify webpack dev middleware compatibility"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftDocs/dynamics365smb-docs",
+      "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/2533bf80fa5ced6ba979842f11447aee85712faf",
+      "why": "Security-related change: Refresh security and privacy (#5278)"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/SPARROW",
+      "url": "https://github.com/microsoft/SPARROW/pull/92",
+      "why": "Security-related change: deps: patch security alerts in certifi, urllib3, Pillow, filelock"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/dacs",
+      "url": "https://github.com/Azure/dacs/pull/181",
+      "why": "Security-related change: ci: scan all built images and upgrade Runai packages"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 219,
+    "default_branch_commits": 818,
+    "filtered_repos": 2567,
+    "inventory_repos": 16780,
+    "pushed_at_candidate_repos": 219,
+    "release_count": 38,
+    "repos_with_movement": 141,
+    "repos_with_releases": 12
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-11T18:15:21.594951Z",
+    "state_window_enabled": true,
+    "until": "2026-11-12T20:57:16.143501Z"
+  }
+}

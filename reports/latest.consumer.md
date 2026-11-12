@@ -1,182 +1,188 @@
-# Microsoft Ecosystem Brief - 2026-11-11
+# Microsoft Ecosystem Brief - 2026-11-12
 
-> Fresh as of 2026-11-11 20:15 UTC. 135 repos moved, 799 commits, 36 releases, 457 tracked events.
+> Fresh as of 2026-11-12 20:57 UTC. 141 repos moved, 818 commits, 38 releases, 473 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: Add Browse vendor security questionnaire Python sample](https://github.com/microsoft/web-iq-samples/pull/15)
-
-- Repository: [microsoft/web-iq-samples](https://github.com/microsoft/web-iq-samples)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 2. [Security-related change: Redact proxy credentials from various logs and inputs](https://github.com/microsoft/winget-cli/pull/6659)
-
-- Repository: [microsoft/winget-cli](https://github.com/microsoft/winget-cli)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 3. [Security-related change: Improve compliance mappings in Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/110)
-
-- Repository: [Azure-Samples/AzureLocal](https://github.com/Azure-Samples/AzureLocal)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 4. [Release activity: ci: upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-sdk-java/pull/2714)
-
-- Repository: [microsoftgraph/msgraph-sdk-java](https://github.com/microsoftgraph/msgraph-sdk-java)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 5. [Release activity: azure-mgmt-sovereign_1.0.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-sovereign_1.0.0b1)
-
-- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 6. [Release activity: Revert "release-agentic-rag -> main -- 11/11 ASAP (#3054)" (#3057)](https://github.com/MicrosoftDocs/azure-management-docs/commit/914063e614ead5aeef5d0fad145d4b4ce78b03ad)
-
-- Repository: [MicrosoftDocs/azure-management-docs](https://github.com/MicrosoftDocs/azure-management-docs)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 7. [Release activity: Release Cosmos native driver 0.3.0](https://github.com/Azure/azure-sdk-for-rust/pull/5586)
+### 1. [Security-related change: Add GitHubActionsCredential to azure_identity](https://github.com/Azure/azure-sdk-for-rust/pull/5588)
 
 - Repository: [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 8. [Release activity: docs(announce): Add v15 release announcement draft](https://github.com/microsoft/finops-toolkit/pull/2394)
+### 2. [Security-related change: [Identity] Fix blocking OIDC requests in async AzurePipelinesCredential](https://github.com/Azure/azure-sdk-for-python/pull/49831)
 
-- Repository: [microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+- Repository: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 3. [Security-related change: fix: restrict Azure authentication and image publishing to non-PR runs](https://github.com/microsoft/content-processing-solution-accelerator/pull/727)
+
+- Repository: [microsoft/content-processing-solution-accelerator](https://github.com/microsoft/content-processing-solution-accelerator)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 4. [Security-related change: fix: Add fork guard to workflow_run deploy and drop production env for PR …](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/pull/1075)
+
+- Repository: [microsoft/Conversation-Knowledge-Mining-Solution-Accelerator](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 5. [Security-related change: ci(headlamp): verify webpack dev middleware compatibility](https://github.com/Azure/kars/pull/619)
+
+- Repository: [Azure/kars](https://github.com/Azure/kars)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 6. [Security-related change: Refresh security and privacy (#5278)](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/2533bf80fa5ced6ba979842f11447aee85712faf)
+
+- Repository: [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 7. [Security-related change: deps: patch security alerts in certifi, urllib3, Pillow, filelock](https://github.com/microsoft/SPARROW/pull/92)
+
+- Repository: [microsoft/SPARROW](https://github.com/microsoft/SPARROW)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
+
+### 8. [Security-related change: ci: scan all built images and upgrade Runai packages](https://github.com/Azure/dacs/pull/181)
+
+- Repository: [Azure/dacs](https://github.com/Azure/dacs)
+- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
 ## Product Area Briefings
 
 ### Azure
 
-50 repos, 187 tracked events, 28 releases, 2 security/admin signals.
+59 repos, 226 tracked events, 34 releases, 6 security/admin signals.
 
 - Likely audience: Developers, Learners, General MS consumers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Improve compliance mappings in Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/110) (Azure-Samples/AzureLocal)
-  - [azure-mgmt-sovereign_1.0.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-sovereign_1.0.0b1) (Azure/azure-sdk-for-python)
-  - [Revert "release-agentic-rag -> main -- 11/11 ASAP (#3054)" (#3057)](https://github.com/MicrosoftDocs/azure-management-docs/commit/914063e614ead5aeef5d0fad145d4b4ce78b03ad) (MicrosoftDocs/azure-management-docs)
+  - [Add GitHubActionsCredential to azure_identity](https://github.com/Azure/azure-sdk-for-rust/pull/5588) (Azure/azure-sdk-for-rust)
+  - [[Identity] Fix blocking OIDC requests in async AzurePipelinesCredential](https://github.com/Azure/azure-sdk-for-python/pull/49831) (Azure/azure-sdk-for-python)
+  - [fix: restrict Azure authentication and image publishing to non-PR runs](https://github.com/microsoft/content-processing-solution-accelerator/pull/727) (microsoft/content-processing-solution-accelerator)
 
 ### Unmapped Activity
 
-33 repos, 92 tracked events, 0 releases, 1 security/admin signal.
+32 repos, 103 tracked events, 3 releases, 1 security/admin signal.
 
-- Likely audience: General MS consumers, Developers, Learners.
+- Likely audience: Learners, General MS consumers, Developers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Add Browse vendor security questionnaire Python sample](https://github.com/microsoft/web-iq-samples/pull/15) (microsoft/web-iq-samples)
-  - [Add Auto claim check Python sample](https://github.com/microsoft/web-iq-samples/pull/16) (microsoft/web-iq-samples)
-  - [Add Web IQ + Foundry Voice Agent Python sample](https://github.com/microsoft/web-iq-samples/pull/12) (microsoft/web-iq-samples)
-
-### Microsoft Graph
-
-17 repos, 70 tracked events, 7 releases, 0 security/admin signals.
-
-- Likely audience: Developers, General MS consumers, Learners.
-- Reader takeaway: Start with releases; consumers may need version or sample awareness.
-- Most useful links:
-  - [ci: upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-sdk-java/pull/2714) (microsoftgraph/msgraph-sdk-java)
-  - [@microsoft/kiota-serialization-text: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-text%401.0.0-preview.113) (microsoft/kiota-typescript)
-  - [@microsoft/kiota-serialization-multipart: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-multipart%401.0.0-preview.113) (microsoft/kiota-typescript)
-
-### .NET
-
-15 repos, 47 tracked events, 1 release, 0 security/admin signals.
-
-- Likely audience: Learners, Developers, General MS consumers.
-- Reader takeaway: Start with releases; consumers may need version or sample awareness.
-- Most useful links:
-  - [Release docs: msbuild-nuget-release publishing and LTSC 18.11](https://github.com/dotnet/msbuild/pull/15528) (dotnet/msbuild)
-  - [v18.12.2](https://github.com/dotnet/msbuild/releases/tag/v18.12.2) (dotnet/msbuild)
-  - [Add Popup support for AppTheme](https://github.com/MicrosoftDocs/CommunityToolkit/pull/664) (MicrosoftDocs/CommunityToolkit)
+  - [deps: patch security alerts in certifi, urllib3, Pillow, filelock](https://github.com/microsoft/SPARROW/pull/92) (microsoft/SPARROW)
+  - [Persona Workshop 0.7.1 — native Windows startup repair](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.1) (microsoft/amplifier-persona-workshop)
+  - [Persona Workshop 0.7.0](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.0) (microsoft/amplifier-persona-workshop)
 
 ### PowerShell
 
-9 repos, 26 tracked events, 0 releases, 1 security/admin signal.
+8 repos, 20 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: Admins, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [feat(open-data): Add meter category to Services to split shared resou…](https://github.com/microsoft/finops-toolkit/commit/6ebd06573435168952b62c048f85ea46d8a2b30a) (microsoft/finops-toolkit)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/power-pl…](https://github.com/MicrosoftDocs/power-platform/commit/5e9f6b370edf9a1a56b84d54f1aba5d8b6bf3179) (MicrosoftDocs/power-platform)
+  - [Update Lab 1D: standardize Cloud Shell and portal wording](https://github.com/MicrosoftLearning/mslearn-sec-identity/pull/28) (MicrosoftLearning/mslearn-sec-identity)
+
+### Microsoft Graph
+
+10 repos, 30 tracked events, 0 releases, 1 security/admin signal.
+
+- Likely audience: Developers, Admins.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Redact proxy credentials from various logs and inputs](https://github.com/microsoft/winget-cli/pull/6659) (microsoft/winget-cli)
-  - [docs(announce): Add v15 release announcement draft](https://github.com/microsoft/finops-toolkit/pull/2394) (microsoft/finops-toolkit)
-  - [Align SPFx release notes and template with agent upgrade guidance](https://github.com/SharePoint/sp-dev-docs/pull/11090) (SharePoint/sp-dev-docs)
+  - [Repo sync for protected branch](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10093) (microsoftgraph/microsoft-graph-docs-contrib)
+  - [ci: upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-sdk-java/pull/2714) (microsoftgraph/msgraph-sdk-java)
+  - [Document Microsoft Threat Intelligence API rate limit](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10091) (microsoftgraph/microsoft-graph-docs-contrib)
+
+### .NET
+
+17 repos, 44 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers, General MS consumers, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [Update .NET 11 release documentation](https://github.com/dotnet/docs/pull/56871) (dotnet/docs)
+  - [Add Popup support for AppTheme](https://github.com/MicrosoftDocs/CommunityToolkit/pull/664) (MicrosoftDocs/CommunityToolkit)
+  - [CommunityToolkit.Maui Docs Updates for Device Tests Fixes + Findings](https://github.com/MicrosoftDocs/CommunityToolkit/pull/665) (MicrosoftDocs/CommunityToolkit)
 
 ### Identity
 
-3 repos, 15 tracked events, 0 releases, 0 security/admin signals.
+3 repos, 15 tracked events, 0 releases, 1 security/admin signal.
 
 - Likely audience: Learners, General MS consumers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/f1926a0b4d6fb01d3d9650ca7d5dbd1a0c7a4b97) (MicrosoftDocs/dynamics365smb-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/dynamics…](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/2fff6d8462857117becf24abeafa53f0e77f46b2) (MicrosoftDocs/dynamics365smb-devitpro-pb)
-  - [Clarify Azure portal requirement for provisioning OAuth consent (#14751)](https://github.com/MicrosoftDocs/entra-docs/commit/308b69b8ab6856c5be81f2831e503fcec9dab45c) (MicrosoftDocs/entra-docs)
+  - [Refresh security and privacy (#5278)](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/2533bf80fa5ced6ba979842f11447aee85712faf) (MicrosoftDocs/dynamics365smb-docs)
+  - [docs: add Resource Policy built-in roles (#14780)](https://github.com/MicrosoftDocs/entra-docs/commit/4d1cfd8890e24b3b822d77c485175604b3ae6ad9) (MicrosoftDocs/entra-docs)
+  - [Add video link to early-access-preview-edit-with-copilot.md (#8152)](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/dc20aa40c75ef8638f6de97dfd6be1eae23e96a2) (MicrosoftDocs/dynamics365smb-devitpro-pb)
 
 ### Developer Tools
 
-2 repos, 9 tracked events, 0 releases, 0 security/admin signals.
+3 repos, 12 tracked events, 1 release, 0 security/admin signals.
 
-- Likely audience: General MS consumers, Developers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Likely audience: Developers, General MS consumers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [Replace chat windows video in 1.146 release notes](https://github.com/microsoft/vscode-docs/pull/10632) (microsoft/vscode-docs)
-  - [VS Code release 1.146](https://github.com/microsoft/vscode-docs/pull/10631) (microsoft/vscode-docs)
-  - [Add Mermaid 12 rendering comparison](https://github.com/microsoft/vscode-docs/pull/10633) (microsoft/vscode-docs)
+  - [v0.6.4](https://github.com/microsoft/vscode-custom-data/releases/tag/v0.6.4) (microsoft/vscode-custom-data)
+  - [Revise customization guide to use annotated code blocks](https://github.com/microsoft/vscode-docs/pull/10642) (microsoft/vscode-docs)
+  - [Repo sync for protected branch](https://github.com/MicrosoftDocs/visualstudio-docs/pull/11492) (MicrosoftDocs/visualstudio-docs)
 
 ### Microsoft 365
 
-3 repos, 7 tracked events, 0 releases, 0 security/admin signals.
+6 repos, 18 tracked events, 0 releases, 0 security/admin signals.
 
-- Likely audience: General MS consumers, Developers.
-- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Likely audience: General MS consumers, Developers, Learners.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Clarify which CI build carries release script fixes, and refresh the skill's references](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3211) (OfficeDev/microsoft-teams-library-js)
-  - [Add optional useHeaderlessDialog support for URL dialogs](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3197) (OfficeDev/microsoft-teams-library-js)
-  - [Fix existing errors in plugin docs (#1785)](https://github.com/MicrosoftDocs/m365copilot-docs/commit/9c09a6de16ef8bfe2183c15e7a461ab26e00e73b) (MicrosoftDocs/m365copilot-docs)
+  - [Add check preflight and check announcement-draft to the release skill](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3212) (OfficeDev/microsoft-teams-library-js)
+  - [Add a Prod validation stage before the Lockbox approval](https://github.com/OfficeDev/microsoft-teams-library-js/pull/3207) (OfficeDev/microsoft-teams-library-js)
+  - [Redirect fixes](https://github.com/MicrosoftDocs/teams-ai-library/commit/4052df1948e8bf060c971c5ab4b6a86aea11e327) (MicrosoftDocs/teams-ai-library)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP dotnet Function ZIP 311.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-311-1-dotnet) | New release available for consumers of this repo. |
-| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP python Function ZIP 311.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-311-1-python) | New release available for consumers of this repo. |
-| Azure | [Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample) | [EPP javascript Function ZIP 311.1](https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/releases/tag/epp-packages-311-1-javascript) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-sovereign_1.0.0b1](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-sovereign_1.0.0b1) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-typescript](https://github.com/microsoft/kiota-typescript) | [@microsoft/kiota-serialization-text: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-text%401.0.0-preview.113) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-typescript](https://github.com/microsoft/kiota-typescript) | [@microsoft/kiota-serialization-multipart: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-multipart%401.0.0-preview.113) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-typescript](https://github.com/microsoft/kiota-typescript) | [@microsoft/kiota-serialization-json: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-json%401.0.0-preview.113) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-typescript](https://github.com/microsoft/kiota-typescript) | [@microsoft/kiota-serialization-form: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-serialization-form%401.0.0-preview.113) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-typescript](https://github.com/microsoft/kiota-typescript) | [@microsoft/kiota-http-fetchlibrary: v1.0.0-preview.113](https://github.com/microsoft/kiota-typescript/releases/tag/%40microsoft/kiota-http-fetchlibrary%401.0.0-preview.113) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoft/kiota-serialization-multipart-go](https://github.com/microsoft/kiota-serialization-multipart-go) | [v1.1.6](https://github.com/microsoft/kiota-serialization-multipart-go/releases/tag/v1.1.6) | New release available for consumers of this repo. |
-| Azure | [Azure-Samples/ai-hub-gateway-solution-accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator) | [Release 1.1.0](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/releases/tag/1.1.0) | New release available for consumers of this repo. |
-| Azure | [Azure-Samples/iot-edge-opc-plc](https://github.com/Azure-Samples/iot-edge-opc-plc) | [2.15.14](https://github.com/Azure-Samples/iot-edge-opc-plc/releases/tag/2.15.14) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/storage/azfile/v1.8.0-beta.1](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/storage/azfile/v1.8.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/storage/azblob/v1.9.0-beta.1](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/storage/azblob/v1.9.0-beta.1) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure/azure-sdk-for-js](https://github.com/Azure/azure-sdk-for-js) | [@azure/ai-projects_2.11.0](https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/ai-projects_2.11.0) | New release available for consumers of this repo. |
+| Unknown | [microsoft/amplifier-persona-workshop](https://github.com/microsoft/amplifier-persona-workshop) | [Persona Workshop 0.7.1 — native Windows startup repair](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.1) | New release available for consumers of this repo. |
+| Azure | [Azure/LogicAppsUX](https://github.com/Azure/LogicAppsUX) | [Release v5.1018.0](https://github.com/Azure/LogicAppsUX/releases/tag/v5.1018.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Provisioning.AppContainers_1.3.0](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Provisioning.AppContainers_1.3.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java) | [com.azure+azure-sdk-bom_1.3.10](https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-sdk-bom_1.3.10) | New release available for consumers of this repo. |
+| Unknown | [microsoft/amplifier-persona-workshop](https://github.com/microsoft/amplifier-persona-workshop) | [Persona Workshop 0.7.0](https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.0) | New release available for consumers of this repo. |
+| Developer Tools | [microsoft/vscode-custom-data](https://github.com/microsoft/vscode-custom-data) | [v0.6.4](https://github.com/microsoft/vscode-custom-data/releases/tag/v0.6.4) | New release available for consumers of this repo. |
+| Unknown | [microsoft/amplifier-acp-lab](https://github.com/microsoft/amplifier-acp-lab) | [Lab 0.4.1 — self-contained native packages](https://github.com/microsoft/amplifier-acp-lab/releases/tag/v0.4.1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) | [azure-mgmt-containerservice_41.9.0](https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-mgmt-containerservice_41.9.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-dev](https://github.com/Azure/azure-dev) | [azd-ext-azure-ai-agents_1.1.0](https://github.com/Azure/azure-dev/releases/tag/azd-ext-azure-ai-agents_1.1.0) | New release available for consumers of this repo. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- [microsoft/web-iq-samples](https://github.com/microsoft/web-iq-samples): [Add Browse vendor security questionnaire Python sample](https://github.com/microsoft/web-iq-samples/pull/15)
-- [microsoft/winget-cli](https://github.com/microsoft/winget-cli): [Redact proxy credentials from various logs and inputs](https://github.com/microsoft/winget-cli/pull/6659)
-- [Azure-Samples/AzureLocal](https://github.com/Azure-Samples/AzureLocal): [Improve compliance mappings in Azure Local 2610 security baseline CSVs](https://github.com/Azure-Samples/AzureLocal/pull/110)
+- [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust): [Add GitHubActionsCredential to azure_identity](https://github.com/Azure/azure-sdk-for-rust/pull/5588)
+- [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python): [[Identity] Fix blocking OIDC requests in async AzurePipelinesCredential](https://github.com/Azure/azure-sdk-for-python/pull/49831)
+- [microsoft/content-processing-solution-accelerator](https://github.com/microsoft/content-processing-solution-accelerator): [fix: restrict Azure authentication and image publishing to non-PR runs](https://github.com/microsoft/content-processing-solution-accelerator/pull/727)
+- [microsoft/Conversation-Knowledge-Mining-Solution-Accelerator](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator): [fix: Add fork guard to workflow_run deploy and drop production env for PR …](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/pull/1075)
+- [Azure/kars](https://github.com/Azure/kars): [ci(headlamp): verify webpack dev middleware compatibility](https://github.com/Azure/kars/pull/619)
+- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs): [Refresh security and privacy (#5278)](https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/2533bf80fa5ced6ba979842f11447aee85712faf)
+- [microsoft/SPARROW](https://github.com/microsoft/SPARROW): [deps: patch security alerts in certifi, urllib3, Pillow, filelock](https://github.com/microsoft/SPARROW/pull/92)
+- [Azure/dacs](https://github.com/Azure/dacs): [ci: scan all built images and upgrade Runai packages](https://github.com/Azure/dacs/pull/181)
+- [microsoftgraph/microsoft-graph-docs-contrib](https://github.com/microsoftgraph/microsoft-graph-docs-contrib): [Repo sync for protected branch](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10093)
 
 ## What Was Mostly Noise
 
-159 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+151 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
+- [microsoft/kiota-abstractions-go](https://github.com/microsoft/kiota-abstractions-go) - 5 events
+- [MicrosoftDocs/architecture-center](https://github.com/MicrosoftDocs/architecture-center) - 5 events
+- [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) - 5 events
+- [Azure-Samples/Legacy-Modernization-Agents](https://github.com/Azure-Samples/Legacy-Modernization-Agents) - 5 events
 - [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) - 5 events
-- [microsoft/kiota-serialization-form-go](https://github.com/microsoft/kiota-serialization-form-go) - 5 events
-- [microsoft/kiota-serialization-text-go](https://github.com/microsoft/kiota-serialization-text-go) - 5 events
-- [microsoft/kiota-java](https://github.com/microsoft/kiota-java) - 5 events
-- [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 5 events
 
-Noise mix: Dependency: 62, Docs: 54, SDK: 36, Release: 4, CI/Infra: 2, Feature: 1.
+Noise mix: Dependency: 70, Docs: 52, SDK: 13, CI/Infra: 10, Release: 3, Sample: 3.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 25.7 hours from `2026-11-10T18:30:32.503814Z` to `2026-11-11T20:15:21.594951Z`.
-- Event stream: 421 commits, 36 releases.
+- Window: 26.7 hours from `2026-11-11T18:15:21.594951Z` to `2026-11-12T20:57:16.143501Z`.
+- Event stream: 435 commits, 38 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
