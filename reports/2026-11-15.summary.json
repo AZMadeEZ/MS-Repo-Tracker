@@ -1,0 +1,439 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-15.consumer.md",
+    "dated_event_stream": "reports/2026-11-15.events.ndjson",
+    "dated_markdown": "reports/2026-11-15.md",
+    "dated_report_json": "reports/2026-11-15.json",
+    "dated_summary_json": "reports/2026-11-15.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 67,
+    "dated_path": "reports/2026-11-15.events.ndjson",
+    "event_count": 70,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 3,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-15T19:24:59.299641Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 7,
+      "bot": 6,
+      "human": 3
+    },
+    "change_types": {
+      "ci_infra": 2,
+      "dependency_update": 3,
+      "docs_update": 7,
+      "release": 1,
+      "sample_update": 2,
+      "sdk_generation": 1
+    },
+    "event_count": 16,
+    "top_repos": [
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/architecture-center"
+      },
+      {
+        "event_count": 2,
+        "repo": "microsoft/vscode-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "Azure-Samples/Spec2Cloud"
+      },
+      {
+        "event_count": 1,
+        "repo": "MicrosoftDocs/cloud-adoption-framework"
+      },
+      {
+        "event_count": 1,
+        "repo": "Azure-Samples/openai-secure-ui-js"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Identity led the visible product-area activity in this window.",
+    "3 release item(s) were detected during the window.",
+    "Start with human-authored changes in microsoft/entrabot, microsoft/amplifier-persona-workshop, Azure/data-api-builder, Azure/azure-sdk-for-java.",
+    "16 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 26,
+      "noisy_event_count": 1,
+      "notable_event_count": 13,
+      "product_area": "Unmapped Activity",
+      "release_count": 2,
+      "repo_count": 12,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-15T01:47:50Z",
+          "headline": "Persona Workshop 0.7.4",
+          "notability_score": 100,
+          "repo": "microsoft/amplifier-persona-workshop",
+          "url": "https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.4"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-15T01:45:04Z",
+          "headline": "Release 0.7.4: adopt existing services through the native updater",
+          "notability_score": 100,
+          "repo": "microsoft/amplifier-persona-workshop",
+          "url": "https://github.com/microsoft/amplifier-persona-workshop/pull/21"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-15T00:39:46Z",
+          "headline": "Persona Workshop 0.7.3",
+          "notability_score": 100,
+          "repo": "microsoft/amplifier-persona-workshop",
+          "url": "https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.3"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 7,
+          "repo": "microsoft/amplifier-persona-workshop"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/amplifier-acp-lab"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/bobsql"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/Advertising"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/Xandr-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 21,
+      "noisy_event_count": 9,
+      "notable_event_count": 11,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 13,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-15T06:26:59Z",
+          "headline": "Add support for CLI Telemetry",
+          "notability_score": 90,
+          "repo": "Azure/data-api-builder",
+          "url": "https://github.com/Azure/data-api-builder/pull/3857"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-15T02:20:39Z",
+          "headline": "Search: add 2026-11-01-preview Java SDK support",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/pull/50960"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-15T02:08:57Z",
+          "headline": "Search: add 2026-11-01-preview Python SDK support",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-python",
+          "url": "https://github.com/Azure/azure-sdk-for-python/pull/49677"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/cloud-adoption-framework"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/architecture-center"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure-Samples/foundry-local-model-catalog"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure-Samples/azure-functions-hosted-skills-samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure/AI-Landing-Zones"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": "Identity",
+      "release_count": 1,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-15T11:24:09Z",
+          "headline": "Entrabot 0.2.0",
+          "notability_score": 100,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/releases/tag/v0.2.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-15T11:23:37Z",
+          "headline": "Release 0.2.0",
+          "notability_score": 100,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/160"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-15T11:23:06Z",
+          "headline": "Follow Graph's redirect when read_file downloads a file's content",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/159"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 6,
+          "repo": "microsoft/entrabot"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 2,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-14T23:31:57Z",
+          "headline": "Clarify and enhance enterprise documentation",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10660"
+        },
+        {
+          "change_type": "ci_infra",
+          "committed_at": "2026-11-15T00:57:59Z",
+          "headline": "Update documentation for bug fixing and testing workflows",
+          "notability_score": 80,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10661"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 10,
+      "noisy_event_count": 2,
+      "notable_event_count": 2,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 4,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-15T14:28:38Z",
+          "headline": "Handle syntax wrappers in address-of data flow analysis",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86446"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-15T03:47:13Z",
+          "headline": "[main] Source code updates from dotnet/dotnet",
+          "notability_score": 70,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86476"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 3,
+          "repo": "dotnet/efcore"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 1,
+          "repo": "dotnet/dotnet-api-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 1,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-14T21:10:36Z",
+          "headline": "fix(http): remove Proxy-Authorization on redirect when the proxy changes",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-dotnet",
+          "url": "https://github.com/microsoft/kiota-dotnet/pull/867"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/kiota-dotnet"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/react-native-windows-samples"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "b6442f99f03f6769c041bbbff8c15e0ad5426470",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "43752218855",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/43752218855"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/entrabot",
+      "url": "https://github.com/microsoft/entrabot/releases/tag/v0.2.0",
+      "why": "Release activity: Entrabot 0.2.0"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/amplifier-persona-workshop",
+      "url": "https://github.com/microsoft/amplifier-persona-workshop/releases/tag/v0.7.4",
+      "why": "Release activity: Persona Workshop 0.7.4"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/data-api-builder",
+      "url": "https://github.com/Azure/data-api-builder/pull/3857",
+      "why": "Feature or capability signal: Add support for CLI Telemetry"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/pull/50960",
+      "why": "Feature or capability signal: Search: add 2026-11-01-preview Java SDK support"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/pull/49677",
+      "why": "Feature or capability signal: Search: add 2026-11-01-preview Python SDK support"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/AI-Landing-Zones",
+      "url": "https://github.com/Azure/AI-Landing-Zones/commit/ac7e083947de2ce5092a4698260249d9b9445026",
+      "why": "Feature or capability signal: docs(agent-lz): add validated releases page"
+    },
+    {
+      "priority": 7,
+      "repo": "MicrosoftDocs/cloud-adoption-framework",
+      "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/commit/4268f897a465b1065e009cfcd2a7c1da35c63335",
+      "why": "Docs update: Merging changes synced from https://github.com/MicrosoftDocs/cloud-ad\u2026"
+    },
+    {
+      "priority": 8,
+      "repo": "dotnet/roslyn",
+      "url": "https://github.com/dotnet/roslyn/pull/86446",
+      "why": "Docs update: Handle syntax wrappers in address-of data flow analysis"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 85,
+    "default_branch_commits": 114,
+    "filtered_repos": 2551,
+    "inventory_repos": 16773,
+    "pushed_at_candidate_repos": 85,
+    "release_count": 3,
+    "repos_with_movement": 33,
+    "repos_with_releases": 2
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-14T16:46:34.289329Z",
+    "state_window_enabled": true,
+    "until": "2026-11-15T19:24:59.299641Z"
+  }
+}
