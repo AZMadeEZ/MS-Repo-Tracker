@@ -1,0 +1,594 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-16.consumer.md",
+    "dated_event_stream": "reports/2026-11-16.events.ndjson",
+    "dated_markdown": "reports/2026-11-16.md",
+    "dated_report_json": "reports/2026-11-16.json",
+    "dated_summary_json": "reports/2026-11-16.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 365,
+    "dated_path": "reports/2026-11-16.events.ndjson",
+    "event_count": 393,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 28,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-16T22:56:46.333079Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 21,
+      "bot": 61,
+      "human": 70
+    },
+    "change_types": {
+      "bug_fix": 2,
+      "ci_infra": 17,
+      "dependency_update": 60,
+      "docs_update": 27,
+      "release": 1,
+      "sdk_generation": 45
+    },
+    "event_count": 152,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "dotnet/efcore"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota"
+      },
+      {
+        "event_count": 5,
+        "repo": "dotnet/docs"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-serialization-multipart-go"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-serialization-text-go"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft Graph led the visible product-area activity in this window.",
+    "28 release item(s) were detected during the window.",
+    "Security-related changes appeared in dotnet/roslyn, microsoft/terraform-provider-power-platform.",
+    "Start with human-authored changes in dotnet/roslyn, microsoft/terraform-provider-power-platform, Azure/azure-cli-extensions, Azure/iotedge-eflow.",
+    "152 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 160,
+      "noisy_event_count": 46,
+      "notable_event_count": 121,
+      "product_area": "Azure",
+      "release_count": 26,
+      "repo_count": 50,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T22:49:02Z",
+          "headline": "connectedmachine 3.1.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-cli-extensions",
+          "url": "https://github.com/Azure/azure-cli-extensions/releases/tag/connectedmachine-3.1.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T22:48:02Z",
+          "headline": "[Release] Update index.json for extension [ connectedmachine-3.1.0 ]",
+          "notability_score": 100,
+          "repo": "Azure/azure-cli-extensions",
+          "url": "https://github.com/Azure/azure-cli-extensions/commit/9bf8a60472c40c63c1f70ebb4ad92f213c4bfac2"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T22:35:10Z",
+          "headline": "[connectedmachine] release stable version 2026-09-01",
+          "notability_score": 100,
+          "repo": "Azure/azure-cli-extensions",
+          "url": "https://github.com/Azure/azure-cli-extensions/pull/10539"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-cli-extensions"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 10,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 7,
+          "repo": "Azure/azure-sdk-for-net"
+        }
+      ]
+    },
+    {
+      "event_count": 78,
+      "noisy_event_count": 21,
+      "notable_event_count": 52,
+      "product_area": "Unmapped Activity",
+      "release_count": 2,
+      "repo_count": 27,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-16T18:29:26Z",
+          "headline": "ci: gate acceptance test credentials behind protected environments",
+          "notability_score": 100,
+          "repo": "microsoft/terraform-provider-power-platform",
+          "url": "https://github.com/microsoft/terraform-provider-power-platform/pull/1305"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T19:06:46Z",
+          "headline": "Enable Docker for azd packaging in the dev container",
+          "notability_score": 100,
+          "repo": "microsoft/release-manager-assistant",
+          "url": "https://github.com/microsoft/release-manager-assistant/pull/68"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T18:29:28Z",
+          "headline": "Pin template validation action to compatible SDK revision",
+          "notability_score": 100,
+          "repo": "microsoft/release-manager-assistant",
+          "url": "https://github.com/microsoft/release-manager-assistant/pull/67"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 6,
+          "repo": "microsoft/onnxruntime"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/terraform-provider-power-platform"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/release-manager-assistant"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-unified-operations-public"
+        }
+      ]
+    },
+    {
+      "event_count": 60,
+      "noisy_event_count": 60,
+      "notable_event_count": 38,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 15,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-16T22:04:44Z",
+          "headline": "Improve GitHub token handling",
+          "notability_score": 75,
+          "repo": "microsoft/kiota",
+          "url": "https://github.com/microsoft/kiota/pull/8603"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-16T21:29:02Z",
+          "headline": "Fix false-positive discriminator warnings for nullable responses",
+          "notability_score": 75,
+          "repo": "microsoft/kiota",
+          "url": "https://github.com/microsoft/kiota/pull/8594"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-16T19:15:32Z",
+          "headline": "fix: handle redirects when loading external references",
+          "notability_score": 75,
+          "repo": "microsoft/kiota",
+          "url": "https://github.com/microsoft/kiota/pull/8587"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-serialization-multipart-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-serialization-text-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-http-go"
+        }
+      ]
+    },
+    {
+      "event_count": 18,
+      "noisy_event_count": 1,
+      "notable_event_count": 17,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T13:23:02Z",
+          "headline": "fix(release): Add release steps for blog link, Advisor workbook, and Quickstart metadata",
+          "notability_score": 100,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2421"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T19:41:26Z",
+          "headline": "Fix Windows CI toolchain selection",
+          "notability_score": 90,
+          "repo": "microsoft/ebpf-for-windows-sample-program",
+          "url": "https://github.com/microsoft/ebpf-for-windows-sample-program/pull/12"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T07:50:48Z",
+          "headline": "fix(hubs): Stop dropping reservation details and undated recommendations",
+          "notability_score": 90,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2407"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/finops-toolkit"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/ebpf-for-windows-sample-program"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        }
+      ]
+    },
+    {
+      "event_count": 37,
+      "noisy_event_count": 16,
+      "notable_event_count": 15,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 13,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-16T22:51:57Z",
+          "headline": "Update .NET runtime packages to 10.0.15 to address vulnerability alerts",
+          "notability_score": 100,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86498"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T20:27:32Z",
+          "headline": "Fix Razor component discovery when a base component falls back",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86451"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T19:41:00Z",
+          "headline": "Fix: Update audit model pinning",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86496"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/AspNetCore.Docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/efcore"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 2,
+      "notable_event_count": 10,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-16T21:12:11Z",
+          "headline": "[Doc Feature] Chain of Thought",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14683"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-16T00:54:10Z",
+          "headline": "[Doc feature] [Build html widgets] [5934645]",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14708"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-16T20:56:42Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/m365copi\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/m365copilot-docs",
+          "url": "https://github.com/MicrosoftDocs/m365copilot-docs/commit/ae703ae6bb962efb48f131fb52eed6622f1ec106"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 4,
+      "notable_event_count": 10,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T17:30:24Z",
+          "headline": "Fix typo in remote SSH documentation",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10676"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T10:03:08Z",
+          "headline": "docs: fix broken internal links and anchor references across documentation",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10639"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-16T09:56:49Z",
+          "headline": "Document notebookRenderer and notebooks contribution points (fixes #5230, #7811)",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10636"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/visualstudio-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/vscode-docs-authoring"
+        }
+      ]
+    },
+    {
+      "event_count": 10,
+      "noisy_event_count": 1,
+      "notable_event_count": 10,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-16T08:00:13Z",
+          "headline": "Release 0.3.1: two fixes on top of 0.3.0",
+          "notability_score": 100,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/167"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-16T19:04:06Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/ce8ffa8a6c01db31f82a8a4ca53b3f251c28b9cb"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-16T14:08:19Z",
+          "headline": "Brent november freshness (#5286)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/422657dde74512efe2171defde0aaf354568707c"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/entrabot"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "39c6a7aeee6d68190977406df38f9a4d1aceadc6",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "43974670160",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/43974670160"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "dotnet/roslyn",
+      "url": "https://github.com/dotnet/roslyn/pull/86498",
+      "why": "Security-related change: Update .NET runtime packages to 10.0.15 to address vulnerability alerts"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/terraform-provider-power-platform",
+      "url": "https://github.com/microsoft/terraform-provider-power-platform/pull/1305",
+      "why": "Security-related change: ci: gate acceptance test credentials behind protected environments"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-cli-extensions",
+      "url": "https://github.com/Azure/azure-cli-extensions/releases/tag/connectedmachine-3.1.0",
+      "why": "Release activity: connectedmachine 3.1.0"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/iotedge-eflow",
+      "url": "https://github.com/Azure/iotedge-eflow/releases/tag/1.6.1.11026",
+      "why": "Release activity: 1.6.1.11026 LTS"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/LogicAppsUX",
+      "url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1019.0",
+      "why": "Release activity: Release v5.1019.0"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/releases/tag/%40azure/search-documents_13.2.0-beta.1",
+      "why": "Release activity: @azure/search-documents_13.2.0-beta.1"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/azure-sdk-for-python",
+      "url": "https://github.com/Azure/azure-sdk-for-python/releases/tag/azure-search-documents_12.2.0b1",
+      "why": "Release activity: azure-search-documents_12.2.0b1"
+    },
+    {
+      "priority": 8,
+      "repo": "microsoft/release-manager-assistant",
+      "url": "https://github.com/microsoft/release-manager-assistant/pull/68",
+      "why": "Release activity: Enable Docker for azd packaging in the dev container"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 193,
+    "default_branch_commits": 610,
+    "filtered_repos": 2552,
+    "inventory_repos": 16800,
+    "pushed_at_candidate_repos": 193,
+    "release_count": 28,
+    "repos_with_movement": 121,
+    "repos_with_releases": 12
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-15T17:24:59.299641Z",
+    "state_window_enabled": true,
+    "until": "2026-11-16T22:56:46.333079Z"
+  }
+}
