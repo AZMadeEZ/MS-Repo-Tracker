@@ -1,0 +1,608 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-20.consumer.md",
+    "dated_event_stream": "reports/2026-11-20.events.ndjson",
+    "dated_markdown": "reports/2026-11-20.md",
+    "dated_report_json": "reports/2026-11-20.json",
+    "dated_summary_json": "reports/2026-11-20.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 312,
+    "dated_path": "reports/2026-11-20.events.ndjson",
+    "event_count": 327,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 15,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-20T21:18:39.222214Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 27,
+      "bot": 66,
+      "human": 22
+    },
+    "change_types": {
+      "bug_fix": 5,
+      "ci_infra": 5,
+      "dependency_update": 43,
+      "docs_update": 46,
+      "release": 5,
+      "sample_update": 5,
+      "sdk_generation": 4,
+      "training_update": 2
+    },
+    "event_count": 115,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-python"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/kiota-samples"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoftgraph/msgraph-sample-github-connector-typescript"
+      },
+      {
+        "event_count": 3,
+        "repo": "microsoftgraph/msgraph-beta-sdk-java"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft Graph led the visible product-area activity in this window.",
+    "15 release item(s) were detected during the window.",
+    "Security-related changes appeared in OfficeDev/Microsoft-Teams-Samples, Azure/azure-sdk-for-java, Azure/confidential-computing-cvm-guest-attestation.",
+    "Start with human-authored changes in OfficeDev/Microsoft-Teams-Samples, Azure/azure-sdk-for-java, Azure/confidential-computing-cvm-guest-attestation, microsoftgraph/msgraph-sdk-java-core.",
+    "115 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 145,
+      "noisy_event_count": 42,
+      "notable_event_count": 119,
+      "product_area": "Azure",
+      "release_count": 9,
+      "repo_count": 45,
+      "security_event_count": 3,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-19T23:10:18Z",
+          "headline": "Delete test workflow for `GitHubActionsCredential`",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/pull/51351"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-19T23:06:39Z",
+          "headline": "Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master\u2026",
+          "notability_score": 100,
+          "repo": "Azure/confidential-computing-cvm-guest-attestation",
+          "url": "https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/751801e55d6ad2a82b24edeaea131c7db8142d4c"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T20:03:31Z",
+          "headline": "2.1.7: Data API builder for Azure Databases",
+          "notability_score": 100,
+          "repo": "Azure/data-api-builder",
+          "url": "https://github.com/Azure/data-api-builder/releases/tag/v2.1.7"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/sap-automation"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-cpp"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk-for-java"
+        }
+      ]
+    },
+    {
+      "event_count": 65,
+      "noisy_event_count": 24,
+      "notable_event_count": 50,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 25,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T10:29:01Z",
+          "headline": "First draft of module in my fork of release branch (#56898) (#56901)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/6623f9a8f5ac9a26b1e8bf372ca517aa40e775b0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-19T21:00:40Z",
+          "headline": "Fs integration v3 post release (#2829)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/dynamics-365-project-operations",
+          "url": "https://github.com/MicrosoftDocs/dynamics-365-project-operations/commit/83de25008201d73c60db7615344bbcfa2d892028"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-19T21:11:27Z",
+          "headline": "Add account limits (#831)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/Advertising",
+          "url": "https://github.com/MicrosoftDocs/Advertising/commit/10ad2765e5a9998947c764a53bda3dc01e5bb8a5"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/powerapps-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        }
+      ]
+    },
+    {
+      "event_count": 47,
+      "noisy_event_count": 37,
+      "notable_event_count": 22,
+      "product_area": "Microsoft Graph",
+      "release_count": 5,
+      "repo_count": 14,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T20:41:47Z",
+          "headline": "Increase Maven heap for release tasks",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-sdk-java-core",
+          "url": "https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2128"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T20:26:43Z",
+          "headline": "fix(ci): upgrade ESRP release task to v14",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-sdk-java-core",
+          "url": "https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2166"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T20:26:27Z",
+          "headline": "fix(ci): upgrade ESRP release task to v14",
+          "notability_score": 100,
+          "repo": "microsoftgraph/msgraph-beta-sdk-java",
+          "url": "https://github.com/microsoftgraph/msgraph-beta-sdk-java/pull/1442"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/msgraph-beta-sdk-java"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoftgraph/msgraph-sdk-java-core"
+        }
+      ]
+    },
+    {
+      "event_count": 27,
+      "noisy_event_count": 3,
+      "notable_event_count": 20,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-20T19:44:56Z",
+          "headline": "Add short-form verbosity examples to dotnet command docs",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56954"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-20T16:56:01Z",
+          "headline": "Add the nodes for the C++ TOC",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56956"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T19:45:31Z",
+          "headline": "Document Uri parsing and UriBuilder breaking changes in .NET 11",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56514"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/efcore"
+        }
+      ]
+    },
+    {
+      "event_count": 13,
+      "noisy_event_count": 3,
+      "notable_event_count": 9,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 5,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-20T09:06:55Z",
+          "headline": "Add TeamsJS multi-language security remediation automation",
+          "notability_score": 100,
+          "repo": "OfficeDev/Microsoft-Teams-Samples",
+          "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2442"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T21:06:17Z",
+          "headline": "Updates to file upload/download docs for tempAuth deprecation",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14746"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T20:33:46Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/m365copi\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/m365copilot-docs",
+          "url": "https://github.com/MicrosoftDocs/m365copilot-docs/commit/f2269d66e9b8e0ab95a4480092721220550650b6"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/m365copilot-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/office-js-docs-pr"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-snippets"
+        }
+      ]
+    },
+    {
+      "event_count": 9,
+      "noisy_event_count": 3,
+      "notable_event_count": 9,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 4,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T18:51:43Z",
+          "headline": "Forward officialness through shared signing templates",
+          "notability_score": 90,
+          "repo": "microsoft/WindowsAppSDK",
+          "url": "https://github.com/microsoft/WindowsAppSDK/pull/6989"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T18:39:08Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/windowss\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windowsserverdocs",
+          "url": "https://github.com/MicrosoftDocs/windowsserverdocs/commit/b640f2cf0c08a765e9281dca814d7e3f379e5a52"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-20T17:27:03Z",
+          "headline": "Correct Windows ML provider servicing and self-checkout guidance (#73\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windows-iot-public",
+          "url": "https://github.com/MicrosoftDocs/windows-iot-public/commit/d9ae066e49122b223cae8647f9aa0149ba8b7290"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/windowsserverdocs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/WindowsAppSDK"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/windows-iot-public"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/webview2-win32-reference"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 1,
+      "notable_event_count": 8,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-20T13:00:49Z",
+          "headline": "Add SharePoint Framework 1.24.2 release notes",
+          "notability_score": 100,
+          "repo": "SharePoint/sp-dev-docs",
+          "url": "https://github.com/SharePoint/sp-dev-docs/commit/0af92e9f12894c49d9ccc8fbe5c8b812e4f017e4"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-19T21:27:55Z",
+          "headline": "Update one last straggler for release plans retirement (#12222)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/dd630570cef956e385be2dfd937cb421264c4179"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-20T07:05:46Z",
+          "headline": "Typo fix in the gateway script",
+          "notability_score": 90,
+          "repo": "microsoft/fabric-toolbox",
+          "url": "https://github.com/microsoft/fabric-toolbox/pull/710"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        },
+        {
+          "event_count": 1,
+          "repo": "SharePoint/sp-dev-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/fabric-toolbox"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 2,
+      "notable_event_count": 8,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-20T01:21:46Z",
+          "headline": "Log the exception when an identity state listener fails, and isolate one config test",
+          "notability_score": 90,
+          "repo": "microsoft/entrabot",
+          "url": "https://github.com/microsoft/entrabot/pull/171"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-19T22:52:53Z",
+          "headline": "Agent ID: Clarify CIMD consent and MCP token validation (#15051)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/12a71fea21dfe29612c101482680eb8f2d0fe7b7"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-19T21:00:17Z",
+          "headline": "Pulling public PR into private: https://github.com/MicrosoftDocs/entr\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/816f3b739e8a3d4257d15afa7bafb414ba9a2590"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/entrabot"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "dec6f3f2b92e994af87e544481a77392b68f7b74",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "44819026078",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/44819026078"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "OfficeDev/Microsoft-Teams-Samples",
+      "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2442",
+      "why": "Security-related change: Add TeamsJS multi-language security remediation automation"
+    },
+    {
+      "priority": 2,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/pull/51351",
+      "why": "Security-related change: Delete test workflow for `GitHubActionsCredential`"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/confidential-computing-cvm-guest-attestation",
+      "url": "https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/751801e55d6ad2a82b24edeaea131c7db8142d4c",
+      "why": "Security-related change: Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master\u2026"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoftgraph/msgraph-sdk-java-core",
+      "url": "https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2128",
+      "why": "Release activity: Increase Maven heap for release tasks"
+    },
+    {
+      "priority": 5,
+      "repo": "microsoftgraph/msgraph-beta-sdk-java",
+      "url": "https://github.com/microsoftgraph/msgraph-beta-sdk-java/pull/1442",
+      "why": "Release activity: fix(ci): upgrade ESRP release task to v14"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/data-api-builder",
+      "url": "https://github.com/Azure/data-api-builder/releases/tag/v2.1.7",
+      "why": "Release activity: 2.1.7: Data API builder for Azure Databases"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoftgraph/msgraph-sdk-go",
+      "url": "https://github.com/microsoftgraph/msgraph-sdk-go/releases/tag/v1.107.0",
+      "why": "Release activity: v1.107.0"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.29.0-beta.2",
+      "why": "Release activity: Azure.Storage.Files.Shares_12.29.0-beta.2"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 166,
+    "default_branch_commits": 642,
+    "filtered_repos": 2550,
+    "inventory_repos": 16854,
+    "pushed_at_candidate_repos": 166,
+    "release_count": 15,
+    "repos_with_movement": 110,
+    "repos_with_releases": 12
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-19T19:41:12.455052Z",
+    "state_window_enabled": true,
+    "until": "2026-11-20T21:18:39.222214Z"
+  }
+}
