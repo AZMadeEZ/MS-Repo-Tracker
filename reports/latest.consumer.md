@@ -1,182 +1,173 @@
-# Microsoft Ecosystem Brief - 2026-11-20
+# Microsoft Ecosystem Brief - 2026-11-21
 
-> Fresh as of 2026-11-20 21:18 UTC. 110 repos moved, 642 commits, 15 releases, 327 tracked events.
+> Fresh as of 2026-11-21 20:09 UTC. 67 repos moved, 347 commits, 11 releases, 193 tracked events.
 
 ## What To Look At First
 
-### 1. [Security-related change: Add TeamsJS multi-language security remediation automation](https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2442)
+### 1. [Security-related change: Fix CLI credential working directory on Windows](https://github.com/Azure/azure-sdk-for-rust/pull/5647)
 
-- Repository: [OfficeDev/Microsoft-Teams-Samples](https://github.com/OfficeDev/Microsoft-Teams-Samples)
+- Repository: [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust)
 - Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
 
-### 2. [Security-related change: Delete test workflow for `GitHubActionsCredential`](https://github.com/Azure/azure-sdk-for-java/pull/51351)
+### 2. [Release activity: docs: fix typos and grammar across release notes](https://github.com/microsoft/vscode-docs/pull/10743)
 
-- Repository: [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 3. [Security-related change: Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master…](https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/751801e55d6ad2a82b24edeaea131c7db8142d4c)
-
-- Repository: [Azure/confidential-computing-cvm-guest-attestation](https://github.com/Azure/confidential-computing-cvm-guest-attestation)
-- Why it matters: Review for security, admin, or training impact; this may affect guidance consumers rely on.
-
-### 4. [Release activity: Increase Maven heap for release tasks](https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2128)
-
-- Repository: [microsoftgraph/msgraph-sdk-java-core](https://github.com/microsoftgraph/msgraph-sdk-java-core)
+- Repository: [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 5. [Release activity: fix(ci): upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-beta-sdk-java/pull/1442)
+### 3. [Release activity: Azure Sandbox v6.2.0](https://github.com/Azure-Samples/azuresandbox/releases/tag/v6.2.0)
 
-- Repository: [microsoftgraph/msgraph-beta-sdk-java](https://github.com/microsoftgraph/msgraph-beta-sdk-java)
+- Repository: [Azure-Samples/azuresandbox](https://github.com/Azure-Samples/azuresandbox)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 6. [Release activity: 2.1.7: Data API builder for Azure Databases](https://github.com/Azure/data-api-builder/releases/tag/v2.1.7)
+### 4. [Release activity: Fix swift compilation to use a release build on release](https://github.com/dotnet/runtime/pull/138038)
 
-- Repository: [Azure/data-api-builder](https://github.com/Azure/data-api-builder)
+- Repository: [dotnet/runtime](https://github.com/dotnet/runtime)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
-### 7. [Release activity: v1.107.0](https://github.com/microsoftgraph/msgraph-sdk-go/releases/tag/v1.107.0)
-
-- Repository: [microsoftgraph/msgraph-sdk-go](https://github.com/microsoftgraph/msgraph-sdk-go)
-- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
-
-### 8. [Release activity: Azure.Storage.Files.Shares_12.29.0-beta.2](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.29.0-beta.2)
+### 5. [Release activity: Azure.Search.Documents_12.1.0](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_12.1.0)
 
 - Repository: [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+
+### 6. [Release activity: Update for azd release 1.40.0-beta.1-daily.7100116](https://github.com/Azure/homebrew-azd/commit/b10b593f562658c0bcbaaecfbdbe59852a840530)
+
+- Repository: [Azure/homebrew-azd](https://github.com/Azure/homebrew-azd)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+
+### 7. [Release activity: docs: update PHP 5.14.0 release documentation (#38624)](https://github.com/MicrosoftDocs/sql-docs/commit/1f0979025fbb37d9e24c2b6fe0cb82fc6e9d15e8)
+
+- Repository: [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs)
+- Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
+
+### 8. [Release activity: PerfView and TraceEvent 4.0.2](https://github.com/microsoft/perfview/releases/tag/v4.0.2)
+
+- Repository: [microsoft/perfview](https://github.com/microsoft/perfview)
 - Why it matters: Check release notes or linked PRs if your team consumes this package, sample, SDK, or tool.
 
 ## Product Area Briefings
 
 ### Azure
 
-45 repos, 145 tracked events, 9 releases, 3 security/admin signals.
+31 repos, 91 tracked events, 7 releases, 1 security/admin signal.
 
 - Likely audience: Developers, Learners, General MS consumers.
 - Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
 - Most useful links:
-  - [Delete test workflow for `GitHubActionsCredential`](https://github.com/Azure/azure-sdk-for-java/pull/51351) (Azure/azure-sdk-for-java)
-  - [Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master…](https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/751801e55d6ad2a82b24edeaea131c7db8142d4c) (Azure/confidential-computing-cvm-guest-attestation)
-  - [2.1.7: Data API builder for Azure Databases](https://github.com/Azure/data-api-builder/releases/tag/v2.1.7) (Azure/data-api-builder)
+  - [Fix CLI credential working directory on Windows](https://github.com/Azure/azure-sdk-for-rust/pull/5647) (Azure/azure-sdk-for-rust)
+  - [Azure Sandbox v6.2.0](https://github.com/Azure-Samples/azuresandbox/releases/tag/v6.2.0) (Azure-Samples/azuresandbox)
+  - [Azure.Search.Documents_12.1.0](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_12.1.0) (Azure/azure-sdk-for-net)
 
 ### Unmapped Activity
 
-25 repos, 65 tracked events, 1 release, 0 security/admin signals.
+18 repos, 50 tracked events, 2 releases, 0 security/admin signals.
 
-- Likely audience: Learners, General MS consumers, Developers.
+- Likely audience: General MS consumers, Learners, Developers.
 - Reader takeaway: Start with releases; consumers may need version or sample awareness.
 - Most useful links:
-  - [First draft of module in my fork of release branch (#56898) (#56901)](https://github.com/MicrosoftDocs/learn/commit/6623f9a8f5ac9a26b1e8bf372ca517aa40e775b0) (MicrosoftDocs/learn)
-  - [Fs integration v3 post release (#2829)](https://github.com/MicrosoftDocs/dynamics-365-project-operations/commit/83de25008201d73c60db7615344bbcfa2d892028) (MicrosoftDocs/dynamics-365-project-operations)
-  - [Add account limits (#831)](https://github.com/MicrosoftDocs/Advertising/commit/10ad2765e5a9998947c764a53bda3dc01e5bb8a5) (MicrosoftDocs/Advertising)
-
-### Microsoft Graph
-
-14 repos, 47 tracked events, 5 releases, 0 security/admin signals.
-
-- Likely audience: Developers, Learners, General MS consumers.
-- Reader takeaway: Start with releases; consumers may need version or sample awareness.
-- Most useful links:
-  - [Increase Maven heap for release tasks](https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2128) (microsoftgraph/msgraph-sdk-java-core)
-  - [fix(ci): upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2166) (microsoftgraph/msgraph-sdk-java-core)
-  - [fix(ci): upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-beta-sdk-java/pull/1442) (microsoftgraph/msgraph-beta-sdk-java)
-
-### .NET
-
-9 repos, 27 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: General MS consumers, Developers, Learners.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Add short-form verbosity examples to dotnet command docs](https://github.com/dotnet/docs/pull/56954) (dotnet/docs)
-  - [Add the nodes for the C++ TOC](https://github.com/dotnet/docs/pull/56956) (dotnet/docs)
-  - [Document Uri parsing and UriBuilder breaking changes in .NET 11](https://github.com/dotnet/docs/pull/56514) (dotnet/docs)
-
-### Microsoft 365
-
-5 repos, 13 tracked events, 0 releases, 2 security/admin signals.
-
-- Likely audience: Developers, Learners, General MS consumers.
-- Reader takeaway: Start with the security/admin-sensitive links, then scan releases.
-- Most useful links:
-  - [Add TeamsJS multi-language security remediation automation](https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2442) (OfficeDev/Microsoft-Teams-Samples)
-  - [Updates to file upload/download docs for tempAuth deprecation](https://github.com/MicrosoftDocs/msteams-docs/pull/14746) (MicrosoftDocs/msteams-docs)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/m365copi…](https://github.com/MicrosoftDocs/m365copilot-docs/commit/f2269d66e9b8e0ab95a4480092721220550650b6) (MicrosoftDocs/m365copilot-docs)
-
-### Windows
-
-4 repos, 9 tracked events, 0 releases, 0 security/admin signals.
-
-- Likely audience: General MS consumers, Developers.
-- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Forward officialness through shared signing templates](https://github.com/microsoft/WindowsAppSDK/pull/6989) (microsoft/WindowsAppSDK)
-  - [Merging changes synced from https://github.com/MicrosoftDocs/windowss…](https://github.com/MicrosoftDocs/windowsserverdocs/commit/b640f2cf0c08a765e9281dca814d7e3f379e5a52) (MicrosoftDocs/windowsserverdocs)
-  - [Correct Windows ML provider servicing and self-checkout guidance (#73…](https://github.com/MicrosoftDocs/windows-iot-public/commit/d9ae066e49122b223cae8647f9aa0149ba8b7290) (MicrosoftDocs/windows-iot-public)
+  - [docs: update PHP 5.14.0 release documentation (#38624)](https://github.com/MicrosoftDocs/sql-docs/commit/1f0979025fbb37d9e24c2b6fe0cb82fc6e9d15e8) (MicrosoftDocs/sql-docs)
+  - [PerfView and TraceEvent 4.0.2](https://github.com/microsoft/perfview/releases/tag/v4.0.2) (microsoft/perfview)
+  - [Merging changes synced from https://github.com/MicrosoftDocs/learn-pr…](https://github.com/MicrosoftDocs/learn/commit/5a943178128ea3434b1df90fd8d842b1bbc08054) (MicrosoftDocs/learn)
 
 ### PowerShell
 
-6 repos, 8 tracked events, 0 releases, 0 security/admin signals.
+4 repos, 12 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: Admins, Learners.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
 - Most useful links:
-  - [Add SharePoint Framework 1.24.2 release notes](https://github.com/SharePoint/sp-dev-docs/commit/0af92e9f12894c49d9ccc8fbe5c8b812e4f017e4) (SharePoint/sp-dev-docs)
-  - [Update one last straggler for release plans retirement (#12222)](https://github.com/MicrosoftDocs/power-platform/commit/dd630570cef956e385be2dfd937cb421264c4179) (MicrosoftDocs/power-platform)
-  - [Typo fix in the gateway script](https://github.com/microsoft/fabric-toolbox/pull/710) (microsoft/fabric-toolbox)
+  - [feat(open-data): Add meter category to Services to split shared resource types](https://github.com/microsoft/finops-toolkit/pull/2423) (microsoft/finops-toolkit)
+  - [fix(finops-hub): Stop price transform row fan-out and fix eligibility scoping](https://github.com/microsoft/finops-toolkit/pull/2246) (microsoft/finops-toolkit)
+  - [fix(finops-hub): Stop flagging FOCUS 1.2 rows as LegacyFocusVersion](https://github.com/microsoft/finops-toolkit/pull/2432) (microsoft/finops-toolkit)
+
+### .NET
+
+5 repos, 17 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: General MS consumers, Learners, Developers.
+- Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
+- Most useful links:
+  - [Fix swift compilation to use a release build on release](https://github.com/dotnet/runtime/pull/138038) (dotnet/runtime)
+  - [Add short-form verbosity examples to dotnet command docs](https://github.com/dotnet/docs/pull/56954) (dotnet/docs)
+  - [EventPipe: Fix event loss during final session flush](https://github.com/dotnet/runtime/pull/137991) (dotnet/runtime)
+
+### Microsoft Graph
+
+3 repos, 10 tracked events, 2 releases, 0 security/admin signals.
+
+- Likely audience: Developers.
+- Reader takeaway: Start with releases; consumers may need version or sample awareness.
+- Most useful links:
+  - [v6.67.1](https://github.com/microsoftgraph/msgraph-beta-sdk-java/releases/tag/v6.67.1) (microsoftgraph/msgraph-beta-sdk-java)
+  - [Increase Maven heap for release tasks](https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2128) (microsoftgraph/msgraph-sdk-java-core)
+  - [fix(ci): upgrade ESRP release task to v14](https://github.com/microsoftgraph/msgraph-sdk-java-core/pull/2166) (microsoftgraph/msgraph-sdk-java-core)
+
+### Microsoft 365
+
+3 repos, 8 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers, General MS consumers.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Most useful links:
+  - [Merging changes synced from https://github.com/MicrosoftDocs/m365copi…](https://github.com/MicrosoftDocs/m365copilot-docs/commit/596a99e5917a8702f1cce517d9a610ba89060ce4) (MicrosoftDocs/m365copilot-docs)
+  - [Merge pull request #1862 from MicrosoftDocs/main](https://github.com/MicrosoftDocs/m365copilot-docs/commit/703d96c260b38efe6a5a833cd9c4ba390603d7b2) (MicrosoftDocs/m365copilot-docs)
+  - [Update Work IQ MCP tool docs with content sanitization info (#1860)](https://github.com/MicrosoftDocs/m365copilot-docs/commit/25bb4049ab8c36eb0cc4c3cd943246894209c7b1) (MicrosoftDocs/m365copilot-docs)
+
+### Developer Tools
+
+2 repos, 2 tracked events, 0 releases, 0 security/admin signals.
+
+- Likely audience: Developers.
+- Reader takeaway: Scan top links for meaningful guidance or sample movement.
+- Most useful links:
+  - [docs: fix typos and grammar across release notes](https://github.com/microsoft/vscode-docs/pull/10743) (microsoft/vscode-docs)
 
 ### Identity
 
-2 repos, 8 tracked events, 0 releases, 0 security/admin signals.
+1 repo, 2 tracked events, 0 releases, 0 security/admin signals.
 
 - Likely audience: General MS consumers.
 - Reader takeaway: Use the top links first; some of the movement is likely generated or operational.
-- Most useful links:
-  - [Log the exception when an identity state listener fails, and isolate one config test](https://github.com/microsoft/entrabot/pull/171) (microsoft/entrabot)
-  - [Agent ID: Clarify CIMD consent and MCP token validation (#15051)](https://github.com/MicrosoftDocs/entra-docs/commit/12a71fea21dfe29612c101482680eb8f2d0fe7b7) (MicrosoftDocs/entra-docs)
-  - [Pulling public PR into private: https://github.com/MicrosoftDocs/entr…](https://github.com/MicrosoftDocs/entra-docs/commit/816f3b739e8a3d4257d15afa7bafb414ba9a2590) (MicrosoftDocs/entra-docs)
 
 ## Release Radar
 
 | Product area | Repository | Release | Why it matters |
 | --- | --- | --- | --- |
-| Azure | [Azure/data-api-builder](https://github.com/Azure/data-api-builder) | [2.1.7: Data API builder for Azure Databases](https://github.com/Azure/data-api-builder/releases/tag/v2.1.7) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-cpp](https://github.com/Azure/azure-sdk-for-cpp) | [azure-core-amqp_1.0.0-beta.15](https://github.com/Azure/azure-sdk-for-cpp/releases/tag/azure-core-amqp_1.0.0-beta.15) | Pre-release; inspect before adopting broadly. |
+| Azure | [Azure-Samples/azuresandbox](https://github.com/Azure-Samples/azuresandbox) | [Azure Sandbox v6.2.0](https://github.com/Azure-Samples/azuresandbox/releases/tag/v6.2.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Search.Documents_12.1.0](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Search.Documents_12.1.0) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Files.DataLake_12.28.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.DataLake_12.28.1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Files.Shares_12.28.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.28.1) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Queues_12.28.2](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.28.2) | New release available for consumers of this repo. |
+| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Common_12.29.1](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Common_12.29.1) | New release available for consumers of this repo. |
+| Unknown | [microsoft/perfview](https://github.com/microsoft/perfview) | [PerfView and TraceEvent 4.0.2](https://github.com/microsoft/perfview/releases/tag/v4.0.2) | New release available for consumers of this repo. |
+| Microsoft Graph | [microsoftgraph/msgraph-beta-sdk-java](https://github.com/microsoftgraph/msgraph-beta-sdk-java) | [v6.67.1](https://github.com/microsoftgraph/msgraph-beta-sdk-java/releases/tag/v6.67.1) | New release available for consumers of this repo. |
+| Unmapped Activity | [Azure/data-api-builder](https://github.com/Azure/data-api-builder) | [2.1.7: Data API builder for Azure Databases](https://github.com/Azure/data-api-builder/releases/tag/v2.1.7) | New release available for consumers of this repo. |
 | Microsoft Graph | [microsoftgraph/msgraph-sdk-go](https://github.com/microsoftgraph/msgraph-sdk-go) | [v1.107.0](https://github.com/microsoftgraph/msgraph-sdk-go/releases/tag/v1.107.0) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Files.Shares_12.29.0-beta.2](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Files.Shares_12.29.0-beta.2) | Pre-release; inspect before adopting broadly. |
-| Azure | [Azure/azure-sdk-for-net](https://github.com/Azure/azure-sdk-for-net) | [Azure.Storage.Queues_12.29.0-beta.2](https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.Storage.Queues_12.29.0-beta.2) | Pre-release; inspect before adopting broadly. |
-| Microsoft Graph | [microsoftgraph/msgraph-beta-sdk-java](https://github.com/microsoftgraph/msgraph-beta-sdk-java) | [v6.67.0](https://github.com/microsoftgraph/msgraph-beta-sdk-java/releases/tag/v6.67.0) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoftgraph/msgraph-sdk-java](https://github.com/microsoftgraph/msgraph-sdk-java) | [v6.74.0](https://github.com/microsoftgraph/msgraph-sdk-java/releases/tag/v6.74.0) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoftgraph/msgraph-beta-sdk-go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) | [v0.169.0](https://github.com/microsoftgraph/msgraph-beta-sdk-go/releases/tag/v0.169.0) | New release available for consumers of this repo. |
-| Azure | [Azure/azure-sdk-for-go](https://github.com/Azure/azure-sdk-for-go) | [sdk/security/keyvault/azkeys/v1.6.0](https://github.com/Azure/azure-sdk-for-go/releases/tag/sdk/security/keyvault/azkeys/v1.6.0) | New release available for consumers of this repo. |
-| Azure | [Azure/kars](https://github.com/Azure/kars) | [v0.1.27](https://github.com/Azure/kars/releases/tag/v0.1.27) | New release available for consumers of this repo. |
-| Azure | [Azure/sap-automation](https://github.com/Azure/sap-automation) | [v3.24.1.0](https://github.com/Azure/sap-automation/releases/tag/v3.24.1.0) | New release available for consumers of this repo. |
-| Unmapped Activity | [microsoft/go-sqlcmd](https://github.com/microsoft/go-sqlcmd) | [v1.11.0](https://github.com/microsoft/go-sqlcmd/releases/tag/v1.11.0) | New release available for consumers of this repo. |
-| Microsoft Graph | [microsoft/kiota](https://github.com/microsoft/kiota) | [v1.39.0](https://github.com/microsoft/kiota/releases/tag/v1.39.0) | New release available for consumers of this repo. |
 
 ## Security And Admin Attention
 
 These are not automatically vulnerabilities; they are items with security/admin-sensitive language or taxonomy.
 
-- [OfficeDev/Microsoft-Teams-Samples](https://github.com/OfficeDev/Microsoft-Teams-Samples): [Add TeamsJS multi-language security remediation automation](https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2442)
-- [Azure/azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java): [Delete test workflow for `GitHubActionsCredential`](https://github.com/Azure/azure-sdk-for-java/pull/51351)
-- [Azure/confidential-computing-cvm-guest-attestation](https://github.com/Azure/confidential-computing-cvm-guest-attestation): [Sync SecretsProvisioningLibrary from ADO PR branch 'refs/heads/master…](https://github.com/Azure/confidential-computing-cvm-guest-attestation/commit/751801e55d6ad2a82b24edeaea131c7db8142d4c)
+- [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust): [Fix CLI credential working directory on Windows](https://github.com/Azure/azure-sdk-for-rust/pull/5647)
 
 ## What Was Mostly Noise
 
-115 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
+54 events looked automated, bot-heavy, dependency-related, generated, or medium/high-noise.
 
 Top noisy clusters:
 
-- [microsoft/kiota](https://github.com/microsoft/kiota) - 5 events
-- [microsoft/kiota-python](https://github.com/microsoft/kiota-python) - 5 events
-- [microsoft/kiota-samples](https://github.com/microsoft/kiota-samples) - 5 events
-- [microsoftgraph/msgraph-sample-github-connector-typescript](https://github.com/microsoftgraph/msgraph-sample-github-connector-typescript) - 4 events
-- [microsoftgraph/msgraph-beta-sdk-java](https://github.com/microsoftgraph/msgraph-beta-sdk-java) - 3 events
+- [Azure-Samples/Durable-Task-Scheduler](https://github.com/Azure-Samples/Durable-Task-Scheduler) - 5 events
+- [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) - 4 events
+- [MicrosoftDocs/fabric-docs](https://github.com/MicrosoftDocs/fabric-docs) - 3 events
+- [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) - 3 events
+- [microsoft/aspire-samples](https://github.com/microsoft/aspire-samples) - 3 events
 
-Noise mix: Docs: 46, Dependency: 43, Fix: 5, Release: 5, CI/Infra: 5, Sample: 5, SDK: 4, Training: 2.
+Noise mix: Docs: 28, Dependency: 15, Fix: 5, Sample: 2, Release: 2, SDK: 1, CI/Infra: 1.
 
 ## Data Confidence
 
 - Source: GitHub scheduled/manual digest artifacts in this repository.
-- Window: 25.6 hours from `2026-11-19T19:41:12.455052Z` to `2026-11-20T21:18:39.222214Z`.
-- Event stream: 312 commits, 15 releases.
+- Window: 24.9 hours from `2026-11-20T19:18:39.222214Z` to `2026-11-21T20:09:51.873060Z`.
+- Event stream: 182 commits, 11 releases.
 - Freshness: tracked in [`reports/status.json`](status.json).
 - Full data: [`latest.summary.json`](latest.summary.json), [`latest.events.ndjson`](latest.events.ndjson), [`latest.json`](latest.json).
