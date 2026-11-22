@@ -1,0 +1,3248 @@
+{
+  "activities": [
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 20,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T18:10:53Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "oid": "e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T18:10:24Z",
+          "headline": "Merge pull request #322746 from MicrosoftDocs/main",
+          "oid": "c83afdc5192aafb7384c79949762846b7f5966e4",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/c83afdc5192aafb7384c79949762846b7f5966e4"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-11-22T15:07:55Z",
+          "headline": "Merge pull request #322741 from n-bajaj/docs/review-web-app-container\u2026",
+          "oid": "0e1b771394ae9495aad8f04177008c41a4a5cf14",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/0e1b771394ae9495aad8f04177008c41a4a5cf14"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-11-22T15:07:34Z",
+          "headline": "Merge pull request #322740 from n-bajaj/docs/web-app-assessment-conta\u2026",
+          "oid": "f9a2c96510def12a3b1c25066ae28e10fbbcafef",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/f9a2c96510def12a3b1c25066ae28e10fbbcafef"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T12:41:09Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "oid": "6f82858d3df5dc005f580467156a2a4b7c3fbbc2",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/6f82858d3df5dc005f580467156a2a4b7c3fbbc2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-11-22T18:10:53Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 95,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;keyword:vscode;keyword:vscode;keyword:code",
+      "classification_version": "2026-06-08",
+      "commit_count": 11,
+      "commits": [
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-11-22T19:22:41Z",
+          "headline": "Merge pull request #10745 from microsoft/docs/remote-release-notes-pr\u2026",
+          "oid": "c077aa5dac6244f0759ea84a0a552ff09e6ec333",
+          "pr_number": 10745,
+          "pr_title": "docs: proofread remote release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10745",
+          "url": "https://github.com/microsoft/vscode-docs/commit/c077aa5dac6244f0759ea84a0a552ff09e6ec333"
+        },
+        {
+          "author": "VanshShah37 (@vanshshah37)",
+          "committed_date": "2026-11-22T18:47:02Z",
+          "headline": "fix(docs): remove trailing commas in toc.json to conform to valid JSO\u2026",
+          "oid": "525deb7a7a6cf603622f241ebe7f2e7a2a0d7867",
+          "pr_number": 10717,
+          "pr_title": "fix(docs): remove trailing commas in toc.json to conform to valid JSON",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10717",
+          "url": "https://github.com/microsoft/vscode-docs/commit/525deb7a7a6cf603622f241ebe7f2e7a2a0d7867"
+        },
+        {
+          "author": "Alok Pandey (@alok-108)",
+          "committed_date": "2026-11-22T18:45:40Z",
+          "headline": "docs: update macOS shell command name in command-line FAQ (#10742)",
+          "oid": "bed17c9369e48c09cc777320382d359c4c6ab7ab",
+          "pr_number": 10742,
+          "pr_title": "docs: update macOS shell command name in command-line FAQ",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10742",
+          "url": "https://github.com/microsoft/vscode-docs/commit/bed17c9369e48c09cc777320382d359c4c6ab7ab"
+        },
+        {
+          "author": "Alok Pandey (@alok-108)",
+          "committed_date": "2026-11-22T18:44:48Z",
+          "headline": "docs: fix broken cross-reference anchors with double-dash slugs acros\u2026",
+          "oid": "7e03161546dc860a85dea815eeea779fc43902e5",
+          "pr_number": 10741,
+          "pr_title": "docs: fix broken cross-reference anchors with double-dash slugs across docs",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10741",
+          "url": "https://github.com/microsoft/vscode-docs/commit/7e03161546dc860a85dea815eeea779fc43902e5"
+        },
+        {
+          "author": "VanshShah37 (@vanshshah37)",
+          "committed_date": "2026-11-22T18:43:20Z",
+          "headline": "docs: fix broken shrink/expand selection anchor in tips and tricks (#\u2026",
+          "oid": "96517a67f09b0fbc36bebcf3883df5c4f1407060",
+          "pr_number": 10720,
+          "pr_title": "docs: fix broken shrink/expand selection anchor in tips and tricks",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10720",
+          "url": "https://github.com/microsoft/vscode-docs/commit/96517a67f09b0fbc36bebcf3883df5c4f1407060"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/vscode-docs",
+      "name": "vscode-docs",
+      "newest_commit_date": "2026-11-22T19:22:41Z",
+      "org": "microsoft",
+      "product_area": "Developer Tools",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 96,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release"
+          ],
+          "repos": [
+            "microsoft/vscode-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:cli;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:47:23Z",
+          "headline": "Merge pull request #154 from hyoshioka0128/patch-41",
+          "oid": "ede749326be4ac0c9ef23800a57fdc5723fe0859",
+          "pr_number": 154,
+          "pr_title": "Update changelog.md",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/154",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/ede749326be4ac0c9ef23800a57fdc5723fe0859"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:47:13Z",
+          "headline": "Merge pull request #153 from hyoshioka0128/patch-40",
+          "oid": "59e67a87176cf2a6f79ab62a64e8a74a1d8c033e",
+          "pr_number": 153,
+          "pr_title": "Translate navigation links to Japanese",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/153",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/59e67a87176cf2a6f79ab62a64e8a74a1d8c033e"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:59Z",
+          "headline": "Merge pull request #152 from hyoshioka0128/patch-39",
+          "oid": "e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3",
+          "pr_number": 152,
+          "pr_title": "Update README.md",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/152",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:45Z",
+          "headline": "Merge pull request #151 from hyoshioka0128/patch-38",
+          "oid": "6c71d98a82c85e310e10be1c2f4e21e59eebedf5",
+          "pr_number": 151,
+          "pr_title": "Translate FAQ content to Japanese",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/151",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/6c71d98a82c85e310e10be1c2f4e21e59eebedf5"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:29Z",
+          "headline": "Merge pull request #149 from microsoft/update-translations",
+          "oid": "5ea85dea3c3afab43a75ffdbdfed74f0557c398a",
+          "pr_number": 149,
+          "pr_title": "chore(i18n): sync translations with latest source changes",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/149",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/5ea85dea3c3afab43a75ffdbdfed74f0557c398a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/AZD-for-beginners",
+      "name": "AZD-for-beginners",
+      "newest_commit_date": "2026-11-22T10:47:23Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 47,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T12:06:30Z",
+          "headline": "Merge pull request #3534 from MicrosoftDocs/main639309459740114672syn\u2026",
+          "oid": "5b77ab5b654b47c1af83a474361c4edfe7b5366d",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/5b77ab5b654b47c1af83a474361c4edfe7b5366d"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T12:06:09Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "a2603a59f43bdccc1094bab671653c0ad70d62ca",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/a2603a59f43bdccc1094bab671653c0ad70d62ca"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T12:03:05Z",
+          "headline": "Merge pull request #17505 from MicrosoftDocs/main",
+          "oid": "55912a981b78957b8e6d8b07173f525e9da91fff",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/55912a981b78957b8e6d8b07173f525e9da91fff"
+        },
+        {
+          "author": "Sneha Gunda (@SnehaGunda)",
+          "committed_date": "2026-11-22T08:37:27Z",
+          "headline": "Add on-demand billing quota guidance (#17476)",
+          "oid": "b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-11-22T12:06:30Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;keyword:platform;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T22:43:51Z",
+          "headline": "Merge pull request #13 from Azure-Samples/fix/sanitize-uv-startup-env",
+          "oid": "b35996acbb7e7267216530f3ab9a8892b8ad1e28",
+          "pr_number": 13,
+          "pr_title": "fix: clear inherited UV_FROZEN and extra index overrides in startup scripts",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/13",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/b35996acbb7e7267216530f3ab9a8892b8ad1e28"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T22:43:02Z",
+          "headline": "fix: clear inherited UV_FROZEN and extra index overrides in local sta\u2026",
+          "oid": "79598d08bec3b13906af6b85fbb5a31c90d96b59",
+          "pr_number": 13,
+          "pr_title": "fix: clear inherited UV_FROZEN and extra index overrides in startup scripts",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/13",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/79598d08bec3b13906af6b85fbb5a31c90d96b59"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T18:29:24Z",
+          "headline": "Merge pull request #9 from Azure-Samples/fix/zero-simulation-dealersh\u2026",
+          "oid": "2a00a00b4e42213f011c01180928b6f816038c5a",
+          "pr_number": 9,
+          "pr_title": "Remove runtime simulation in sandbox starters and dealership-e2e",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/9",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/2a00a00b4e42213f011c01180928b6f816038c5a"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T18:29:16Z",
+          "headline": "Merge pull request #10 from Azure-Samples/feat/mcp-skill-conventions",
+          "oid": "0d45c699a7ea083fcb179aa03da16239d65b105e",
+          "pr_number": 10,
+          "pr_title": "feat: add shared deterministic MCP Hosted Skill block and wire pilot templates",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/10",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/0d45c699a7ea083fcb179aa03da16239d65b105e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azure-app-platform-templates",
+      "name": "azure-app-platform-templates",
+      "newest_commit_date": "2026-11-21T22:43:51Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 44,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Larry Ewing (@lewing)",
+          "committed_date": "2026-11-22T18:56:30Z",
+          "headline": "Skip multithreading JIT test on unsupported platforms (#138094)",
+          "oid": "dba82669a33c42e44ab2774aeb0ff11b518f970d",
+          "pr_number": 138094,
+          "pr_title": "Skip multithreading JIT test on unsupported platforms",
+          "pr_url": "https://github.com/dotnet/runtime/pull/138094",
+          "url": "https://github.com/dotnet/runtime/commit/dba82669a33c42e44ab2774aeb0ff11b518f970d"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-11-22T16:57:57Z",
+          "headline": "[wasm] Bump chrome for testing - linux: 158.0.8127.36, windows: 159.0\u2026",
+          "oid": "4db00fdb1b4c23099f4f977d184e9d2439a9774b",
+          "pr_number": 138087,
+          "pr_title": "[wasm] Bump chrome for testing - linux: 158.0.8127.36, windows: 159.0.8154.13, mac: 159.0.8154.13",
+          "pr_url": "https://github.com/dotnet/runtime/pull/138087",
+          "url": "https://github.com/dotnet/runtime/commit/4db00fdb1b4c23099f4f977d184e9d2439a9774b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-11-22T18:56:30Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 42,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:entra;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T13:37:19Z",
+          "headline": "Merge pull request #15059 from MicrosoftDocs/main",
+          "oid": "3413d1589ffb1f77441636f4c6809d292270003d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/3413d1589ffb1f77441636f4c6809d292270003d"
+        },
+        {
+          "author": "Alexander Pavlovsky (@idMdev)",
+          "committed_date": "2026-11-22T08:58:45Z",
+          "headline": "Id mdev patch seb image update (#15058)",
+          "oid": "c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/entra-docs",
+      "name": "entra-docs",
+      "newest_commit_date": "2026-11-22T13:37:19Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Identity",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "entra"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;keyword:terraform;fallback:Unknown;keyword:quickstart",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-22T09:32:23Z",
+          "headline": "build(deps): bump github.com/klauspost/compress from 1.16.5 to 1.18.7\u2026",
+          "oid": "4945134b7459afdc0c646294d2b4b8422c61593e",
+          "pr_number": 280,
+          "pr_title": "build(deps): bump github.com/klauspost/compress from 1.16.5 to 1.18.7 in /quickstarts/401-testing-terratest",
+          "pr_url": "https://github.com/microsoft/fabric-terraform-quickstart/pull/280",
+          "url": "https://github.com/microsoft/fabric-terraform-quickstart/commit/4945134b7459afdc0c646294d2b4b8422c61593e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-22T09:31:58Z",
+          "headline": "build(deps): bump the all group across 1 directory with 2 updates (#278)",
+          "oid": "c49b27074973a1e4679f572e62fc2c337fca3cf4",
+          "pr_number": 278,
+          "pr_title": "build(deps): bump the all group across 1 directory with 2 updates",
+          "pr_url": "https://github.com/microsoft/fabric-terraform-quickstart/pull/278",
+          "url": "https://github.com/microsoft/fabric-terraform-quickstart/commit/c49b27074973a1e4679f572e62fc2c337fca3cf4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/fabric-terraform-quickstart",
+      "name": "fabric-terraform-quickstart",
+      "newest_commit_date": "2026-11-22T09:32:23Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "dependency-noise",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftLearning;keyword:training;name:mslearn;category:training;fallback:Unknown;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-11-21T22:47:14Z",
+          "headline": "Updated duration",
+          "oid": "930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-11-21T22:46:36Z",
+          "headline": "Consolidated exercises",
+          "oid": "4a6f02deac53523f80c7d61dcb882fa0e8cfd1db",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/4a6f02deac53523f80c7d61dcb882fa0e8cfd1db"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-agent-quickstart",
+      "name": "mslearn-agent-quickstart",
+      "newest_commit_date": "2026-11-21T22:47:14Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 77,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "orgs": [
+            "MicrosoftLearning"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Shiva S (@Shivakishore14)",
+          "committed_date": "2026-11-21T19:32:07Z",
+          "headline": "[AgentServer] Add experimental original-subject attribution (#65073)",
+          "oid": "77ac5395e75f506cd1732cb119a702bbf0650027",
+          "pr_number": 65073,
+          "pr_title": "[AgentServer] Add experimental original-subject attribution",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65073",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/77ac5395e75f506cd1732cb119a702bbf0650027"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-11-21T19:03:20Z",
+          "headline": "Increment version for appconfiguration releases (#65071)",
+          "oid": "830c9c91604c7a7022a8560aec20c5f354b35c4b",
+          "pr_number": 65071,
+          "pr_title": "Increment version for appconfiguration releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65071",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/830c9c91604c7a7022a8560aec20c5f354b35c4b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-11-21T19:32:07Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "release",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure AI",
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-net"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:sdk",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "viragjain611 (@viragjain611)",
+          "committed_date": "2026-11-22T19:34:22Z",
+          "headline": "[ai-projects] Preserve preview and caller headers for new next-link p\u2026",
+          "oid": "97f25f1acf7bb7929f708ddc0ff7c04e2924c30c",
+          "pr_number": 40302,
+          "pr_title": "[ai-projects] Preserve preview and caller headers for new next-link pagers",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/40302",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/97f25f1acf7bb7929f708ddc0ff7c04e2924c30c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-js",
+      "name": "azure-sdk-for-js",
+      "newest_commit_date": "2026-11-22T19:34:22Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 86,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-js"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:tool;keyword:powershell;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "allcontributors[bot] (@allcontributors[bot])",
+          "committed_date": "2026-11-22T17:04:42Z",
+          "headline": "add keerthimath as a contributor for doc (#2427)",
+          "oid": "d630bf1a6cb9a1ee748b9d9bdd55a849916b8545",
+          "pr_number": 2427,
+          "pr_title": "add keerthimath as a contributor for doc",
+          "pr_url": "https://github.com/microsoft/finops-toolkit/pull/2427",
+          "url": "https://github.com/microsoft/finops-toolkit/commit/d630bf1a6cb9a1ee748b9d9bdd55a849916b8545"
+        }
+      ],
+      "default_branch": "dev",
+      "full_name": "microsoft/finops-toolkit",
+      "name": "finops-toolkit",
+      "newest_commit_date": "2026-11-22T17:04:42Z",
+      "org": "microsoft",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 26,
+        "tags": [
+          "bot-only",
+          "docs",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;keyword:api;keyword:windows;keyword:api",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Chris Guzak (@ChrisGuzak)",
+          "committed_date": "2026-11-22T05:12:16Z",
+          "headline": "Document IDL spellings for WinRT metadata attributes (#2562)",
+          "oid": "d5f9910363098d10dea92d564317c3d3142c5fcb",
+          "pr_number": 2562,
+          "pr_title": "Document IDL spellings for WinRT metadata attributes",
+          "pr_url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562",
+          "url": "https://github.com/MicrosoftDocs/winrt-api/commit/d5f9910363098d10dea92d564317c3d3142c5fcb"
+        }
+      ],
+      "default_branch": "docs",
+      "full_name": "MicrosoftDocs/winrt-api",
+      "name": "winrt-api",
+      "newest_commit_date": "2026-11-22T05:12:16Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Windows",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:terraform;org:Azure;keyword:lab",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-11-22T00:24:40Z",
+          "headline": "docs: refresh validated planner prices",
+          "oid": "773a5e0af242f63268943c360feb86ab3c3004a1",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure/AI-Landing-Zones/commit/773a5e0af242f63268943c360feb86ab3c3004a1"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/AI-Landing-Zones",
+      "name": "AI-Landing-Zones",
+      "newest_commit_date": "2026-11-22T00:24:40Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 26,
+        "tags": [
+          "bot-only",
+          "docs",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "Azure"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;category:samples;keyword:windows;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-21T18:43:17Z",
+          "headline": "\ud83d\udce6 Bump the all-dependencies group across 3 directories with 2 updates\u2026",
+          "oid": "d4e999c342f35f47fbbc7611ec8d1a7a11dcad73",
+          "pr_number": 1369,
+          "pr_title": "\ud83d\udce6 Bump the all-dependencies group across 3 directories with 2 updates",
+          "pr_url": "https://github.com/microsoft/react-native-windows-samples/pull/1369",
+          "url": "https://github.com/microsoft/react-native-windows-samples/commit/d4e999c342f35f47fbbc7611ec8d1a7a11dcad73"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/react-native-windows-samples",
+      "name": "react-native-windows-samples",
+      "newest_commit_date": "2026-11-21T18:43:17Z",
+      "org": "microsoft",
+      "product_area": "Windows",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "dependency-noise",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "artifact_type": "tracker-report",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 38,
+    "dated_path": "reports/2026-11-22.events.ndjson",
+    "event_count": 38,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 0,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "events_calibration": {},
+  "events_prefilter": {
+    "enabled": false,
+    "mode": "off"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "generated_at": "2026-11-22T20:24:31.670945Z",
+  "graphql": {
+    "batch_size": 35,
+    "candidate_repos": 40,
+    "count_batches": 2,
+    "detail_batches": 1,
+    "max_commits": 5,
+    "mode": "two-stage",
+    "remaining_at_start": 5000,
+    "repos_counted": 40,
+    "repos_enriched": 15,
+    "repos_with_count": 15,
+    "repos_with_movement": 15,
+    "requested_batch_size": 0,
+    "stage_one_total_commits": 61,
+    "strategy": "balanced"
+  },
+  "lifecycle": {
+    "archived_changed": [],
+    "available": true,
+    "category_changed": [],
+    "completed_at": "2026-11-22T20:23:58.594262Z",
+    "counts": {
+      "archived_changed": 0,
+      "category_changed": 0,
+      "default_branch_changed": 0,
+      "fork_changed": 0,
+      "new_repos": 1,
+      "removed_repos": 0
+    },
+    "default_branch_changed": [],
+    "fork_changed": [],
+    "mode": "incremental",
+    "new_repos": [
+      {
+        "archived": false,
+        "category": "other",
+        "created_at": "2026-03-12T15:53:05Z",
+        "default_branch": "main",
+        "fork": false,
+        "full_name": "microsoft/frontiersquad-copilot",
+        "html_url": "https://github.com/microsoft/frontiersquad-copilot",
+        "name": "frontiersquad-copilot",
+        "org": "microsoft",
+        "pushed_at": "2026-11-22T16:29:51Z"
+      }
+    ],
+    "orgs_completed": [
+      "Azure",
+      "Azure-Samples",
+      "MicrosoftDocs",
+      "MicrosoftLearning",
+      "OfficeDev",
+      "PowerShell",
+      "SharePoint",
+      "aspnet",
+      "dotnet",
+      "microsoft",
+      "microsoftgraph"
+    ],
+    "removed_repos": []
+  },
+  "noise_summary": {
+    "actor_types": {
+      "automation": 6,
+      "bot": 7
+    },
+    "change_types": {
+      "dependency_update": 4,
+      "docs_update": 8,
+      "feature": 1
+    },
+    "event_count": 13,
+    "top_repos": [
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/azure-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "microsoft/fabric-terraform-quickstart"
+      },
+      {
+        "event_count": 1,
+        "repo": "microsoft/finops-toolkit"
+      },
+      {
+        "event_count": 1,
+        "repo": "dotnet/runtime"
+      }
+    ]
+  },
+  "notable_changes": [
+    {
+      "actor_type": "human",
+      "author": "Nick Trogh (@ntrogh)",
+      "category": "docs",
+      "change_type": "release",
+      "commit_url": "https://github.com/microsoft/vscode-docs/commit/c077aa5dac6244f0759ea84a0a552ff09e6ec333",
+      "committed_at": "2026-11-22T19:22:41Z",
+      "customer_visible": "true",
+      "event_id": "github_commit:microsoft/vscode-docs:c077aa5dac6244f0759ea84a0a552ff09e6ec333",
+      "headline": "Merge pull request #10745 from microsoft/docs/remote-release-notes-pr\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "release",
+        "human_authored"
+      ],
+      "notability_score": 100,
+      "pr_number": 10745,
+      "pr_title": "docs: proofread remote release notes",
+      "pr_url": "https://github.com/microsoft/vscode-docs/pull/10745",
+      "product_area": "Developer Tools",
+      "repo": "microsoft/vscode-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Sneha Gunda (@SnehaGunda)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/MicrosoftDocs/fabric-docs/commit/b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8",
+      "committed_at": "2026-11-22T08:37:27Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/fabric-docs:b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8",
+      "headline": "Add on-demand billing quota guidance (#17476)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 3534,
+      "pr_title": "Repo sync for protected branch",
+      "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+      "product_area": "Unknown",
+      "repo": "MicrosoftDocs/fabric-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Shiva S (@Shivakishore14)",
+      "category": "docs",
+      "change_type": "feature",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-net/commit/77ac5395e75f506cd1732cb119a702bbf0650027",
+      "committed_at": "2026-11-21T19:32:07Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-net:77ac5395e75f506cd1732cb119a702bbf0650027",
+      "headline": "[AgentServer] Add experimental original-subject attribution (#65073)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 65073,
+      "pr_title": "[AgentServer] Add experimental original-subject attribution",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65073",
+      "product_area": "Azure",
+      "repo": "Azure/azure-sdk-for-net"
+    },
+    {
+      "actor_type": "human",
+      "author": "VanshShah37 (@vanshshah37)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/vscode-docs/commit/525deb7a7a6cf603622f241ebe7f2e7a2a0d7867",
+      "committed_at": "2026-11-22T18:47:02Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/vscode-docs:525deb7a7a6cf603622f241ebe7f2e7a2a0d7867",
+      "headline": "fix(docs): remove trailing commas in toc.json to conform to valid JSO\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 10717,
+      "pr_title": "fix(docs): remove trailing commas in toc.json to conform to valid JSON",
+      "pr_url": "https://github.com/microsoft/vscode-docs/pull/10717",
+      "product_area": "Developer Tools",
+      "repo": "microsoft/vscode-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Alok Pandey (@alok-108)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/vscode-docs/commit/7e03161546dc860a85dea815eeea779fc43902e5",
+      "committed_at": "2026-11-22T18:44:48Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/vscode-docs:7e03161546dc860a85dea815eeea779fc43902e5",
+      "headline": "docs: fix broken cross-reference anchors with double-dash slugs acros\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 10741,
+      "pr_title": "docs: fix broken cross-reference anchors with double-dash slugs across docs",
+      "pr_url": "https://github.com/microsoft/vscode-docs/pull/10741",
+      "product_area": "Developer Tools",
+      "repo": "microsoft/vscode-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "VanshShah37 (@vanshshah37)",
+      "category": "docs",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/microsoft/vscode-docs/commit/96517a67f09b0fbc36bebcf3883df5c4f1407060",
+      "committed_at": "2026-11-22T18:43:20Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/vscode-docs:96517a67f09b0fbc36bebcf3883df5c4f1407060",
+      "headline": "docs: fix broken shrink/expand selection anchor in tips and tricks (#\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 10720,
+      "pr_title": "docs: fix broken shrink/expand selection anchor in tips and tricks",
+      "pr_url": "https://github.com/microsoft/vscode-docs/pull/10720",
+      "product_area": "Developer Tools",
+      "repo": "microsoft/vscode-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "viragjain611 (@viragjain611)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-js/commit/97f25f1acf7bb7929f708ddc0ff7c04e2924c30c",
+      "committed_at": "2026-11-22T19:34:22Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-js:97f25f1acf7bb7929f708ddc0ff7c04e2924c30c",
+      "headline": "[ai-projects] Preserve preview and caller headers for new next-link p\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 40302,
+      "pr_title": "[ai-projects] Preserve preview and caller headers for new next-link pagers",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/40302",
+      "product_area": "Azure",
+      "repo": "Azure/azure-sdk-for-js"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+      "committed_at": "2026-11-22T18:10:53Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Learn Build Service GitHub App",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/6f82858d3df5dc005f580467156a2a4b7c3fbbc2",
+      "committed_at": "2026-11-22T12:41:09Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:6f82858d3df5dc005f580467156a2a4b7c3fbbc2",
+      "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Alexander Pavlovsky (@idMdev)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+      "committed_at": "2026-11-22T08:58:45Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/entra-docs:c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+      "headline": "Id mdev patch seb image update (#15058)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Identity",
+      "repo": "MicrosoftDocs/entra-docs"
+    },
+    {
+      "actor_type": "human",
+      "author": "Chris Guzak (@ChrisGuzak)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/winrt-api/commit/d5f9910363098d10dea92d564317c3d3142c5fcb",
+      "committed_at": "2026-11-22T05:12:16Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/winrt-api:d5f9910363098d10dea92d564317c3d3142c5fcb",
+      "headline": "Document IDL spellings for WinRT metadata attributes (#2562)",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": 2562,
+      "pr_title": "Document IDL spellings for WinRT metadata attributes",
+      "pr_url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562",
+      "product_area": "Windows",
+      "repo": "MicrosoftDocs/winrt-api"
+    },
+    {
+      "actor_type": "human",
+      "author": "Graeme Malcolm (@GraemeMalcolm)",
+      "category": "training",
+      "change_type": "training_update",
+      "commit_url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+      "committed_at": "2026-11-21T22:47:14Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/mslearn-agent-quickstart:930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+      "headline": "Updated duration",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Unknown",
+      "repo": "MicrosoftLearning/mslearn-agent-quickstart"
+    },
+    {
+      "actor_type": "human",
+      "author": "Graeme Malcolm (@GraemeMalcolm)",
+      "category": "training",
+      "change_type": "training_update",
+      "commit_url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/4a6f02deac53523f80c7d61dcb882fa0e8cfd1db",
+      "committed_at": "2026-11-21T22:46:36Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftLearning/mslearn-agent-quickstart:4a6f02deac53523f80c7d61dcb882fa0e8cfd1db",
+      "headline": "Consolidated exercises",
+      "noise_level": "low",
+      "notability_reason": [
+        "watchlist",
+        "human_authored"
+      ],
+      "notability_score": 90,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Unknown",
+      "repo": "MicrosoftLearning/mslearn-agent-quickstart"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/c83afdc5192aafb7384c79949762846b7f5966e4",
+      "committed_at": "2026-11-22T18:10:24Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:c83afdc5192aafb7384c79949762846b7f5966e4",
+      "headline": "Merge pull request #322746 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "bot",
+      "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/azure-docs/commit/0e1b771394ae9495aad8f04177008c41a4a5cf14",
+      "committed_at": "2026-11-22T15:07:55Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/azure-docs:0e1b771394ae9495aad8f04177008c41a4a5cf14",
+      "headline": "Merge pull request #322741 from n-bajaj/docs/review-web-app-container\u2026",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Azure",
+      "repo": "MicrosoftDocs/azure-docs"
+    },
+    {
+      "actor_type": "automation",
+      "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/MicrosoftDocs/entra-docs/commit/3413d1589ffb1f77441636f4c6809d292270003d",
+      "committed_at": "2026-11-22T13:37:19Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:MicrosoftDocs/entra-docs:3413d1589ffb1f77441636f4c6809d292270003d",
+      "headline": "Merge pull request #15059 from MicrosoftDocs/main",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "product_area": "Identity",
+      "repo": "MicrosoftDocs/entra-docs"
+    },
+    {
+      "actor_type": "bot",
+      "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/Azure/azure-sdk-for-net/commit/830c9c91604c7a7022a8560aec20c5f354b35c4b",
+      "committed_at": "2026-11-21T19:03:20Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure/azure-sdk-for-net:830c9c91604c7a7022a8560aec20c5f354b35c4b",
+      "headline": "Increment version for appconfiguration releases (#65071)",
+      "noise_level": "medium",
+      "notability_reason": [
+        "watchlist",
+        "automation_or_bot"
+      ],
+      "notability_score": 70,
+      "pr_number": 65071,
+      "pr_title": "Increment version for appconfiguration releases",
+      "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65071",
+      "product_area": "Azure",
+      "repo": "Azure/azure-sdk-for-net"
+    },
+    {
+      "actor_type": "human",
+      "author": "Lee Stott (@leestott)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/AZD-for-beginners/commit/ede749326be4ac0c9ef23800a57fdc5723fe0859",
+      "committed_at": "2026-11-22T10:47:23Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/AZD-for-beginners:ede749326be4ac0c9ef23800a57fdc5723fe0859",
+      "headline": "Merge pull request #154 from hyoshioka0128/patch-41",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 57,
+      "pr_number": 154,
+      "pr_title": "Update changelog.md",
+      "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/154",
+      "product_area": "Azure",
+      "repo": "microsoft/AZD-for-beginners"
+    },
+    {
+      "actor_type": "human",
+      "author": "Lee Stott (@leestott)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/AZD-for-beginners/commit/59e67a87176cf2a6f79ab62a64e8a74a1d8c033e",
+      "committed_at": "2026-11-22T10:47:13Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/AZD-for-beginners:59e67a87176cf2a6f79ab62a64e8a74a1d8c033e",
+      "headline": "Merge pull request #153 from hyoshioka0128/patch-40",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 57,
+      "pr_number": 153,
+      "pr_title": "Translate navigation links to Japanese",
+      "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/153",
+      "product_area": "Azure",
+      "repo": "microsoft/AZD-for-beginners"
+    },
+    {
+      "actor_type": "human",
+      "author": "Lee Stott (@leestott)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/AZD-for-beginners/commit/e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3",
+      "committed_at": "2026-11-22T10:46:59Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/AZD-for-beginners:e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3",
+      "headline": "Merge pull request #152 from hyoshioka0128/patch-39",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 57,
+      "pr_number": 152,
+      "pr_title": "Update README.md",
+      "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/152",
+      "product_area": "Azure",
+      "repo": "microsoft/AZD-for-beginners"
+    },
+    {
+      "actor_type": "human",
+      "author": "Lee Stott (@leestott)",
+      "category": "samples",
+      "change_type": "sample_update",
+      "commit_url": "https://github.com/microsoft/AZD-for-beginners/commit/6c71d98a82c85e310e10be1c2f4e21e59eebedf5",
+      "committed_at": "2026-11-22T10:46:45Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:microsoft/AZD-for-beginners:6c71d98a82c85e310e10be1c2f4e21e59eebedf5",
+      "headline": "Merge pull request #151 from hyoshioka0128/patch-38",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 57,
+      "pr_number": 151,
+      "pr_title": "Translate FAQ content to Japanese",
+      "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/151",
+      "product_area": "Azure",
+      "repo": "microsoft/AZD-for-beginners"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paul Yuknewicz (@paulyuk)",
+      "category": "samples",
+      "change_type": "feature",
+      "commit_url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/0d45c699a7ea083fcb179aa03da16239d65b105e",
+      "committed_at": "2026-11-21T18:29:16Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-app-platform-templates:0d45c699a7ea083fcb179aa03da16239d65b105e",
+      "headline": "Merge pull request #10 from Azure-Samples/feat/mcp-skill-conventions",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 54,
+      "pr_number": 10,
+      "pr_title": "feat: add shared deterministic MCP Hosted Skill block and wire pilot templates",
+      "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/10",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-app-platform-templates"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paul Yuknewicz (@paulyuk)",
+      "category": "samples",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/b35996acbb7e7267216530f3ab9a8892b8ad1e28",
+      "committed_at": "2026-11-21T22:43:51Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-app-platform-templates:b35996acbb7e7267216530f3ab9a8892b8ad1e28",
+      "headline": "Merge pull request #13 from Azure-Samples/fix/sanitize-uv-startup-env",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 54,
+      "pr_number": 13,
+      "pr_title": "fix: clear inherited UV_FROZEN and extra index overrides in startup scripts",
+      "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/13",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-app-platform-templates"
+    },
+    {
+      "actor_type": "human",
+      "author": "Paul Yuknewicz (@paulyuk)",
+      "category": "samples",
+      "change_type": "bug_fix",
+      "commit_url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/2a00a00b4e42213f011c01180928b6f816038c5a",
+      "committed_at": "2026-11-21T18:29:24Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:Azure-Samples/azure-app-platform-templates:2a00a00b4e42213f011c01180928b6f816038c5a",
+      "headline": "Merge pull request #9 from Azure-Samples/fix/zero-simulation-dealersh\u2026",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 54,
+      "pr_number": 9,
+      "pr_title": "Remove runtime simulation in sandbox starters and dealership-e2e",
+      "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/9",
+      "product_area": "Azure",
+      "repo": "Azure-Samples/azure-app-platform-templates"
+    },
+    {
+      "actor_type": "human",
+      "author": "Larry Ewing (@lewing)",
+      "category": "docs",
+      "change_type": "docs_update",
+      "commit_url": "https://github.com/dotnet/runtime/commit/dba82669a33c42e44ab2774aeb0ff11b518f970d",
+      "committed_at": "2026-11-22T18:56:30Z",
+      "customer_visible": "unknown",
+      "event_id": "github_commit:dotnet/runtime:dba82669a33c42e44ab2774aeb0ff11b518f970d",
+      "headline": "Skip multithreading JIT test on unsupported platforms (#138094)",
+      "noise_level": "low",
+      "notability_reason": [
+        "human_authored"
+      ],
+      "notability_score": 52,
+      "pr_number": 138094,
+      "pr_title": "Skip multithreading JIT test on unsupported platforms",
+      "pr_url": "https://github.com/dotnet/runtime/pull/138094",
+      "product_area": ".NET",
+      "repo": "dotnet/runtime"
+    }
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 18,
+      "noisy_event_count": 5,
+      "notable_event_count": 8,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-21T19:32:07Z",
+          "headline": "[AgentServer] Add experimental original-subject attribution",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-net",
+          "url": "https://github.com/Azure/azure-sdk-for-net/pull/65073"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T19:34:22Z",
+          "headline": "[ai-projects] Preserve preview and caller headers for new next-link pagers",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-js",
+          "url": "https://github.com/Azure/azure-sdk-for-js/pull/40302"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T18:10:53Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/azure-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/AZD-for-beginners"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/azure-app-platform-templates"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 1,
+          "repo": "Azure/azure-sdk-for-js"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 4,
+      "notable_event_count": 6,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-22T08:37:27Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-11-21T22:47:14Z",
+          "headline": "Updated duration",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-11-21T22:46:36Z",
+          "headline": "Consolidated exercises",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/4a6f02deac53523f80c7d61dcb882fa0e8cfd1db"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/fabric-terraform-quickstart"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-22T19:22:41Z",
+          "headline": "docs: proofread remote release notes",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10745"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-22T18:47:02Z",
+          "headline": "fix(docs): remove trailing commas in toc.json to conform to valid JSON",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10717"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-22T18:44:48Z",
+          "headline": "docs: fix broken cross-reference anchors with double-dash slugs across docs",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10741"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 2,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T08:58:45Z",
+          "headline": "Id mdev patch seb image update (#15058)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T13:37:19Z",
+          "headline": "Merge pull request #15059 from MicrosoftDocs/main",
+          "notability_score": 70,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/3413d1589ffb1f77441636f4c6809d292270003d"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/entra-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 1,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T05:12:16Z",
+          "headline": "Document IDL spellings for WinRT metadata attributes",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/winrt-api",
+          "url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/winrt-api"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/react-native-windows-samples"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "dotnet/runtime"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        }
+      ]
+    }
+  ],
+  "recent_repo_creations": [],
+  "releases": {
+    "items": [],
+    "summary": {
+      "candidate_repo_cap": 150,
+      "enabled": true,
+      "error_count": 0,
+      "errors": [],
+      "max_releases_per_repo": 5,
+      "mode": "candidates-and-watched",
+      "repos_checked": 150,
+      "repos_with_releases": 0,
+      "requests_changed": 150,
+      "requests_checked": 150,
+      "requests_not_modified": 0
+    }
+  },
+  "schema_url": "schemas/report.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "d3d4d867d7c2f515ce592be3d9d72e52a0fdcbbe",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "45066186111",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/45066186111"
+  },
+  "summaries": {
+    "by_category": {
+      "docs": 10,
+      "samples": 4,
+      "training": 1
+    },
+    "by_org": {
+      "Azure": 3,
+      "Azure-Samples": 1,
+      "MicrosoftDocs": 4,
+      "MicrosoftLearning": 1,
+      "dotnet": 1,
+      "microsoft": 5
+    },
+    "signals": {
+      "bot_or_dependency_noise": [
+        {
+          "full_name": "microsoft/finops-toolkit",
+          "score": 26,
+          "tags": [
+            "bot-only",
+            "docs",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/AI-Landing-Zones",
+          "score": 26,
+          "tags": [
+            "bot-only",
+            "docs",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "Azure"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/react-native-windows-samples",
+          "score": 0,
+          "tags": [
+            "bot-only",
+            "dependency-noise",
+            "samples"
+          ],
+          "watchlist_matches": {}
+        },
+        {
+          "full_name": "microsoft/fabric-terraform-quickstart",
+          "score": 0,
+          "tags": [
+            "bot-only",
+            "dependency-noise",
+            "samples"
+          ],
+          "watchlist_matches": {}
+        }
+      ],
+      "high_signal": [
+        {
+          "full_name": "microsoft/vscode-docs",
+          "score": 96,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release"
+            ],
+            "repos": [
+              "microsoft/vscode-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 95,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/azure-sdk-for-net",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "release",
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure AI",
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-net"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/azure-sdk-for-js",
+          "score": 86,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-js"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/mslearn-agent-quickstart",
+          "score": 77,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "orgs": [
+              "MicrosoftLearning"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/entra-docs",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "entra"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/winrt-api",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        }
+      ],
+      "tag_counts": {
+        "bot-only": 4,
+        "dependency-noise": 2,
+        "docs": 10,
+        "human-authored": 11,
+        "product:Azure AI": 2,
+        "product:Azure SDK": 2,
+        "product:PowerShell": 1,
+        "release-language": 3,
+        "samples": 4,
+        "training": 1,
+        "watchlist": 10
+      },
+      "watched": [
+        {
+          "full_name": "microsoft/vscode-docs",
+          "score": 96,
+          "tags": [
+            "docs",
+            "human-authored",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "release"
+            ],
+            "repos": [
+              "microsoft/vscode-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/azure-docs",
+          "score": 95,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ],
+            "repos": [
+              "MicrosoftDocs/azure-docs"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/azure-sdk-for-net",
+          "score": 87,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure AI",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent",
+              "release",
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure AI",
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-net"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/azure-sdk-for-js",
+          "score": 86,
+          "tags": [
+            "docs",
+            "human-authored",
+            "product:Azure SDK",
+            "release-language",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "sdk"
+            ],
+            "orgs": [
+              "Azure"
+            ],
+            "products": [
+              "Azure SDK"
+            ],
+            "repos": [
+              "Azure/azure-sdk-for-js"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/fabric-docs",
+          "score": 79,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftLearning/mslearn-agent-quickstart",
+          "score": 77,
+          "tags": [
+            "human-authored",
+            "product:Azure AI",
+            "training",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "agent"
+            ],
+            "orgs": [
+              "MicrosoftLearning"
+            ],
+            "products": [
+              "Azure AI"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/entra-docs",
+          "score": 77,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "entra"
+            ],
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "MicrosoftDocs/winrt-api",
+          "score": 76,
+          "tags": [
+            "docs",
+            "human-authored",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "MicrosoftDocs"
+            ]
+          }
+        },
+        {
+          "full_name": "microsoft/finops-toolkit",
+          "score": 26,
+          "tags": [
+            "bot-only",
+            "docs",
+            "product:PowerShell",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "keywords": [
+              "powershell"
+            ],
+            "products": [
+              "PowerShell"
+            ]
+          }
+        },
+        {
+          "full_name": "Azure/AI-Landing-Zones",
+          "score": 26,
+          "tags": [
+            "bot-only",
+            "docs",
+            "watchlist"
+          ],
+          "watchlist_matches": {
+            "orgs": [
+              "Azure"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/vscode-docs",
+      "url": "https://github.com/microsoft/vscode-docs/pull/10745",
+      "why": "Release activity: docs: proofread remote release notes"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+      "why": "Feature or capability signal: Repo sync for protected branch"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/pull/65073",
+      "why": "Feature or capability signal: [AgentServer] Add experimental original-subject attribution"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/pull/40302",
+      "why": "Docs update: [ai-projects] Preserve preview and caller headers for new next-link pagers"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+      "why": "Docs update: Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+      "why": "Docs update: Id mdev patch seb image update (#15058)"
+    },
+    {
+      "priority": 7,
+      "repo": "MicrosoftDocs/winrt-api",
+      "url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562",
+      "why": "Docs update: Document IDL spellings for WinRT metadata attributes"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+      "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+      "why": "Training update: Updated duration"
+    }
+  ],
+  "top_repos": [
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.4",
+      "classification_reason": "keyword:docs;name:docs;keyword:vscode;keyword:vscode;keyword:code",
+      "classification_version": "2026-06-08",
+      "commit_count": 11,
+      "commits": [
+        {
+          "author": "Nick Trogh (@ntrogh)",
+          "committed_date": "2026-11-22T19:22:41Z",
+          "headline": "Merge pull request #10745 from microsoft/docs/remote-release-notes-pr\u2026",
+          "oid": "c077aa5dac6244f0759ea84a0a552ff09e6ec333",
+          "pr_number": 10745,
+          "pr_title": "docs: proofread remote release notes",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10745",
+          "url": "https://github.com/microsoft/vscode-docs/commit/c077aa5dac6244f0759ea84a0a552ff09e6ec333"
+        },
+        {
+          "author": "VanshShah37 (@vanshshah37)",
+          "committed_date": "2026-11-22T18:47:02Z",
+          "headline": "fix(docs): remove trailing commas in toc.json to conform to valid JSO\u2026",
+          "oid": "525deb7a7a6cf603622f241ebe7f2e7a2a0d7867",
+          "pr_number": 10717,
+          "pr_title": "fix(docs): remove trailing commas in toc.json to conform to valid JSON",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10717",
+          "url": "https://github.com/microsoft/vscode-docs/commit/525deb7a7a6cf603622f241ebe7f2e7a2a0d7867"
+        },
+        {
+          "author": "Alok Pandey (@alok-108)",
+          "committed_date": "2026-11-22T18:45:40Z",
+          "headline": "docs: update macOS shell command name in command-line FAQ (#10742)",
+          "oid": "bed17c9369e48c09cc777320382d359c4c6ab7ab",
+          "pr_number": 10742,
+          "pr_title": "docs: update macOS shell command name in command-line FAQ",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10742",
+          "url": "https://github.com/microsoft/vscode-docs/commit/bed17c9369e48c09cc777320382d359c4c6ab7ab"
+        },
+        {
+          "author": "Alok Pandey (@alok-108)",
+          "committed_date": "2026-11-22T18:44:48Z",
+          "headline": "docs: fix broken cross-reference anchors with double-dash slugs acros\u2026",
+          "oid": "7e03161546dc860a85dea815eeea779fc43902e5",
+          "pr_number": 10741,
+          "pr_title": "docs: fix broken cross-reference anchors with double-dash slugs across docs",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10741",
+          "url": "https://github.com/microsoft/vscode-docs/commit/7e03161546dc860a85dea815eeea779fc43902e5"
+        },
+        {
+          "author": "VanshShah37 (@vanshshah37)",
+          "committed_date": "2026-11-22T18:43:20Z",
+          "headline": "docs: fix broken shrink/expand selection anchor in tips and tricks (#\u2026",
+          "oid": "96517a67f09b0fbc36bebcf3883df5c4f1407060",
+          "pr_number": 10720,
+          "pr_title": "docs: fix broken shrink/expand selection anchor in tips and tricks",
+          "pr_url": "https://github.com/microsoft/vscode-docs/pull/10720",
+          "url": "https://github.com/microsoft/vscode-docs/commit/96517a67f09b0fbc36bebcf3883df5c4f1407060"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/vscode-docs",
+      "name": "vscode-docs",
+      "newest_commit_date": "2026-11-22T19:22:41Z",
+      "org": "microsoft",
+      "product_area": "Developer Tools",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 96,
+        "tags": [
+          "docs",
+          "human-authored",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "release"
+          ],
+          "repos": [
+            "microsoft/vscode-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 20,
+      "commits": [
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T18:10:53Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "oid": "e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T18:10:24Z",
+          "headline": "Merge pull request #322746 from MicrosoftDocs/main",
+          "oid": "c83afdc5192aafb7384c79949762846b7f5966e4",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/c83afdc5192aafb7384c79949762846b7f5966e4"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-11-22T15:07:55Z",
+          "headline": "Merge pull request #322741 from n-bajaj/docs/review-web-app-container\u2026",
+          "oid": "0e1b771394ae9495aad8f04177008c41a4a5cf14",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/0e1b771394ae9495aad8f04177008c41a4a5cf14"
+        },
+        {
+          "author": "prmerger-automator[bot] (@prmerger-automator[bot])",
+          "committed_date": "2026-11-22T15:07:34Z",
+          "headline": "Merge pull request #322740 from n-bajaj/docs/web-app-assessment-conta\u2026",
+          "oid": "f9a2c96510def12a3b1c25066ae28e10fbbcafef",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/f9a2c96510def12a3b1c25066ae28e10fbbcafef"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T12:41:09Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "oid": "6f82858d3df5dc005f580467156a2a4b7c3fbbc2",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/6f82858d3df5dc005f580467156a2a4b7c3fbbc2"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/azure-docs",
+      "name": "azure-docs",
+      "newest_commit_date": "2026-11-22T18:10:53Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 3,
+        "human_commit_count": 2,
+        "score": 95,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ],
+          "repos": [
+            "MicrosoftDocs/azure-docs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Shiva S (@Shivakishore14)",
+          "committed_date": "2026-11-21T19:32:07Z",
+          "headline": "[AgentServer] Add experimental original-subject attribution (#65073)",
+          "oid": "77ac5395e75f506cd1732cb119a702bbf0650027",
+          "pr_number": 65073,
+          "pr_title": "[AgentServer] Add experimental original-subject attribution",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65073",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/77ac5395e75f506cd1732cb119a702bbf0650027"
+        },
+        {
+          "author": "azure-sdk-automation[bot] (@azure-sdk-automation[bot])",
+          "committed_date": "2026-11-21T19:03:20Z",
+          "headline": "Increment version for appconfiguration releases (#65071)",
+          "oid": "830c9c91604c7a7022a8560aec20c5f354b35c4b",
+          "pr_number": 65071,
+          "pr_title": "Increment version for appconfiguration releases",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-net/pull/65071",
+          "url": "https://github.com/Azure/azure-sdk-for-net/commit/830c9c91604c7a7022a8560aec20c5f354b35c4b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-net",
+      "name": "azure-sdk-for-net",
+      "newest_commit_date": "2026-11-21T19:32:07Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 87,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure AI",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent",
+            "release",
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure AI",
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-net"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:sdk;org:Azure;keyword:sdk",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "viragjain611 (@viragjain611)",
+          "committed_date": "2026-11-22T19:34:22Z",
+          "headline": "[ai-projects] Preserve preview and caller headers for new next-link p\u2026",
+          "oid": "97f25f1acf7bb7929f708ddc0ff7c04e2924c30c",
+          "pr_number": 40302,
+          "pr_title": "[ai-projects] Preserve preview and caller headers for new next-link pagers",
+          "pr_url": "https://github.com/Azure/azure-sdk-for-js/pull/40302",
+          "url": "https://github.com/Azure/azure-sdk-for-js/commit/97f25f1acf7bb7929f708ddc0ff7c04e2924c30c"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/azure-sdk-for-js",
+      "name": "azure-sdk-for-js",
+      "newest_commit_date": "2026-11-22T19:34:22Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "sdk",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 86,
+        "tags": [
+          "docs",
+          "human-authored",
+          "product:Azure SDK",
+          "release-language",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "sdk"
+          ],
+          "orgs": [
+            "Azure"
+          ],
+          "products": [
+            "Azure SDK"
+          ],
+          "repos": [
+            "Azure/azure-sdk-for-js"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;fallback:Unknown;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T12:06:30Z",
+          "headline": "Merge pull request #3534 from MicrosoftDocs/main639309459740114672syn\u2026",
+          "oid": "5b77ab5b654b47c1af83a474361c4edfe7b5366d",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/5b77ab5b654b47c1af83a474361c4edfe7b5366d"
+        },
+        {
+          "author": "Learn Build Service GitHub App",
+          "committed_date": "2026-11-22T12:06:09Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/fabric-d\u2026",
+          "oid": "a2603a59f43bdccc1094bab671653c0ad70d62ca",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/a2603a59f43bdccc1094bab671653c0ad70d62ca"
+        },
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T12:03:05Z",
+          "headline": "Merge pull request #17505 from MicrosoftDocs/main",
+          "oid": "55912a981b78957b8e6d8b07173f525e9da91fff",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/55912a981b78957b8e6d8b07173f525e9da91fff"
+        },
+        {
+          "author": "Sneha Gunda (@SnehaGunda)",
+          "committed_date": "2026-11-22T08:37:27Z",
+          "headline": "Add on-demand billing quota guidance (#17476)",
+          "oid": "b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8",
+          "pr_number": 3534,
+          "pr_title": "Repo sync for protected branch",
+          "pr_url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/commit/b7e547d5ea3f10aa2a3f52f984622c4d728a4ce8"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/fabric-docs",
+      "name": "fabric-docs",
+      "newest_commit_date": "2026-11-22T12:06:30Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 2,
+        "score": 79,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;name:docs;category:docs;keyword:entra;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "learn-build-service-prod[bot] (@learn-build-service-prod[bot])",
+          "committed_date": "2026-11-22T13:37:19Z",
+          "headline": "Merge pull request #15059 from MicrosoftDocs/main",
+          "oid": "3413d1589ffb1f77441636f4c6809d292270003d",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/3413d1589ffb1f77441636f4c6809d292270003d"
+        },
+        {
+          "author": "Alexander Pavlovsky (@idMdev)",
+          "committed_date": "2026-11-22T08:58:45Z",
+          "headline": "Id mdev patch seb image update (#15058)",
+          "oid": "c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftDocs/entra-docs",
+      "name": "entra-docs",
+      "newest_commit_date": "2026-11-22T13:37:19Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Identity",
+      "releases": [],
+      "repo_type": "docs",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 77,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "entra"
+          ],
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "training",
+      "classification_confidence": "1.0",
+      "classification_reason": "org:MicrosoftLearning;keyword:training;name:mslearn;category:training;fallback:Unknown;org:MicrosoftLearning",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-11-21T22:47:14Z",
+          "headline": "Updated duration",
+          "oid": "930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709"
+        },
+        {
+          "author": "Graeme Malcolm (@GraemeMalcolm)",
+          "committed_date": "2026-11-21T22:46:36Z",
+          "headline": "Consolidated exercises",
+          "oid": "4a6f02deac53523f80c7d61dcb882fa0e8cfd1db",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/4a6f02deac53523f80c7d61dcb882fa0e8cfd1db"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "MicrosoftLearning/mslearn-agent-quickstart",
+      "name": "mslearn-agent-quickstart",
+      "newest_commit_date": "2026-11-21T22:47:14Z",
+      "org": "MicrosoftLearning",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "training",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 2,
+        "score": 77,
+        "tags": [
+          "human-authored",
+          "product:Azure AI",
+          "training",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "agent"
+          ],
+          "orgs": [
+            "MicrosoftLearning"
+          ],
+          "products": [
+            "Azure AI"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "docs",
+      "classification_confidence": "0.93",
+      "classification_reason": "org:MicrosoftDocs;keyword:docs;keyword:api;keyword:windows;keyword:api",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "Chris Guzak (@ChrisGuzak)",
+          "committed_date": "2026-11-22T05:12:16Z",
+          "headline": "Document IDL spellings for WinRT metadata attributes (#2562)",
+          "oid": "d5f9910363098d10dea92d564317c3d3142c5fcb",
+          "pr_number": 2562,
+          "pr_title": "Document IDL spellings for WinRT metadata attributes",
+          "pr_url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562",
+          "url": "https://github.com/MicrosoftDocs/winrt-api/commit/d5f9910363098d10dea92d564317c3d3142c5fcb"
+        }
+      ],
+      "default_branch": "docs",
+      "full_name": "MicrosoftDocs/winrt-api",
+      "name": "winrt-api",
+      "newest_commit_date": "2026-11-22T05:12:16Z",
+      "org": "MicrosoftDocs",
+      "product_area": "Windows",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 1,
+        "score": 76,
+        "tags": [
+          "docs",
+          "human-authored",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "MicrosoftDocs"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "samples",
+      "classification_confidence": "0.17",
+      "classification_reason": "keyword:samples;keyword:cli;keyword:azure;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 7,
+      "commits": [
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:47:23Z",
+          "headline": "Merge pull request #154 from hyoshioka0128/patch-41",
+          "oid": "ede749326be4ac0c9ef23800a57fdc5723fe0859",
+          "pr_number": 154,
+          "pr_title": "Update changelog.md",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/154",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/ede749326be4ac0c9ef23800a57fdc5723fe0859"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:47:13Z",
+          "headline": "Merge pull request #153 from hyoshioka0128/patch-40",
+          "oid": "59e67a87176cf2a6f79ab62a64e8a74a1d8c033e",
+          "pr_number": 153,
+          "pr_title": "Translate navigation links to Japanese",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/153",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/59e67a87176cf2a6f79ab62a64e8a74a1d8c033e"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:59Z",
+          "headline": "Merge pull request #152 from hyoshioka0128/patch-39",
+          "oid": "e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3",
+          "pr_number": 152,
+          "pr_title": "Update README.md",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/152",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/e0929ebc8e8c182982f2c58f21c20e0b9f7ff7c3"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:45Z",
+          "headline": "Merge pull request #151 from hyoshioka0128/patch-38",
+          "oid": "6c71d98a82c85e310e10be1c2f4e21e59eebedf5",
+          "pr_number": 151,
+          "pr_title": "Translate FAQ content to Japanese",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/151",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/6c71d98a82c85e310e10be1c2f4e21e59eebedf5"
+        },
+        {
+          "author": "Lee Stott (@leestott)",
+          "committed_date": "2026-11-22T10:46:29Z",
+          "headline": "Merge pull request #149 from microsoft/update-translations",
+          "oid": "5ea85dea3c3afab43a75ffdbdfed74f0557c398a",
+          "pr_number": 149,
+          "pr_title": "chore(i18n): sync translations with latest source changes",
+          "pr_url": "https://github.com/microsoft/AZD-for-beginners/pull/149",
+          "url": "https://github.com/microsoft/AZD-for-beginners/commit/5ea85dea3c3afab43a75ffdbdfed74f0557c398a"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/AZD-for-beginners",
+      "name": "AZD-for-beginners",
+      "newest_commit_date": "2026-11-22T10:47:23Z",
+      "org": "microsoft",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 5,
+        "score": 47,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.67",
+      "classification_reason": "org:Azure-Samples;keyword:platform;org:Azure-Samples;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 4,
+      "commits": [
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T22:43:51Z",
+          "headline": "Merge pull request #13 from Azure-Samples/fix/sanitize-uv-startup-env",
+          "oid": "b35996acbb7e7267216530f3ab9a8892b8ad1e28",
+          "pr_number": 13,
+          "pr_title": "fix: clear inherited UV_FROZEN and extra index overrides in startup scripts",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/13",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/b35996acbb7e7267216530f3ab9a8892b8ad1e28"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T22:43:02Z",
+          "headline": "fix: clear inherited UV_FROZEN and extra index overrides in local sta\u2026",
+          "oid": "79598d08bec3b13906af6b85fbb5a31c90d96b59",
+          "pr_number": 13,
+          "pr_title": "fix: clear inherited UV_FROZEN and extra index overrides in startup scripts",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/13",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/79598d08bec3b13906af6b85fbb5a31c90d96b59"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T18:29:24Z",
+          "headline": "Merge pull request #9 from Azure-Samples/fix/zero-simulation-dealersh\u2026",
+          "oid": "2a00a00b4e42213f011c01180928b6f816038c5a",
+          "pr_number": 9,
+          "pr_title": "Remove runtime simulation in sandbox starters and dealership-e2e",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/9",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/2a00a00b4e42213f011c01180928b6f816038c5a"
+        },
+        {
+          "author": "Paul Yuknewicz (@paulyuk)",
+          "committed_date": "2026-11-21T18:29:16Z",
+          "headline": "Merge pull request #10 from Azure-Samples/feat/mcp-skill-conventions",
+          "oid": "0d45c699a7ea083fcb179aa03da16239d65b105e",
+          "pr_number": 10,
+          "pr_title": "feat: add shared deterministic MCP Hosted Skill block and wire pilot templates",
+          "pr_url": "https://github.com/Azure-Samples/azure-app-platform-templates/pull/10",
+          "url": "https://github.com/Azure-Samples/azure-app-platform-templates/commit/0d45c699a7ea083fcb179aa03da16239d65b105e"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure-Samples/azure-app-platform-templates",
+      "name": "azure-app-platform-templates",
+      "newest_commit_date": "2026-11-21T22:43:51Z",
+      "org": "Azure-Samples",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 0,
+        "human_commit_count": 4,
+        "score": 44,
+        "tags": [
+          "human-authored",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "unknown",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:platform;org:dotnet;fallback:unknown",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "Larry Ewing (@lewing)",
+          "committed_date": "2026-11-22T18:56:30Z",
+          "headline": "Skip multithreading JIT test on unsupported platforms (#138094)",
+          "oid": "dba82669a33c42e44ab2774aeb0ff11b518f970d",
+          "pr_number": 138094,
+          "pr_title": "Skip multithreading JIT test on unsupported platforms",
+          "pr_url": "https://github.com/dotnet/runtime/pull/138094",
+          "url": "https://github.com/dotnet/runtime/commit/dba82669a33c42e44ab2774aeb0ff11b518f970d"
+        },
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-11-22T16:57:57Z",
+          "headline": "[wasm] Bump chrome for testing - linux: 158.0.8127.36, windows: 159.0\u2026",
+          "oid": "4db00fdb1b4c23099f4f977d184e9d2439a9774b",
+          "pr_number": 138087,
+          "pr_title": "[wasm] Bump chrome for testing - linux: 158.0.8127.36, windows: 159.0.8154.13, mac: 159.0.8154.13",
+          "pr_url": "https://github.com/dotnet/runtime/pull/138087",
+          "url": "https://github.com/dotnet/runtime/commit/4db00fdb1b4c23099f4f977d184e9d2439a9774b"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "dotnet/runtime",
+      "name": "runtime",
+      "newest_commit_date": "2026-11-22T18:56:30Z",
+      "org": "dotnet",
+      "product_area": ".NET",
+      "releases": [],
+      "repo_type": "service",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 1,
+        "score": 42,
+        "tags": [
+          "docs",
+          "human-authored"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:tool;keyword:powershell;keyword:learn",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "allcontributors[bot] (@allcontributors[bot])",
+          "committed_date": "2026-11-22T17:04:42Z",
+          "headline": "add keerthimath as a contributor for doc (#2427)",
+          "oid": "d630bf1a6cb9a1ee748b9d9bdd55a849916b8545",
+          "pr_number": 2427,
+          "pr_title": "add keerthimath as a contributor for doc",
+          "pr_url": "https://github.com/microsoft/finops-toolkit/pull/2427",
+          "url": "https://github.com/microsoft/finops-toolkit/commit/d630bf1a6cb9a1ee748b9d9bdd55a849916b8545"
+        }
+      ],
+      "default_branch": "dev",
+      "full_name": "microsoft/finops-toolkit",
+      "name": "finops-toolkit",
+      "newest_commit_date": "2026-11-22T17:04:42Z",
+      "org": "microsoft",
+      "product_area": "PowerShell",
+      "releases": [],
+      "repo_type": "tool",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 26,
+        "tags": [
+          "bot-only",
+          "docs",
+          "product:PowerShell",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "keywords": [
+            "powershell"
+          ],
+          "products": [
+            "PowerShell"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "learner",
+      "category": "docs",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:docs;keyword:terraform;org:Azure;keyword:lab",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "github-actions[bot] (@github-actions[bot])",
+          "committed_date": "2026-11-22T00:24:40Z",
+          "headline": "docs: refresh validated planner prices",
+          "oid": "773a5e0af242f63268943c360feb86ab3c3004a1",
+          "pr_number": null,
+          "pr_title": null,
+          "pr_url": null,
+          "url": "https://github.com/Azure/AI-Landing-Zones/commit/773a5e0af242f63268943c360feb86ab3c3004a1"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "Azure/AI-Landing-Zones",
+      "name": "AI-Landing-Zones",
+      "newest_commit_date": "2026-11-22T00:24:40Z",
+      "org": "Azure",
+      "product_area": "Azure",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 26,
+        "tags": [
+          "bot-only",
+          "docs",
+          "watchlist"
+        ],
+        "watchlist_matches": {
+          "orgs": [
+            "Azure"
+          ]
+        }
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;keyword:terraform;fallback:Unknown;keyword:quickstart",
+      "classification_version": "2026-06-08",
+      "commit_count": 2,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-22T09:32:23Z",
+          "headline": "build(deps): bump github.com/klauspost/compress from 1.16.5 to 1.18.7\u2026",
+          "oid": "4945134b7459afdc0c646294d2b4b8422c61593e",
+          "pr_number": 280,
+          "pr_title": "build(deps): bump github.com/klauspost/compress from 1.16.5 to 1.18.7 in /quickstarts/401-testing-terratest",
+          "pr_url": "https://github.com/microsoft/fabric-terraform-quickstart/pull/280",
+          "url": "https://github.com/microsoft/fabric-terraform-quickstart/commit/4945134b7459afdc0c646294d2b4b8422c61593e"
+        },
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-22T09:31:58Z",
+          "headline": "build(deps): bump the all group across 1 directory with 2 updates (#278)",
+          "oid": "c49b27074973a1e4679f572e62fc2c337fca3cf4",
+          "pr_number": 278,
+          "pr_title": "build(deps): bump the all group across 1 directory with 2 updates",
+          "pr_url": "https://github.com/microsoft/fabric-terraform-quickstart/pull/278",
+          "url": "https://github.com/microsoft/fabric-terraform-quickstart/commit/c49b27074973a1e4679f572e62fc2c337fca3cf4"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/fabric-terraform-quickstart",
+      "name": "fabric-terraform-quickstart",
+      "newest_commit_date": "2026-11-22T09:32:23Z",
+      "org": "microsoft",
+      "product_area": "Unknown",
+      "releases": [],
+      "repo_type": "infra",
+      "signal": {
+        "bot_commit_count": 2,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "dependency-noise",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    },
+    {
+      "audience": "developer",
+      "category": "samples",
+      "classification_confidence": "0.27",
+      "classification_reason": "keyword:samples;name:samples;category:samples;keyword:windows;keyword:sample",
+      "classification_version": "2026-06-08",
+      "commit_count": 1,
+      "commits": [
+        {
+          "author": "dependabot[bot] (@dependabot[bot])",
+          "committed_date": "2026-11-21T18:43:17Z",
+          "headline": "\ud83d\udce6 Bump the all-dependencies group across 3 directories with 2 updates\u2026",
+          "oid": "d4e999c342f35f47fbbc7611ec8d1a7a11dcad73",
+          "pr_number": 1369,
+          "pr_title": "\ud83d\udce6 Bump the all-dependencies group across 3 directories with 2 updates",
+          "pr_url": "https://github.com/microsoft/react-native-windows-samples/pull/1369",
+          "url": "https://github.com/microsoft/react-native-windows-samples/commit/d4e999c342f35f47fbbc7611ec8d1a7a11dcad73"
+        }
+      ],
+      "default_branch": "main",
+      "full_name": "microsoft/react-native-windows-samples",
+      "name": "react-native-windows-samples",
+      "newest_commit_date": "2026-11-21T18:43:17Z",
+      "org": "microsoft",
+      "product_area": "Windows",
+      "releases": [],
+      "repo_type": "samples",
+      "signal": {
+        "bot_commit_count": 1,
+        "human_commit_count": 0,
+        "score": 0,
+        "tags": [
+          "bot-only",
+          "dependency-noise",
+          "samples"
+        ],
+        "watchlist_matches": {}
+      }
+    }
+  ],
+  "totals": {
+    "candidate_repos": 40,
+    "default_branch_commits": 61,
+    "filtered_repos": 2526,
+    "inventory_repos": 16817,
+    "pushed_at_candidate_repos": 40,
+    "release_count": 0,
+    "repos_with_movement": 15,
+    "repos_with_releases": 0
+  },
+  "watchlist": {
+    "keyword_count": 21,
+    "org_count": 5,
+    "products": [
+      "Azure AI",
+      "Microsoft Graph",
+      "PowerShell",
+      "Azure SDK"
+    ],
+    "repo_count": 17
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-21T18:09:51.873060Z",
+    "state_window_enabled": true,
+    "until": "2026-11-22T20:24:31.670945Z"
+  }
+}

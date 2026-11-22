@@ -1,0 +1,401 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-22.consumer.md",
+    "dated_event_stream": "reports/2026-11-22.events.ndjson",
+    "dated_markdown": "reports/2026-11-22.md",
+    "dated_report_json": "reports/2026-11-22.json",
+    "dated_summary_json": "reports/2026-11-22.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 38,
+    "dated_path": "reports/2026-11-22.events.ndjson",
+    "event_count": 38,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 0,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-22T20:24:31.670945Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 6,
+      "bot": 7
+    },
+    "change_types": {
+      "dependency_update": 4,
+      "docs_update": 8,
+      "feature": 1
+    },
+    "event_count": 13,
+    "top_repos": [
+      {
+        "event_count": 3,
+        "repo": "MicrosoftDocs/azure-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "MicrosoftDocs/fabric-docs"
+      },
+      {
+        "event_count": 2,
+        "repo": "microsoft/fabric-terraform-quickstart"
+      },
+      {
+        "event_count": 1,
+        "repo": "microsoft/finops-toolkit"
+      },
+      {
+        "event_count": 1,
+        "repo": "dotnet/runtime"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Developer Tools led the visible product-area activity in this window.",
+    "Start with human-authored changes in microsoft/vscode-docs, MicrosoftDocs/fabric-docs, Azure/azure-sdk-for-net, Azure/azure-sdk-for-js.",
+    "13 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 18,
+      "noisy_event_count": 5,
+      "notable_event_count": 8,
+      "product_area": "Azure",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-21T19:32:07Z",
+          "headline": "[AgentServer] Add experimental original-subject attribution",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-net",
+          "url": "https://github.com/Azure/azure-sdk-for-net/pull/65073"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T19:34:22Z",
+          "headline": "[ai-projects] Preserve preview and caller headers for new next-link pagers",
+          "notability_score": 90,
+          "repo": "Azure/azure-sdk-for-js",
+          "url": "https://github.com/Azure/azure-sdk-for-js/pull/40302"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T18:10:53Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/azure-docs",
+          "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/AZD-for-beginners"
+        },
+        {
+          "event_count": 4,
+          "repo": "Azure-Samples/azure-app-platform-templates"
+        },
+        {
+          "event_count": 2,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 1,
+          "repo": "Azure/azure-sdk-for-js"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 4,
+      "notable_event_count": 6,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-22T08:37:27Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/fabric-docs",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-11-21T22:47:14Z",
+          "headline": "Updated duration",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709"
+        },
+        {
+          "change_type": "training_update",
+          "committed_at": "2026-11-21T22:46:36Z",
+          "headline": "Consolidated exercises",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+          "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/4a6f02deac53523f80c7d61dcb882fa0e8cfd1db"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/fabric-terraform-quickstart"
+        },
+        {
+          "event_count": 2,
+          "repo": "MicrosoftLearning/mslearn-agent-quickstart"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-22T19:22:41Z",
+          "headline": "docs: proofread remote release notes",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10745"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-22T18:47:02Z",
+          "headline": "fix(docs): remove trailing commas in toc.json to conform to valid JSON",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10717"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-22T18:44:48Z",
+          "headline": "docs: fix broken cross-reference anchors with double-dash slugs across docs",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10741"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 2,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T08:58:45Z",
+          "headline": "Id mdev patch seb image update (#15058)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T13:37:19Z",
+          "headline": "Merge pull request #15059 from MicrosoftDocs/main",
+          "notability_score": 70,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/3413d1589ffb1f77441636f4c6809d292270003d"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/entra-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 1,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-22T05:12:16Z",
+          "headline": "Document IDL spellings for WinRT metadata attributes",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/winrt-api",
+          "url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/winrt-api"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/react-native-windows-samples"
+        }
+      ]
+    },
+    {
+      "event_count": 2,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "dotnet/runtime"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "d3d4d867d7c2f515ce592be3d9d72e52a0fdcbbe",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "45066186111",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/45066186111"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/vscode-docs",
+      "url": "https://github.com/microsoft/vscode-docs/pull/10745",
+      "why": "Release activity: docs: proofread remote release notes"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/fabric-docs",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/pull/3534",
+      "why": "Feature or capability signal: Repo sync for protected branch"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/pull/65073",
+      "why": "Feature or capability signal: [AgentServer] Add experimental original-subject attribution"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/pull/40302",
+      "why": "Docs update: [ai-projects] Preserve preview and caller headers for new next-link pagers"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/commit/e10465e508fd2ae149fc3eb64e8277bcd9a05de3",
+      "why": "Docs update: Merging changes synced from https://github.com/MicrosoftDocs/azure-do\u2026"
+    },
+    {
+      "priority": 6,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/c2f4c2e4f3a560eb000768f368f6f54942c5de91",
+      "why": "Docs update: Id mdev patch seb image update (#15058)"
+    },
+    {
+      "priority": 7,
+      "repo": "MicrosoftDocs/winrt-api",
+      "url": "https://github.com/MicrosoftDocs/winrt-api/pull/2562",
+      "why": "Docs update: Document IDL spellings for WinRT metadata attributes"
+    },
+    {
+      "priority": 8,
+      "repo": "MicrosoftLearning/mslearn-agent-quickstart",
+      "url": "https://github.com/MicrosoftLearning/mslearn-agent-quickstart/commit/930e0ef592d47e7ac0bfc0dcc6052334dc5ba709",
+      "why": "Training update: Updated duration"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 40,
+    "default_branch_commits": 61,
+    "filtered_repos": 2526,
+    "inventory_repos": 16817,
+    "pushed_at_candidate_repos": 40,
+    "release_count": 0,
+    "repos_with_movement": 15,
+    "repos_with_releases": 0
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-21T18:09:51.873060Z",
+    "state_window_enabled": true,
+    "until": "2026-11-22T20:24:31.670945Z"
+  }
+}
