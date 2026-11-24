@@ -1,0 +1,595 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-24.consumer.md",
+    "dated_event_stream": "reports/2026-11-24.events.ndjson",
+    "dated_markdown": "reports/2026-11-24.md",
+    "dated_report_json": "reports/2026-11-24.json",
+    "dated_summary_json": "reports/2026-11-24.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 270,
+    "dated_path": "reports/2026-11-24.events.ndjson",
+    "event_count": 287,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 17,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-24T01:01:47.573694Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 28,
+      "bot": 48,
+      "human": 16
+    },
+    "change_types": {
+      "bug_fix": 1,
+      "bulk_automation": 1,
+      "ci_infra": 5,
+      "dependency_update": 26,
+      "docs_update": 39,
+      "release": 7,
+      "sdk_generation": 13
+    },
+    "event_count": 92,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "Azure/azure-sdk-for-go"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-sdk-for-net"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-sdk-for-java"
+      },
+      {
+        "event_count": 4,
+        "repo": "MicrosoftDocs/powerapps-docs"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-python"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "17 release item(s) were detected during the window.",
+    "Security-related changes appeared in microsoftgraph/microsoft-graph-docs-contrib, microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator, dotnet/android-api-docs.",
+    "Start with human-authored changes in microsoftgraph/microsoft-graph-docs-contrib, microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator, dotnet/android-api-docs, Azure/azure-dev.",
+    "92 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 128,
+      "noisy_event_count": 39,
+      "notable_event_count": 104,
+      "product_area": "Azure",
+      "release_count": 17,
+      "repo_count": 43,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-23T16:59:13Z",
+          "headline": "fix: API Authentication - MACAE ICM issue fix",
+          "notability_score": 100,
+          "repo": "microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+          "url": "https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator/pull/1188"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-23T04:13:18Z",
+          "headline": "fix(agents): always exclude secrets and local state from code deploy packages",
+          "notability_score": 100,
+          "repo": "Azure/azure-dev",
+          "url": "https://github.com/Azure/azure-dev/pull/10986"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-24T00:23:38Z",
+          "headline": "Update for azd release 1.40.0-beta.1-daily.7106073",
+          "notability_score": 100,
+          "repo": "Azure/homebrew-azd",
+          "url": "https://github.com/Azure/homebrew-azd/commit/1952fb43d68ac74e1358d32af0dba591e8100238"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 9,
+          "repo": "Azure/azure-sdk-for-go"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 7,
+          "repo": "Azure/azure-sdk-for-js"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-sdk-for-python"
+        }
+      ]
+    },
+    {
+      "event_count": 70,
+      "noisy_event_count": 26,
+      "notable_event_count": 52,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 22,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-23T20:40:57Z",
+          "headline": "20261123 release notes 170.6",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/sql-docs",
+          "url": "https://github.com/MicrosoftDocs/sql-docs/commit/4fbe3ff19a79624d9b3d89259089257ff2058dd7"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-23T20:38:31Z",
+          "headline": "20261123 release notes 170.6",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/sql-docs",
+          "url": "https://github.com/MicrosoftDocs/sql-docs/commit/185d42bde2c730b822168582d52fbf34fb6603ef"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-23T16:36:05Z",
+          "headline": "Lab 04: Add automated checks for escalation responses and delegation",
+          "notability_score": 90,
+          "repo": "MicrosoftLearning/mslearn-copilotstudio",
+          "url": "https://github.com/MicrosoftLearning/mslearn-copilotstudio/pull/103"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-project-operations"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 33,
+      "noisy_event_count": 2,
+      "notable_event_count": 22,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 9,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-23T12:46:21Z",
+          "headline": "Fix Java security documentation (R091, pass 2)",
+          "notability_score": 100,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/1779"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-23T23:31:10Z",
+          "headline": "fix GetAsyncIterationType for arrays",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86340"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-23T15:44:13Z",
+          "headline": "Fix documentation errors in Android.OS (R086, pass 2)",
+          "notability_score": 90,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/1781"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "dotnet/efcore"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 5,
+      "notable_event_count": 12,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-23T21:09:52Z",
+          "headline": "Merge pull request #15071 from beatrizribeiro-msft/release-clarify-ad\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/b8f70a0e78a3e06e463be8ee56966bda042147e9"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-23T20:59:29Z",
+          "headline": "Clarify local administrator group limitation for SMB administrative s\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/eaa3b50a9ce0928ae02b87e10fc439933311b59e"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-23T20:02:58Z",
+          "headline": "Update Verified ID advanced setup for both Key Vault permission models",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/6bcba8d4398601660c079eab3a8c481dbf826b56"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 4,
+      "notable_event_count": 10,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-23T14:39:16Z",
+          "headline": "release-notes: update VS Code 1.148 Insiders changelog",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10752"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-23T18:34:23Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/visualstudio-docs",
+          "url": "https://github.com/MicrosoftDocs/visualstudio-docs/pull/11499"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-23T23:09:12Z",
+          "headline": "Fix typo in glob patterns documentation",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10753"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/visualstudio-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/vscode-extension-samples"
+        }
+      ]
+    },
+    {
+      "event_count": 17,
+      "noisy_event_count": 14,
+      "notable_event_count": 9,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 6,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-23T17:20:27Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 100,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+          "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10106"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-23T14:05:30Z",
+          "headline": "fix(serialization): parse duration milliseconds without float rounding",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-abstractions-go",
+          "url": "https://github.com/microsoft/kiota-abstractions-go/pull/328"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-23T14:03:05Z",
+          "headline": "fix: read zone-less date-times with the offset of that date",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-serialization-json-go",
+          "url": "https://github.com/microsoft/kiota-serialization-json-go/pull/240"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-java"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-abstractions-go"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-serialization-json-go"
+        }
+      ]
+    },
+    {
+      "event_count": 9,
+      "noisy_event_count": 1,
+      "notable_event_count": 9,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 4,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-23T18:43:04Z",
+          "headline": "Add Copilot UX component plug-in packaging guide",
+          "notability_score": 90,
+          "repo": "SharePoint/sp-dev-docs",
+          "url": "https://github.com/SharePoint/sp-dev-docs/commit/8a42626b5ce4e3a0d84bb5411d04f76fa4ce5666"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-23T16:44:31Z",
+          "headline": "Add InviteWithReplaces to PSTN gateway cmdlets",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/office-docs-powershell",
+          "url": "https://github.com/MicrosoftDocs/office-docs-powershell/pull/13879"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-23T08:08:18Z",
+          "headline": "feat(finops-hub): Add Azure Data Explorer encryption options",
+          "notability_score": 90,
+          "repo": "microsoft/finops-toolkit",
+          "url": "https://github.com/microsoft/finops-toolkit/pull/2338"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "microsoft/finops-toolkit"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 1,
+          "repo": "SharePoint/sp-dev-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        }
+      ]
+    },
+    {
+      "event_count": 6,
+      "noisy_event_count": 0,
+      "notable_event_count": 6,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-23T08:46:59Z",
+          "headline": "Fix proxy-addr critical vulnerability across TeamsJS samples",
+          "notability_score": 92,
+          "repo": "OfficeDev/Microsoft-Teams-Samples",
+          "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/pull/2445"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-23T19:20:32Z",
+          "headline": "Accumulated Bot Framework remediations",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14761"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-23T19:09:28Z",
+          "headline": "[Doc Improvement] Obsolete BFSDK content removal -1",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14755"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 2,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "OfficeDev/office-dev-program-docs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "fa02cfefbf0cceb8eb9bfa810e34774efd003b2f",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "45301735443",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/45301735443"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+      "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10106",
+      "why": "Security-related change: Repo sync for protected branch"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+      "url": "https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator/pull/1188",
+      "why": "Security-related change: fix: API Authentication - MACAE ICM issue fix"
+    },
+    {
+      "priority": 3,
+      "repo": "dotnet/android-api-docs",
+      "url": "https://github.com/dotnet/android-api-docs/pull/1779",
+      "why": "Security-related change: Fix Java security documentation (R091, pass 2)"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-dev",
+      "url": "https://github.com/Azure/azure-dev/pull/10986",
+      "why": "Security-related change: fix(agents): always exclude secrets and local state from code deploy packages"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/homebrew-azd",
+      "url": "https://github.com/Azure/homebrew-azd/commit/1952fb43d68ac74e1358d32af0dba591e8100238",
+      "why": "Release activity: Update for azd release 1.40.0-beta.1-daily.7106073"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/data-api-builder",
+      "url": "https://github.com/Azure/data-api-builder/pull/3938",
+      "why": "Release activity: Fix CS8604 in EndToEndTests that fails the release build"
+    },
+    {
+      "priority": 7,
+      "repo": "Azure/LogicAppsUX",
+      "url": "https://github.com/Azure/LogicAppsUX/releases/tag/v5.1015.1",
+      "why": "Release activity: Release v5.1015.1"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-policy",
+      "url": "https://github.com/Azure/azure-policy/pull/1620",
+      "why": "Release activity: Built-in Policy Release 3.2026.1112.4"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 154,
+    "default_branch_commits": 563,
+    "filtered_repos": 2527,
+    "inventory_repos": 16819,
+    "pushed_at_candidate_repos": 154,
+    "release_count": 17,
+    "repos_with_movement": 94,
+    "repos_with_releases": 7
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-22T18:24:31.670945Z",
+    "state_window_enabled": true,
+    "until": "2026-11-24T01:01:47.573694Z"
+  }
+}
