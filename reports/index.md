@@ -1,6 +1,6 @@
 # Microsoft Ecosystem Change Reports
 
-Generated: `2026-11-24T01:03:23.944823Z`
+Generated: `2026-11-24T23:09:02.374660Z`
 
 ## Latest Brief
 
@@ -9,57 +9,57 @@ Generated: `2026-11-24T01:03:23.944823Z`
 ## Current Status
 
 - Status: Fresh at latest report generation. Current status lives in `status.json`.
-- Last generated: `2026-11-24 01:01 UTC`
+- Last generated: `2026-11-24 23:07 UTC`
 - Latest artifacts: [Daily brief](latest.md), [Consumer brief](latest.consumer.md), [JSON](latest.json), [Summary](latest.summary.json), [Events](latest.events.ndjson)
 
 ## 7-Day Snapshot
 
 - Reports: 7
-- Repositories with movement: 679
-- Default-branch commits: 3964
-- Releases: 131
+- Repositories with movement: 720
+- Default-branch commits: 4107
+- Releases: 130
 
 ## 30-Day Snapshot
 
 - Reports: 30
-- Repositories with movement: 3262
-- Default-branch commits: 18653
-- Releases: 694
+- Repositories with movement: 3303
+- Default-branch commits: 18796
+- Releases: 693
 
 ## Latest Product Areas
 
 | Product area | Signal | Repos | Events | Releases | Security |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Azure | 104 | 43 | 128 | 17 | 2 |
-| Unmapped Activity | 52 | 22 | 70 | 0 | 0 |
-| .NET | 22 | 9 | 33 | 0 | 1 |
-| Identity | 12 | 3 | 12 | 0 | 0 |
-| Developer Tools | 10 | 3 | 11 | 0 | 0 |
-| Microsoft Graph | 9 | 6 | 17 | 0 | 1 |
-| PowerShell | 9 | 4 | 9 | 0 | 0 |
-| Microsoft 365 | 6 | 3 | 6 | 0 | 2 |
+| Azure | 110 | 65 | 152 | 14 | 2 |
+| Unmapped Activity | 56 | 29 | 74 | 2 | 0 |
+| Microsoft Graph | 21 | 15 | 50 | 0 | 0 |
+| PowerShell | 17 | 7 | 23 | 0 | 0 |
+| .NET | 16 | 12 | 45 | 0 | 1 |
+| Microsoft 365 | 9 | 3 | 13 | 0 | 0 |
+| Developer Tools | 8 | 3 | 9 | 0 | 0 |
+| Identity | 5 | 1 | 5 | 0 | 0 |
 
 ## Most Active Product Areas
 
 | Product area | Activity score |
 | --- | ---: |
-| Azure | 26269 |
-| Unmapped Activity | 10442 |
-| Microsoft Graph | 4749 |
-| .NET | 4226 |
-| Azure SDK | 4035 |
-| PowerShell | 3038 |
-| Azure AI | 2029 |
-| Identity | 1593 |
-| Microsoft 365 | 1567 |
-| Developer Tools | 1059 |
+| Azure | 26297 |
+| Unmapped Activity | 10446 |
+| Microsoft Graph | 4785 |
+| .NET | 4223 |
+| Azure SDK | 4048 |
+| PowerShell | 3050 |
+| Azure AI | 2032 |
+| Identity | 1584 |
+| Microsoft 365 | 1570 |
+| Developer Tools | 1057 |
 | Windows | 824 |
 
 ## Daily Reports
 
 | Date | Repositories | Commits | Releases | High-signal | Links |
 | --- | ---: | ---: | ---: | ---: | --- |
-| 2026-11-24 | 94 | 563 | 17 | 25 | [md](2026-11-24.md) / [json](2026-11-24.json) |
+| 2026-11-24 | 135 | 706 | 16 | 25 | [md](2026-11-24.md) / [json](2026-11-24.json) |
 | 2026-11-22 | 15 | 61 | 0 | 8 | [md](2026-11-22.md) / [json](2026-11-22.json) |
 | 2026-11-21 | 67 | 347 | 11 | 25 | [md](2026-11-21.md) / [json](2026-11-21.json) |
 | 2026-11-20 | 110 | 642 | 15 | 25 | [md](2026-11-20.md) / [json](2026-11-20.json) |
@@ -249,8 +249,8 @@ Generated: `2026-11-24T01:03:23.944823Z`
 | [MicrosoftDocs/azure-monitor-docs](https://github.com/MicrosoftDocs/azure-monitor-docs) | 130 |
 | [microsoft/vscode-docs](https://github.com/microsoft/vscode-docs) | 126 |
 | [MicrosoftDocs/azure-aks-docs](https://github.com/MicrosoftDocs/azure-aks-docs) | 126 |
-| [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs) | 126 |
 | [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn) | 126 |
 | [Azure/azure-sdk-for-rust](https://github.com/Azure/azure-sdk-for-rust) | 125 |
+| [dotnet/AspNetCore.Docs](https://github.com/dotnet/AspNetCore.Docs) | 125 |
 | [dotnet/msbuild](https://github.com/dotnet/msbuild) | 124 |
 
