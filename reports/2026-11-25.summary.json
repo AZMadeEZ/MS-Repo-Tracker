@@ -1,0 +1,575 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-25.consumer.md",
+    "dated_event_stream": "reports/2026-11-25.events.ndjson",
+    "dated_markdown": "reports/2026-11-25.md",
+    "dated_report_json": "reports/2026-11-25.json",
+    "dated_summary_json": "reports/2026-11-25.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 298,
+    "dated_path": "reports/2026-11-25.events.ndjson",
+    "event_count": 309,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 11,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-25T22:37:59.562480Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 26,
+      "bot": 64,
+      "human": 17
+    },
+    "change_types": {
+      "ci_infra": 7,
+      "dependency_update": 49,
+      "docs_update": 39,
+      "release": 6,
+      "sample_update": 4,
+      "sdk_generation": 1,
+      "training_update": 1
+    },
+    "event_count": 107,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "Azure/azure-sdk"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoft/aspire-samples"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-dev"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoftgraph/msgraph-snippets-typescript"
+      },
+      {
+        "event_count": 4,
+        "repo": "MicrosoftDocs/azure-docs"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "11 release item(s) were detected during the window.",
+    "Security-related changes appeared in Azure/azure-sdk-for-js, MicrosoftDocs/entra-docs.",
+    "Start with human-authored changes in Azure/azure-sdk-for-js, MicrosoftDocs/entra-docs, Azure/homebrew-azd, Azure/LogicAppsUX.",
+    "107 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 149,
+      "noisy_event_count": 45,
+      "notable_event_count": 93,
+      "product_area": "Azure",
+      "release_count": 10,
+      "repo_count": 71,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-25T19:34:06Z",
+          "headline": "[Identity] Isolate DefaultAzureCredential IMDS probe tests from ambient credential env vars",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-js",
+          "url": "https://github.com/Azure/azure-sdk-for-js/pull/40901"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-25T21:35:43Z",
+          "headline": "Update for azd release 1.40.0",
+          "notability_score": 100,
+          "repo": "Azure/homebrew-azd",
+          "url": "https://github.com/Azure/homebrew-azd/commit/9f78e1a3f44deb24342f6905bbe43530a7323464"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-25T21:31:27Z",
+          "headline": "azure-dev-cli_1.40.0",
+          "notability_score": 100,
+          "repo": "Azure/azure-dev",
+          "url": "https://github.com/Azure/azure-dev/releases/tag/azure-dev-cli_1.40.0"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 7,
+          "repo": "Azure/azure-dev"
+        },
+        {
+          "event_count": 7,
+          "repo": "Azure/azure-sdk-for-java"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/homebrew-azd"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure/azure-sdk"
+        }
+      ]
+    },
+    {
+      "event_count": 51,
+      "noisy_event_count": 22,
+      "notable_event_count": 39,
+      "product_area": "Unmapped Activity",
+      "release_count": 0,
+      "repo_count": 14,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-24T21:18:23Z",
+          "headline": "First draft of module in my fork of release branch (#56943) (#56948)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/eae82ad2ed9e73e00880fc49e3f1467ed863dca5"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T18:18:30Z",
+          "headline": "Add known issue for duplicate rows in sql_pool_insights",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/sql-docs",
+          "url": "https://github.com/MicrosoftDocs/sql-docs/commit/e41a00f877a9fa88ea0477c1c62a819c3930c8a6"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T22:06:33Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/SupportA\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/SupportArticles-docs",
+          "url": "https://github.com/MicrosoftDocs/SupportArticles-docs/commit/50db65e8e5e572fdbe8301c0ec7f976090ca3180"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/BuildXL"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-automate-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 42,
+      "noisy_event_count": 9,
+      "notable_event_count": 22,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 13,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T18:39:31Z",
+          "headline": "Put type parameter inference from constraints behind a feature flag.",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86624"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T18:18:34Z",
+          "headline": "Add comprehensive What's New documentation for F# 7",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/50098"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T18:03:44Z",
+          "headline": "Add a regression test for #86608",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86625"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/efcore"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/roslyn"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs"
+        }
+      ]
+    },
+    {
+      "event_count": 14,
+      "noisy_event_count": 1,
+      "notable_event_count": 13,
+      "product_area": "PowerShell",
+      "release_count": 1,
+      "repo_count": 6,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-24T22:13:34Z",
+          "headline": "Windows Package Manager 1.30.310",
+          "notability_score": 100,
+          "repo": "microsoft/winget-cli",
+          "url": "https://github.com/microsoft/winget-cli/releases/tag/v1.30.310"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T19:13:56Z",
+          "headline": "Add option to ignore unknown upgrade notices",
+          "notability_score": 90,
+          "repo": "microsoft/winget-cli",
+          "url": "https://github.com/microsoft/winget-cli/pull/6696"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-25T06:00:45Z",
+          "headline": "Fix incorrect (ThrottleRateActionBytesPerSecond) parameter to correct one (ThrottleRateActionBitsPerSecond) in New-NetQosPolicy",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/windows-powershell-docs",
+          "url": "https://github.com/MicrosoftDocs/windows-powershell-docs/pull/3700"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/windows-powershell-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/winget-cli"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/fabric-toolbox"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/finops-toolkit"
+        },
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/office-docs-powershell"
+        }
+      ]
+    },
+    {
+      "event_count": 8,
+      "noisy_event_count": 3,
+      "notable_event_count": 8,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-24T22:31:25Z",
+          "headline": "Publish GA docs for Baseline Security Mode app controls (#12114)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/a608d81e20fdc2ca6a6d60fb0314c7a38f69c897"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-25T09:36:25Z",
+          "headline": "Note that validation messages can mention another release or country/\u2026",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/119361794672d1b8fc6eda1044e7c5d637d8501c"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T13:03:56Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/431eb7e673b6a9581027f64325467b7516fe81d3"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "noisy_event_count": 3,
+      "notable_event_count": 8,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 4,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-25T21:22:17Z",
+          "headline": "Fix typo and enhance documentation for teams-dev skill",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14779"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T21:07:06Z",
+          "headline": "Run the ESRP npm publish on Node 20 with EsrpRelease@13",
+          "notability_score": 90,
+          "repo": "OfficeDev/microsoft-teams-library-js",
+          "url": "https://github.com/OfficeDev/microsoft-teams-library-js/pull/3225"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T00:49:45Z",
+          "headline": "Reorganize top-level TOC a bit",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14773"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/microsoft-teams-library-js"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/office-js-docs-pr"
+        }
+      ]
+    },
+    {
+      "event_count": 27,
+      "noisy_event_count": 24,
+      "notable_event_count": 5,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 10,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T02:29:02Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+          "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10108"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T00:41:59Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 70,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib",
+          "url": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib/pull/10107"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/microsoft-graph-docs-contrib"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoftgraph/msgraph-snippets-typescript"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-serialization-text-go"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-serialization-multipart-go"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-python"
+        }
+      ]
+    },
+    {
+      "event_count": 5,
+      "noisy_event_count": 0,
+      "notable_event_count": 5,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T20:55:03Z",
+          "headline": "Update AI overview video",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10771"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-25T22:04:36Z",
+          "headline": "Update banner and landing pages",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10772"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "8a4378cef591d10e19187e6300b47d95b753d260",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "45714764942",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/45714764942"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/azure-sdk-for-js",
+      "url": "https://github.com/Azure/azure-sdk-for-js/pull/40901",
+      "why": "Security-related change: [Identity] Isolate DefaultAzureCredential IMDS probe tests from ambient credential env vars"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/entra-docs",
+      "url": "https://github.com/MicrosoftDocs/entra-docs/commit/a608d81e20fdc2ca6a6d60fb0314c7a38f69c897",
+      "why": "Security-related change: Publish GA docs for Baseline Security Mode app controls (#12114)"
+    },
+    {
+      "priority": 3,
+      "repo": "Azure/homebrew-azd",
+      "url": "https://github.com/Azure/homebrew-azd/commit/9f78e1a3f44deb24342f6905bbe43530a7323464",
+      "why": "Release activity: Update for azd release 1.40.0"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-dev",
+      "url": "https://github.com/Azure/azure-dev/releases/tag/azure-dev-cli_1.40.0",
+      "why": "Release activity: azure-dev-cli_1.40.0"
+    },
+    {
+      "priority": 5,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure%2Bazure-data-appconfiguration_1.13.0-beta.1",
+      "why": "Release activity: com.azure+azure-data-appconfiguration_1.13.0-beta.1"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/LogicAppsUX",
+      "url": "https://github.com/Azure/LogicAppsUX/pull/9744",
+      "why": "Release activity: feat(ci): add Azure Pipelines npm publisher and Otto release trigger"
+    },
+    {
+      "priority": 7,
+      "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+      "url": "https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb/commit/119361794672d1b8fc6eda1044e7c5d637d8501c",
+      "why": "Release activity: Note that validation messages can mention another release or country/\u2026"
+    },
+    {
+      "priority": 8,
+      "repo": "Azure/azure-devops-cli-extension",
+      "url": "https://github.com/Azure/azure-devops-cli-extension/pull/1546",
+      "why": "Release activity: Post-Release-1.0.12"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 165,
+    "default_branch_commits": 729,
+    "filtered_repos": 2526,
+    "inventory_repos": 16824,
+    "pushed_at_candidate_repos": 165,
+    "release_count": 11,
+    "repos_with_movement": 122,
+    "repos_with_releases": 8
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-24T21:07:18.350847Z",
+    "state_window_enabled": true,
+    "until": "2026-11-25T22:37:59.562480Z"
+  }
+}
