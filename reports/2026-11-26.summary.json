@@ -1,0 +1,591 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-26.consumer.md",
+    "dated_event_stream": "reports/2026-11-26.events.ndjson",
+    "dated_markdown": "reports/2026-11-26.md",
+    "dated_report_json": "reports/2026-11-26.json",
+    "dated_summary_json": "reports/2026-11-26.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 309,
+    "dated_path": "reports/2026-11-26.events.ndjson",
+    "event_count": 346,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 37,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-26T22:27:15.864534Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 33,
+      "bot": 76,
+      "human": 17
+    },
+    "change_types": {
+      "ci_infra": 3,
+      "dependency_update": 49,
+      "docs_update": 37,
+      "release": 28,
+      "sample_update": 1,
+      "sdk_generation": 7,
+      "training_update": 1
+    },
+    "event_count": 126,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "OfficeDev/Microsoft-Teams-Samples"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-python"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-serialization-json-go"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-ruby"
+      },
+      {
+        "event_count": 4,
+        "repo": "Azure/azure-sdk"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, Microsoft Graph led the visible product-area activity in this window.",
+    "37 release item(s) were detected during the window.",
+    "Security-related changes appeared in Azure/azure-cli-extensions.",
+    "Start with human-authored changes in Azure/azure-cli-extensions, microsoft/kiota-dart, microsoft/kiota-ruby, microsoft/kiota-java.",
+    "126 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 97,
+      "noisy_event_count": 24,
+      "notable_event_count": 83,
+      "product_area": "Azure",
+      "release_count": 12,
+      "repo_count": 30,
+      "security_event_count": 2,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-26T04:43:16Z",
+          "headline": "[aks-agent] Use trusted kubelogin lookup for credentials",
+          "notability_score": 100,
+          "repo": "Azure/azure-cli-extensions",
+          "url": "https://github.com/Azure/azure-cli-extensions/pull/10617"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-26T04:42:58Z",
+          "headline": "[fleet] `az fleet get-credentials`: Use trusted kubelogin lookup",
+          "notability_score": 100,
+          "repo": "Azure/azure-cli-extensions",
+          "url": "https://github.com/Azure/azure-cli-extensions/pull/10616"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T10:52:49Z",
+          "headline": "com.azure.resourcemanager+azure-resourcemanager-netapp_2.7.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-java",
+          "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-netapp_2.7.0-beta.1"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-python"
+        },
+        {
+          "event_count": 6,
+          "repo": "Azure/azure-cli-extensions"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/azure-monitor-lab"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 81,
+      "noisy_event_count": 25,
+      "notable_event_count": 68,
+      "product_area": "Unmapped Activity",
+      "release_count": 2,
+      "repo_count": 25,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T01:14:55Z",
+          "headline": "Move finalized agentic build and release labs out of DRAFT",
+          "notability_score": 100,
+          "repo": "MicrosoftLearning/mslearn-devops",
+          "url": "https://github.com/MicrosoftLearning/mslearn-devops/commit/2900b22c0595b616a017bbb051f01b2f5782d6ec"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T21:24:35Z",
+          "headline": "v1.13.14",
+          "notability_score": 90,
+          "repo": "microsoft/dbt-fabricspark",
+          "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.14"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-26T22:08:41Z",
+          "headline": "feat(templates): add GitHub Copilot CLI Personal Insights Dashboard",
+          "notability_score": 90,
+          "repo": "microsoft/CopilotAnalyticsLabs",
+          "url": "https://github.com/microsoft/CopilotAnalyticsLabs/pull/45"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/CopilotAnalyticsLabs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics-365-project-operations"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/sql-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 85,
+      "noisy_event_count": 54,
+      "notable_event_count": 58,
+      "product_area": "Microsoft Graph",
+      "release_count": 23,
+      "repo_count": 22,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T17:02:58Z",
+          "headline": "2.3.1",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-authentication-phpleague-php",
+          "url": "https://github.com/microsoft/kiota-authentication-phpleague-php/releases/tag/2.3.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T17:02:53Z",
+          "headline": "2.3.1",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-http-guzzle-php",
+          "url": "https://github.com/microsoft/kiota-http-guzzle-php/releases/tag/2.3.1"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T17:02:49Z",
+          "headline": "2.3.1",
+          "notability_score": 100,
+          "repo": "microsoft/kiota-serialization-text-php",
+          "url": "https://github.com/microsoft/kiota-serialization-text-php/releases/tag/2.3.1"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 10,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 7,
+          "repo": "microsoft/kiota-typescript"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-ruby"
+        },
+        {
+          "event_count": 6,
+          "repo": "microsoft/kiota-serialization-json-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/kiota-java"
+        }
+      ]
+    },
+    {
+      "event_count": 36,
+      "noisy_event_count": 6,
+      "notable_event_count": 23,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 12,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-26T08:43:53Z",
+          "headline": "Add src/ProjectData to CODEOWNERS",
+          "notability_score": 90,
+          "repo": "dotnet/roslyn",
+          "url": "https://github.com/dotnet/roslyn/pull/86626"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-26T13:45:34Z",
+          "headline": "Fix diagnostic kinds in the configurable mock SDK resolver",
+          "notability_score": 90,
+          "repo": "dotnet/msbuild",
+          "url": "https://github.com/dotnet/msbuild/pull/15672"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-25T20:52:17Z",
+          "headline": "Correct required property guidance with System.Text.Json source generation (Fixes #42480)",
+          "notability_score": 90,
+          "repo": "dotnet/docs",
+          "url": "https://github.com/dotnet/docs/pull/56645"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/MQTTnet"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/msbuild"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/efcore"
+        }
+      ]
+    },
+    {
+      "event_count": 13,
+      "noisy_event_count": 4,
+      "notable_event_count": 13,
+      "product_area": "Identity",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-26T13:07:15Z",
+          "headline": "Update contact sync to Clear Sync feature  (#5308)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/3b571a84388aaaebcf5579dec83ace04a7025fe0"
+        },
+        {
+          "change_type": "feature",
+          "committed_at": "2026-11-25T23:38:04Z",
+          "headline": "Add activation correlation guidance to Azure resource and group audit\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/entra-docs",
+          "url": "https://github.com/MicrosoftDocs/entra-docs/commit/395155f6e3534ff32259df8b545dd4d75b5aa03c"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T19:06:00Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/dynamics\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/dynamics365smb-docs",
+          "url": "https://github.com/MicrosoftDocs/dynamics365smb-docs/commit/e81c92c3c095bac93848648ae90c3110f70ec4d2"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dynamics365smb-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/entra-docs"
+        },
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/dynamics365smb-devitpro-pb"
+        }
+      ]
+    },
+    {
+      "event_count": 14,
+      "noisy_event_count": 5,
+      "notable_event_count": 9,
+      "product_area": "Microsoft 365",
+      "release_count": 0,
+      "repo_count": 4,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-26T17:48:13Z",
+          "headline": "Remove debug agent entry from TOC.yml",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14787"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T16:51:35Z",
+          "headline": "Initial llms.txt",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14777"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T15:31:12Z",
+          "headline": "[Doc Improvement] Obsolete BFSDK content removal -6",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/msteams-docs",
+          "url": "https://github.com/MicrosoftDocs/msteams-docs/pull/14786"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/msteams-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "OfficeDev/Microsoft-Teams-Samples"
+        },
+        {
+          "event_count": 3,
+          "repo": "OfficeDev/microsoft-365-agents-toolkit-samples"
+        },
+        {
+          "event_count": 1,
+          "repo": "OfficeDev/microsoft-teams-library-js"
+        }
+      ]
+    },
+    {
+      "event_count": 11,
+      "noisy_event_count": 5,
+      "notable_event_count": 9,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 3,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T11:47:19Z",
+          "headline": "Update Insiders release notes",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10777"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T16:06:43Z",
+          "headline": "Repo sync for protected branch",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/visualstudio-docs",
+          "url": "https://github.com/MicrosoftDocs/visualstudio-docs/pull/11502"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T10:11:05Z",
+          "headline": "Reorganize docs build folder",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10776"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/visualstudio-docs"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/vscode-cdp-proxy"
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "noisy_event_count": 2,
+      "notable_event_count": 6,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-26T01:01:45Z",
+          "headline": "Fix MOTW removal on 25H2 for untrusted sources",
+          "notability_score": 90,
+          "repo": "microsoft/winget-cli",
+          "url": "https://github.com/microsoft/winget-cli/pull/6699"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T19:05:14Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/33091efa0eda5409a50a29d34bbcdab473e08492"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T18:40:22Z",
+          "headline": "Architecture Center: Secure Power Pages file uploads with Microsoft D\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/a1f4ec476320e93b4e2d6c41f8854b994b48462b"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/winget-cli"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "3e95f4cdff97f32d1582e100634bca158cbf8899",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "45904792870",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/45904792870"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "Azure/azure-cli-extensions",
+      "url": "https://github.com/Azure/azure-cli-extensions/pull/10617",
+      "why": "Security-related change: [aks-agent] Use trusted kubelogin lookup for credentials"
+    },
+    {
+      "priority": 2,
+      "repo": "microsoft/kiota-authentication-phpleague-php",
+      "url": "https://github.com/microsoft/kiota-authentication-phpleague-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/kiota-http-guzzle-php",
+      "url": "https://github.com/microsoft/kiota-http-guzzle-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 4,
+      "repo": "microsoft/kiota-serialization-text-php",
+      "url": "https://github.com/microsoft/kiota-serialization-text-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 5,
+      "repo": "microsoft/kiota-serialization-json-php",
+      "url": "https://github.com/microsoft/kiota-serialization-json-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 6,
+      "repo": "microsoft/kiota-serialization-form-php",
+      "url": "https://github.com/microsoft/kiota-serialization-form-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 7,
+      "repo": "microsoft/kiota-abstractions-php",
+      "url": "https://github.com/microsoft/kiota-abstractions-php/releases/tag/2.3.1",
+      "why": "Release activity: 2.3.1"
+    },
+    {
+      "priority": 8,
+      "repo": "microsoft/kiota-dotnet",
+      "url": "https://github.com/microsoft/kiota-dotnet/releases/tag/v2.2.1",
+      "why": "Release activity: v2.2.1"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 151,
+    "default_branch_commits": 629,
+    "filtered_repos": 2526,
+    "inventory_repos": 16825,
+    "pushed_at_candidate_repos": 151,
+    "release_count": 37,
+    "repos_with_movement": 102,
+    "repos_with_releases": 22
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-25T20:37:59.562480Z",
+    "state_window_enabled": true,
+    "until": "2026-11-26T22:27:15.864534Z"
+  }
+}
