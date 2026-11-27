@@ -1,0 +1,513 @@
+{
+  "artifact_links": {
+    "dated_consumer_markdown": "reports/2026-11-27.consumer.md",
+    "dated_event_stream": "reports/2026-11-27.events.ndjson",
+    "dated_markdown": "reports/2026-11-27.md",
+    "dated_report_json": "reports/2026-11-27.json",
+    "dated_summary_json": "reports/2026-11-27.summary.json",
+    "latest_consumer_markdown": "reports/latest.consumer.md",
+    "latest_event_stream": "reports/latest.events.ndjson",
+    "latest_markdown": "reports/latest.md",
+    "latest_report_json": "reports/latest.json",
+    "latest_summary_json": "reports/latest.summary.json",
+    "report_index": "reports/index.md"
+  },
+  "artifact_type": "tracker-summary",
+  "artifact_version": "1.0.0",
+  "event_stream": {
+    "commit_event_count": 184,
+    "dated_path": "reports/2026-11-27.events.ndjson",
+    "event_count": 190,
+    "latest_path": "reports/latest.events.ndjson",
+    "release_event_count": 6,
+    "schema_url": "schemas/event.v1.schema.json"
+  },
+  "filters": {
+    "categories": [
+      "docs",
+      "reference",
+      "samples",
+      "training"
+    ],
+    "events_prefilter_mode": "off",
+    "include_archived": false,
+    "include_forks": false,
+    "include_other": false
+  },
+  "freshness": {
+    "age_hours": 0.0,
+    "latest_report_stale": false,
+    "max_age_hours": 30,
+    "state": "fresh"
+  },
+  "generated_at": "2026-11-27T22:08:05.031289Z",
+  "noise_summary": {
+    "actor_types": {
+      "automation": 30,
+      "bot": 39,
+      "human": 24
+    },
+    "change_types": {
+      "ci_infra": 4,
+      "dependency_update": 50,
+      "docs_update": 24,
+      "release": 2,
+      "sample_update": 5,
+      "sdk_generation": 7,
+      "training_update": 1
+    },
+    "event_count": 93,
+    "top_repos": [
+      {
+        "event_count": 5,
+        "repo": "microsoftgraph/msgraph-snippets-go"
+      },
+      {
+        "event_count": 5,
+        "repo": "Azure-Samples/portability-patterns-library"
+      },
+      {
+        "event_count": 5,
+        "repo": "microsoftgraph/msgraph-sample-github-connector-typescript"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/kiota-python"
+      },
+      {
+        "event_count": 4,
+        "repo": "microsoft/vscode-extension-samples"
+      }
+    ]
+  },
+  "plain_english_summary": [
+    "Azure, .NET led the visible product-area activity in this window.",
+    "6 release item(s) were detected during the window.",
+    "Security-related changes appeared in microsoft/vscode-platform-specific-sample, MicrosoftDocs/data-api-builder-docs, dotnet/android-api-docs.",
+    "Start with human-authored changes in microsoft/vscode-platform-specific-sample, MicrosoftDocs/data-api-builder-docs, microsoft/AzureTRE, MicrosoftDocs/learn.",
+    "93 event(s) look automated, bot-heavy, dependency, or generated; review the curated sections before raw volume."
+  ],
+  "product_area_summary": [
+    {
+      "event_count": 74,
+      "noisy_event_count": 35,
+      "notable_event_count": 51,
+      "product_area": "Azure",
+      "release_count": 5,
+      "repo_count": 30,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-27T14:36:37Z",
+          "headline": "0.30.0",
+          "notability_score": 100,
+          "repo": "microsoft/AzureTRE",
+          "url": "https://github.com/microsoft/AzureTRE/releases/tag/v0.30.0"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-27T14:35:34Z",
+          "headline": "Prepare AzureTRE v0.30.0 release",
+          "notability_score": 100,
+          "repo": "microsoft/AzureTRE",
+          "url": "https://github.com/microsoft/AzureTRE/pull/5321"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-27T08:01:14Z",
+          "headline": "Azure.ResourceManager.CognitiveServices_1.8.0-beta.1",
+          "notability_score": 100,
+          "repo": "Azure/azure-sdk-for-net",
+          "url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.8.0-beta.1"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 8,
+          "repo": "Azure/azure-sdk-for-net"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/azure-dev-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/dataexplorer-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "Azure-Samples/transactional-outbox-pattern"
+        }
+      ]
+    },
+    {
+      "event_count": 44,
+      "noisy_event_count": 18,
+      "notable_event_count": 37,
+      "product_area": "Unmapped Activity",
+      "release_count": 1,
+      "repo_count": 15,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-26T20:55:45Z",
+          "headline": "20261125 secretless obo and caching in multi-source config (#541)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/data-api-builder-docs",
+          "url": "https://github.com/MicrosoftDocs/data-api-builder-docs/commit/7f1c76c05daffd24fa4d864ad626cfab7e09c5f9"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-27T05:50:33Z",
+          "headline": "Merge from release branch to main (#56991)",
+          "notability_score": 100,
+          "repo": "MicrosoftDocs/learn",
+          "url": "https://github.com/MicrosoftDocs/learn/commit/a0acb943a208a34c894dd51b242416c119e810ca"
+        },
+        {
+          "change_type": "release",
+          "committed_at": "2026-11-26T21:24:35Z",
+          "headline": "v1.13.14",
+          "notability_score": 90,
+          "repo": "microsoft/dbt-fabricspark",
+          "url": "https://github.com/microsoft/dbt-fabricspark/releases/tag/v1.13.14"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/SupportArticles-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/fabric-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "MicrosoftDocs/learn"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoft/CopilotAnalyticsLabs"
+        },
+        {
+          "event_count": 4,
+          "repo": "MicrosoftDocs/sql-docs"
+        }
+      ]
+    },
+    {
+      "event_count": 24,
+      "noisy_event_count": 1,
+      "notable_event_count": 15,
+      "product_area": ".NET",
+      "release_count": 0,
+      "repo_count": 8,
+      "security_event_count": 1,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-27T19:59:37Z",
+          "headline": "Fix documentation errors in Android.Credentials (R068, pass 3)",
+          "notability_score": 95,
+          "repo": "dotnet/android-api-docs",
+          "url": "https://github.com/dotnet/android-api-docs/pull/1949"
+        },
+        {
+          "change_type": "bug_fix",
+          "committed_at": "2026-11-27T13:53:47Z",
+          "headline": "[Android] Fix SslStream handshake connection info queries on older Android versions",
+          "notability_score": 90,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/136517"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-27T18:24:43Z",
+          "headline": "Remove obsolete runtime categories from WBT",
+          "notability_score": 90,
+          "repo": "dotnet/runtime",
+          "url": "https://github.com/dotnet/runtime/pull/138425"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "dotnet/android-api-docs"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/runtime"
+        },
+        {
+          "event_count": 5,
+          "repo": "dotnet/docs-maui"
+        },
+        {
+          "event_count": 4,
+          "repo": "dotnet/maui-samples"
+        },
+        {
+          "event_count": 2,
+          "repo": "dotnet/msbuild"
+        }
+      ]
+    },
+    {
+      "event_count": 14,
+      "noisy_event_count": 8,
+      "notable_event_count": 8,
+      "product_area": "Developer Tools",
+      "release_count": 0,
+      "repo_count": 5,
+      "security_event_count": 5,
+      "top_events": [
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-27T11:30:05Z",
+          "headline": "ci: isolate checkout and Marketplace credentials",
+          "notability_score": 100,
+          "repo": "microsoft/vscode-platform-specific-sample",
+          "url": "https://github.com/microsoft/vscode-platform-specific-sample/pull/21"
+        },
+        {
+          "change_type": "security_fix",
+          "committed_at": "2026-11-27T08:27:29Z",
+          "headline": "CI: Limit test workflow credentials",
+          "notability_score": 94,
+          "repo": "microsoft/vscode-mock-debug",
+          "url": "https://github.com/microsoft/vscode-mock-debug/pull/152"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-26T22:55:10Z",
+          "headline": "Improve AI in VS Code documentation IA, structure, and developer guides",
+          "notability_score": 90,
+          "repo": "microsoft/vscode-docs",
+          "url": "https://github.com/microsoft/vscode-docs/pull/10779"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 4,
+          "repo": "microsoft/vscode-mock-debug"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/vscode-extension-samples"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/vscode-platform-specific-sample"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/vscode-docs"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/vscode-custom-data"
+        }
+      ]
+    },
+    {
+      "event_count": 29,
+      "noisy_event_count": 29,
+      "notable_event_count": 6,
+      "product_area": "Microsoft Graph",
+      "release_count": 0,
+      "repo_count": 11,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-27T15:09:47Z",
+          "headline": "fix(http): resolve relative redirect locations that contain \"://\"",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-typescript",
+          "url": "https://github.com/microsoft/kiota-typescript/pull/2243"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-27T14:08:37Z",
+          "headline": "fix(abstractions): serialize timedelta path and query parameters as ISO 8601 durations",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-python",
+          "url": "https://github.com/microsoft/kiota-python/pull/925"
+        },
+        {
+          "change_type": "sdk_generation",
+          "committed_at": "2026-11-27T14:07:19Z",
+          "headline": "fix: preserve fractional seconds when serializing date-times",
+          "notability_score": 75,
+          "repo": "microsoft/kiota-serialization-json-go",
+          "url": "https://github.com/microsoft/kiota-serialization-json-go/pull/247"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/msgraph-snippets-go"
+        },
+        {
+          "event_count": 5,
+          "repo": "microsoftgraph/msgraph-sample-github-connector-typescript"
+        },
+        {
+          "event_count": 4,
+          "repo": "microsoft/kiota-python"
+        },
+        {
+          "event_count": 3,
+          "repo": "microsoft/kiota-typescript"
+        },
+        {
+          "event_count": 2,
+          "repo": "microsoft/kiota-serialization-form-go"
+        }
+      ]
+    },
+    {
+      "event_count": 4,
+      "noisy_event_count": 1,
+      "notable_event_count": 4,
+      "product_area": "PowerShell",
+      "release_count": 0,
+      "repo_count": 2,
+      "security_event_count": 0,
+      "top_events": [
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-27T19:03:54Z",
+          "headline": "Merging changes synced from https://github.com/MicrosoftDocs/power-pl\u2026",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/57867cf99730255905e07efb509366b729fab4e0"
+        },
+        {
+          "change_type": "docs_update",
+          "committed_at": "2026-11-27T18:20:07Z",
+          "headline": "disable public contributions (#12274)",
+          "notability_score": 90,
+          "repo": "MicrosoftDocs/power-platform",
+          "url": "https://github.com/MicrosoftDocs/power-platform/commit/c8e17007d24a1b2f2f9feed37076bce7a5e34aa8"
+        },
+        {
+          "change_type": "sample_update",
+          "committed_at": "2026-11-27T09:03:49Z",
+          "headline": "New Meters",
+          "notability_score": 90,
+          "repo": "microsoft/fabric-toolbox",
+          "url": "https://github.com/microsoft/fabric-toolbox/pull/741"
+        }
+      ],
+      "top_repos": [
+        {
+          "event_count": 3,
+          "repo": "MicrosoftDocs/power-platform"
+        },
+        {
+          "event_count": 1,
+          "repo": "microsoft/fabric-toolbox"
+        }
+      ]
+    },
+    {
+      "event_count": 1,
+      "noisy_event_count": 1,
+      "notable_event_count": 0,
+      "product_area": "Windows",
+      "release_count": 0,
+      "repo_count": 1,
+      "security_event_count": 0,
+      "top_events": [],
+      "top_repos": [
+        {
+          "event_count": 1,
+          "repo": "MicrosoftDocs/windows-iot-public"
+        }
+      ]
+    }
+  ],
+  "schema_url": "schemas/summary.v1.schema.json",
+  "schema_version": 1,
+  "source": {
+    "commit": "7602289eba565a4990683ecb118734f10b6a7e7e",
+    "repository": "AZMadeEZ/MS-Repo-Tracker",
+    "workflow": "Microsoft Repo Change Digest",
+    "workflow_run_id": "46074635389",
+    "workflow_run_url": "https://github.com/AZMadeEZ/MS-Repo-Tracker/actions/runs/46074635389"
+  },
+  "top_links": [
+    {
+      "priority": 1,
+      "repo": "microsoft/vscode-platform-specific-sample",
+      "url": "https://github.com/microsoft/vscode-platform-specific-sample/pull/21",
+      "why": "Security-related change: ci: isolate checkout and Marketplace credentials"
+    },
+    {
+      "priority": 2,
+      "repo": "MicrosoftDocs/data-api-builder-docs",
+      "url": "https://github.com/MicrosoftDocs/data-api-builder-docs/commit/7f1c76c05daffd24fa4d864ad626cfab7e09c5f9",
+      "why": "Security-related change: 20261125 secretless obo and caching in multi-source config (#541)"
+    },
+    {
+      "priority": 3,
+      "repo": "microsoft/AzureTRE",
+      "url": "https://github.com/microsoft/AzureTRE/releases/tag/v0.30.0",
+      "why": "Release activity: 0.30.0"
+    },
+    {
+      "priority": 4,
+      "repo": "Azure/azure-sdk-for-net",
+      "url": "https://github.com/Azure/azure-sdk-for-net/releases/tag/Azure.ResourceManager.CognitiveServices_1.8.0-beta.1",
+      "why": "Release activity: Azure.ResourceManager.CognitiveServices_1.8.0-beta.1"
+    },
+    {
+      "priority": 5,
+      "repo": "MicrosoftDocs/learn",
+      "url": "https://github.com/MicrosoftDocs/learn/commit/a0acb943a208a34c894dd51b242416c119e810ca",
+      "why": "Release activity: Merge from release branch to main (#56991)"
+    },
+    {
+      "priority": 6,
+      "repo": "Azure/azure-sdk-for-java",
+      "url": "https://github.com/Azure/azure-sdk-for-java/releases/tag/com.azure.resourcemanager%2Bazure-resourcemanager-postgresqlflexibleserver_3.1.0",
+      "why": "Release activity: com.azure.resourcemanager+azure-resourcemanager-postgresqlflexibleserver_3.1.0"
+    },
+    {
+      "priority": 7,
+      "repo": "dotnet/android-api-docs",
+      "url": "https://github.com/dotnet/android-api-docs/pull/1949",
+      "why": "Security-related change: Fix documentation errors in Android.Credentials (R068, pass 3)"
+    },
+    {
+      "priority": 8,
+      "repo": "microsoft/vscode-mock-debug",
+      "url": "https://github.com/microsoft/vscode-mock-debug/pull/152",
+      "why": "Security-related change: CI: Limit test workflow credentials"
+    }
+  ],
+  "totals": {
+    "candidate_repos": 118,
+    "default_branch_commits": 248,
+    "filtered_repos": 2526,
+    "inventory_repos": 16826,
+    "pushed_at_candidate_repos": 118,
+    "release_count": 6,
+    "repos_with_movement": 72,
+    "repos_with_releases": 4
+  },
+  "window": {
+    "hours_requested": 24,
+    "since": "2026-11-26T20:27:15.864534Z",
+    "state_window_enabled": true,
+    "until": "2026-11-27T22:08:05.031289Z"
+  }
+}
